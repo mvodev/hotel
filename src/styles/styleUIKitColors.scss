@@ -1,0 +1,15 @@
+@import "../../common/reset.scss";
+@import "../../common/fonts.scss";
+@import "leftSideUiKitColors.scss";
+@import "rightSideUiKitColors.scss";
+body {
+  height: 900px;
+  max-width: 1440px;
+  width: 1440px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 1440px;
+  height: 792px;
+}

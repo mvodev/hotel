@@ -1,0 +1,13 @@
+@import 'fonts.css';
+.container{
+ color: red;
+ padding-top: 2rem;
+ font-family: 'Montserrat', bold;
+}
+.logo{
+ background-image: url('../assets/webpack-logo.png');
+ background-size: cover;
+ width: 100px;
+ height: 100px;
+ margin: 0 auto;
+}
