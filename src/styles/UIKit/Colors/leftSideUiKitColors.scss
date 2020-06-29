@@ -1,3 +1,4 @@
+@import '../../common/colors.scss';
 .leftSide {
   margin-left: 150px;
   margin-top: 37px;
@@ -11,7 +12,7 @@
   position: relative;
   width: 70px;
   height: 70px;
-  background: #1f2041;
+  background: $darkShade100;
   border-radius: 6px;
 }
 .darkShade100 p {
@@ -33,7 +34,7 @@
   position: relative;
   width: 70px;
   height: 70px;
-  background: rgba(31, 32, 65, 0.75);
+  background: $darkShade75;
   border-radius: 6px;
 }
 .darkShade75 p {
@@ -56,7 +57,7 @@
   position: relative;
   width: 70px;
   height: 70px;
-  background: rgba(31, 32, 65, 0.5);
+  background: $darkShade50;
   border-radius: 6px;
 }
 .darkShade50 p {
@@ -78,7 +79,7 @@
   position: relative;
   width: 70px;
   height: 70px;
-  background: rgba(31, 32, 65, 0.25);
+  background: $darkShade25;
   border-radius: 6px;
 }
 .darkShade25 p {
@@ -100,7 +101,7 @@
   position: relative;
   width: 70px;
   height: 70px;
-  background: rgba(31, 32, 65, 0.05);
+  background:$darkShade5;
   border-radius: 6px;
 }
 .darkShade5 p {
@@ -122,7 +123,7 @@
   position: relative;
   width: 70px;
   height: 70px;
-  background: #bc9cff;
+  background:$purple;
   border-radius: 6px;
 }
 .purple p {
@@ -144,7 +145,7 @@
   position: relative;
   width: 70px;
   height: 70px;
-  background: #6fcf97;
+  background: $green;
   border-radius: 6px;
 }
 .green p {

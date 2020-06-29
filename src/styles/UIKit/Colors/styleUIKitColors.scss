@@ -1,7 +1,6 @@
-@import "../../common/reset.scss";
-@import "../../common/fonts.scss";
 @import "leftSideUiKitColors.scss";
 @import "rightSideUiKitColors.scss";
+@import '../styles/common/headerUIKit.scss';
 body {
   height: 900px;
   max-width: 1440px;

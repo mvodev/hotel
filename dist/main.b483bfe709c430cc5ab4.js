@@ -155,19 +155,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./assets/webpack-logo.png":
-/*!*********************************!*\
-  !*** ./assets/webpack-logo.png ***!
-  \*********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "47692505d122dbcae490be2492a60b2e.png");
-
-/***/ }),
-
 /***/ "./index.js":
 /*!******************!*\
   !*** ./index.js ***!
@@ -179,45 +166,30 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _assets_webpack_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/webpack-logo.png */ "./assets/webpack-logo.png");
-/* harmony import */ var _pug_UIKit_test_pug__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pug/UIKit/test.pug */ "./pug/UIKit/test.pug");
-/* harmony import */ var _pug_UIKit_test_pug__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_pug_UIKit_test_pug__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/style.scss */ "./styles/style.scss");
+/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_style_scss__WEBPACK_IMPORTED_MODULE_1__);
 
 //import Post from './Post'
 //import './styles/style.css'
 //import './styles/extra.scss'
-
+//import WebpackLogo from './assets/webpack-logo.png'
 //const post = new Post('webpack jquery title');
-
+//import './pug/UIKit/test.pug'
 
 //$('pre').html(post.toString())
 
 /***/ }),
 
-/***/ "./pug/UIKit/test.pug":
-/*!****************************!*\
-  !*** ./pug/UIKit/test.pug ***!
-  \****************************/
+/***/ "./styles/style.scss":
+/*!***************************!*\
+  !*** ./styles/style.scss ***!
+  \***************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var pug = __webpack_require__(/*! ../../../node_modules/pug-runtime/index.js */ "../node_modules/pug-runtime/index.js");
-
-function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\u003Ch1 class=\"test\"\u003E\u003CTest\u003E\u003C\u002FTest\u003E\u003C\u002Fh1\u003E";;return pug_html;};
-module.exports = template;
-
-/***/ }),
-
-/***/ 0:
-/*!********************!*\
-  !*** fs (ignored) ***!
-  \********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
+// extracted by mini-css-extract-plugin
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=main.72513dfebc261367ba67.js.map
+//# sourceMappingURL=main.b483bfe709c430cc5ab4.js.map
