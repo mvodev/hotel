@@ -48,6 +48,10 @@ module.exports = {
     {
      from: path.resolve(__dirname, 'src/assets/img/svg'),
      to: path.resolve(__dirname, 'dist')
+    },
+    {
+     from: path.resolve(__dirname, 'dist/index.html'),
+     to: path.resolve(__dirname, 'docs')
     }
    ]
   })
