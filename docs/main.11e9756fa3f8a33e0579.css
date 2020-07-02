@@ -587,5 +587,14 @@ body {
   width: 1440px;
   height: 792px; }
 
+.nav_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px; }
 
-/*# sourceMappingURL=main.ba71ea24c4ca77dbd613.css.map*/
+
+/*# sourceMappingURL=main.11e9756fa3f8a33e0579.css.map*/

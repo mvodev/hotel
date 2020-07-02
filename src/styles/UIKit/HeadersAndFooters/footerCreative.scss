@@ -1,0 +1,45 @@
+.footerLogoContainer {
+  width: 1440px;
+  height: 367px;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footerLogo {
+  width: 560px;
+  height: 108px;
+  margin-top: 100px;
+  margin-left: 440px;
+  margin-right: 440px;
+}
+.footerLogo img {
+  margin-left: 227px;
+  margin-right: 227px;
+}
+.footerLogo p {
+  display: block;
+  width: 560px;
+  height: 48px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  text-align: center;
+  /* Dark 75% */
+  color: rgba(31, 32, 65, 0.75);
+  margin-top: 16px;
+}
+.footerLogoSocialNetworksLinks-link {
+  text-decoration: none;
+}
+.footerLogoSocialNetworksLinks {
+  width: 112px;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}

@@ -1,0 +1,141 @@
+.headerLogin {
+  width: 1440px;
+  height: 70px;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  display: flex;
+  flex-direction: row;
+}
+.headerLogin-logo {
+  height: 40px;
+  width: 105.69px;
+  margin-left: 140px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.headerLogin-nav {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin-left: 297.31px;
+}
+.headerLogin-nav a {
+  text-decoration: none;
+}
+.headerLogin-navlink:first-child {
+  width: 43px;
+  height: 18px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  /* Dark 75% */
+  color: rgba(31, 32, 65, 0.75);
+  margin-right: 30px;
+}
+.headerLogin-navlink:nth-child(2) {
+  width: 64px;
+  height: 18px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* Dark 50% */
+  color: rgba(31, 32, 65, 0.5);
+  margin-right: 30px;
+  white-space: nowrap;
+}
+.headerLogin-navlink:nth-child(3) {
+  width: 56px;
+  height: 18px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* Dark 50% */
+  color: rgba(31, 32, 65, 0.5);
+}
+.expand-more-container {
+  width: 24px;
+  height: 21px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  /* Dark 50% */
+  color: rgba(31, 32, 65, 0.5);
+  margin-right: 20px;
+}
+.headerLogin-navlink:nth-child(5) {
+  width: 52px;
+  height: 18px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* Dark 50% */
+  color: rgba(31, 32, 65, 0.5);
+  margin-right: 30px;
+}
+.headerLogin-navlink:nth-child(6) {
+  width: 38px;
+  height: 18px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* Dark 50% */
+  color: rgba(31, 32, 65, 0.5);
+  margin-right: 30px;
+}
+.headerLogin-navlink:nth-child(7) {
+  width: 110px;
+  height: 18px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* Dark 50% */
+  color: rgba(31, 32, 65, 0.5);
+  margin-right: 30px;
+}
+.login {
+  height: 15px;
+  width: 39px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  text-transform: uppercase;
+  /* Primary Color */
+  color: #bc9cff;
+  border-radius: 22px;
+  border: 2px solid #bc9cff;
+  padding: 9px 20px 10px 20px;
+  margin-right: 20px;
+}
+.register {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #ffffff;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 22px;
+  padding: 9px 20px 10px 19px;
+  margin-right: 140px;
+  height: 15px;
+  width: 62px;
+}

@@ -1,0 +1,210 @@
+.footerNavContainer {
+  width: 1440px;
+  height: 372px;
+  background: #ffffff;
+  box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+  display: flex;
+  flex-direction: row;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.footerNavLogo {
+  width: 260px;
+  height: 156px;
+  margin-left: 140px;
+  margin-top: 100px;
+  margin-bottom: 116px;
+  margin-right: 40px;
+}
+.footerNavLogo p {
+  width: 260px;
+  height: 96px;
+  margin-top: 16px;
+  display: block;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  /* Dark 75% */
+  color: rgba(31, 32, 65, 0.75);
+}
+.footerNavLinks {
+  display: flex;
+  flex-direction: row;
+}
+.footerNavLinks-navigation {
+  display: flex;
+  flex-direction: column;
+  margin-top: 104px;
+  width: 81px;
+  height: 168px;
+  margin-right: 119px;
+  justify-content: space-between;
+}
+.footerNavLinks-navigation a {
+  display: block;
+  white-space: nowrap;
+}
+.footerNavLinks-navigation a:first-child {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  text-transform: uppercase;
+  /* Dark 100% */
+  color: #1f2041;
+}
+.footerNavLinks-navigation a:nth-child(2) {
+  width: 64px;
+  height: 18px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* Dark 50% */
+  color: rgba(31, 32, 65, 0.5);
+}
+.footerNavLinks-aboutUs a {
+  display: block;
+  white-space: nowrap;
+}
+.footerNavLinks-aboutUs {
+  display: flex;
+  flex-direction: column;
+  width: 82px;
+  height: 168px;
+  margin-top: 104px;
+  margin-right: 118px;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.footerNavLinks-aboutUs a:first-child {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  text-transform: uppercase;
+  /* Dark 100% */
+  color: #1f2041;
+}
+.footerNavLinks-link {
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* Dark 50% */
+  color: rgba(31, 32, 65, 0.5);
+  display: inline-block;
+}
+.footerNavLinks-support a {
+  display: block;
+  white-space: nowrap;
+}
+.footerNavLinks-support a:first-child {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  text-transform: uppercase;
+  /* Dark 100% */
+  color: #1f2041;
+}
+.footerNavLinks-support {
+  display: flex;
+  flex-direction: column;
+  width: 113px;
+  height: 130px;
+  margin-top: 104px;
+  margin-right: 87px;
+  justify-content: space-between;
+}
+.footerNav-subscribe {
+  display: flex;
+  flex-direction: column;
+
+  width: 260px;
+  height: 148px;
+  margin-top: 104px;
+  margin-right: 140px;
+  margin-bottom: 120px;
+}
+.footerNav-subscribe-textContainer {
+  width: 208px;
+  height: 84px;
+  margin-bottom: 20px;
+}
+.footerNav-subscribe-textContainer p {
+  display: block;
+  height: 48px;
+  width: 196px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  /* Dark 75% */
+  color: rgba(31, 32, 65, 0.75);
+  margin: 0px;
+}
+p.subscribe {
+  height: 15px;
+  width: 208px;
+  display: block;
+  white-space: nowrap;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  text-transform: uppercase;
+  /* Dark 100% */
+  color: #1f2041;
+  margin: 0px 0px 21px 0px;
+}
+.footerNav-subscribe-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 260px;
+  height: 44px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.footerNav-subscribe-form p {
+  width: 134px;
+  height: 24px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+  /* Dark 25% */
+  color: rgba(31, 32, 65, 0.25);
+  margin-left: 15px;
+  margin-top: 12px;
+}
+.footerNav-subscribe-arrow-forward {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+}

@@ -4,9 +4,9 @@ html(lang="en")
  head
   meta(charset="UTF-8")
   meta(name="viewport", content="width=device-width, initial-scale=1.0")
-  title UIKit Colors
+  title UIKit
  body
-  +hdr({isGray:false})
+  +header
   section.colorsAndTypes
    .container
     .leftSide
@@ -37,4 +37,8 @@ html(lang="en")
      .body
       p.header Body
       p.description This is the body text which is used for most of the design, like paragraphs, lists, etc.
- a(href="test.pug") Вперед
+  section.headersAndFooters
+   include pug/UIKit/HeadersAndFooters.pug
+.nav_container
+ a(href='#' class='backward_link') Назад
+ a(href='#' class='forward_link') Вперед
