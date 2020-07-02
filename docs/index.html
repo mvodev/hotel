@@ -1,590 +1,150 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>UIKit</title><link href="main.c6eaec0160fa126fc9a0.css" rel="stylesheet"></head><body><header class="header"><img src="../src/assets/img/svg/logo.svg" alt=""></header><section class="colorsAndTypes"><div class="container"><div class="leftSide"><div class="darkShade100"> <p>Dark Shade 100% #1F2041</p></div><div class="darkShade75"> <p>Dark Shade 75% #1F2041</p></div><div class="darkShade50"> <p>Dark Shade 50% #1F2041</p></div><div class="darkShade25"> <p>Dark Shade 25% #1F2041</p></div><div class="darkShade5"> <p>Dark Shade 5% #1F2041</p></div><div class="purple"> <p>Purple #BC9CFF</p></div><div class="green"><p>Green #6FCF97</p></div></div><div class="rightSide"><div class="h1"> <p class="header">H1</p><p class="description">This one is the sub-section or widget title</p></div><div class="h2"><p class="header">H2 </p><p class="description">Next one is the item title inside widgets</p></div><div class="h3"> <p class="header">H3</p><p class="description">This is a label or CTA text</p></div><div class="body"><p class="header">Body</p><p class="description">This is the body text which is used for most of the design, like paragraphs, lists, etc.</p></div></div></div></section><section class="headersAndFooters"><!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>UIKit Headers and Footers</title><link rel="stylesheet" href="../../../styles/UIKit/HeadersAndFooters/headersAndFooters.scss"></head><body><header class="header"><img src="../src/assets/img/svg/logo.svg" alt=""></header><section class="headersAndFooters"><div class="container_headersAndFooters"><div class="headerLoginSection"><style>.headerLogin {
-  width: 1440px;
-  height: 70px;
-  background: #ffffff;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-  display: flex;
-  flex-direction: row;
-}
-.headerLogin-logo {
-  height: 40px;
-  width: 105.69px;
-  margin-left: 140px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-.headerLogin-nav {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  margin-left: 297.31px;
-}
-.headerLogin-nav a {
-  text-decoration: none;
-}
-.headerLogin-navlink:first-child {
-  width: 43px;
-  height: 18px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-  /* Dark 75% */
-  color: rgba(31, 32, 65, 0.75);
-  margin-right: 30px;
-}
-.headerLogin-navlink:nth-child(2) {
-  width: 64px;
-  height: 18px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  /* Dark 50% */
-  color: rgba(31, 32, 65, 0.5);
-  margin-right: 30px;
-  white-space: nowrap;
-}
-.headerLogin-navlink:nth-child(3) {
-  width: 56px;
-  height: 18px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  /* Dark 50% */
-  color: rgba(31, 32, 65, 0.5);
-}
-.expand-more-container {
-  width: 24px;
-  height: 21px;
-  /* identical to box height */
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  /* Dark 50% */
-  color: rgba(31, 32, 65, 0.5);
-  margin-right: 20px;
-}
-.headerLogin-navlink:nth-child(5) {
-  width: 52px;
-  height: 18px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  /* Dark 50% */
-  color: rgba(31, 32, 65, 0.5);
-  margin-right: 30px;
-}
-.headerLogin-navlink:nth-child(6) {
-  width: 38px;
-  height: 18px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  /* Dark 50% */
-  color: rgba(31, 32, 65, 0.5);
-  margin-right: 30px;
-}
-.headerLogin-navlink:nth-child(7) {
-  width: 110px;
-  height: 18px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  /* Dark 50% */
-  color: rgba(31, 32, 65, 0.5);
-  margin-right: 30px;
-}
-.login {
-  height: 15px;
-  width: 39px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  /* identical to box height */
-  text-transform: uppercase;
-  /* Primary Color */
-  color: #bc9cff;
-  border-radius: 22px;
-  border: 2px solid #bc9cff;
-  padding: 9px 20px 10px 20px;
-  margin-right: 20px;
-}
-.register {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  /* identical to box height */
-  text-transform: uppercase;
-  color: #ffffff;
-  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  border-radius: 22px;
-  padding: 9px 20px 10px 19px;
-  margin-right: 140px;
-  height: 15px;
-  width: 62px;
-}
-</style><div class="headerLogin"><div class="headerLogin-logo"><img src="../src/assets/img/svg/logoTOXIN.svg" alt=""></div><nav class="headerLogin-nav"><a class="headerLogin-navlink" href="#">Home</a><a class="headerLogin-navlink" href="#">About Us </a><a class="headerLogin-navlink" href="#">Services</a><div class="expand-more-container"><img src="../src/assets/img/svg/expand_more.svg" alt=""></div><a class="headerLogin-navlink" href="#">Careers</a><a class="headerLogin-navlink" href="#">News</a><a class="headerLogin-navlink" href="#">Documentation</a><a class="headerLogin-navlink login" href="#">LOGIN</a><a class="headerLogin-navlink register" href="#">REGISTER</a></nav></div></div><div class="headerNavigationSection"><style> .headerLoginNav {
-  width: 1440px;
-  height: 70px;
-  background: #ffffff;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-  display: flex;
-  flex-direction: row;
-}
-.headerLoginNav-logo {
-  height: 40px;
-  width: 105.69px;
-  margin-left: 140px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-.headerLoginNav-nav {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  margin-left: 349.31px;
-}
-.headerLoginNav-nav a {
-  text-decoration: none;
-}
-.headerLoginNav-navlink:first-child {
-  width: 45px;
-  height: 18px;
-  margin-top: 25px;
-  margin-bottom: 27px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-  /* Dark 75% */
-  color: rgba(31, 32, 65, 0.75);
-  margin-right: 28px;
-}
-.headerLoginNav-navlink:nth-child(2) {
-  width: 66px;
-  height: 18px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  /* Dark 50% */
-  color: rgba(31, 32, 65, 0.5);
-  margin-right: 28px;
-  white-space: nowrap;
-}
-.headerLoginNav-navlink:nth-child(3) {
-  width: 58px;
-  height: 18px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  /* Dark 50% */
-  color: rgba(31, 32, 65, 0.5);
-}
-.expand-more-container {
-  width: 24px;
-  height: 21px;
-  margin-top: 25px;
-  margin-bottom: 24px;
-  /* identical to box height */
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  /* Dark 50% */
-  color: rgba(31, 32, 65, 0.5);
-  margin-right: 20px;
-}
-.headerLoginNav-navlink:nth-child(5) {
-  width: 53px;
-  height: 18px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  /* Dark 50% */
-  color: rgba(31, 32, 65, 0.5);
-  margin-right: 29px;
-}
-.headerLoginNav-navlink:nth-child(6) {
-  width: 39px;
-  height: 18px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  /* Dark 50% */
-  color: rgba(31, 32, 65, 0.5);
-  margin-right: 29px;
-}
-.headerLoginNav-navlink:nth-child(7) {
-  width: 113px;
-  height: 18px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  /* Dark 50% */
-  color: rgba(31, 32, 65, 0.5);
-  margin-right: 61px;
-}
-.headerLoginNav-navlink:nth-child(8) {
-  width: 114px;
-  height: 18px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  /* Dark 50% */
-  color: rgba(31, 32, 65, 0.5);
-  margin-right: 140px;
-}
-</style><div class="headerLoginNav"><div class="headerLoginNav-logo"><img src="../src/assets/img/svg/logoTOXIN.svg" alt=""></div><nav class="headerLoginNav-nav"><a class="headerLoginNav-navlink" href="#">Home</a><a class="headerLoginNav-navlink" href="#">About Us </a><a class="headerLoginNav-navlink" href="#">Services</a><div class="expand-more-container"><img src="../src/assets/img/svg/expand_more.svg" alt=""></div><a class="headerLoginNav-navlink" href="#">Careers</a><a class="headerLoginNav-navlink" href="#">News</a><a class="headerLoginNav-navlink" href="#">Documentation</a><a class="headerLoginNav-navlink" href="#">Cosmin Negoita</a></nav></div></div><div class="footerNavigationSection"><style> .footerNavContainer {
-  width: 1440px;
-  height: 372px;
-  background: #ffffff;
-  box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
-  display: flex;
-  flex-direction: row;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.footerNavLogo {
-  width: 260px;
-  height: 156px;
-  margin-left: 140px;
-  margin-top: 100px;
-  margin-bottom: 116px;
-  margin-right: 40px;
-}
-.footerNavLogo p {
-  width: 260px;
-  height: 96px;
-  margin-top: 16px;
-  display: block;
-
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-  /* Dark 75% */
-  color: rgba(31, 32, 65, 0.75);
-}
-.footerNavLinks {
-  display: flex;
-  flex-direction: row;
-}
-.footerNavLinks-navigation {
-  display: flex;
-  flex-direction: column;
-  margin-top: 104px;
-  width: 81px;
-  height: 168px;
-  margin-right: 119px;
-  justify-content: space-between;
-}
-.footerNavLinks-navigation a {
-  display: block;
-  white-space: nowrap;
-}
-.footerNavLinks-navigation a:first-child {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  /* identical to box height */
-  text-transform: uppercase;
-  /* Dark 100% */
-  color: #1f2041;
-}
-.footerNavLinks-navigation a:nth-child(2) {
-  width: 64px;
-  height: 18px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  /* Dark 50% */
-  color: rgba(31, 32, 65, 0.5);
-}
-.footerNavLinks-aboutUs a {
-  display: block;
-  white-space: nowrap;
-}
-.footerNavLinks-aboutUs {
-  display: flex;
-  flex-direction: column;
-  width: 82px;
-  height: 168px;
-  margin-top: 104px;
-  margin-right: 118px;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-}
-.footerNavLinks-aboutUs a:first-child {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  /* identical to box height */
-  text-transform: uppercase;
-  /* Dark 100% */
-  color: #1f2041;
-}
-.footerNavLinks-link {
-  text-decoration: none;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  /* Dark 50% */
-  color: rgba(31, 32, 65, 0.5);
-  display: inline-block;
-}
-.footerNavLinks-support a {
-  display: block;
-  white-space: nowrap;
-}
-.footerNavLinks-support a:first-child {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  /* identical to box height */
-  text-transform: uppercase;
-  /* Dark 100% */
-  color: #1f2041;
-}
-.footerNavLinks-support {
-  display: flex;
-  flex-direction: column;
-  width: 113px;
-  height: 130px;
-  margin-top: 104px;
-  margin-right: 87px;
-  justify-content: space-between;
-}
-.footerNav-subscribe {
-  display: flex;
-  flex-direction: column;
-
-  width: 260px;
-  height: 148px;
-  margin-top: 104px;
-  margin-right: 140px;
-  margin-bottom: 120px;
-}
-.footerNav-subscribe-textContainer {
-  width: 208px;
-  height: 84px;
-  margin-bottom: 20px;
-}
-.footerNav-subscribe-textContainer p {
-  display: block;
-  height: 48px;
-  width: 196px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-  /* Dark 75% */
-  color: rgba(31, 32, 65, 0.75);
-  margin: 0px;
-}
-p.subscribe {
-  height: 15px;
-  width: 208px;
-  display: block;
-  white-space: nowrap;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  /* identical to box height */
-  text-transform: uppercase;
-  /* Dark 100% */
-  color: #1f2041;
-  margin: 0px 0px 21px 0px;
-}
-.footerNav-subscribe-form {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 260px;
-  height: 44px;
-  background: #ffffff;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
-.footerNav-subscribe-form p {
-  width: 134px;
-  height: 24px;
-
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  /* identical to box height, or 171% */
-  /* Dark 25% */
-  color: rgba(31, 32, 65, 0.25);
-  margin-left: 15px;
-  margin-top: 12px;
-}
-.footerNav-subscribe-arrow-forward {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-}
-</style><div class="footerNavContainer"><div class="footerNavLogo"><img src="../../img/svg/footerTOXIN.svg" alt=""><p>Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.</p></div><nav class="footerNavLinks"><div class="footerNavLinks-navigation"><a class="footerNavLinks-link" href="#">Navigation</a><a class="footerNavLinks-link" href="#">About Us</a><a class="footerNavLinks-link" href="#">News</a><a class="footerNavLinks-link" href="#">Support</a><a class="footerNavLinks-link" href="#">Products</a></div><div class="footerNavLinks-aboutUs"><a class="footerNavLinks-link" href="#">ABOUT US</a><a class="footerNavLinks-link" href="#">Who we are</a><a class="footerNavLinks-link" href="#">Our team</a><a class="footerNavLinks-link" href="#">Careers</a><a class="footerNavLinks-link" href="#">Investors</a></div><div class="footerNavLinks-support"><a class="footerNavLinks-link" href="#">SUPPORT</a><a class="footerNavLinks-link" href="#">Documentation</a><a class="footerNavLinks-link" href="#">Community</a><a class="footerNavLinks-link" href="#">Get in Touch</a></div></nav><div class="footerNav-subscribe"><div class="footerNav-subscribe-textContainer"><p class="subscribe">Subscribe to our newsletter</p><p>Receive our latest news and <br> promotions in your inbox!</p></div><div class="footerNav-subscribe-form"><p>Your email address</p><div class="footerNav-subscribe-arrow-forward"><a class="footerNav-subscribe-arrow-forward-link" href="#"><img src="../src/assets/img/svg/arrow_forward.svg" alt=""></a></div></div></div></div></div><div class="footerCopySection"><style> .footerCopyrightContainer {
-  width: 1440px;
-  height: 70px;
-  background: #ffffff;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-  display: flex;
-  text-align: center;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.footerCopyright {
-  width: 332px;
-  height: 18px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  /* Dark 75% */
-  color: rgba(31, 32, 65, 0.75);
-  margin-left: 140px;
-  margin-top: 26px;
-  margin-bottom: 26px;
-  text-align: justify;
-  white-space: nowrap;
-}
-.footerSocialNetworksLinks {
-  display: flex;
-  text-align: center;
-  flex-direction: row;
-  margin-top: 23px;
-  margin-bottom: 23px;
-}
-.footerSocialNetworksLinks-link {
-  text-decoration: none;
-}
-.footerSocialNetworksLinks-link:nth-child(1) {
-  width: 24px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  /* Primary Gradient */
-  color: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  margin-right: 20px;
-}
-.footerSocialNetworksLinks-link:nth-child(2) {
-  width: 24px;
-  height: 24px;
-  /* identical to box height */
-  display: flex;
-  align-items: center;
-  text-align: center;
-  /* Primary Gradient */
-  margin-right: 20px;
-  color: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-}
-
-.footerSocialNetworksLinks-link:nth-child(3) {
-  width: 24px;
-  height: 24px;
-  /* identical to box height */
-  display: flex;
-  align-items: center;
-  text-align: center;
-  /* Primary Gradient */
-  color: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-  margin-right: 140px;
-}
-</style><div class="footerCopyrightContainer"><div class="footerCopyright">Copyright © 2018 Toxin UI Kit. All rights reserved.</div><nav class="footerSocialNetworksLinks"><a class="footerSocialNetworksLinks-link" href="#"> <img src="../src/assets/img/svg/twitter.svg" alt=""></a><a class="footerSocialNetworksLinks-link" href="#"> <img src="../src/assets/img/svg/facebook.svg" alt=""></a><a class="footerSocialNetworksLinks-link" href="#"> <img src="../src/assets/img/svg/instagram.svg" alt=""></a></nav></div></div><div class="footerLogoSection"><style> .footerLogoContainer {
-  width: 1440px;
-  height: 367px;
-  background: #ffffff;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.footerLogo {
-  width: 560px;
-  height: 108px;
-  margin-top: 100px;
-  margin-left: 440px;
-  margin-right: 440px;
-}
-.footerLogo img {
-  margin-left: 227px;
-  margin-right: 227px;
-}
-.footerLogo p {
-  display: block;
-  width: 560px;
-  height: 48px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-  text-align: center;
-  /* Dark 75% */
-  color: rgba(31, 32, 65, 0.75);
-  margin-top: 16px;
-}
-.footerLogoSocialNetworksLinks-link {
-  text-decoration: none;
-}
-.footerLogoSocialNetworksLinks {
-  width: 112px;
-  height: 24px;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 25px;
-}
-</style><div class="footerLogoContainer"><div class="footerLogo"><img src="../src/assets/img/svg/logoTOXIN.svg" alt=""><p>Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.</p></div><nav class="footerLogoSocialNetworksLinks"><a class="footerLogoSocialNetworksLinks-link" href="#"> <img src="../src/assets/img/svg/twitter.svg" alt=""></a><a class="footerLogoSocialNetworksLinks-link" href="#"> <img src="../src/assets/img/svg/facebook.svg" alt=""></a><a class="footerLogoSocialNetworksLinks-link" href="#"> <img src="../src/assets/img/svg/instagram.svg" alt=""></a></nav></div></div></div></section><script src="vendors~main.035f65b1fa91ca252bc5.js"></script><script src="main.0b1bcbbb3099c81cef83.js"></script></body></html></section></body></html><div class="nav_container"><a class="backward_link" href="#">Назад</a><a class="forward_link" href="#">Вперед</a></div>
+<head><link href="main.4daadc8992acb17c95ce.css" rel="stylesheet"></head>Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module build failed (from ../node_modules/pug-loader/index.js):
+  Error: D:\Учеба FSD\webpack__jquery\src\pug\UIKit\HeadersAndFooters.pug:2:1
+      1|    .container 
+    > 2|     .headerLoginSection 
+  -------^
+      3|      include modules/standardNavBar.pug 
+      4|     .headerNavigationSection 
+      5|      include modules/standardLoggedInNavBar.pug 
+  unexpected token "indent"
+  
+  - index.js:34 makeError
+    [webpack__jquery]/[pug-error]/index.js:34:13
+  
+  - index.js:56 Parser.error
+    [webpack__jquery]/[pug-parser]/index.js:56:15
+  
+  - index.js:280 Parser.parseExpr
+    [webpack__jquery]/[pug-parser]/index.js:280:14
+  
+  - index.js:115 Parser.parse
+    [webpack__jquery]/[pug-parser]/index.js:115:25
+  
+  - index.js:12 parse
+    [webpack__jquery]/[pug-parser]/index.js:12:20
+  
+  - index.js:137 Object.parse
+    [webpack__jquery]/[pug]/lib/index.js:137:11
+  
+  - index.js:54 Function.loadString [as string]
+    [webpack__jquery]/[pug-load]/index.js:54:21
+  
+  - index.js:37 
+    [webpack__jquery]/[pug-load]/index.js:37:27
+  
+  - index.js:26 walkAST
+    [webpack__jquery]/[pug-walk]/index.js:26:18
+  
+  - index.js:112 
+    [webpack__jquery]/[pug-walk]/index.js:112:20
+  
+  - Array.reduce
+  
+  - index.js:111 walkAndMergeNodes
+    [webpack__jquery]/[pug-walk]/index.js:111:18
+  
+  - index.js:40 walkAST
+    [webpack__jquery]/[pug-walk]/index.js:40:19
+  
+  - index.js:51 walkAST
+    [webpack__jquery]/[pug-walk]/index.js:51:21
+  
+  - index.js:112 
+    [webpack__jquery]/[pug-walk]/index.js:112:20
+  
+  - Array.reduce
+  
+  - index.js:111 walkAndMergeNodes
+    [webpack__jquery]/[pug-walk]/index.js:111:18
+  
+  - index.js:40 walkAST
+    [webpack__jquery]/[pug-walk]/index.js:40:19
+  
+  - index.js:51 walkAST
+    [webpack__jquery]/[pug-walk]/index.js:51:21
+  
+  - index.js:112 
+    [webpack__jquery]/[pug-walk]/index.js:112:20
+  
+  - Array.reduce
+  
+  - index.js:111 walkAndMergeNodes
+    [webpack__jquery]/[pug-walk]/index.js:111:18
+  
+  - index.js:40 walkAST
+    [webpack__jquery]/[pug-walk]/index.js:40:19
+  
+  - index.js:13 load
+    [webpack__jquery]/[pug-load]/index.js:13:10
+  
+  - index.js:55 Function.loadString [as string]
+    [webpack__jquery]/[pug-load]/index.js:55:10
+  
+  - index.js:82 compileBody
+    [webpack__jquery]/[pug]/lib/index.js:82:18
+  
+  - index.js:315 Object.exports.compileClientWithDependenciesTracked
+    [webpack__jquery]/[pug]/lib/index.js:315:16
+  
+  - index.js:361 Object.exports.compileClient
+    [webpack__jquery]/[pug]/lib/index.js:361:18
+  
+  - index.js:136 run
+    [webpack__jquery]/[pug-loader]/index.js:136:23
+  
+  - index.js:61 
+    [webpack__jquery]/[pug-loader]/index.js:61:7
+  
+  - LoaderPlugin.js:105 compilation.semaphore.acquire
+    [webpack__jquery]/[webpack]/lib/dependencies/LoaderPlugin.js:105:17
+  
+  - Semaphore.js:29 Semaphore.acquire
+    [webpack__jquery]/[webpack]/lib/util/Semaphore.js:29:4
+  
+  - LoaderPlugin.js:69 compilation.addModuleDependencies.err
+    [webpack__jquery]/[webpack]/lib/dependencies/LoaderPlugin.js:69:31
+  
+  
+  - Error: D:\Учеба FSD\webpack__jquery\src\pug\UIKit\HeadersAndFooters.pug:2:1
+  
+  - 1|    .container
+  
+  - > 2|     .headerLoginSection
+  
+  - -------^
+  
+  - 3|      include modules/standardNavBar.pug
+  
+  - 4|     .headerNavigationSection
+  
+  - 5|      include modules/standardLoggedInNavBar.pug
+  
+  - unexpected token "indent"
+  
+  - child-compiler.js:122 childCompiler.runAsChild
+    [webpack__jquery]/[html-webpack-plugin]/lib/child-compiler.js:122:18
+  
+  - Compiler.js:343 compile
+    [webpack__jquery]/[webpack]/lib/Compiler.js:343:11
+  
+  - Compiler.js:681 hooks.afterCompile.callAsync.err
+    [webpack__jquery]/[webpack]/lib/Compiler.js:681:15
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [webpack__jquery]/[tapable]/lib/Hook.js:154:20
+  
+  - Compiler.js:678 compilation.seal.err
+    [webpack__jquery]/[webpack]/lib/Compiler.js:678:31
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [webpack__jquery]/[tapable]/lib/Hook.js:154:20
+  
+  - Compilation.js:1423 hooks.optimizeAssets.callAsync.err
+    [webpack__jquery]/[webpack]/lib/Compilation.js:1423:35
+  
+</pre><script src="vendors~main.035f65b1fa91ca252bc5.js"></script><script src="main.0b1bcbbb3099c81cef83.js"></script>

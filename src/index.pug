@@ -1,44 +1,13 @@
-include ./pug/UIKit/headerUIKit.pug
-doctype html
 html(lang="en")
  head
   meta(charset="UTF-8")
   meta(name="viewport", content="width=device-width, initial-scale=1.0")
-  title UIKit
+  title FSD education
  body
-  +header
   section.colorsAndTypes
-   .container
-    .leftSide
-     .darkShade100 
-      p Dark Shade 100% #1F2041
-     .darkShade75 
-      p Dark Shade 75% #1F2041
-     .darkShade50 
-      p Dark Shade 50% #1F2041
-     .darkShade25 
-      p Dark Shade 25% #1F2041
-     .darkShade5 
-      p Dark Shade 5% #1F2041
-     .purple 
-      p Purple #BC9CFF
-     .green
-      p Green #6FCF97
-    .rightSide
-     .h1 
-      p.header H1
-      p.description This one is the sub-section or widget title
-     .h2
-      p.header H2 
-      p.description Next one is the item title inside widgets
-     .h3 
-      p.header H3
-      p.description This is a label or CTA text
-     .body
-      p.header Body
-      p.description This is the body text which is used for most of the design, like paragraphs, lists, etc.
+  include pug/UIKit/Colors.pug
   section.headersAndFooters
-   include pug/UIKit/HeadersAndFooters.pug
-.nav_container
- a(href='#' class='backward_link') Назад
- a(href='#' class='forward_link') Вперед
+  include pug/UIKit/HeadersAndFooters.pug
+ .nav_container
+  a(href='#' class='backward_link') Назад
+  a(href='#' class='forward_link') Вперед

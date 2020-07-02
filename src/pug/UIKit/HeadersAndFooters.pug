@@ -1,23 +1,12 @@
-include headerUIKit
-doctype html
-html(lang="en")
- head
-  meta(charset="UTF-8")
-  meta(name="viewport", content="width=device-width, initial-scale=1.0")
-  title UIKit Headers and Footers
-  link(rel='stylesheet', href='../../../styles/UIKit/HeadersAndFooters/headersAndFooters.scss')
- body
-  +header
-  section.headersAndFooters
-   .container_headersAndFooters
-    .headerLoginSection
-     include modules/standardNavBar.pug
-    .headerNavigationSection
-     include modules/standardLoggedInNavBar.pug
-    .footerNavigationSection
-     include modules/footerWidget.pug
-    .footerCopySection
-     include modules/footerCopyrightBar.pug
-    .footerLogoSection
-     include modules/footerCreative.pug
+.container
+ .headerLoginSection
+  include modules/standardNavBar.pug
+ .headerNavigationSection
+  include modules/standardLoggedInNavBar.pug
+ .footerNavigationSection
+  include modules/footerWidget.pug
+ .footerCopySection
+  include modules/footerCopyrightBar.pug
+ .footerLogoSection
+  include modules/footerCreative.pug
 
