@@ -1,4 +1,3 @@
-import * as $ from 'jquery';
 import * as links from './scripts/pageSelector';
 //import Post from './Post'
 //import './styles/style.css'
@@ -7,3 +6,5 @@ import * as links from './scripts/pageSelector';
 //const post = new Post('webpack jquery title');
 //import './pug/UIKit/test.pug'
 import './styles/style.scss';
+import '../node_modules/air-datepicker/dist/css/datepicker.min.css';
+import '../node_modules/air-datepicker/dist/js/datepicker.min.js';

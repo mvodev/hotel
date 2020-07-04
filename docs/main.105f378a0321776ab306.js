@@ -164,12 +164,11 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _scripts_pageSelector__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scripts/pageSelector */ "./scripts/pageSelector.js");
-/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/style.scss */ "./styles/style.scss");
-/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_style_scss__WEBPACK_IMPORTED_MODULE_2__);
-
+/* harmony import */ var _scripts_pageSelector__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scripts/pageSelector */ "./scripts/pageSelector.js");
+/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/style.scss */ "./styles/style.scss");
+/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_style_scss__WEBPACK_IMPORTED_MODULE_1__);
+!(function webpackMissingModule() { var e = new Error("Cannot find module './node_modules/air-datepicker/dist/css/datepicker.min.css'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+!(function webpackMissingModule() { var e = new Error("Cannot find module './node_modules/air-datepicker/dist/js/datepicker.min.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 
 //import Post from './Post'
 //import './styles/style.css'
@@ -177,6 +176,8 @@ __webpack_require__.r(__webpack_exports__);
 //import WebpackLogo from './assets/webpack-logo.png'
 //const post = new Post('webpack jquery title');
 //import './pug/UIKit/test.pug'
+
+
 
 
 
@@ -216,4 +217,4 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).on('DOMContentLoaded', (
 /***/ })
 
 /******/ });
-//# sourceMappingURL=main.0b1bcbbb3099c81cef83.js.map
+//# sourceMappingURL=main.105f378a0321776ab306.js.map

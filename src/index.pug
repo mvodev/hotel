@@ -1,13 +1,17 @@
+include pug/UIKit/headerUiKit.pug
 html(lang="en")
  head
   meta(charset="UTF-8")
   meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  
   title FSD education
  body
   section.colorsAndTypes
-  include pug/UIKit/Colors.pug
+  +header
+  include pug/UIKit/colors.pug
   section.headersAndFooters
-  include pug/UIKit/HeadersAndFooters.pug
- .nav_container
-  a(href='#' class='backward_link') Назад
-  a(href='#' class='forward_link') Вперед
+  +header
+  include pug/UIKit/headersAndFooters.pug
+  section.formElements
+  +header
+  include pug/UIKit/formElements.pug

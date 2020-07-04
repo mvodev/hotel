@@ -3,6 +3,7 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const webpack = require('webpack');
 
 const cssLoaders = extra => {
  const loaders = [{
@@ -40,6 +41,10 @@ module.exports = {
    }
   ),
   new CleanWebpackPlugin(),
+  new webpack.ProvidePlugin({
+   $: 'jquery',
+   jQuery: 'jquery'
+  }),
   new MiniCssExtractPlugin({
    filename: '[name].[hash].css'
   }),
