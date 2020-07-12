@@ -8,3 +8,4 @@ import * as links from './scripts/pageSelector';
 import './styles/style.scss';
 import '../node_modules/air-datepicker/dist/css/datepicker.min.css';
 import '../node_modules/air-datepicker/dist/js/datepicker.min.js';
+$('.datepicker-here').datepicker({ todayButton: true, clearButton: true });

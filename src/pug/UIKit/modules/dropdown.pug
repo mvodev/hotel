@@ -1,0 +1,113 @@
+mixin dropdown(options)
+ -
+    const {
+      label = '',
+      state = '',
+      typeDropdown = '',
+      className = '',
+      placeholder = '',
+      open = false,
+      applyBtn = false,
+      clearBtn = false
+    } = options;
+   var dropDownClassName = options.className
+   var typeDropdown = options.typeDropdown
+   dropDownClassName+=typeDropdown==="guests" ? "dropdown-input__guests" : ""
+   dropDownClassName+=typeDropdown==="date" ? "dropdown-input__date" : ""
+   dropDownClassName+=typeDropdown==="filter-date" ? "dropdown-input__filter" : ""
+   dropDownClassName+=typeDropdown==="room" ? "dropdown-input__room" : ""
+ div(class = "dropdown")
+  label= options.sign
+  div(class = dropDownClassName)
+   input(placeholder=options.placeholder)
+   div(class = "dropdown-input__img-wrapper")
+    img(src="../../assets/img/svg/expand_more.svg", alt="")
+  case type
+    when "guests"
+      div(class = "dropdown-guests")
+       div(class="dropdown-guests__adult") 
+        div взрослые 
+        div -
+        div 0
+        div +
+       div(class="dropdown-guests__child")
+        div дети
+        div -
+        div 0
+        div +
+       div(class="dropdown-guests__infant")
+        div младенцы
+        div -
+        div 0
+        div +
+       div(class="dropdown-guests__apply-button")
+        div(class= 'hidden') очистить
+        div применить
+      script(src= "../../scripts/dropDownGuests.js")
+      style
+       include ../../../styles/UIKit/FormElements/dropDownGuests.scss
+    when "room"
+      div(class= "dropdown-room")
+       div(class="dropdown-room__bedroom") 
+        div спальни
+        div -
+        div 0
+        div +
+       div(class="dropdown-room__bed")
+        div кровати
+        div -
+        div 0
+        div +
+       div(class="dropdown-room__bath")
+        div ванные комнаты
+        div -
+        div 0
+        div +
+      script(src= "../../scripts/dropDownRoom.js")
+      style
+       include ../../../styles/UIKitStyles/formElements/dropDownRoom.scss
+    when "date"
+      div(class= "dropdown-date")
+       div(class= "dropdown-date__prevmonth")
+        img(src="../../img/svg/arrow_back.svg", alt="")
+       div(class= "dropdown-date__month")
+       div(class= "dropdown-date__futuremonth")
+        img(src="../../img/svg/arrow_forward.svg", alt="")
+       div(class= "dropdown-date__weekdays")
+        each val in options.dayweek
+         div= val
+       div(class= "dropdown-date__calendar")
+        - for (var x = 0; x < MIN_SHOWN_DATES; x++)
+         div
+       div(class="dropdown-date__buttons")
+        div(class= 'hidden') очистить
+        div применить
+      script(src= "../../scripts/dropDownDate.js")
+      style
+       include ../../../styles/UIKitStyles/formElements/dropDownDate.scss
+    when "filter-date"
+      div(class= "dropdown-filter-date")
+       div(class= "dropdown-filter-date__prevmonth")
+        img(src="../../img/svg/arrow_back.svg", alt="")
+       div(class= "dropdown-filter-date__month")
+       div(class= "dropdown-filter-date__futuremonth")
+        img(src="../../img/svg/arrow_forward.svg", alt="")
+       div(class= "dropdown-filter-date__weekdays")
+        each val in options.dayweek
+         div= val
+       div(class= "dropdown-filter-date__calendar")
+        - for (var x = 0; x < MIN_SHOWN_DATES; x++)
+         div
+       div(class="dropdown-filter-date__buttons")
+        div(class= 'hidden') очистить
+        div применить
+      script(src= "../../scripts/dropDownFilterDate.js")
+      style
+       include ../../../styles/UIKitStyles/formElements/dropDownFilterDate.scss
+
+
+
+
+label(for='datepicker-here') Date Dropdown
+ input(type='text' class='datepicker-here')
+style 

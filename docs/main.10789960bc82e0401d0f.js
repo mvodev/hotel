@@ -164,7 +164,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _scripts_pageSelector__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scripts/pageSelector */ "./scripts/pageSelector.js");
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _scripts_pageSelector__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scripts/pageSelector */ "./scripts/pageSelector.js");
 /* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/style.scss */ "./styles/style.scss");
 /* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_style_scss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/air-datepicker/dist/css/datepicker.min.css */ "../node_modules/air-datepicker/dist/css/datepicker.min.css");
@@ -181,7 +181,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+$('.datepicker-here').datepicker({ inline: true });
 
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 
@@ -219,4 +221,4 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).on('DOMContentLoaded', (
 /***/ })
 
 /******/ });
-//# sourceMappingURL=main.1efe67de879a2ff9d30d.js.map
+//# sourceMappingURL=main.10789960bc82e0401d0f.js.map
