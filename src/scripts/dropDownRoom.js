@@ -1,5 +1,5 @@
 ///////////////////////Constants////////////////////////////////////////////
-let counterBedRoom = (counterBed = 0);
+let counterBedRoom = (counterBed = 2);
 let counterBath = 0;
 const dropDownInputRoom = document.querySelector(".dropdown-input__room");
 const dropDownInputFieldRoom = document.querySelector(

@@ -171,6 +171,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _node_modules_air_datepicker_dist_js_datepicker_min_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../node_modules/air-datepicker/dist/js/datepicker.min.js */ "../node_modules/air-datepicker/dist/js/datepicker.min.js");
 /* harmony import */ var _node_modules_air_datepicker_dist_js_datepicker_min_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_air_datepicker_dist_js_datepicker_min_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _src_scripts_dropDownGuests__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../src/scripts/dropDownGuests */ "./scripts/dropDownGuests.js");
+/* harmony import */ var _src_scripts_dropDownGuests__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_src_scripts_dropDownGuests__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _src_scripts_dropDownRoom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../src/scripts/dropDownRoom */ "./scripts/dropDownRoom.js");
+/* harmony import */ var _src_scripts_dropDownRoom__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_src_scripts_dropDownRoom__WEBPACK_IMPORTED_MODULE_5__);
 
 //import Post from './Post'
 //import './styles/style.css'
@@ -181,9 +185,279 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
 $('.datepicker-here').datepicker({ todayButton: true, clearButton: true });
 
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./scripts/dropDownGuests.js":
+/*!***********************************!*\
+  !*** ./scripts/dropDownGuests.js ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+///////////////////////Constants////////////////////////////////////////////
+let counterAdult = (counterChild = counterInfant = 0);
+const dropDownInputGuests = document.querySelector(".dropdown-input__guests");
+const dropDownInputFieldGuests = document.querySelector(
+  ".dropdown-input__guests input"
+);
+const counterAdultValueTag = document.querySelector(
+  ".dropdown-guests__adult div:nth-child(3)"
+);
+const counterAdultValueDecrease = document.querySelector(
+  ".dropdown-guests__adult div:nth-child(2)"
+);
+const counterAdultValueIncrease = document.querySelector(
+  ".dropdown-guests__adult div:nth-child(4)"
+);
+const counterChildValueTag = document.querySelector(
+  ".dropdown-guests__child div:nth-child(3)"
+);
+const counterChildValueDecreaseTag = document.querySelector(
+  ".dropdown-guests__child div:nth-child(2)"
+);
+const counterChildValueIncreaseTag = document.querySelector(
+  ".dropdown-guests__child div:nth-child(4)"
+);
+const counterInfantValueTag = document.querySelector(
+  ".dropdown-guests__infant div:nth-child(3)"
+);
+const counterInfantValueDecrease = document.querySelector(
+  ".dropdown-guests__infant div:nth-child(2)"
+);
+const counterInfantValueIncrease = document.querySelector(
+  ".dropdown-guests__infant div:nth-child(4)"
+);
+const eraseButton = document.querySelector(
+  ".dropdown-guests__apply-button div:nth-child(1)"
+);
+const applyButton = document.querySelector(
+  ".dropdown-guests__apply-button div:nth-child(2)"
+);
+
+/////////////////////////Listeners//////////////////////////////////////////////
+dropDownInputGuests.addEventListener("click", handler);
+counterAdultValueDecrease.addEventListener("click", () =>
+  changeCounterGuests("decrease", "adult")
+);
+counterAdultValueIncrease.addEventListener("click", () =>
+  changeCounterGuests("increase", "adult")
+);
+counterChildValueDecreaseTag.addEventListener("click", () =>
+  changeCounterGuests("decrease", "child")
+);
+counterChildValueIncreaseTag.addEventListener("click", () =>
+  changeCounterGuests("increase", "child")
+);
+counterInfantValueDecrease.addEventListener("click", () =>
+  changeCounterGuests("decrease", "infant")
+);
+counterInfantValueIncrease.addEventListener("click", () =>
+  changeCounterGuests("increase", "infant")
+);
+applyButton.addEventListener("click", () =>
+  showResultInDropDownGuests("apply")
+);
+eraseButton.addEventListener("click", () =>
+  showResultInDropDownGuests("erase")
+);
+//////////////////////Handlers//////////////////////////////////////////
+function handler(event) {
+  document
+    .getElementsByClassName("dropdown-guests")[0]
+    .classList.toggle("show");
+}
+function changeCounterGuests(howChange, changeTarget) {
+  console.log("inside change counter guests");
+  if (changeTarget === "adult") {
+    if (howChange === "increase") {
+      counterAdultValueTag.innerText++;
+      counterAdult++;
+    } else {
+      if (counterAdultValueTag.innerText > 0) {
+        counterAdultValueTag.innerText--;
+        counterAdult--;
+      }
+    }
+  } else if (changeTarget === "child") {
+    if (howChange === "increase") {
+      counterChildValueTag.innerText++;
+      counterChild++;
+    } else {
+      if (counterChildValueTag.innerText > 0) {
+        counterChildValueTag.innerText--;
+        counterChild--;
+      }
+    }
+  } else {
+    if (howChange === "increase") {
+      counterInfantValueTag.innerText++;
+      counterInfant++;
+    } else {
+      if (counterInfantValueTag.innerText > 0) {
+        counterInfantValueTag.innerText--;
+        counterInfant--;
+      }
+    }
+  }
+}
+function showResultInDropDownGuests(action) {
+  if (action === "apply") {
+    let result = "";
+    let counterGuests = counterInfant + counterChild + counterAdult;
+    if (
+      counterGuests === 1 ||
+      (counterGuests > 20 && (counterGuests - 1) % 10 === 0)
+    ) {
+      result += counterGuests + " гость";
+    } else if (counterGuests > 1 && counterGuests < 5) {
+      result += counterGuests + " гостя";
+    } else if (counterGuests >= 5) {
+      result += counterGuests + " гостей";
+    }
+    dropDownInputFieldGuests.value = result;
+    dropDownResult = result;
+    if (result != "") eraseButton.classList.remove("hidden");
+    result = "";
+  } else if (action === "erase") {
+    dropDownResult = "";
+    counterAdult = counterChild = counterInfant = 0;
+    dropDownInputFieldGuests.value = dropDownResult;
+    counterAdultValueTag.innerText = 0;
+    counterChildValueTag.innerText = 0;
+    counterInfantValueTag.innerText = 0;
+    eraseButton.classList.add("hidden");
+  }
+}
+
+
+/***/ }),
+
+/***/ "./scripts/dropDownRoom.js":
+/*!*********************************!*\
+  !*** ./scripts/dropDownRoom.js ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+///////////////////////Constants////////////////////////////////////////////
+let counterBedRoom = (counterBed = 0);
+let counterBath = 0;
+const dropDownInputRoom = document.querySelector(".dropdown-input__room");
+const dropDownInputFieldRoom = document.querySelector(
+  ".dropdown-input__room input"
+);
+const counterBadRoomValueTag = document.querySelector(
+  ".dropdown-room__bedroom div:nth-child(3)"
+);
+const counterBadRoomValueDecrease = document.querySelector(
+  ".dropdown-room__bedroom div:nth-child(2)"
+);
+const counterBadRoomValueIncrease = document.querySelector(
+  ".dropdown-room__bedroom div:nth-child(4)"
+);
+const counterBadValueTag = document.querySelector(
+  ".dropdown-room__bed div:nth-child(3)"
+);
+const counterBadValueDecreaseTag = document.querySelector(
+  ".dropdown-room__bed div:nth-child(2)"
+);
+const counterBadValueIncreaseTag = document.querySelector(
+  ".dropdown-room__bed div:nth-child(4)"
+);
+const counterBathValueTag = document.querySelector(
+  ".dropdown-room__bath div:nth-child(3)"
+);
+const counterBathValueDecrease = document.querySelector(
+  ".dropdown-room__bath div:nth-child(2)"
+);
+const counterBathValueIncrease = document.querySelector(
+  ".dropdown-room__bath div:nth-child(4)"
+);
+
+/////////////////////////Listeners//////////////////////////////////////////////
+dropDownInputRoom.addEventListener("click", handler);
+counterBadRoomValueIncrease.addEventListener("click", () =>
+  changeCounter("increase", "badroom")
+);
+counterBadRoomValueDecrease.addEventListener("click", () =>
+  changeCounter("decrease", "badroom")
+);
+counterBadValueDecreaseTag.addEventListener("click", () =>
+  changeCounter("decrease", "bad")
+);
+counterBadValueIncreaseTag.addEventListener("click", () =>
+  changeCounter("increase", "bad")
+);
+counterBathValueDecrease.addEventListener("click", () =>
+  changeCounter("decrease", "bath")
+);
+counterBathValueIncrease.addEventListener("click", () =>
+  changeCounter("increase", "bath")
+);
+//////////////////////Handlers//////////////////////////////////////////
+function handler(event) {
+  document.getElementsByClassName("dropdown-room")[0].classList.toggle("show");
+  showResultInDropDown();
+}
+function changeCounter(howChange, changeTarget) {
+  if (changeTarget === "badroom") {
+    if (howChange === "increase") {
+      counterBadRoomValueTag.innerText++;
+      counterBedRoom++;
+    } else {
+      if (counterBadRoomValueTag.innerText > 0) {
+        counterBadRoomValueTag.innerText--;
+        counterBedRoom--;
+      }
+    }
+  } else if (changeTarget === "bad") {
+    if (howChange === "increase") {
+      counterBadValueTag.innerText++;
+      counterBed++;
+    } else {
+      if (counterBadValueTag.innerText > 0) {
+        counterBadValueTag.innerText--;
+        counterBed--;
+      }
+    }
+  } else {
+    if (howChange === "increase") {
+      counterBathValueTag.innerText++;
+      counterBath++;
+    } else {
+      if (counterBathValueTag.innerText > 0) {
+        counterBathValueTag.innerText--;
+        counterBath--;
+      }
+    }
+  }
+}
+function showResultInDropDown() {
+  let result = "";
+  if (counterBedRoom === 1) {
+    result += counterBedRoom + " спальня ";
+  } else if (counterBedRoom > 1) {
+    result += counterBedRoom + " спальни ";
+  }
+  if (counterBed === 1) {
+    result += counterBed + " кровать ";
+  } else if (counterBed > 1) {
+    result += counterBed + " кровати ";
+  }
+  if (counterBath === 1) {
+    result += counterBath + " ванная ";
+  } else if (counterBath > 1) {
+    result += counterBath + " ванных ";
+  }
+  dropDownInputFieldRoom.value = result;
+}
+
 
 /***/ }),
 
@@ -221,4 +495,4 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).on('DOMContentLoaded', (
 /***/ })
 
 /******/ });
-//# sourceMappingURL=main.d8db394fe7115a418da4.js.map
+//# sourceMappingURL=main.8197a3fac67a87e27e2e.js.map
