@@ -1,4 +1,3 @@
-import * as links from './scripts/pageSelector';
 //import Post from './Post'
 //import './styles/style.css'
 //import './styles/extra.scss'

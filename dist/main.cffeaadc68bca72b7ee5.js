@@ -164,18 +164,16 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _scripts_pageSelector__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./scripts/pageSelector */ "./scripts/pageSelector.js");
-/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/style.scss */ "./styles/style.scss");
-/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_style_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/air-datepicker/dist/css/datepicker.min.css */ "../node_modules/air-datepicker/dist/css/datepicker.min.css");
-/* harmony import */ var _node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_air_datepicker_dist_js_datepicker_min_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../node_modules/air-datepicker/dist/js/datepicker.min.js */ "../node_modules/air-datepicker/dist/js/datepicker.min.js");
-/* harmony import */ var _node_modules_air_datepicker_dist_js_datepicker_min_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_air_datepicker_dist_js_datepicker_min_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _src_scripts_dropDownGuests__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../src/scripts/dropDownGuests */ "./scripts/dropDownGuests.js");
-/* harmony import */ var _src_scripts_dropDownGuests__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_src_scripts_dropDownGuests__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _src_scripts_dropDownRoom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../src/scripts/dropDownRoom */ "./scripts/dropDownRoom.js");
-/* harmony import */ var _src_scripts_dropDownRoom__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_src_scripts_dropDownRoom__WEBPACK_IMPORTED_MODULE_5__);
-
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/style.scss */ "./styles/style.scss");
+/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_style_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/air-datepicker/dist/css/datepicker.min.css */ "../node_modules/air-datepicker/dist/css/datepicker.min.css");
+/* harmony import */ var _node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_air_datepicker_dist_js_datepicker_min_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/air-datepicker/dist/js/datepicker.min.js */ "../node_modules/air-datepicker/dist/js/datepicker.min.js");
+/* harmony import */ var _node_modules_air_datepicker_dist_js_datepicker_min_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_air_datepicker_dist_js_datepicker_min_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _src_scripts_dropDownGuests__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/scripts/dropDownGuests */ "./scripts/dropDownGuests.js");
+/* harmony import */ var _src_scripts_dropDownGuests__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_src_scripts_dropDownGuests__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _src_scripts_dropDownRoom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../src/scripts/dropDownRoom */ "./scripts/dropDownRoom.js");
+/* harmony import */ var _src_scripts_dropDownRoom__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_src_scripts_dropDownRoom__WEBPACK_IMPORTED_MODULE_4__);
 //import Post from './Post'
 //import './styles/style.css'
 //import './styles/extra.scss'
@@ -461,28 +459,6 @@ function showResultInDropDown() {
 
 /***/ }),
 
-/***/ "./scripts/pageSelector.js":
-/*!*********************************!*\
-  !*** ./scripts/pageSelector.js ***!
-  \*********************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-
-jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).on('DOMContentLoaded', () => {
-
- jquery__WEBPACK_IMPORTED_MODULE_0___default()('.backward_link').on('click', () => {
-  console.log('inside');
- });
-
-});
-
-/***/ }),
-
 /***/ "./styles/style.scss":
 /*!***************************!*\
   !*** ./styles/style.scss ***!
@@ -495,4 +471,4 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).on('DOMContentLoaded', (
 /***/ })
 
 /******/ });
-//# sourceMappingURL=main.671585b8555f6f72c87c.js.map
+//# sourceMappingURL=main.cffeaadc68bca72b7ee5.js.map

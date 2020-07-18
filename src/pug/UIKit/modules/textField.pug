@@ -1,0 +1,8 @@
+mixin textfield(options)
+ -
+   var textfieldClassName = "txtField"
+   textfieldClassName+=options.isFocused ? " txtField-focused" : ""
+   textfieldClassName+=options.isMasked ? " txtField-masked" : ""
+ div(class = textfieldClassName)
+  label(for="textField")= options.sign
+  input(type=options.type id="textField" placeholder=options.placeholder)
