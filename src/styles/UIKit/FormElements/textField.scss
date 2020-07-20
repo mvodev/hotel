@@ -4,7 +4,6 @@
 }
 .txtField label {
   white-space: nowrap;
-  width: 72px;
   height: 15px;
   font-family: Montserrat;
   font-style: normal;
@@ -14,7 +13,7 @@
   /* identical to box height */
   text-transform: uppercase;
   /* Dark 100% */
-  color: #1f2041;
+  color: $darkShade100;
   margin-bottom: 5px;
 }
 .txtField input {
@@ -25,11 +24,11 @@
   line-height: 18px;
   /* identical to box height, or 129% */
   /* Dark 25% */
-  color: rgba(31, 32, 65, 0.25);
+  color: $darkShade25;
   width: 320px;
   height: 44px;
-  background: #ffffff;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  background: $white;
+  border: 1px solid $darkShade25;
   box-sizing: border-box;
   border-radius: 4px;
   padding-left: 15px;
@@ -40,8 +39,26 @@
   line-height: 24px;
   /* identical to box height, or 171% */
   /* Dark 75% */
-  color: rgba(31, 32, 65, 0.75);
+  color: $darkShade75;
   background: #ffffff;
   /* Dark 50% */
-  border: 1px solid rgba(31, 32, 65, 0.5);
+  border: 1px solid $darkShade50;
+}
+.txtField--wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 320px;
+}
+.txtField--wrapper p{
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+text-align: right;
+text-transform: uppercase;
+/* Dark 50% */
+color: $darkShade50;
 }

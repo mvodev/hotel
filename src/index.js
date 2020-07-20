@@ -12,7 +12,7 @@ import '../src/scripts/dropDownRoom'
 import 'cleave.js'
 //import 'air-datepicker'
 $('.datepicker-here').datepicker({ todayButton: true, clearButton: true });
-var cleave = new Cleave('.input-date', {
+var cleave = new Cleave('.txtField-input-date', {
  date: true,
  delimiter: '.',
  datePattern: ['d', 'm', 'Y']
