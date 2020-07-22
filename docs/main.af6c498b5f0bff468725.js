@@ -166,15 +166,19 @@
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/style.scss */ "./styles/style.scss");
 /* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_style_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/air-datepicker/dist/css/datepicker.min.css */ "../node_modules/air-datepicker/dist/css/datepicker.min.css");
-/* harmony import */ var _node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_air_datepicker_dist_js_datepicker_min_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/air-datepicker/dist/js/datepicker.min.js */ "../node_modules/air-datepicker/dist/js/datepicker.min.js");
-/* harmony import */ var _node_modules_air_datepicker_dist_js_datepicker_min_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_air_datepicker_dist_js_datepicker_min_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _src_scripts_dropDownGuests__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/scripts/dropDownGuests */ "./scripts/dropDownGuests.js");
-/* harmony import */ var _src_scripts_dropDownGuests__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_src_scripts_dropDownGuests__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _src_scripts_dropDownRoom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../src/scripts/dropDownRoom */ "./scripts/dropDownRoom.js");
-/* harmony import */ var _src_scripts_dropDownRoom__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_src_scripts_dropDownRoom__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
+/* harmony import */ var _node_modules_ion_rangeslider_css_ion_rangeSlider_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/ion-rangeslider/css/ion.rangeSlider.min.css */ "../node_modules/ion-rangeslider/css/ion.rangeSlider.min.css");
+/* harmony import */ var _node_modules_ion_rangeslider_css_ion_rangeSlider_min_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_ion_rangeslider_css_ion_rangeSlider_min_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/air-datepicker/dist/css/datepicker.min.css */ "../node_modules/air-datepicker/dist/css/datepicker.min.css");
+/* harmony import */ var _node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_air_datepicker_dist_js_datepicker_min_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../node_modules/air-datepicker/dist/js/datepicker.min.js */ "../node_modules/air-datepicker/dist/js/datepicker.min.js");
+/* harmony import */ var _node_modules_air_datepicker_dist_js_datepicker_min_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_air_datepicker_dist_js_datepicker_min_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _src_scripts_dropDownGuests__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../src/scripts/dropDownGuests */ "./scripts/dropDownGuests.js");
+/* harmony import */ var _src_scripts_dropDownGuests__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_src_scripts_dropDownGuests__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _src_scripts_dropDownRoom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../src/scripts/dropDownRoom */ "./scripts/dropDownRoom.js");
+/* harmony import */ var _src_scripts_dropDownRoom__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_src_scripts_dropDownRoom__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
+/* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ion-rangeslider */ "../node_modules/ion-rangeslider/js/ion.rangeSlider.js");
+/* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(ion_rangeslider__WEBPACK_IMPORTED_MODULE_7__);
 //import Post from './Post'
 //import './styles/style.css'
 //import './styles/extra.scss'
@@ -187,12 +191,45 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
 //import 'air-datepicker'
 $('.datepicker-here').datepicker({ todayButton: true, clearButton: true });
 var cleave = new Cleave('.txtField-input-date', {
  date: true,
  delimiter: '.',
  datePattern: ['d', 'm', 'Y']
+});
+$("#example_id").ionRangeSlider({
+ type: "double",
+ min: 5000,
+ max: 10000,
+ from: 5000,
+ to: 10000,
+ onStart: function (data) {
+  // Called right after range slider instance initialised
+
+  console.log(data.input);        // jQuery-link to input
+  console.log(data.slider);       // jQuery-link to range sliders container
+  console.log(data.min);          // MIN value
+  console.log(data.max);          // MAX values
+  console.log(data.from);         // FROM value
+  console.log(data.from_percent); // FROM value in percent
+  console.log(data.from_value);   // FROM index in values array (if used)
+  console.log(data.to);           // TO value
+  console.log(data.to_percent);   // TO value in percent
+  console.log(data.to_value);     // TO index in values array (if used)
+  console.log(data.min_pretty);   // MIN prettified (if used)
+  console.log(data.max_pretty);   // MAX prettified (if used)
+  console.log(data.from_pretty);  // FROM prettified (if used)
+  console.log(data.to_pretty);    // TO prettified (if used)
+ },
+
+ onChange: function (data) {
+  // Called every time handle position is changed
+
+  console.log(data.from);
+ }
 });
 
 
@@ -480,4 +517,4 @@ function showResultInDropDown() {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=main.404818b65674138bd29e.js.map
+//# sourceMappingURL=main.af6c498b5f0bff468725.js.map
