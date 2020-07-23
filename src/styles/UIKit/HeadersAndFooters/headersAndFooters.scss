@@ -1,6 +1,11 @@
 @import "../../common/reset.scss";
 @import "../../common/fonts.scss";
 @import '../../common/constants.scss';
+@import './footerCopyrightBar.scss';
+@import './footerCreative.scss';
+@import './footerWidget.scss';
+@import './standardLoggedInNavBar.scss';
+@import './standardNavBar.scss';
 
 .headers-and-footers-container {
   width: 1440px;
