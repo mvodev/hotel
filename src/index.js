@@ -21,10 +21,10 @@ var cleave = new Cleave('.txtField-input-date', {
 });
 $(".range-slider").ionRangeSlider({
  type: "double",
- min: 5000,
- max: 10000,
- from: 5000,
- to: 10000,
+ min: 0,
+ max: 266,
+ from: 72,
+ to: 162,
  onChange: function (data) {
   // Called every time handle position is changed
   console.log(data.from);

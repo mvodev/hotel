@@ -5,19 +5,7 @@ width: 266px;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-}
-
-.range-slider__label-wrapper p{
-height: 15px;
-font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 15px;
-/* identical to box height */
-text-align: right;
-/* Dark 50% */
-color: $darkShade50;
+margin-bottom: -2px;
 }
 .range-slider__label-wrapper p:first-child{
 font-family: Montserrat;
@@ -29,7 +17,23 @@ line-height: 15px;
 text-transform: uppercase;
 /* Dark 100% */
 color: $darkShade100;
+
 }
+.range-slider__label-wrapper p:nth-child(2){
+height: 15px;
+width: 102px;
+text-align: justify;
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+text-align: right;
+/* Dark 50% */
+color: $darkShade50;
+}
+
 .irs--flat .irs-line{
 background-color: $white;
 border: 1px solid $darkShade25;
