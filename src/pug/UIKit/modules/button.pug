@@ -1,0 +1,16 @@
+mixin button(options)
+ - var buttonClassName='button'
+ - buttonClassName+=options.withArrow ? ' button-with-arrow' : ''
+ - buttonClassName+=options.color==='dark' ? ' button-dark' : ''
+ - buttonClassName+=options.color==='dark50' ? ' button-dark50' : ''
+ - buttonClassName+=options.color==='white' ? ' button-white' : ''
+ - buttonClassName+=options.color==='white50' ? ' button-white50' : ''
+ - buttonClassName+=options.color==='transparent' ? ' button-transparent' : ''
+ - buttonClassName+=options.color==='transparent50' ? ' button-transparent50' : ''
+   if options.withArrow
+    button(class=buttonClassName value=options.label)
+     img(src="../src/assets/img/svg/arrow_forward.svg", alt="")
+     span=options.label
+   else
+    button(class=buttonClassName value=options.label)
+     span=options.label

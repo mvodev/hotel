@@ -1,0 +1,48 @@
+.button{
+ width: 99px;
+height: 44px;
+/* Primary Gradient */
+border-radius: 22px;
+border: none;
+}
+.button-dark{
+ background: $buttonColor;
+}
+.button-dark50{
+ background: $buttonColor;
+ opacity: 0.5;
+}
+.button-dark span,
+.button-dark50 span{
+ font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+text-transform: uppercase;
+color: $white;
+}
+.button-white,
+.button-white50{
+background: none;
+border:2px solid $purple;
+}
+.button-white50{
+ opacity: 0.5;
+}
+.button-white span,
+.button-white50 span{
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+text-transform: uppercase;
+/* Primary Color */
+color:$purple;
+}
+.button-white50 span{
+ opacity: 1.0;
+}

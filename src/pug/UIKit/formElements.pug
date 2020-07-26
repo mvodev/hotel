@@ -1,6 +1,7 @@
 include modules/dropdown.pug
 include modules/textField.pug
 include modules/rangeSlider.pug
+include modules/button.pug
 +dropdown({label:"Dropdown",placeholder:"Сколько гостей",typeDropdown:'guests',isExpanded:false})
 +dropdown({label:"Dropdown",placeholder:"2 спальни,2 кровати...",typeDropdown:'room'})
 +textField({isMasked:true,placeholder:'ДД.ММ.ГГГГ',label:'Masked Text Field'})
@@ -8,3 +9,7 @@ include modules/rangeSlider.pug
 +textField({isFocused:true,placeholder:'This is pretty awesome',label:'Text Field'})
 +textField({isSubscription:true,placeholder:'Email',label:'Subscription Text Field'})
 +rangeSlider({label:'RANGE SLIDER'})
++button({label:'CLICK ME',withArrow:false,color:'dark'})
++button({label:'CLICK ME',withArrow:false,color:'dark50'})
++button({label:'CLICK ME',withArrow:false,color:'white'})
++button({label:'CLICK ME',withArrow:false,color:'white50'})
