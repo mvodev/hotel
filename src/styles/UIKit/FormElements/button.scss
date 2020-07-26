@@ -4,6 +4,7 @@ height: 44px;
 /* Primary Gradient */
 border-radius: 22px;
 border: none;
+cursor: pointer;
 }
 .button-dark{
  background: $buttonColor;
@@ -23,16 +24,17 @@ line-height: 15px;
 text-transform: uppercase;
 color: $white;
 }
-.button-white,
-.button-white50{
+.button-white{
 background: none;
 border:2px solid $purple;
 }
 .button-white50{
- opacity: 0.5;
+ background: none;
+ border:2px solid rgba($color: $purple, $alpha: 0.5);
 }
 .button-white span,
-.button-white50 span{
+.button-white50 span,
+.button-transparent span{
 font-family: Montserrat;
 font-style: normal;
 font-weight: bold;
@@ -43,6 +45,38 @@ text-transform: uppercase;
 /* Primary Color */
 color:$purple;
 }
-.button-white50 span{
- opacity: 1.0;
+.button-transparent,
+.button-transparent50{
+ border: none;
+ background: none;
+}
+.button-transparent50 span{
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+text-transform: uppercase;
+color: rgba(31, 32, 65, 0.5);
+}
+.button-with-arrow{
+ width: 320px;
+height: 44px;
+/* Primary Gradient */
+background: $buttonColor;
+}
+.button-with-arrow span{
+ font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+text-align: center;
+text-transform: uppercase;
+color: $white;
+}
+.button-with-arrow img{
+ z-index: 5;
 }

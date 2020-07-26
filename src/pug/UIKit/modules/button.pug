@@ -8,9 +8,9 @@ mixin button(options)
  - buttonClassName+=options.color==='transparent' ? ' button-transparent' : ''
  - buttonClassName+=options.color==='transparent50' ? ' button-transparent50' : ''
    if options.withArrow
-    button(class=buttonClassName value=options.label)
-     img(src="../src/assets/img/svg/arrow_forward.svg", alt="")
+    button(class=buttonClassName)
      span=options.label
+     img(src="../src/assets/img/svg/arrow_forward.svg", alt="")
    else
-    button(class=buttonClassName value=options.label)
+    button(class=buttonClassName)
      span=options.label
