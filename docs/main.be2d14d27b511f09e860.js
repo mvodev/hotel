@@ -200,7 +200,7 @@ var cleave = new Cleave('.txtField-input-date', {
  delimiter: '.',
  datePattern: ['d', 'm', 'Y']
 });
-$(".range-slider").ionRangeSlider({
+$('.range-slider').ionRangeSlider({
  type: "double",
  min: 0,
  max: 266,
@@ -208,12 +208,14 @@ $(".range-slider").ionRangeSlider({
  to: 162,
  onChange: function (data) {
   // Called every time handle position is changed
-  console.log(data.from);
-  console.log(data.to);
+  $('.range-slider__label-wrapper p:nth-child(2)').
+   html(data.from + '<span class="rub">i</span>' + data.to + '<span class="rub">i</span>');
  }
 });
 
 
+
+// 5 000<span class='rub'>i</span> - 10 000<span class='rub'>i</span>
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
@@ -498,4 +500,4 @@ function showResultInDropDown() {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=main.7103cfbb6d51c97e93d0.js.map
+//# sourceMappingURL=main.be2d14d27b511f09e860.js.map
