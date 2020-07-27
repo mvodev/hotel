@@ -10,7 +10,8 @@ mixin button(options)
    if options.withArrow
     button(class=buttonClassName)
      span=options.label
-     img(src="../src/assets/img/svg/arrow_forward.svg", alt="")
+     img(src="../src/assets/img/svg/arrow_forward.svg", alt="",height=44,width=44,
+     stroke="white")
    else
     button(class=buttonClassName)
      span=options.label
