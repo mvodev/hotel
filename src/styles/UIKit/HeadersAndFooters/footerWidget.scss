@@ -1,7 +1,7 @@
 .footerNavContainer {
   width: 1440px;
   height: 372px;
-  background: #ffffff;
+  background: $white;
   box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
   display: flex;
   flex-direction: row;
@@ -30,7 +30,7 @@
   line-height: 24px;
   /* or 171% */
   /* Dark 75% */
-  color: rgba(31, 32, 65, 0.75);
+  color: $darkShade75;
 }
 .footerNavLinks {
   display: flex;
@@ -57,7 +57,7 @@
   /* identical to box height */
   text-transform: uppercase;
   /* Dark 100% */
-  color: #1f2041;
+  color: $darkShade100;
 }
 .footerNavLinks-navigation a:nth-child(2) {
   width: 64px;
@@ -68,7 +68,7 @@
   font-size: 14px;
   line-height: 17px;
   /* Dark 50% */
-  color: rgba(31, 32, 65, 0.5);
+  color: $darkShade50;
 }
 .footerNavLinks-aboutUs a {
   display: block;
@@ -92,7 +92,7 @@
   /* identical to box height */
   text-transform: uppercase;
   /* Dark 100% */
-  color: #1f2041;
+  color: $darkShade100;
 }
 .footerNavLinks-link {
   text-decoration: none;
@@ -102,7 +102,7 @@
   font-size: 14px;
   line-height: 17px;
   /* Dark 50% */
-  color: rgba(31, 32, 65, 0.5);
+  color: $darkShade50;
   display: inline-block;
 }
 .footerNavLinks-support a {
@@ -117,7 +117,7 @@
   /* identical to box height */
   text-transform: uppercase;
   /* Dark 100% */
-  color: #1f2041;
+  color: $darkShade100;
 }
 .footerNavLinks-support {
   display: flex;
@@ -154,7 +154,7 @@
   line-height: 24px;
   /* or 171% */
   /* Dark 75% */
-  color: rgba(31, 32, 65, 0.75);
+  color: $darkShade75;
   margin: 0px;
 }
 p.subscribe {
@@ -170,7 +170,7 @@ p.subscribe {
   /* identical to box height */
   text-transform: uppercase;
   /* Dark 100% */
-  color: #1f2041;
+  color: $darkShade100;
   margin: 0px 0px 21px 0px;
 }
 .footerNav-subscribe-form {
@@ -179,8 +179,8 @@ p.subscribe {
   justify-content: space-between;
   width: 260px;
   height: 44px;
-  background: #ffffff;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  background: $white;
+  border: 1px solid $darkShade25;
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -196,7 +196,7 @@ p.subscribe {
   line-height: 24px;
   /* identical to box height, or 171% */
   /* Dark 25% */
-  color: rgba(31, 32, 65, 0.25);
+  color: $darkShade25;
   margin-left: 15px;
   margin-top: 12px;
 }
