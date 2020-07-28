@@ -40,6 +40,18 @@ module.exports = {
     template: './index.pug'
    }
   ),
+  new HTMLWebpackPlugin(
+   {
+    template: './pug/UIKit/UIKit.pug',
+    filename: 'UIKit.html',
+   }
+  ),
+  new HTMLWebpackPlugin(
+   {
+    template: './pug/Website/site.pug',
+    filename: 'site.html',
+   }
+  ),
   new CleanWebpackPlugin(),
   new webpack.ProvidePlugin({
    $: 'jquery',

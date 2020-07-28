@@ -4,5 +4,16 @@
 @import './UIKit/Colors/styleUIKitColors.scss';
 @import './UIKit/HeadersAndFooters/headersAndFooters.scss';
 @import './UIKit/FormElements/formElements.scss';
+.main-container{
+ background-color: $grey;
+}
+.UIKit a{
+ color: red;
+ display: block;
+}
+.site a{
+ color: green;
+ display: block;
+}
 
 

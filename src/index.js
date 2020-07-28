@@ -8,18 +8,14 @@ import './styles/style.scss';
 import '../node_modules/ion-rangeslider/css/ion.rangeSlider.min.css'
 import '../node_modules/air-datepicker/dist/css/datepicker.min.css';
 import '../node_modules/air-datepicker/dist/js/datepicker.min.js';
-import '../src/scripts/dropDownGuests'
-import '../src/scripts/dropDownRoom'
+//import '../src/scripts/dropDownGuests'
+//import '../src/scripts/dropDownRoom'
 import '../src/scripts/rangeSlider'
-import 'cleave.js'
+
 
 //import 'air-datepicker'
 $('.datepicker-here').datepicker({ todayButton: true, clearButton: true });
-var cleave = new Cleave('.txtField-input-date', {
- date: true,
- delimiter: '.',
- datePattern: ['d', 'm', 'Y']
-});
+
 
 
 

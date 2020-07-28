@@ -33,6 +33,7 @@ mixin dropdown(options)
        div(class="dropdown-guests__apply-button")
         div(class= 'hidden') очистить
         div применить
+      script(src= "../src/scripts/dropDownGuests.js")
     when "room"
       div(class= "dropdown-room")
        div(class="dropdown-room__bedroom") 
@@ -50,10 +51,4 @@ mixin dropdown(options)
         div -
         div 0
         div +
-
-
-
-
-//- label(for='datepicker-here') Date Dropdown
-//-  input(type='text' class='datepicker-here')
-//- style 
+      script(src= "../src/scripts/dropDownRoom.js")
