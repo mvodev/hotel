@@ -16,26 +16,26 @@
   //border: 1px double red;
   width: 29px;
   height: 30px;
-  font-family: Montserrat;
+  font-family: $font-family-main;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 29px;
   /* identical to box height */
   text-align: right;
-  color: rgba(31, 32, 65, 0.25);
+  color: $darkShade25;
   margin-left: 8px;
 }
 .h1 p.description {
   //border: 1px double red;
   width: 336px;
   height: 60px;
-  font-family: Quicksand;
+  font-family: $font-family-additional;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
-  color: #1f2041;
+  color: $darkShade100;
   margin-left: 30px;
 }
 .h2 {
@@ -47,24 +47,24 @@
 .h2 p.header {
   width: 27px;
   height: 24px;
-  font-family: Montserrat;
+  font-family: $font-family-main;
   font-style: normal;
   font-weight: normal;
   font-size: 19px;
   line-height: 23px;
   text-align: right;
-  color: rgba(31, 32, 65, 0.25);
+  color: $darkShade25;
   margin-left: 10px;
 }
 .h2 p.description {
   width: 282px;
   height: 48px;
-  font-family: Quicksand;
+  font-family: $font-family-additional;
   font-style: normal;
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
-  color: #1f2041;
+  color: $darkShade100;
   margin-left: 30px;
 }
 .h3 {
@@ -75,26 +75,26 @@
 .h3 p.header {
   width: 17px;
   height: 15px;
-  font-family: Montserrat;
+  font-family: $font-family-main;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
   text-align: right;
   text-transform: uppercase;
-  color: rgba(31, 32, 65, 0.25);
+  color: $darkShade25;
   margin-left: 20px;
 }
 .h3 p.description {
   width: 186px;
   height: 15px;
-  font-family: Montserrat;
+  font-family: $font-family-main;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
-  color: #1f2041;
+  color: $darkShade100;
   margin-left: 30px;
 }
 .body {
@@ -106,22 +106,22 @@
   width: 37px;
   height: 24px;
   margin-bottom: 24px;
-  font-family: Montserrat;
+  font-family: $font-family-main;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   text-align: right;
-  color: rgba(31, 32, 65, 0.25);
+  color: $darkShade25;
 }
 .body p.description {
   width: 301px;
   height: 48px;
-  font-family: Montserrat;
+  font-family: $font-family-main;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
+  color: $darkShade75;
   margin-left: 30px;
 }

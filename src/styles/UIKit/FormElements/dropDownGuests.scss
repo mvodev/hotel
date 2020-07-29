@@ -4,7 +4,7 @@
 .dropdown label {
   height: 15px;
   display: block;
-  font-family: Montserrat;
+  font-family: $font-family-main;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -12,15 +12,15 @@
   /* identical to box height */
   text-transform: uppercase;
   /* Dark 100% */
-  color: #1f2041;
+  color: $darkShade100;
   margin-bottom: 5px;
 }
 .dropdown-input__guests {
   width: 320px;
   height: 44px;
-  background: #ffffff;
+  background: $white;
   /* Dark 25% */
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  border: 1px solid $darkShade25;
   box-sizing: border-box;
   border-radius: 4px;
   display: flex;
@@ -36,14 +36,14 @@
   height: 24px;
   margin-top: 8px;
   margin-left: 15px;
-  font-family: Montserrat;
+  font-family: $font-family-main;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
 }
 .dropdown-input__guests input::placeholder {
-  font-family: Montserrat;
+  font-family: $font-family-main;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -52,7 +52,7 @@
   height: 18px;
   /* identical to box height, or 171% */
   /* Dark 75% */
-  color: rgba(31, 32, 65, 0.75);
+  color: $darkShade75;
   margin-bottom: 12px;
 }
 
@@ -69,9 +69,9 @@
   z-index: 1;
   width: 320px;
   height: 159px;
-  background: #ffffff;
+  background: $white;
   /* Dark 50% */
-  border: 1px solid rgba(31, 32, 65, 0.5);
+  border: 1px solid $darkShade50;
   box-sizing: border-box;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 }
@@ -85,7 +85,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-family: Montserrat;
+  font-family: $font-family-main;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -93,7 +93,7 @@
   /* identical to box height */
   text-transform: uppercase;
   /* Dark 100% */
-  color: #1f2041;
+  color: $darkShade100;
 }
 .dropdown-guests__adult,
 .dropdown-guests__child,
@@ -103,7 +103,7 @@
   margin-right: 7px;
 }
 .dropdown-guests__apply-button {
-  color: #bc9cff;
+  color: $purple;
   cursor: pointer;
   margin-top: 21px;
   justify-content: space-between;
@@ -111,7 +111,7 @@
   margin-right: 7px;
 }
 .dropdown-guests__apply-button div:first-child {
-  color: rgba(31, 32, 65, 0.5);
+  color: $darkShade50;
 }
 
 .hidden {
@@ -123,7 +123,7 @@
 .dropdown-guests__infant div:nth-child(2) {
   width: 30px;
   height: 30px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  border: 1px solid $darkShade25;
   box-sizing: border-box;
   border-radius: 50%;
   text-align: center;
@@ -144,7 +144,7 @@
 .dropdown-guests__infant div:nth-child(4) {
   width: 30px;
   height: 30px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  border: 1px solid $darkShade25;
   box-sizing: border-box;
   border-radius: 22px;
   text-align: center;

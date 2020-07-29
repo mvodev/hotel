@@ -25,7 +25,7 @@
 .headerLogin-navlink:first-child {
   width: 43px;
   height: 18px;
-  font-family: Montserrat;
+  font-family: $font-family-main;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -37,7 +37,7 @@
 .headerLogin-navlink:nth-child(2) {
   width: 50px;
   height: 18px;
-  font-family: Montserrat;
+  font-family: $font-family-main;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -61,7 +61,7 @@
 .headerLogin-navlink:nth-child(4) {
   width: 72px;
   height: 18px;
-  font-family: Montserrat;
+  font-family: $font-family-main;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -74,7 +74,7 @@
 .headerLogin-navlink:nth-child(5) {
   width: 52px;
   height: 18px;
-  font-family: Montserrat;
+  font-family: $font-family-main;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -86,7 +86,7 @@
 .headerLogin-navlink:nth-child(6) {
   width: 92px;
   height: 18px;
-  font-family: Montserrat;
+  font-family: $font-family-main;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -97,7 +97,7 @@
 .login {
   height: 34px;
   width: 87px;
-  font-family: Montserrat;
+  font-family: $font-family-main;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -113,7 +113,7 @@
   text-align: center;
 }
 .register {
-  font-family: Montserrat;
+  font-family: $font-family-main;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;

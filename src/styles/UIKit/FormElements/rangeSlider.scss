@@ -8,7 +8,7 @@ justify-content: space-between;
 margin-bottom: -2px;
 }
 .range-slider__label-wrapper p:first-child{
-font-family: Montserrat;
+font-family: $font-family-main;
 font-style: normal;
 font-weight: bold;
 font-size: 12px;
@@ -23,7 +23,7 @@ color: $darkShade100;
 height: 15px;
 width: 102px;
 text-align: justify;
-font-family: Montserrat;
+font-family: $font-family-main;
 font-style: normal;
 font-weight: normal;
 font-size: 12px;

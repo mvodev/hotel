@@ -15,7 +15,7 @@ cursor: pointer;
 }
 .button-dark span,
 .button-dark50 span{
- font-family: Montserrat;
+ font-family:$font-family-main;
 font-style: normal;
 font-weight: bold;
 font-size: 12px;
@@ -35,7 +35,7 @@ border:2px solid $purple;
 .button-white span,
 .button-white50 span,
 .button-transparent span{
-font-family: Montserrat;
+font-family: $font-family-main;
 font-style: normal;
 font-weight: bold;
 font-size: 12px;
@@ -51,7 +51,7 @@ color:$purple;
  background: none;
 }
 .button-transparent50 span{
-font-family: Montserrat;
+font-family: $font-family-main;
 font-style: normal;
 font-weight: bold;
 font-size: 12px;
@@ -71,7 +71,7 @@ align-items: center;
 justify-content: right;
 }
 .button-with-arrow div:first-child{
- font-family: Montserrat;
+ font-family: $font-family-main;
 font-style: normal;
 font-weight: bold;
 font-size: 12px;

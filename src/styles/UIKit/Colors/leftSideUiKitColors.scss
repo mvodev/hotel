@@ -18,14 +18,14 @@
   position: relative;
   width: 159px;
   height: 57px;
-  font-family: Quicksand;
+  font-family: $font-family-additional;
   font-style: normal;
   font-weight: bold;
   font-size: 19px;
   line-height: 29px;
   display: flex;
   align-items: center;
-  color: #1f2041;
+  color: $darkShade100;
   margin-left: 110px;
   margin-top: 7px;
 }
@@ -40,14 +40,14 @@
   position: relative;
   width: 150px;
   height: 57px;
-  font-family: Quicksand;
+  font-family: $font-family-additional;
   font-style: normal;
   font-weight: bold;
   font-size: 19px;
   line-height: 29px;
   display: flex;
   align-items: center;
-  color: #1f2041;
+  color: $darkShade100;
   margin-left: 110px;
   margin-top: 7px;
 }
@@ -65,14 +65,14 @@
   margin-top: 7px;
   width: 151px;
   height: 57px;
-  font-family: Quicksand;
+  font-family: $font-family-additional;
   font-style: normal;
   font-weight: bold;
   font-size: 19px;
   line-height: 29px;
   display: flex;
   align-items: center;
-  color: #1f2041;
+  color: $darkShade100;
 }
 .darkShade25 {
   position: relative;
@@ -87,14 +87,14 @@
   margin-top: 7px;
   width: 149px;
   height: 57px;
-  font-family: Quicksand;
+  font-family: $font-family-additional;
   font-style: normal;
   font-weight: bold;
   font-size: 19px;
   line-height: 29px;
   display: flex;
   align-items: center;
-  color: #1f2041;
+  color: $darkShade100;
 }
 .darkShade5 {
   position: relative;
@@ -116,7 +116,7 @@
   line-height: 29px;
   display: flex;
   align-items: center;
-  color: #1f2041;
+  color: $darkShade100;
 }
 .purple {
   position: relative;
@@ -131,14 +131,14 @@
   margin-top: 7px;
   width: 82px;
   height: 58px;
-  font-family: Quicksand;
+  font-family: $font-family-additional;
   font-style: normal;
   font-weight: bold;
   font-size: 19px;
   line-height: 29px;
   display: flex;
   align-items: center;
-  color: #1f2041;
+  color: $darkShade100;
 }
 .green {
   position: relative;
@@ -153,12 +153,12 @@
   height: 57px;
   margin-left: 110px;
   margin-top: 7px;
-  font-family: Quicksand;
+  font-family: $font-family-additional;
   font-style: normal;
   font-weight: bold;
   font-size: 19px;
   line-height: 29px;
   display: flex;
   align-items: center;
-  color: #1f2041;
+  color: $darkShade100;
 }

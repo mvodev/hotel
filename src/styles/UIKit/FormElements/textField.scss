@@ -5,7 +5,7 @@
 .txtField label {
   white-space: nowrap;
   height: 15px;
-  font-family: Montserrat;
+  font-family: $font-family-main;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -17,7 +17,7 @@
   margin-bottom: 5px;
 }
 .txtField input {
-  font-family: Montserrat;
+  font-family: $font-family-main;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -51,7 +51,7 @@
   width: 320px;
 }
 .txtField--wrapper p{
-font-family: Montserrat;
+font-family: $font-family-main;
 font-style: normal;
 font-weight: normal;
 font-size: 12px;

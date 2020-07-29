@@ -23,7 +23,7 @@
   margin-top: 16px;
   display: block;
 
-  font-family: Montserrat;
+  font-family: $font-family-main;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -62,7 +62,7 @@
 .footerNavLinks-navigation a:nth-child(2) {
   width: 64px;
   height: 18px;
-  font-family: Montserrat;
+  font-family: $font-family-main;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -96,7 +96,7 @@
 }
 .footerNavLinks-link {
   text-decoration: none;
-  font-family: Montserrat;
+  font-family: $font-family-main;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -147,7 +147,7 @@
   display: block;
   height: 48px;
   width: 196px;
-  font-family: Montserrat;
+  font-family: $font-family-main;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -162,7 +162,7 @@ p.subscribe {
   width: 208px;
   display: block;
   white-space: nowrap;
-  font-family: Montserrat;
+  font-family: $font-family-main;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -189,7 +189,7 @@ p.subscribe {
   width: 134px;
   height: 24px;
 
-  font-family: Montserrat;
+  font-family: $font-family-main;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
