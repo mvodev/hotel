@@ -1,0 +1,27 @@
+.toggle{
+ height: 89px;
+ width: 260px;
+ display: flex;
+ flex-direction: column;
+}
+.toggle__name{
+ font-family: $font-family-main;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+text-transform: uppercase;
+/* Dark 100% */
+color:$darkShade100;
+}
+.toggle__label{
+ font-family: $font-family-main;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+/* Dark 75% */
+color: $darkShade75;
+}

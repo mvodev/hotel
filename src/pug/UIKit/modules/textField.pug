@@ -16,10 +16,10 @@ mixin textField(options)
   pText+=options.isMasked ? 'DEFAULT' : ''
   inputType+=options.isSubscription ? 'email' : ''
  div(class = textfieldClassName)
-  div(class='txtField--wrapper')
+  div(class='txtField__wrapper')
     label= options.label
     p=pText
-  div(class='txtFieldInput--wrapper')
+  div(class='txtFieldInput__wrapper')
     input(type=inputType placeholder=options.placeholder class=inputClassName)
     if options.isSubscription
       img(src="../src/assets/img/svg/arrow_forward.svg", alt="")

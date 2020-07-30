@@ -212,33 +212,33 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ion-rangeslider */ "../node_modules/ion-rangeslider/js/ion.rangeSlider.js");
 /* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(ion_rangeslider__WEBPACK_IMPORTED_MODULE_0__);
 
-$('.range-slider').ionRangeSlider({
- type: "double",
- min: 0,
- max: 20000,
- from: 5000,
- to: 10000,
- step: 1000,
- onChange: function (data) {
-  let minValue = ''
-  let maxValue = ''
-  if (data.from >= 1000) minValue = Math.floor(data.from / 1000) + ' 000';
-  else minValue = data.from;
-  if (data.to >= 1000) maxValue = Math.floor(data.to / 1000) + ' 000';
-  else maxValue = data.to;
-  $('.range-slider__label-wrapper p:nth-child(2)').
-   html(minValue + '<span class="rub">i</span> - ' + maxValue + '<span class="rub">i</span>');
- },
- onStart: function (data) {
-  let minValue = ''
-  let maxValue = ''
-  if (data.from >= 1000) minValue = Math.floor(data.from / 1000) + ' 000';
-  else minValue = data.from;
-  if (data.to >= 1000) maxValue = Math.floor(data.to / 1000) + ' 000';
-  else maxValue = data.to;
-  $('.range-slider__label-wrapper p:nth-child(2)').
-   html(minValue + '<span class="rub">i</span> - ' + maxValue + '<span class="rub">i</span>');
- }
+$('.range-slider__input').ionRangeSlider({
+  type: "double",
+  min: 0,
+  max: 20000,
+  from: 5000,
+  to: 10000,
+  step: 1000,
+  onChange: function (data) {
+    let minValue = ''
+    let maxValue = ''
+    if (data.from >= 1000) minValue = Math.floor(data.from / 1000) + ' 000';
+    else minValue = data.from;
+    if (data.to >= 1000) maxValue = Math.floor(data.to / 1000) + ' 000';
+    else maxValue = data.to;
+    $('.range-slider__label-wrapper p:nth-child(2)').
+      html(minValue + '<span class="rub">i</span> - ' + maxValue + '<span class="rub">i</span>');
+  },
+  onStart: function (data) {
+    let minValue = ''
+    let maxValue = ''
+    if (data.from >= 1000) minValue = Math.floor(data.from / 1000) + ' 000';
+    else minValue = data.from;
+    if (data.to >= 1000) maxValue = Math.floor(data.to / 1000) + ' 000';
+    else maxValue = data.to;
+    $('.range-slider__label-wrapper p:nth-child(2)').
+      html(minValue + '<span class="rub">i</span> - ' + maxValue + '<span class="rub">i</span>');
+  }
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
 
@@ -256,4 +256,4 @@ $('.range-slider').ionRangeSlider({
 /***/ })
 
 /******/ });
-//# sourceMappingURL=main.3d0bf5a6bf12f773a09c.js.map
+//# sourceMappingURL=main.a4edcec008bb34f8b8bd.js.map

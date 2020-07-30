@@ -2,6 +2,7 @@ include modules/dropdown.pug
 include modules/textField.pug
 include modules/rangeSlider.pug
 include modules/button.pug
+include modules/toggle.pug
 +dropdown({label:"Dropdown",placeholder:"Сколько гостей",typeDropdown:'guests',isExpanded:false})
 +dropdown({label:"Dropdown",placeholder:"2 спальни,2 кровати...",typeDropdown:'room'})
 +textField({isMasked:true,placeholder:'ДД.ММ.ГГГГ',label:'Masked Text Field'})
@@ -16,3 +17,5 @@ include modules/button.pug
 +button({label:'CLICK ME',withArrow:false,color:'transparent'})
 +button({label:'CLICK ME',withArrow:false,color:'transparent50'})
 +button({label:'ПЕРЕЙТИ К ОПЛАТЕ',withArrow:true})
++toggle({name:'TOGGLE',
+className:'toggle',labels:[{label:'получать спецпредложения',  isPositive:true},{label:'получать спецпредложения',isPositive:false}]})

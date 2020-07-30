@@ -1,1 +1,151 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Layout Hotel</title><link href="vendors~main.c4ae94f5342d41e2c06e.css" rel="stylesheet"><link href="main.c4ae94f5342d41e2c06e.css" rel="stylesheet"></head><body><h1>Layout Hotel</h1><script src="vendors~main.edf84f599483a06e9cf8.js"></script><script src="main.3d0bf5a6bf12f773a09c.js"></script></body></html>
+<head><link href="vendors~main.1653ba1309878b96609e.css" rel="stylesheet"><link href="main.1653ba1309878b96609e.css" rel="stylesheet"></head>Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module build failed (from ../node_modules/pug-loader/index.js):
+  Error: D:\Учеба FSD\webpack__jquery\src\pug\UIKit\modules\toggle.pug:8:73
+      6|     each val in options.labels
+      7|       if val.isPositive
+    > 8|         input(class=toggleClassName+'__input toggle_on' type='checkbox')'checked'
+  -------------------------------------------------------------------------------^
+      9|         span(class=toggleClassName+'__label')=val.label
+      10|       else
+      11|         input(class=toggleClassName+'__input toggle_off' type='checkbox')
+  unexpected text "'chec"
+  
+  - index.js:34 makeError
+    [webpack__jquery]/[pug-error]/index.js:34:13
+  
+  - index.js:62 Lexer.error
+    [webpack__jquery]/[pug-lexer]/index.js:62:15
+  
+  - index.js:1624 Lexer.fail
+    [webpack__jquery]/[pug-lexer]/index.js:1624:10
+  
+  - index.js:1689 Lexer.advance
+    [webpack__jquery]/[pug-lexer]/index.js:1689:12
+  
+  - index.js:1642 Lexer.callLexerFunction
+    [webpack__jquery]/[pug-lexer]/index.js:1642:23
+  
+  - index.js:1701 Lexer.getTokens
+    [webpack__jquery]/[pug-lexer]/index.js:1701:12
+  
+  - index.js:12 lex
+    [webpack__jquery]/[pug-lexer]/index.js:12:42
+  
+  - index.js:104 Object.lex
+    [webpack__jquery]/[pug]/lib/index.js:104:9
+  
+  - index.js:53 Function.loadString [as string]
+    [webpack__jquery]/[pug-load]/index.js:53:24
+  
+  - index.js:37 
+    [webpack__jquery]/[pug-load]/index.js:37:27
+  
+  - index.js:26 walkAST
+    [webpack__jquery]/[pug-walk]/index.js:26:18
+  
+  - index.js:112 
+    [webpack__jquery]/[pug-walk]/index.js:112:20
+  
+  - Array.reduce
+  
+  - index.js:111 walkAndMergeNodes
+    [webpack__jquery]/[pug-walk]/index.js:111:18
+  
+  - index.js:40 walkAST
+    [webpack__jquery]/[pug-walk]/index.js:40:19
+  
+  - index.js:13 load
+    [webpack__jquery]/[pug-load]/index.js:13:10
+  
+  - index.js:55 Function.loadString [as string]
+    [webpack__jquery]/[pug-load]/index.js:55:10
+  
+  - index.js:37 
+    [webpack__jquery]/[pug-load]/index.js:37:27
+  
+  - index.js:26 walkAST
+    [webpack__jquery]/[pug-walk]/index.js:26:18
+  
+  - index.js:112 
+    [webpack__jquery]/[pug-walk]/index.js:112:20
+  
+  - Array.reduce
+  
+  - index.js:111 walkAndMergeNodes
+    [webpack__jquery]/[pug-walk]/index.js:111:18
+  
+  - index.js:40 walkAST
+    [webpack__jquery]/[pug-walk]/index.js:40:19
+  
+  - index.js:51 walkAST
+    [webpack__jquery]/[pug-walk]/index.js:51:21
+  
+  - index.js:112 
+    [webpack__jquery]/[pug-walk]/index.js:112:20
+  
+  - Array.reduce
+  
+  - index.js:111 walkAndMergeNodes
+    [webpack__jquery]/[pug-walk]/index.js:111:18
+  
+  - index.js:40 walkAST
+    [webpack__jquery]/[pug-walk]/index.js:40:19
+  
+  - index.js:51 walkAST
+    [webpack__jquery]/[pug-walk]/index.js:51:21
+  
+  - index.js:112 
+    [webpack__jquery]/[pug-walk]/index.js:112:20
+  
+  - Array.reduce
+  
+  - index.js:111 walkAndMergeNodes
+    [webpack__jquery]/[pug-walk]/index.js:111:18
+  
+  - index.js:40 walkAST
+    [webpack__jquery]/[pug-walk]/index.js:40:19
+  
+  - index.js:13 load
+    [webpack__jquery]/[pug-load]/index.js:13:10
+  
+  - index.js:55 Function.loadString [as string]
+    [webpack__jquery]/[pug-load]/index.js:55:10
+  
+  
+  - Error: D:\Учеба FSD\webpack__jquery\src\pug\UIKit\modules\toggle.pug:8:73
+  
+  - 6|     each val in options.labels
+  
+  - 7|       if val.isPositive
+  
+  - > 8|         input(class=toggleClassName+'__input toggle_on' type='checkbox')'checked'
+  
+  - -------------------------------------------------------------------------------^
+  
+  - 9|         span(class=toggleClassName+'__label')=val.label
+  
+  - 10|       else
+  
+  - 11|         input(class=toggleClassName+'__input toggle_off' type='checkbox')
+  
+  - unexpected text "'chec"
+  
+  - child-compiler.js:122 childCompiler.runAsChild
+    [webpack__jquery]/[html-webpack-plugin]/lib/child-compiler.js:122:18
+  
+  - Compiler.js:343 compile
+    [webpack__jquery]/[webpack]/lib/Compiler.js:343:11
+  
+  - Compiler.js:681 hooks.afterCompile.callAsync.err
+    [webpack__jquery]/[webpack]/lib/Compiler.js:681:15
+  
+  
+  - Hook.js:154 AsyncSeriesHook.lazyCompileHook
+    [webpack__jquery]/[tapable]/lib/Hook.js:154:20
+  
+  - Compiler.js:678 compilation.seal.err
+    [webpack__jquery]/[webpack]/lib/Compiler.js:678:31
+  
+</pre><script src="vendors~main.edf84f599483a06e9cf8.js"></script><script src="main.a4edcec008bb34f8b8bd.js"></script>

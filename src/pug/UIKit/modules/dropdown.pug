@@ -7,7 +7,7 @@ mixin dropdown(options)
    dropDownClassName+=typeDropdown==="filter-date" ? " dropdown-input__filter" : ""
    dropDownClassName+=typeDropdown==="room" ? " dropdown-input__room" : ""
  div(class = "dropdown")
-  label= options.label
+  label(class='dropdown__label')= options.label
   div(class = dropDownClassName)
    input(placeholder=options.placeholder)
    div(class = "dropdown-input__img-wrapper")
@@ -52,3 +52,4 @@ mixin dropdown(options)
         div 0
         div +
       script(src= "../src/scripts/dropDownRoom.js")
+      
