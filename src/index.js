@@ -11,7 +11,7 @@ import '../node_modules/air-datepicker/dist/js/datepicker.min.js';
 //import '../src/scripts/dropDownGuests'
 //import '../src/scripts/dropDownRoom'
 import '../src/scripts/rangeSlider'
-
+import 'cleave.js'
 
 //import 'air-datepicker'
 $('.datepicker-here').datepicker({ todayButton: true, clearButton: true });

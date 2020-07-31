@@ -2,13 +2,15 @@ mixin toggle(options)
  -
   var toggleClassName = options.className
  div(class=toggleClassName)
-    span(class=toggleClassName+'__name')=options.name
-    each val in options.labels
-      if val.isPositive
-        input(class=toggleClassName+'__input toggle_on' type='checkbox')
-        span(class=toggleClassName+'__label')=val.label
-      else
-        input(class=toggleClassName+'__input toggle_off' type='checkbox')
-        span(class=toggleClassName+'__label')=val.label
- script(src= "../src/scripts/toggle.js")
+    span(class=toggleClassName+'__label')=options.label
+    div(class=toggleClassName+'__container')
+      each val in options.labels
+        label(class='switch')
+            if val.isPositive
+              input(type='checkbox' checked='checked')
+              span(class='toggle__slider-round')
+            else
+              input(type='checkbox')
+              span(class='toggle__slider-round')
+        span(class=toggleClassName+'__name')=val.name    
     
