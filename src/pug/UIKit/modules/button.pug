@@ -1,13 +1,14 @@
 mixin button(options)
  - var buttonClassName='button'
- - buttonClassName+=options.withArrow ? ' button-with-arrow' : ''
- - buttonClassName+=options.color==='dark' ? ' button-dark' : ''
- - buttonClassName+=options.color==='dark50' ? ' button-dark50' : ''
- - buttonClassName+=options.color==='white' ? ' button-white' : ''
- - buttonClassName+=options.color==='white50' ? ' button-white50' : ''
- - buttonClassName+=options.color==='transparent' ? ' button-transparent' : ''
- - buttonClassName+=options.color==='transparent50' ? ' button-transparent50' : ''
-   if options.withArrow
+ - buttonClassName+=options.type==='arrow' ? ' button-with-arrow' : ''
+ - buttonClassName+=options.type==='dark' ? ' button-dark' : ''
+ - buttonClassName+=options.type==='dark50' ? ' button-dark50' : ''
+ - buttonClassName+=options.type==='white' ? ' button-white' : ''
+ - buttonClassName+=options.type==='white50' ? ' button-white50' : ''
+ - buttonClassName+=options.type==='transparent' ? ' button-transparent' : ''
+ - buttonClassName+=options.type==='transparent50' ? ' button-transparent50' : ''
+ - buttonClassName+=options.type==='rate' ? ' button-rate' : ''
+   if options.type=='arrow'
     button(class=buttonClassName)
      div=options.label
      div(class='button-with-arrow_arr')  <svg width="18" height="18" viewBox="0   0     18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -19,6 +20,13 @@ mixin button(options)
       </linearGradient>
       </defs>
       </svg>
+   else if options.type=='rate'
+    button(class=buttonClassName)
+      span='star'
+      span='star'
+      span='star'
+      span='star'
+      span='star'
    else
     button(class=buttonClassName)
      span=options.label

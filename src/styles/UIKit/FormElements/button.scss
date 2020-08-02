@@ -85,3 +85,25 @@ margin-right: 62px;
 .button-with-arrow div{
  margin-right: 6px;
 }
+.button-rate{
+ height: 24px;
+ width: 120px;
+ background-color: transparent;
+ border-radius: 0px;
+ display: flex;
+ flex-direction: row;
+}
+.button-rate span{
+ font-family: Material Icons;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 20px;
+
+align-items: center;
+text-align: center;
+
+/* Primary Gradient */
+
+color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
