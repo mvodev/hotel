@@ -174,6 +174,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_air_datepicker_dist_js_datepicker_min_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_air_datepicker_dist_js_datepicker_min_js__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _src_scripts_rangeSlider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../src/scripts/rangeSlider */ "./scripts/rangeSlider.js");
 /* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
+/* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ion-rangeslider */ "../node_modules/ion-rangeslider/js/ion.rangeSlider.js");
+/* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(ion_rangeslider__WEBPACK_IMPORTED_MODULE_6__);
 //import Post from './Post'
 //import './styles/style.css'
 //import './styles/extra.scss'
@@ -186,6 +188,7 @@ __webpack_require__.r(__webpack_exports__);
 
 //import '../src/scripts/dropDownGuests'
 //import '../src/scripts/dropDownRoom'
+
 
 
 
@@ -257,4 +260,4 @@ $('.range-slider__input').ionRangeSlider({
 /***/ })
 
 /******/ });
-//# sourceMappingURL=main.beebf67e1e75d01129b2.js.map
+//# sourceMappingURL=main.bb4a84ff97a0bc25a2a0.js.map

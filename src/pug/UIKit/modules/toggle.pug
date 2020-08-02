@@ -1,3 +1,4 @@
+include switch.pug
 mixin toggle(options)
  -
   var toggleClassName = options.className
@@ -5,12 +6,6 @@ mixin toggle(options)
     span(class=toggleClassName+'__label')=options.label
     div(class=toggleClassName+'__container')
       each val in options.labels
-        label(class='switch')
-            if val.isPositive
-              input(type='checkbox' checked='checked')
-              span(class='toggle__slider-round')
-            else
-              input(type='checkbox')
-              span(class='toggle__slider-round')
-        span(class=toggleClassName+'__name')=val.name    
+        +switch({isPositive:val.isPositive,name:val.name})
+        
     

@@ -1,7 +1,6 @@
 ///////////////////////Constants////////////////////////////////////////////
 let counterAdult = (counterChild = counterInfant = 0);
 const dropDownInputGuests = document.querySelector(".dropdown-input__guests");
-console.log(dropDownInputGuests);
 const dropDownInputFieldGuests = document.querySelector(
   ".dropdown-input__guests input"
 );
@@ -72,7 +71,6 @@ function handler(event) {
     .classList.toggle("show");
 }
 function changeCounterGuests(howChange, changeTarget) {
-  console.log("inside change counter guests");
   if (changeTarget === "adult") {
     if (howChange === "increase") {
       counterAdultValueTag.innerText++;
