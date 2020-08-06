@@ -1,5 +1,7 @@
 mixin button(options)
  - var buttonClassName='button'
+ - var darkStar= options.darkStar
+ - var lightStar=5-darkStar
  - buttonClassName+=options.type==='arrow' ? ' button-with-arrow' : ''
  - buttonClassName+=options.type==='dark' ? ' button-dark' : ''
  - buttonClassName+=options.type==='dark50' ? ' button-dark50' : ''
@@ -22,11 +24,14 @@ mixin button(options)
       </svg>
    else if options.type=='rate'
     button(class=buttonClassName)
-      span='star'
-      span='star'
-      span='star'
-      span='star'
-      span='star'
+      - var n=0
+      while darkStar-- > 0
+        input(class=buttonClassName+'__input' id='star-rating-'+n++ type='radio')
+        label(class='material-icons star' for='star-rating-'+n title=n +" out of 5 stars")='star'
+      while lightStar-- > 0
+        input(class=buttonClassName+'__input' id='star-rating-'+n++ type='radio')
+        label(class='material-icons star' for='star-rating-'+n title=n +" out of 5 stars")='star_border'
+    script(src= "../src/scripts/starRating.js")
    else
     button(class=buttonClassName)
      span=options.label

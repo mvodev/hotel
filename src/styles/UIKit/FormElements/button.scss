@@ -93,17 +93,30 @@ margin-right: 62px;
  display: flex;
  flex-direction: row;
 }
-.button-rate span{
- font-family: Material Icons;
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 20px;
-
+// .button-rate span{
+//  font-family: Material Icons;
+// font-style: normal;
+// font-weight: normal;
+// font-size: 24px;
+// line-height: 20px;
+// align-items: center;
+// text-align: center;
+// color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+// }
+// .material-icons.button-rate{
+//  color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+// }
+.button-rate input{
+ display: none;
+}
+.star{
+ font-size: 24px;
+ color: $purple;
+ line-height: 20px;
+ width: 24px;
+ height: 24px;
+display: block;
+cursor: pointer;
 align-items: center;
 text-align: center;
-
-/* Primary Gradient */
-
-color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 }
