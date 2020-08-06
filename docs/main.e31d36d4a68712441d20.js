@@ -176,9 +176,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _src_scripts_dropDownGuests_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_src_scripts_dropDownGuests_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _src_scripts_dropDownRoom_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../src/scripts/dropDownRoom.js */ "./scripts/dropDownRoom.js");
 /* harmony import */ var _src_scripts_dropDownRoom_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_src_scripts_dropDownRoom_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ion-rangeslider */ "../node_modules/ion-rangeslider/js/ion.rangeSlider.js");
-/* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(ion_rangeslider__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
+/* harmony import */ var _src_scripts_starRating_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../src/scripts/starRating.js */ "./scripts/starRating.js");
+/* harmony import */ var _src_scripts_starRating_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_src_scripts_starRating_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ion-rangeslider */ "../node_modules/ion-rangeslider/js/ion.rangeSlider.js");
+/* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(ion_rangeslider__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
 //import './styles/extra.scss'
 //import './pug/UIKit/test.pug'
 
@@ -187,7 +189,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-//import 'cleave.js'
+
 
 
 var cleave = new Cleave('.txtField-input-date', {
@@ -502,6 +504,24 @@ function showResultInDropDown() {
 
 /***/ }),
 
+/***/ "./scripts/starRating.js":
+/*!*******************************!*\
+  !*** ./scripts/starRating.js ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+//const { Event } = require("jquery");
+
+const rateButton = document.querySelectorAll('.button-rate label');
+rateButton.forEach(elem => elem.addEventListener('click', rateClickListener)
+);
+function rateClickListener(event) {
+ console.log(event.target.title.charAt[0]);
+}
+
+/***/ }),
+
 /***/ "./styles/style.scss":
 /*!***************************!*\
   !*** ./styles/style.scss ***!
@@ -514,4 +534,4 @@ function showResultInDropDown() {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=main.88bc869c8addc1338b8b.js.map
+//# sourceMappingURL=main.e31d36d4a68712441d20.js.map

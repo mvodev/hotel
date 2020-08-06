@@ -6,7 +6,7 @@ import '../node_modules/air-datepicker/dist/css/datepicker.min.css';
 import '../node_modules/air-datepicker/dist/js/datepicker.min.js';
 import '../src/scripts/dropDownGuests.js'
 import '../src/scripts/dropDownRoom.js'
-//import 'cleave.js'
+import '../src/scripts/starRating.js'
 import 'ion-rangeslider'
 import 'cleave.js'
 var cleave = new Cleave('.txtField-input-date', {
