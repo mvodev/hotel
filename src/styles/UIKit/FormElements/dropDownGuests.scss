@@ -1,20 +1,7 @@
 .dropdown {
   position: relative;
 }
-.dropdown__label {
-  height: 15px;
-  display: block;
-  font-family: $font-family-main;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  /* identical to box height */
-  text-transform: uppercase;
-  /* Dark 100% */
-  color: $darkShade100;
-  margin-bottom: 5px;
-}
+
 .dropdown-input__guests {
   width: 320px;
   height: 44px;
@@ -62,6 +49,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .dropdown-guests {
   display: none;

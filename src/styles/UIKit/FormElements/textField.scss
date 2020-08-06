@@ -44,24 +44,6 @@
   /* Dark 50% */
   border: 1px solid $darkShade50;
 }
-.txtField__wrapper{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 320px;
-}
-.txtField__wrapper p{
-font-family: $font-family-main;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 15px;
-/* identical to box height */
-text-align: right;
-text-transform: uppercase;
-/* Dark 50% */
-color: $darkShade50;
-}
 .txtFieldInput__wrapper img{
   margin-left: -44px;
   vertical-align: middle;

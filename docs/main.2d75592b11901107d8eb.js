@@ -172,10 +172,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _node_modules_air_datepicker_dist_js_datepicker_min_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../node_modules/air-datepicker/dist/js/datepicker.min.js */ "../node_modules/air-datepicker/dist/js/datepicker.min.js");
 /* harmony import */ var _node_modules_air_datepicker_dist_js_datepicker_min_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_air_datepicker_dist_js_datepicker_min_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _src_scripts_dropDownGuests__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../src/scripts/dropDownGuests */ "./scripts/dropDownGuests.js");
-/* harmony import */ var _src_scripts_dropDownGuests__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_src_scripts_dropDownGuests__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _src_scripts_dropDownRoom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../src/scripts/dropDownRoom */ "./scripts/dropDownRoom.js");
-/* harmony import */ var _src_scripts_dropDownRoom__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_src_scripts_dropDownRoom__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _src_scripts_dropDownGuests_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../src/scripts/dropDownGuests.js */ "./scripts/dropDownGuests.js");
+/* harmony import */ var _src_scripts_dropDownGuests_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_src_scripts_dropDownGuests_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _src_scripts_dropDownRoom_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../src/scripts/dropDownRoom.js */ "./scripts/dropDownRoom.js");
+/* harmony import */ var _src_scripts_dropDownRoom_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_src_scripts_dropDownRoom_js__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ion-rangeslider */ "../node_modules/ion-rangeslider/js/ion.rangeSlider.js");
 /* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(ion_rangeslider__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
@@ -191,40 +191,39 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var cleave = new Cleave('.txtField-input-date', {
- date: true,
- delimiter: '.',
- datePattern: ['d', 'm', 'Y']
+  date: true,
+  delimiter: '.',
+  datePattern: ['d', 'm', 'Y']
 });
 //import 'air-datepicker'
 $('.datepicker-here').datepicker({ todayButton: true, clearButton: true });
-
 $('.range-slider__input').ionRangeSlider({
- type: "double",
- min: 0,
- max: 20000,
- from: 5000,
- to: 10000,
- step: 1000,
- onChange: function (data) {
-  let minValue = ''
-  let maxValue = ''
-  if (data.from >= 1000) minValue = Math.floor(data.from / 1000) + ' 000';
-  else minValue = data.from;
-  if (data.to >= 1000) maxValue = Math.floor(data.to / 1000) + ' 000';
-  else maxValue = data.to;
-  $('.range-slider__label-wrapper p:nth-child(2)').
-   html(minValue + '<span class="rub">i</span> - ' + maxValue + '<span class="rub">i</span>');
- },
- onStart: function (data) {
-  let minValue = ''
-  let maxValue = ''
-  if (data.from >= 1000) minValue = Math.floor(data.from / 1000) + ' 000';
-  else minValue = data.from;
-  if (data.to >= 1000) maxValue = Math.floor(data.to / 1000) + ' 000';
-  else maxValue = data.to;
-  $('.range-slider__label-wrapper p:nth-child(2)').
-   html(minValue + '<span class="rub">i</span> - ' + maxValue + '<span class="rub">i</span>');
- }
+  type: "double",
+  min: 0,
+  max: 20000,
+  from: 5000,
+  to: 10000,
+  step: 1000,
+  onChange: function (data) {
+    let minValue = ''
+    let maxValue = ''
+    if (data.from >= 1000) minValue = Math.floor(data.from / 1000) + ' 000';
+    else minValue = data.from;
+    if (data.to >= 1000) maxValue = Math.floor(data.to / 1000) + ' 000';
+    else maxValue = data.to;
+    $('.range-slider__label-wrapper p:nth-child(2)').
+      html(minValue + '<span class="rub">i</span> - ' + maxValue + '<span class="rub">i</span>');
+  },
+  onStart: function (data) {
+    let minValue = ''
+    let maxValue = ''
+    if (data.from >= 1000) minValue = Math.floor(data.from / 1000) + ' 000';
+    else minValue = data.from;
+    if (data.to >= 1000) maxValue = Math.floor(data.to / 1000) + ' 000';
+    else maxValue = data.to;
+    $('.range-slider__label-wrapper p:nth-child(2)').
+      html(minValue + '<span class="rub">i</span> - ' + maxValue + '<span class="rub">i</span>');
+  }
 });
 
 
@@ -314,6 +313,7 @@ function handler(event) {
   document
     .getElementsByClassName("dropdown-guests")[0]
     .classList.toggle("show");
+  console.log('inside handler');
 }
 function changeCounterGuests(howChange, changeTarget) {
   if (changeTarget === "adult") {
@@ -515,4 +515,4 @@ function showResultInDropDown() {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=main.099dae5a6e730f00c4b6.js.map
+//# sourceMappingURL=main.2d75592b11901107d8eb.js.map

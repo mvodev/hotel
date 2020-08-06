@@ -7,7 +7,6 @@ mixin dropdown(options)
    dropDownClassName+=typeDropdown==="filter-date" ? " dropdown-input__filter" : ""
    dropDownClassName+=typeDropdown==="room" ? " dropdown-input__room" : ""
  div(class = "dropdown")
-  label(class='dropdown__label')= options.label
   div(class = dropDownClassName)
    input(placeholder=options.placeholder)
    div(class = "dropdown-input__img-wrapper")
@@ -33,7 +32,6 @@ mixin dropdown(options)
        div(class="dropdown-guests__apply-button")
         div(class= 'hidden') очистить
         div применить
-      script(src= "../src/scripts/dropDownGuests.js")
     when "room"
       div(class= "dropdown-room")
        div(class="dropdown-room__bedroom") 
@@ -51,5 +49,4 @@ mixin dropdown(options)
         div -
         div 0
         div +
-      script(src= "../src/scripts/dropDownRoom.js")
       

@@ -3,12 +3,14 @@ include modules/textField.pug
 include modules/rangeSlider.pug
 include modules/button.pug
 include modules/toggle.pug
-+dropdown({label:"Dropdown",placeholder:"Сколько гостей",typeDropdown:'guests',isExpanded:false})
-+dropdown({label:"Dropdown",placeholder:"2 спальни,2 кровати...",typeDropdown:'room'})
-+textField({isMasked:true,placeholder:'ДД.ММ.ГГГГ',label:'Masked Text Field'})
-+textField({isDefault:true,placeholder:'Email',label:'Text Field'})
-+textField({isFocused:true,placeholder:'This is pretty awesome',label:'Text Field'})
-+textField({isSubscription:true,placeholder:'Email',label:'Subscription Text Field'})
+h2(class='dropdown-label')="Dropdown"
++dropdown({placeholder:"Сколько гостей",typeDropdown:'guests',isExpanded:false})
+h2(class='dropdown-label')="Dropdown"
++dropdown({placeholder:"2 спальни,2 кровати...",typeDropdown:'room'})
++textField({isMasked:true,placeholder:'ДД.ММ.ГГГГ'})
++textField({isDefault:true,placeholder:'Email'})
++textField({isFocused:true,placeholder:'This is pretty awesome'})
++textField({isSubscription:true,placeholder:'Email'})
 +rangeSlider({label:'RANGE SLIDER'})
 +button({label:'CLICK ME',type:'dark'})
 +button({label:'CLICK ME',type:'dark50'})
