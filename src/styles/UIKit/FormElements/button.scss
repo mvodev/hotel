@@ -93,19 +93,7 @@ margin-right: 62px;
  display: flex;
  flex-direction: row;
 }
-// .button-rate span{
-//  font-family: Material Icons;
-// font-style: normal;
-// font-weight: normal;
-// font-size: 24px;
-// line-height: 20px;
-// align-items: center;
-// text-align: center;
-// color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-// }
-// .material-icons.button-rate{
-//  color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-// }
+
 .button-rate input{
  display: none;
 }
@@ -119,4 +107,43 @@ margin-right: 62px;
  cursor: pointer;
  align-items: center;
  text-align: center;
+}
+.button-like{
+ width: 40px;
+height: 20px;
+background: #FFFFFF;
+border: 1px solid rgba(31, 32, 65, 0.25);
+box-sizing: border-box;
+white-space: nowrap;
+border-radius: 10px;
+display: flex;
+flex-direction: row;
+}
+.button-like div:first-child{
+ width: 50%;
+ height: 20px;
+ text-align: center;
+ align-items: center;
+ font-family: $font-for-icons;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 9px;
+/* Dark 25% */
+color: $darkShade25;
+}
+.button-like div:nth-child(2){
+  width: 50%;
+ height: 20px;
+ font-family: $font-family-main;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height */
+text-align: center;
+align-items: center;
+/* Dark 25% */
+color: $darkShade25;
+display: flex;
 }
