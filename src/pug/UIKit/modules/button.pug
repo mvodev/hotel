@@ -13,7 +13,7 @@ mixin button(options)
  - buttonClassName+=options.type==='rate' ? ' button-rate' : ''
  - buttonClassName+=options.type==='like' ? ' button-like' : ''
  - buttonClassName+=options.isLiked ? ' button-like_is-liked' : ''
- - buttonClassName+=options.istype==='check' ? ' button-check' : ''
+ - buttonClassName+=options.type==='check' ? ' button-check' : ''
    if options.type=='arrow'
     button(class=buttonClassName)
      div=options.label
@@ -44,8 +44,10 @@ mixin button(options)
         div(class='button-like__heart')='favorite_border'
         div=options.likeNumber
    else if options.type=='check'
-    input(type='checkbox' checked=isChecked)
-    span=options.label
+    div(class=buttonClassName)
+      label(class='button-check__checkbox-label')
+        input(class='button-check__checkbox-input' type='checkbox' checked=isChecked)
+        div(class='button-check__checkbox-text')=options.label
    else
     button(class=buttonClassName)
      span=options.label

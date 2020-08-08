@@ -178,13 +178,38 @@ display: flex;
   color: $purple;
 }
 
-.button-radio span{
-  font-family: $font-family-main;
+.button-check__checkbox-input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 10px;
+}
+.button-check__checkbox-text{
+position: relative;
+cursor: pointer;
+padding-left: 30px;
+font-family: $font-family-main;
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
 line-height: 18px;
-/* identical to box height, or 129% */
-/* Dark 50% */
 color: $darkShade50;
+}
+.button-check__checkbox-text:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+width: 20px;
+height: 20px;
+background: #FFFFFF;
+/* Dark 25% */
+border: 1px solid rgba(31, 32, 65, 0.25);
+box-sizing: border-box;
+border-radius: 4px;
+}
+.button-check__checkbox-input:checked+.button-check__checkbox-text:before{
+background-image: url('../assets/img/svg/checkbox.svg');
+background-repeat: no-repeat;
+background-position: center;
 }
