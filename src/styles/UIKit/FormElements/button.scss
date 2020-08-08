@@ -177,3 +177,14 @@ display: flex;
 .button-like_is-liked div:nth-child(2){
   color: $purple;
 }
+
+.button-radio span{
+  font-family: $font-family-main;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+/* Dark 50% */
+color: $darkShade50;
+}

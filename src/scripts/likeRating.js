@@ -12,8 +12,6 @@ function likeClickListener(event) {
    event.target.parentElement.classList.add('button-like_is-liked');
    event.target.parentElement.childNodes[0].innerText = 'favorite';
   }
-  // console.log('inside empty condition');
-  // console.log(event.target);
  }
  else if (event.target.className == 'button-like__heart') {
   if (event.target.parentElement.classList.contains('button-like_is-liked')) {
