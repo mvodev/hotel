@@ -22,7 +22,9 @@ module.exports = {
  context: path.resolve(__dirname, 'src'),
  mode: 'development',
  entry: {
-  main: './index.js'
+  main: './index.js',
+  UIKit: './UIKit.js',
+  hotel: './hotel.js',
  },
  output: {
   filename: '[name].[contenthash].js',
@@ -37,18 +39,21 @@ module.exports = {
  plugins: [
   new HTMLWebpackPlugin(
    {
-    template: './index.pug'
+    template: './index.pug',
+    chunks: ['main'],
    }
   ),
   new HTMLWebpackPlugin(
    {
     template: './pug/UIKit/UIKit.pug',
     filename: 'UIKit.html',
+    chunks: ['UIKit'],
    }
   ),
   new HTMLWebpackPlugin(
    {
     template: './pug/Website/hotel.pug',
+    chunks: ['hotel'],
     filename: 'hotel.html',
    }
   ),
