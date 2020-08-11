@@ -48,8 +48,8 @@ module.exports = {
   ),
   new HTMLWebpackPlugin(
    {
-    template: './pug/Website/site.pug',
-    filename: 'site.html',
+    template: './pug/Website/hotel.pug',
+    filename: 'hotel.html',
    }
   ),
   new CleanWebpackPlugin(),

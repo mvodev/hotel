@@ -14,6 +14,7 @@ mixin button(options)
  - buttonClassName+=options.type==='like' ? ' button-like' : ''
  - buttonClassName+=options.isLiked ? ' button-like_is-liked' : ''
  - buttonClassName+=options.type==='check' ? ' button-check' : ''
+ - buttonClassName+=options.type==='rich' ? ' button-rich' : ''
  - buttonClassName+=options.type==='radio' ? ' button-radio' : ''
    if options.type=='arrow'
     button(class=buttonClassName)
@@ -53,6 +54,17 @@ mixin button(options)
         else
           input(class='button-check__checkbox-input' type='checkbox')
           div(class='button-check__checkbox-text')=options.label
+   else if options.type=='rich'
+    div(class=buttonClassName)
+      label(class='button-rich__checkbox-label')
+        if options.isChecked
+          input(class='button-rich__checkbox-input' type='checkbox' checked)
+          div(class='button-rich__checkbox-header')=options.header
+          div(class='button-rich__checkbox-text')=options.label
+        else
+          input(class='button-rich__checkbox-input' type='checkbox')
+          div(class='button-rich__checkbox-header')=options.header
+          div(class='button-rich__checkbox-text')=options.label
    else if options.type=='radio'
     div(class=buttonClassName)
       label(class='button-radio__checkbox-label')
