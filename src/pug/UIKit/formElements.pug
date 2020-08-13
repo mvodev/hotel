@@ -3,7 +3,7 @@ include modules/textField.pug
 include modules/rangeSlider.pug
 include modules/button.pug
 include modules/toggle.pug
-include modules/list.pug
+include modules/bulletList.pug
 h2(class='dropdown-label')="Dropdown"
 +dropdown({placeholder:"Сколько гостей",typeDropdown:'guests',isExpanded:false})
 h2(class='dropdown-label')="Dropdown"
@@ -31,4 +31,4 @@ h2(class='dropdown-label')="Dropdown"
 +toggle({label:'TOGGLE',
 className:'toggle',
 labels:[{name:'Получать спецпредложения',  isPositive:true},{name:'Получать спецпредложения',  isPositive:false}]})
-+list({labels:['Нельзя с питомцами','Без вечеринок и мероприятий','Время прибытия — после 13:00,а выезд до 12:00']})
++bulletlist({labels:['Нельзя с питомцами','Без вечеринок и мероприятий','Время прибытия — после 13:00, а выезд до 12:00']})

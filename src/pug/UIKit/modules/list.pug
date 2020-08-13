@@ -1,9 +1,0 @@
-mixin list(options)
- - var listClassName='list'
- - listClassName+=options.type==='expandable' ? ' list-expandable' : ''
-   div(class=listClassName)
-    ul
-     each val in options.labels ? options.labels : ['There are no values']
-      li(class=listClassName+'__elem')= val
-   if options.type==='expandable'
-    div(class=listClassName)
