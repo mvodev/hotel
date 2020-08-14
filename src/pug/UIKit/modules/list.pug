@@ -1,0 +1,24 @@
+mixin list(options)
+ - var listClassName=''
+ - listClassName=options.type==='expandable' ? 'bullet-list-expandable' : 'bullet-list'
+   if options.type==='expandable'
+    div(class=listClassName)
+      div(class=listClassName+'__label')=options.label
+        img(src="../src/assets/img/svg/expand_more.svg", alt="")
+      div(class=listClassName+'__dropdown')
+        each val in options.labels ? options.labels : ['There are no values']
+          div(class=listClassName+'__dropdown-elem')
+            label(class=listClassName+'__dropdown-elem-label')
+              if val.isChecked
+                input(class=listClassName+'__dropdown-elem-input' type='checkbox'   checked)
+                div(class=listClassName+'__dropdown-elem-text')=val
+              else
+                input(class=listClassName+'__dropdown-elem-input' type='checkbox')
+                div(class=listClassName+'__dropdown-elem-text')=val
+    script(src="../src/scripts/expandableCL.js")
+   else
+    div(class=listClassName)
+      ul
+      each val in options.labels ? options.labels : ['There are no values']
+        li(class=listClassName+'__elem')= val
+

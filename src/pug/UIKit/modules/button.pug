@@ -50,10 +50,10 @@ mixin button(options)
       label(class='button-check__checkbox-label')
         if options.isChecked
           input(class='button-check__checkbox-input' type='checkbox' checked)
-          div(class='button-check__checkbox-text')=options.label
+          div(class='button-check__checkbox-text')=options.text
         else
           input(class='button-check__checkbox-input' type='checkbox')
-          div(class='button-check__checkbox-text')=options.label
+          div(class='button-check__checkbox-text')=options.text
    else if options.type=='rich'
     div(class=buttonClassName)
       label(class='button-rich__checkbox-label')
