@@ -1,6 +1,12 @@
-const $bulletListExpandableImg = document.querySelector('.bullet-list-expandable img');
+const $bulletListExpandableArrow = document.querySelector('.bullet-list-expandable span');
 const $bulletListExpandableDropdown = document.querySelector('.bullet-list-expandable__dropdown');
-$bulletListExpandableImg.addEventListener('click', expandableListHandler);
+$bulletListExpandableArrow.addEventListener('click', expandableListHandler);
 function expandableListHandler() {
  $bulletListExpandableDropdown.classList.toggle('show');
+ if ($bulletListExpandableArrow.innerHTML === 'keyboard_arrow_down') {
+  $bulletListExpandableArrow.innerHTML = 'keyboard_arrow_up';
+ }
+ else if ($bulletListExpandableArrow.innerHTML === 'keyboard_arrow_up') {
+  $bulletListExpandableArrow.innerHTML = 'keyboard_arrow_down';
+ }
 }
