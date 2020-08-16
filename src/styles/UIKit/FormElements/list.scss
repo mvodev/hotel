@@ -29,6 +29,7 @@ border-radius: 50%;
 .bullet-list-expandable{
  width: 266px;
  height: 44px;
+ position: relative;
 }
 .bullet-list-expandable__label{
 font-family: $font-family-main;
@@ -62,8 +63,12 @@ text-align: center;
 color: rgba(31, 32, 65, 0.5);
 }
 .bullet-list-expandable__dropdown{
+  position: absolute;
+  top: 44px;
+  left: 0px;
  display: none;
  z-index: 10;
+ background-color: $white;
 }
 .bullet-list-expandable__dropdown-elem{
  margin-bottom: 10.56px;

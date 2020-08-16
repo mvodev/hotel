@@ -1,8 +1,10 @@
 include button.pug
 mixin list(options)
-  - var listClassName=''
-  - listClassName=options.type=='expandable' ? 'bullet-list-expandable' : 'bullet-list'
-  - listClassName=options.type=='icons' ? 'bullet-list-icons' : 'bullet-list'
+  - var listClassName='bullet-list'
+    if options.type==='expandable'
+      - listClassName='bullet-list-expandable'
+    if options.type==='icons'
+      - listClassName='bullet-list-icons'
     if options.type==='expandable'
       div(class=listClassName)
         div(class=listClassName+'__label')=options.label
