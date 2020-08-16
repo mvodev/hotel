@@ -4,6 +4,7 @@ include modules/rangeSlider.pug
 include modules/button.pug
 include modules/toggle.pug
 include modules/list.pug
+include modules/comment.pug
 h2(class='dropdown-label')="Dropdown"
 +dropdown({placeholder:"Сколько гостей",typeDropdown:'guests',isExpanded:false})
 h2(class='dropdown-label')="Dropdown"
@@ -36,3 +37,4 @@ labels:[{name:'Получать спецпредложения',  isPositive:tru
 labels:[{text:'Завтрак',isChecked:false},
 {text:'Письменный стол',isChecked:true},{text:'Стул для кормления',isChecked:true},{text:'Кроватка',isChecked:true},{text:'Телевизор'},{text:'Шампунь'}]})
 +list({type:'icons',icon:'insert_emoticon',header:'Комфорт',text:'Шумопоглощающие стены'})
++comment({headerName:'Мурад Сарафанов',headerTime:'5 дней назад',imgSource:'../src/assets/img/jpg/muradik.jpg',likeNumber:12,isLiked:true})

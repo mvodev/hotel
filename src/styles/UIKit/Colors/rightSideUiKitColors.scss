@@ -11,9 +11,7 @@
 .h1 {
   display: flex;
   flex-wrap: nowrap;
-}
-.h1 p.header {
-  //border: 1px double red;
+  & p.header{
   width: 29px;
   height: 30px;
   font-family: $font-family-main;
@@ -25,9 +23,8 @@
   text-align: right;
   color: $darkShade25;
   margin-left: 8px;
-}
-.h1 p.description {
-  //border: 1px double red;
+  }
+  & p.description{
   width: 336px;
   height: 60px;
   font-family: $font-family-additional;
@@ -37,14 +34,16 @@
   line-height: 30px;
   color: $darkShade100;
   margin-left: 30px;
+  }
 }
+
+
 .h2 {
   //border: 1px double green; /* Параметры границы */
   display: flex;
   flex-wrap: nowrap;
   margin-top: 50px;
-}
-.h2 p.header {
+  & p.header{
   width: 27px;
   height: 24px;
   font-family: $font-family-main;
@@ -55,8 +54,8 @@
   text-align: right;
   color: $darkShade25;
   margin-left: 10px;
-}
-.h2 p.description {
+  }
+  & p.description{
   width: 282px;
   height: 48px;
   font-family: $font-family-additional;
@@ -66,13 +65,14 @@
   line-height: 24px;
   color: $darkShade100;
   margin-left: 30px;
+  }
 }
+
 .h3 {
   display: flex;
   flex-wrap: nowrap;
   margin-top: 50px;
-}
-.h3 p.header {
+  & p.header{
   width: 17px;
   height: 15px;
   font-family: $font-family-main;
@@ -84,8 +84,8 @@
   text-transform: uppercase;
   color: $darkShade25;
   margin-left: 20px;
-}
-.h3 p.description {
+  }
+  & p.description{
   width: 186px;
   height: 15px;
   font-family: $font-family-main;
@@ -96,13 +96,14 @@
   text-transform: uppercase;
   color: $darkShade100;
   margin-left: 30px;
+  }
 }
+
 .body {
   display: flex;
   flex-wrap: nowrap;
   margin-top: 50px;
-}
-.body p.header {
+  & p.header{
   width: 37px;
   height: 24px;
   margin-bottom: 24px;
@@ -113,8 +114,8 @@
   line-height: 24px;
   text-align: right;
   color: $darkShade25;
-}
-.body p.description {
+  }
+  & p.description{
   width: 301px;
   height: 48px;
   font-family: $font-family-main;
@@ -124,4 +125,5 @@
   line-height: 24px;
   color: $darkShade75;
   margin-left: 30px;
+  }
 }

@@ -78,10 +78,11 @@ display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: right;
-}
-
-.button-with-arrow div:first-child{
- font-family: $font-family-main;
+		& div{
+			margin-right: 6px;
+		}
+		& div:first-child{
+font-family: $font-family-main;
 font-style: normal;
 font-weight: bold;
 font-size: 12px;
@@ -91,10 +92,7 @@ text-align: center;
 text-transform: uppercase;
 color: $white;
 margin-right: 62px;
-}
-
-.button-with-arrow div{
- margin-right: 6px;
+		}
 }
 
 .button-rate{
@@ -103,13 +101,14 @@ margin-right: 62px;
  background-color: transparent;
  border-radius: 0px;
  display: flex;
- flex-direction: row;
+	flex-direction: row;
+			& input{
+			display: none;
+			}
+
 }
 
-.button-rate input{
- display: none;
-}
-
+////////////////////TO DO///////////////////////////
 .button-rate_star{
  font-size: 24px;
  color: $purple;
@@ -121,54 +120,52 @@ margin-right: 62px;
  align-items: center;
  text-align: center;
 }
-
+////////////////////////////todo////////////////////////////////////////
 .button-like{
- width: 40px;
-height: 20px;
-background: #FFFFFF;
-border: 1px solid $darkShade25;
-box-sizing: border-box;
-white-space: nowrap;
-border-radius: 10px;
-display: flex;
-flex-direction: row;
+		width: 40px;
+		height: 20px;
+		background: #FFFFFF;
+		border: 1px solid $darkShade25;
+		box-sizing: border-box;
+		white-space: nowrap;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: row;
+				& div:first-child{
+				width: 50%;
+					height: 20px;
+					text-align: center;
+					align-items: center;
+					display: block;
+					font-family: $font-for-icons;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 10px;
+				line-height: 9px;
+				/* Dark 25% */
+				color: $darkShade25;
+				padding-top: 5px;
+				}
+				& div:nth-child(2){
+				width: 50%;
+					height: 100%;
+					font-family: $font-family-main;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 10px;
+				line-height: 12px;
+				/* identical to box height */
+				text-align: center;
+				align-items: center;
+				/* Dark 25% */
+				color: $darkShade25;
+				display: flex;
+				}
+				&_is-liked{
+				border: 1px solid $purple;
+				}
 }
 
-.button-like div:first-child{
- width: 50%;
- height: 20px;
- text-align: center;
- align-items: center;
- display: block;
- font-family: $font-for-icons;
-font-style: normal;
-font-weight: normal;
-font-size: 10px;
-line-height: 9px;
-/* Dark 25% */
-color: $darkShade25;
-padding-top: 5px;
-}
-
-.button-like div:nth-child(2){
-  width: 50%;
- height: 100%;
- font-family: $font-family-main;
-font-style: normal;
-font-weight: normal;
-font-size: 10px;
-line-height: 12px;
-/* identical to box height */
-text-align: center;
-align-items: center;
-/* Dark 25% */
-color: $darkShade25;
-display: flex;
-}
-
-.button-like_is-liked{
- border: 1px solid $purple;
-}
 
 .button-like_is-liked div:first-child{
   color:$purple;
@@ -178,40 +175,44 @@ display: flex;
   color: $purple;
 }
 .button-check{
-  width: 222px;
-  height: 20px;
+		width: 222px;
+		height: 20px;
+
+				&__checkbox-input{
+				position: absolute;
+				z-index: -1;
+				opacity: 0;
+				margin-left: 10px;
+				}
+
+				&__checkbox-text{
+						position: relative;
+						cursor: pointer;
+						padding-left: 30px;
+						font-family: $font-family-main;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 14px;
+						line-height: 18px;
+						color: $darkShade50;
+						max-height: 36px;
+						max-width: 192px;
+				}
+				&__checkbox-text:before{
+						content: '';
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 20px;
+						height: 20px;
+						background: $white;
+						border: 1px solid $darkShade25;
+						box-sizing: border-box;
+						border-radius: 4px;
+				}
 }
-.button-check__checkbox-input {
-	position: absolute;
-	z-index: -1;
-	opacity: 0;
-	margin-left: 10px;
-}
-.button-check__checkbox-text{
-position: relative;
-cursor: pointer;
-padding-left: 30px;
-font-family: $font-family-main;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 18px;
-color: $darkShade50;
-max-height: 36px;
-max-width: 192px;
-}
-.button-check__checkbox-text:before {
-content: '';
-position: absolute;
-top: 0;
-left: 0;
-width: 20px;
-height: 20px;
-background: $white;
-border: 1px solid $darkShade25;
-box-sizing: border-box;
-border-radius: 4px;
-}
+
+
 .button-check__checkbox-input:checked+.button-check__checkbox-text:before{
 background-image: url('../assets/img/svg/checkbox.svg');
 background-repeat: no-repeat;
@@ -220,50 +221,54 @@ background-position: center;
 
 .button-radio{
   height: 24px;
-  max-width: 103;
+		max-width: 103;
+
+				&__checkbox-input {
+				position: absolute;
+				z-index: -1;
+				opacity: 0;
+				margin-left: 10px;
+		}
+					&__checkbox-text{
+				position: relative;
+				cursor: pointer;
+				padding-left: 30px;
+				font-family: $font-family-main;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 14px;
+				line-height: 24px;
+				color: $darkShade50;
+				height: 18px;
+				max-width: 73px;
+				}
+
+				&__checkbox-text:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 20px;
+				height: 20px;
+				background: $white;
+				border: 1px solid $darkShade25;
+				box-sizing: border-box;
+				border-radius: 10px;
+				}
+
+				&__checkbox-text:after {
+					content: '';
+					position: absolute;
+					top: 4px;
+					left: 4px;
+					width: 12px;
+					height: 12px;
+					border-radius: 50%;
+					background: $buttonColor;
+					opacity: 0;
+				}
 }
-.button-radio__checkbox-input {
-	position: absolute;
-	z-index: -1;
-	opacity: 0;
-	margin-left: 10px;
-}
-.button-radio__checkbox-text{
-position: relative;
-cursor: pointer;
-padding-left: 30px;
-font-family: $font-family-main;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 24px;
-color: $darkShade50;
-height: 18px;
-max-width: 73px;
-}
-.button-radio__checkbox-text:before {
-content: '';
-position: absolute;
-top: 0;
-left: 0;
-width: 20px;
-height: 20px;
-background: $white;
-border: 1px solid $darkShade25;
-box-sizing: border-box;
-border-radius: 10px;
-}
-.button-radio__checkbox-text:after {
-	content: '';
-	position: absolute;
-	top: 4px;
-	left: 4px;
-	width: 12px;
-	height: 12px;
-	border-radius: 50%;
-	background: $buttonColor;
-	opacity: 0;
-}
+
 .button-radio__checkbox-input:checked + .button-radio__checkbox-text:after {
 	opacity: 1;
 }
@@ -279,52 +284,55 @@ border-radius: 10px;
 
 .button-rich{
   width: 266px;
-  height: 51px;
-}
-.button-rich__checkbox-input {
-	position: absolute;
-	z-index: -1;
-	opacity: 0;
-	margin-left: 10px;
-}
-.button-rich__checkbox-header{
-position: relative;
-cursor: pointer;
-padding-left: 30px;
-font-family: $font-family-main;
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 18px;
-color: $darkShade75;
-height: 18px;
-max-width: 236px;
-}
-.button-rich__checkbox-text{
-position: relative;
-cursor: pointer;
-padding-left: 30px;
-font-family: $font-family-main;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 14px;
-color: $darkShade50;
-height: 28px;
-width: 236px;
-}
-.button-rich__checkbox-header:before {
-content: '';
-position: absolute;
-top: 0;
-left: 0;
-width: 20px;
-height: 20px;
-background: $white;
-border: 1px solid $darkShade25;
-box-sizing: border-box;
-border-radius: 4px;
-}
+		height: 51px;
+
+				&__checkbox-input {
+				position: absolute;
+				z-index: -1;
+				opacity: 0;
+				margin-left: 10px;
+			}
+			&__checkbox-header{
+				position: relative;
+				cursor: pointer;
+				padding-left: 30px;
+				font-family: $font-family-main;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 14px;
+				line-height: 18px;
+				color: $darkShade75;
+				height: 18px;
+				max-width: 236px;
+				}
+				&__checkbox-text{
+				position: relative;
+				cursor: pointer;
+				padding-left: 30px;
+				font-family: $font-family-main;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 12px;
+				line-height: 14px;
+				color: $darkShade50;
+				height: 28px;
+				width: 236px;
+				}
+				&__checkbox-header:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 20px;
+				height: 20px;
+				background: $white;
+				border: 1px solid $darkShade25;
+				box-sizing: border-box;
+				border-radius: 4px;
+				}
+		}
+
+
 .button-rich__checkbox-input:checked+.button-rich__checkbox-header:before{
 background-image: url('../assets/img/svg/checkbox.svg');
 background-repeat: no-repeat;
