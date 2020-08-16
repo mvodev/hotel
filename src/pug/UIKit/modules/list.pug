@@ -17,8 +17,9 @@ mixin list(options)
     else if options.type==='icons'
       div(class=listClassName)
         div(class='material-icons '+listClassName+'__icon')=options.icon
-        div(class=listClassName+'__header')=options.header
-        div(class=listClassName+'__text')=options.text
+        div(class=listClassName+'__text-wrapper')
+          div(class=listClassName+'__header')=options.header
+          div(class=listClassName+'__text')=options.text
     else
       div(class=listClassName)
         ul
