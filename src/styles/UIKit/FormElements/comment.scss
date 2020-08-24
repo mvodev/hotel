@@ -1,0 +1,48 @@
+.expanded-comment{
+ width: 711px;
+ height: 133px;
+ &__body-text,
+ &__header-time{
+  font-family: $font-family-main;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $darkShade75;
+ }
+ &__header{
+  margin-bottom: 12px;
+ }
+ &__header-img{
+  height: 48px;
+  width: 48px;
+  margin-right: 9.93px;
+ }
+ &__header{
+  display: flex;
+  flex-direction: row;
+ }
+ &__header-name{
+  font-family: $font-family-main;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: $darkShade75;
+ }
+ &__header-name-wrapper{
+  display: flex;
+  flex-direction: column;
+ }
+ &__body{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 72px;
+  width: 711px;
+ }
+ &__body-text{
+  width: 653px;
+  height: 72px;
+ } 
+}
