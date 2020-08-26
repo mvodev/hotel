@@ -1,0 +1,12 @@
+mixin pagination(options)
+  - var selectedPage=options.selectedPage
+    div(class='pagination')
+      each val in options.firstNumbers
+        if val===selectedPage
+          div(class='pagination__number pagination__number_selected')=val
+        else
+          div(class='pagination__number')=val
+      if options.isEllipsis
+        div(class='pagination__ellipsis')='...'
+        div(class='pagination__number')=options.lastNumber
+        div(class='pagination__arrow')='arrow_forward' 

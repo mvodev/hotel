@@ -81,17 +81,17 @@ justify-content: right;
 			margin-right: 6px;
 		}
 		& div:first-child{
-font-family: $font-family-main;
-font-style: normal;
-font-weight: bold;
-font-size: 12px;
-line-height: 15px;
-/* identical to box height */
-text-align: center;
-text-transform: uppercase;
-color: $white;
-margin-right: 62px;
+		font-family: $font-family-main;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 15px;
+		text-align: center;
+		text-transform: uppercase;
+		color: $white;
+		margin-right: 62px;
 		}
+
 		&_arr{
 			font-family: $font-for-icons;
 			font-style: normal;

@@ -5,6 +5,7 @@ include modules/button.pug
 include modules/toggle.pug
 include modules/list.pug
 include modules/comment.pug
+include modules/pagination.pug
 h2(class='dropdown-label')="Dropdown"
 +dropdown({placeholder:"Сколько гостей",typeDropdown:'guests',isExpanded:false})
 h2(class='dropdown-label')="Dropdown"
@@ -38,3 +39,4 @@ labels:[{text:'Завтрак',isChecked:false},
 {text:'Письменный стол',isChecked:true},{text:'Стул для кормления',isChecked:true},{text:'Кроватка',isChecked:true},{text:'Телевизор'},{text:'Шампунь'}]})
 +list({type:'icons',icon:'insert_emoticon',header:'Комфорт',text:'Шумопоглощающие стены'})
 +comment({headerName:'Мурад Сарафанов',headerTime:'5 дней назад',imgSource:'../src/assets/img/png/muradik.png',likeNumber:12,isLiked:true,text:'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})
++pagination({isEllipsis:true,firstNumbers:[1,2,3],lastNumber:15,selectedPage:1})
