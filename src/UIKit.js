@@ -11,8 +11,7 @@ var cleave = new Cleave('.txtField-input-date', {
   delimiter: '.',
   datePattern: ['d', 'm', 'Y']
 });
-//import 'air-datepicker'
-$('.datepicker-here').datepicker({ todayButton: true, clearButton: true });
+$('.dropdown-input__date').datepicker({ todayButton: true, clearButton: true });
 $('.range-slider__input').ionRangeSlider({
   type: "double",
   min: 0,

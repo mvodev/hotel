@@ -1,6 +1,6 @@
 ///////////////////////Constants////////////////////////////////////////////
 let counterAdult = (counterChild = counterInfant = 0);
-const $dropDownInputGuests = document.querySelector(".dropdown-input__guests");
+const $dropDownInputGuests = document.querySelector(".dropdown-input__arrow");
 const $dropDownInputFieldGuests = document.querySelector(
   ".dropdown-input__guests input"
 );
@@ -67,8 +67,24 @@ $eraseButton.addEventListener("click", () =>
 //////////////////////Handlers//////////////////////////////////////////
 function handler(event) {
   document
-    .getElementsByClassName("dropdown-guests")[0]
-    .classList.toggle("show");
+    .getElementsByClassName('dropdown-guests')[0]
+    .classList.toggle('show');
+  document.querySelector('.dropdown-input__guests').classList
+    .toggle('dropdown-input__guests_rounding-corners-top');
+  if (document
+    .querySelector('.dropdown-input__arrow')
+    .innerText === 'keyboard_arrow_down') {
+
+    document
+      .querySelector('.dropdown-input__arrow')
+      .innerText = 'keyboard_arrow_up'
+  } else if (document
+    .querySelector('.dropdown-input__arrow')
+    .innerText === 'keyboard_arrow_up') {
+    document
+      .querySelector('.dropdown-input__arrow')
+      .innerText = 'keyboard_arrow_down'
+  }
 }
 function changeCounterGuests(howChange, changeTarget) {
   if (changeTarget === "adult") {

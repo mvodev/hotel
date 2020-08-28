@@ -1,54 +1,52 @@
 mixin dropdown(options)
  -
-   var dropDownClassName = ''
-   var typeDropdown = options.typeDropdown
-   dropDownClassName+=typeDropdown==="guests" ? " dropdown-input__guests" : ""
-   dropDownClassName+=typeDropdown==="date" ? " dropdown-input__date" : ""
-   dropDownClassName+=typeDropdown==="filter-date" ? " dropdown-input__filter" : ""
-   dropDownClassName+=typeDropdown==="room" ? " dropdown-input__room" : ""
- div(class = "dropdown")
-  div(class = dropDownClassName)
-   input(placeholder=options.placeholder)
-   div(class = "dropdown-input__img-wrapper")
-    img(src="../src/assets/img/svg/expand_more.svg", alt="")
+  var dropDownClassName = ''
+  var typeDropdown = options.typeDropdown
+  dropDownClassName+=typeDropdown==='guests' ? ' dropdown-input__guests' : ''
+  dropDownClassName+=typeDropdown==='date' ? ' dropdown-input__date' : ''
+  dropDownClassName+=typeDropdown==='filter-date' ? ' dropdown-input__filter' : ''
+  dropDownClassName+=typeDropdown==='room' ? ' dropdown-input__room' : ''
+ div(class= dropDownClassName)
+  div(class='dropdown-input__wrapper')
+    input(placeholder=options.placeholder type='text')
+    div(class='dropdown-input__arrow')='keyboard_arrow_down'
   case options.typeDropdown
-    when "guests"
-      div(class = "dropdown-guests")
-       div(class="dropdown-guests__adult") 
-        div взрослые 
-        div -
-        div 0
-        div +
-       div(class="dropdown-guests__child")
-        div дети
-        div -
-        div 0
-        div +
-       div(class="dropdown-guests__infant")
-        div младенцы
-        div -
-        div 0
-        div +
-       div(class="dropdown-guests__apply-button")
-        div(class= 'hidden') очистить
-        div применить
-      script(src="../src/scripts/dropDownGuests.js")
-    when "room"
-      div(class= "dropdown-room")
-       div(class="dropdown-room__bedroom") 
-        div спальни
-        div -
-        div 2
-        div +
-       div(class="dropdown-room__bed")
-        div кровати
-        div -
-        div 2
-        div +
-       div(class="dropdown-room__bath")
-        div ванные комнаты
-        div -
-        div 0
-        div +
-      script(src="../src/scripts/dropDownRoom.js")
-      
+    when 'guests'
+      div(class = 'dropdown-guests')
+        div(class='dropdown-guests__adult') 
+          div взрослые 
+          div -
+          div 0
+          div +
+        div(class='dropdown-guests__child')
+          div дети
+          div -
+          div 0
+          div +
+        div(class='dropdown-guests__infant')
+          div младенцы
+          div -
+          div 0
+          div +
+        div(class='dropdown-guests__apply-button')
+          div(class= 'hidden') очистить
+          div применить
+        script(src='../src/scripts/dropDownGuests.js')
+    when 'room'
+      div(class= 'dropdown-room')
+        div(class='dropdown-room__bedroom') 
+          div спальни
+          div -
+          div 2
+          div +
+        div(class='dropdown-room__bed')
+          div кровати
+          div -
+          div 2
+          div +
+        div(class='dropdown-room__bath')
+          div ванные комнаты
+          div -
+          div 0
+          div +
+        script(src='../src/scripts/dropDownRoom.js')

@@ -1,14 +1,12 @@
-@import "leftSideUiKitColors.scss";
-@import "rightSideUiKitColors.scss";
+@import "leftColumnUiKitColors.scss";
+@import "rightColumnUiKitColors.scss";
 @import '../styles/common/headerUIKit.scss';
 body {
   height: 900px;
-  max-width: 1440px;
   width: 1440px;
 }
 .colors-container {
   display: flex;
   justify-content: space-between;
-  width: 1440px;
   height: 792px;
 }

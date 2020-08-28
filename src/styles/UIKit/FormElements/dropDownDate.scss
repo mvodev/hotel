@@ -1,0 +1,50 @@
+.dropdown-input__date {
+  width: 150px;
+  height: 44px;
+  background: $white;
+  border: 1px solid $darkShade25;
+  box-sizing: border-box;
+  border-radius: 4px;
+  // display: flex;
+  // flex-wrap: nowrap;
+  // flex-direction: row;
+  // justify-content: space-between;
+}
+.dropdown-input__date input {
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  height: 24px;
+  width: 103px;
+  z-index: 1;
+  margin-top: 8px;
+  margin-left: 15px;
+  font-family: $font-family-main;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  cursor: pointer;
+}
+.dropdown-input__date input::placeholder {
+  font-family: $font-family-main;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  width: 103px;
+  height: 24px;
+  /* identical to box height, or 171% */
+  /* Dark 75% */
+  color: $darkShade75;
+  margin-bottom: 12px;
+}
+
+.dropdown-input__date__arrow {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

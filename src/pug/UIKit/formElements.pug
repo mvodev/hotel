@@ -6,37 +6,59 @@ include modules/toggle.pug
 include modules/list.pug
 include modules/comment.pug
 include modules/pagination.pug
-h2(class='dropdown-label')="Dropdown"
-+dropdown({placeholder:"Сколько гостей",typeDropdown:'guests',isExpanded:false})
-h2(class='dropdown-label')="Dropdown"
-+dropdown({placeholder:"2 спальни,2 кровати...",typeDropdown:'room'})
-+textField({isMasked:true,placeholder:'ДД.ММ.ГГГГ'})
-+textField({isDefault:true,placeholder:'Email'})
-+textField({isFocused:true,placeholder:'This is pretty awesome'})
-+textField({isSubscription:true,placeholder:'Email'})
-+rangeSlider({label:'RANGE SLIDER'})
-+button({label:'CLICK ME',type:'dark'})
-+button({label:'CLICK ME',type:'dark50'})
-+button({label:'CLICK ME',type:'white'})
-+button({label:'CLICK ME',type:'white50'})
-+button({label:'CLICK ME',type:'transparent'})
-+button({label:'CLICK ME',type:'transparent50'})
-+button({label:'ПЕРЕЙТИ К ОПЛАТЕ',type:'arrow'})
-+button({type:'rate',darkStar:4})
-+button({type:'rate',darkStar:1})
-+button({type:'like',likeNumber:2})
-+button({type:'like',likeNumber:12,isLiked:true})
-+button({type:'check',text:'Можно курить'})
-+button({type:'check',text:'Можно курить',isChecked:true})
-+button({type:'radio',label:'Мужчина'})
-+button({type:'rich',header:'Широкий коридор',label:'Ширина коридоров в номере не менее 91 см.'})
-+toggle({label:'TOGGLE',
-className:'toggle',
-labels:[{name:'Получать спецпредложения',  isPositive:true},{name:'Получать спецпредложения',  isPositive:false}]})
-+list({labels:['Нельзя с питомцами','Без вечеринок и мероприятий','Время прибытия — после 13:00, а выезд до 12:00']})
-+list({type:'expandable',label:'expandable checkbox list',
-labels:[{text:'Завтрак',isChecked:false},
-{text:'Письменный стол',isChecked:true},{text:'Стул для кормления',isChecked:true},{text:'Кроватка',isChecked:true},{text:'Телевизор'},{text:'Шампунь'}]})
-+list({type:'icons',icon:'insert_emoticon',header:'Комфорт',text:'Шумопоглощающие стены'})
-+comment({headerName:'Мурад Сарафанов',headerTime:'5 дней назад',imgSource:'../src/assets/img/png/muradik.png',likeNumber:12,isLiked:true,text:'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})
-+pagination({isEllipsis:true,firstNumbers:[1,2,3],lastNumber:15,selectedPage:1})
+.form-elements-wrapper
+ .form-elements-left-column
+  h2(class='form-elements-left-column__header')
+   span(class='form-elements-left-column__header_title')='Text Field'
+   span='Default'
+  +textField({isDefault:true,placeholder:'Email'})
+  h2(class='form-elements-left-column__header')
+   span(class='form-elements-left-column__header_title')='Text Field'
+   span='HOVER/FOCUS'
+  +textField({isFocused:true,placeholder:'This is pretty awesome'})
+  h2(class='form-elements-left-column__header')
+   span(class='form-elements-left-column__header_title')='Dropdown'
+   span='Default'
+  +dropdown({placeholder:'Сколько гостей',typeDropdown:'guests',isExpanded:false})
+  h2(class='form-elements-left-column__header')
+   span(class='form-elements-left-column__header_title')='Masked Text Field'
+   span='Default'
+  +textField({isMasked:true,placeholder:'ДД.ММ.ГГГГ'})
+  h2(class='form-elements-left-column__header')
+   span(class='form-elements-left-column__header_title')='Date Dropdown'
+  +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'date',isExpanded:false})
+ .form-elements-right-column
+//- h2(class='dropdown-label')="Dropdown"
+//- +dropdown({placeholder:"Сколько гостей",typeDropdown:'guests',isExpanded:false})
+//- h2(class='dropdown-label')="Dropdown"
+//- +dropdown({placeholder:"2 спальни,2 кровати...",typeDropdown:'room'})
+//- +textField({isMasked:true,placeholder:'ДД.ММ.ГГГГ'})
+//- +textField({isDefault:true,placeholder:'Email'})
+//- +textField({isFocused:true,placeholder:'This is pretty awesome'})
+//- +textField({isSubscription:true,placeholder:'Email'})
+//- +rangeSlider({label:'RANGE SLIDER'})
+//- +button({label:'CLICK ME',type:'dark'})
+//- +button({label:'CLICK ME',type:'dark50'})
+//- +button({label:'CLICK ME',type:'white'})
+//- +button({label:'CLICK ME',type:'white50'})
+//- +button({label:'CLICK ME',type:'transparent'})
+//- +button({label:'CLICK ME',type:'transparent50'})
+//- +button({label:'ПЕРЕЙТИ К ОПЛАТЕ',type:'arrow'})
+//- +button({type:'rate',darkStar:4})
+//- +button({type:'rate',darkStar:1})
+//- +button({type:'like',likeNumber:2})
+//- +button({type:'like',likeNumber:12,isLiked:true})
+//- +button({type:'check',text:'Можно курить'})
+//- +button({type:'check',text:'Можно курить',isChecked:true})
+//- +button({type:'radio',label:'Мужчина'})
+//- +button({type:'rich',header:'Широкий коридор',label:'Ширина коридоров в номере не менее 91 см.'})
+//- +toggle({label:'TOGGLE',
+//- className:'toggle',
+//- labels:[{name:'Получать спецпредложения',  isPositive:true},{name:'Получать спецпредложения',  isPositive:false}]})
+//- +list({labels:['Нельзя с питомцами','Без вечеринок и мероприятий','Время прибытия — после 13:00, а выезд до 12:00']})
+//- +list({type:'expandable',label:'expandable checkbox list',
+//- labels:[{text:'Завтрак',isChecked:false},
+//- {text:'Письменный стол',isChecked:true},{text:'Стул для кормления',isChecked:true},{text:'Кроватка',isChecked:true},{text:'Телевизор'},{text:'Шампунь'}]})
+//- +list({type:'icons',icon:'insert_emoticon',header:'Комфорт',text:'Шумопоглощающие стены'})
+//- +comment({headerName:'Мурад Сарафанов',headerTime:'5 дней назад',imgSource:'../src/assets/img/png/muradik.png',likeNumber:12,isLiked:true,text:'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})
+//- +pagination({isEllipsis:true,firstNumbers:[1,2,3],lastNumber:15,selectedPage:1})
