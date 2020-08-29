@@ -8,7 +8,7 @@ mixin dropdown(options)
   dropDownClassName+=typeDropdown==='room' ? ' dropdown-input__room' : ''
  div(class= dropDownClassName)
   div(class='dropdown-input__wrapper')
-    input(placeholder=options.placeholder type='text')
+    input(class='dropdown-input_input-field' placeholder=options.placeholder type='text')
     div(class='dropdown-input__arrow')='keyboard_arrow_down'
   case options.typeDropdown
     when 'guests'

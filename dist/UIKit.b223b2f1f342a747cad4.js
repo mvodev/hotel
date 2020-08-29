@@ -192,7 +192,7 @@ var cleave = new Cleave('.txtField-input-date', {
   delimiter: '.',
   datePattern: ['d', 'm', 'Y']
 });
-$('.dropdown-input__date').datepicker({ todayButton: true, clearButton: true });
+$('.dropdown-input_input-field').datepicker({ todayButton: true, clearButton: true });
 $('.range-slider__input').ionRangeSlider({
   type: "double",
   min: 0,
@@ -299,4 +299,4 @@ function rateClickListener(event) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=UIKit.73a670bdfa2bd13d7659.js.map
+//# sourceMappingURL=UIKit.b223b2f1f342a747cad4.js.map
