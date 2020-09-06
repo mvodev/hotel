@@ -9,7 +9,7 @@
 @import './list.scss';
 @import './comment.scss';
 @import './pagination.scss';
-.form-elements-left-column{
+.form-elements__left-column{
  width: 320px;
  margin-left: 140px;
  & h2{
@@ -20,6 +20,6 @@
   font-family: $font-family-main;
  }
 }
-.form-elements-right-column{
+.form-elements__right-column{
  width: 711px;
 }

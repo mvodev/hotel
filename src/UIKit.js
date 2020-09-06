@@ -1,7 +1,7 @@
 import './styles/UIKitStyles.scss';
 import '../node_modules/ion-rangeslider/css/ion.rangeSlider.min.css'
 import '../node_modules/air-datepicker/dist/css/datepicker.min.css';
-import '../node_modules/air-datepicker/dist/js/datepicker.min.js';
+import '../node_modules/air-datepicker/dist/js/datepicker.js';
 import '../src/scripts/starRating.js'
 import '../src/scripts/likeRating.js'
 import 'ion-rangeslider'
@@ -11,7 +11,8 @@ var cleave = new Cleave('.txtField-input-date', {
   delimiter: '.',
   datePattern: ['d', 'm', 'Y']
 });
-$('.dropdown-input_input-field').datepicker({ todayButton: true, clearButton: true });
+$('.dropdown-input__date_input-field').datepicker({ todayButton: true, clearButton: true });
+$('.dropdown-input__filter_input-field').datepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
 $('.range-slider__input').ionRangeSlider({
   type: "double",
   min: 0,
@@ -40,3 +41,7 @@ $('.range-slider__input').ionRangeSlider({
       html(minValue + '<span class="rub">i</span> - ' + maxValue + '<span class="rub">i</span>');
   }
 });
+
+
+// dropdown additional options fot range dropdown:
+// range: true, dateFormat: 'dd M',inline: true

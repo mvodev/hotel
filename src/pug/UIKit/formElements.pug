@@ -7,27 +7,29 @@ include modules/list.pug
 include modules/comment.pug
 include modules/pagination.pug
 .form-elements-wrapper
- .form-elements-left-column
-  h2(class='form-elements-left-column__header')
-   span(class='form-elements-left-column__header_title')='Text Field'
+ .form-elements__left-column
+  h2(class='form-elements__left-column__header')
+   span(class='form-elements__left-column__header_title')='Text Field'
    span='Default'
   +textField({isDefault:true,placeholder:'Email'})
-  h2(class='form-elements-left-column__header')
-   span(class='form-elements-left-column__header_title')='Text Field'
+  h2(class='form-elements__left-column__header')
+   span(class='form-elements__left-column__header_title')='Text Field'
    span='HOVER/FOCUS'
   +textField({isFocused:true,placeholder:'This is pretty awesome'})
-  h2(class='form-elements-left-column__header')
-   span(class='form-elements-left-column__header_title')='Dropdown'
+  h2(class='form-elements__left-column__header')
+   span(class='form-elements__left-column__header_title')='Dropdown'
    span='Default'
   +dropdown({placeholder:'Сколько гостей',typeDropdown:'guests',isExpanded:false})
-  h2(class='form-elements-left-column__header')
-   span(class='form-elements-left-column__header_title')='Masked Text Field'
+  h2(class='form-elements__left-column__header')
+   span(class='form-elements__left-column__header_title')='Masked Text Field'
    span='Default'
   +textField({isMasked:true,placeholder:'ДД.ММ.ГГГГ'})
-  h2(class='form-elements-left-column__header')
-   span(class='form-elements-left-column__header_title')='Date Dropdown'
-  +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'date',isExpanded:false})
- .form-elements-right-column
+  h2(class='form-elements__left-column__header')
+   span(class='form-elements__left-column__header_title')='Date Dropdown'
+    +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'date',isExpanded:false})
+   span(class='form-elements__left-column__header_title')='Filter Date Dropdown'
+    +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'filter',isExpanded:false})
+ .form-elements__right-column
 //- h2(class='dropdown-label')="Dropdown"
 //- +dropdown({placeholder:"Сколько гостей",typeDropdown:'guests',isExpanded:false})
 //- h2(class='dropdown-label')="Dropdown"
