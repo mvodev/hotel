@@ -9,17 +9,37 @@
 @import './list.scss';
 @import './comment.scss';
 @import './pagination.scss';
-.form-elements__left-column{
- width: 320px;
- margin-left: 140px;
- & h2{
-  display: flex;
-  flex-direction: row;
- }
- & h2>span{
-  font-family: $font-family-main;
- }
+.form-elements__left-column,
+.form-elements__central-column,
+.form-elements__right-column,
+.form-elements__comment{
+  border:1px solid red;
 }
-.form-elements__right-column{
- width: 711px;
+.form-elements__wrapper{
+ width: 1440px;
+ height: 1853px;
+ display: grid;
+ grid-template-areas:
+    "header header header" 
+    "left central right"
+    "left central right"
+    "left comment comment";
+
+ grid-template-columns: 446px 407px 320px;
+ grid-template-rows: 78px 1fr 1fr 279px;
+}
+.form-elements__wrapper header{
+ grid-area: header;
+}
+.form-elements__left-column {
+  grid-area: left;
+}
+.form-elements__central-column {
+  grid-area: central;
+}
+.form-elements__right-column {
+  grid-area: right;
+}
+.form-elements__comment {
+  grid-area: comment;
 }

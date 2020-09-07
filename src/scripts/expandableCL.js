@@ -2,7 +2,7 @@ const $bulletListExpandableArrow = document.querySelector('.bullet-list-expandab
 const $bulletListExpandableDropdown = document.querySelector('.bullet-list-expandable__dropdown');
 $bulletListExpandableArrow.addEventListener('click', expandableListHandler);
 function expandableListHandler() {
- $bulletListExpandableDropdown.classList.toggle('show');
+ $bulletListExpandableDropdown.classList.toggle('bullet-list_show');
  if ($bulletListExpandableArrow.innerHTML === 'keyboard_arrow_down') {
   $bulletListExpandableArrow.innerHTML = 'keyboard_arrow_up';
  }

@@ -6,6 +6,7 @@ mixin dropdown(options)
   dropDownClassName+=typeDropdown==='date' ? ' dropdown-input__date' : ''
   dropDownClassName+=typeDropdown==='filter' ? ' dropdown-input__filter' : ''
   dropDownClassName+=typeDropdown==='room' ? ' dropdown-input__room' : ''
+  dropDownClassName+=options.isExpanded===true ? ' dropdown-room_active' : ''
  div(class= dropDownClassName)
   div(class='dropdown-input__wrapper')
     input(class=dropDownClassName+'_input-field' placeholder=options.placeholder type='text')

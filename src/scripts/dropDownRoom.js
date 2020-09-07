@@ -55,7 +55,7 @@ counterBathValueIncrease.addEventListener("click", () =>
 );
 //////////////////////Handlers//////////////////////////////////////////
 function handler(event) {
-  document.getElementsByClassName("dropdown-room")[0].classList.toggle("show");
+  document.getElementsByClassName("dropdown-room")[0].classList.toggle('dropdown-room_active');
   showResultInDropDown();
 }
 function changeCounter(howChange, changeTarget) {

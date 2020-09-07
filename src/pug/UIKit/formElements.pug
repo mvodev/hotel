@@ -6,30 +6,45 @@ include modules/toggle.pug
 include modules/list.pug
 include modules/comment.pug
 include modules/pagination.pug
-.form-elements-wrapper
+include headerUiKit.pug
+.form-elements__wrapper
+ +header
  .form-elements__left-column
-  h2(class='form-elements__left-column__header')
-   span(class='form-elements__left-column__header_title')='Text Field'
+  h2(class='form-elements__left-column-header')
+   span(class='form-elements__left-column-header-title')='Text Field'
    span='Default'
-  +textField({isDefault:true,placeholder:'Email'})
-  h2(class='form-elements__left-column__header')
-   span(class='form-elements__left-column__header_title')='Text Field'
+  +textfield({isDefault:true,placeholder:'Email'})
+  h2(class='form-elements__left-column-header')
+   span(class='form-elements__left-column-header-title')='Text Field'
    span='HOVER/FOCUS'
-  +textField({isFocused:true,placeholder:'This is pretty awesome'})
-  h2(class='form-elements__left-column__header')
-   span(class='form-elements__left-column__header_title')='Dropdown'
+  +textfield({isFocused:true,placeholder:'This is pretty awesome'})
+  h2(class='form-elements__left-column-header')
+   span(class='form-elements__left-column-header-title')='Dropdown'
    span='Default'
   +dropdown({placeholder:'Сколько гостей',typeDropdown:'guests',isExpanded:false})
-  h2(class='form-elements__left-column__header')
-   span(class='form-elements__left-column__header_title')='Masked Text Field'
+  h2(class='form-elements__left-column-header')
+   span(class='form-elements__left-column-header-title')='Masked Text Field'
    span='Default'
-  +textField({isMasked:true,placeholder:'ДД.ММ.ГГГГ'})
-  h2(class='form-elements__left-column__header')
-   span(class='form-elements__left-column__header_title')='Date Dropdown'
+  +textfield({isMasked:true,placeholder:'ДД.ММ.ГГГГ'})
+  h2(class='form-elements__left-column-header')
+   div(class='form-elements__left-column-header-title')='Date Dropdown'
     +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'date',isExpanded:false})
-   span(class='form-elements__left-column__header_title')='Filter Date Dropdown'
+   div(class='form-elements__left-column-header-title')='Filter Date Dropdown'
     +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'filter',isExpanded:false})
+   h2(class='form-elements__left-column-header')
+    span(class='form-elements__left-column-header-title')='Subscription Text Field'
+   +textfield({isSubscription:true,placeholder:'Email'})
+   h2(class='form-elements__left-column-header')
+    span(class='form-elements__left-column-header-title')='Dropdown'
+    span='DEFAULT'
+   +dropdown({typeDropdown:'room',placeholder:'2 спальни,2 кровати'})
+   h2(class='form-elements__left-column-header')
+    span(class='form-elements__left-column-header-title')='Dropdown'
+    span='EXPANDED'
+   +dropdown({typeDropdown:'room',placeholder:'2 спальни,2 кровати',isExpanded:true})
+ .form-elements__central-column
  .form-elements__right-column
+ .form-elements__comment
 //- h2(class='dropdown-label')="Dropdown"
 //- +dropdown({placeholder:"Сколько гостей",typeDropdown:'guests',isExpanded:false})
 //- h2(class='dropdown-label')="Dropdown"
