@@ -1,8 +1,8 @@
 ///////////////////////Constants////////////////////////////////////////////
 let counterBedRoom = (counterBed = 2);
 let counterBath = 0;
-const dropDownInputRoom = document.querySelector(".dropdown-input__room");
-const dropDownInputFieldRoom = document.querySelector(
+const dropDownInputRoom = document.querySelectorAll(".dropdown-input__room");
+const dropDownInputFieldRoom = document.querySelectorAll(
   ".dropdown-input__room input"
 );
 const counterBadRoomValueTag = document.querySelector(
@@ -34,7 +34,7 @@ const counterBathValueIncrease = document.querySelector(
 );
 
 /////////////////////////Listeners//////////////////////////////////////////////
-dropDownInputRoom.addEventListener("click", handler);
+dropDownInputRoom.forEach(elem => elem.addEventListener("click", dropdownClickHandler));
 counterBadRoomValueIncrease.addEventListener("click", () =>
   changeCounter("increase", "badroom")
 );
@@ -54,8 +54,8 @@ counterBathValueIncrease.addEventListener("click", () =>
   changeCounter("increase", "bath")
 );
 //////////////////////Handlers//////////////////////////////////////////
-function handler(event) {
-  document.getElementsByClassName("dropdown-room")[0].classList.toggle('dropdown-room_active');
+function dropdownClickHandler(event) {
+  event.target.parentNode.parentNode.childNodes[1].classList.toggle('dropdown-room_active');
   showResultInDropDown();
 }
 function changeCounter(howChange, changeTarget) {
@@ -108,5 +108,5 @@ function showResultInDropDown() {
   } else if (counterBath > 1) {
     result += counterBath + " ванных ";
   }
-  dropDownInputFieldRoom.value = result;
+  dropDownInputFieldRoom.forEach(elem => elem.value = result);
 }

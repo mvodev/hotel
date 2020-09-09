@@ -6,6 +6,8 @@ import '../src/scripts/starRating.js'
 import '../src/scripts/likeRating.js'
 import 'ion-rangeslider'
 import 'cleave.js'
+import '../src/scripts/dropDownGuests.js'
+import '../src/scripts/dropDownRoom.js'
 var cleave = new Cleave('.txtField-input-date', {
   date: true,
   delimiter: '.',
