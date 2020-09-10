@@ -135,7 +135,7 @@ function showResultInDropDownGuests(action) {
     }
     $dropDownInputFieldGuests.value = result;
     dropDownResult = result;
-    if (result != "") $eraseButton.classList.remove("hidden");
+    if (result != "") $eraseButton.classList.remove("dropdown_button-hidden");
     result = "";
   } else if (action === "erase") {
     dropDownResult = "";
@@ -144,6 +144,6 @@ function showResultInDropDownGuests(action) {
     $counterAdultValueTag.innerText = 0;
     $counterChildValueTag.innerText = 0;
     $counterInfantValueTag.innerText = 0;
-    $eraseButton.classList.add("hidden");
+    $eraseButton.classList.add("dropdown_button-hidden");
   }
 }

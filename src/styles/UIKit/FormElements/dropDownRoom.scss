@@ -1,12 +1,8 @@
 .dropdown-input__room {
   position: relative;
-}
-
-.dropdown-input__room {
   width: 266px;
   height: 44px;
   background: $white;
-  /* Dark 25% */
   border: 1px solid $darkShade25;
   box-sizing: border-box;
   border-radius: 4px;
@@ -23,8 +19,6 @@
   line-height: 24px;
   width: 160px;
   height: 24px;
-  /* identical to box height, or 171% */
-  /* Dark 75% */
   color: $darkShade75;
   margin-bottom: 12px;
 }
@@ -59,14 +53,14 @@
   width: 266px;
   height: 119px;
   background:$white;
-  /* Dark 50% */
   border: 1px solid $darkShade50;
   box-sizing: border-box;
   box-shadow: 0px 10px 20px $darkShade5;
+  &_active{
+    display: block;
+  }
 }
-.dropdown-room_active {
-  display: block;
-}
+
 .dropdown-room__bedroom,
 .dropdown-room__bed,
 .dropdown-room__bath {
@@ -78,19 +72,14 @@
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  /* identical to box height */
   text-transform: uppercase;
-  /* Dark 100% */
   color: $darkShade100;
-}
-.dropdown-room__bedroom,
-.dropdown-room__bed,
-.dropdown-room__bath {
   margin-left: 15px;
   margin-top: 6px;
   margin-right: 7px;
 }
-.hidden {
+
+.dropdown_button-hidden {
   visibility: hidden;
   cursor: none;
 }
