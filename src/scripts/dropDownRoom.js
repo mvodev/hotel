@@ -1,112 +1,152 @@
 ///////////////////////Constants////////////////////////////////////////////
-let counterBedRoom = (counterBed = 2);
-let counterBath = 0;
+const bed = counterBed();
+const bath = counterBath();
+const bedRoom = counterBedRoom();
 const dropDownInputRoom = document.querySelectorAll(".dropdown-input__room");
 const dropDownInputFieldRoom = document.querySelectorAll(
-  ".dropdown-input__room input"
-);
-const counterBadRoomValueTag = document.querySelector(
-  ".dropdown-room__bedroom div:nth-child(3)"
-);
-const counterBadRoomValueDecrease = document.querySelector(
-  ".dropdown-room__bedroom div:nth-child(2)"
-);
-const counterBadRoomValueIncrease = document.querySelector(
-  ".dropdown-room__bedroom div:nth-child(4)"
-);
-const counterBadValueTag = document.querySelector(
-  ".dropdown-room__bed div:nth-child(3)"
-);
-const counterBadValueDecreaseTag = document.querySelector(
-  ".dropdown-room__bed div:nth-child(2)"
-);
-const counterBadValueIncreaseTag = document.querySelector(
-  ".dropdown-room__bed div:nth-child(4)"
-);
-const counterBathValueTag = document.querySelector(
-  ".dropdown-room__bath div:nth-child(3)"
-);
-const counterBathValueDecrease = document.querySelector(
-  ".dropdown-room__bath div:nth-child(2)"
-);
-const counterBathValueIncrease = document.querySelector(
-  ".dropdown-room__bath div:nth-child(4)"
-);
+  ".dropdown-input__room input");
+const counterBadRoomValueTag = document.querySelectorAll(
+  ".dropdown-room__bedroom div:nth-child(3)");
+const counterBadRoomValueDecrease = document.querySelectorAll(
+  ".dropdown-room__bedroom div:nth-child(2)");
+const counterBadRoomValueIncrease = document.querySelectorAll(
+  ".dropdown-room__bedroom div:nth-child(4)");
+const counterBadValueTag = document.querySelectorAll(
+  ".dropdown-room__bed div:nth-child(3)");
+const counterBadValueDecreaseTag = document.querySelectorAll(
+  ".dropdown-room__bed div:nth-child(2)");
+const counterBadValueIncreaseTag = document.querySelectorAll(
+  ".dropdown-room__bed div:nth-child(4)");
+const counterBathValueTag = document.querySelectorAll(
+  ".dropdown-room__bath div:nth-child(3)");
+const counterBathValueDecrease = document.querySelectorAll(
+  ".dropdown-room__bath div:nth-child(2)");
+const counterBathValueIncrease = document.querySelectorAll(
+  ".dropdown-room__bath div:nth-child(4)");
 
 /////////////////////////Listeners//////////////////////////////////////////////
 dropDownInputRoom.forEach(elem => elem.addEventListener("click", dropdownClickHandler));
-counterBadRoomValueIncrease.addEventListener("click", () =>
+counterBadRoomValueIncrease.forEach(elem => elem.addEventListener("click", () =>
   changeCounter("increase", "badroom")
-);
-counterBadRoomValueDecrease.addEventListener("click", () =>
+));
+counterBadRoomValueDecrease.forEach(elem => elem.addEventListener("click", () =>
   changeCounter("decrease", "badroom")
-);
-counterBadValueDecreaseTag.addEventListener("click", () =>
+));
+counterBadValueDecreaseTag.forEach(elem => elem.addEventListener("click", () =>
   changeCounter("decrease", "bad")
-);
-counterBadValueIncreaseTag.addEventListener("click", () =>
+));
+counterBadValueIncreaseTag.forEach(elem => elem.addEventListener("click", () =>
   changeCounter("increase", "bad")
-);
-counterBathValueDecrease.addEventListener("click", () =>
+));
+counterBathValueDecrease.forEach(elem => elem.addEventListener("click", () =>
   changeCounter("decrease", "bath")
-);
-counterBathValueIncrease.addEventListener("click", () =>
+));
+counterBathValueIncrease.forEach(elem => elem.addEventListener("click", () =>
   changeCounter("increase", "bath")
-);
+));
 //////////////////////Handlers//////////////////////////////////////////
 function dropdownClickHandler(event) {
   event.target.parentNode.parentNode.childNodes[1].classList.toggle('dropdown-room_active');
   showResultInDropDown();
 }
+function counterBedRoom() {
+  let privateCounter = 2;
+  return {
+    increase: function () {
+      privateCounter++;
+      counterBadRoomValueTag.forEach(elem => elem.innerText++);
+    },
+    decrease: function () {
+      if (privateCounter > 0) {
+        privateCounter--;
+        counterBadRoomValueTag.forEach(elem => elem.innerText--);
+      }
+    },
+    getCounter: function () {
+      return privateCounter;
+    }
+  };
+}
+function counterBed() {
+  let privateCounter = 2;
+  return {
+    increase: function () {
+      privateCounter++;
+      counterBadValueTag.forEach(elem => elem.innerText++);
+    },
+    decrease: function () {
+      if (privateCounter > 0) {
+        privateCounter--;
+        counterBadValueTag.forEach(elem => elem.innerText--);
+      }
+    },
+    getCounter: function () {
+      return privateCounter;
+    }
+  };
+}
+function counterBath() {
+  let privateCounter = 0;
+  return {
+    increase: function () {
+      privateCounter++;
+      counterBathValueTag.forEach(elem => elem.innerText++);
+    },
+    decrease: function () {
+      if (privateCounter > 0) {
+        privateCounter--;
+        counterBathValueTag.forEach(elem => elem.innerText--);
+      }
+    },
+    getCounter: function () {
+      return privateCounter;
+    }
+  };
+}
 function changeCounter(howChange, changeTarget) {
   if (changeTarget === "badroom") {
     if (howChange === "increase") {
-      counterBadRoomValueTag.innerText++;
-      counterBedRoom++;
+      bedRoom.increase();
     } else {
-      if (counterBadRoomValueTag.innerText > 0) {
-        counterBadRoomValueTag.innerText--;
-        counterBedRoom--;
+      if (bedRoom.getCounter > 0) {
+        bedRoom.decrease();
       }
     }
   } else if (changeTarget === "bad") {
     if (howChange === "increase") {
-      counterBadValueTag.innerText++;
-      counterBed++;
+      bed.increase();
     } else {
-      if (counterBadValueTag.innerText > 0) {
-        counterBadValueTag.innerText--;
-        counterBed--;
+      if (bed.getCounter() > 0) {
+        bed.decrease();
       }
     }
   } else {
     if (howChange === "increase") {
-      counterBathValueTag.innerText++;
-      counterBath++;
+      bath.increase();
     } else {
-      if (counterBathValueTag.innerText > 0) {
-        counterBathValueTag.innerText--;
-        counterBath--;
+      if (bath.getCounter() > 0) {
+        bath.decrease();
       }
     }
   }
+  showResultInDropDown();
 }
 function showResultInDropDown() {
   let result = "";
-  if (counterBedRoom === 1) {
-    result += counterBedRoom + " спальня ";
-  } else if (counterBedRoom > 1) {
-    result += counterBedRoom + " спальни ";
+  if (bedRoom.getCounter() === 1) {
+    result += bedRoom.getCounter() + " спальня ";
+  } else if (bedRoom.getCounter() > 1) {
+    result += bedRoom.getCounter() + " спальни ";
   }
-  if (counterBed === 1) {
-    result += counterBed + " кровать ";
-  } else if (counterBed > 1) {
-    result += counterBed + " кровати ";
+  if (bed.getCounter() === 1) {
+    result += bed.getCounter() + " кровать ";
+  } else if (bed.getCounter() > 1) {
+    result += bed.getCounter() + " кровати ";
   }
-  if (counterBath === 1) {
-    result += counterBath + " ванная ";
-  } else if (counterBath > 1) {
-    result += counterBath + " ванных ";
+  if (bath.getCounter() === 1) {
+    result += bath.getCounter() + " ванная ";
+  } else if (bath.getCounter() > 1) {
+    result += bath.getCounter() + " ванных ";
   }
   dropDownInputFieldRoom.forEach(elem => elem.value = result);
 }
