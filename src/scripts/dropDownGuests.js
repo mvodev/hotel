@@ -1,5 +1,7 @@
 ///////////////////////Constants////////////////////////////////////////////
-let counterAdult = (counterChild = counterInfant = 0);
+const adult = counterAdult();
+const child = counterChild();
+const infant = counterInfant();
 const $dropDownInputGuests = document.querySelector(".dropdown-input__arrow");
 const $dropDownInputFieldGuests = document.querySelector(
   ".dropdown-input__guests input"
@@ -90,31 +92,31 @@ function changeCounterGuests(howChange, changeTarget) {
   if (changeTarget === "adult") {
     if (howChange === "increase") {
       $counterAdultValueTag.innerText++;
-      counterAdult++;
+      adult.increase();
     } else {
       if ($counterAdultValueTag.innerText > 0) {
         $counterAdultValueTag.innerText--;
-        counterAdult--;
+        adult.decrease();
       }
     }
   } else if (changeTarget === "child") {
     if (howChange === "increase") {
       $counterChildValueTag.innerText++;
-      counterChild++;
+      child.increase();
     } else {
       if ($counterChildValueTag.innerText > 0) {
         $counterChildValueTag.innerText--;
-        counterChild--;
+        child.decrease();
       }
     }
   } else {
     if (howChange === "increase") {
       $counterInfantValueTag.innerText++;
-      counterInfant++;
+      infant.increase();
     } else {
       if ($counterInfantValueTag.innerText > 0) {
         $counterInfantValueTag.innerText--;
-        counterInfant--;
+        infant.decrease();
       }
     }
   }
@@ -122,7 +124,7 @@ function changeCounterGuests(howChange, changeTarget) {
 function showResultInDropDownGuests(action) {
   if (action === "apply") {
     let result = "";
-    let counterGuests = counterInfant + counterChild + counterAdult;
+    let counterGuests = infant.getCounter() + child.getCounter() + adult.getCounter();
     if (
       counterGuests === 1 ||
       (counterGuests > 20 && (counterGuests - 1) % 10 === 0)
@@ -138,12 +140,83 @@ function showResultInDropDownGuests(action) {
     if (result != "") $eraseButton.classList.remove("dropdown_button-hidden");
     result = "";
   } else if (action === "erase") {
-    dropDownResult = "";
-    counterAdult = counterChild = counterInfant = 0;
-    $dropDownInputFieldGuests.value = dropDownResult;
-    $counterAdultValueTag.innerText = 0;
-    $counterChildValueTag.innerText = 0;
-    $counterInfantValueTag.innerText = 0;
-    $eraseButton.classList.add("dropdown_button-hidden");
+    eraseResult();
   }
+}
+function eraseResult() {
+  counterAdult = counterChild = counterInfant = 0;
+  $dropDownInputFieldGuests.value = '';
+  $counterAdultValueTag.innerText = 0;
+  $counterChildValueTag.innerText = 0;
+  $counterInfantValueTag.innerText = 0;
+  $eraseButton.classList.add("dropdown_button-hidden");
+}
+function eraseCounters() {
+  adult.erase();
+  child.erase();
+  infant.erase();
+}
+
+function counterAdult() {
+  let privateCounter = 0;
+  return {
+    increase: function () {
+      privateCounter++;
+      counterBadRoomValueTag.forEach(elem => elem.innerText++);
+    },
+    decrease: function () {
+      if (privateCounter > 0) {
+        privateCounter--;
+        counterBadRoomValueTag.forEach(elem => elem.innerText--);
+      }
+    },
+    getCounter: function () {
+      return privateCounter;
+    },
+    erase: function () {
+      privateCounter = 0;
+    }
+  };
+}
+function counterChild() {
+  let privateCounter = 0;
+  return {
+    increase: function () {
+      privateCounter++;
+      counterBadValueTag.forEach(elem => elem.innerText++);
+    },
+    decrease: function () {
+      if (privateCounter > 0) {
+        privateCounter--;
+        counterBadValueTag.forEach(elem => elem.innerText--);
+      }
+    },
+    getCounter: function () {
+      return privateCounter;
+    },
+    erase: function () {
+      privateCounter = 0;
+    }
+  };
+}
+function counterInfant() {
+  let privateCounter = 0;
+  return {
+    increase: function () {
+      privateCounter++;
+      counterBathValueTag.forEach(elem => elem.innerText++);
+    },
+    decrease: function () {
+      if (privateCounter > 0) {
+        privateCounter--;
+        counterBathValueTag.forEach(elem => elem.innerText--);
+      }
+    },
+    getCounter: function () {
+      return privateCounter;
+    },
+    erase: function () {
+      privateCounter = 0;
+    }
+  };
 }
