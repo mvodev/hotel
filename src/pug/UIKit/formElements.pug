@@ -26,11 +26,14 @@ include headerUiKit.pug
    span='Masked Text Field'
    span='Default'
   +textfield({isMasked:true,placeholder:'ДД.ММ.ГГГГ'})
-  h2(class='form-elements__left-column_header')
-   span='Date Dropdown'
-  +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'date',isExpanded:false})
-  h2(class='form-elements__left-column_header')
-   span='Filter Date Dropdown'
+  .form-elements__left-column_dropdown-wrapper
+   div
+    h2(class='form-elements__left-column_header')='Date Dropdown'
+    h2(class='form-elements__left-column_header')='Date Dropdown'
+   div
+    +dropdown({placeholder:'19.08.2019',typeDropdown:'date',isExpanded:false})
+    +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'date',isExpanded:false})
+  h2(class='form-elements__left-column_header')='Filter Date Dropdown'
   +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'filter',isExpanded:false})
   h2(class='form-elements__left-column_header')
     span='Subscription Text Field'
@@ -43,12 +46,14 @@ include headerUiKit.pug
     span='Dropdown'
     span='EXPANDED'
   +dropdown({typeDropdown:'room',placeholder:'2 спальни,2 кровати',isExpanded:true})
-  +list({type:'expandable',label:'expandable checkbox list',isExpand:false,
-   labels:[{text:'Завтрак',isChecked:false},
-   {text:'Письменный стол',isChecked:true},{text:'Стул для кормления',isChecked:true},{text:'Кроватка',isChecked:true},{text:'Телевизор'},{text:'Шампунь'}]})
-  +list({type:'expandable',label:'expandable checkbox list',isExpand:true,
-   labels:[{text:'Завтрак',isChecked:false},
-   {text:'Письменный стол',isChecked:true},{text:'Стул для кормления',isChecked:true},{text:'Кроватка',isChecked:true},{text:'Телевизор'},{text:'Шампунь'}]})
+  div(class='bullet-list-wrapper')
+   +list({type:'expandable',label:'expandable checkbox list',isExpand:false,
+    labels:[{text:'Завтрак',isChecked:false},
+    {text:'Письменный стол',isChecked:true},{text:'Стул для кормления',isChecked:true},{text:'Кроватка',isChecked:true},{text:'Телевизор'},{text:'Шампунь'}]})
+  div(class='bullet-list-wrapper')
+   +list({type:'expandable',label:'expandable checkbox list',isExpand:true,
+    labels:[{text:'Завтрак',isChecked:false},
+    {text:'Письменный стол',isChecked:true},{text:'Стул для кормления',isChecked:true},{text:'Кроватка',isChecked:true},{text:'Телевизор'},{text:'Шампунь'}]})
   +list({type:'icons',icon:'insert_emoticon',header:'Комфорт',text:'Шумопоглощающие стены'})
   +list({type:'icons',icon:'location_city',header:'Удобство',text:'Комфорт в каждой из спален'})
  .form-elements__central-column

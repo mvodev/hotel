@@ -9,7 +9,7 @@ mixin list(options)
     if options.type==='expandable'
       div(class=listClassName)
         div(class=listClassName+'__label')=options.label
-          span(class="material-icons")='keyboard_arrow_down'
+          span(class="material-icons")=isExpandedList ? 'keyboard_arrow_up' : 'keyboard_arrow_down'
         div(class=listClassName+'__dropdown'+isExpandedList)
           each val in options.labels ? options.labels : ['There are no values']
             div(class=listClassName+'__dropdown-elem')

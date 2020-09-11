@@ -4,8 +4,8 @@ mixin dropdown(options)
   var isExpanded=options.isExpanded===true ? ' dropdown-room_active' : ''
   var typeDropdown = options.typeDropdown
   dropDownClassName+=typeDropdown==='guests' ? ' dropdown-input__guests' : ''
-  dropDownClassName+=typeDropdown==='date' ? ' dropdown-input__date' : ''
-  dropDownClassName+=typeDropdown==='filter' ? ' dropdown-input__filter' : ''
+  dropDownClassName+=typeDropdown==='date' ? 'dropdown-input__date' : ''
+  dropDownClassName+=typeDropdown==='filter' ? 'dropdown-input__filter' : ''
   dropDownClassName+=typeDropdown==='room' ? ' dropdown-input__room' : ''
  div(class= dropDownClassName)
   div(class='dropdown-input__wrapper')
