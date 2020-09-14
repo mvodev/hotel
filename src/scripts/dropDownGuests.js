@@ -2,90 +2,78 @@
 const adult = counterAdult();
 const child = counterChild();
 const infant = counterInfant();
-const $dropDownInputGuests = document.querySelector(".dropdown-input__arrow");
-const $dropDownInputFieldGuests = document.querySelector(
+const $dropDownInputGuests = document.querySelectorAll(".dropdown-input__arrow");
+const $dropDownInputFieldGuests = document.querySelectorAll(
   ".dropdown-input__guests input"
 );
-const $counterAdultValueTag = document.querySelector(
+const $counterAdultValueTag = document.querySelectorAll(
   ".dropdown-guests__adult div:nth-child(3)"
 );
-const $counterAdultValueDecrease = document.querySelector(
+const $counterAdultValueDecrease = document.querySelectorAll(
   ".dropdown-guests__adult div:nth-child(2)"
 );
-const $counterAdultValueIncrease = document.querySelector(
+const $counterAdultValueIncrease = document.querySelectorAll(
   ".dropdown-guests__adult div:nth-child(4)"
 );
-const $counterChildValueTag = document.querySelector(
+const $counterChildValueTag = document.querySelectorAll(
   ".dropdown-guests__child div:nth-child(3)"
 );
-const $counterChildValueDecreaseTag = document.querySelector(
+const $counterChildValueDecreaseTag = document.querySelectorAll(
   ".dropdown-guests__child div:nth-child(2)"
 );
-const $counterChildValueIncreaseTag = document.querySelector(
+const $counterChildValueIncreaseTag = document.querySelectorAll(
   ".dropdown-guests__child div:nth-child(4)"
 );
-const $counterInfantValueTag = document.querySelector(
+const $counterInfantValueTag = document.querySelectorAll(
   ".dropdown-guests__infant div:nth-child(3)"
 );
-const $counterInfantValueDecrease = document.querySelector(
+const $counterInfantValueDecrease = document.querySelectorAll(
   ".dropdown-guests__infant div:nth-child(2)"
 );
-const $counterInfantValueIncrease = document.querySelector(
+const $counterInfantValueIncrease = document.querySelectorAll(
   ".dropdown-guests__infant div:nth-child(4)"
 );
-const $eraseButton = document.querySelector(
+const $eraseButton = document.querySelectorAll(
   ".dropdown-guests__apply-button div:nth-child(1)"
 );
-const $applyButton = document.querySelector(
+const $applyButton = document.querySelectorAll(
   ".dropdown-guests__apply-button div:nth-child(2)"
 );
 
 /////////////////////////Listeners//////////////////////////////////////////////
-$dropDownInputGuests.addEventListener("click", handler);
-$counterAdultValueDecrease.addEventListener("click", () =>
+$dropDownInputGuests.forEach(elem => elem.addEventListener("click", handler));
+$counterAdultValueDecrease.forEach(elem => elem.addEventListener("click", () =>
   changeCounterGuests("decrease", "adult")
-);
-$counterAdultValueIncrease.addEventListener("click", () =>
+));
+$counterAdultValueIncrease.forEach(elem => elem.addEventListener("click", () =>
   changeCounterGuests("increase", "adult")
-);
-$counterChildValueDecreaseTag.addEventListener("click", () =>
+));
+$counterChildValueDecreaseTag.forEach(elem => elem.addEventListener("click", () =>
   changeCounterGuests("decrease", "child")
-);
-$counterChildValueIncreaseTag.addEventListener("click", () =>
+));
+$counterChildValueIncreaseTag.forEach(elem => elem.addEventListener("click", () =>
   changeCounterGuests("increase", "child")
-);
-$counterInfantValueDecrease.addEventListener("click", () =>
+));
+$counterInfantValueDecrease.forEach(elem => elem.addEventListener("click", () =>
   changeCounterGuests("decrease", "infant")
-);
-$counterInfantValueIncrease.addEventListener("click", () =>
+));
+$counterInfantValueIncrease.forEach(elem => elem.addEventListener("click", () =>
   changeCounterGuests("increase", "infant")
-);
-$applyButton.addEventListener("click", () =>
+));
+$applyButton.forEach(elem => elem.addEventListener("click", () =>
   showResultInDropDownGuests("apply")
-);
-$eraseButton.addEventListener("click", () =>
+));
+$eraseButton.forEach(elem => elem.addEventListener("click", () =>
   showResultInDropDownGuests("erase")
-);
+));
 //////////////////////Handlers//////////////////////////////////////////
 function handler(event) {
-  document
-    .getElementsByClassName('dropdown-guests')[0]
-    .classList.toggle('show');
-  document.querySelector('.dropdown-input__guests').classList
-    .toggle('dropdown-input__guests_rounding-corners-top');
-  if (document
-    .querySelector('.dropdown-input__arrow')
-    .innerText === 'keyboard_arrow_down') {
-
-    document
-      .querySelector('.dropdown-input__arrow')
-      .innerText = 'keyboard_arrow_up'
-  } else if (document
-    .querySelector('.dropdown-input__arrow')
-    .innerText === 'keyboard_arrow_up') {
-    document
-      .querySelector('.dropdown-input__arrow')
-      .innerText = 'keyboard_arrow_down'
+  event.target.parentNode.parentNode.childNodes[1].classList.toggle('dropdown_active');
+  event.target.parentNode.parentNode.childNodes[1].classList.toggle('dropdown-input__guests_rounding-corners-top');
+  if (event.target.innerText === 'keyboard_arrow_down') {
+    event.target.innerText = 'keyboard_arrow_up';
+  } else if (event.target.innerText === 'keyboard_arrow_up') {
+    event.target.innerText = 'keyboard_arrow_down';
   }
 }
 function changeCounterGuests(howChange, changeTarget) {
@@ -135,9 +123,9 @@ function showResultInDropDownGuests(action) {
     } else if (counterGuests >= 5) {
       result += counterGuests + " гостей";
     }
-    $dropDownInputFieldGuests.value = result;
+    $dropDownInputFieldGuests.forEach(elem => elem.value = result);
     dropDownResult = result;
-    if (result != "") $eraseButton.classList.remove("dropdown_button-hidden");
+    if (result != "") $eraseButton.forEach(elem => elem.classList.remove("dropdown_button-hidden"));
     result = "";
   } else if (action === "erase") {
     eraseResult();
@@ -145,11 +133,11 @@ function showResultInDropDownGuests(action) {
 }
 function eraseResult() {
   counterAdult = counterChild = counterInfant = 0;
-  $dropDownInputFieldGuests.value = '';
-  $counterAdultValueTag.innerText = 0;
-  $counterChildValueTag.innerText = 0;
-  $counterInfantValueTag.innerText = 0;
-  $eraseButton.classList.add("dropdown_button-hidden");
+  $dropDownInputFieldGuests.forEach(elem => elem.value = '');
+  $counterAdultValueTag.forEach(elem => elem.innerText = 0);
+  $counterChildValueTag.forEach(elem => elem.innerText = 0);
+  $counterInfantValueTag.forEach(elem => elem.innerText = 0);
+  $eraseButton.forEach(elem => elem.classList.add("dropdown_button-hidden"));
 }
 function eraseCounters() {
   adult.erase();
@@ -162,12 +150,12 @@ function counterAdult() {
   return {
     increase: function () {
       privateCounter++;
-      counterBadRoomValueTag.forEach(elem => elem.innerText++);
+      $counterAdultValueTag.forEach(elem => elem.innerText++);
     },
     decrease: function () {
       if (privateCounter > 0) {
         privateCounter--;
-        counterBadRoomValueTag.forEach(elem => elem.innerText--);
+        $counterAdultValueTag.forEach(elem => elem.innerText--);
       }
     },
     getCounter: function () {
@@ -183,12 +171,12 @@ function counterChild() {
   return {
     increase: function () {
       privateCounter++;
-      counterBadValueTag.forEach(elem => elem.innerText++);
+      $counterChildValueTag.forEach(elem => elem.innerText++);
     },
     decrease: function () {
       if (privateCounter > 0) {
         privateCounter--;
-        counterBadValueTag.forEach(elem => elem.innerText--);
+        $counterChildValueTag.forEach(elem => elem.innerText--);
       }
     },
     getCounter: function () {
@@ -204,12 +192,12 @@ function counterInfant() {
   return {
     increase: function () {
       privateCounter++;
-      counterBathValueTag.forEach(elem => elem.innerText++);
+      $counterInfantValueTag.forEach(elem => elem.innerText++);
     },
     decrease: function () {
       if (privateCounter > 0) {
         privateCounter--;
-        counterBathValueTag.forEach(elem => elem.innerText--);
+        $counterInfantValueTag.forEach(elem => elem.innerText--);
       }
     },
     getCounter: function () {

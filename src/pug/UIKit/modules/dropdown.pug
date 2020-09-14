@@ -1,7 +1,7 @@
 mixin dropdown(options)
  -
   var dropDownClassName = ''
-  var isExpanded=options.isExpanded===true ? ' dropdown-room_active' : ''
+  var isExpanded=options.isExpanded===true ? ' dropdown_active' : ''
   var typeDropdown = options.typeDropdown
   dropDownClassName+=typeDropdown==='guests' ? ' dropdown-input__guests' : ''
   dropDownClassName+=typeDropdown==='date' ? 'dropdown-input__date' : ''
@@ -13,7 +13,7 @@ mixin dropdown(options)
     div(class='dropdown-input__arrow')='keyboard_arrow_down'
   case options.typeDropdown
     when 'guests'
-      div(class = 'dropdown-guests')
+      div(class = 'dropdown-guests'+isExpanded)
         div(class='dropdown-guests__adult') 
           div взрослые 
           div -
@@ -33,7 +33,7 @@ mixin dropdown(options)
           div(class= 'dropdown_button-hidden') очистить
           div применить
     when 'room'
-        div(class= 'dropdown-room'+isExpanded)
+        div(class='dropdown-room'+isExpanded)
           div(class='dropdown-room__bedroom') 
             div спальни
             div -

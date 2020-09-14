@@ -1,10 +1,7 @@
 include switch.pug
 mixin toggle(options)
- -
-  var toggleClassName = options.className
- div(class=toggleClassName)
-    span(class=toggleClassName+'__label')=options.label
-    div(class=toggleClassName+'__container')
+ div(class='toggle')
+    div(class='toggle__container')
       each val in options.labels
         +switch({isPositive:val.isPositive,name:val.name})
         

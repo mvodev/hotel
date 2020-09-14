@@ -13,7 +13,7 @@ mixin list(options)
         div(class=listClassName+'__dropdown'+isExpandedList)
           each val in options.labels ? options.labels : ['There are no values']
             div(class=listClassName+'__dropdown-elem')
-              +button({type:'check',text:val.text,isChecked:val.isChecked})
+              +button({type:'check',labels:[{text:val.text,isChecked:val.isChecked}]})
     else if options.type==='icons'
       div(class=listClassName)
         div(class='material-icons '+listClassName+'__icon')=options.icon

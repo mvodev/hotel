@@ -46,7 +46,7 @@ counterBathValueIncrease.forEach(elem => elem.addEventListener("click", () =>
 ));
 //////////////////////Handlers//////////////////////////////////////////
 function dropdownClickHandler(event) {
-  event.target.parentNode.parentNode.childNodes[1].classList.toggle('dropdown-room_active');
+  event.target.parentNode.parentNode.childNodes[1].classList.toggle('dropdown_active');
   showResultInDropDown();
 }
 function counterBedRoom() {

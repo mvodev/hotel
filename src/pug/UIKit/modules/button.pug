@@ -40,12 +40,13 @@ mixin button(options)
    else if options.type=='check'
     div(class=buttonClassName)
       label(class='button-check__checkbox-label')
-        if options.isChecked
-          input(class='button-check__checkbox-input' type='checkbox' checked)
-          div(class='button-check__checkbox-text')=options.text
-        else
-          input(class='button-check__checkbox-input' type='checkbox')
-          div(class='button-check__checkbox-text')=options.text
+        each val in options.labels ? options.labels : ['There are no values']
+          if val.isChecked
+              input(class='button-check__checkbox-input' type='checkbox' checked)
+              div(class='button-check__checkbox-text')=val.text
+          else
+              input(class='button-check__checkbox-input' type='checkbox')
+              div(class='button-check__checkbox-text')=val.text
    else if options.type=='rich'
     div(class=buttonClassName)
       label(class='button-rich__checkbox-label')

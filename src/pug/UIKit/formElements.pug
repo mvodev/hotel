@@ -49,14 +49,35 @@ include headerUiKit.pug
   div(class='bullet-list-expandable_first')
     +list({type:'expandable',label:'expandable checkbox list',isExpand:false,
     labels:[{text:'Завтрак',isChecked:false},
-    {text:'Письменный стол',isChecked:true},{text:'Стул для кормления',isChecked:true},{text:'Кроватка',isChecked:true},{text:'Телевизор'},{text:'Шампунь'}]})
+    {text:'Письменный стол',isChecked:true},{text:'Стул для кормления',isChecked:true},{text:'Кроватка',isChecked:true},{text:'Телевизор',isChecked:false},{text:'Шампунь',isChecked:false}]})
   +list({type:'expandable',label:'expandable checkbox list',isExpand:true,
     labels:[{text:'Завтрак',isChecked:false},
-    {text:'Письменный стол',isChecked:true},{text:'Стул для кормления',isChecked:true},{text:'Кроватка',isChecked:true},{text:'Телевизор'},{text:'Шампунь'}]})
+    {text:'Письменный стол',isChecked:true},{text:'Стул для кормления',isChecked:true},{text:'Кроватка',isChecked:true},{text:'Телевизор',isChecked:false},{text:'Шампунь',isChecked:false}]})
   div(class='bullet-list-icons_first')
     +list({type:'icons',icon:'insert_emoticon',header:'Комфорт',text:'Шумопоглощающие стены'})
   +list({type:'icons',icon:'location_city',header:'Удобство',text:'Комфорт в каждой из спален'})
  .form-elements__central-column
+  h2='CHECkBOX BUTTONS'
+  +button({type:'check',labels:[{text:'Можно курить',isChecked:false},{text:'Можно с питомцами',isChecked:true},{text:'Можно пригласить гостей(до 10 человек)',isChecked:false}]})
+  h2='RADIO BUTTONS'
+  .radio-button-wrapper
+    +button({type:'radio',label:'Мужчина',isChecked:true})
+    +button({type:'radio',label:'Женщина'})
+  h2='TOGGLE'
+  +toggle({labels:[{name:'Получать спецпредложения',  isPositive:true},{name:'Получать спецпредложения',  isPositive:false}]})
+  h2='LIKE BUTTON'
+  .like-buttons-wrapper
+    +button({type:'like',likeNumber:2})
+    +button({type:'like',likeNumber:12,isLiked:true})
+  h2='RATE BUTTONS'
+  .rate-buttons-wrapper
+    +button({type:'rate',darkStar:4})
+    +button({type:'rate',darkStar:1})
+  h2='DROPDOWN'
+  +dropdown({placeholder:"Сколько гостей",typeDropdown:'guests',isExpanded:true})
+  h2='rich Checkbox Buttons'
+  +button({type:'rich',header:'Широкий коридор',label:'Ширина коридоров в номере не менее 91 см.'})
+  +button({type:'rich',header:'Помощник для инвалидов',label:'На 1 этаже вас встретит специалист  и проводит до номера.'})
  .form-elements__right-column
  .form-elements__comment
 //- h2(class='dropdown-label')="Dropdown"
