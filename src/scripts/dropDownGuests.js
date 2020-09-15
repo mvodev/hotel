@@ -41,7 +41,7 @@ const $applyButton = document.querySelectorAll(
 );
 
 /////////////////////////Listeners//////////////////////////////////////////////
-$dropDownInputGuests.forEach(elem => elem.addEventListener("click", handler));
+$dropDownInputGuests.forEach(elem => elem.addEventListener("click", dropDownGuestsClickHandler));
 $counterAdultValueDecrease.forEach(elem => elem.addEventListener("click", () =>
   changeCounterGuests("decrease", "adult")
 ));
@@ -67,7 +67,8 @@ $eraseButton.forEach(elem => elem.addEventListener("click", () =>
   showResultInDropDownGuests("erase")
 ));
 //////////////////////Handlers//////////////////////////////////////////
-function handler(event) {
+function dropDownGuestsClickHandler(event) {
+
   event.target.parentNode.parentNode.childNodes[1].classList.toggle('dropdown_active');
   event.target.parentNode.parentNode.childNodes[1].classList.toggle('dropdown-input__guests_rounding-corners-top');
   if (event.target.innerText === 'keyboard_arrow_down') {
@@ -132,7 +133,7 @@ function showResultInDropDownGuests(action) {
   }
 }
 function eraseResult() {
-  counterAdult = counterChild = counterInfant = 0;
+  eraseCounters();
   $dropDownInputFieldGuests.forEach(elem => elem.value = '');
   $counterAdultValueTag.forEach(elem => elem.innerText = 0);
   $counterChildValueTag.forEach(elem => elem.innerText = 0);

@@ -1,3 +1,50 @@
 .form-elements__right-column {
   grid-area: right;
+  padding-left: 126px;
+  padding-top: 65px;
+  .range-slider__wrapper{
+    margin-bottom: 44px;
+  }
+  h2{
+  font-family: $font-family-main;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $darkShade100;
+  margin-bottom: 16px;
+  }
+  .form-elements__right-column_buttons-wrapper{
+    .form-elements__right-column_buttons-wrapper-first-row,
+    .form-elements__right-column_buttons-wrapper-second-row,
+    .form-elements__right-column_buttons-wrapper-third-row{
+      display: flex;
+      flex-direction: row;
+    }
+    .form-elements__right-column_buttons-wrapper-first-row{
+      .button:first-child{
+        margin-right: 19px;
+        margin-bottom: 30px;
+      }
+    }
+    .form-elements__right-column_buttons-wrapper-second-row{
+      .button:first-child{
+        margin-right: 20px;
+        margin-bottom: 31px;
+      }
+    }
+    .form-elements__right-column_buttons-wrapper-third-row{
+      .button:first-child{
+        margin-right: 20px;
+        margin-bottom: 30px;
+      }
+    }
+    .form-elements__right-column_buttons-wrapper-fourth-row{
+      margin-bottom: 40px;
+    }
+  }
+  .pagination{
+    margin-bottom: 230px;
+  }
 }

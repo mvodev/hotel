@@ -1,9 +1,12 @@
 .pagination{
   width: 241px;
   height: 74.56px;
+  .pagination_wrapper{
   display: flex;
   flex-direction: row;
- &__number{
+  margin-bottom: 10.56px;
+  }
+  &__number{
   width: 40px;
   height: 40px;
   font-family: $font-family-main;
@@ -51,5 +54,12 @@
   width: 40px;
   justify-content: center;
  }
-
+  &__label{
+  font-family: $font-family-main;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $darkShade75;
+  }
 }

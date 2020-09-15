@@ -202,7 +202,6 @@ var cleave = new Cleave('.txtField-input-date', {
   datePattern: ['d', 'm', 'Y']
 });
 $('.dropdown-input__date_input-field').datepicker({ todayButton: true, clearButton: true });
-// $('.dropdown-input__date_input-field').datepicker({ todayButton: true, clearButton: true });
 $('.dropdown-input__filter_input-field').datepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
 $('.range-slider__input').ionRangeSlider({
   type: "double",
@@ -315,6 +314,7 @@ $eraseButton.forEach(elem => elem.addEventListener("click", () =>
 ));
 //////////////////////Handlers//////////////////////////////////////////
 function handler(event) {
+  console.log(event.target.parentNode.parentNode.childNodes[1]);
   event.target.parentNode.parentNode.childNodes[1].classList.toggle('dropdown_active');
   event.target.parentNode.parentNode.childNodes[1].classList.toggle('dropdown-input__guests_rounding-corners-top');
   if (event.target.innerText === 'keyboard_arrow_down') {
@@ -379,7 +379,7 @@ function showResultInDropDownGuests(action) {
   }
 }
 function eraseResult() {
-  counterAdult = counterChild = counterInfant = 0;
+  eraseCounters();
   $dropDownInputFieldGuests.forEach(elem => elem.value = '');
   $counterAdultValueTag.forEach(elem => elem.innerText = 0);
   $counterChildValueTag.forEach(elem => elem.innerText = 0);
@@ -716,4 +716,4 @@ function rateClickListener(event) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=UIKit.4f229079e6521df49062.js.map
+//# sourceMappingURL=UIKit.0fd38c36841d8e6282d0.js.map

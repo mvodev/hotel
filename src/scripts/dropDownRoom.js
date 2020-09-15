@@ -25,7 +25,7 @@ const counterBathValueIncrease = document.querySelectorAll(
   ".dropdown-room__bath div:nth-child(4)");
 
 /////////////////////////Listeners//////////////////////////////////////////////
-dropDownInputRoom.forEach(elem => elem.addEventListener("click", dropdownClickHandler));
+dropDownInputRoom.forEach(elem => elem.addEventListener("click", dropDownRoomClickHandler));
 counterBadRoomValueIncrease.forEach(elem => elem.addEventListener("click", () =>
   changeCounter("increase", "badroom")
 ));
@@ -45,8 +45,15 @@ counterBathValueIncrease.forEach(elem => elem.addEventListener("click", () =>
   changeCounter("increase", "bath")
 ));
 //////////////////////Handlers//////////////////////////////////////////
-function dropdownClickHandler(event) {
+function dropDownRoomClickHandler(event) {
+  //event.target.parentNode.parentNode.childNodes[1].classList.toggle('dropdown_active');
   event.target.parentNode.parentNode.childNodes[1].classList.toggle('dropdown_active');
+  event.target.parentNode.parentNode.childNodes[1].classList.toggle('dropdown-input__room_rounding-corners-top');
+  if (event.target.innerText === 'keyboard_arrow_down') {
+    event.target.innerText = 'keyboard_arrow_up';
+  } else if (event.target.innerText === 'keyboard_arrow_up') {
+    event.target.innerText = 'keyboard_arrow_down';
+  }
   showResultInDropDown();
 }
 function counterBedRoom() {
