@@ -46,13 +46,13 @@ counterBathValueIncrease.forEach(elem => elem.addEventListener("click", () =>
 ));
 //////////////////////Handlers//////////////////////////////////////////
 function dropDownRoomClickHandler(event) {
-  //event.target.parentNode.parentNode.childNodes[1].classList.toggle('dropdown_active');
+  console.log(event.target.parentNode.parentNode);
   event.target.parentNode.parentNode.childNodes[1].classList.toggle('dropdown_active');
-  event.target.parentNode.parentNode.childNodes[1].classList.toggle('dropdown-input__room_rounding-corners-top');
-  if (event.target.innerText === 'keyboard_arrow_down') {
-    event.target.innerText = 'keyboard_arrow_up';
-  } else if (event.target.innerText === 'keyboard_arrow_up') {
-    event.target.innerText = 'keyboard_arrow_down';
+  if (event.target.parentNode.parentNode.childNodes[1].classList.contains('dropdown_active')) {
+    event.target.parentNode.parentNode.classList.add('dropdown-input__room_rounding-corners-top');
+  }
+  else {
+    event.target.parentNode.parentNode.classList.remove('dropdown-input__room_rounding-corners-top');
   }
   showResultInDropDown();
 }
@@ -115,8 +115,9 @@ function changeCounter(howChange, changeTarget) {
     if (howChange === "increase") {
       bedRoom.increase();
     } else {
-      if (bedRoom.getCounter > 0) {
+      if (bedRoom.getCounter() > 0) {
         bedRoom.decrease();
+        console.log();
       }
     }
   } else if (changeTarget === "bad") {

@@ -34,7 +34,8 @@
   }
 }
 
-  .dropdown-input__arrow {
+  .dropdown-input__date__arrow,
+  .dropdown-input__filter__arrow {
   width: 44px;
   height: 44px;
   display: flex;
@@ -42,8 +43,19 @@
   text-align: center;
   justify-content: center;
   cursor: pointer;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  color: $darkShade50;
 }
+.dropdown-input__filter__wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
+}
 .datepicker--day-name{
 font-family: $font-family-main;
 font-style: normal;

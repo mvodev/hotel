@@ -1,16 +1,19 @@
 mixin dropdown(options)
  -
   var dropDownClassName = ''
+  var expandedCorners=''
   var isExpanded=options.isExpanded===true ? ' dropdown_active' : ''
   var typeDropdown = options.typeDropdown
+  expandedCorners+=options.isExpanded&typeDropdown==='room' ? '  dropdown-input__room_rounding-corners-top ' : ''
+  expandedCorners+=options.isExpanded&typeDropdown==='guests' ? '  dropdown-input__guests_rounding-corners-top ' : ''
   dropDownClassName+=typeDropdown==='guests' ? ' dropdown-input__guests' : ''
   dropDownClassName+=typeDropdown==='date' ? 'dropdown-input__date' : ''
   dropDownClassName+=typeDropdown==='filter' ? 'dropdown-input__filter' : ''
   dropDownClassName+=typeDropdown==='room' ? ' dropdown-input__room' : ''
- div(class= dropDownClassName)
-  div(class='dropdown-input__wrapper')
+ div(class= dropDownClassName+expandedCorners)
+  div(class=dropDownClassName+'__wrapper')
     input(class=dropDownClassName+'_input-field' placeholder=options.placeholder type='text')
-    div(class='dropdown-input__arrow')='keyboard_arrow_down'
+    div(class=dropDownClassName+'__arrow')='keyboard_arrow_down'
   case options.typeDropdown
     when 'guests'
       div(class = 'dropdown-guests'+isExpanded)
