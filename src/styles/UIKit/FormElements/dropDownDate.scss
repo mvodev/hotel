@@ -6,7 +6,7 @@
   box-sizing: border-box;
   border-radius: 4px;
 
-  & input{
+  &_input-field{
     border: none;
     outline: none;
     -webkit-appearance: none;
@@ -22,7 +22,7 @@
     cursor: pointer;
   }
 
-  & input::placeholder {
+  &_input-field::placeholder {
     font-family: $font-family-main;
     font-style: normal;
     font-weight: normal;
@@ -50,11 +50,47 @@
   line-height: 24px;
   color: $darkShade50;
 }
-.dropdown-input__filter__wrapper{
+.dropdown-input__filter__wrapper,
+.dropdown-input__date__wrapper{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  height: 44px;
+}
+.dropdown-input__filter{
+  width: 266px;
+  height: 44px;
+  background: $white;
+  border: 1px solid $darkShade25;
+  box-sizing: border-box;
+  border-radius: 4px;
+  &_input-field{
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    height: 24px;
+    width: 103px;
+    margin-top: 9px;
+    margin-left: 14px;
+    font-family: $font-family-main;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    cursor: pointer;
+  }
 
+  &_input-field::placeholder {
+    font-family: $font-family-main;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    height: 24px;
+    color: $darkShade75;
+    margin-bottom: 8px;
+    padding-bottom: 3px;
+  }
 }
 .datepicker--day-name{
 font-family: $font-family-main;
@@ -210,38 +246,4 @@ opacity: 0.25;
   top: 0px;
   left: -20px;
   background:$buttonColor;
-}
-.dropdown-input__filter{
-  width: 266px;
-  height: 44px;
-  background: $white;
-  border: 1px solid $darkShade25;
-  box-sizing: border-box;
-  border-radius: 4px;
-  & input{
-    border: none;
-    outline: none;
-    -webkit-appearance: none;
-    height: 24px;
-    width: 103px;
-    margin-top: 12px;
-    margin-left: 15px;
-    font-family: $font-family-main;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    cursor: pointer;
-  }
-
-  & input::placeholder {
-    font-family: $font-family-main;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    height: 24px;
-    color: $darkShade75;
-    margin-bottom: 8px;
-  }
 }

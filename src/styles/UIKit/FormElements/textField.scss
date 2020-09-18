@@ -1,8 +1,11 @@
-.txtField {
-  display: flex;
-  flex-direction: column;
+.text-field {
+  height: 44px;
 }
-.txtField label {
+.text-field__input-wrapper{
+  display: flex;
+  flex-direction: row;
+}
+.text-field label {
   white-space: nowrap;
   height: 15px;
   font-family: $font-family-main;
@@ -10,41 +13,52 @@
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  /* identical to box height */
   text-transform: uppercase;
-  /* Dark 100% */
   color: $darkShade100;
   margin-bottom: 5px;
 }
-.txtField input {
+.text-field input {
   font-family: $font-family-main;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  /* identical to box height, or 129% */
-  /* Dark 25% */
   color: $darkShade25;
   width: 320px;
   height: 44px;
-  background: $white;
-  border: 1px solid $darkShade25;
+  border: none;
   box-sizing: border-box;
-  border-radius: 4px;
+  background-color: transparent;
   padding-left: 15px;
   padding-top: 13px;
   padding-bottom: 13px;
 }
-.txtField-focused input {
+.text-field_focused input {
   line-height: 24px;
-  /* identical to box height, or 171% */
-  /* Dark 75% */
   color: $darkShade75;
-  background: #ffffff;
-  /* Dark 50% */
+  background: $white;
   border: 1px solid $darkShade50;
 }
-.txtFieldInput__wrapper img{
-  margin-left: -44px;
-  vertical-align: middle;
+.text-field_subscription{
+  width: 266px;
+  height: 44px;
+  border: 1px solid $darkShade25;
+  border-radius: 4px;
+  .text-field__input-wrapper input{
+    width: 223px;
+  }
+}
+.text-field__input-wrapper_arrow{
+  width: 44px;
+  height: 44px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  color: $purple;
 }

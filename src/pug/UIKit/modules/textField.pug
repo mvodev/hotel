@@ -1,19 +1,19 @@
 mixin textfield(options)
  -
-  var textfieldClassName = "txtField"
-  textfieldClassName+=options.isFocused ? ' txtField-focused' : ''
-  textfieldClassName+=options.isMasked ? ' txtField-masked' : ''
-  textfieldClassName+=options.isSubscription ? ' txtField-subscription' : ''
+  var textfieldClassName = "text-field"
+  textfieldClassName+=options.isFocused ? ' text-field_focused' : ''
+  textfieldClassName+=options.isMasked ? ' text-field_masked' : ''
+  textfieldClassName+=options.isSubscription ? ' text-field_subscription' : ''
   var inputClassName = ''
-  inputClassName+=options.isMasked ? ' txtField-input-date': ''
+  inputClassName+=options.isMasked ? ' text-field_input-date': ''
   var inputType=''
   inputType+=options.isFocused ? 'text' : ''
   inputType+=options.isDefault ? 'email' : ''
   inputType+=options.isMasked ? 'text' : ''
   inputType+=options.isSubscription ? 'email' : ''
  div(class = textfieldClassName)
-  div(class='txtFieldInput__wrapper')
+  div(class='text-field__input-wrapper')
     input(type=inputType placeholder=options.placeholder class=inputClassName)
     if options.isSubscription
-      img(src="../src/assets/img/svg/arrow_forward.svg", alt="")
+      div(class='text-field__input-wrapper_arrow')='arrow_forward'
     
