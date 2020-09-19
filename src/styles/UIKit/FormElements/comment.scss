@@ -11,12 +11,13 @@
   color: $darkShade75;
  }
  &__header{
-  margin-bottom: 12px;
+  margin-bottom: 10px;
  }
  &__header-img{
   height: 48px;
   width: 48px;
-  margin-right: 9.93px;
+  margin-right: 10px;
+  
  }
  &__header{
   display: flex;
@@ -44,5 +45,9 @@
  &__body-text{
   width: 653px;
   height: 72px;
+ } 
+  &__body-like-button{
+  margin-left: 3px;
+  margin-top: 2px;
  } 
 }
