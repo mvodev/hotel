@@ -1,9 +1,9 @@
 .form-elements__right-column {
   grid-area: right;
-  padding-left: 126px;
+  padding-left: 112px;
   padding-top: 65px;
   .range-slider__wrapper{
-    margin-bottom: 44px;
+    margin-bottom: 35px;
   }
   h2{
   font-family: $font-family-main;
@@ -15,7 +15,15 @@
   color: $darkShade100;
   margin-bottom: 16px;
   }
+  h2:nth-child(6){
+    margin-bottom: 5px;
+  }
+  h2:nth-child(8){
+    margin-top: 256px;
+    margin-bottom: 13px;
+  }
   .form-elements__right-column_buttons-wrapper{
+    width: 218px;
     .form-elements__right-column_buttons-wrapper-first-row,
     .form-elements__right-column_buttons-wrapper-second-row,
     .form-elements__right-column_buttons-wrapper-third-row{
@@ -47,4 +55,5 @@
   .pagination{
     margin-bottom: 230px;
   }
+  
 }

@@ -1,107 +1,101 @@
 .button{
- width: 99px;
+width: 99px;
 height: 44px;
-/* Primary Gradient */
 border-radius: 22px;
 border: none;
 cursor: pointer;
+font-family: $font-family-main;
+white-space: nowrap;
+font-style: normal;
 }
 
-.button-dark{
+.button_dark{
  background: $buttonColor;
 }
 
-.button-dark50{
+.button_dark50{
  background: $buttonColor;
  opacity: 0.5;
 }
 
-.button-dark span,
-.button-dark50 span{
- font-family:$font-family-main;
-font-style: normal;
+.button_dark span,
+.button_dark50 span{
 font-weight: bold;
 font-size: 12px;
 line-height: 15px;
-/* identical to box height */
 text-transform: uppercase;
 color: $white;
 }
 
-.button-white{
+.button_white{
 background: none;
 border:2px solid $purple;
 }
 
-.button-white50{
+.button_white50{
  background: none;
  border:2px solid rgba($color: $purple, $alpha: 0.5);
 }
 
-.button-white span,
-.button-white50 span,
-.button-transparent span{
-font-family: $font-family-main;
-font-style: normal;
+.button_white span,
+.button_white50 span,
+.button_transparent span{
 font-weight: bold;
 font-size: 12px;
 line-height: 15px;
-/* identical to box height */
 text-transform: uppercase;
-/* Primary Color */
 color:$purple;
+white-space: nowrap;
 }
 
-.button-transparent,
-.button-transparent50{
+.button_transparent,
+.button_transparent50{
  border: none;
- background: none;
+	background: none;
+	height: 15px;
+	width: 61px;
+	padding: 0px;
 }
 
-.button-transparent50 span{
-font-family: $font-family-main;
-font-style: normal;
+.button_transparent50 span{
 font-weight: bold;
 font-size: 12px;
 line-height: 15px;
-/* identical to box height */
 text-transform: uppercase;
 color: $darkShade50;
 }
 
-.button-with-arrow{
- width: 320px;
+.button_with-arrow{
+width: 320px;
 height: 44px;
+padding: 0px;
 background: $buttonColor;
 display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: right;
-		& div{
-			margin-right: 6px;
-		}
 		& div:first-child{
-		font-family: $font-family-main;
-		font-style: normal;
 		font-weight: bold;
 		font-size: 12px;
 		line-height: 15px;
 		text-align: center;
 		text-transform: uppercase;
 		color: $white;
-		margin-right: 62px;
+		margin-right: 52px;
 	}
 		
 		&_arr{
 			font-family: $font-for-icons;
-			font-style: normal;
 			font-weight: normal;
 			font-size: 24px;
 			line-height: 24px;
 			display: flex;
 			align-items: center;
 			text-align: center;
+			justify-content: center;
 			color: $white;
+			height: 44px;
+			width: 44px;
 		}
 }
 
@@ -118,7 +112,6 @@ justify-content: right;
 
 }
 
-////////////////////TO DO///////////////////////////
 .button-rate_star{
  font-size: 24px;
  color: $purple;
@@ -130,11 +123,11 @@ justify-content: right;
  align-items: center;
  text-align: center;
 }
-////////////////////////////todo////////////////////////////////////////
+
 .button-like{
 		width: 40px;
 		height: 20px;
-		background: #FFFFFF;
+		background: $white;
 		border: 1px solid $darkShade25;
 		box-sizing: border-box;
 		white-space: nowrap;
@@ -148,26 +141,20 @@ justify-content: right;
 					align-items: center;
 					display: block;
 					font-family: $font-for-icons;
-				font-style: normal;
 				font-weight: normal;
 				font-size: 10px;
 				line-height: 9px;
-				/* Dark 25% */
 				color: $darkShade25;
 				padding-top: 5px;
 				}
 				& div:nth-child(2){
 				width: 50%;
-					height: 100%;
-					font-family: $font-family-main;
-				font-style: normal;
+				height: 100%;
 				font-weight: normal;
 				font-size: 10px;
 				line-height: 12px;
-				/* identical to box height */
 				text-align: center;
 				align-items: center;
-				/* Dark 25% */
 				color: $darkShade25;
 				display: flex;
 				}
@@ -175,7 +162,6 @@ justify-content: right;
 				border: 1px solid $purple;
 				}
 }
-
 
 .button-like_is-liked div:first-child{
   color:$purple;
@@ -199,8 +185,6 @@ justify-content: right;
 						position: relative;
 						cursor: pointer;
 						padding-left: 30px;
-						font-family: $font-family-main;
-						font-style: normal;
 						font-weight: normal;
 						font-size: 14px;
 						line-height: 18px;
@@ -222,7 +206,6 @@ justify-content: right;
 				}
 }
 
-
 .button-check__checkbox-input:checked+.button-check__checkbox-text:before{
 background-image: url('../assets/img/svg/checkbox.svg');
 background-repeat: no-repeat;
@@ -243,8 +226,6 @@ background-position: center;
 				position: relative;
 				cursor: pointer;
 				padding-left: 30px;
-				font-family: $font-family-main;
-				font-style: normal;
 				font-weight: normal;
 				font-size: 14px;
 				line-height: 24px;
@@ -306,8 +287,6 @@ border-radius: 10px;
 				position: relative;
 				cursor: pointer;
 				padding-left: 30px;
-				font-family: $font-family-main;
-				font-style: normal;
 				font-weight: bold;
 				font-size: 14px;
 				line-height: 18px;
@@ -319,8 +298,6 @@ border-radius: 10px;
 				position: relative;
 				cursor: pointer;
 				margin-left: 30px;
-				font-family: $font-family-main;
-				font-style: normal;
 				font-weight: normal;
 				font-size: 12px;
 				line-height: 14px;
@@ -341,8 +318,7 @@ border-radius: 10px;
 				box-sizing: border-box;
 				border-radius: 4px;
 				}
-		}
-
+}
 
 .button-rich__checkbox-input:checked+.button-rich__checkbox-header:before{
 background-image: url('../assets/img/svg/checkbox.svg');

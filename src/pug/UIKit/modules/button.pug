@@ -3,13 +3,13 @@ mixin button(options)
  - var darkStar= options.darkStar
  - var lightStar=5-darkStar
  - var isChecked=options.isChecked===true ? 'checked' : ''
- - buttonClassName+=options.type==='arrow' ? ' button-with-arrow' : ''
- - buttonClassName+=options.type==='dark' ? ' button-dark' : ''
- - buttonClassName+=options.type==='dark50' ? ' button-dark50' : ''
- - buttonClassName+=options.type==='white' ? ' button-white' : ''
- - buttonClassName+=options.type==='white50' ? ' button-white50' : ''
- - buttonClassName+=options.type==='transparent' ? ' button-transparent' : ''
- - buttonClassName+=options.type==='transparent50' ? ' button-transparent50' : ''
+ - buttonClassName+=options.type==='arrow' ? ' button_with-arrow' : ''
+ - buttonClassName+=options.type==='dark' ? ' button_dark' : ''
+ - buttonClassName+=options.type==='dark50' ? ' button_dark50' : ''
+ - buttonClassName+=options.type==='white' ? ' button_white' : ''
+ - buttonClassName+=options.type==='white50' ? ' button_white50' : ''
+ - buttonClassName+=options.type==='transparent' ? ' button_transparent' : ''
+ - buttonClassName+=options.type==='transparent50' ? ' button_transparent50' : ''
  - buttonClassName+=options.type==='rate' ? ' button-rate' : ''
  - buttonClassName+=options.type==='like' ? ' button-like' : ''
  - buttonClassName+=options.isLiked ? ' button-like_is-liked' : ''
@@ -19,7 +19,7 @@ mixin button(options)
    if options.type=='arrow'
     button(class=buttonClassName)
      div=options.label
-     div(class='button-with-arrow_arr material-icons')='arrow_forward'
+     div(class='button_with-arrow_arr')='arrow_forward'
    else if options.type=='rate'
     div(class=buttonClassName)
       - var n=1

@@ -37,6 +37,7 @@
  &__number_selected{
   background: $buttonColor;
   border-radius: 22px;
+  color: $white;
  }
  &__arrow{
   font-family: $font-for-icons;
@@ -59,7 +60,9 @@
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 19px;
   color: $darkShade75;
+  margin-left: 5px;
+  margin-right: 5px;
   }
 }

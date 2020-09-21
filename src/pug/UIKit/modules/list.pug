@@ -3,9 +3,9 @@ mixin list(options)
   - var listClassName='bullet-list'
   - var isExpandedList=options.isExpand===true ? ' bullet-list_show' : '' 
     if options.type==='expandable'
-      - listClassName='bullet-list-expandable'
+      - listClassName='bullet-list_expandable'
     if options.type==='icons'
-      - listClassName='bullet-list-icons'
+      - listClassName='bullet-list_icons'
     if options.type==='expandable'
       div(class=listClassName)
         div(class=listClassName+'__label')=options.label

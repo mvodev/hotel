@@ -5,7 +5,7 @@ width: 266px;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-margin-bottom: -2px;
+margin-bottom: -3px;
 }
 .range-slider__label-wrapper p:first-child{
 font-family: $font-family-main;
@@ -17,7 +17,7 @@ line-height: 15px;
 text-transform: uppercase;
 /* Dark 100% */
 color: $darkShade100;
-
+padding-top: 3px;
 }
 .range-slider__label-wrapper p:nth-child(2){
 height: 15px;

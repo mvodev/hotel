@@ -99,6 +99,8 @@ include headerUiKit.pug
   label:'1 – 12 из 100+ вариантов аренды'})
   h2='Dropdown'
   +dropdown({placeholder:"Сколько гостей",typeDropdown:'guests',isExpanded:true})
+  h2='Bullet List'
+  +list({labels:['Нельзя с питомцами','Без вечеринок и мероприятий','Время прибытия — после 13:00,а выезд до 12:00']})
  .form-elements__comment
   +comment({headerName:'Мурад Сарафанов',headerTime:'5 дней назад',imgSource:'../src/assets/img/png/muradik.png',likeNumber:12,isLiked:true,text:'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})
 //- h2(class='dropdown-label')="Dropdown"
@@ -120,7 +122,3 @@ include headerUiKit.pug
 //- +toggle({label:'TOGGLE',
 //- className:'toggle',
 //- labels:[{name:'Получать спецпредложения',  isPositive:true},{name:'Получать спецпредложения',  isPositive:false}]})
-
-
-
-//- +pagination({isEllipsis:true,firstNumbers:[1,2,3],lastNumber:15,selectedPage:1})
