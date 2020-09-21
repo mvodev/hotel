@@ -273,7 +273,7 @@ box-sizing: border-box;
 border-radius: 10px;
 }
 
-.button-rich{
+.button_rich{
   width: 266px;
 		height: 51px;
 
@@ -305,6 +305,7 @@ border-radius: 10px;
 				height: 28px;
 				width: 236px;
 				margin-top: 5px;
+				white-space: break-spaces;
 				}
 				&__checkbox-header:before {
 				content: '';
@@ -320,7 +321,7 @@ border-radius: 10px;
 				}
 }
 
-.button-rich__checkbox-input:checked+.button-rich__checkbox-header:before{
+.button_rich__checkbox-input:checked+.button_rich__checkbox-header:before{
 background-image: url('../assets/img/svg/checkbox.svg');
 background-repeat: no-repeat;
 background-position: center;

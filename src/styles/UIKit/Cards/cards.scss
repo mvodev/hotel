@@ -1,0 +1,16 @@
+@import './roomcard.scss';
+.cards__wrapper{
+ width: 1440px;
+ height: 1350px;
+ background-color: rgb(138, 230, 138);
+ display: grid;
+ grid-template-areas:
+    "left central right";
+  grid-template-columns: 380px 380px 320px;
+  grid-template-rows: 1fr;
+  .right-column{
+   grid-area: right;
+   background-color: purple;
+   padding-top: 150px;
+  }
+}
