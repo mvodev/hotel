@@ -1,16 +1,26 @@
-@import './roomcard.scss';
+@import './cardsRightColumn.scss';
+@import './cardsLeftColumn.scss';
+@import './cardsCentralColumn.scss';
 .cards__wrapper{
  width: 1440px;
  height: 1350px;
  background-color: rgb(138, 230, 138);
  display: grid;
  grid-template-areas:
+    "header header header"
     "left central right";
-  grid-template-columns: 380px 380px 320px;
-  grid-template-rows: 1fr;
-  .right-column{
+  grid-template-columns: 520px 420px 360px;
+  grid-template-rows: 78px 1fr;
+  .header{
+   grid-area: header;
+  }
+  .cards__left-column{
+   grid-area: left;
+  }
+  .cards__central-column{
+   grid-area: central;
+  }
+  .cards__right-column{
    grid-area: right;
-   background-color: purple;
-   padding-top: 150px;
   }
 }

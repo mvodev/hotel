@@ -7,11 +7,11 @@ mixin roomcard(options)
         img(src=options.imgSource, alt="")
         div(class='room-card__img-pagination')
        div.room-card_top-line
-        div(class='room-card__number')=options.roomNumber
+        div(class='room-card__number')='№'+options.roomNumber
         div(class='room-card__type')=roomtype
         div(class='room-card__price')
          span=options.price
-         span=' в сутки'
+         span='  в сутки'
        div(class='room-card__delimeter')
        div.room-card_bottom-line
         div(class='room-card__rate')
