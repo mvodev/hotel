@@ -5,4 +5,6 @@ include headerUiKit.pug
  .cards__left-column
  .cards__central-column
  .cards__right-column
-  +roomcard({imgSource:'../src/assets/img/png/room1.png',roomNumber:888,price:'9 990₽',rate:4,roomType:'люкс',commentNumber:145})
+  div(class='cards__right-column_datepicker')
+  +roomcard({imgSource:'../src/assets/img/png/room1.png',roomNumber:888,price:'9 990₽',rate:5,roomType:'люкс',commentNumber:145})
+  +roomcard({imgSource:'../src/assets/img/png/room2.png',roomNumber:840,price:'9 990₽',rate:4,commentNumber:65})

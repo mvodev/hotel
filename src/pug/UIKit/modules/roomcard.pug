@@ -5,7 +5,14 @@ mixin roomcard(options)
       .room-card_wrapper
        div(class='room-card__img')
         img(src=options.imgSource, alt="")
+        div(class='room-card__arrows')
+         div(class='room-card__arrow room-card__arrow-left')='keyboard_arrow_left'
+         div(class='room-card__arrow room-card__arrow-right')='keyboard_arrow_right'
         div(class='room-card__img-pagination')
+         div(class='room-card__pagination room-card__pagination_active')
+         div(class='room-card__pagination')
+         div(class='room-card__pagination')
+         div(class='room-card__pagination')
        div.room-card_top-line
         div(class='room-card__number')
          div='№'

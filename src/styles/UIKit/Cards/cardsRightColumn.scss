@@ -1,5 +1,10 @@
 @import './roomcard.scss';
   .cards__right-column{
    padding-left: 40px;
-   background-color: purple;
+   .cards__right-column_datepicker{
+    margin-bottom: 40px;
+   }
+   .room-card:nth-child(2){
+    margin-bottom: 40px;
+   }
   }

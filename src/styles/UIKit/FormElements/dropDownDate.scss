@@ -171,11 +171,13 @@ width: 40px;
     width: 24px;
     height: 24px;
     color: $purple;
+    margin-left: 17px;
+    margin-right: 17px;
   }
 
   &--nav{
     border-bottom: none;
-    margin-top: 20px;
+    margin-top: 15px;
   }
 
   &--nav-title{
@@ -202,11 +204,16 @@ width: 40px;
   }
   &--buttons span:first-child{
     color: $darkShade50;
+    padding-left: 20px;
   }
   &--buttons span:nth-child(2){
     color: $purple;
+    padding-right: 20px;
+    padding-left: 110px;
   }
-
+  &--button{
+    display: block;
+  }
   &--pointer{
     display: none;
   }
@@ -246,4 +253,8 @@ opacity: 0.25;
   top: 0px;
   left: -20px;
   background:$buttonColor;
+}
+.datepicker--days-names{
+  margin-top: 27px;
+  margin-bottom: 0px;
 }
