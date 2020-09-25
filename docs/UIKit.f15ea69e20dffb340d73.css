@@ -2149,7 +2149,10 @@ p.subscribe {
   color: rgba(31, 32, 65, 0.5); }
 
 .text-field {
-  height: 44px; }
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  height: 44px;
+  width: 320px; }
 
 .text-field__input-wrapper {
   display: flex;
@@ -3096,127 +3099,55 @@ input:checked + .slider-round:before {
   .cards__right-column .room-card:nth-child(2) {
     margin-bottom: 40px; }
 
-.room-card_wrapper {
-  width: 270px;
-  height: 257.5px;
-  background: #ffffff;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+.sign-up_wrapper {
+  width: 380px;
+  height: 646px;
   border-radius: 4px;
-  font-family: Montserrat;
-  font-style: normal; }
-  .room-card_wrapper .room-card__img {
-    position: relative;
-    overflow: hidden;
-    height: 152px;
-    width: 270px;
-    border-radius: 4px 4px 0px 0px; }
-  .room-card_wrapper .room-card__img img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 270px;
-    height: 152px;
-    object-fit: cover; }
-  .room-card_wrapper .room-card__img-pagination {
-    position: absolute;
-    top: 129px;
-    left: 214px;
-    display: flex;
-    flex-direction: row; }
-  .room-card_wrapper .room-card__arrows {
-    position: relative; }
-  .room-card_wrapper .room-card__arrow {
-    position: absolute;
-    font-family: Material Icons;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 24px;
-    color: #ffffff; }
-  .room-card_wrapper .room-card__arrow-left {
-    top: 63px;
-    left: 11px; }
-  .room-card_wrapper .room-card__arrow-right {
-    top: 63px;
-    left: 237px; }
-  .room-card_wrapper .room-card__pagination {
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    border: 1px solid #ffffff;
-    filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
-    margin-right: 4px; }
-  .room-card_wrapper .room-card__pagination_active {
-    background: #ffffff;
-    box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3); }
-  .room-card_wrapper .room-card_top-line,
-  .room-card_wrapper .room-card_bottom-line {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
-  .room-card_wrapper .room-card_bottom-line {
-    margin-top: 10px; }
-  .room-card_wrapper .room-card__delimeter {
-    width: 230px;
-    height: 1px;
-    background: rgba(31, 32, 65, 0.1);
-    margin-left: 20px;
-    margin-top: 5px; }
-  .room-card_wrapper .room-card__number {
-    width: 55px;
-    height: 24px;
-    font-family: OpenSans;
-    font-size: 14px;
-    line-height: 17px;
+  background-color: #ffffff;
+  padding-left: 30px;
+  padding-right: 30px; }
+  .sign-up_wrapper h2, .sign-up_wrapper h3 {
     color: #1f2041;
-    margin-left: 20px;
-    margin-top: 24px;
-    display: flex;
-    flex-direction: row; }
-  .room-card_wrapper .room-card__number div:first-child {
-    margin-right: 8px; }
-  .room-card_wrapper .room-card__number div:nth-child(2) {
+    font-style: normal; }
+  .sign-up_wrapper h2 {
+    font-family: OpenSans;
     font-weight: bold;
-    font-size: 19px; }
-  .room-card_wrapper .room-card__price {
-    width: 100px;
-    height: 20px;
-    font-size: 14px;
-    line-height: 18px;
-    color: rgba(31, 32, 65, 0.5);
-    white-space: nowrap;
-    margin-right: 16px;
-    margin-top: 24px;
-    text-align: center; }
-  .room-card_wrapper .room-card__price span:first-child {
-    font-weight: bold;
-    font-size: 14px; }
-  .room-card_wrapper .room-card__price span:nth-child(2) {
-    font-size: 12px; }
-  .room-card_wrapper .room-card__type {
-    width: 41px;
-    height: 15px;
+    font-size: 24px;
+    line-height: 30px;
+    padding-top: 40px;
+    padding-bottom: 20px; }
+  .sign-up_wrapper h3 {
+    font-family: Montserrat;
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: #BC9CFF;
-    margin-right: 32px;
-    margin-top: 26px; }
-  .room-card_wrapper .room-card__rate {
-    margin-left: 20px; }
-  .room-card_wrapper .room-card__comment {
-    width: 90px;
-    height: 18px;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: right;
-    color: rgba(31, 32, 65, 0.5);
-    margin-right: 20px;
-    margin-top: 2px; }
-  .room-card_wrapper .room-card__comment span:first-child {
-    font-weight: bold; }
+    margin-bottom: 5px; }
+  .sign-up_wrapper h3:nth-child(7) {
+    margin-top: 20px; }
+  .sign-up_wrapper .text-field {
+    margin-bottom: 10px; }
+  .sign-up_wrapper .sign-up__radio-button-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px; }
+    .sign-up_wrapper .sign-up__radio-button-wrapper .button-radio:first-child {
+      margin-right: 20px; }
+  .sign-up_wrapper .toggle {
+    margin-bottom: 20px; }
+  .sign-up_wrapper .sign-up__footer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .sign-up_wrapper .sign-up__footer .sign-up__account {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+      color: #000000; }
 
 .cards__left-column {
   padding-left: 140px; }
@@ -3242,4 +3173,4 @@ input:checked + .slider-round:before {
     grid-area: right; }
 
 
-/*# sourceMappingURL=UIKit.6b8b18601d273ac1f6d5.css.map*/
+/*# sourceMappingURL=UIKit.f15ea69e20dffb340d73.css.map*/

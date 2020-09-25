@@ -1,0 +1,22 @@
+include button.pug
+include textfield.pug
+include toggle.pug
+mixin signup
+ div(class='sign-up')
+  div(class='sign-up_wrapper')
+   h2='Регистрация аккаунта'
+   +textfield({isDefault:true,placeholder:'Имя'})
+   +textfield({isDefault:true,placeholder:'Фамилия'})
+   div(class='sign-up__radio-button-wrapper')
+    +button({type:'radio',label:'Мужчина',isChecked:true})
+    +button({type:'radio',label:'Женщина'})
+   h3='Дата рождения'
+   +textfield({isMasked:true,placeholder:'ДД.ММ.ГГГГ'})
+   h3='Данные для входа в сервис'
+   +textfield({isDefault:true,placeholder:'Email'})
+   +textfield({isDefault:true,placeholder:'Пароль'})
+   +toggle({labels:[{name:'Получать спецпредложения',  isPositive:false}]})
+   +button({label:'ПЕРЕЙТИ К ОПЛАТЕ',type:'arrow'})
+   div(class='sign-up__footer')
+    span(class='sign-up__account')='Уже есть аккаунт на Toxin'
+    +button({label:'Войти',type:'white'})
