@@ -1,4 +1,8 @@
   @import './signin.scss';
+  @import './roomprice.scss';
   .cards__central-column{
    padding-left: 40px;
+   .room-price{
+     margin-bottom: 40px;
+   }
   }

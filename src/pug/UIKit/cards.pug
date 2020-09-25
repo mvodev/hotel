@@ -1,4 +1,5 @@
 include modules/roomcard.pug
+include modules/roomprice.pug
 include modules/signup.pug
 include modules/signin.pug
 include modules/searchnumber.pug
@@ -9,6 +10,7 @@ include headerUiKit.pug
   +searchnumber
   +signup
  .cards__central-column
+  +roomprice
   +signin
  .cards__right-column
   div(class='cards__right-column_datepicker')
