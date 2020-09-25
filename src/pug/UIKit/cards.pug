@@ -1,5 +1,6 @@
 include modules/roomcard.pug
 include modules/signup.pug
+include modules/signin.pug
 include modules/searchnumber.pug
 include headerUiKit.pug
 .cards__wrapper
@@ -8,6 +9,7 @@ include headerUiKit.pug
   +searchnumber
   +signup
  .cards__central-column
+  +signin
  .cards__right-column
   div(class='cards__right-column_datepicker')
   +roomcard({imgSource:'../src/assets/img/png/room1.png',roomNumber:888,price:'9 990₽',rate:5,roomType:'люкс',commentNumber:145})
