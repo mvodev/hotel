@@ -3099,49 +3099,51 @@ input:checked + .slider-round:before {
   .cards__right-column .room-card:nth-child(2) {
     margin-bottom: 40px; }
 
-.sign-up_wrapper {
+.sign-up__wrapper {
   width: 380px;
   height: 646px;
   border-radius: 4px;
   background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   padding-left: 30px;
   padding-right: 30px; }
-  .sign-up_wrapper h2, .sign-up_wrapper h3 {
+  .sign-up__wrapper h2, .sign-up__wrapper h3 {
     color: #1f2041;
     font-style: normal; }
-  .sign-up_wrapper h2 {
+  .sign-up__wrapper h2 {
     font-family: OpenSans;
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
     padding-top: 40px;
     padding-bottom: 20px; }
-  .sign-up_wrapper h3 {
+  .sign-up__wrapper h3 {
     font-family: Montserrat;
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
     margin-bottom: 5px; }
-  .sign-up_wrapper h3:nth-child(7) {
+  .sign-up__wrapper h3:nth-child(7) {
     margin-top: 20px; }
-  .sign-up_wrapper .text-field {
+  .sign-up__wrapper .text-field {
     margin-bottom: 10px; }
-  .sign-up_wrapper .sign-up__radio-button-wrapper {
+  .sign-up__wrapper .sign-up__radio-button-wrapper {
     display: flex;
     flex-direction: row;
     margin-bottom: 20px; }
-    .sign-up_wrapper .sign-up__radio-button-wrapper .button-radio:first-child {
+    .sign-up__wrapper .sign-up__radio-button-wrapper .button-radio:first-child {
       margin-right: 20px; }
-  .sign-up_wrapper .toggle {
+  .sign-up__wrapper .toggle {
     margin-bottom: 20px; }
-  .sign-up_wrapper .sign-up__footer {
+  .sign-up__wrapper .sign-up__footer {
     margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center; }
-    .sign-up_wrapper .sign-up__footer .sign-up__account {
+    .sign-up__wrapper .sign-up__footer .sign-up__account {
       font-family: Montserrat;
       font-style: normal;
       font-weight: normal;
@@ -3149,8 +3151,44 @@ input:checked + .slider-round:before {
       line-height: 18px;
       color: #000000; }
 
+.search-number__wrapper {
+  width: 380px;
+  height: 374px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding-left: 30px;
+  padding-right: 30px; }
+  .search-number__wrapper h2 {
+    font-family: OpenSans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #1f2041;
+    padding: 40px 30px 20px 30px; }
+  .search-number__wrapper h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041;
+    margin-bottom: 5px; }
+  .search-number__wrapper .search-number__dropdowns {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px; }
+  .search-number__wrapper .search-number__dropdown:first-child {
+    margin-right: 20px; }
+  .search-number__wrapper .dropdown-input__guests {
+    margin-bottom: 31px; }
+
 .cards__left-column {
   padding-left: 140px; }
+  .cards__left-column .search-number {
+    margin-bottom: 40px; }
 
 .cards__central-column {
   padding-left: 40px; }
@@ -3158,7 +3196,6 @@ input:checked + .slider-round:before {
 .cards__wrapper {
   width: 1440px;
   height: 1350px;
-  background-color: #8ae68a;
   display: grid;
   grid-template-areas: "header header header" "left central right";
   grid-template-columns: 520px 420px 360px;
@@ -3173,4 +3210,4 @@ input:checked + .slider-round:before {
     grid-area: right; }
 
 
-/*# sourceMappingURL=UIKit.f15ea69e20dffb340d73.css.map*/
+/*# sourceMappingURL=UIKit.94348693ed5ab70bff34.css.map*/

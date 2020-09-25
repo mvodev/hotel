@@ -1,4 +1,8 @@
-@import '/signup.scss';
+@import './signup.scss';
+@import './searchnumber.scss';
 .cards__left-column{
  padding-left: 140px;
+ .search-number{
+  margin-bottom: 40px;
+ }
 }

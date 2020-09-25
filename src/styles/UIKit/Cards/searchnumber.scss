@@ -1,0 +1,39 @@
+.search-number__wrapper{
+  width: 380px;
+  height: 374px;
+  background-color: $white;
+  box-shadow: 0px 0px 25px $boxShadow;
+  border-radius: 4px;
+  padding-left: 30px;
+  padding-right: 30px;
+ h2{
+  font-family: $font-family-additionalRussianReplacer;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: $darkShade100;
+  padding: 40px 0px 20px 0px;
+ }
+ h3{
+  font-family: $font-family-main;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $darkShade100;
+  margin-bottom: 5px;
+ }
+ .search-number__dropdowns{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+ }
+ .search-number__dropdown:first-child{
+   margin-right: 20px;
+ }
+ .dropdown-input__guests{
+  margin-bottom: 31px;
+ }
+}

@@ -1,0 +1,17 @@
+include button.pug
+include textfield.pug
+include dropdown.pug
+mixin searchnumber
+ div(class='search-number')
+  div(class='search-number__wrapper')
+   h2='Найдём номера под ваши пожелания'
+   div(class='search-number__dropdowns')
+    div(class='search-number__dropdown')
+     h3='прибытие'
+     +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'date',isExpanded:false})
+    div(class='search-number__dropdown')
+     h3='выезд'
+     +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'date',isExpanded:false})
+   h3='гости'
+   +dropdown({placeholder:'Сколько гостей',typeDropdown:'guests',isExpanded:false})
+   +button({label:'ПОДОБРАТЬ НОМЕР',type:'arrow'})
