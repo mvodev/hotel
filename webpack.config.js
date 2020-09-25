@@ -28,7 +28,7 @@ module.exports = {
  },
  output: {
   filename: '[name].[contenthash].js',
-  path: path.resolve(__dirname, 'dist')
+  path: path.resolve(__dirname, 'docs')
  },
  optimization: {
   splitChunks: {
@@ -69,10 +69,6 @@ module.exports = {
    patterns: [
     {
      from: path.resolve(__dirname, 'src/assets/img/svg'),
-     to: path.resolve(__dirname, 'dist')
-    },
-    {
-     from: path.resolve(__dirname, 'dist'),
      to: path.resolve(__dirname, 'docs')
     }
    ]
