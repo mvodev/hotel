@@ -13,10 +13,11 @@ mixin roomcard(options)
          div(class='room-card__pagination')
          div(class='room-card__pagination')
          div(class='room-card__pagination')
-       div.room-card_top-line
+       div(class='room-card__room-specifications')
         div(class='room-card__number')
-         div='№'
-         div=options.roomNumber
+          span
+            span='№  '
+            span=options.roomNumber
         div(class='room-card__type')=roomtype
         div(class='room-card__price')
          span=options.price

@@ -1,9 +1,118 @@
 .room-price__wrapper{
  width: 380px;
  height: 511px;
+ font-style: normal;
  background: $white;
  border: 1px solid rgba(0, 0, 0, 0.12);
  box-sizing: border-box;
  box-shadow: 0px 0px 25px $boxShadow;
  border-radius: 4px;
+ padding: 40px 30px 30px 30px;
+ .room-price__room-specifications,
+ .room-price__dropdowns{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+ .room-price__room-specifications{
+  margin-bottom: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 13px;
+ }
+ .room-price__number{
+  font-family: $font-family-additionalRussianReplacer;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  width: 64px;
+  height: 33px;
+  margin-right: 5px;
+  font-weight: bold;
+  white-space: pre;
+  margin-top: 3px;
+ }
+ .room-price__number span:first-child{
+  font-size: 14px;
+  line-height: 17px;
+ }
+  .room-price__number span:nth-child(2){
+  font-size: 23px;
+  line-height: 23px;
+ }
+ .room-price__type{
+  font-family: $font-family-main;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $purple;
+ }
+ .room-price__price{
+  margin-left: auto;
+  width: 100px;
+  font-family: $font-family-main;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: $darkShade50;
+  white-space: pre;
+ }
+ .room-price__price span:nth-child(2){
+  font-weight: normal;
+  font-size: 12px;
+ }
+ h3{
+  font-family: $font-family-main;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $darkShade100;
+  margin-bottom: 6px;
+ }
+ .room-price__dropdowns,
+ .room-price__dropdown-guests{
+  margin-bottom: 19px;
+ }
+ .room-price__start-price,
+ .room-price__service-fee,
+ .room-price__service-extra-fee,
+ .room-price__total-price{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: normal;
+  font-style: normal;
+  font-family: $font-family-main;
+  font-size: 14px;
+  line-height: 24px;
+  color: $darkShade75;
+ }
+ .room-price__start-price div:first-child,
+ .room-price__service-fee div:first-child,
+ .room-price__service-extra-fee div:first-child{
+   width: 214px;
+ }
+ .room-price__service-extra-fee div:first-child{
+  line-height: 18px;
+  height: 36px;
+ }
+ .room-price__start-price,
+ .room-price__service-fee{
+  margin-bottom: 10px;
+ }
+ .room-price__service-extra-fee{
+  margin-bottom: 30px;
+ }
+ .room-price__total-price{
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: $darkShade100;
+  font-family: $font-family-additionalRussianReplacer;
+ }
 }
