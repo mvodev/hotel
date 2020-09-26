@@ -2968,7 +2968,7 @@ input:checked + .slider-round:before {
   width: 1440px;
   height: 1853px;
   display: grid;
-  grid-template-areas: "header header header"  "left central right" "left central right" "left comment comment";
+  grid-template-areas: "header header header"  "left central right" "left central right" "left comment comment";
   grid-template-columns: 460px 407px 320px;
   grid-template-rows: 78px 1fr 1fr 279px; }
 
@@ -3357,7 +3357,7 @@ input:checked + .slider-round:before {
   width: 1440px;
   height: 1350px;
   display: grid;
-  grid-template-areas: "header header header" "left central right";
+  grid-template-areas: "header header header" "left central right";
   grid-template-columns: 520px 420px 360px;
   grid-template-rows: 78px 1fr; }
   .cards__wrapper .header {
@@ -3370,4 +3370,4 @@ input:checked + .slider-round:before {
     grid-area: right; }
 
 
-/*# sourceMappingURL=UIKit.567476cc22d6543aafdf.css.map*/
+/*# sourceMappingURL=UIKit.60494244f5420ee13f6a.css.map*/
