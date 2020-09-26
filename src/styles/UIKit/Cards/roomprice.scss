@@ -94,7 +94,7 @@
  .room-price__start-price div:first-child,
  .room-price__service-fee div:first-child,
  .room-price__service-extra-fee div:first-child{
-   width: 214px;
+   width: 239px;
  }
  .room-price__service-extra-fee div:first-child{
   line-height: 18px;
@@ -114,5 +114,22 @@
   line-height: 24px;
   color: $darkShade100;
   font-family: $font-family-additionalRussianReplacer;
+ }
+ .room-price__extra-info{
+  width: 20px;
+  height: 20px;
+  border: 1px solid $darkShade25;
+  color: $darkShade25;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+
+ }
+ .room-price__service-fee div:first-child,
+ .room-price__service-extra-fee div:first-child{
+   display: flex;
+   flex-direction: row;
  }
 }

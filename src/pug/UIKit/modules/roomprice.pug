@@ -28,10 +28,14 @@ mixin roomprice(options)
           div=options.price
           div=options.total
         div(class='room-price__service-fee')
-          div=options.discount
+          div
+            div=options.discount
+            div(class='room-price__extra-info')='i'
           div=options.fee
         div(class='room-price__service-extra-fee')
-          div='Сбор за дополнительные услуги'
+          div
+            div='Сбор за дополнительные услуги'
+            div(class='room-price__extra-info')='i'
           div=options.extraFee
         div(class='room-price__total-price')
           div='Итого'

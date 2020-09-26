@@ -3317,7 +3317,7 @@ input:checked + .slider-round:before {
   .room-price__wrapper .room-price__start-price div:first-child,
   .room-price__wrapper .room-price__service-fee div:first-child,
   .room-price__wrapper .room-price__service-extra-fee div:first-child {
-    width: 214px; }
+    width: 239px; }
   .room-price__wrapper .room-price__service-extra-fee div:first-child {
     line-height: 18px;
     height: 36px; }
@@ -3333,6 +3333,20 @@ input:checked + .slider-round:before {
     line-height: 24px;
     color: #1f2041;
     font-family: OpenSans; }
+  .room-price__wrapper .room-price__extra-info {
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    color: rgba(31, 32, 65, 0.25);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px; }
+  .room-price__wrapper .room-price__service-fee div:first-child,
+  .room-price__wrapper .room-price__service-extra-fee div:first-child {
+    display: flex;
+    flex-direction: row; }
 
 .cards__central-column {
   padding-left: 40px; }
@@ -3356,4 +3370,4 @@ input:checked + .slider-round:before {
     grid-area: right; }
 
 
-/*# sourceMappingURL=UIKit.5615c5e07c11d7bc47fc.css.map*/
+/*# sourceMappingURL=UIKit.567476cc22d6543aafdf.css.map*/
