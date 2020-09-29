@@ -1,33 +1,31 @@
+include textField.pug
 .footerNavContainer
  .footerNavLogo
-  img(src="../../img/svg/footerTOXIN.svg", alt="")
-  p Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
+  img(src="../src/assets/img/svg/footerTOXIN.svg", alt="")
+  p Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды».
  nav.footerNavLinks
   .footerNavLinks-navigation
-   a(class = 'footerNavLinks-link' href='#' ) Navigation
-   a(class = 'footerNavLinks-link' href='#' ) About Us
-   a(class = 'footerNavLinks-link' href='#' ) News
-   a(class = 'footerNavLinks-link' href='#' ) Support
-   a(class = 'footerNavLinks-link' href='#' ) Products
+   a(class = 'footerNavLinks-link' href='#' ) навигация
+   a(class = 'footerNavLinks-link' href='#' ) О нас
+   a(class = 'footerNavLinks-link' href='#' ) Новости
+   a(class = 'footerNavLinks-link' href='#' ) Служба поддержки
+   a(class = 'footerNavLinks-link' href='#' ) Услуги
   .footerNavLinks-aboutUs
-   a(class = 'footerNavLinks-link' href='#' ) ABOUT US
-   a(class = 'footerNavLinks-link' href='#' ) Who we are
-   a(class = 'footerNavLinks-link' href='#' ) Our team
-   a(class = 'footerNavLinks-link' href='#' ) Careers
-   a(class = 'footerNavLinks-link' href='#' ) Investors
+   a(class = 'footerNavLinks-link' href='#' ) о нас
+   a(class = 'footerNavLinks-link' href='#' ) О сервисе
+   a(class = 'footerNavLinks-link' href='#' ) Наша команда
+   a(class = 'footerNavLinks-link' href='#' ) Вакансии
+   a(class = 'footerNavLinks-link' href='#' ) Инвесторы
   .footerNavLinks-support
-   a(class = 'footerNavLinks-link' href='#' ) SUPPORT
-   a(class = 'footerNavLinks-link' href='#' ) Documentation
-   a(class = 'footerNavLinks-link' href='#' ) Community
-   a(class = 'footerNavLinks-link' href='#' ) Get in Touch
+   a(class = 'footerNavLinks-link' href='#' ) служба поддержки
+   a(class = 'footerNavLinks-link' href='#' ) Соглашения
+   a(class = 'footerNavLinks-link' href='#' ) Сообщества
+   a(class = 'footerNavLinks-link' href='#' ) Связь с нами
  .footerNav-subscribe
   .footerNav-subscribe-textContainer
-   p.subscribe Subscribe to our newsletter
-   p Receive our latest news and <br> promotions in your inbox!
+   p.subscribe Подписка
+   p Получайте специальные <br> предложения и новости сервиса
   .footerNav-subscribe-form
-   p Your email address
-   .footerNav-subscribe-arrow-forward
-    a(class = 'footerNav-subscribe-arrow-forward-link' href='#' )
-      img(src="../src/assets/img/svg/arrow_forward.svg", alt="")
+   +textfield({isSubscription:true,placeholder:'Email'})
   
    

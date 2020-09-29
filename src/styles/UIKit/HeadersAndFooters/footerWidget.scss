@@ -131,22 +131,15 @@
 .footerNav-subscribe {
   display: flex;
   flex-direction: column;
-
   width: 260px;
-  height: 148px;
   margin-top: 104px;
-  margin-right: 140px;
-  margin-bottom: 120px;
 }
-.footerNav-subscribe-textContainer {
-  width: 208px;
-  height: 84px;
+.footerNav-subscribe-textContainer{
   margin-bottom: 20px;
 }
 .footerNav-subscribe-textContainer p {
   display: block;
   height: 48px;
-  width: 196px;
   font-family: $font-family-main;
   font-style: normal;
   font-weight: normal;
@@ -172,39 +165,4 @@ p.subscribe {
   /* Dark 100% */
   color: $darkShade100;
   margin: 0px 0px 21px 0px;
-}
-.footerNav-subscribe-form {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 260px;
-  height: 44px;
-  background: $white;
-  border: 1px solid $darkShade25;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
-.footerNav-subscribe-form p {
-  width: 134px;
-  height: 24px;
-
-  font-family: $font-family-main;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  /* identical to box height, or 171% */
-  /* Dark 25% */
-  color: $darkShade25;
-  margin-left: 15px;
-  margin-top: 12px;
-}
-.footerNav-subscribe-arrow-forward {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
 }

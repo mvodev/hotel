@@ -49,12 +49,10 @@
 .expand-more-container {
   width: 24px;
   height: 21px;
-  /* identical to box height */
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
-  /* Dark 50% */
   color: $darkShade50;
   margin-right: 20px;
 }

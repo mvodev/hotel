@@ -291,6 +291,10 @@ video {
   vertical-align: baseline;
   box-sizing: border-box; }
 
+html,
+body {
+  height: 100%; }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -714,6 +718,10 @@ video {
   font: inherit;
   vertical-align: baseline;
   box-sizing: border-box; }
+
+html,
+body {
+  height: 100%; }
 
 /* HTML5 display-role reset for older browsers */
 article,
@@ -1207,20 +1215,14 @@ table {
   display: flex;
   flex-direction: column;
   width: 260px;
-  height: 148px;
-  margin-top: 104px;
-  margin-right: 140px;
-  margin-bottom: 120px; }
+  margin-top: 104px; }
 
 .footerNav-subscribe-textContainer {
-  width: 208px;
-  height: 84px;
   margin-bottom: 20px; }
 
 .footerNav-subscribe-textContainer p {
   display: block;
   height: 48px;
-  width: 196px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -1246,39 +1248,6 @@ p.subscribe {
   /* Dark 100% */
   color: #1f2041;
   margin: 0px 0px 21px 0px; }
-
-.footerNav-subscribe-form {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 260px;
-  height: 44px;
-  background: #ffffff;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 4px; }
-
-.footerNav-subscribe-form p {
-  width: 134px;
-  height: 24px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  /* identical to box height, or 171% */
-  /* Dark 25% */
-  color: rgba(31, 32, 65, 0.25);
-  margin-left: 15px;
-  margin-top: 12px; }
-
-.footerNav-subscribe-arrow-forward {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px; }
 
 .headerLogin {
   width: 1440px;
@@ -1452,12 +1421,10 @@ p.subscribe {
 .expand-more-container {
   width: 24px;
   height: 21px;
-  /* identical to box height */
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
-  /* Dark 50% */
   color: rgba(31, 32, 65, 0.5);
   margin-right: 20px; }
 
@@ -3370,4 +3337,4 @@ input:checked + .slider-round:before {
     grid-area: right; }
 
 
-/*# sourceMappingURL=UIKit.60494244f5420ee13f6a.css.map*/
+/*# sourceMappingURL=UIKit.cdd73e738322e746e0d7.css.map*/

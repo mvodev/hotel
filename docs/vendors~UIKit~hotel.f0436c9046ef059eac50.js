@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["vendors~UIKit"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["vendors~UIKit~hotel"],{
 
 /***/ "../node_modules/air-datepicker/dist/css/datepicker.min.css":
 /*!******************************************************************!*\
@@ -17235,4 +17235,4 @@ module.exports = g;
 /***/ })
 
 }]);
-//# sourceMappingURL=vendors~UIKit.d50038851bd6398f3b5e.js.map
+//# sourceMappingURL=vendors~UIKit~hotel.f0436c9046ef059eac50.js.map

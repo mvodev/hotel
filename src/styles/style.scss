@@ -1,14 +1,14 @@
 @import './common/fonts.scss';
 @import './common/reset.scss';
 @import './common/constants.scss';
-.main-container{
+.wrapper{
  background-color: $grey;
  font-family: $font-family-main;
  font-weight: bold;
  font-size: 16px;
 
 }
-.main-container h1{
+.wrapper h1{
  margin: 0 auto;
  text-align: center;
  margin-bottom: 50px;
@@ -16,7 +16,7 @@
   color: $green;
   font-size: 2rem;
 }
-.main-container a{
+.wrapper a{
  text-decoration: none;
 }
 .UIKit a,.site a{
