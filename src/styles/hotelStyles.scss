@@ -6,6 +6,9 @@
 @import '../styles/UIKit/HeadersAndFooters/footerWidget.scss';
 @import '../styles/UIKit/FormElements/textField.scss';
 .wrapper{
- max-width: $container-width;
+ width: $container-width;
  margin: 0px auto; 
+ .img__wrapper{
+  max-width: 100%;
+ }
 }

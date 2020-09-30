@@ -766,8 +766,10 @@ p.subscribe {
   color: #BC9CFF; }
 
 .wrapper {
-  max-width: 1440px;
+  width: 1440px;
   margin: 0px auto; }
+  .wrapper .img__wrapper {
+    max-width: 100%; }
 
 
-/*# sourceMappingURL=hotel.663fe5cf882de8789b65.css.map*/
+/*# sourceMappingURL=hotel.d99b0cfe65af2b5eabec.css.map*/
