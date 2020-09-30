@@ -77,6 +77,14 @@ module.exports = {
     {
      from: path.resolve(__dirname, 'src/assets/img/svg'),
      to: path.resolve(__dirname, 'docs')
+    },
+    {
+     from: path.resolve(__dirname, 'src/assets/img/jpg'),
+     to: path.resolve(__dirname, 'docs')
+    },
+    {
+     from: path.resolve(__dirname, 'src/assets/img/png'),
+     to: path.resolve(__dirname, 'docs')
     }
    ]
   })
