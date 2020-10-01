@@ -969,7 +969,7 @@ table {
   font-feature-settings: 'liga'; }
 
 .footer-copyright-container {
-  width: 1440px;
+  max-width: 1440px;
   height: 70px;
   background: #ffffff;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
@@ -979,7 +979,7 @@ table {
   justify-content: space-between; }
 
 .footer__copyright {
-  width: 332px;
+  width: 367px;
   height: 18px;
   font-family: Montserrat;
   font-style: normal;
@@ -999,42 +999,16 @@ table {
   text-align: center;
   flex-direction: row;
   margin-top: 23px;
-  margin-bottom: 23px; }
+  margin-bottom: 23px;
+  width: 112px;
+  justify-content: space-between;
+  margin-right: 140px; }
 
 .footer__social-networks-links-link {
-  text-decoration: none; }
-
-.footer__social-networks-links-link:nth-child(1) {
+  text-decoration: none;
   width: 24px;
   height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  /* Primary Gradient */
-  color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  margin-right: 20px; }
-
-.footer__social-networks-links-link:nth-child(2) {
-  width: 24px;
-  height: 24px;
-  /* identical to box height */
-  display: flex;
-  align-items: center;
-  text-align: center;
-  /* Primary Gradient */
-  margin-right: 20px;
   color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
-
-.footer__social-networks-links-link:nth-child(3) {
-  width: 24px;
-  height: 24px;
-  /* identical to box height */
-  display: flex;
-  align-items: center;
-  text-align: center;
-  /* Primary Gradient */
-  color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  margin-right: 140px; }
 
 .footer-logo-container {
   width: 768px;
@@ -1083,7 +1057,8 @@ table {
   margin-top: 25px; }
 
 .footerNavContainer {
-  width: 1440px;
+  max-width: 1440px;
+  font-family: Montserrat;
   height: 372px;
   background: #ffffff;
   box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
@@ -1106,7 +1081,6 @@ table {
   height: 96px;
   margin-top: 16px;
   display: block;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1137,15 +1111,12 @@ table {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  /* identical to box height */
   text-transform: uppercase;
-  /* Dark 100% */
   color: #1f2041; }
 
 .footerNavLinks-navigation a:nth-child(2) {
   width: 64px;
   height: 18px;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1179,7 +1150,6 @@ table {
 
 .footerNavLinks-link {
   text-decoration: none;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1238,7 +1208,6 @@ p.subscribe {
   width: 208px;
   display: block;
   white-space: nowrap;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -1250,7 +1219,7 @@ p.subscribe {
   margin: 0px 0px 21px 0px; }
 
 .headerLogin {
-  width: 1440px;
+  max-width: 1440px;
   height: 70px;
   background: #ffffff;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
@@ -1371,12 +1340,13 @@ p.subscribe {
   color: rgba(31, 32, 65, 0.5); }
 
 .headerLogin {
-  width: 1440px;
+  max-width: 1440px;
   height: 70px;
   background: #ffffff;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: space-between; }
 
 .headerLogin-logo {
   height: 40px;
@@ -1388,8 +1358,7 @@ p.subscribe {
 .headerLogin-nav {
   list-style-type: none;
   display: flex;
-  align-items: center;
-  margin-left: 284.31px; }
+  align-items: center; }
 
 .headerLogin-nav a {
   text-decoration: none; }
@@ -1402,7 +1371,6 @@ p.subscribe {
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
-  /* Dark 75% */
   color: rgba(31, 32, 65, 0.75);
   margin-right: 20px; }
 
@@ -1414,7 +1382,6 @@ p.subscribe {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  /* Dark 50% */
   color: rgba(31, 32, 65, 0.5);
   white-space: nowrap; }
 
@@ -1436,7 +1403,6 @@ p.subscribe {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  /* Dark 50% */
   color: rgba(31, 32, 65, 0.5);
   margin-right: 20px; }
 
@@ -1448,7 +1414,6 @@ p.subscribe {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  /* Dark 50% */
   color: rgba(31, 32, 65, 0.5);
   margin-right: 30px; }
 
@@ -1460,7 +1425,6 @@ p.subscribe {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  /* Dark 50% */
   color: rgba(31, 32, 65, 0.5); }
 
 .login {
@@ -1471,9 +1435,7 @@ p.subscribe {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  /* identical to box height */
   text-transform: uppercase;
-  /* Primary Color */
   color: #BC9CFF;
   border-radius: 22px;
   border: 2px solid #BC9CFF;
@@ -1487,7 +1449,6 @@ p.subscribe {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  /* identical to box height */
   text-transform: uppercase;
   color: #ffffff;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
@@ -3337,4 +3298,4 @@ input:checked + .slider-round:before {
     grid-area: right; }
 
 
-/*# sourceMappingURL=UIKit.d99b0cfe65af2b5eabec.css.map*/
+/*# sourceMappingURL=UIKit.6ede60dc62b84143123f.css.map*/

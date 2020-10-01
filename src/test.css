@@ -1,13 +1,14 @@
+.test{
+ border: 1px solid red;
+ max-width: 1300px;
+ height: 70px;
+}
 .footerNavContainer {
-  max-width: $container-width;
-  font-family: $font-family-main;
+  max-width: 1300px;
   height: 372px;
-  background: $white;
-  box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+  background: white;
   display: flex;
   flex-direction: row;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 .footerNavLogo {
@@ -27,9 +28,6 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  /* or 171% */
-  /* Dark 75% */
-  color: $darkShade75;
 }
 .footerNavLinks {
   display: flex;
@@ -54,7 +52,6 @@
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
-  color: $darkShade100;
 }
 .footerNavLinks-navigation a:nth-child(2) {
   width: 64px;
@@ -63,8 +60,6 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  /* Dark 50% */
-  color: $darkShade50;
 }
 .footerNavLinks-aboutUs a {
   display: block;
@@ -87,17 +82,16 @@
   line-height: 15px;
   /* identical to box height */
   text-transform: uppercase;
-  /* Dark 100% */
-  color: $darkShade100;
 }
 .footerNavLinks-link {
   text-decoration: none;
+
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   /* Dark 50% */
-  color: $darkShade50;
+
   display: inline-block;
 }
 .footerNavLinks-support a {
@@ -112,7 +106,7 @@
   /* identical to box height */
   text-transform: uppercase;
   /* Dark 100% */
-  color: $darkShade100;
+
 }
 .footerNavLinks-support {
   display: flex;
@@ -135,14 +129,10 @@
 .footerNav-subscribe-textContainer p {
   display: block;
   height: 48px;
-  font-family: $font-family-main;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  /* or 171% */
-  /* Dark 75% */
-  color: $darkShade75;
   margin: 0px;
 }
 p.subscribe {
@@ -154,9 +144,24 @@ p.subscribe {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  /* identical to box height */
   text-transform: uppercase;
-  /* Dark 100% */
-  color: $darkShade100;
   margin: 0px 0px 21px 0px;
+}
+
+@media (max-width:1000px){
+ .wrapper{
+   max-width: none;
+ }
+ .footer-nav-container{
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+ }
+ .footerNavLogo{
+  display: none;
+ }
+ .footerNavLinks{
+  flex-direction: column;
+ }
 }

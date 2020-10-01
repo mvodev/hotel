@@ -6,9 +6,28 @@
 @import '../styles/UIKit/HeadersAndFooters/footerWidget.scss';
 @import '../styles/UIKit/FormElements/textField.scss';
 .wrapper{
- width: $container-width;
+ max-width: $container-width;
  margin: 0px auto; 
- .img__wrapper{
+ .img__wrapper img{
   max-width: 100%;
+ }
+}
+@media (max-width:$container-mobile-width){
+ .wrapper{
+   max-width: none;
+ }
+ .footer-copyright-container{
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+ }
+ .footer__copyright{
+  margin: 5px 0px 10px 0px;
+  display: flex;
+  justify-content: center;
+ }
+ .footer__social-networks-links{
+  margin: 0px 0px 5px 0px;
  }
 }

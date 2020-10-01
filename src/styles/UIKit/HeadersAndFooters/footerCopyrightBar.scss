@@ -1,5 +1,5 @@
 .footer-copyright-container {
-  width: 1440px;
+  max-width: $container-width;
   height: 70px;
   background: $white;
   box-shadow: 0px 10px 20px $darkShade5;
@@ -9,7 +9,7 @@
   justify-content: space-between;
 }
 .footer__copyright {
-  width: 332px;
+  width: 367px;
   height: 18px;
   font-family: $font-family-main;
   font-style: normal;
@@ -30,40 +30,13 @@
   flex-direction: row;
   margin-top: 23px;
   margin-bottom: 23px;
+  width: 112px;
+  justify-content: space-between;
+  margin-right: 140px;
 }
 .footer__social-networks-links-link {
   text-decoration: none;
-}
-.footer__social-networks-links-link:nth-child(1) {
   width: 24px;
   height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  /* Primary Gradient */
   color: $buttonColor;
-  margin-right: 20px;
-}
-.footer__social-networks-links-link:nth-child(2) {
-  width: 24px;
-  height: 24px;
-  /* identical to box height */
-  display: flex;
-  align-items: center;
-  text-align: center;
-  /* Primary Gradient */
-  margin-right: 20px;
-  color: $buttonColor;
-}
-
-.footer__social-networks-links-link:nth-child(3) {
-  width: 24px;
-  height: 24px;
-  /* identical to box height */
-  display: flex;
-  align-items: center;
-  text-align: center;
-  /* Primary Gradient */
-  color: $buttonColor;
-  margin-right: 140px;
 }
