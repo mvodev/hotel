@@ -498,7 +498,7 @@ table {
   height: 24px;
   color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
 
-.footerNavContainer {
+.footer-nav__container {
   max-width: 1440px;
   font-family: Montserrat;
   height: 372px;
@@ -510,7 +510,7 @@ table {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.footerNavLogo {
+.footer-nav__logo {
   width: 260px;
   height: 156px;
   margin-left: 140px;
@@ -518,7 +518,7 @@ table {
   margin-bottom: 116px;
   margin-right: 40px; }
 
-.footerNavLogo p {
+.footer-nav__logo p {
   width: 260px;
   height: 96px;
   margin-top: 16px;
@@ -531,11 +531,11 @@ table {
   /* Dark 75% */
   color: rgba(31, 32, 65, 0.75); }
 
-.footerNavLinks {
+.footer-nav-links {
   display: flex;
   flex-direction: row; }
 
-.footerNavLinks-navigation {
+.footer-nav-links__navigation {
   display: flex;
   flex-direction: column;
   margin-top: 104px;
@@ -544,11 +544,11 @@ table {
   margin-right: 119px;
   justify-content: space-between; }
 
-.footerNavLinks-navigation a {
+.footer-nav-links__navigation a {
   display: block;
   white-space: nowrap; }
 
-.footerNavLinks-navigation a:first-child {
+.footer-nav-links__navigation a:first-child {
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -556,7 +556,7 @@ table {
   text-transform: uppercase;
   color: #1f2041; }
 
-.footerNavLinks-navigation a:nth-child(2) {
+.footer-nav-links__navigation a:nth-child(2) {
   width: 64px;
   height: 18px;
   font-style: normal;
@@ -566,11 +566,11 @@ table {
   /* Dark 50% */
   color: rgba(31, 32, 65, 0.5); }
 
-.footerNavLinks-aboutUs a {
+.footer-nav-links__aboutUs a {
   display: block;
   white-space: nowrap; }
 
-.footerNavLinks-aboutUs {
+.footer-nav-links__aboutUs {
   display: flex;
   flex-direction: column;
   width: 82px;
@@ -580,7 +580,7 @@ table {
   justify-content: space-between;
   flex-wrap: nowrap; }
 
-.footerNavLinks-aboutUs a:first-child {
+.footer-nav-links__aboutUs a:first-child {
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -590,7 +590,7 @@ table {
   /* Dark 100% */
   color: #1f2041; }
 
-.footerNavLinks-link {
+.footer-nav-links__link {
   text-decoration: none;
   font-style: normal;
   font-weight: normal;
@@ -600,11 +600,11 @@ table {
   color: rgba(31, 32, 65, 0.5);
   display: inline-block; }
 
-.footerNavLinks-support a {
+.footer-nav-links__support a {
   display: block;
   white-space: nowrap; }
 
-.footerNavLinks-support a:first-child {
+.footer-nav-links__support a:first-child {
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -614,7 +614,7 @@ table {
   /* Dark 100% */
   color: #1f2041; }
 
-.footerNavLinks-support {
+.footer-nav-links__support {
   display: flex;
   flex-direction: column;
   width: 113px;
@@ -623,16 +623,16 @@ table {
   margin-right: 87px;
   justify-content: space-between; }
 
-.footerNav-subscribe {
+.footer-nav__subscribe {
   display: flex;
   flex-direction: column;
   width: 260px;
   margin-top: 104px; }
 
-.footerNav-subscribe-textContainer {
+.footer-nav__subscribe-textContainer {
   margin-bottom: 20px; }
 
-.footerNav-subscribe-textContainer p {
+.footer-nav__subscribe-textContainer p {
   display: block;
   height: 48px;
   font-family: Montserrat;
@@ -748,4 +748,4 @@ p.subscribe {
     margin: 0px 0px 5px 0px; } }
 
 
-/*# sourceMappingURL=hotel.6ede60dc62b84143123f.css.map*/
+/*# sourceMappingURL=hotel.02e2e7c4182992b74958.css.map*/

@@ -1,4 +1,4 @@
-.footerNavContainer {
+.footer-nav__container {
   max-width: $container-width;
   font-family: $font-family-main;
   height: 372px;
@@ -10,7 +10,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.footerNavLogo {
+.footer-nav__logo {
   width: 260px;
   height: 156px;
   margin-left: 140px;
@@ -18,7 +18,7 @@
   margin-bottom: 116px;
   margin-right: 40px;
 }
-.footerNavLogo p {
+.footer-nav__logo p {
   width: 260px;
   height: 96px;
   margin-top: 16px;
@@ -31,11 +31,11 @@
   /* Dark 75% */
   color: $darkShade75;
 }
-.footerNavLinks {
+.footer-nav-links {
   display: flex;
   flex-direction: row;
 }
-.footerNavLinks-navigation {
+.footer-nav-links__navigation {
   display: flex;
   flex-direction: column;
   margin-top: 104px;
@@ -44,11 +44,11 @@
   margin-right: 119px;
   justify-content: space-between;
 }
-.footerNavLinks-navigation a {
+.footer-nav-links__navigation a {
   display: block;
   white-space: nowrap;
 }
-.footerNavLinks-navigation a:first-child {
+.footer-nav-links__navigation a:first-child {
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -56,7 +56,7 @@
   text-transform: uppercase;
   color: $darkShade100;
 }
-.footerNavLinks-navigation a:nth-child(2) {
+.footer-nav-links__navigation a:nth-child(2) {
   width: 64px;
   height: 18px;
   font-style: normal;
@@ -66,11 +66,11 @@
   /* Dark 50% */
   color: $darkShade50;
 }
-.footerNavLinks-aboutUs a {
+.footer-nav-links__aboutUs a {
   display: block;
   white-space: nowrap;
 }
-.footerNavLinks-aboutUs {
+.footer-nav-links__aboutUs {
   display: flex;
   flex-direction: column;
   width: 82px;
@@ -80,7 +80,7 @@
   justify-content: space-between;
   flex-wrap: nowrap;
 }
-.footerNavLinks-aboutUs a:first-child {
+.footer-nav-links__aboutUs a:first-child {
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -90,7 +90,7 @@
   /* Dark 100% */
   color: $darkShade100;
 }
-.footerNavLinks-link {
+.footer-nav-links__link {
   text-decoration: none;
   font-style: normal;
   font-weight: normal;
@@ -100,11 +100,11 @@
   color: $darkShade50;
   display: inline-block;
 }
-.footerNavLinks-support a {
+.footer-nav-links__support a {
   display: block;
   white-space: nowrap;
 }
-.footerNavLinks-support a:first-child {
+.footer-nav-links__support a:first-child {
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -114,7 +114,7 @@
   /* Dark 100% */
   color: $darkShade100;
 }
-.footerNavLinks-support {
+.footer-nav-links__support {
   display: flex;
   flex-direction: column;
   width: 113px;
@@ -123,16 +123,16 @@
   margin-right: 87px;
   justify-content: space-between;
 }
-.footerNav-subscribe {
+.footer-nav__subscribe {
   display: flex;
   flex-direction: column;
   width: 260px;
   margin-top: 104px;
 }
-.footerNav-subscribe-textContainer{
+.footer-nav__subscribe-textContainer{
   margin-bottom: 20px;
 }
-.footerNav-subscribe-textContainer p {
+.footer-nav__subscribe-textContainer p {
   display: block;
   height: 48px;
   font-family: $font-family-main;
