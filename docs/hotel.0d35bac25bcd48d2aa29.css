@@ -336,7 +336,7 @@ table {
 *:after {
   box-sizing: inherit; }
 
-.headerLogin {
+.header-login {
   max-width: 1440px;
   height: 70px;
   background: #ffffff;
@@ -345,7 +345,10 @@ table {
   flex-direction: row;
   justify-content: space-between; }
 
-.headerLogin-logo {
+.header__burger {
+  display: none; }
+
+.header-login__logo {
   height: 40px;
   width: 105.69px;
   margin-left: 140px;
@@ -735,6 +738,33 @@ p.subscribe {
 @media (max-width: 1200px) {
   .wrapper {
     max-width: none; }
+  .header-login__logo,
+  .header-login-nav__logo {
+    display: none; }
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px; }
+  .header__burger::before,
+  .header__burger::after {
+    position: absolute;
+    content: '';
+    background-color: #1f2041;
+    width: 100%;
+    height: 3px;
+    left: 0px; }
+  .header__burger::before {
+    top: 0px; }
+  .header__burger::after {
+    bottom: 0px; }
+  .header__burger span {
+    position: absolute;
+    background-color: #1f2041;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    top: 33px; }
   .footer-copyright-container {
     flex-direction: column;
     text-align: center;
@@ -772,4 +802,4 @@ p.subscribe {
     margin-top: 10px; } }
 
 
-/*# sourceMappingURL=hotel.a81ee2ba031b0df5f46e.css.map*/
+/*# sourceMappingURL=hotel.0d35bac25bcd48d2aa29.css.map*/

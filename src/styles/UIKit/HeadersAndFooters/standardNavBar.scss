@@ -1,4 +1,4 @@
-.headerLogin {
+.header-login {
   max-width: $container-width;
   height: 70px;
   background: $white;
@@ -7,7 +7,10 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.headerLogin-logo {
+.header__burger{
+  display: none;
+}
+.header-login__logo {
   height: 40px;
   width: 105.69px;
   margin-left: 140px;
