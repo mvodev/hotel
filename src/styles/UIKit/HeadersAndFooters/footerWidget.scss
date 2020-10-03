@@ -31,11 +31,11 @@
   /* Dark 75% */
   color: $darkShade75;
 }
-.footer-nav-links {
+.footer-nav__links {
   display: flex;
   flex-direction: row;
 }
-.footer-nav-links__navigation {
+.footer-nav__links_navigation {
   display: flex;
   flex-direction: column;
   margin-top: 104px;
@@ -44,11 +44,11 @@
   margin-right: 119px;
   justify-content: space-between;
 }
-.footer-nav-links__navigation a {
+.footer-nav__links_navigation a {
   display: block;
   white-space: nowrap;
 }
-.footer-nav-links__navigation a:first-child {
+.footer-nav__links_navigation a:first-child {
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -56,7 +56,7 @@
   text-transform: uppercase;
   color: $darkShade100;
 }
-.footer-nav-links__navigation a:nth-child(2) {
+.footer-nav__links_navigation a:nth-child(2) {
   width: 64px;
   height: 18px;
   font-style: normal;
@@ -66,11 +66,11 @@
   /* Dark 50% */
   color: $darkShade50;
 }
-.footer-nav-links__aboutUs a {
+.footer-nav__links_about-us a {
   display: block;
   white-space: nowrap;
 }
-.footer-nav-links__aboutUs {
+.footer-nav__links_about-us {
   display: flex;
   flex-direction: column;
   width: 82px;
@@ -80,7 +80,7 @@
   justify-content: space-between;
   flex-wrap: nowrap;
 }
-.footer-nav-links__aboutUs a:first-child {
+.footer-nav__links_about-us a:first-child {
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -90,7 +90,7 @@
   /* Dark 100% */
   color: $darkShade100;
 }
-.footer-nav-links__link {
+.footer-nav__links_link {
   text-decoration: none;
   font-style: normal;
   font-weight: normal;
@@ -100,11 +100,11 @@
   color: $darkShade50;
   display: inline-block;
 }
-.footer-nav-links__support a {
+.footer-nav__links_support a {
   display: block;
   white-space: nowrap;
 }
-.footer-nav-links__support a:first-child {
+.footer-nav__links_support a:first-child {
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -114,7 +114,7 @@
   /* Dark 100% */
   color: $darkShade100;
 }
-.footer-nav-links__support {
+.footer-nav__links_support {
   display: flex;
   flex-direction: column;
   width: 113px;

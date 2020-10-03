@@ -30,4 +30,35 @@
  .footer__social-networks-links{
   margin: 0px 0px 5px 0px;
  }
+ .footer-nav__container,
+ .footer-nav__subscribe{
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+ }
+ .footer-nav__container{
+  height: 200px;
+ }
+ .footer-nav__logo,
+ .footer-nav__links{
+  display: none;
+ }
+ .footer-nav__subscribe{
+  margin-top: 0px;
+ }
+ .footer-nav__container,
+ .footer-nav__subscribe{
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+ }
+ .footer-nav__logo,
+ .footer-nav__links{
+  display: none;
+ }
+ .footer-nav__subscribe{
+  margin-top: 10px;
+ }
 }
