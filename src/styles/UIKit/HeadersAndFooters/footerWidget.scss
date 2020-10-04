@@ -4,57 +4,65 @@
   height: 372px;
   background: $white;
   box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
-  display: flex;
-  flex-direction: row;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+.footer-nav__wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1160px;
+  margin: 0px auto;
+  padding-top: 104px;
+}
 .footer-nav__logo {
   width: 260px;
-  height: 156px;
-  margin-left: 140px;
-  margin-top: 100px;
-  margin-bottom: 116px;
-  margin-right: 40px;
+  height: 132px;
+}
+.footer-nav__logo img{
+  margin-top: -3px;
 }
 .footer-nav__logo p {
   width: 260px;
-  height: 96px;
-  margin-top: 16px;
+  height: 72px;
+  margin-top: 18px;
   display: block;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  /* or 171% */
-  /* Dark 75% */
   color: $darkShade75;
 }
 .footer-nav__links {
   display: flex;
   flex-direction: row;
+  width: 549px;
 }
 .footer-nav__links_navigation {
   display: flex;
   flex-direction: column;
-  margin-top: 104px;
-  width: 81px;
+  width: 143px;
   height: 168px;
-  margin-right: 119px;
-  justify-content: space-between;
+  margin-right: 57px;
+  line-height: 17px;
+  font-style: normal;
 }
 .footer-nav__links_navigation a {
   display: block;
   white-space: nowrap;
+  margin-bottom: 20px;
+}
+.footer-nav__links_navigation a:last-child {
+  margin-bottom: 0px;
 }
 .footer-nav__links_navigation a:first-child {
-  font-style: normal;
   font-weight: bold;
   font-size: 12px;
-  line-height: 15px;
+
   text-transform: uppercase;
   color: $darkShade100;
+  margin-bottom: 21px;
 }
 .footer-nav__links_navigation a:nth-child(2) {
   width: 64px;
@@ -73,12 +81,11 @@
 .footer-nav__links_about-us {
   display: flex;
   flex-direction: column;
-  width: 82px;
+  width: 108px;
   height: 168px;
-  margin-top: 104px;
-  margin-right: 118px;
   justify-content: space-between;
   flex-wrap: nowrap;
+  margin-right: 92px;
 }
 .footer-nav__links_about-us a:first-child {
   font-style: normal;
@@ -117,19 +124,18 @@
 .footer-nav__links_support {
   display: flex;
   flex-direction: column;
-  width: 113px;
+  width: 149px;
   height: 130px;
-  margin-top: 104px;
-  margin-right: 87px;
   justify-content: space-between;
 }
 .footer-nav__subscribe {
   display: flex;
   flex-direction: column;
   width: 260px;
-  margin-top: 104px;
 }
 .footer-nav__subscribe-textContainer{
+  width: 260px;
+  height: 84px;
   margin-bottom: 20px;
 }
 .footer-nav__subscribe-textContainer p {
@@ -143,7 +149,6 @@
   /* or 171% */
   /* Dark 75% */
   color: $darkShade75;
-  margin: 0px;
 }
 p.subscribe {
   height: 15px;
