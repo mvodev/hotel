@@ -1530,7 +1530,7 @@ p.subscribe {
   color: rgba(31, 32, 65, 0.75);
   margin-bottom: 12px; }
 
-.dropdown-input__guests__arrow {
+.dropdown-input__guests_arrow {
   width: 44px;
   height: 44px;
   cursor: pointer;
@@ -1652,7 +1652,7 @@ p.subscribe {
   display: flex;
   flex-direction: row; }
 
-.dropdown-input__room__arrow {
+.dropdown-input__room_arrow {
   width: 44px;
   height: 44px;
   cursor: pointer;
@@ -1812,8 +1812,8 @@ p.subscribe {
     color: rgba(31, 32, 65, 0.75);
     margin-bottom: 12px; }
 
-.dropdown-input__date__arrow,
-.dropdown-input__filter__arrow {
+.dropdown-input__date_arrow,
+.dropdown-input__filter_arrow {
   width: 44px;
   height: 44px;
   display: flex;
@@ -3304,4 +3304,4 @@ input:checked + .slider-round:before {
     grid-area: right; }
 
 
-/*# sourceMappingURL=UIKit.7a81a0408020053c7c92.css.map*/
+/*# sourceMappingURL=UIKit.291685f0664d6d41f55c.css.map*/

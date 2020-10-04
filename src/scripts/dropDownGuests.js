@@ -2,7 +2,7 @@
 const adult = counterAdult();
 const child = counterChild();
 const infant = counterInfant();
-const $dropDownInputGuests = document.querySelectorAll(".dropdown-input__arrow");
+const $dropDownInputGuests = document.querySelectorAll(".dropdown-input__guests_arrow");
 const $dropDownInputFieldGuests = document.querySelectorAll(
   ".dropdown-input__guests input"
 );
@@ -80,10 +80,11 @@ function dropDownGuestsClickHandler(event) {
 function changeCounterGuests(howChange, changeTarget) {
   if (changeTarget === "adult") {
     if (howChange === "increase") {
+
       $counterAdultValueTag.innerText++;
       adult.increase();
     } else {
-      if ($counterAdultValueTag.innerText > 0) {
+      if (adult.getCounter() > 0) {
         $counterAdultValueTag.innerText--;
         adult.decrease();
       }
@@ -93,7 +94,7 @@ function changeCounterGuests(howChange, changeTarget) {
       $counterChildValueTag.innerText++;
       child.increase();
     } else {
-      if ($counterChildValueTag.innerText > 0) {
+      if (child.getCounter() > 0) {
         $counterChildValueTag.innerText--;
         child.decrease();
       }
@@ -103,7 +104,7 @@ function changeCounterGuests(howChange, changeTarget) {
       $counterInfantValueTag.innerText++;
       infant.increase();
     } else {
-      if ($counterInfantValueTag.innerText > 0) {
+      if (infant.getCounter() > 0) {
         $counterInfantValueTag.innerText--;
         infant.decrease();
       }

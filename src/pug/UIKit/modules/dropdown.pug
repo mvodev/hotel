@@ -13,7 +13,7 @@ mixin dropdown(options)
  div(class= dropDownClassName+expandedCorners)
   div(class=dropDownClassName+'__wrapper')
     input(class=dropDownClassName+'_input-field' placeholder=options.placeholder type='text')
-    div(class=dropDownClassName+'__arrow')='keyboard_arrow_down'
+    div(class=dropDownClassName+'_arrow')='keyboard_arrow_down'
   case options.typeDropdown
     when 'guests'
       div(class = 'dropdown-guests'+isExpanded)
