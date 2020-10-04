@@ -1,3 +1,4 @@
+include ../UIKit/modules/searchnumber.pug
 html(lang="en")
  head
   meta(charset="UTF-8")
@@ -9,6 +10,8 @@ html(lang="en")
    include ../UIKit/modules/standardNavBar.pug
   div.img__wrapper
    img(src="landing.jpg", alt="")
+   +searchnumber
+   h2.img__header='Лучшие номера для вашей работы, отдыха и просто вдохновения'
   footer.footer
    include ../UIKit/modules/footerWidget.pug
    include ../UIKit/modules/footerCopyrightBar.pug

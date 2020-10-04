@@ -5,11 +5,42 @@
 @import '../styles/UIKit/HeadersAndFooters/footerCopyrightBar.scss';
 @import '../styles/UIKit/HeadersAndFooters/footerWidget.scss';
 @import '../styles/UIKit/FormElements/textField.scss';
+@import '../styles/UIKit/Cards/searchnumber.scss';
+@import '../styles/UIKit/FormElements/button.scss';
+@import '../styles/UIKit/FormElements/textField.scss';
+@import '../styles/UIKit/FormElements/dropDownDate.scss';
+@import '../styles/UIKit/FormElements/dropDownGuests.scss';
 .wrapper{
  max-width: $container-width;
+ max-height: 1343px;
  margin: 0px auto; 
- .img__wrapper img{
+ .img__wrapper{
+  position: relative;
+  .search-number{
+   position: absolute;
+   top: 8%;
+   left: 10%;
+  }
+  img{
   max-width: 100%;
+  max-height: 831px;
+ }
+ }
+
+ .img__header{
+  position: absolute;
+  height: 48px;
+  width: 296px;
+  bottom: 2.8%;
+  left: 70%;
+  font-family: $font-family-main;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: $darkShade75;
  }
 }
 @media (max-width:$container-mobile-width){

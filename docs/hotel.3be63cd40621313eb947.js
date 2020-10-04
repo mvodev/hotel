@@ -148,24 +148,24 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./layout.js","vendors~UIKit~hotel","UIKit~hotel"]);
+/******/ 	deferredModules.push(["./landing.js","vendors~UIKit~hotel","UIKit~hotel"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./layout.js":
-/*!*******************!*\
-  !*** ./layout.js ***!
-  \*******************/
+/***/ "./landing.js":
+/*!********************!*\
+  !*** ./landing.js ***!
+  \********************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _styles_hotelStyles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/hotelStyles.scss */ "./styles/hotelStyles.scss");
-/* harmony import */ var _styles_hotelStyles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_hotelStyles_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _styles_landing_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/landing.scss */ "./styles/landing.scss");
+/* harmony import */ var _styles_landing_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_landing_scss__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_ion_rangeslider_css_ion_rangeSlider_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/ion-rangeslider/css/ion.rangeSlider.min.css */ "../node_modules/ion-rangeslider/css/ion.rangeSlider.min.css");
 /* harmony import */ var _node_modules_ion_rangeslider_css_ion_rangeSlider_min_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_ion_rangeslider_css_ion_rangeSlider_min_css__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/air-datepicker/dist/css/datepicker.min.css */ "../node_modules/air-datepicker/dist/css/datepicker.min.css");
@@ -251,10 +251,10 @@ function burgerHandler(event) { () => console.log(event) };
 
 /***/ }),
 
-/***/ "./styles/hotelStyles.scss":
-/*!*********************************!*\
-  !*** ./styles/hotelStyles.scss ***!
-  \*********************************/
+/***/ "./styles/landing.scss":
+/*!*****************************!*\
+  !*** ./styles/landing.scss ***!
+  \*****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -263,4 +263,4 @@ function burgerHandler(event) { () => console.log(event) };
 /***/ })
 
 /******/ });
-//# sourceMappingURL=hotel.77bfd67617f625a1a958.js.map
+//# sourceMappingURL=hotel.3be63cd40621313eb947.js.map
