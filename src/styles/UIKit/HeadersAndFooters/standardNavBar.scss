@@ -1,3 +1,4 @@
+@import '../FormElements/burger.scss';
 .header-login {
   max-width: $container-width;
   height: 70px;
@@ -9,7 +10,7 @@
   font-family: $font-family-main;
   font-style: normal;
 }
-.header__burger{
+.header-burger{
   display: none;
 }
 .header-login__logo {

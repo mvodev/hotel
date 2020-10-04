@@ -41,44 +41,11 @@
     text-align: right;
     color: $darkShade75;
   }
+
 }
 @media (max-width:$container-mobile-width){
  .wrapper{
    max-width: none;
- }
- .header-login__logo,
- .header-login-nav__logo{
-  display: none;
- }
- .header__burger{
-  cursor: pointer;
-  display: block;
-  position: relative;
-  width: 30px;
-  height: 30px;
- }
- .header__burger::before,
- .header__burger::after{
-  position: absolute;
-  content: '';
-  background-color:$darkShade100;
-  width: 100%;
-  height: 2px;
-  left: 0px;
- }
- .header__burger::before{
-  top: 0px;
- }
- .header__burger::after{
-  bottom: 0px;
- }
- .header__burger span{
-  position: absolute;
-  background-color: $darkShade100;
-  left: 0px;
-  width: 100%;
-  height: 2px;
-  top: 13px;
  }
  .footer-copyright-container{
   flex-direction: column;

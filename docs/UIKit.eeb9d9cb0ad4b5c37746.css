@@ -1233,7 +1233,7 @@ p.subscribe {
   align-items: center;
   justify-content: space-between; }
 
-.header__burger {
+.header-burger {
   display: none; }
 
 .header-login-nav__logo {
@@ -1353,7 +1353,7 @@ p.subscribe {
   font-family: Montserrat;
   font-style: normal; }
 
-.header__burger {
+.header-burger {
   display: none; }
 
 .header-login__logo {
@@ -3297,4 +3297,4 @@ input:checked + .slider-round:before {
     grid-area: right; }
 
 
-/*# sourceMappingURL=UIKit.9b03e1ec2f20507c9cc0.css.map*/
+/*# sourceMappingURL=UIKit.eeb9d9cb0ad4b5c37746.css.map*/

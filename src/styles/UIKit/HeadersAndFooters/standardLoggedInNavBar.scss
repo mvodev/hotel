@@ -1,3 +1,4 @@
+@import '../FormElements/burger.scss';
 .header-login-nav {
   max-width: $container-width;
   height: 70px;
@@ -9,7 +10,7 @@
   align-items: center;
   justify-content: space-between;
 }
-.header__burger{
+.header-burger{
   display: none;
 }
 .header-login-nav__logo {
