@@ -1251,16 +1251,16 @@ p.subscribe {
   display: flex;
   flex-direction: row; }
 
-.headerLoginNav-nav {
+.header-login-nav__nav {
   list-style-type: none;
   display: flex;
   align-items: center;
   margin-right: 140px; }
 
-.headerLoginNav-nav a {
+.header-login-nav__nav a {
   text-decoration: none; }
 
-.headerLoginNav-navlink:first-child {
+.header-login-nav__nav_link:first-child {
   width: 43px;
   height: 18px;
   font-family: Montserrat;
@@ -1272,7 +1272,7 @@ p.subscribe {
   color: rgba(31, 32, 65, 0.75);
   margin-right: 20px; }
 
-.headerLoginNav-navlink:nth-child(2) {
+.header-login-nav__nav_link:nth-child(2) {
   width: 50px;
   height: 18px;
   font-family: Montserrat;
@@ -1296,7 +1296,7 @@ p.subscribe {
   color: rgba(31, 32, 65, 0.5);
   margin-right: 20px; }
 
-.headerLoginNav-navlink:nth-child(4) {
+.header-login-nav__nav_link:nth-child(4) {
   width: 72px;
   height: 18px;
   font-family: Montserrat;
@@ -1308,7 +1308,7 @@ p.subscribe {
   color: rgba(31, 32, 65, 0.5);
   margin-right: 20px; }
 
-.headerLoginNav-navlink:nth-child(5) {
+.header-login-nav__nav_link:nth-child(5) {
   width: 52px;
   height: 18px;
   font-family: Montserrat;
@@ -1320,7 +1320,7 @@ p.subscribe {
   color: rgba(31, 32, 65, 0.5);
   margin-right: 30px; }
 
-.headerLoginNav-navlink:nth-child(6) {
+.header-login-nav__nav_link:nth-child(6) {
   width: 92px;
   height: 18px;
   font-family: Montserrat;
@@ -1331,7 +1331,7 @@ p.subscribe {
   /* Dark 50% */
   color: rgba(31, 32, 65, 0.5); }
 
-.headerLoginNav-navlink_logged-in {
+.header-login-nav__nav_link_logged-in {
   width: 100px;
   height: 18px;
   font-family: Montserrat;
@@ -1349,7 +1349,9 @@ p.subscribe {
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  font-family: Montserrat;
+  font-style: normal; }
 
 .header__burger {
   display: none; }
@@ -1361,30 +1363,26 @@ p.subscribe {
   margin-top: 15px;
   margin-bottom: 15px; }
 
-.headerLogin-nav {
+.header-login__nav {
   list-style-type: none;
   display: flex;
   align-items: center; }
 
-.headerLogin-nav a {
+.header-login__nav a {
   text-decoration: none; }
 
-.headerLogin-navlink:first-child {
+.header-login__nav_link:first-child {
   width: 43px;
   height: 18px;
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
   color: rgba(31, 32, 65, 0.75);
   margin-right: 20px; }
 
-.headerLogin-navlink:nth-child(2) {
+.header-login__nav_link:nth-child(2) {
   width: 50px;
   height: 18px;
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
@@ -1394,40 +1392,39 @@ p.subscribe {
 .expand-more-container {
   width: 24px;
   height: 21px;
+  font-family: Material Icons;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 20px;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
   color: rgba(31, 32, 65, 0.5);
-  margin-right: 20px; }
+  cursor: pointer; }
 
-.headerLogin-navlink:nth-child(4) {
+.header-login__nav_link:nth-child(4) {
   width: 72px;
   height: 18px;
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
   margin-right: 20px; }
 
-.headerLogin-navlink:nth-child(5) {
+.header-login__nav_link:nth-child(5) {
   width: 52px;
   height: 18px;
   font-family: Montserrat;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
   margin-right: 30px; }
 
-.headerLogin-navlink:nth-child(6) {
+.header-login__nav_link:nth-child(6) {
   width: 92px;
   height: 18px;
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
@@ -1436,8 +1433,6 @@ p.subscribe {
 .login {
   height: 34px;
   width: 87px;
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
@@ -1450,8 +1445,6 @@ p.subscribe {
   text-align: center; }
 
 .register {
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
@@ -3304,4 +3297,4 @@ input:checked + .slider-round:before {
     grid-area: right; }
 
 
-/*# sourceMappingURL=UIKit.d18a4dac455dc93f136f.css.map*/
+/*# sourceMappingURL=UIKit.9b03e1ec2f20507c9cc0.css.map*/
