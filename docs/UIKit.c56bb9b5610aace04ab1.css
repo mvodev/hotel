@@ -1238,9 +1238,7 @@ p.subscribe {
 .header-login-nav__logo {
   height: 40px;
   width: 105.69px;
-  margin-left: 140px;
-  margin-top: 15px;
-  margin-bottom: 15px; }
+  margin-left: 140px; }
 
 .header-login-nav {
   max-width: 1440px;
@@ -1323,6 +1321,45 @@ p.subscribe {
   line-height: 17px;
   color: rgba(31, 32, 65, 0.5); }
 
+.header-login-nav__burger-input {
+  opacity: 0;
+  width: 0px;
+  height: 0px; }
+
+.header-login-nav__burger-label,
+.header-login-nav__burger-label::before,
+.header-login-nav__burger-label::after {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  content: '';
+  background-color: #1f2041;
+  left: 0px; }
+
+.header-login-nav__burger-label {
+  top: 0px; }
+
+.header-login-nav__burger-label::before {
+  top: 13px; }
+
+.header-login-nav__burger-label::after {
+  top: 27px; }
+
+.header-login-nav__burger-input:checked ~ .header-login-nav__burger-label:after {
+  transform: rotate(45deg) translateX(-10px) translateY(-10px); }
+
+.header-login-nav__burger-input:checked ~ .header-login-nav__burger-label:before {
+  transform: rotate(-45deg) translateX(0px); }
+
+.header-login-nav__burger-input:checked ~ .header-login-nav__burger-label {
+  background-color: white; }
+
+@media (max-width: 1200px) {
+  .header-login-nav__logo,
+  .header-login-nav__nav {
+    display: none; } }
+
 .header-login {
   max-width: 1440px;
   height: 70px;
@@ -1333,7 +1370,8 @@ p.subscribe {
   justify-content: space-between;
   font-family: Montserrat;
   font-style: normal;
-  font-weight: normal; }
+  font-weight: normal;
+  align-items: center; }
 
 .header-login__logo {
   height: 40px;
@@ -1431,20 +1469,14 @@ p.subscribe {
   width: 196px;
   text-align: center; }
 
-.header-burger {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  cursor: pointer; }
-
-.header-burger__input {
+.header-login__burger-input {
   opacity: 0;
   width: 0px;
   height: 0px; }
 
-.header-burger__label,
-.header-burger__label::before,
-.header-burger__label::after {
+.header-login__burger-label,
+.header-login__burger-label::before,
+.header-login__burger-label::after {
   cursor: pointer;
   position: absolute;
   width: 100%;
@@ -1453,26 +1485,40 @@ p.subscribe {
   background-color: #1f2041;
   left: 0px; }
 
-.header-burger__label {
+.header-login__burger-label {
   top: 0px; }
 
-.header-burger__label::before {
+.header-login__burger-label::before {
   top: 13px; }
 
-.header-burger__label::after {
+.header-login__burger-label::after {
   top: 27px; }
 
-.header-burger__input:checked ~ .header-burger__label {
-  border-top: white 3px; }
-
-.header-burger__input:checked ~ .header-burger__label:after {
+.header-login__burger-input:checked ~ .header-login__burger-label:after {
   transform: rotate(45deg) translateX(-10px) translateY(-10px); }
 
-.header-burger__input:checked ~ .header-burger__label:before {
+.header-login__burger-input:checked ~ .header-login__burger-label:before {
   transform: rotate(-45deg) translateX(0px); }
 
-.header-burger__input:checked ~ .header-burger__label {
+.header-login__burger-input:checked ~ .header-login__burger-label {
   background-color: white; }
+
+@media (max-width: 1200px) {
+  .header-login__logo,
+  .header-login__nav {
+    display: none; } }
+
+.header-burger {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: none;
+  margin-left: 10px; }
+
+@media (max-width: 1200px) {
+  .header-burger {
+    display: block; } }
 
 .headers-and-footers-container {
   width: 1440px;
@@ -3311,4 +3357,4 @@ input:checked + .slider-round:before {
     grid-area: right; }
 
 
-/*# sourceMappingURL=UIKit.5720a579576a54d54ca4.css.map*/
+/*# sourceMappingURL=UIKit.c56bb9b5610aace04ab1.css.map*/
