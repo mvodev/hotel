@@ -185,9 +185,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scripts_dropDownRoom_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_scripts_dropDownRoom_js__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var _scripts_expandableCL_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./scripts/expandableCL.js */ "./scripts/expandableCL.js");
 /* harmony import */ var _scripts_expandableCL_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_scripts_expandableCL_js__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _scripts_burger_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./scripts/burger.js */ "./scripts/burger.js");
-/* harmony import */ var _scripts_burger_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_scripts_burger_js__WEBPACK_IMPORTED_MODULE_11__);
-
 
 
 
@@ -238,19 +235,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./scripts/burger.js":
-/*!***************************!*\
-  !*** ./scripts/burger.js ***!
-  \***************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-const burgerMenu = document.querySelector('.header__burger');
-burgerMenu.addEventListener('click', burgerHandler);
-function burgerHandler(event) { () => console.log(event) };
-
-/***/ }),
-
 /***/ "./styles/landing.scss":
 /*!*****************************!*\
   !*** ./styles/landing.scss ***!
@@ -263,4 +247,4 @@ function burgerHandler(event) { () => console.log(event) };
 /***/ })
 
 /******/ });
-//# sourceMappingURL=hotel.3be63cd40621313eb947.js.map
+//# sourceMappingURL=hotel.72bdb0c8b7ac44844aa6.js.map

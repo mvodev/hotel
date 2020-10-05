@@ -15,16 +15,14 @@
  height: 0;
 }
 .switch__name{
- font-family: $font-family-main;
- font-style: normal;
- font-weight: normal;
- font-size: 14px;
-/* identical to box height, or 171% */
-/* Dark 75% */
-color: $darkShade75;
-height: 24px;
-display: inline-block;
-padding-top: 2px;
+  font-family: $font-family-main;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: $darkShade75;
+  height: 24px;
+  display: inline-block;
+  padding-top: 2px;
 }
 .slider-round {
  position: absolute;

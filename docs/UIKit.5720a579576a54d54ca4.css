@@ -1231,10 +1231,9 @@ p.subscribe {
   flex-direction: row;
   text-align: center;
   align-items: center;
-  justify-content: space-between; }
-
-.header-burger {
-  display: none; }
+  justify-content: space-between;
+  font-family: Montserrat;
+  font-style: normal; }
 
 .header-login-nav__logo {
   height: 40px;
@@ -1263,56 +1262,43 @@ p.subscribe {
 .header-login-nav__nav_link:first-child {
   width: 43px;
   height: 18px;
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
-  /* Dark 75% */
   color: rgba(31, 32, 65, 0.75);
   margin-right: 20px; }
 
 .header-login-nav__nav_link:nth-child(2) {
   width: 50px;
   height: 18px;
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  /* Dark 50% */
   color: rgba(31, 32, 65, 0.5);
   white-space: nowrap; }
 
 .expand-more-container {
   width: 24px;
   height: 21px;
-  /* identical to box height */
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
-  /* Dark 50% */
   color: rgba(31, 32, 65, 0.5);
   margin-right: 20px; }
 
 .header-login-nav__nav_link:nth-child(4) {
   width: 72px;
   height: 18px;
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  /* Dark 50% */
   color: rgba(31, 32, 65, 0.5);
   margin-right: 20px; }
 
 .header-login-nav__nav_link:nth-child(5) {
   width: 52px;
   height: 18px;
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
@@ -1323,8 +1309,6 @@ p.subscribe {
 .header-login-nav__nav_link:nth-child(6) {
   width: 92px;
   height: 18px;
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
@@ -1334,12 +1318,9 @@ p.subscribe {
 .header-login-nav__nav_link_logged-in {
   width: 100px;
   height: 18px;
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  /* Dark 50% */
   color: rgba(31, 32, 65, 0.5); }
 
 .header-login {
@@ -1351,10 +1332,8 @@ p.subscribe {
   flex-direction: row;
   justify-content: space-between;
   font-family: Montserrat;
-  font-style: normal; }
-
-.header-burger {
-  display: none; }
+  font-style: normal;
+  font-weight: normal; }
 
 .header-login__logo {
   height: 40px;
@@ -1383,7 +1362,6 @@ p.subscribe {
 .header-login__nav_link:nth-child(2) {
   width: 50px;
   height: 18px;
-  font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
@@ -1393,7 +1371,6 @@ p.subscribe {
   width: 24px;
   height: 21px;
   font-family: Material Icons;
-  font-weight: normal;
   font-size: 24px;
   line-height: 20px;
   display: flex;
@@ -1406,7 +1383,6 @@ p.subscribe {
 .header-login__nav_link:nth-child(4) {
   width: 72px;
   height: 18px;
-  font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
@@ -1415,8 +1391,6 @@ p.subscribe {
 .header-login__nav_link:nth-child(5) {
   width: 52px;
   height: 18px;
-  font-family: Montserrat;
-  font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
@@ -1425,7 +1399,6 @@ p.subscribe {
 .header-login__nav_link:nth-child(6) {
   width: 92px;
   height: 18px;
-  font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: rgba(31, 32, 65, 0.5); }
@@ -1457,6 +1430,49 @@ p.subscribe {
   height: 34px;
   width: 196px;
   text-align: center; }
+
+.header-burger {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer; }
+
+.header-burger__input {
+  opacity: 0;
+  width: 0px;
+  height: 0px; }
+
+.header-burger__label,
+.header-burger__label::before,
+.header-burger__label::after {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  content: '';
+  background-color: #1f2041;
+  left: 0px; }
+
+.header-burger__label {
+  top: 0px; }
+
+.header-burger__label::before {
+  top: 13px; }
+
+.header-burger__label::after {
+  top: 27px; }
+
+.header-burger__input:checked ~ .header-burger__label {
+  border-top: white 3px; }
+
+.header-burger__input:checked ~ .header-burger__label:after {
+  transform: rotate(45deg) translateX(-10px) translateY(-10px); }
+
+.header-burger__input:checked ~ .header-burger__label:before {
+  transform: rotate(-45deg) translateX(0px); }
+
+.header-burger__input:checked ~ .header-burger__label {
+  background-color: white; }
 
 .headers-and-footers-container {
   width: 1440px;
@@ -2454,8 +2470,6 @@ p.subscribe {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  /* identical to box height, or 171% */
-  /* Dark 75% */
   color: rgba(31, 32, 65, 0.75);
   height: 24px;
   display: inline-block;
@@ -3297,4 +3311,4 @@ input:checked + .slider-round:before {
     grid-area: right; }
 
 
-/*# sourceMappingURL=UIKit.eeb9d9cb0ad4b5c37746.css.map*/
+/*# sourceMappingURL=UIKit.5720a579576a54d54ca4.css.map*/

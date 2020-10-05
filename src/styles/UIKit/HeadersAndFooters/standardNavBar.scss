@@ -1,4 +1,4 @@
-@import '../FormElements/burger.scss';
+
 .header-login {
   max-width: $container-width;
   height: 70px;
@@ -9,9 +9,7 @@
   justify-content: space-between;
   font-family: $font-family-main;
   font-style: normal;
-}
-.header-burger{
-  display: none;
+  font-weight: normal;
 }
 .header-login__logo {
   height: 40px;
@@ -40,7 +38,6 @@
 .header-login__nav_link:nth-child(2) {
   width: 50px;
   height: 18px;
-  font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: $darkShade50;
@@ -50,7 +47,6 @@
   width: 24px;
   height: 21px;
   font-family: $font-for-icons;
-  font-weight: normal;
   font-size: 24px;
   line-height: 20px;
   display: flex;
@@ -63,7 +59,6 @@
 .header-login__nav_link:nth-child(4) {
   width: 72px;
   height: 18px;
-  font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: $darkShade50;
@@ -73,8 +68,6 @@
 .header-login__nav_link:nth-child(5) {
   width: 52px;
   height: 18px;
-  font-family: $font-family-main;
-  font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: $darkShade50;
@@ -83,7 +76,6 @@
 .header-login__nav_link:nth-child(6) {
   width: 92px;
   height: 18px;
-  font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: $darkShade50;
@@ -116,3 +108,6 @@
   width: 196px;
   text-align: center;
 }
+// .header-burger{
+//   display: none;
+// }

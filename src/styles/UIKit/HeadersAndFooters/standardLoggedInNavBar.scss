@@ -1,4 +1,4 @@
-@import '../FormElements/burger.scss';
+
 .header-login-nav {
   max-width: $container-width;
   height: 70px;
@@ -9,10 +9,10 @@
   text-align: center;
   align-items: center;
   justify-content: space-between;
+  font-family: $font-family-main;
+  font-style: normal;
 }
-.header-burger{
-  display: none;
-}
+
 .header-login-nav__logo {
   height: 40px;
   width: 105.69px;
@@ -40,48 +40,37 @@
 .header-login-nav__nav_link:first-child {
   width: 43px;
   height: 18px;
-  font-family: $font-family-main;
-  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
-  /* Dark 75% */
   color: $darkShade75;
   margin-right: 20px;
 }
 .header-login-nav__nav_link:nth-child(2) {
   width: 50px;
   height: 18px;
-  font-family: $font-family-main;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  /* Dark 50% */
   color: $darkShade50;
   white-space: nowrap;
 }
 .expand-more-container {
   width: 24px;
   height: 21px;
-  /* identical to box height */
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
-  /* Dark 50% */
   color: $darkShade50;
   margin-right: 20px;
 }
 .header-login-nav__nav_link:nth-child(4) {
   width: 72px;
   height: 18px;
-  font-family: $font-family-main;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  /* Dark 50% */
   color: $darkShade50;
   margin-right: 20px;
 }
@@ -89,8 +78,6 @@
 .header-login-nav__nav_link:nth-child(5) {
   width: 52px;
   height: 18px;
-  font-family: $font-family-main;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
@@ -101,8 +88,6 @@
 .header-login-nav__nav_link:nth-child(6) {
   width: 92px;
   height: 18px;
-  font-family: $font-family-main;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
@@ -112,11 +97,11 @@
 .header-login-nav__nav_link_logged-in{
   width: 100px;
   height: 18px;
-  font-family: $font-family-main;
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  /* Dark 50% */
   color: $darkShade50;
 }
+// .header-burger{
+//   display: none;
+// }
