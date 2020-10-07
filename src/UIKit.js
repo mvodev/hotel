@@ -9,6 +9,7 @@ import 'cleave.js'
 import '../src/scripts/dropDownGuests.js'
 import '../src/scripts/dropDownRoom.js'
 import '../src/scripts/expandableCL.js'
+import '../src/scripts/burger'
 var cleave = new Cleave('.text-field_input-date', {
   date: true,
   delimiter: '.',

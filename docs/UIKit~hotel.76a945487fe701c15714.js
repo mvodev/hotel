@@ -1,5 +1,25 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["UIKit~hotel"],{
 
+/***/ "./scripts/burger.js":
+/*!***************************!*\
+  !*** ./scripts/burger.js ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {$(document).ready(function () {
+ $('.header-login-nav__burger-label').click(function(event){
+  $('.header-login-nav__burger-label,.header-login-nav,.header-login-nav__nav').toggleClass('active');
+ });
+
+ $('.header-login__burger-label').click(function (event) {
+  $('.header-login__burger-label,.header-login,.header-login__nav').toggleClass('active');
+ });
+});
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
 /***/ "./scripts/dropDownGuests.js":
 /*!***********************************!*\
   !*** ./scripts/dropDownGuests.js ***!
@@ -477,4 +497,4 @@ function rateClickListener(event) {
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~hotel.b5f76b1807360ae07e2b.js.map
+//# sourceMappingURL=UIKit~hotel.76a945487fe701c15714.js.map

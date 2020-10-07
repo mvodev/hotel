@@ -1,14 +1,15 @@
 include burger.pug
 .header-login-nav
- .header-login-nav__logo
-  img(src="logoTOXIN.svg", alt="")
- +burger({className:'header-login-nav'})
- nav.header-login-nav__nav
-  a(class = 'header-login-nav__nav_link' href='#' ) О нас
-  a(href='#' class = 'header-login-nav__nav_link') Услуги
-  .expand-more-container='keyboard_arrow_down'
-  a(href='#' class = 'header-login-nav__nav_link') Вакансии
-  a(href='#' class = 'header-login-nav__nav_link') Новости
-  a(href='#' class = 'header-login-nav__nav_link') Соглашения
-  .expand-more-container='keyboard_arrow_down'
-  a(href='#' class = 'header-login-nav__nav_link_logged-in') Юлий Цезарь
+  .header-login-nav__logo
+   img(src="logoTOXIN.svg", alt="")
+  +burger({className:'header-login-nav'})
+  nav.header-login-nav__nav
+   a(class = 'header-login-nav__nav_link' href='#' ) О нас
+   a(href='#' class = 'header-login-nav__nav_link') Услуги
+   .expand-more-container='keyboard_arrow_down'
+   a(href='#' class = 'header-login-nav__nav_link') Вакансии
+   a(href='#' class = 'header-login-nav__nav_link') Новости
+   a(href='#' class = 'header-login-nav__nav_link') Соглашения
+   .expand-more-container='keyboard_arrow_down'
+   .delimeter
+   a(href='#' class = 'header-login-nav__nav_link_logged-in') Юлий Цезарь
