@@ -39,8 +39,8 @@
   height: 24px;
   color: $buttonColor;
 }
-@media (max-width:$container-mobile-width){
 
+@media (max-width:$container-mobile-width){
  .footer-copyright-container{
   flex-direction: column;
   text-align: center;

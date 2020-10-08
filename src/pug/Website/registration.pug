@@ -1,17 +1,16 @@
-include ../UIKit/modules/searchnumber.pug
+include ../UIKit/modules/signup.pug
 html(lang="en")
  head
   meta(charset="UTF-8")
   meta(name="viewport", content="width=device-width, initial-scale=1.0")
-  meta(name="description", content="отель")
-  title Landing page
+  meta(name="description", content="отель страница регистрации")
+  title Registration page
  body.wrapper
   header.header
    include ../UIKit/modules/standardNavBar.pug
   div.img__wrapper
-   img(src="landing.jpg", alt="")
-   +searchnumber
-   h2.img__header='Лучшие номера для вашей работы, отдыха и просто вдохновения'
+   img(src="registration.jpg", alt="")
+   +signup
   footer.footer
    include ../UIKit/modules/footerWidget.pug
    include ../UIKit/modules/footerCopyrightBar.pug
