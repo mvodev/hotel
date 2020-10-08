@@ -47,8 +47,16 @@
 @media (max-width:$container-mobile-width){
  .wrapper{
    max-width: none;
+   max-height: none;
  }
-
+ .img__header{
+   display: none;
+ }
+ .footer{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ }
  .footer-copyright-container{
   flex-direction: column;
   text-align: center;
@@ -65,10 +73,14 @@
  }
  .footer-nav__container,
  .footer-nav__subscribe{
+   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   align-items: center;
+ }
+ .footer-nav__wrapper{
+   padding-top: 0px;
  }
  .footer-nav__container{
   height: 200px;

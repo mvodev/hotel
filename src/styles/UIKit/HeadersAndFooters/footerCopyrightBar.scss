@@ -7,16 +7,15 @@
   text-align: center;
   flex-direction: row;
   justify-content: space-between;
+  font-style: normal;
+  font-weight: normal;
+  font-family: $font-family-main;
 }
 .footer__copyright {
   width: 367px;
   height: 18px;
-  font-family: $font-family-main;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  /* Dark 75% */
   color: $darkShade75;
   margin-left: 140px;
   margin-top: 26px;
@@ -39,4 +38,21 @@
   width: 24px;
   height: 24px;
   color: $buttonColor;
+}
+@media (max-width:$container-mobile-width){
+
+ .footer-copyright-container{
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+ }
+ .footer__copyright{
+  margin: 5px 0px 10px 0px;
+  display: flex;
+  justify-content: center;
+ }
+ .footer__social-networks-links{
+  margin: 0px 0px 5px 0px;
+ }
 }

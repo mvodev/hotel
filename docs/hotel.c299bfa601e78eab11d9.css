@@ -735,7 +735,9 @@ table {
   box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: normal; }
 
 .footer-nav__wrapper {
   display: flex;
@@ -757,8 +759,6 @@ table {
   height: 72px;
   margin-top: 18px;
   display: block;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75); }
@@ -774,8 +774,7 @@ table {
   width: 143px;
   height: 168px;
   margin-right: 57px;
-  line-height: 17px;
-  font-style: normal; }
+  line-height: 17px; }
 
 .footer-nav__links_navigation a {
   display: block;
@@ -795,11 +794,8 @@ table {
 .footer-nav__links_navigation a:nth-child(2) {
   width: 64px;
   height: 18px;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  /* Dark 50% */
   color: rgba(31, 32, 65, 0.5); }
 
 .footer-nav__links_about-us a {
@@ -816,22 +812,16 @@ table {
   margin-right: 92px; }
 
 .footer-nav__links_about-us a:first-child {
-  font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  /* identical to box height */
   text-transform: uppercase;
-  /* Dark 100% */
   color: #1f2041; }
 
 .footer-nav__links_link {
   text-decoration: none;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  /* Dark 50% */
   color: rgba(31, 32, 65, 0.5);
   display: inline-block; }
 
@@ -840,13 +830,10 @@ table {
   white-space: nowrap; }
 
 .footer-nav__links_support a:first-child {
-  font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  /* identical to box height */
   text-transform: uppercase;
-  /* Dark 100% */
   color: #1f2041; }
 
 .footer-nav__links_support {
@@ -870,12 +857,8 @@ table {
   display: block;
   height: 48px;
   font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  /* or 171% */
-  /* Dark 75% */
   color: rgba(31, 32, 65, 0.75); }
 
 p.subscribe {
@@ -883,15 +866,41 @@ p.subscribe {
   width: 208px;
   display: block;
   white-space: nowrap;
-  font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  /* identical to box height */
   text-transform: uppercase;
-  /* Dark 100% */
   color: #1f2041;
   margin: 0px 0px 21px 0px; }
+
+@media (max-width: 1200px) {
+  .footer-nav__container,
+  .footer-nav__subscribe {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center; }
+  .footer-nav__wrapper {
+    padding-top: 0px; }
+  .footer-nav__container {
+    height: 200px; }
+  .footer-nav__logo,
+  .footer-nav__links {
+    display: none; }
+  .footer-nav__subscribe {
+    margin-top: 0px; }
+  .footer-nav__container,
+  .footer-nav__subscribe {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center; }
+  .footer-nav__logo,
+  .footer-nav__links {
+    display: none; }
+  .footer-nav__subscribe {
+    margin-top: 10px; } }
 
 .text-field {
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -1761,7 +1770,14 @@ p.subscribe {
 
 @media (max-width: 1200px) {
   .wrapper {
-    max-width: none; }
+    max-width: none;
+    max-height: none; }
+  .img__header {
+    display: none; }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
   .footer-copyright-container {
     flex-direction: column;
     text-align: center;
@@ -1775,10 +1791,13 @@ p.subscribe {
     margin: 0px 0px 5px 0px; }
   .footer-nav__container,
   .footer-nav__subscribe {
+    display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center; }
+  .footer-nav__wrapper {
+    padding-top: 0px; }
   .footer-nav__container {
     height: 200px; }
   .footer-nav__logo,
@@ -1799,4 +1818,4 @@ p.subscribe {
     margin-top: 10px; } }
 
 
-/*# sourceMappingURL=hotel.8c9b17736040f1df1897.css.map*/
+/*# sourceMappingURL=hotel.c299bfa601e78eab11d9.css.map*/
