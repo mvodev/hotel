@@ -6,3 +6,45 @@
 @import '../styles/UIKit/FormElements/button.scss';
 @import '../styles/UIKit/FormElements/textField.scss';
 @import '../styles/UIKit/HeadersAndFooters/standardNavBar.scss';
+@import '../styles/UIKit/HeadersAndFooters/standardLoggedInNavBar.scss';
+@import '../styles/UIKit/HeadersAndFooters/footerCopyrightBar.scss';
+@import '../styles/UIKit/HeadersAndFooters/footerWidget.scss';
+
+.wrapper{
+ max-width: $container-width;
+ max-height: 1197px;
+ margin: 0px auto; 
+
+  .img__wrapper{
+    position: relative;
+    max-height: 685px;
+    max-width: 100%;
+    .sign-up{
+    position: absolute;
+    top: 3%;
+    left: 37%;
+    }
+   
+    img{
+     position: relative;
+      width: 100%;
+      object-fit: cover;
+      max-height: 685px;
+    }
+ }
+}
+@media (max-width:$container-mobile-width){
+ .wrapper{
+   max-width: none;
+   max-height: none;
+   .img__wrapper{
+   .sign-up{
+    left: 10%;
+   }
+  }
+ }
+  
+ .footer{
+   display: none;
+ }
+}

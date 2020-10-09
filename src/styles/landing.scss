@@ -16,13 +16,14 @@
   .img__wrapper{
     position: relative;
     .search-number{
-    position: absolute;
-    top: 8%;
-    left: 10%;
+      position: absolute;
+      top: 8%;
+      left: 10%;
     }
     img{
       max-width: 100%;
       max-height: 831px;
+      object-fit: cover;
     }
  }
   .img__header{
