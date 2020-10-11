@@ -1,0 +1,37 @@
+@import './common/fonts.scss';
+@import './common/reset.scss';
+@import './common/constants.scss';
+@import '../styles/UIKit/HeadersAndFooters/standardLoggedInNavBar.scss';
+@import '../styles/UIKit/HeadersAndFooters/footerCopyrightBar.scss';
+@import '../styles/UIKit/HeadersAndFooters/footerWidget.scss';
+@import '../styles/UIKit/FormElements/dropDownDate.scss';
+.search-wrapper{
+ max-width: $container-width;
+ max-height: 1880px;
+ margin: 0px auto; 
+ .search-wrapper__content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ }
+ .search-wrapper__content_left-column{
+  width: 266px;
+  border: 1px solid red;
+  margin-left: 60px;
+ }
+ .search-wrapper__content_right-column{
+  border: 1px solid red;
+  width: 834px;
+ }
+}
+@media (max-width:$container-mobile-width){
+ .search-wrapper{
+   max-width: none;
+   max-height: none;
+ }
+ .footer{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ }
+}

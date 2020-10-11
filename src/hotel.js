@@ -1,16 +1,17 @@
 import './styles/landing.scss';
 import './styles/registration.scss';
+import './styles/search.scss';
 import '../node_modules/ion-rangeslider/css/ion.rangeSlider.min.css'
 import '../node_modules/air-datepicker/dist/css/datepicker.min.css';
 import 'air-datepicker/dist/js/datepicker';
-import './scripts/starRating.js'
-import './scripts/likeRating.js'
-import 'ion-rangeslider'
-import 'cleave.js'
-import './scripts/dropDownGuests.js'
-import './scripts/dropDownRoom.js'
-import './scripts/expandableCL.js'
-import './scripts/burger'
+import './scripts/starRating.js';
+import './scripts/likeRating.js';
+import 'ion-rangeslider';
+import 'cleave.js';
+import './scripts/dropDownGuests.js';
+import './scripts/dropDownRoom.js';
+import './scripts/expandableCL.js';
+import './scripts/burger';
 // var cleave = new Cleave('.text-field_input-date', {
 //   date: true,
 //   delimiter: '.',

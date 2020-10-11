@@ -2,68 +2,68 @@
 const adult = counterAdult();
 const child = counterChild();
 const infant = counterInfant();
-const $dropDownInputGuests = document.querySelectorAll(".dropdown-input__guests_arrow");
-const $dropDownInputFieldGuests = document.querySelectorAll(
+const dropDownInputGuests = document.querySelectorAll(".dropdown-input__guests_arrow");
+const dropDownInputFieldGuests = document.querySelectorAll(
   ".dropdown-input__guests input"
 );
-const $counterAdultValueTag = document.querySelectorAll(
+const counterAdultValueTag = document.querySelectorAll(
   ".dropdown-guests__adult div:nth-child(3)"
 );
-const $counterAdultValueDecrease = document.querySelectorAll(
+const counterAdultValueDecrease = document.querySelectorAll(
   ".dropdown-guests__adult div:nth-child(2)"
 );
-const $counterAdultValueIncrease = document.querySelectorAll(
+const counterAdultValueIncrease = document.querySelectorAll(
   ".dropdown-guests__adult div:nth-child(4)"
 );
-const $counterChildValueTag = document.querySelectorAll(
+const counterChildValueTag = document.querySelectorAll(
   ".dropdown-guests__child div:nth-child(3)"
 );
-const $counterChildValueDecreaseTag = document.querySelectorAll(
+const counterChildValueDecreaseTag = document.querySelectorAll(
   ".dropdown-guests__child div:nth-child(2)"
 );
-const $counterChildValueIncreaseTag = document.querySelectorAll(
+const counterChildValueIncreaseTag = document.querySelectorAll(
   ".dropdown-guests__child div:nth-child(4)"
 );
-const $counterInfantValueTag = document.querySelectorAll(
+const counterInfantValueTag = document.querySelectorAll(
   ".dropdown-guests__infant div:nth-child(3)"
 );
-const $counterInfantValueDecrease = document.querySelectorAll(
+const counterInfantValueDecrease = document.querySelectorAll(
   ".dropdown-guests__infant div:nth-child(2)"
 );
-const $counterInfantValueIncrease = document.querySelectorAll(
+const counterInfantValueIncrease = document.querySelectorAll(
   ".dropdown-guests__infant div:nth-child(4)"
 );
-const $eraseButton = document.querySelectorAll(
+const eraseButton = document.querySelectorAll(
   ".dropdown-guests__apply-button div:nth-child(1)"
 );
-const $applyButton = document.querySelectorAll(
+const applyButton = document.querySelectorAll(
   ".dropdown-guests__apply-button div:nth-child(2)"
 );
 
 /////////////////////////Listeners//////////////////////////////////////////////
-$dropDownInputGuests.forEach(elem => elem.addEventListener("click", dropDownGuestsClickHandler));
-$counterAdultValueDecrease.forEach(elem => elem.addEventListener("click", () =>
+dropDownInputGuests.forEach(elem => elem.addEventListener("click", dropDownGuestsClickHandler));
+counterAdultValueDecrease.forEach(elem => elem.addEventListener("click", () =>
   changeCounterGuests("decrease", "adult")
 ));
-$counterAdultValueIncrease.forEach(elem => elem.addEventListener("click", () =>
+counterAdultValueIncrease.forEach(elem => elem.addEventListener("click", () =>
   changeCounterGuests("increase", "adult")
 ));
-$counterChildValueDecreaseTag.forEach(elem => elem.addEventListener("click", () =>
+counterChildValueDecreaseTag.forEach(elem => elem.addEventListener("click", () =>
   changeCounterGuests("decrease", "child")
 ));
-$counterChildValueIncreaseTag.forEach(elem => elem.addEventListener("click", () =>
+counterChildValueIncreaseTag.forEach(elem => elem.addEventListener("click", () =>
   changeCounterGuests("increase", "child")
 ));
-$counterInfantValueDecrease.forEach(elem => elem.addEventListener("click", () =>
+counterInfantValueDecrease.forEach(elem => elem.addEventListener("click", () =>
   changeCounterGuests("decrease", "infant")
 ));
-$counterInfantValueIncrease.forEach(elem => elem.addEventListener("click", () =>
+counterInfantValueIncrease.forEach(elem => elem.addEventListener("click", () =>
   changeCounterGuests("increase", "infant")
 ));
-$applyButton.forEach(elem => elem.addEventListener("click", () =>
+applyButton.forEach(elem => elem.addEventListener("click", () =>
   showResultInDropDownGuests("apply")
 ));
-$eraseButton.forEach(elem => elem.addEventListener("click", () =>
+eraseButton.forEach(elem => elem.addEventListener("click", () =>
   showResultInDropDownGuests("erase")
 ));
 //////////////////////Handlers//////////////////////////////////////////
@@ -81,31 +81,31 @@ function changeCounterGuests(howChange, changeTarget) {
   if (changeTarget === "adult") {
     if (howChange === "increase") {
 
-      $counterAdultValueTag.innerText++;
+      counterAdultValueTag.innerText++;
       adult.increase();
     } else {
       if (adult.getCounter() > 0) {
-        $counterAdultValueTag.innerText--;
+        counterAdultValueTag.innerText--;
         adult.decrease();
       }
     }
   } else if (changeTarget === "child") {
     if (howChange === "increase") {
-      $counterChildValueTag.innerText++;
+      counterChildValueTag.innerText++;
       child.increase();
     } else {
       if (child.getCounter() > 0) {
-        $counterChildValueTag.innerText--;
+        counterChildValueTag.innerText--;
         child.decrease();
       }
     }
   } else {
     if (howChange === "increase") {
-      $counterInfantValueTag.innerText++;
+      counterInfantValueTag.innerText++;
       infant.increase();
     } else {
       if (infant.getCounter() > 0) {
-        $counterInfantValueTag.innerText--;
+        counterInfantValueTag.innerText--;
         infant.decrease();
       }
     }
@@ -125,7 +125,7 @@ function showResultInDropDownGuests(action) {
     } else if (counterGuests >= 5) {
       result += counterGuests + " гостей";
     }
-    $dropDownInputFieldGuests.forEach(elem => elem.value = result);
+    dropDownInputFieldGuests.forEach(elem => elem.value = result);
     dropDownResult = result;
     if (result != "") $eraseButton.forEach(elem => elem.classList.remove("dropdown_button-hidden"));
     result = "";
@@ -135,11 +135,11 @@ function showResultInDropDownGuests(action) {
 }
 function eraseResult() {
   eraseCounters();
-  $dropDownInputFieldGuests.forEach(elem => elem.value = '');
-  $counterAdultValueTag.forEach(elem => elem.innerText = 0);
-  $counterChildValueTag.forEach(elem => elem.innerText = 0);
-  $counterInfantValueTag.forEach(elem => elem.innerText = 0);
-  $eraseButton.forEach(elem => elem.classList.add("dropdown_button-hidden"));
+  dropDownInputFieldGuests.forEach(elem => elem.value = '');
+  counterAdultValueTag.forEach(elem => elem.innerText = 0);
+  counterChildValueTag.forEach(elem => elem.innerText = 0);
+  counterInfantValueTag.forEach(elem => elem.innerText = 0);
+  eraseButton.forEach(elem => elem.classList.add("dropdown_button-hidden"));
 }
 function eraseCounters() {
   adult.erase();
@@ -152,12 +152,12 @@ function counterAdult() {
   return {
     increase: function () {
       privateCounter++;
-      $counterAdultValueTag.forEach(elem => elem.innerText++);
+      counterAdultValueTag.forEach(elem => elem.innerText++);
     },
     decrease: function () {
       if (privateCounter > 0) {
         privateCounter--;
-        $counterAdultValueTag.forEach(elem => elem.innerText--);
+        counterAdultValueTag.forEach(elem => elem.innerText--);
       }
     },
     getCounter: function () {
@@ -173,12 +173,12 @@ function counterChild() {
   return {
     increase: function () {
       privateCounter++;
-      $counterChildValueTag.forEach(elem => elem.innerText++);
+      counterChildValueTag.forEach(elem => elem.innerText++);
     },
     decrease: function () {
       if (privateCounter > 0) {
         privateCounter--;
-        $counterChildValueTag.forEach(elem => elem.innerText--);
+        counterChildValueTag.forEach(elem => elem.innerText--);
       }
     },
     getCounter: function () {
@@ -194,12 +194,12 @@ function counterInfant() {
   return {
     increase: function () {
       privateCounter++;
-      $counterInfantValueTag.forEach(elem => elem.innerText++);
+      counterInfantValueTag.forEach(elem => elem.innerText++);
     },
     decrease: function () {
       if (privateCounter > 0) {
         privateCounter--;
-        $counterInfantValueTag.forEach(elem => elem.innerText--);
+        counterInfantValueTag.forEach(elem => elem.innerText--);
       }
     },
     getCounter: function () {
