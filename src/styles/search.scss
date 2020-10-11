@@ -5,6 +5,8 @@
 @import '../styles/UIKit/HeadersAndFooters/footerCopyrightBar.scss';
 @import '../styles/UIKit/HeadersAndFooters/footerWidget.scss';
 @import '../styles/UIKit/FormElements/dropDownDate.scss';
+@import '../styles/UIKit/FormElements/rangeSlider.scss';
+@import '../styles/UIKit/FormElements/button.scss';
 .search-wrapper{
  max-width: $container-width;
  max-height: 1880px;
@@ -15,9 +17,9 @@
   justify-content: center;
  }
  .search-wrapper__content_left-column{
-  width: 266px;
+  width: 320px;
   border: 1px solid red;
-  margin-left: 60px;
+  margin-right: 6px;
  }
  .search-wrapper__content_right-column{
   border: 1px solid red;

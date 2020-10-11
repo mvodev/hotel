@@ -148,7 +148,7 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./UIKit.js","vendors~UIKit~hotel","UIKit~hotel"]);
+/******/ 	deferredModules.push(["./UIKit.js","vendors~UIKit~hotel","vendors~UIKit","UIKit~hotel"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
@@ -253,4 +253,4 @@ $('.range-slider__input').ionRangeSlider({
 /***/ })
 
 /******/ });
-//# sourceMappingURL=UIKit.f2447354522c8415b83c.js.map
+//# sourceMappingURL=UIKit.31f1ac982378dbf39d92.js.map

@@ -193,7 +193,9 @@ justify-content: right;
 						color: $darkShade50;
 						max-height: 36px;
 						max-width: 192px;
+						margin-bottom: 13px;
 				}
+				
 				&__checkbox-text:before{
 						content: '';
 						position: absolute;

@@ -2457,7 +2457,8 @@ p.subscribe {
     line-height: 18px;
     color: rgba(31, 32, 65, 0.5);
     max-height: 36px;
-    max-width: 192px; }
+    max-width: 192px;
+    margin-bottom: 13px; }
   .button-check__checkbox-text:before {
     content: '';
     position: absolute;
@@ -2952,8 +2953,6 @@ input:checked + .slider-round:before {
     line-height: 15px;
     text-transform: uppercase;
     color: #1f2041; }
-  .form-elements__central-column .button-check .button-check__checkbox-text {
-    margin-bottom: 13px; }
   .form-elements__central-column h2:nth-child(3) {
     margin-top: 120px; }
   .form-elements__central-column .radio-button-wrapper {
@@ -3442,4 +3441,4 @@ input:checked + .slider-round:before {
     grid-area: right; }
 
 
-/*# sourceMappingURL=UIKit.5e100b1d227572b9b9f4.css.map*/
+/*# sourceMappingURL=UIKit.253018dd6b8928fa2be8.css.map*/

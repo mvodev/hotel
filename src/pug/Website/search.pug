@@ -1,4 +1,6 @@
 include ../UIKit/modules/dropdown.pug
+include ../UIKit/modules/rangeSlider.pug
+include ../UIKit/modules/button.pug
 html(lang="en")
  head
   meta(charset="UTF-8")
@@ -10,7 +12,14 @@ html(lang="en")
    include ../UIKit/modules/standardNavBar.pug
   div.search-wrapper__content
    div.search-wrapper__content_left-column
+    h2(class='search-wrapper__content_left-column-header')='ДАТЫ ПРЕБЫВАНИЯ В ОТЕЛЕ'
     +dropdown({placeholder:'19 авг - 23 авг',typeDropdown:'filter',isExpanded:false})
+    h2(class='search-wrapper__content_left-column-header')='ГОСТИ'
+    +dropdown({placeholder:"3 гостя 1 младенец",typeDropdown:'guests',isExpanded:false})
+    +rangeSlider({label:'ДИАПАЗОН ЦЕНЫ'})
+    span='Стоимость за сутки пребывания в номере'
+    h2(class='search-wrapper__content_left-column-header')='ПРАВИЛА ДОМА'
+    +button({type:'check',labels:[{text:'Можно курить',isChecked:false},{text:'Можно с питомцами',isChecked:true},{text:'Можно пригласить гостей(до 10 человек)',isChecked:false}]})
    div.search-wrapper__content_right-column
   footer.footer
    include ../UIKit/modules/footerWidget.pug
