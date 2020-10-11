@@ -4,6 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
+const ImageminPlugin = require('imagemin-webpack-plugin').default;
 
 const cssLoaders = extra => {
  const loaders = [{
@@ -94,7 +95,8 @@ module.exports = {
      to: path.resolve(__dirname, 'docs')
     }
    ]
-  })
+  }),
+  new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i })
  ],
  module: {
   rules: [

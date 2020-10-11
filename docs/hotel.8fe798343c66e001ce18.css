@@ -2934,18 +2934,10 @@ p.subscribe {
   max-height: 1197px;
   margin: 0px auto; }
   .wrapper .img__wrapper {
-    position: relative;
-    max-height: 685px;
-    max-width: 100%; }
-    .wrapper .img__wrapper .sign-up {
-      position: absolute;
-      top: 3%;
-      left: 37%; }
-    .wrapper .img__wrapper img {
-      position: relative;
-      width: 100%;
-      object-fit: cover;
-      max-height: 685px; }
+    height: 685px;
+    max-width: 100%;
+    margin: 0px auto;
+    background-image: url(79b5cde0053638ad01f1d11a34b1cb11.jpg); }
 
 @media (max-width: 1200px) {
   .wrapper {
@@ -2957,4 +2949,4 @@ p.subscribe {
     display: none; } }
 
 
-/*# sourceMappingURL=hotel.ec36fa03d127ad35fc75.css.map*/
+/*# sourceMappingURL=hotel.8fe798343c66e001ce18.css.map*/

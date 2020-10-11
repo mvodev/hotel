@@ -16,20 +16,12 @@
  margin: 0px auto; 
 
   .img__wrapper{
-    position: relative;
-    max-height: 685px;
+    height: 685px;
     max-width: 100%;
+    margin: 0px auto;
+    background-image: url('../assets/img/jpg/registration.jpg');
     .sign-up{
-    position: absolute;
-    top: 3%;
-    left: 37%;
-    }
-   
-    img{
-     position: relative;
-      width: 100%;
-      object-fit: cover;
-      max-height: 685px;
+
     }
  }
 }
