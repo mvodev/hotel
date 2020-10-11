@@ -25,7 +25,7 @@ module.exports = {
  entry: {
   main: './index.js',
   UIKit: './UIKit.js',
-  hotel: './landing.js'
+  hotel: './hotel.js'
  },
  output: {
   filename: '[name].[contenthash].js',

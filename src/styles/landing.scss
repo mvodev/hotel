@@ -9,29 +9,20 @@
 @import '../styles/UIKit/FormElements/textField.scss';
 @import '../styles/UIKit/FormElements/dropDownDate.scss';
 @import '../styles/UIKit/FormElements/dropDownGuests.scss';
-.wrapper{
+.landing-wrapper{
  max-width: $container-width;
  max-height: 1343px;
  margin: 0px auto; 
   .img__wrapper{
-    position: relative;
-    .search-number{
-      position: absolute;
-      top: 8%;
-      left: 10%;
-    }
-    img{
-      max-width: 100%;
-      max-height: 831px;
-      object-fit: cover;
-    }
- }
-  .img__header{
-    position: absolute;
+    height: 831px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: $container-width;
+    background-image: url('../assets/img/jpg/landing.jpg');
+    .img__header{
     height: 48px;
     width: 296px;
-    bottom: 2.8%;
-    left: 70%;
     font-family: $font-family-main;
     font-size: 14px;
     font-style: normal;
@@ -40,15 +31,21 @@
     letter-spacing: 0em;
     text-align: right;
     color: $darkShade75;
+    margin-right: 130px;
+    margin-left: auto;
+    margin-bottom: 22px;
   }
+  .search-number{
+    margin-top: 70px;
+    margin-left: 140px;
+  }
+ }
+  
 }
 @media (max-width:$container-mobile-width){
- .wrapper{
+ .landing-wrapper{
    max-width: none;
    max-height: none;
- }
- .img__header{
-   display: none;
  }
  .footer{
    display: flex;
