@@ -17,25 +17,18 @@
 
   .img__wrapper{
     height: 685px;
-    max-width: 100%;
-    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: $container-width;
     background-image: url('../assets/img/jpg/registration.jpg');
-    .sign-up{
-
-    }
  }
 }
 @media (max-width:$container-mobile-width){
  .wrapper{
    max-width: none;
    max-height: none;
-   .img__wrapper{
-   .sign-up{
-    left: 10%;
-   }
-  }
  }
-  
  .footer{
    display: none;
  }
