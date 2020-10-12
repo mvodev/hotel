@@ -194,6 +194,7 @@ justify-content: right;
 						max-height: 36px;
 						max-width: 192px;
 						margin-bottom: 13px;
+						white-space: break-spaces;
 				}
 				
 				&__checkbox-text:before{
@@ -209,7 +210,6 @@ justify-content: right;
 						border-radius: 4px;
 				}
 }
-//button_rich__checkbox-input:checked+.button_rich__checkbox-header:before
 .button-check__checkbox-input:checked+.button-check__checkbox-text:before{
 background-image: url('../assets/img/svg/checkbox.svg');
 background-repeat: no-repeat;

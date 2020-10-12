@@ -1690,7 +1690,7 @@ p.subscribe {
   position: absolute;
   top: 42px;
   left: -1px;
-  z-index: 1;
+  z-index: 3;
   width: 320px;
   height: 159px;
   background: #ffffff;
@@ -2458,7 +2458,8 @@ p.subscribe {
     color: rgba(31, 32, 65, 0.5);
     max-height: 36px;
     max-width: 192px;
-    margin-bottom: 13px; }
+    margin-bottom: 13px;
+    white-space: break-spaces; }
   .button-check__checkbox-text:before {
     content: '';
     position: absolute;
@@ -3441,4 +3442,4 @@ input:checked + .slider-round:before {
     grid-area: right; }
 
 
-/*# sourceMappingURL=UIKit.aafbf26e78582b8536d2.css.map*/
+/*# sourceMappingURL=UIKit.d7185c7f28c7849ed43e.css.map*/
