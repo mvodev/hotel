@@ -1009,15 +1009,15 @@ p.subscribe {
   box-sizing: border-box;
   border-radius: 10px; }
 
-.button_rich {
+.button-rich {
   width: 266px;
   height: 51px; }
-  .button_rich__checkbox-input {
+  .button-rich__checkbox-input {
     position: absolute;
     z-index: -1;
     opacity: 0;
     margin-left: 10px; }
-  .button_rich__checkbox-header {
+  .button-rich__checkbox-header {
     position: relative;
     cursor: pointer;
     padding-left: 30px;
@@ -1027,7 +1027,7 @@ p.subscribe {
     color: rgba(31, 32, 65, 0.75);
     height: 18px;
     max-width: 236px; }
-  .button_rich__checkbox-text {
+  .button-rich__checkbox-text {
     position: relative;
     cursor: pointer;
     margin-left: 30px;
@@ -1039,7 +1039,7 @@ p.subscribe {
     width: 236px;
     margin-top: 5px;
     white-space: break-spaces; }
-  .button_rich__checkbox-header:before {
+  .button-rich__checkbox-header:before {
     content: '';
     position: absolute;
     top: 0;
@@ -1051,7 +1051,7 @@ p.subscribe {
     box-sizing: border-box;
     border-radius: 4px; }
 
-.button_rich__checkbox-input:checked + .button_rich__checkbox-header:before {
+.button-rich__checkbox-input:checked + .button-rich__checkbox-header:before {
   background-image: url(ad694aafe15811be341489a1dd946ba2.svg);
   background-repeat: no-repeat;
   background-position: center; }
@@ -2239,15 +2239,15 @@ input:checked + .slider-round:before {
   box-sizing: border-box;
   border-radius: 10px; }
 
-.button_rich {
+.button-rich {
   width: 266px;
   height: 51px; }
-  .button_rich__checkbox-input {
+  .button-rich__checkbox-input {
     position: absolute;
     z-index: -1;
     opacity: 0;
     margin-left: 10px; }
-  .button_rich__checkbox-header {
+  .button-rich__checkbox-header {
     position: relative;
     cursor: pointer;
     padding-left: 30px;
@@ -2257,7 +2257,7 @@ input:checked + .slider-round:before {
     color: rgba(31, 32, 65, 0.75);
     height: 18px;
     max-width: 236px; }
-  .button_rich__checkbox-text {
+  .button-rich__checkbox-text {
     position: relative;
     cursor: pointer;
     margin-left: 30px;
@@ -2269,7 +2269,7 @@ input:checked + .slider-round:before {
     width: 236px;
     margin-top: 5px;
     white-space: break-spaces; }
-  .button_rich__checkbox-header:before {
+  .button-rich__checkbox-header:before {
     content: '';
     position: absolute;
     top: 0;
@@ -2281,7 +2281,7 @@ input:checked + .slider-round:before {
     box-sizing: border-box;
     border-radius: 4px; }
 
-.button_rich__checkbox-input:checked + .button_rich__checkbox-header:before {
+.button-rich__checkbox-input:checked + .button-rich__checkbox-header:before {
   background-image: url(ad694aafe15811be341489a1dd946ba2.svg);
   background-repeat: no-repeat;
   background-position: center; }
@@ -4641,15 +4641,15 @@ p.subscribe {
   box-sizing: border-box;
   border-radius: 10px; }
 
-.button_rich {
+.button-rich {
   width: 266px;
   height: 51px; }
-  .button_rich__checkbox-input {
+  .button-rich__checkbox-input {
     position: absolute;
     z-index: -1;
     opacity: 0;
     margin-left: 10px; }
-  .button_rich__checkbox-header {
+  .button-rich__checkbox-header {
     position: relative;
     cursor: pointer;
     padding-left: 30px;
@@ -4659,7 +4659,7 @@ p.subscribe {
     color: rgba(31, 32, 65, 0.75);
     height: 18px;
     max-width: 236px; }
-  .button_rich__checkbox-text {
+  .button-rich__checkbox-text {
     position: relative;
     cursor: pointer;
     margin-left: 30px;
@@ -4671,7 +4671,7 @@ p.subscribe {
     width: 236px;
     margin-top: 5px;
     white-space: break-spaces; }
-  .button_rich__checkbox-header:before {
+  .button-rich__checkbox-header:before {
     content: '';
     position: absolute;
     top: 0;
@@ -4683,7 +4683,7 @@ p.subscribe {
     box-sizing: border-box;
     border-radius: 4px; }
 
-.button_rich__checkbox-input:checked + .button_rich__checkbox-header:before {
+.button-rich__checkbox-input:checked + .button-rich__checkbox-header:before {
   background-image: url(ad694aafe15811be341489a1dd946ba2.svg);
   background-repeat: no-repeat;
   background-position: center; }
@@ -4693,7 +4693,8 @@ p.subscribe {
   max-height: 1880px;
   margin: 0px auto;
   font-family: Montserrat;
-  font-style: normal; }
+  font-style: normal;
+  font-weight: normal; }
   .search-wrapper .search-wrapper__content {
     display: flex;
     flex-direction: row;
@@ -4710,17 +4711,27 @@ p.subscribe {
       font-size: 12px;
       line-height: 15px;
       text-transform: uppercase;
-      color: #1f2041; }
-    .search-wrapper .search-wrapper__content_left-column .search-wrapper__content_left-column-header:first-child {
-      margin-top: 30px;
+      color: #1f2041;
       margin-bottom: 5px; }
+    .search-wrapper .search-wrapper__content_left-column .search-wrapper__content_left-column-header:first-child {
+      margin-top: 30px; }
     .search-wrapper .search-wrapper__content_left-column .dropdown-input__filter {
       margin-bottom: 20.44px; }
-    .search-wrapper .search-wrapper__content_left-column .search-wrapper__content_left-column-header:nth-child(3) {
-      margin-bottom: 5px; }
+    .search-wrapper .search-wrapper__content_left-column h3 {
+      font-size: 12px;
+      line-height: 14px;
+      color: rgba(31, 32, 65, 0.5);
+      margin-bottom: 30px; }
   .search-wrapper .search-wrapper__content_right-column {
     border: 1px solid red;
     width: 834px; }
+  .search-wrapper .button-check,
+  .search-wrapper .button-rich,
+  .search-wrapper .dropdown-input__room,
+  .search-wrapper .dropdown-input__guests {
+    margin-bottom: 30px; }
+  .search-wrapper .bullet-list-expandable__dropdown-elem .button-check {
+    margin-bottom: 0px; }
 
 @media (max-width: 1200px) {
   .search-wrapper {
@@ -4732,4 +4743,4 @@ p.subscribe {
     justify-content: center; } }
 
 
-/*# sourceMappingURL=hotel.d7185c7f28c7849ed43e.css.map*/
+/*# sourceMappingURL=hotel.4ebe878d74fda4041125.css.map*/

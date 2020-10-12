@@ -277,7 +277,7 @@ box-sizing: border-box;
 border-radius: 10px;
 }
 
-.button_rich{
+.button-rich{
   width: 266px;
 		height: 51px;
 
@@ -325,7 +325,7 @@ border-radius: 10px;
 				}
 }
 
-.button_rich__checkbox-input:checked+.button_rich__checkbox-header:before{
+.button-rich__checkbox-input:checked+.button-rich__checkbox-header:before{
 background-image: url('../assets/img/svg/checkbox.svg');
 background-repeat: no-repeat;
 background-position: center;

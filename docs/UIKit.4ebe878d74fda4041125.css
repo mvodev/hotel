@@ -2529,15 +2529,15 @@ p.subscribe {
   box-sizing: border-box;
   border-radius: 10px; }
 
-.button_rich {
+.button-rich {
   width: 266px;
   height: 51px; }
-  .button_rich__checkbox-input {
+  .button-rich__checkbox-input {
     position: absolute;
     z-index: -1;
     opacity: 0;
     margin-left: 10px; }
-  .button_rich__checkbox-header {
+  .button-rich__checkbox-header {
     position: relative;
     cursor: pointer;
     padding-left: 30px;
@@ -2547,7 +2547,7 @@ p.subscribe {
     color: rgba(31, 32, 65, 0.75);
     height: 18px;
     max-width: 236px; }
-  .button_rich__checkbox-text {
+  .button-rich__checkbox-text {
     position: relative;
     cursor: pointer;
     margin-left: 30px;
@@ -2559,7 +2559,7 @@ p.subscribe {
     width: 236px;
     margin-top: 5px;
     white-space: break-spaces; }
-  .button_rich__checkbox-header:before {
+  .button-rich__checkbox-header:before {
     content: '';
     position: absolute;
     top: 0;
@@ -2571,7 +2571,7 @@ p.subscribe {
     box-sizing: border-box;
     border-radius: 4px; }
 
-.button_rich__checkbox-input:checked + .button_rich__checkbox-header:before {
+.button-rich__checkbox-input:checked + .button-rich__checkbox-header:before {
   background-image: url(ad694aafe15811be341489a1dd946ba2.svg);
   background-repeat: no-repeat;
   background-position: center; }
@@ -3442,4 +3442,4 @@ input:checked + .slider-round:before {
     grid-area: right; }
 
 
-/*# sourceMappingURL=UIKit.d7185c7f28c7849ed43e.css.map*/
+/*# sourceMappingURL=UIKit.4ebe878d74fda4041125.css.map*/
