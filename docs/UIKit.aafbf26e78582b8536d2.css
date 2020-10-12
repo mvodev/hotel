@@ -2442,12 +2442,12 @@ p.subscribe {
 
 .button-check {
   width: 222px;
-  height: 20px; }
+  height: max-content; }
   .button-check__checkbox-input {
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     opacity: 0;
-    margin-left: 10px; }
+    margin-left: 3px; }
   .button-check__checkbox-text {
     position: relative;
     cursor: pointer;
@@ -2670,12 +2670,12 @@ input:checked + .slider-round:before {
   background-color: rgba(31, 32, 65, 0.25);
   border-radius: 50%; }
 
-.bullet-list_expandable {
+.bullet-list-expandable {
   width: 266px;
   height: 44px;
   position: relative; }
 
-.bullet-list_expandable__label {
+.bullet-list-expandable__label {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -2689,7 +2689,7 @@ input:checked + .slider-round:before {
   text-align: center;
   align-items: center; }
 
-.bullet-list_expandable__label span {
+.bullet-list-expandable__label span {
   display: block;
   width: 44px;
   height: 44px;
@@ -2705,7 +2705,7 @@ input:checked + .slider-round:before {
   justify-content: center;
   color: rgba(31, 32, 65, 0.5); }
 
-.bullet-list_expandable__dropdown {
+.bullet-list-expandable__dropdown {
   position: absolute;
   top: 44px;
   left: 0px;
@@ -2713,19 +2713,19 @@ input:checked + .slider-round:before {
   z-index: 1;
   background-color: #ffffff; }
 
-.bullet-list_expandable__dropdown-elem {
+.bullet-list-expandable__dropdown-elem {
   margin-bottom: 10.56px; }
 
 .bullet-list_show {
   display: block; }
 
-.bullet-list_icons {
+.bullet-list-icons {
   height: 69px;
   width: 280px;
   border-bottom: 1px solid rgba(31, 32, 65, 0.1);
   display: flex;
   flex-direction: row; }
-  .bullet-list_icons__icon {
+  .bullet-list-icons__icon {
     width: 48px;
     height: 48px;
     color: #BC9CFF;
@@ -2738,14 +2738,14 @@ input:checked + .slider-round:before {
     align-items: center;
     text-align: center;
     margin-right: 10px; }
-  .bullet-list_icons__header {
+  .bullet-list-icons__header {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75); }
-  .bullet-list_icons__text {
+  .bullet-list-icons__text {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -3441,4 +3441,4 @@ input:checked + .slider-round:before {
     grid-area: right; }
 
 
-/*# sourceMappingURL=UIKit.6bd9f7393d64f48319b9.css.map*/
+/*# sourceMappingURL=UIKit.aafbf26e78582b8536d2.css.map*/

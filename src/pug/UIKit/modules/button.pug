@@ -39,7 +39,6 @@ mixin button(options)
         div=options.likeNumber
    else if options.type=='check'
     div(class=buttonClassName)
-      label(class='button-check__checkbox-label')
         each val in options.labels ? options.labels : ['There are no values']
           if val.isChecked
               input(class='button-check__checkbox-input' type='checkbox' checked)

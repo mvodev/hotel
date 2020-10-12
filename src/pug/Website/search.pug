@@ -1,6 +1,7 @@
 include ../UIKit/modules/dropdown.pug
 include ../UIKit/modules/rangeSlider.pug
 include ../UIKit/modules/button.pug
+include ../UIKit/modules/list.pug
 html(lang="en")
  head
   meta(charset="UTF-8")
@@ -20,6 +21,14 @@ html(lang="en")
     span='Стоимость за сутки пребывания в номере'
     h2(class='search-wrapper__content_left-column-header')='ПРАВИЛА ДОМА'
     +button({type:'check',labels:[{text:'Можно курить',isChecked:false},{text:'Можно с питомцами',isChecked:true},{text:'Можно пригласить гостей(до 10 человек)',isChecked:false}]})
+    h2(class='header header_rich-buttons')='доступность'
+    +button({type:'rich',header:'Широкий коридор',label:'Ширина коридоров в номере не менее 91 см.'})
+    +button({type:'rich',header:'Помощник для инвалидов',label:'На 1 этаже вас встретит специалист  и проводит до номера.'})
+    h2(class='header header_dropdown-room')='удобства номера'
+    +dropdown({typeDropdown:'room',placeholder:'2 спальни,2 кровати'})
+    +list({type:'expandable',label:'дополнительные удобства',isExpand:false,
+    labels:[{text:'Завтрак',isChecked:false},
+    {text:'Письменный стол',isChecked:true},{text:'Стул для кормления',isChecked:true},{text:'Кроватка',isChecked:true},{text:'Телевизор',isChecked:false},{text:'Шампунь',isChecked:false}]})
    div.search-wrapper__content_right-column
   footer.footer
    include ../UIKit/modules/footerWidget.pug

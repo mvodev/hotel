@@ -421,8 +421,8 @@ function showResultInDropDown() {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-const $bulletListExpandableArrow = document.querySelectorAll('.bullet-list-expandable span');
-$bulletListExpandableArrow.forEach(elem => elem.addEventListener('click', expandableListHandler));
+const bulletListExpandableArrow = document.querySelectorAll('.bullet-list-expandable span');
+bulletListExpandableArrow.forEach(elem => elem.addEventListener('click', expandableListHandler));
 function expandableListHandler(event) {
  event.target.parentNode.parentNode.childNodes[1].classList.toggle('bullet-list_show');
  if (event.target.innerText === 'keyboard_arrow_down') {
@@ -497,4 +497,4 @@ function rateClickListener(event) {
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~hotel.dc3bc8a74dd8ed6d3e26.js.map
+//# sourceMappingURL=UIKit~hotel.6beb2a7cab7a3f43f135.js.map

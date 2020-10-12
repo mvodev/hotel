@@ -5,6 +5,9 @@
 @import '../styles/UIKit/HeadersAndFooters/footerCopyrightBar.scss';
 @import '../styles/UIKit/HeadersAndFooters/footerWidget.scss';
 @import '../styles/UIKit/FormElements/dropDownDate.scss';
+@import '../styles/UIKit/FormElements/dropDownGuests.scss';
+@import '../styles/UIKit/FormElements/dropDownRoom.scss';
+@import '../styles/UIKit/FormElements/list.scss';
 @import '../styles/UIKit/FormElements/rangeSlider.scss';
 @import '../styles/UIKit/FormElements/button.scss';
 .search-wrapper{
@@ -17,6 +20,9 @@
   justify-content: center;
  }
  .search-wrapper__content_left-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 320px;
   border: 1px solid red;
   margin-right: 6px;

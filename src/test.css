@@ -1,157 +1,42 @@
-.header-login-nav {
-  max-width: 1200px;
-  height: 70px;
-  background: white;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  align-items: center;
-  justify-content: space-between;
+.button-check{
+		width: 222px;
+		min-height: 20px;
+	
+}
+			.button-check__checkbox-input{
+				position: absolute;
+				z-index: 1;
+				opacity: 0;
+				margin-left: 3px;
+				}
 
-  font-style: normal;
-  font-size: 14px;
-  line-height: 17px;
-  font-weight: normal;
-}
+				.button-check__checkbox-text{
+						position: relative;
+						cursor: pointer;
+						padding-left: 30px;
+						font-weight: normal;
+						font-size: 14px;
+						line-height: 18px;
+						max-height: 36px;
+						max-width: 192px;
+						margin-bottom: 13px;
+				}
+				
+				.button-check__checkbox-text:before{
+						content: '';
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 20px;
+						height: 20px;
+						background: white;
+						border: 1px solid red;
+						box-sizing: border-box;
+						border-radius: 4px;
+				}
 
-.header-login-nav__logo {
-  height: 40px;
-  width: 105.69px;
-  padding-left: 140px;
-}
-.header-login-nav {
-  max-width: 1100px;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-  display: flex;
-  flex-direction: row;
-}
-.header-login-nav__nav {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  padding-right: 140px;
-}
-.header-login-nav__nav a {
-  text-decoration: none;
-}
-.header-login-nav__nav_link:first-child {
-  width: 43px;
-  height: 18px;
-  font-weight: bold;
-  margin-right: 20px;
-}
-.header-login-nav__nav_link:nth-child(2) {
-  width: 50px;
-  height: 18px;
-  white-space: nowrap;
-}
-.expand-more-container {
-  width: 24px;
-  height: 21px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  margin-right: 20px;
-}
-.header-login-nav__nav_link:nth-child(4) {
-  width: 72px;
-  height: 18px;
-  margin-right: 20px;
-}
-
-.header-login-nav__nav_link:nth-child(5) {
-  width: 52px;
-  height: 18px;
-  margin-right: 30px;
-}
-.header-login-nav__nav_link:nth-child(6) {
-  width: 92px;
-  height: 18px;
-}
-.header-login-nav__nav_link_logged-in{
-  width: 100px;
-  height: 18px;
- 
-}
-.header-login-nav__burger-input{
- opacity: 0;
- width: 0px;
- height: 0px;
- z-index: 5;
-}
-
-.header-login-nav__burger-label::before,
-.header-login-nav__burger-label::after{
- cursor: pointer;
- position: absolute;
- width: 100%;
- height: 3px;
- content: '';
- 
- left: 0px;
- transition: all 0.3s ease 0s;
-}
-.header-login-nav__burger-label span{
- top: 13px;
- 
- position: absolute;
- cursor: pointer;
- width: 100%;
- content: '';
- height: 3px;
- left: 0px;
- transition: all 0.3s ease 0s;
-}
-.header-login-nav__burger-label::before{
- top: 0px;
-}
-.header-login-nav__burger-label::after{
- bottom: 0px;
-}
-
-.header-login-nav__burger-input:checked +.header-login-nav__burger-label:before{
-transform: rotate(45deg);
-top: 9px;
-}
-.header-login-nav__burger-input:checked +.header-login-nav__burger-label:after{
-  transform: rotate(-45deg);
-  top: 9px;
-}
-.header-login-nav__burger-input:checked + .header-login-nav__burger-label span{
-  background-color: transparent;
-}
- .header-login-nav__burger-input:checked + .header-burger__canvas{
-    display: block;
- }
-@media (max-width:1000px){
- 
-  .header-login-nav__logo{
-    display: none;
-  }
-
-  
-}
-.header-login-nav.active{
-  height: 200px;
-}
-.header-login-nav__nav.active{
-  flex-direction: column;
-}
-
-.header-burger{
- position: relative;
- width: 30px;
- height: 30px;
- cursor: pointer;
- display: none;
- margin-left: 10px;
-}
-
-@media (max-width:1000px){
-  .header-burger
-  {
-   display: block;
- }
+.button-check__checkbox-input:checked+.button-check__checkbox-text:before{
+background-image: url('checkbox.svg');
+background-repeat: no-repeat;
+background-position: center;
 }

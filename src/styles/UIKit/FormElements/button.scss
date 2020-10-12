@@ -174,13 +174,13 @@ justify-content: right;
 }
 .button-check{
 		width: 222px;
-		height: 20px;
+		height: max-content;
 
 				&__checkbox-input{
 				position: absolute;
-				z-index: -1;
+				z-index: 1;
 				opacity: 0;
-				margin-left: 10px;
+				margin-left: 3px;
 				}
 
 				&__checkbox-text{
@@ -209,7 +209,7 @@ justify-content: right;
 						border-radius: 4px;
 				}
 }
-
+//button_rich__checkbox-input:checked+.button_rich__checkbox-header:before
 .button-check__checkbox-input:checked+.button-check__checkbox-text:before{
 background-image: url('../assets/img/svg/checkbox.svg');
 background-repeat: no-repeat;

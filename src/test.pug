@@ -1,3 +1,4 @@
+include pug/UIKit/modules/button.pug
 html(lang="en")
  head
   meta(charset="UTF-8")
@@ -5,4 +6,4 @@ html(lang="en")
   link(rel="stylesheet", href="test.css")
   title test
  body.test
-  include pug/UIKit/modules/standardLoggedInNavBar.pug
+  +button({type:'check',labels:[{text:'test',isChecked:true}]})
