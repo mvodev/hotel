@@ -10,6 +10,7 @@
 @import '../styles/UIKit/FormElements/list.scss';
 @import '../styles/UIKit/FormElements/rangeSlider.scss';
 @import '../styles/UIKit/FormElements/button.scss';
+@import '../styles/UIKit/Cards/roomcard.scss';
 .search-wrapper{
  max-width: $container-width;
  max-height: 1880px;
@@ -17,19 +18,19 @@
  font-family: $font-family-main;
  font-style: normal;
  font-weight: normal;
- .search-wrapper__content{
+ &__content{
   display: flex;
   flex-direction: row;
   justify-content: center;
   height: 1385px;
  }
- .search-wrapper__content_left-column{
+ &__content_left-column{
   display: flex;
   flex-direction: column;
   width: 320px;
   border: 1px solid red;
   margin-right: 6px;
-  .search-wrapper__content_left-column-header{
+  &__content_left-column-header{
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
@@ -37,7 +38,7 @@
     color: $darkShade100;
     margin-bottom: 5px;
   }
-  .search-wrapper__content_left-column-header:first-child{
+  &__content_left-column-header:first-child{
     margin-top: 30px;
   }
   .dropdown-input__filter{
@@ -50,10 +51,6 @@
     margin-bottom: 30px;
   }
  }
- .search-wrapper__content_right-column{
-  border: 1px solid red;
-  width: 834px;
- }
  .button-check,
  .button-rich,
  .dropdown-input__room,
@@ -62,6 +59,13 @@
  }
  .bullet-list-expandable__dropdown-elem .button-check{
    margin-bottom: 0px;
+ }
+  &__content_right-column{
+  border: 1px solid red;
+  width: 834px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
  }
 }
 @media (max-width:$container-mobile-width){

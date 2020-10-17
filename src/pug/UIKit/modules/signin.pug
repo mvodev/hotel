@@ -1,13 +1,14 @@
 include button.pug
 include textfield.pug
 include toggle.pug
-mixin signin
+mixin signin(options)
  div(class='sign-in')
   div(class='sign-in__wrapper')
-   h2='Войти'
-   +textfield({isDefault:true,placeholder:'Email'})
-   +textfield({isDefault:true,placeholder:'Пароль'})
-   +button({label:'Войти',type:'arrow'})
-   div(class='sign-in__footer')
-    span(class='sign-in__account')='Нет аккаунта на Toxin?'
-    +button({label:'Создать',type:'white'})
+   form(action=options.action class='sign-in__form')
+    h2='Войти'
+    +textfield({isDefault:true,placeholder:'Email'})
+    +textfield({isDefault:true,placeholder:'Пароль'})
+    +button({label:'Войти',type:'arrow'})
+    div(class='sign-in__footer')
+     span(class='sign-in__account')='Нет аккаунта на Toxin?'
+     +button({label:'Создать',type:'white'})
