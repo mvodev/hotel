@@ -11,6 +11,7 @@
 @import '../styles/UIKit/FormElements/rangeSlider.scss';
 @import '../styles/UIKit/FormElements/button.scss';
 @import '../styles/UIKit/Cards/roomcard.scss';
+@import '../styles/UIKit/FormElements/pagination.scss';
 .search-wrapper{
  max-width: $container-width;
  max-height: 1880px;
@@ -18,19 +19,18 @@
  font-family: $font-family-main;
  font-style: normal;
  font-weight: normal;
- &__content{
+ .search-wrapper__content{
   display: flex;
   flex-direction: row;
   justify-content: center;
   height: 1385px;
  }
- &__content_left-column{
+ .search-wrapper__content_left-column{
   display: flex;
   flex-direction: column;
   width: 320px;
-  border: 1px solid red;
   margin-right: 6px;
-  &__content_left-column-header{
+  .search-wrapper__content_left-column-header{
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
@@ -38,7 +38,7 @@
     color: $darkShade100;
     margin-bottom: 5px;
   }
-  &__content_left-column-header:first-child{
+  .search-wrapper__content_left-column-header:first-child{
     margin-top: 30px;
   }
   .dropdown-input__filter{
@@ -50,22 +50,38 @@
     color: $darkShade50;
     margin-bottom: 30px;
   }
- }
- .button-check,
- .button-rich,
- .dropdown-input__room,
- .dropdown-input__guests{
-   margin-bottom: 30px;
- }
- .bullet-list-expandable__dropdown-elem .button-check{
-   margin-bottom: 0px;
- }
-  &__content_right-column{
-  border: 1px solid red;
-  width: 834px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  .button-check,
+  .button-rich,
+  .dropdown-input__room,
+  .dropdown-input__guests{
+  margin-bottom: 30px;
+  }
+  .bullet-list-expandable__dropdown-elem .button-check{
+  margin-bottom: 0px;
+  }
+}
+
+.search-wrapper__content_right-column{
+  max-width: 834px;
+  .search-wrapper__content_right-column-header{
+  grid-area: header;
+  font-family: $font-family-additionalRussianReplacer;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: $darkShade100;
+  }
+  .rooms{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    row-gap: 12px;
+    column-gap: 15px;
+  }
+  .pagination{
+    margin: 0px auto;
+  }
  }
 }
 @media (max-width:$container-mobile-width){

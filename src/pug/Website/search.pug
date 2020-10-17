@@ -3,6 +3,7 @@ include ../UIKit/modules/rangeSlider.pug
 include ../UIKit/modules/button.pug
 include ../UIKit/modules/list.pug
 include ../UIKit/modules/roomcard.pug
+include ../UIKit/modules/pagination.pug
 html(lang="en")
  head
   meta(charset="UTF-8")
@@ -31,18 +32,22 @@ html(lang="en")
     labels:[{text:'Завтрак',isChecked:false},
     {text:'Письменный стол',isChecked:true},{text:'Стул для кормления',isChecked:true},{text:'Кроватка',isChecked:true},{text:'Телевизор',isChecked:false},{text:'Шампунь',isChecked:false}]})
    div.search-wrapper__content_right-column
-    +roomcard({imgSource:'room1.png',roomNumber:888,price:'9 990₽',rate:5,roomType:'люкс',commentNumber:145})
-    +roomcard({imgSource:'room2.png',roomNumber:840,price:'9 990₽',rate:4,commentNumber:65})
-    +roomcard({imgSource:'room3.png',roomNumber:980,price:'8 500₽',rate:3,roomType:'люкс',commentNumber:35})
-    +roomcard({imgSource:'room4.png',roomNumber:856,price:'7 300₽',rate:5,commentNumber:19})
-    +roomcard({imgSource:'room5.png',roomNumber:740,price:'6 000₽',rate:4,commentNumber:44})
-    +roomcard({imgSource:'room6.png',roomNumber:982,price:'5 800₽',rate:3,commentNumber:56})
-    +roomcard({imgSource:'room7.png',roomNumber:678,price:'5 500₽',rate:4,commentNumber:44})
-    +roomcard({imgSource:'room8.png',roomNumber:450,price:'5 300₽',rate:4,commentNumber:39})
-    +roomcard({imgSource:'room9.png',roomNumber:350,price:'5 000₽',rate:3,commentNumber:77})
-    +roomcard({imgSource:'room10.png',roomNumber:666,price:'5 000₽',rate:3,commentNumber:15})
-    +roomcard({imgSource:'room11.png',roomNumber:444,price:'5 000₽',rate:3,commentNumber:15})
-    +roomcard({imgSource:'room12.png',roomNumber:352,price:'5 000₽',rate:3,commentNumber:55})
+    h2(class='search-wrapper__content_right-column-header')='Номера, которые мы для вас подобрали'
+    div.rooms
+     +roomcard({imgSource:'room1.png',roomNumber:888,price:'9 990₽',rate:5,roomType:'люкс',commentNumber:145})
+     +roomcard({imgSource:'room2.png',roomNumber:840,price:'9 990₽',rate:4,commentNumber:65})
+     +roomcard({imgSource:'room3.png',roomNumber:980,price:'8 500₽',rate:3,roomType:'люкс',commentNumber:35})
+     +roomcard({imgSource:'room4.png',roomNumber:856,price:'7 300₽',rate:5,commentNumber:19})
+     +roomcard({imgSource:'room5.png',roomNumber:740,price:'6 000₽',rate:4,commentNumber:44})
+     +roomcard({imgSource:'room6.png',roomNumber:982,price:'5 800₽',rate:3,commentNumber:56})
+     +roomcard({imgSource:'room7.png',roomNumber:678,price:'5 500₽',rate:4,commentNumber:44})
+     +roomcard({imgSource:'room8.png',roomNumber:450,price:'5 300₽',rate:4,commentNumber:39})
+     +roomcard({imgSource:'room9.png',roomNumber:350,price:'5 000₽',rate:3,commentNumber:77})
+     +roomcard({imgSource:'room10.png',roomNumber:666,price:'5 000₽',rate:3,commentNumber:15})
+     +roomcard({imgSource:'room11.png',roomNumber:444,price:'5 000₽',rate:3,commentNumber:15})
+     +roomcard({imgSource:'room12.png',roomNumber:352,price:'5 000₽',rate:3,commentNumber:55})
+    +pagination({isEllipsis:true,firstNumbers:[1,2,3],lastNumber:15,selectedPage:1,
+  label:'1 – 12 из 100+ вариантов аренды'})
   footer.footer
    include ../UIKit/modules/footerWidget.pug
    include ../UIKit/modules/footerCopyrightBar.pug
