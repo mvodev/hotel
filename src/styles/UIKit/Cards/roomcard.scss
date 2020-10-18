@@ -28,14 +28,15 @@
   left:214px;
   display: flex;
   flex-direction: row;
+  cursor: pointer;
  }
  .room-card__arrows{
   position: relative;
+  cursor: pointer;
  }
  .room-card__arrow{
   position: absolute;
   font-family: $font-for-icons;
-  
   font-style: normal;
   font-weight: normal;
   font-size: 24px;

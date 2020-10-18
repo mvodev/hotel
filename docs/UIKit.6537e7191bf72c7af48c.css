@@ -3071,9 +3071,11 @@ input:checked + .slider-round:before {
     top: 129px;
     left: 214px;
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    cursor: pointer; }
   .room-card_wrapper .room-card__arrows {
-    position: relative; }
+    position: relative;
+    cursor: pointer; }
   .room-card_wrapper .room-card__arrow {
     position: absolute;
     font-family: Material Icons;
@@ -3442,4 +3444,4 @@ input:checked + .slider-round:before {
     grid-area: right; }
 
 
-/*# sourceMappingURL=UIKit.8e5ba44e3e171de2bf80.css.map*/
+/*# sourceMappingURL=UIKit.6537e7191bf72c7af48c.css.map*/
