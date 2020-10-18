@@ -24,8 +24,10 @@ html(lang="en")
     h2(class='search-wrapper__content_left-column-header')='ПРАВИЛА ДОМА'
     +button({type:'check',labels:[{text:'Можно курить',isChecked:false},{text:'Можно с питомцами',isChecked:true},{text:'Можно пригласить гостей(до 10 человек)',isChecked:false}]})
     h2(class='search-wrapper__content_left-column-header')='доступность'
-    +button({type:'rich',header:'Широкий коридор',label:'Ширина коридоров в номере не менее 91 см.'})
-    +button({type:'rich',header:'Помощник для инвалидов',label:'На 1 этаже вас встретит специалист  и проводит до номера.'})
+    div.button-rich_first
+      +button({type:'rich',header:'Широкий коридор',label:'Ширина коридоров в номере не менее 91 см.'})
+    div.button-rich_last
+      +button({type:'rich',header:'Помощник для инвалидов',label:'На 1 этаже вас встретит специалист  и проводит до номера.'})
     h2(class='search-wrapper__content_left-column-header')='удобства номера'
     +dropdown({typeDropdown:'room',placeholder:'2 спальни,2 кровати'})
     +list({type:'expandable',label:'дополнительные удобства',isExpand:false,

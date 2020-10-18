@@ -4884,13 +4884,13 @@ p.subscribe {
   font-weight: normal; }
   .search-wrapper .search-wrapper__content {
     margin: 30px auto 0px auto;
-    margin-top: 30px;
     display: grid;
     grid-template-areas: 'left right';
     grid-template-columns: 320px 834px;
     grid-template-rows: 1fr 75px;
     column-gap: 6px;
-    height: 1385px; }
+    height: 1385px;
+    max-width: 1160px; }
   .search-wrapper .search-wrapper__content_left-column {
     grid-area: left;
     display: flex;
@@ -4901,21 +4901,33 @@ p.subscribe {
       line-height: 15px;
       text-transform: uppercase;
       color: #1f2041;
-      margin-bottom: 5px; }
+      margin-bottom: 4px; }
+    .search-wrapper .search-wrapper__content_left-column .search-wrapper__content_left-column-header:nth-child(7) {
+      margin-bottom: 17px; }
+    .search-wrapper .search-wrapper__content_left-column .search-wrapper__content_left-column-header:nth-child(9) {
+      margin-bottom: 14px; }
+    .search-wrapper .search-wrapper__content_left-column .range-slider__wrapper {
+      margin-bottom: 2px; }
     .search-wrapper .search-wrapper__content_left-column .dropdown-input__filter {
       margin-bottom: 20.44px; }
     .search-wrapper .search-wrapper__content_left-column h3 {
       font-size: 12px;
       line-height: 14px;
       color: rgba(31, 32, 65, 0.5);
+      margin-bottom: 31px; }
+    .search-wrapper .search-wrapper__content_left-column .button-check {
+      margin-bottom: 20px; }
+    .search-wrapper .search-wrapper__content_left-column .button-rich_first {
+      margin-bottom: 12px; }
+    .search-wrapper .search-wrapper__content_left-column .button-rich_last {
       margin-bottom: 30px; }
-    .search-wrapper .search-wrapper__content_left-column .button-check,
-    .search-wrapper .search-wrapper__content_left-column .button-rich,
     .search-wrapper .search-wrapper__content_left-column .dropdown-input__room,
     .search-wrapper .search-wrapper__content_left-column .dropdown-input__guests {
       margin-bottom: 30px; }
     .search-wrapper .search-wrapper__content_left-column .bullet-list-expandable__dropdown-elem .button-check {
       margin-bottom: 0px; }
+    .search-wrapper .search-wrapper__content_left-column .bullet-list-expandable {
+      margin-top: -11px; }
   .search-wrapper .search-wrapper__content_right-column {
     grid-area: right; }
     .search-wrapper .search-wrapper__content_right-column .search-wrapper__content_right-column-header {
@@ -4949,4 +4961,4 @@ p.subscribe {
     justify-content: center; } }
 
 
-/*# sourceMappingURL=hotel.6537e7191bf72c7af48c.css.map*/
+/*# sourceMappingURL=hotel.fe2765742fb0cdc87df4.css.map*/

@@ -21,7 +21,6 @@
  font-weight: normal;
  .search-wrapper__content{
   margin: 30px auto 0px auto;
-  margin-top: 30px;
   display: grid;
   grid-template-areas: 
   'left right';
@@ -29,6 +28,7 @@
   grid-template-rows: 1fr 75px;
   column-gap: 6px;
   height: 1385px;
+  max-width: 1160px;
  }
  .search-wrapper__content_left-column{
   grid-area: left;
@@ -40,7 +40,16 @@
     line-height: 15px;
     text-transform: uppercase;
     color: $darkShade100;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
+  }
+  .search-wrapper__content_left-column-header:nth-child(7){
+    margin-bottom: 17px;
+  }
+   .search-wrapper__content_left-column-header:nth-child(9){
+    margin-bottom: 14px;
+  }
+  .range-slider__wrapper{
+    margin-bottom: 2px;
   }
   .dropdown-input__filter{
     margin-bottom: 20.44px;
@@ -49,16 +58,26 @@
     font-size: 12px;
     line-height: 14px;
     color: $darkShade50;
+    margin-bottom: 31px;
+  }
+  .button-check{
+    margin-bottom: 20px;
+  }
+  .button-rich_first{
+    margin-bottom: 12px;
+  }
+  .button-rich_last{
     margin-bottom: 30px;
   }
-  .button-check,
-  .button-rich,
   .dropdown-input__room,
   .dropdown-input__guests{
   margin-bottom: 30px;
   }
   .bullet-list-expandable__dropdown-elem .button-check{
   margin-bottom: 0px;
+  }
+  .bullet-list-expandable{
+    margin-top: -11px;
   }
 }
 
