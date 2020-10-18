@@ -60,6 +60,13 @@ module.exports = {
   ),
   new HTMLWebpackPlugin(
    {
+    template: './pug/Website/details.pug',
+    chunks: ['hotel'],
+    filename: 'details.html'
+   }
+  ),
+  new HTMLWebpackPlugin(
+   {
     template: './pug/Website/search.pug',
     chunks: ['hotel'],
     filename: 'search.html'
