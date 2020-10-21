@@ -1,0 +1,14 @@
+@import './common/fonts.scss';
+@import './common/reset.scss';
+@import './common/constants.scss';
+@import '../styles/UIKit/HeadersAndFooters/standardLoggedInNavBar.scss';
+@import '../styles/UIKit/HeadersAndFooters/footerCopyrightBar.scss';
+@import '../styles/UIKit/HeadersAndFooters/footerWidget.scss';
+.details-wrapper{
+  max-width: $container-width;
+ max-height: 1937px;
+ margin: 0px auto; 
+ font-family: $font-family-main;
+ font-style: normal;
+ font-weight: normal;
+}

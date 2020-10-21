@@ -1,0 +1,26 @@
+include ../UIKit/modules/dropdown.pug
+include ../UIKit/modules/rangeSlider.pug
+include ../UIKit/modules/button.pug
+include ../UIKit/modules/list.pug
+include ../UIKit/modules/roomcard.pug
+include ../UIKit/modules/pagination.pug
+html(lang="en")
+ head
+  meta(charset="UTF-8")
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  meta(name="description", content="отель поиск номеров")
+  title Search page
+ body.details-wrapper
+  header.header
+   include ../UIKit/modules/standardNavBar.pug
+  .details-wrapper__content
+   .details-wrapper__room-images
+    .details-wrapper__room-images_big
+    .details-wrapper__room-images_small-top
+    .details-wrapper__room-images_small-bottom
+   .details-wrapper__body
+    .details-wrapper__body_left-column
+    .details-wrapper__body_right-column
+  footer.footer
+   include ../UIKit/modules/footerWidget.pug
+   include ../UIKit/modules/footerCopyrightBar.pug
