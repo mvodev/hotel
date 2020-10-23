@@ -2,6 +2,7 @@ import './styles/landing.scss';
 import './styles/registration.scss';
 import './styles/search.scss';
 import './styles/details.scss';
+import './assets/favicons/favicons';
 import '../node_modules/ion-rangeslider/css/ion.rangeSlider.min.css'
 import '../node_modules/air-datepicker/dist/css/datepicker.min.css';
 import 'air-datepicker/dist/js/datepicker';

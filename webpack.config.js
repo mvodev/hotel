@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
-const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+
 
 const cssLoaders = extra => {
  const loaders = [{
@@ -39,8 +39,6 @@ module.exports = {
  },
  devtool: 'source-map',
  plugins: [
-  new FaviconsWebpackPlugin({
-   logo: './assets/favicon/fav.png', prefix: '.',publicPath:' '}),
   new HTMLWebpackPlugin(
    {
     template: './index.pug',
@@ -103,6 +101,10 @@ module.exports = {
     {
      from: path.resolve(__dirname, 'src/assets/img/png'),
      to: path.resolve(__dirname, 'docs')
+    },
+    {
+     from: path.resolve(__dirname, 'src/assets/favicons'),
+     to: path.resolve(__dirname, 'docs/favicons')
     }
    ]
   }),
