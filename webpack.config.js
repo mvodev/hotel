@@ -6,7 +6,6 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
 
-
 const cssLoaders = extra => {
  const loaders = [{
   loader: MiniCssExtractPlugin.loader,
@@ -115,6 +114,10 @@ module.exports = {
    {
     test: /\.css$/,
     use: cssLoaders()
+   },
+   {
+    test: /\.json$/,
+    use: ['json-loader'],
    },
    {
     test: /\.pug$/,

@@ -1,9 +1,5 @@
-include ../UIKit/modules/dropdown.pug
-include ../UIKit/modules/rangeSlider.pug
-include ../UIKit/modules/button.pug
+include ../UIKit/modules/roomprice.pug
 include ../UIKit/modules/list.pug
-include ../UIKit/modules/roomcard.pug
-include ../UIKit/modules/pagination.pug
 html(lang="en")
  head
   meta(charset="UTF-8")
@@ -17,11 +13,27 @@ html(lang="en")
   .details-wrapper__content
    .details-wrapper__room-images
     .details-wrapper__room-images_big
-    .details-wrapper__room-images_small-top
-    .details-wrapper__room-images_small-bottom
-   .details-wrapper__body
+      img(src="roomdetailsbig.jpg", alt="room image")
+    .details-wrapper__room-images_small
+      .details-wrapper__room-images_small-top
+        img(src="roomdetailsmalltop.jpg", alt="room image small")
+      .details-wrapper__room-images_small-bottom
+        img(src="roomdetailsmallbottom.jpg", alt="room image small")
+   section.details-wrapper__body
     .details-wrapper__body_left-column
+      section.left-column-info
+        .left-column-info__data
+          h2='Сведения о номере'
+          +list({type:'icons',icon:'insert_emoticon',header:'Комфорт',text:'Шумопоглощающие стены'})
+          +list({type:'icons',icon:'location_city',header:'Удобство',text:'Окно в каждой из спален'})
+          +list({type:'icons',icon:'local_fire_department',header:'Уют',text:'Номер оснащен камином'})
+          +list({type:'icons',icon:'location_city',header:'Константин Константинович Константинопольский',text:'Константин Константинович Константинопольский'})
+        .left-column-info__impressions  
+          h2='Впечатления от номера'
+      section.left-column-comments
+      section.left-column-rules
     .details-wrapper__body_right-column
+      +roomprice({roomNumber:888,priceHeader:'9 990₽',roomType:'люкс',commentNumber:145,price:'9 990₽ х 4 суток',total:'39 960₽',discount:'Сбор за услуги: скидка 2 179₽',fee:'0₽',extraFee:'300₽',totalPrice:'38 081₽'})
   footer.footer
    include ../UIKit/modules/footerWidget.pug
    include ../UIKit/modules/footerCopyrightBar.pug

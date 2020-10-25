@@ -4,11 +4,68 @@
 @import '../styles/UIKit/HeadersAndFooters/standardLoggedInNavBar.scss';
 @import '../styles/UIKit/HeadersAndFooters/footerCopyrightBar.scss';
 @import '../styles/UIKit/HeadersAndFooters/footerWidget.scss';
+@import '../styles/UIKit/Cards/roomprice.scss';
+@import '../styles/UIKit/FormElements/list.scss';
 .details-wrapper{
   max-width: $container-width;
- max-height: 1937px;
- margin: 0px auto; 
- font-family: $font-family-main;
- font-style: normal;
- font-weight: normal;
+  max-height: 1937px;
+  margin: 0px auto; 
+  font-family: $font-family-main;
+  font-style: normal;
+  font-weight: normal;
+}
+.details-wrapper__room-images{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.details-wrapper__room-images_big{
+  max-width: 981px;
+  max-height: 485px;
+  object-fit: cover;
+}
+.details-wrapper__room-images_small{
+  display: flex;
+  flex-direction: column;
+  max-width: 461px;
+  max-height: 485px;
+}
+.details-wrapper__room-images_small-top,
+.details-wrapper__room-images_small-bottom{
+  object-fit: cover;
+  max-height: 50%;
+}
+.details-wrapper__body{
+  margin: 70px auto;
+  max-width: $container-width - 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.left-column-info{
+  display: flex;
+  flex-direction: row;
+}
+.left-column-info h2{
+  font-family: $font-family-additionalRussianReplacer;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: $darkShade100;
+}
+@media (max-width:$container-mobile-width){
+ .details-wrapper{
+   max-width: none;
+   max-height: none;
+ }
+ .details-wrapper__room-images{
+   margin: 0px auto;
+ }
+ .details-wrapper__room-images_small{
+   display: none;
+ }
+ .details-wrapper__body{
+   flex-direction: column;
+ }
 }

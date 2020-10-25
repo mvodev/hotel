@@ -2,17 +2,16 @@ import './styles/landing.scss';
 import './styles/registration.scss';
 import './styles/search.scss';
 import './styles/details.scss';
-import './assets/favicons/favicons';
 import '../node_modules/ion-rangeslider/css/ion.rangeSlider.min.css'
 import '../node_modules/air-datepicker/dist/css/datepicker.min.css';
-import 'air-datepicker/dist/js/datepicker';
+import '../node_modules/air-datepicker/dist/js/datepicker.js';
 import './scripts/starRating.js';
 import './scripts/likeRating.js';
 import 'ion-rangeslider';
 import './scripts/dropDownGuests.js';
 import './scripts/dropDownRoom.js';
 import './scripts/expandableCL.js';
-import './scripts/burger';
+import './scripts/burger.js';
 $('.dropdown-input__date_input-field').datepicker({ todayButton: true, clearButton: true });
 $('.dropdown-input__filter_input-field').datepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
 $('.range-slider__input').ionRangeSlider({
