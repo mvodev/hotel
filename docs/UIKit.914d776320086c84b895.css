@@ -2721,7 +2721,7 @@ input:checked + .slider-round:before {
   display: block; }
 
 .bullet-list-icons {
-  height: 69px;
+  min-height: 69px;
   width: 280px;
   border-bottom: 1px solid rgba(31, 32, 65, 0.1);
   display: flex;
@@ -2753,7 +2753,8 @@ input:checked + .slider-round:before {
     font-size: 14px;
     line-height: 18px;
     color: rgba(31, 32, 65, 0.5);
-    padding-top: 5px; }
+    padding-top: 5px;
+    margin-bottom: 17px; }
 
 .expanded-comment {
   width: 711px;
@@ -3444,4 +3445,4 @@ input:checked + .slider-round:before {
     grid-area: right; }
 
 
-/*# sourceMappingURL=UIKit.f1fb6fafe9ab3935b676.css.map*/
+/*# sourceMappingURL=UIKit.914d776320086c84b895.css.map*/

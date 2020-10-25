@@ -78,7 +78,7 @@ align-items: center;
   display: block;
 }
 .bullet-list-icons{
-  height: 69px;
+  min-height: 69px;
   width: 280px;
   border-bottom: 1px solid rgba(31, 32, 65, 0.1);
   display: flex;
@@ -113,5 +113,6 @@ align-items: center;
     line-height: 18px;
     color: $darkShade50;
     padding-top: 5px;
+    margin-bottom: 17px;
   }
 }
