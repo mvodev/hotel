@@ -1,6 +1,7 @@
 include ../UIKit/modules/roomprice.pug
 include ../UIKit/modules/list.pug
 include ../UIKit/modules/diagram.pug
+include ../UIKit/modules/comment.pug
 html(lang="en")
  head
   meta(charset="UTF-8")
@@ -21,7 +22,7 @@ html(lang="en")
       .details-wrapper__room-images_small-bottom
         img(src="roomdetailsmallbottom.jpg", alt="room image small")
    section.details-wrapper__body
-    .details-wrapper__body_left-column
+    .details-wrapper__body-left-column
       section.left-column-info
         .left-column-info__data
           h2='Сведения о номере'
@@ -36,7 +37,9 @@ html(lang="en")
             {class:"diagramchart__donut-segment-delimeter",stroke:"#fff",dasharray:"1 99",dashoffset:"26"},{class:"diagramchart__donut-segment-delimeter",stroke:"#fff",dasharray:"1 99", dashoffset:"0"},{class:"diagramchart__donut-segment-delimeter",stroke:"#fff",dasharray:"1 99",dashoffset:"76"}]})
       section.left-column-comments
       section.left-column-rules
-    .details-wrapper__body_right-column
+        +comment({headerName:'Мурад Сарафанов',headerTime:'5 дней назад',imgSource:'muradik.png',likeNumber:12,isLiked:true,text:'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})
+        +comment({headerName:'Патрисия Стёклышкова',headerTime:'Неделю назад',imgSource:'patrisha.png',likeNumber:2,isLiked:false,text:'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'})
+    .details-wrapper__body-right-column
       +roomprice({roomNumber:888,priceHeader:'9 990₽',roomType:'люкс',commentNumber:145,price:'9 990₽ х 4 суток',total:'39 960₽',discount:'Сбор за услуги: скидка 2 179₽',fee:'0₽',extraFee:'300₽',totalPrice:'38 081₽'})
   footer.footer
    include ../UIKit/modules/footerWidget.pug

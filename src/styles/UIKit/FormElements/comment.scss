@@ -17,7 +17,10 @@
   height: 48px;
   width: 48px;
   margin-right: 10px;
-  
+ }
+  &__header-img img{
+  max-width: 100%;
+  height: auto;
  }
  &__header{
   display: flex;

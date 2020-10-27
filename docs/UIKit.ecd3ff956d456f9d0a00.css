@@ -2772,6 +2772,9 @@ input:checked + .slider-round:before {
     height: 48px;
     width: 48px;
     margin-right: 10px; }
+  .expanded-comment__header-img img {
+    max-width: 100%;
+    height: auto; }
   .expanded-comment__header {
     display: flex;
     flex-direction: row; }
@@ -3445,4 +3448,4 @@ input:checked + .slider-round:before {
     grid-area: right; }
 
 
-/*# sourceMappingURL=UIKit.f0c76176767dc40229e5.css.map*/
+/*# sourceMappingURL=UIKit.ecd3ff956d456f9d0a00.css.map*/
