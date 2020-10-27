@@ -30,7 +30,10 @@ html(lang="en")
           +list({type:'icons',icon:'local_fire_department',header:'Уют',text:'Номер оснащен камином'})
         .left-column-info__impressions  
           h2='Впечатления от номера'
-          +diagram({})
+          +diagram({number:260,label:'голосов',segments:[
+            {class:"diagramchart__donut-segment",stroke:"#BC9CFF",dasharray:"25 75",dashoffset:"25"},
+            {class:"diagramchart__donut-segment",stroke:"#6FCF97",dasharray:"25 75",dashoffset:"0"},
+            {class:"diagramchart__donut-segment-delimeter",stroke:"#fff",dasharray:"1 99",dashoffset:"26"},{class:"diagramchart__donut-segment-delimeter",stroke:"#fff",dasharray:"1 99", dashoffset:"0"},{class:"diagramchart__donut-segment-delimeter",stroke:"#fff",dasharray:"1 99",dashoffset:"76"}]})
       section.left-column-comments
       section.left-column-rules
     .details-wrapper__body_right-column

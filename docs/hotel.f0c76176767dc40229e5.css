@@ -5972,6 +5972,32 @@ p.subscribe {
 .diagram-description__list_black::before {
   background: linear-gradient(180deg, #919191 0%, #3D4975 100%); }
 
+.diagramchart__chart-text {
+  font: 16px/1.4em OpenSans;
+  fill: #BC9CFF;
+  -moz-transform: translateY(0.25em);
+  -ms-transform: translateY(0.25em);
+  -webkit-transform: translateY(0.25em);
+  transform: translateY(0.25em); }
+
+.diagramchart__chart-number {
+  font-size: 0.6em;
+  line-height: 1;
+  text-anchor: middle;
+  -moz-transform: translateY(-0.25em);
+  -ms-transform: translateY(-0.25em);
+  -webkit-transform: translateY(-0.25em);
+  transform: translateY(-0.25em); }
+
+.diagramchart__chart-label {
+  font-size: 0.2em;
+  text-transform: uppercase;
+  text-anchor: middle;
+  -moz-transform: translateY(0.7em);
+  -ms-transform: translateY(0.7em);
+  -webkit-transform: translateY(0.7em);
+  transform: translateY(0.7em); }
+
 .details-wrapper {
   max-width: 1440px;
   max-height: 1937px;
@@ -6032,4 +6058,4 @@ p.subscribe {
     flex-direction: column; } }
 
 
-/*# sourceMappingURL=hotel.3626333a474bb3b0d360.css.map*/
+/*# sourceMappingURL=hotel.f0c76176767dc40229e5.css.map*/

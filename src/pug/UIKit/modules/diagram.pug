@@ -2,11 +2,10 @@ include diagramchart.pug
 mixin diagram(options)
   .diagram
    figure.diagram-chart
-    include diagramchart.pug
+    +diagramchart({number:options.number,label:options.label,segments:options.segments})
    .diagram-description
     ul
       li(class='diagram-description__list diagram-description__list_orange')='Великолепно'
       li(class='diagram-description__list diagram-description__list_green')='Хорошо'
       li(class='diagram-description__list diagram-description__list_blue')='Удовлетворительно'
       li(class='diagram-description__list diagram-description__list_black')='Разочарован'
-    
