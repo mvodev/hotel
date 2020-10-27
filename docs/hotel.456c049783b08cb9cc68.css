@@ -5930,6 +5930,37 @@ p.subscribe {
     padding-top: 5px;
     margin-bottom: 17px; }
 
+.diagram-description__list {
+  list-style-type: none;
+  position: relative;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75); }
+
+.diagram-description__list::before {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  content: '';
+  top: 0;
+  left: 0;
+  border-radius: 50%; }
+
+.diagram-description__list_orange::before {
+  background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%); }
+
+.diagram-description__list_green::before {
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%); }
+
+.diagram-description__list_blue::before {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
+
+.diagram-description__list_black::before {
+  background: linear-gradient(180deg, #919191 0%, #3D4975 100%); }
+
 .details-wrapper {
   max-width: 1440px;
   max-height: 1937px;
@@ -5990,4 +6021,4 @@ p.subscribe {
     flex-direction: column; } }
 
 
-/*# sourceMappingURL=hotel.914d776320086c84b895.css.map*/
+/*# sourceMappingURL=hotel.456c049783b08cb9cc68.css.map*/

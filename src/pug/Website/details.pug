@@ -1,5 +1,6 @@
 include ../UIKit/modules/roomprice.pug
 include ../UIKit/modules/list.pug
+include ../UIKit/modules/diagram.pug
 html(lang="en")
  head
   meta(charset="UTF-8")
@@ -27,9 +28,9 @@ html(lang="en")
           +list({type:'icons',icon:'insert_emoticon',header:'Комфорт',text:'Шумопоглощающие стены'})
           +list({type:'icons',icon:'location_city',header:'Удобство',text:'Окно в каждой из спален'})
           +list({type:'icons',icon:'local_fire_department',header:'Уют',text:'Номер оснащен камином'})
-          +list({type:'icons',icon:'location_city',header:'Константин Константинович Константинопольский',text:'Константин Константинович Константинопольский'})
         .left-column-info__impressions  
           h2='Впечатления от номера'
+          +diagram({})
       section.left-column-comments
       section.left-column-rules
     .details-wrapper__body_right-column
