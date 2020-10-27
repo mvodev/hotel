@@ -1,6 +1,8 @@
+include diagramchart.pug
 mixin diagram(options)
   .diagram
-   .diagram-chart
+   figure.diagram-chart
+    include diagramchart.pug
    .diagram-description
     ul
       li(class='diagram-description__list diagram-description__list_orange')='Великолепно'

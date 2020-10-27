@@ -5930,6 +5930,17 @@ p.subscribe {
     padding-top: 5px;
     margin-bottom: 17px; }
 
+.diagram {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  max-height: 120px; }
+
+.diagram-chart {
+  width: 120px;
+  height: 120px;
+  margin-right: 30px; }
+
 .diagram-description__list {
   list-style-type: none;
   position: relative;
@@ -5945,8 +5956,8 @@ p.subscribe {
   width: 10px;
   height: 10px;
   content: '';
-  top: 0;
-  left: 0;
+  top: 7px;
+  left: -15px;
   border-radius: 50%; }
 
 .diagram-description__list_orange::before {
@@ -6021,4 +6032,4 @@ p.subscribe {
     flex-direction: column; } }
 
 
-/*# sourceMappingURL=hotel.456c049783b08cb9cc68.css.map*/
+/*# sourceMappingURL=hotel.3626333a474bb3b0d360.css.map*/
