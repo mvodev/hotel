@@ -14,31 +14,39 @@ html(lang="en")
    include ../UIKit/modules/standardNavBar.pug
   .details-wrapper__content
    .details-wrapper__room-images
-    .details-wrapper__room-images_big
+    .details-wrapper__room-images-big
       img(src="roomdetailsbig.jpg", alt="room image")
-    .details-wrapper__room-images_small
-      .details-wrapper__room-images_small-top
+    .details-wrapper__room-images-small
+      .details-wrapper__room-images-small-top
         img(src="roomdetailsmalltop.jpg", alt="room image small")
-      .details-wrapper__room-images_small-bottom
+      .details-wrapper__room-images-small-bottom
         img(src="roomdetailsmallbottom.jpg", alt="room image small")
    section.details-wrapper__body
     .details-wrapper__body-left-column
       section.left-column-info
-        .left-column-info__data
-          h2='Сведения о номере'
-          +list({type:'icons',icon:'insert_emoticon',header:'Комфорт',text:'Шумопоглощающие стены'})
-          +list({type:'icons',icon:'location_city',header:'Удобство',text:'Окно в каждой из спален'})
-          +list({type:'icons',icon:'local_fire_department',header:'Уют',text:'Номер оснащен камином'})
-        .left-column-info__impressions  
-          h2='Впечатления от номера'
-          +diagram({number:260,label:'голосов',segments:[
-            {class:"diagramchart__donut-segment",stroke:"#BC9CFF",dasharray:"25 75",dashoffset:"25"},
-            {class:"diagramchart__donut-segment",stroke:"#6FCF97",dasharray:"25 75",dashoffset:"0"},
-            {class:"diagramchart__donut-segment-delimeter",stroke:"#fff",dasharray:"1 99",dashoffset:"26"},{class:"diagramchart__donut-segment-delimeter",stroke:"#fff",dasharray:"1 99", dashoffset:"0"},{class:"diagramchart__donut-segment-delimeter",stroke:"#fff",dasharray:"1 99",dashoffset:"76"}]})
+          .left-column-info__data
+            h2='Сведения о номере'
+            +list({type:'icons',icon:'insert_emoticon',header:'Комфорт',text:'Шумопоглощающие стены'})
+            +list({type:'icons',icon:'location_city',header:'Удобство',text:'Окно в каждой из спален'})
+            +list({type:'icons',icon:'local_fire_department',header:'Уют',text:'Номер оснащен камином'})
+          .left-column-info__impressions  
+            h2='Впечатления от номера'
+            +diagram({number:260,label:'голосов',segments:[
+              {class:"diagramchart__donut-segment",stroke:"#BC9CFF",dasharray:"90 282",dashoffset:"98"},
+              {class:"diagramchart__donut-segment",stroke:"#6FCF97",dasharray:"90 282",dashoffset:"0"},
+               {class:"diagramchart__donut-segment-delimeter",stroke:"#fff",dasharray:"4 372",dashoffset:"102"},{class:"diagramchart__donut-segment-delimeter",stroke:"#fff",dasharray:"4 372", dashoffset:"0"},{class:"diagramchart__donut-segment-delimeter",stroke:"#fff",dasharray:"4 372",dashoffset:"290"}
+             ]})
       section.left-column-comments
-      section.left-column-rules
+        h2='Отзывы посетителей'
         +comment({headerName:'Мурад Сарафанов',headerTime:'5 дней назад',imgSource:'muradik.png',likeNumber:12,isLiked:true,text:'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})
         +comment({headerName:'Патрисия Стёклышкова',headerTime:'Неделю назад',imgSource:'patrisha.png',likeNumber:2,isLiked:false,text:'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'})
+      section.left-column-rules
+        .left-column-rules__text-wrapper
+          h2='Правила'
+          +list({labels:['Нельзя с питомцами','Без вечеринок и мероприятий','Время прибытия — после 13:00,а выезд до 12:00']})
+        .left-column-rules__text-wrapper
+          h2='Отмена'
+          p='Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.'
     .details-wrapper__body-right-column
       +roomprice({roomNumber:888,priceHeader:'9 990₽',roomType:'люкс',commentNumber:145,price:'9 990₽ х 4 суток',total:'39 960₽',discount:'Сбор за услуги: скидка 2 179₽',fee:'0₽',extraFee:'300₽',totalPrice:'38 081₽'})
   footer.footer
