@@ -6095,6 +6095,9 @@ p.subscribe {
 .left-column-info h2 {
   margin-bottom: 20px; }
 
+.left-column-info__impressions {
+  margin-right: 40px; }
+
 .left-column-info .bullet-list-icons {
   margin-bottom: 20px; }
 
@@ -6151,12 +6154,25 @@ p.subscribe {
   .details-wrapper {
     max-width: none;
     max-height: none; }
+  .details-wrapper__content {
+    height: auto; }
   .details-wrapper__room-images {
     margin: 0px auto; }
-  .details-wrapper__room-images_small {
+  .details-wrapper__room-images-small-top,
+  .details-wrapper__room-images-small-bottom {
     display: none; }
   .details-wrapper__body {
-    flex-direction: column; } }
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .left-column-info {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .left-column-rules {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; } }
 
 
-/*# sourceMappingURL=hotel.d1868b4abafa936b5172.css.map*/
+/*# sourceMappingURL=hotel.55a43d370f58ab7e8dd1.css.map*/
