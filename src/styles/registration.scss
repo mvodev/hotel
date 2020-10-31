@@ -22,15 +22,12 @@
     justify-content: center;
     max-width: $container-width;
     background-image: url('../assets/img/jpg/registration.jpg');
-    object-fit: cover;
+    background-size: cover;
  }
 }
 @media (max-width:$container-mobile-width){
  .wrapper{
    max-width: none;
    max-height: none;
- }
- .footer{
-   display: none;
  }
 }

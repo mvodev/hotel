@@ -2942,14 +2942,12 @@ p.subscribe {
     justify-content: center;
     max-width: 1440px;
     background-image: url(79b5cde0053638ad01f1d11a34b1cb11.jpg);
-    object-fit: cover; }
+    background-size: cover; }
 
 @media (max-width: 1200px) {
   .wrapper {
     max-width: none;
-    max-height: none; }
-  .footer {
-    display: none; } }
+    max-height: none; } }
 
 @font-face {
   font-family: "OpenSans";
@@ -7553,20 +7551,18 @@ p.subscribe {
   margin: 0px auto; }
 
 .sign-in-page__img-wrapper {
-  height: 685px;
+  height: 702px;
   max-width: 1440px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-image: url(79b5cde0053638ad01f1d11a34b1cb11.jpg);
-  object-fit: cover; }
+  background-size: cover; }
 
 @media (max-width: 1200px) {
-  .wrapper {
+  .sign-in-page__wrapper {
     max-width: none;
-    max-height: none; }
-  .footer {
-    display: none; } }
+    max-height: none; } }
 
 
-/*# sourceMappingURL=hotel.c740f6fd13e8c918cc45.css.map*/
+/*# sourceMappingURL=hotel.fbd0d3fc42fe2e69ba1a.css.map*/
