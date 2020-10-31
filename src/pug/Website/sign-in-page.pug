@@ -1,0 +1,19 @@
+include ../UIKit/modules/signin.pug
+html(lang="en")
+ head
+  meta(charset="UTF-8")
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  meta(name="description", content="отель страница регистрации")
+  include ../Favicon/favicon.pug
+  title SignIn page
+ body.sign-in-page-__wrapper
+  header.header
+   include ../UIKit/modules/standardNavBar.pug
+  div.sign-in-page__img-wrapper
+   +signin({action:'#'})
+  footer.footer
+   include ../UIKit/modules/footerWidget.pug
+   include ../UIKit/modules/footerCopyrightBar.pug
+  
+
+ 

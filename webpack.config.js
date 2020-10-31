@@ -79,6 +79,13 @@ module.exports = {
     filename: 'registration.html'
    }
   ),
+  new HTMLWebpackPlugin(
+   {
+    template: './pug/Website/sign-in-page.pug',
+    chunks: ['hotel'],
+    filename: 'sign-in.html'
+   }
+  ),
   new CleanWebpackPlugin(),
   new webpack.ProvidePlugin({
    $: 'jquery',
@@ -104,7 +111,7 @@ module.exports = {
     {
      from: path.resolve(__dirname, 'src/assets/favicons'),
      to: path.resolve(__dirname, 'docs/favicons')
-    }
+    },
    ]
   }),
   new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i })

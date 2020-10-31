@@ -1,7 +1,7 @@
 @import './common/fonts.scss';
 @import './common/reset.scss';
 @import './common/constants.scss';
-@import '../styles/UIKit/Cards/signup.scss';
+@import '../styles/UIKit/Cards/signin.scss';
 @import '../styles/UIKit/FormElements/switch.scss';
 @import '../styles/UIKit/FormElements/button.scss';
 @import '../styles/UIKit/FormElements/textField.scss';
@@ -10,27 +10,26 @@
 @import '../styles/UIKit/HeadersAndFooters/footerCopyrightBar.scss';
 @import '../styles/UIKit/HeadersAndFooters/footerWidget.scss';
 
-.wrapper{
- max-width: $container-width;
- max-height: 1197px;
- margin: 0px auto; 
-
-  .img__wrapper{
-    height: 685px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: $container-width;
-    background-image: url('../assets/img/jpg/registration.jpg');
-    object-fit: cover;
- }
+.sign-in-page__wrapper{
+  max-width: $container-width;
+  max-height: 1197px;
+  margin: 0px auto; 
+}
+.sign-in-page__img-wrapper{
+  height: 685px;
+  max-width: $container-width;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../assets/img/jpg/registration.jpg');
+  object-fit: cover;
 }
 @media (max-width:$container-mobile-width){
- .wrapper{
-   max-width: none;
-   max-height: none;
- }
- .footer{
-   display: none;
- }
+.wrapper{
+  max-width: none;
+  max-height: none;
+}
+.footer{
+  display: none;
+}
 }

@@ -172,26 +172,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_search_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_search_scss__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _styles_details_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/details.scss */ "./styles/details.scss");
 /* harmony import */ var _styles_details_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_details_scss__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_ion_rangeslider_css_ion_rangeSlider_min_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../node_modules/ion-rangeslider/css/ion.rangeSlider.min.css */ "../node_modules/ion-rangeslider/css/ion.rangeSlider.min.css");
-/* harmony import */ var _node_modules_ion_rangeslider_css_ion_rangeSlider_min_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_ion_rangeslider_css_ion_rangeSlider_min_css__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../node_modules/air-datepicker/dist/css/datepicker.min.css */ "../node_modules/air-datepicker/dist/css/datepicker.min.css");
-/* harmony import */ var _node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_air_datepicker_dist_js_datepicker_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../node_modules/air-datepicker/dist/js/datepicker.js */ "../node_modules/air-datepicker/dist/js/datepicker.js");
-/* harmony import */ var _node_modules_air_datepicker_dist_js_datepicker_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_node_modules_air_datepicker_dist_js_datepicker_js__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _scripts_starRating_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./scripts/starRating.js */ "./scripts/starRating.js");
-/* harmony import */ var _scripts_starRating_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_scripts_starRating_js__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _scripts_likeRating_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./scripts/likeRating.js */ "./scripts/likeRating.js");
-/* harmony import */ var _scripts_likeRating_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_scripts_likeRating_js__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ion-rangeslider */ "../node_modules/ion-rangeslider/js/ion.rangeSlider.js");
-/* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(ion_rangeslider__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _scripts_dropDownGuests_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./scripts/dropDownGuests.js */ "./scripts/dropDownGuests.js");
-/* harmony import */ var _scripts_dropDownGuests_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_scripts_dropDownGuests_js__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _scripts_dropDownRoom_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./scripts/dropDownRoom.js */ "./scripts/dropDownRoom.js");
-/* harmony import */ var _scripts_dropDownRoom_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_scripts_dropDownRoom_js__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _scripts_expandableCL_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./scripts/expandableCL.js */ "./scripts/expandableCL.js");
-/* harmony import */ var _scripts_expandableCL_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_scripts_expandableCL_js__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _scripts_burger_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./scripts/burger.js */ "./scripts/burger.js");
-/* harmony import */ var _scripts_burger_js__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_scripts_burger_js__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _styles_sign_in_page_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles/sign-in-page.scss */ "./styles/sign-in-page.scss");
+/* harmony import */ var _styles_sign_in_page_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_sign_in_page_scss__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_ion_rangeslider_css_ion_rangeSlider_min_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../node_modules/ion-rangeslider/css/ion.rangeSlider.min.css */ "../node_modules/ion-rangeslider/css/ion.rangeSlider.min.css");
+/* harmony import */ var _node_modules_ion_rangeslider_css_ion_rangeSlider_min_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_ion_rangeslider_css_ion_rangeSlider_min_css__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../node_modules/air-datepicker/dist/css/datepicker.min.css */ "../node_modules/air-datepicker/dist/css/datepicker.min.css");
+/* harmony import */ var _node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _node_modules_air_datepicker_dist_js_datepicker_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../node_modules/air-datepicker/dist/js/datepicker.js */ "../node_modules/air-datepicker/dist/js/datepicker.js");
+/* harmony import */ var _node_modules_air_datepicker_dist_js_datepicker_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_node_modules_air_datepicker_dist_js_datepicker_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _scripts_starRating_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./scripts/starRating.js */ "./scripts/starRating.js");
+/* harmony import */ var _scripts_starRating_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_scripts_starRating_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _scripts_likeRating_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./scripts/likeRating.js */ "./scripts/likeRating.js");
+/* harmony import */ var _scripts_likeRating_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_scripts_likeRating_js__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ion-rangeslider */ "../node_modules/ion-rangeslider/js/ion.rangeSlider.js");
+/* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(ion_rangeslider__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _scripts_dropDownGuests_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./scripts/dropDownGuests.js */ "./scripts/dropDownGuests.js");
+/* harmony import */ var _scripts_dropDownGuests_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_scripts_dropDownGuests_js__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _scripts_dropDownRoom_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./scripts/dropDownRoom.js */ "./scripts/dropDownRoom.js");
+/* harmony import */ var _scripts_dropDownRoom_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_scripts_dropDownRoom_js__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _scripts_expandableCL_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./scripts/expandableCL.js */ "./scripts/expandableCL.js");
+/* harmony import */ var _scripts_expandableCL_js__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_scripts_expandableCL_js__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _scripts_burger_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./scripts/burger.js */ "./scripts/burger.js");
+/* harmony import */ var _scripts_burger_js__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_scripts_burger_js__WEBPACK_IMPORTED_MODULE_14__);
+
 
 
 
@@ -318,7 +321,18 @@ $('.range-slider__input').ionRangeSlider({
 
 // extracted by mini-css-extract-plugin
 
+/***/ }),
+
+/***/ "./styles/sign-in-page.scss":
+/*!**********************************!*\
+  !*** ./styles/sign-in-page.scss ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
 /***/ })
 
 /******/ });
-//# sourceMappingURL=hotel.1e383830bb685b26ed1d.js.map
+//# sourceMappingURL=hotel.158e70d985820a5e8f58.js.map
