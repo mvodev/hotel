@@ -101,7 +101,7 @@ justify-content: right;
 		}
 }
 
-.button-rate{
+.button_rate{
  height: 24px;
  width: 120px;
  background-color: transparent;
@@ -114,7 +114,7 @@ justify-content: right;
 
 }
 
-.button-rate_star{
+.button_rate-star{
  font-size: 24px;
  color: $purple;
  line-height: 20px;
@@ -126,7 +126,7 @@ justify-content: right;
  text-align: center;
 }
 
-.button-like{
+.button_like{
 		width: 40px;
 		height: 20px;
 		background: $white;
@@ -160,19 +160,19 @@ justify-content: right;
 				color: $darkShade25;
 				display: flex;
 				}
-				&_is-liked{
-				border: 1px solid $purple;
-				}
+			
 }
-
-.button-like_is-liked div:first-child{
+.is-liked{
+				border: 1px solid $purple;
+}
+.is-liked div:first-child{
   color:$purple;
 }
 
-.button-like_is-liked div:nth-child(2){
+.is-liked div:nth-child(2){
   color: $purple;
 }
-.button-check{
+.button_check{
 		width: 222px;
 		height: max-content;
 
@@ -210,13 +210,13 @@ justify-content: right;
 						border-radius: 4px;
 				}
 }
-.button-check__checkbox-input:checked+.button-check__checkbox-text:before{
+.button_check__checkbox-input:checked+.button_check__checkbox-text:before{
 background-image: url('../assets/img/svg/checkbox.svg');
 background-repeat: no-repeat;
 background-position: center;
 }
 
-.button-radio{
+.button_radio{
   height: 24px;
 		max-width: 99px;
 
@@ -264,20 +264,20 @@ background-position: center;
 				}
 }
 
-.button-radio__checkbox-input:checked + .button-radio__checkbox-text:after {
+.button_radio__checkbox-input:checked + .button_radio__checkbox-text:after {
 	opacity: 1;
 }
-.button-radio__checkbox-input:checked + .button-radio__checkbox-text {
+.button_radio__checkbox-input:checked + .button_radio__checkbox-text {
 	color: $darkShade75;
 }
-.button-radio__checkbox-input:checked+.button-radio__checkbox-text:before{
+.button_radio__checkbox-input:checked+.button_radio__checkbox-text:before{
 background: $white;
 border: 1px solid $purple;
 box-sizing: border-box;
 border-radius: 10px;
 }
 
-.button-rich{
+.button_rich{
   width: 266px;
 		height: 51px;
 
@@ -325,7 +325,7 @@ border-radius: 10px;
 				}
 }
 
-.button-rich__checkbox-input:checked+.button-rich__checkbox-header:before{
+.button_rich__checkbox-input:checked+.button_rich__checkbox-header:before{
 background-image: url('../assets/img/svg/checkbox.svg');
 background-repeat: no-repeat;
 background-position: center;
