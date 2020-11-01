@@ -17,7 +17,7 @@ mixin button(options)
  - buttonClassName+=options.type==='rich' ? ' button_rich' : ''
  - buttonClassName+=options.type==='radio' ? ' button_radio' : ''
    if options.type=='arrow'
-    button(class=buttonClassName)
+    button(class=buttonClassName type=options.purpose?options.purpose:'button')
      div=options.label
      div(class='button_with-arrow_arr')='arrow_forward'
    else if options.type=='rate'
@@ -67,5 +67,5 @@ mixin button(options)
           input(class='button_radio__checkbox-input' type='checkbox')
           div(class='button_radio__checkbox-text')=options.label
    else
-    button(class=buttonClassName)
+    button(class=buttonClassName type=options.purpose?options.purpose:'button')
      span=options.label

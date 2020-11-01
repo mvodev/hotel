@@ -16,7 +16,7 @@ mixin signup
    +textfield({isDefault:true,placeholder:'Email'})
    +textfield({isDefault:true,placeholder:'Пароль'})
    +toggle({labels:[{name:'Получать спецпредложения',  isPositive:false}]})
-   +button({label:'ПЕРЕЙТИ К ОПЛАТЕ',type:'arrow'})
+   +button({label:'ПЕРЕЙТИ К ОПЛАТЕ',type:'arrow',purpose:'submit'})
    div(class='sign-up__footer')
     span(class='sign-up__account')='Уже есть аккаунт на Toxin'
-    +button({label:'Войти',type:'white'})
+    +button({label:'Войти',type:'white',purpose:'submit'})

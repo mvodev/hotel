@@ -480,7 +480,7 @@ function likeClickListener(event) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-const rateButton = document.querySelectorAll('.button-rate label');
+const rateButton = document.querySelectorAll('.button_rate label');
 rateButton.forEach(elem => elem.addEventListener('click', rateClickListener)
 );
 function rateClickListener(event) {
@@ -497,4 +497,4 @@ function rateClickListener(event) {
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~hotel.f4792674c9f9dcddead8.js.map
+//# sourceMappingURL=UIKit~hotel.ed2a0ebb4b05d9660d7f.js.map

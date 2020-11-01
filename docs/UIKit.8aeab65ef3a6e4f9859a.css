@@ -1003,7 +1003,7 @@ table {
   justify-content: space-between;
   margin-right: 140px; }
 
-.footer__social-networks-links-link {
+.footer__social-networks-link {
   text-decoration: none;
   width: 24px;
   height: 24px;
@@ -2060,7 +2060,7 @@ p.subscribe {
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
   width: 320px;
-  height: 369px; }
+  min-height: 369px; }
   .datepicker--content {
     padding: 0px;
     width: 280px;
@@ -2960,11 +2960,11 @@ input:checked + .slider-round:before {
     text-transform: uppercase;
     color: #1f2041; }
   .form-elements__central-column h2:nth-child(3) {
-    margin-top: 120px; }
+    margin-top: 40px; }
   .form-elements__central-column .radio-button-wrapper {
     display: flex;
     flex-direction: row; }
-    .form-elements__central-column .radio-button-wrapper .button-radio:first-child {
+    .form-elements__central-column .radio-button-wrapper .button_radio:first-child {
       margin-right: 20px; }
   .form-elements__central-column h2:nth-child(5) {
     margin-top: 38px; }
@@ -2993,7 +2993,7 @@ input:checked + .slider-round:before {
   .form-elements__central-column h2:nth-child(13) {
     margin-top: 255px;
     margin-bottom: 17px; }
-  .form-elements__central-column .button-rich {
+  .form-elements__central-column .button_rich {
     margin-bottom: 12px; }
 
 .form-elements__right-column {
@@ -3018,24 +3018,24 @@ input:checked + .slider-round:before {
     margin-bottom: 13px; }
   .form-elements__right-column .form-elements__right-column-buttons-wrapper {
     width: 218px; }
-    .form-elements__right-column .form-elements__right-column-buttons-wrapper .form-elements__right-column-buttons-wrapper-first-row,
-    .form-elements__right-column .form-elements__right-column-buttons-wrapper .form-elements__right-column-buttons-wrapper-second-row,
-    .form-elements__right-column .form-elements__right-column-buttons-wrapper .form-elements__right-column-buttons-wrapper-third-row {
+    .form-elements__right-column .form-elements__right-column-buttons-wrapper .form-elements__right-column-buttons-wrapper_first-row,
+    .form-elements__right-column .form-elements__right-column-buttons-wrapper .form-elements__right-column-buttons-wrapper_second-row,
+    .form-elements__right-column .form-elements__right-column-buttons-wrapper .form-elements__right-column-buttons-wrapper_third-row {
       display: flex;
       flex-direction: row; }
-    .form-elements__right-column .form-elements__right-column-buttons-wrapper .form-elements__right-column-buttons-wrapper-first-row .button:first-child {
+    .form-elements__right-column .form-elements__right-column-buttons-wrapper .form-elements__right-column-buttons-wrapper_first-row .button:first-child {
       margin-right: 19px;
       margin-bottom: 30px; }
-    .form-elements__right-column .form-elements__right-column-buttons-wrapper .form-elements__right-column-buttons-wrapper-second-row .button:first-child {
+    .form-elements__right-column .form-elements__right-column-buttons-wrapper .form-elements__right-column-buttons-wrapper_second-row .button:first-child {
       margin-right: 20px;
       margin-bottom: 31px; }
-    .form-elements__right-column .form-elements__right-column-buttons-wrapper .form-elements__right-column-buttons-wrapper-third-row .button:first-child {
+    .form-elements__right-column .form-elements__right-column-buttons-wrapper .form-elements__right-column-buttons-wrapper_third-row .button:first-child {
       margin-right: 20px;
       margin-bottom: 30px; }
-    .form-elements__right-column .form-elements__right-column-buttons-wrapper .form-elements__right-column-buttons-wrapper-fourth-row {
+    .form-elements__right-column .form-elements__right-column-buttons-wrapper .form-elements__right-column-buttons-wrapper_fourth-row {
       margin-bottom: 40px; }
   .form-elements__right-column .pagination {
-    margin-bottom: 230px; }
+    margin-bottom: 231px; }
 
 .form-elements__comment {
   grid-area: comment;
@@ -3449,4 +3449,4 @@ input:checked + .slider-round:before {
     grid-area: right; }
 
 
-/*# sourceMappingURL=UIKit.368d412c9ce63657ae4a.css.map*/
+/*# sourceMappingURL=UIKit.8aeab65ef3a6e4f9859a.css.map*/

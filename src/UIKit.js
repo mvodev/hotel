@@ -17,7 +17,7 @@ var cleave = new Cleave('.text-field_input-date', {
 });
 $('.dropdown-input__date_input-field').datepicker({ todayButton: true, clearButton: true });
 $('.dropdown-input__filter_input-field').datepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
-$('.cards__right-column_datepicker').datepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
+$('.cards__right-column-datepicker').datepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
 $('.range-slider__input').ionRangeSlider({
   type: "double",
   min: 0,
