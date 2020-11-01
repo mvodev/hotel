@@ -2798,7 +2798,7 @@ input:checked + .slider-round:before {
   .expanded-comment__body-text {
     width: 653px;
     height: 72px; }
-  .expanded-comment__body-like-button {
+  .expanded-comment__like-button {
     margin-left: 3px;
     margin-top: 2px; }
 
@@ -3449,4 +3449,4 @@ input:checked + .slider-round:before {
     grid-area: right; }
 
 
-/*# sourceMappingURL=UIKit.33412ec9d7b89630c307.css.map*/
+/*# sourceMappingURL=UIKit.368d412c9ce63657ae4a.css.map*/
