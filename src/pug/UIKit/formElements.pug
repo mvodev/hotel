@@ -26,7 +26,7 @@ include headerUiKit.pug
    div='Masked Text Field'
    div='Default'
   +textfield({isMasked:true,placeholder:'ДД.ММ.ГГГГ'})
-  .form-elements__left-column_dropdown-wrapper
+  .form-elements__left-column-dropdown-wrapper
    h2(class='header header_date-dropdown')
     div='Date Dropdown'
     div='Date Dropdown'
@@ -82,17 +82,17 @@ include headerUiKit.pug
  .form-elements__right-column
   +rangeSlider({label:'RANGE SLIDER'})
   h2='BUTTONS'
-  .form-elements__right-column_buttons-wrapper
-    .form-elements__right-column_buttons-wrapper-first-row
+  .form-elements__right-column-buttons-wrapper
+    .form-elements__right-column-buttons-wrapper-first-row
       +button({label:'CLICK ME',type:'dark'})
       +button({label:'CLICK ME',type:'dark50'})
-    .form-elements__right-column_buttons-wrapper-second-row
+    .form-elements__right-column-buttons-wrapper-second-row
       +button({label:'CLICK ME',type:'white'})
       +button({label:'CLICK ME',type:'white50'})
-    .form-elements__right-column_buttons-wrapper-third-row
+    .form-elements__right-column-buttons-wrapper-third-row
       +button({label:'CLICK ME',type:'transparent'})
       +button({label:'CLICK ME',type:'transparent50'})
-    .form-elements__right-column_buttons-wrapper-fourth-row
+    .form-elements__right-column-buttons-wrapper-fourth-row
       +button({label:'ПЕРЕЙТИ К ОПЛАТЕ',type:'arrow'})
   h2='pagination'
   +pagination({isEllipsis:true,firstNumbers:[1,2,3],lastNumber:15,selectedPage:1,

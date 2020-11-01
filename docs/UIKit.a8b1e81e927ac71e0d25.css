@@ -2917,9 +2917,9 @@ input:checked + .slider-round:before {
     margin-right: 20px; }
   .form-elements__left-column .header_date-dropdown div:nth-child(2) {
     font-weight: bold; }
-  .form-elements__left-column .form-elements__left-column_dropdown-wrapper {
+  .form-elements__left-column .form-elements__left-column-dropdown-wrapper {
     margin-bottom: 40px; }
-  .form-elements__left-column .form-elements__left-column_dropdown-wrapper div:nth-child(2) {
+  .form-elements__left-column .form-elements__left-column-dropdown-wrapper div:nth-child(2) {
     display: flex;
     flex-direction: row; }
   .form-elements__left-column .header_filter-date-dropdown {
@@ -3015,23 +3015,23 @@ input:checked + .slider-round:before {
   .form-elements__right-column h2:nth-child(8) {
     margin-top: 256px;
     margin-bottom: 13px; }
-  .form-elements__right-column .form-elements__right-column_buttons-wrapper {
+  .form-elements__right-column .form-elements__right-column-buttons-wrapper {
     width: 218px; }
-    .form-elements__right-column .form-elements__right-column_buttons-wrapper .form-elements__right-column_buttons-wrapper-first-row,
-    .form-elements__right-column .form-elements__right-column_buttons-wrapper .form-elements__right-column_buttons-wrapper-second-row,
-    .form-elements__right-column .form-elements__right-column_buttons-wrapper .form-elements__right-column_buttons-wrapper-third-row {
+    .form-elements__right-column .form-elements__right-column-buttons-wrapper .form-elements__right-column-buttons-wrapper-first-row,
+    .form-elements__right-column .form-elements__right-column-buttons-wrapper .form-elements__right-column-buttons-wrapper-second-row,
+    .form-elements__right-column .form-elements__right-column-buttons-wrapper .form-elements__right-column-buttons-wrapper-third-row {
       display: flex;
       flex-direction: row; }
-    .form-elements__right-column .form-elements__right-column_buttons-wrapper .form-elements__right-column_buttons-wrapper-first-row .button:first-child {
+    .form-elements__right-column .form-elements__right-column-buttons-wrapper .form-elements__right-column-buttons-wrapper-first-row .button:first-child {
       margin-right: 19px;
       margin-bottom: 30px; }
-    .form-elements__right-column .form-elements__right-column_buttons-wrapper .form-elements__right-column_buttons-wrapper-second-row .button:first-child {
+    .form-elements__right-column .form-elements__right-column-buttons-wrapper .form-elements__right-column-buttons-wrapper-second-row .button:first-child {
       margin-right: 20px;
       margin-bottom: 31px; }
-    .form-elements__right-column .form-elements__right-column_buttons-wrapper .form-elements__right-column_buttons-wrapper-third-row .button:first-child {
+    .form-elements__right-column .form-elements__right-column-buttons-wrapper .form-elements__right-column-buttons-wrapper-third-row .button:first-child {
       margin-right: 20px;
       margin-bottom: 30px; }
-    .form-elements__right-column .form-elements__right-column_buttons-wrapper .form-elements__right-column_buttons-wrapper-fourth-row {
+    .form-elements__right-column .form-elements__right-column-buttons-wrapper .form-elements__right-column-buttons-wrapper-fourth-row {
       margin-bottom: 40px; }
   .form-elements__right-column .pagination {
     margin-bottom: 230px; }
@@ -3175,7 +3175,7 @@ input:checked + .slider-round:before {
 
 .cards__right-column {
   padding-left: 40px; }
-  .cards__right-column .cards__right-column_datepicker {
+  .cards__right-column .cards__right-column-datepicker {
     margin-bottom: 40px; }
   .cards__right-column .room-card:nth-child(2) {
     margin-bottom: 40px; }
@@ -3448,4 +3448,4 @@ input:checked + .slider-round:before {
     grid-area: right; }
 
 
-/*# sourceMappingURL=UIKit.fbd0d3fc42fe2e69ba1a.css.map*/
+/*# sourceMappingURL=UIKit.a8b1e81e927ac71e0d25.css.map*/

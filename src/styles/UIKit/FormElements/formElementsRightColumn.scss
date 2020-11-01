@@ -22,38 +22,37 @@
     margin-top: 256px;
     margin-bottom: 13px;
   }
-  .form-elements__right-column_buttons-wrapper{
+  .form-elements__right-column-buttons-wrapper{
     width: 218px;
-    .form-elements__right-column_buttons-wrapper-first-row,
-    .form-elements__right-column_buttons-wrapper-second-row,
-    .form-elements__right-column_buttons-wrapper-third-row{
+    .form-elements__right-column-buttons-wrapper-first-row,
+    .form-elements__right-column-buttons-wrapper-second-row,
+    .form-elements__right-column-buttons-wrapper-third-row{
       display: flex;
       flex-direction: row;
     }
-    .form-elements__right-column_buttons-wrapper-first-row{
+    .form-elements__right-column-buttons-wrapper-first-row{
       .button:first-child{
         margin-right: 19px;
         margin-bottom: 30px;
       }
     }
-    .form-elements__right-column_buttons-wrapper-second-row{
+    .form-elements__right-column-buttons-wrapper-second-row{
       .button:first-child{
         margin-right: 20px;
         margin-bottom: 31px;
       }
     }
-    .form-elements__right-column_buttons-wrapper-third-row{
+    .form-elements__right-column-buttons-wrapper-third-row{
       .button:first-child{
         margin-right: 20px;
         margin-bottom: 30px;
       }
     }
-    .form-elements__right-column_buttons-wrapper-fourth-row{
+    .form-elements__right-column-buttons-wrapper-fourth-row{
       margin-bottom: 40px;
     }
   }
   .pagination{
     margin-bottom: 230px;
-  }
-  
+  } 
 }
