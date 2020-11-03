@@ -4,40 +4,41 @@ mixin roomprice(options)
   - var roomtype=options.roomType ? options.roomType : ''
     div(class='room-price')
       div(class='room-price__wrapper')
-        div(class='room-price__room-specifications')
-          div(class='room-price__number')
-            span
-              span='№  '
-              span=options.roomNumber
-          div(class='room-price__type')=roomtype
-          div(class='room-price__price')
-            span
-              span=options.priceHeader
-              span='  в сутки'
-        div(class='room-price__dropdowns')
-          div(class='room-price__dropdown')
-            h3='прибытие'
-            +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'date',isExpanded:false})
-          div(class='room-price__dropdown')
-            h3='выезд'
-            +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'date',isExpanded:false})
-        div(class='room-price__dropdown-guests')
-          h3='гости'
-          +dropdown({placeholder:'Сколько гостей',typeDropdown:'guests',isExpanded:false})
-        div(class='room-price__start-price')
-          div=options.price
-          div=options.total
-        div(class='room-price__service-fee')
-          div
-            div=options.discount
-            div(class='room-price__extra-info')='i'
-          div=options.fee
-        div(class='room-price__service-extra-fee')
-          div
-            div='Сбор за дополнительные услуги'
-            div(class='room-price__extra-info')='i'
-          div=options.extraFee
-        div(class='room-price__total-price')
-          div='Итого'
-          div=options.totalPrice
-        +button({label:'забронировать',type:'arrow',purpose:'submit'})
+        form(action=options.action class="room-price__form")
+          div(class='room-price__room-specifications')
+            div(class='room-price__number')
+              span
+                span='№  '
+                span=options.roomNumber
+            div(class='room-price__type')=roomtype
+            div(class='room-price__price')
+              span
+                span=options.priceHeader
+                span='  в сутки'
+          div(class='room-price__dropdowns')
+            div(class='room-price__dropdown')
+              h3='прибытие'
+              +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'date',isExpanded:false})
+            div(class='room-price__dropdown')
+              h3='выезд'
+              +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'date',isExpanded:false})
+          div(class='room-price__dropdown-guests')
+            h3='гости'
+            +dropdown({placeholder:'Сколько гостей',typeDropdown:'guests',isExpanded:false})
+          div(class='room-price__start-price')
+            div=options.price
+            div=options.total
+          div(class='room-price__service-fee')
+            div
+              div=options.discount
+              div(class='room-price__extra-info')='i'
+            div=options.fee
+          div(class='room-price__service-extra-fee')
+            div
+              div='Сбор за дополнительные услуги'
+              div(class='room-price__extra-info')='i'
+            div=options.extraFee
+          div(class='room-price__total-price')
+            div='Итого'
+            div=options.totalPrice
+          +button({label:'забронировать',type:'arrow',purpose:'submit'})
