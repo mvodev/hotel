@@ -1,7 +1,7 @@
 {
-  "name": "webpack__jquery",
+  "name": "fsd-course2-project",
   "version": "1.0.0",
-  "description": "FSD education project",
+  "description": "FSD course 2 project",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
