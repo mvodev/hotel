@@ -46,7 +46,6 @@ counterBathValueIncrease.forEach(elem => elem.addEventListener("click", () =>
 ));
 //////////////////////Handlers//////////////////////////////////////////
 function dropDownRoomClickHandler(event) {
-  console.log(event.target.parentNode.parentNode);
   event.target.parentNode.parentNode.childNodes[1].classList.toggle('dropdown_active');
   if (event.target.parentNode.parentNode.childNodes[1].classList.contains('dropdown_active')) {
     event.target.parentNode.parentNode.classList.add('dropdown-input__room_rounding-corners-top');

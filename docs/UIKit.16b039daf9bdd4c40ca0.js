@@ -185,8 +185,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _src_scripts_dropDownRoom_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_src_scripts_dropDownRoom_js__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var _src_scripts_expandableCL_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../src/scripts/expandableCL.js */ "./scripts/expandableCL.js");
 /* harmony import */ var _src_scripts_expandableCL_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_src_scripts_expandableCL_js__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _src_scripts_burger__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../src/scripts/burger */ "./scripts/burger.js");
-/* harmony import */ var _src_scripts_burger__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_src_scripts_burger__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _src_pug_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../src/pug/UIKit/modules/burger/burger.js */ "./pug/UIKit/modules/burger/burger.js");
+/* harmony import */ var _src_pug_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_src_pug_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_11__);
 
 
 
@@ -253,4 +253,4 @@ $('.range-slider__input').ionRangeSlider({
 /***/ })
 
 /******/ });
-//# sourceMappingURL=UIKit.f977a766a8cd58bc91f1.js.map
+//# sourceMappingURL=UIKit.16b039daf9bdd4c40ca0.js.map

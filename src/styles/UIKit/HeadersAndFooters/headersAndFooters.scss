@@ -6,7 +6,7 @@
 @import './footerWidget.scss';
 @import './standardLoggedInNavBar.scss';
 @import './standardNavBar.scss';
-@import '../../UIKit/FormElements/burger.scss';
+@import '../../../pug//UIKit/modules/burger/burger.scss';
 
 .headers-and-footers-container {
   width: 1440px;

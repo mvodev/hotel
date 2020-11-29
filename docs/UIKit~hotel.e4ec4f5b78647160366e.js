@@ -1,20 +1,18 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["UIKit~hotel"],{
 
-/***/ "./scripts/burger.js":
-/*!***************************!*\
-  !*** ./scripts/burger.js ***!
-  \***************************/
+/***/ "./pug/UIKit/modules/burger/burger.js":
+/*!********************************************!*\
+  !*** ./pug/UIKit/modules/burger/burger.js ***!
+  \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {$(document).ready(function () {
- $('.header-login-nav__burger-input').click(function (event) {
-  $('.header-login-nav__burger-label,.header-login-nav,.header-login-nav__nav').toggleClass('active');
- });
+/* WEBPACK VAR INJECTION */(function($) {$('.header-login-nav__burger-input').click(function (event) {
+ $('.header-login-nav__burger-label,.header-login-nav,.header-login-nav__nav').toggleClass('active');
+});
 
- $('.header-login__burger-input').click(function (event) {
-  $('.header-login__burger-label,.header-login,.header-login__nav').toggleClass('active');
- });
+$('.header-login__burger-input').click(function (event) {
+ $('.header-login__burger-label,.header-login,.header-login__nav').toggleClass('active');
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
 
@@ -298,7 +296,6 @@ counterBathValueIncrease.forEach(elem => elem.addEventListener("click", () =>
 ));
 //////////////////////Handlers//////////////////////////////////////////
 function dropDownRoomClickHandler(event) {
-  console.log(event.target.parentNode.parentNode);
   event.target.parentNode.parentNode.childNodes[1].classList.toggle('dropdown_active');
   if (event.target.parentNode.parentNode.childNodes[1].classList.contains('dropdown_active')) {
     event.target.parentNode.parentNode.classList.add('dropdown-input__room_rounding-corners-top');
@@ -497,4 +494,4 @@ function rateClickListener(event) {
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~hotel.ed2a0ebb4b05d9660d7f.js.map
+//# sourceMappingURL=UIKit~hotel.e4ec4f5b78647160366e.js.map

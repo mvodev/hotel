@@ -1247,7 +1247,7 @@ p.subscribe {
   position: relative;
   width: 30px;
   height: 30px;
-  cursor: pointer;
+  cursor: default;
   display: none;
   margin-left: 10px; }
 
@@ -1416,7 +1416,7 @@ p.subscribe {
   position: relative;
   width: 30px;
   height: 30px;
-  cursor: pointer;
+  cursor: default;
   display: none;
   margin-left: 10px; }
 
@@ -1597,7 +1597,7 @@ p.subscribe {
   position: relative;
   width: 30px;
   height: 30px;
-  cursor: pointer;
+  cursor: default;
   display: none;
   margin-left: 10px; }
 
@@ -3449,4 +3449,4 @@ input:checked + .slider-round:before {
     grid-area: right; }
 
 
-/*# sourceMappingURL=UIKit.a1b7592e15bdcab8d479.css.map*/
+/*# sourceMappingURL=UIKit.2f1a540c0f052c065fd4.css.map*/

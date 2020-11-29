@@ -12,7 +12,7 @@ import 'ion-rangeslider';
 import './scripts/dropDownGuests.js';
 import './scripts/dropDownRoom.js';
 import './scripts/expandableCL.js';
-import './scripts/burger.js';
+import './pug/UIKit/modules/burger/burger.js';
 $('.dropdown-input__date_input-field').datepicker({ todayButton: true, clearButton: true });
 $('.dropdown-input__filter_input-field').datepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
 $('.range-slider__input').ionRangeSlider({
