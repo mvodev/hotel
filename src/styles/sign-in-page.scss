@@ -1,14 +1,14 @@
 @import './common/fonts.scss';
 @import './common/reset.scss';
 @import './common/constants.scss';
-@import '../styles/UIKit/Cards/signin.scss';
-@import '../styles/UIKit/FormElements/switch.scss';
+@import '../components/UIKit/modules/signin/signin.scss';
+@import '../components/UIKit/modules/switch/switch.scss';
 @import '../components/UIKit/modules/button/button.scss';
-@import '../styles/UIKit/FormElements/textField.scss';
-@import '../styles/UIKit/HeadersAndFooters/standardNavBar.scss';
-@import '../styles/UIKit/HeadersAndFooters/standardLoggedInNavBar.scss';
-@import '../styles/UIKit/HeadersAndFooters/footerCopyrightBar.scss';
-@import '../styles/UIKit/HeadersAndFooters/footerWidget.scss';
+@import '../components/UIKit/modules/textField/textField.scss';
+@import '../components/UIKit/modules/headers/standardNavBar.scss';
+@import '../components/UIKit/modules/headers/standardLoggedInNavBar.scss';
+@import '../components/UIKit/modules/footers/footerCopyrightBar.scss';
+@import '../components/UIKit/modules/footers/footerWidget.scss';
 
 .sign-in-page__wrapper{
   max-width: $container-width;

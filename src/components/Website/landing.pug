@@ -1,4 +1,4 @@
-include ../UIKit/modules/searchnumber.pug
+include ../UIKit/modules/searchnumber/searchnumber.pug
 html(lang="en")
  head
   meta(charset="UTF-8")
@@ -8,13 +8,13 @@ html(lang="en")
   title Landing page
  body.landing-wrapper
   header.header
-   include ../UIKit/modules/standardNavBar.pug
+   include ../UIKit/modules/headers/standardNavBar.pug
   div.img__wrapper
    +searchnumber({action:'#'})
    h2.img__header='Лучшие номера для вашей работы, отдыха и просто вдохновения'
   footer.footer
-   include ../UIKit/modules/footerWidget.pug
-   include ../UIKit/modules/footerCopyrightBar.pug
+   include ../UIKit/modules/footers/footerWidget.pug
+   include ../UIKit/modules/footers/footerCopyrightBar.pug
   
 
  

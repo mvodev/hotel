@@ -1,17 +1,17 @@
 @import './common/fonts.scss';
 @import './common/reset.scss';
 @import './common/constants.scss';
-@import '../styles/UIKit/HeadersAndFooters/standardLoggedInNavBar.scss';
-@import '../styles/UIKit/HeadersAndFooters/footerCopyrightBar.scss';
-@import '../styles/UIKit/HeadersAndFooters/footerWidget.scss';
+@import '../components/UIKit/modules/headers/standardLoggedInNavBar.scss';
+@import '../components/UIKit/modules/footers/footerCopyrightBar.scss';
+@import '../components/UIKit/modules/footers/footerWidget.scss';
 @import '../components/UIKit/modules/dropdown/dropDownDate.scss';
 @import '../components/UIKit/modules/dropdown/dropDownGuests.scss';
 @import '../components/UIKit/modules/dropdown/dropDownRoom.scss';
 @import '../components/UIKit/modules/list/list.scss';
-@import '../styles/UIKit/FormElements/rangeSlider.scss';
+@import '../components/UIKit/modules/rangeSlider/rangeSlider.scss';
 @import '../components/UIKit/modules/button/button.scss';
-@import '../styles/UIKit/Cards/roomcard.scss';
-@import '../styles/UIKit/FormElements/pagination.scss';
+@import '../components/UIKit/modules/roomcard/roomcard.scss';
+@import '../components/UIKit/modules/pagination/pagination.scss';
 .search-wrapper{
  max-width: $container-width;
  max-height: 1880px;

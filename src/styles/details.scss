@@ -1,10 +1,10 @@
 @import './common/fonts.scss';
 @import './common/reset.scss';
 @import './common/constants.scss';
-@import '../styles/UIKit/HeadersAndFooters/standardLoggedInNavBar.scss';
-@import '../styles/UIKit/HeadersAndFooters/footerCopyrightBar.scss';
-@import '../styles/UIKit/HeadersAndFooters/footerWidget.scss';
-@import '../styles/UIKit/Cards/roomprice.scss';
+@import '../components/UIKit/modules/headers/standardLoggedInNavBar.scss';
+@import '../components/UIKit/modules/footers/footerCopyrightBar.scss';
+@import '../components/UIKit/modules/footers/footerWidget.scss';
+@import '../components/UIKit/modules/roomprice/roomprice.scss';
 @import '../components/UIKit/modules/list/list.scss';
 @import '../components/UIKit/modules/diagram/diagram.scss';
 @import '../components/UIKit/modules/comment/comment.scss';

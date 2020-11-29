@@ -1,12 +1,12 @@
 @import './common/fonts.scss';
 @import './common/reset.scss';
 @import './common/constants.scss';
-@import '../styles/UIKit/HeadersAndFooters/standardLoggedInNavBar.scss';
-@import '../styles/UIKit/HeadersAndFooters/footerCopyrightBar.scss';
-@import '../styles/UIKit/HeadersAndFooters/footerWidget.scss';
-@import '../styles/UIKit/Cards/searchnumber.scss';
+@import '../components/UIKit/modules/headers/standardLoggedInNavBar.scss';
+@import '../components/UIKit/modules/footers/footerCopyrightBar.scss';
+@import '../components/UIKit/modules/footers/footerWidget.scss';
+@import '../components/UIKit/modules/searchnumber/searchnumber.scss';
 @import '../components/UIKit/modules/button/button.scss';
-@import '../styles/UIKit/FormElements/textField.scss';
+@import '../components/UIKit/modules/textField/textField.scss';
 @import '../components/UIKit/modules/dropdown/dropDownDate.scss';
 @import '../components/UIKit/modules/dropdown/dropDownGuests.scss';
 .landing-wrapper{

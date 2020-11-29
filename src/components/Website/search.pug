@@ -1,9 +1,9 @@
 include ../UIKit/modules/dropdown/dropdown.pug
-include ../UIKit/modules/rangeSlider.pug
+include ../UIKit/modules/rangeSlider/rangeSlider.pug
 include ../UIKit/modules/button/button.pug
 include ../UIKit/modules/list/list.pug
-include ../UIKit/modules/roomcard.pug
-include ../UIKit/modules/pagination.pug
+include ../UIKit/modules/roomcard/roomcard.pug
+include ../UIKit/modules/pagination/pagination.pug
 html(lang="en")
  head
   meta(charset="UTF-8")
@@ -13,7 +13,7 @@ html(lang="en")
   title Search page
  body.search-wrapper
   header.header
-   include ../UIKit/modules/standardNavBar.pug
+   include ../UIKit/modules/headers/standardNavBar.pug
   div.search-wrapper__content
    div.search-wrapper__content_left-column
     h2(class='search-wrapper__content_left-column-header')='ДАТЫ ПРЕБЫВАНИЯ В ОТЕЛЕ'
@@ -51,8 +51,8 @@ html(lang="en")
      +roomcard({imgSource:'room12.png',roomNumber:352,price:'5 000₽',rate:3,commentNumber:55})
     +pagination({isEllipsis:true,firstNumbers:[1,2,3],lastNumber:15,selectedPage:1,label:'1 – 12 из 100+ вариантов аренды'})
   footer.footer
-   include ../UIKit/modules/footerWidget.pug
-   include ../UIKit/modules/footerCopyrightBar.pug
+   include ../UIKit/modules/footers/footerWidget.pug
+   include ../UIKit/modules/footers/footerCopyrightBar.pug
   
 
  
