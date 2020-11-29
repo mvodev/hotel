@@ -5,9 +5,9 @@
 @import '../styles/UIKit/HeadersAndFooters/footerCopyrightBar.scss';
 @import '../styles/UIKit/HeadersAndFooters/footerWidget.scss';
 @import '../styles/UIKit/Cards/roomprice.scss';
-@import '../styles/UIKit/FormElements/list.scss';
-@import '../styles/UIKit/FormElements/diagram.scss';
-@import '../styles/UIKit/FormElements/comment.scss';
+@import '../components/UIKit/modules/list/list.scss';
+@import '../components/UIKit/modules/diagram/diagram.scss';
+@import '../components/UIKit/modules/comment/comment.scss';
 .details-wrapper{
   max-width: $container-width;
   height: 1937px;

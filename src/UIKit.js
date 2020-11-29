@@ -2,14 +2,14 @@ import './styles/UIKitStyles.scss';
 import '../node_modules/ion-rangeslider/css/ion.rangeSlider.min.css'
 import '../node_modules/air-datepicker/dist/css/datepicker.min.css';
 import '../node_modules/air-datepicker/dist/js/datepicker.js';
-import '../src/scripts/starRating.js'
-import '../src/scripts/likeRating.js'
-import 'ion-rangeslider'
+import '../src/scripts/starRating.js';
+import '../src/scripts/likeRating.js';
+import 'ion-rangeslider';
 import 'cleave.js'
-import '../src/scripts/dropDownGuests.js'
-import '../src/scripts/dropDownRoom.js'
-import '../src/scripts/expandableCL.js'
-import '../src/pug/UIKit/modules/burger/burger.js'
+import './components/UIKit/modules/dropdown/dropDownGuests';
+import './components/UIKit/modules/dropdown/dropDownRoom';
+import '../src/scripts/expandableCL.js';
+import './components/UIKit/modules/burger/burger.js';
 var cleave = new Cleave('.text-field_input-date', {
   date: true,
   delimiter: '.',

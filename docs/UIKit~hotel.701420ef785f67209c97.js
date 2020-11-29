@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["UIKit~hotel"],{
 
-/***/ "./pug/UIKit/modules/burger/burger.js":
-/*!********************************************!*\
-  !*** ./pug/UIKit/modules/burger/burger.js ***!
-  \********************************************/
+/***/ "./components/UIKit/modules/burger/burger.js":
+/*!***************************************************!*\
+  !*** ./components/UIKit/modules/burger/burger.js ***!
+  \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18,10 +18,10 @@ $('.header-login__burger-input').click(function (event) {
 
 /***/ }),
 
-/***/ "./scripts/dropDownGuests.js":
-/*!***********************************!*\
-  !*** ./scripts/dropDownGuests.js ***!
-  \***********************************/
+/***/ "./components/UIKit/modules/dropdown/dropDownGuests.js":
+/*!*************************************************************!*\
+  !*** ./components/UIKit/modules/dropdown/dropDownGuests.js ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -241,10 +241,10 @@ function counterInfant() {
 
 /***/ }),
 
-/***/ "./scripts/dropDownRoom.js":
-/*!*********************************!*\
-  !*** ./scripts/dropDownRoom.js ***!
-  \*********************************/
+/***/ "./components/UIKit/modules/dropdown/dropDownRoom.js":
+/*!***********************************************************!*\
+  !*** ./components/UIKit/modules/dropdown/dropDownRoom.js ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -494,4 +494,4 @@ function rateClickListener(event) {
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~hotel.e4ec4f5b78647160366e.js.map
+//# sourceMappingURL=UIKit~hotel.701420ef785f67209c97.js.map

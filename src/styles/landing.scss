@@ -5,10 +5,10 @@
 @import '../styles/UIKit/HeadersAndFooters/footerCopyrightBar.scss';
 @import '../styles/UIKit/HeadersAndFooters/footerWidget.scss';
 @import '../styles/UIKit/Cards/searchnumber.scss';
-@import '../pug/UIKit/modules/button/button.scss';
+@import '../components/UIKit/modules/button/button.scss';
 @import '../styles/UIKit/FormElements/textField.scss';
-@import '../styles/UIKit/FormElements/dropDownDate.scss';
-@import '../styles/UIKit/FormElements/dropDownGuests.scss';
+@import '../components/UIKit/modules/dropdown/dropDownDate.scss';
+@import '../components/UIKit/modules/dropdown/dropDownGuests.scss';
 .landing-wrapper{
  max-width: $container-width;
  max-height: 1343px;

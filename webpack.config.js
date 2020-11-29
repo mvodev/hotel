@@ -46,42 +46,42 @@ module.exports = {
   ),
   new HTMLWebpackPlugin(
    {
-    template: './pug/UIKit/UIKit.pug',
+    template: './components/UIKit/UIKit.pug',
     filename: 'UIKit.html',
     chunks: ['UIKit'],
    }
   ),
   new HTMLWebpackPlugin(
    {
-    template: './pug/Website/landing.pug',
+    template: './components/Website/landing.pug',
     chunks: ['hotel'],
     filename: 'landing.html'
    }
   ),
   new HTMLWebpackPlugin(
    {
-    template: './pug/Website/details.pug',
+    template: './components/Website/details.pug',
     chunks: ['hotel'],
     filename: 'details.html',
    }
   ),
   new HTMLWebpackPlugin(
    {
-    template: './pug/Website/search.pug',
+    template: './components/Website/search.pug',
     chunks: ['hotel'],
     filename: 'search.html'
    }
   ),
   new HTMLWebpackPlugin(
    {
-    template: './pug/Website/registration.pug',
+    template: './components/Website/registration.pug',
     chunks: ['hotel'],
     filename: 'registration.html'
    }
   ),
   new HTMLWebpackPlugin(
    {
-    template: './pug/Website/sign-in-page.pug',
+    template: './components/Website/sign-in-page.pug',
     chunks: ['hotel'],
     filename: 'sign-in.html'
    }
