@@ -15632,4 +15632,4 @@ module.exports = __webpack_amd_options__;
 /***/ })
 
 }]);
-//# sourceMappingURL=vendors~UIKit~hotel.aa8f8f7a5da903bfbdea.js.map
+//# sourceMappingURL=vendors~UIKit~hotel.38d20a410e9231d42a80.js.map

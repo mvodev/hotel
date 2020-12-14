@@ -494,4 +494,4 @@ function rateClickListener(event) {
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~hotel.701420ef785f67209c97.js.map
+//# sourceMappingURL=UIKit~hotel.78050426dbf700bc607c.js.map

@@ -335,4 +335,4 @@ $('.range-slider__input').ionRangeSlider({
 /***/ })
 
 /******/ });
-//# sourceMappingURL=hotel.5183f1e38b75e49e16b2.js.map
+//# sourceMappingURL=hotel.65c22db6757445cdf421.js.map
