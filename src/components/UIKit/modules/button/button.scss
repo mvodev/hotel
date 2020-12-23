@@ -9,17 +9,17 @@ white-space: nowrap;
 font-style: normal;
 }
 
-.button_dark{
+.button-dark{
  background: $buttonColor;
 }
 
-.button_dark50{
+.button-dark50{
  background: $buttonColor;
  opacity: 0.5;
 }
 
-.button_dark span,
-.button_dark50 span{
+.button-dark span,
+.button-dark50 span{
 font-weight: bold;
 font-size: 12px;
 line-height: 15px;
@@ -27,19 +27,19 @@ text-transform: uppercase;
 color: $white;
 }
 
-.button_white{
+.button-white{
 background: none;
 border:2px solid $purple;
 }
 
-.button_white50{
+.button-white50{
  background: none;
  border:2px solid rgba($color: $purple, $alpha: 0.5);
 }
 
-.button_white span,
-.button_white50 span,
-.button_transparent span{
+.button-white span,
+.button-white50 span,
+.button-transparent span{
 font-weight: bold;
 font-size: 12px;
 line-height: 15px;
@@ -48,8 +48,8 @@ color:$purple;
 white-space: nowrap;
 }
 
-.button_transparent,
-.button_transparent50{
+.button-transparent,
+.button-transparent50{
  border: none;
 	background: none;
 	height: 15px;
@@ -57,7 +57,7 @@ white-space: nowrap;
 	padding: 0px;
 }
 
-.button_transparent50 span{
+.button-transparent50 span{
 font-weight: bold;
 font-size: 12px;
 line-height: 15px;
@@ -65,7 +65,7 @@ text-transform: uppercase;
 color: $darkShade50;
 }
 
-.button_with-arrow{
+.button-with-arrow{
 width: 320px;
 height: 44px;
 padding: 0px;
@@ -86,7 +86,7 @@ justify-content: right;
 		padding-left: 44px;
 	}
 		
-		&_arr{
+		&__arr{
 			font-family: $font-for-icons;
 			font-weight: normal;
 			font-size: 24px;
@@ -101,7 +101,7 @@ justify-content: right;
 		}
 }
 
-.button_rate{
+.button-rate{
  height: 24px;
  width: 120px;
  background-color: transparent;
@@ -114,7 +114,7 @@ justify-content: right;
 
 }
 
-.button_rate-star{
+.button-rate-star{
  font-size: 24px;
  color: $purple;
  line-height: 20px;
@@ -126,7 +126,7 @@ justify-content: right;
  text-align: center;
 }
 
-.button_like{
+.button-like{
 		width: 40px;
 		height: 20px;
 		background: $white;
@@ -172,7 +172,7 @@ justify-content: right;
 .is-liked div:nth-child(2){
   color: $purple;
 }
-.button_check{
+.button-check{
 		width: 222px;
 		height: max-content;
 
@@ -210,13 +210,13 @@ justify-content: right;
 						border-radius: 4px;
 				}
 }
-.button_check__checkbox-input:checked+.button_check__checkbox-text:before{
+.button-check__checkbox-input:checked+.button-check__checkbox-text:before{
 background-image: url('../assets/img/svg/checkbox.svg');
 background-repeat: no-repeat;
 background-position: center;
 }
 
-.button_radio{
+.button-radio{
   height: 24px;
 		max-width: 99px;
 
@@ -264,20 +264,20 @@ background-position: center;
 				}
 }
 
-.button_radio__checkbox-input:checked + .button_radio__checkbox-text:after {
+.button-radio__checkbox-input:checked + .button-radio__checkbox-text:after {
 	opacity: 1;
 }
-.button_radio__checkbox-input:checked + .button_radio__checkbox-text {
+.button-radio__checkbox-input:checked + .button-radio__checkbox-text {
 	color: $darkShade75;
 }
-.button_radio__checkbox-input:checked+.button_radio__checkbox-text:before{
+.button-radio__checkbox-input:checked+.button-radio__checkbox-text:before{
 background: $white;
 border: 1px solid $purple;
 box-sizing: border-box;
 border-radius: 10px;
 }
 
-.button_rich{
+.button-rich{
   width: 266px;
 		height: 51px;
 
@@ -325,7 +325,7 @@ border-radius: 10px;
 				}
 }
 
-.button_rich__checkbox-input:checked+.button_rich__checkbox-header:before{
+.button-rich__checkbox-input:checked+.button-rich__checkbox-header:before{
 background-image: url('../assets/img/svg/checkbox.svg');
 background-repeat: no-repeat;
 background-position: center;
