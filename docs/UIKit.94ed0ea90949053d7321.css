@@ -2964,7 +2964,7 @@ input:checked + .slider-round:before {
   .form-elements__central-column .radio-button-wrapper {
     display: flex;
     flex-direction: row; }
-    .form-elements__central-column .radio-button-wrapper .button_radio:first-child {
+    .form-elements__central-column .radio-button-wrapper .button-radio:first-child {
       margin-right: 20px; }
   .form-elements__central-column h2:nth-child(5) {
     margin-top: 38px; }
@@ -2993,7 +2993,7 @@ input:checked + .slider-round:before {
   .form-elements__central-column h2:nth-child(13) {
     margin-top: 255px;
     margin-bottom: 17px; }
-  .form-elements__central-column .button_rich {
+  .form-elements__central-column .button-rich {
     margin-bottom: 12px; }
 
 .form-elements__right-column {
@@ -3449,4 +3449,4 @@ input:checked + .slider-round:before {
     grid-area: right; }
 
 
-/*# sourceMappingURL=UIKit.510f691f258c41d0861d.css.map*/
+/*# sourceMappingURL=UIKit.94ed0ea90949053d7321.css.map*/
