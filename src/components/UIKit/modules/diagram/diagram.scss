@@ -34,16 +34,16 @@
  left: -15px;
  border-radius: 50%;
 }
-.diagram-description__list_orange::before{
+.diagram-description_list-orange::before{
  background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
 }
-.diagram-description__list_green::before{
+.diagram-description_list-green::before{
  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
 }
-.diagram-description__list_blue::before{
+.diagram-description_list-blue::before{
  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 }
-.diagram-description__list_black::before{
+.diagram-description_list-black::before{
  background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
 }
 .diagramchart__chart-text {
@@ -60,9 +60,6 @@
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
-  // display: flex;
-  // align-items: center;
-  // text-align: center;
   color: $purple;
   transform: translateY(-5px) translateX(12px);
 }
@@ -75,8 +72,5 @@
   text-align: center;
   text-transform: uppercase;
   color: $purple;
-  // -moz-transform: translateY(0.7em);
-  // -ms-transform: translateY(0.7em);
-  // -webkit-transform: translateY(0.7em);
   transform: translateY(14px);
 }

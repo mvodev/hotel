@@ -5968,16 +5968,16 @@ p.subscribe {
   left: -15px;
   border-radius: 50%; }
 
-.diagram-description__list_orange::before {
+.diagram-description_list-orange::before {
   background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%); }
 
-.diagram-description__list_green::before {
+.diagram-description_list-green::before {
   background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%); }
 
-.diagram-description__list_blue::before {
+.diagram-description_list-blue::before {
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
 
-.diagram-description__list_black::before {
+.diagram-description_list-black::before {
   background: linear-gradient(180deg, #919191 0%, #3D4975 100%); }
 
 .diagramchart__chart-text {
@@ -7569,4 +7569,4 @@ p.subscribe {
     max-height: none; } }
 
 
-/*# sourceMappingURL=hotel.9d29690110cf4b5eb6a2.css.map*/
+/*# sourceMappingURL=hotel.510f691f258c41d0861d.css.map*/
