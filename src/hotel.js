@@ -9,12 +9,11 @@ import '../node_modules/air-datepicker/dist/js/datepicker.js';
 import './scripts/starRating.js';
 import './scripts/likeRating.js';
 import 'ion-rangeslider';
-import './components/UIKit/modules/dropdown/dropDownGuests';
-import './components/UIKit/modules/dropdown/dropDownRoom';
+import './components/UIKit/modules/dropdown/dropDownGuests.js';
+import './components/UIKit/modules/dropdown/dropDownRoom.js';
 import './scripts/expandableCL.js';
 import './components/UIKit/modules/burger/burger.js';
-//$('#d1').datepicker({ todayButton: true, clearButton: true });
-$("#d1").css("background-color:red");
+$('#d1').datepicker({ todayButton: true, clearButton: true });
 $('#d2').datepicker({ todayButton: true, clearButton: true });
 $('.dropdown-input__filter-input-field').datepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
 $('.range-slider__input').ionRangeSlider({

@@ -2,7 +2,7 @@
 const adult = counterAdult();
 const child = counterChild();
 const infant = counterInfant();
-const dropDownInputGuests = document.querySelectorAll(".dropdown-input__guests_arrow");
+const dropDownInputGuests = document.querySelectorAll(".dropdown-input__guests-arrow");
 const dropDownInputFieldGuests = document.querySelectorAll(
   ".dropdown-input__guests input"
 );
@@ -34,8 +34,10 @@ const counterInfantValueIncrease = document.querySelectorAll(
   ".dropdown-guests__infant div:nth-child(4)"
 );
 const eraseButton = document.querySelectorAll(
-  ".dropdown-guests__apply-button div:nth-child(1)"
+  ".dropdown-guests__erase-button"
 );
+
+
 const applyButton = document.querySelectorAll(
   ".dropdown-guests__apply-button div:nth-child(2)"
 );
@@ -127,7 +129,7 @@ function showResultInDropDownGuests(action) {
     }
     dropDownInputFieldGuests.forEach(elem => elem.value = result);
     dropDownResult = result;
-    if (result != "") $eraseButton.forEach(elem => elem.classList.remove("dropdown_button-hidden"));
+    if (result != "") eraseButton.forEach(elem => elem.classList.remove("dropdown_button-hidden"));
     result = "";
   } else if (action === "erase") {
     eraseResult();

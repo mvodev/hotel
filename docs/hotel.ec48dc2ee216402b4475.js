@@ -186,10 +186,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scripts_likeRating_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_scripts_likeRating_js__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ion-rangeslider */ "../node_modules/ion-rangeslider/js/ion.rangeSlider.js");
 /* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(ion_rangeslider__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _components_UIKit_modules_dropdown_dropDownGuests__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/UIKit/modules/dropdown/dropDownGuests */ "./components/UIKit/modules/dropdown/dropDownGuests.js");
-/* harmony import */ var _components_UIKit_modules_dropdown_dropDownGuests__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_dropdown_dropDownGuests__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _components_UIKit_modules_dropdown_dropDownRoom__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/UIKit/modules/dropdown/dropDownRoom */ "./components/UIKit/modules/dropdown/dropDownRoom.js");
-/* harmony import */ var _components_UIKit_modules_dropdown_dropDownRoom__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_dropdown_dropDownRoom__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _components_UIKit_modules_dropdown_dropDownGuests_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/UIKit/modules/dropdown/dropDownGuests.js */ "./components/UIKit/modules/dropdown/dropDownGuests.js");
+/* harmony import */ var _components_UIKit_modules_dropdown_dropDownGuests_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_dropdown_dropDownGuests_js__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _components_UIKit_modules_dropdown_dropDownRoom_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/UIKit/modules/dropdown/dropDownRoom.js */ "./components/UIKit/modules/dropdown/dropDownRoom.js");
+/* harmony import */ var _components_UIKit_modules_dropdown_dropDownRoom_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_dropdown_dropDownRoom_js__WEBPACK_IMPORTED_MODULE_12__);
 /* harmony import */ var _scripts_expandableCL_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./scripts/expandableCL.js */ "./scripts/expandableCL.js");
 /* harmony import */ var _scripts_expandableCL_js__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_scripts_expandableCL_js__WEBPACK_IMPORTED_MODULE_13__);
 /* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/UIKit/modules/burger/burger.js */ "./components/UIKit/modules/burger/burger.js");
@@ -209,8 +209,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-//$('#d1').datepicker({ todayButton: true, clearButton: true });
-$("#d1").css("background-color:red");
+$('#d1').datepicker({ todayButton: true, clearButton: true });
 $('#d2').datepicker({ todayButton: true, clearButton: true });
 $('.dropdown-input__filter-input-field').datepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
 $('.range-slider__input').ionRangeSlider({
@@ -337,4 +336,4 @@ $('.range-slider__input').ionRangeSlider({
 /***/ })
 
 /******/ });
-//# sourceMappingURL=hotel.6d212fee3044b773354f.js.map
+//# sourceMappingURL=hotel.ec48dc2ee216402b4475.js.map
