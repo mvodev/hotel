@@ -3,7 +3,7 @@ import './styles/registration.scss';
 import './styles/search.scss';
 import './styles/details.scss';
 import './styles/sign-in-page.scss';
-import '../node_modules/ion-rangeslider/css/ion.rangeSlider.min.css'
+import '../node_modules/ion-rangeslider/css/ion.rangeSlider.min.css';
 import '../node_modules/air-datepicker/dist/css/datepicker.min.css';
 import '../node_modules/air-datepicker/dist/js/datepicker.js';
 import './scripts/starRating.js';
@@ -13,8 +13,10 @@ import './components/UIKit/modules/dropdown/dropDownGuests';
 import './components/UIKit/modules/dropdown/dropDownRoom';
 import './scripts/expandableCL.js';
 import './components/UIKit/modules/burger/burger.js';
-$('.dropdown-input__date_input-field').datepicker({ todayButton: true, clearButton: true });
-$('.dropdown-input__filter_input-field').datepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
+//$('#d1').datepicker({ todayButton: true, clearButton: true });
+$("#d1").css("background-color:red");
+$('#d2').datepicker({ todayButton: true, clearButton: true });
+$('.dropdown-input__filter-input-field').datepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
 $('.range-slider__input').ionRangeSlider({
   type: "double",
   min: 0,

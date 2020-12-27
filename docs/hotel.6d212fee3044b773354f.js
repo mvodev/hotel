@@ -209,8 +209,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-$('.dropdown-input__date_input-field').datepicker({ todayButton: true, clearButton: true });
-$('.dropdown-input__filter_input-field').datepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
+//$('#d1').datepicker({ todayButton: true, clearButton: true });
+$("#d1").css("background-color:red");
+$('#d2').datepicker({ todayButton: true, clearButton: true });
+$('.dropdown-input__filter-input-field').datepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
 $('.range-slider__input').ionRangeSlider({
   type: "double",
   min: 0,
@@ -335,4 +337,4 @@ $('.range-slider__input').ionRangeSlider({
 /***/ })
 
 /******/ });
-//# sourceMappingURL=hotel.65c22db6757445cdf421.js.map
+//# sourceMappingURL=hotel.6d212fee3044b773354f.js.map

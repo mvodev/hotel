@@ -9,10 +9,10 @@ mixin searchnumber(options)
       div(class='search-number__dropdowns')
         div(class='search-number__dropdown')
           h3='прибытие'
-          +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'date',isExpanded:false})
+          +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'date',isExpanded:false,id:'d1'})
         div(class='search-number__dropdown')
           h3='выезд'
-          +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'date',isExpanded:false})
+          +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'date',isExpanded:false,id:'d2'})
       h3='гости'
       +dropdown({placeholder:'Сколько гостей',typeDropdown:'guests',isExpanded:false})
       +button({label:'ПОДОБРАТЬ НОМЕР',type:'arrow',purpose:'submit'})

@@ -16,7 +16,7 @@
   border-radius: 2px 2px 0px 0px;
   border: 1px solid $darkShade50;
 }
-.dropdown-input__guests__wrapper{
+.dropdown-input__guests-wrapper{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -50,7 +50,7 @@
   margin-bottom: 12px;
 }
 
-.dropdown-input__guests_arrow {
+.dropdown-input__guests-arrow {
   width: 44px;
   height: 44px;
   cursor: pointer;

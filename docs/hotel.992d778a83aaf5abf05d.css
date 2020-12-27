@@ -1130,10 +1130,9 @@ p.subscribe {
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 4px; }
-  .dropdown-input__date_input-field {
+  .dropdown-input__date-input-field {
     border: none;
     outline: none;
-    -webkit-appearance: none;
     height: 24px;
     width: 89px;
     margin-top: 11.56px;
@@ -1144,7 +1143,7 @@ p.subscribe {
     font-size: 14px;
     line-height: 24px;
     cursor: pointer; }
-  .dropdown-input__date_input-field::placeholder {
+  .dropdown-input__date-input-field::placeholder {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -1154,8 +1153,8 @@ p.subscribe {
     color: rgba(31, 32, 65, 0.75);
     margin-bottom: 12px; }
 
-.dropdown-input__date_arrow,
-.dropdown-input__filter_arrow {
+.dropdown-input__date-arrow,
+.dropdown-input__filter-arrow {
   width: 44px;
   height: 44px;
   display: flex;
@@ -1170,8 +1169,8 @@ p.subscribe {
   line-height: 24px;
   color: rgba(31, 32, 65, 0.5); }
 
-.dropdown-input__filter__wrapper,
-.dropdown-input__date__wrapper {
+.dropdown-input__filter-wrapper,
+.dropdown-input__date-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1184,7 +1183,7 @@ p.subscribe {
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 4px; }
-  .dropdown-input__filter_input-field {
+  .dropdown-input__filter-input-field {
     border: none;
     outline: none;
     -webkit-appearance: none;
@@ -1198,7 +1197,7 @@ p.subscribe {
     font-size: 14px;
     line-height: 24px;
     cursor: pointer; }
-  .dropdown-input__filter_input-field::placeholder {
+  .dropdown-input__filter-input-field::placeholder {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -1372,7 +1371,7 @@ p.subscribe {
   border-radius: 2px 2px 0px 0px;
   border: 1px solid rgba(31, 32, 65, 0.5); }
 
-.dropdown-input__guests__wrapper {
+.dropdown-input__guests-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1405,7 +1404,7 @@ p.subscribe {
   color: rgba(31, 32, 65, 0.75);
   margin-bottom: 12px; }
 
-.dropdown-input__guests_arrow {
+.dropdown-input__guests-arrow {
   width: 44px;
   height: 44px;
   cursor: pointer;
@@ -3694,10 +3693,9 @@ p.subscribe {
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 4px; }
-  .dropdown-input__date_input-field {
+  .dropdown-input__date-input-field {
     border: none;
     outline: none;
-    -webkit-appearance: none;
     height: 24px;
     width: 89px;
     margin-top: 11.56px;
@@ -3708,7 +3706,7 @@ p.subscribe {
     font-size: 14px;
     line-height: 24px;
     cursor: pointer; }
-  .dropdown-input__date_input-field::placeholder {
+  .dropdown-input__date-input-field::placeholder {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -3718,8 +3716,8 @@ p.subscribe {
     color: rgba(31, 32, 65, 0.75);
     margin-bottom: 12px; }
 
-.dropdown-input__date_arrow,
-.dropdown-input__filter_arrow {
+.dropdown-input__date-arrow,
+.dropdown-input__filter-arrow {
   width: 44px;
   height: 44px;
   display: flex;
@@ -3734,8 +3732,8 @@ p.subscribe {
   line-height: 24px;
   color: rgba(31, 32, 65, 0.5); }
 
-.dropdown-input__filter__wrapper,
-.dropdown-input__date__wrapper {
+.dropdown-input__filter-wrapper,
+.dropdown-input__date-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -3748,7 +3746,7 @@ p.subscribe {
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 4px; }
-  .dropdown-input__filter_input-field {
+  .dropdown-input__filter-input-field {
     border: none;
     outline: none;
     -webkit-appearance: none;
@@ -3762,7 +3760,7 @@ p.subscribe {
     font-size: 14px;
     line-height: 24px;
     cursor: pointer; }
-  .dropdown-input__filter_input-field::placeholder {
+  .dropdown-input__filter-input-field::placeholder {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -3936,7 +3934,7 @@ p.subscribe {
   border-radius: 2px 2px 0px 0px;
   border: 1px solid rgba(31, 32, 65, 0.5); }
 
-.dropdown-input__guests__wrapper {
+.dropdown-input__guests-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -3969,7 +3967,7 @@ p.subscribe {
   color: rgba(31, 32, 65, 0.75);
   margin-bottom: 12px; }
 
-.dropdown-input__guests_arrow {
+.dropdown-input__guests-arrow {
   width: 44px;
   height: 44px;
   cursor: pointer;
@@ -4086,12 +4084,12 @@ p.subscribe {
   flex-direction: row;
   justify-content: space-between; }
 
-.dropdown-input__room__wrapper {
+.dropdown-input__room-wrapper {
   width: 100%;
   display: flex;
   flex-direction: row; }
 
-.dropdown-input__room_arrow {
+.dropdown-input__room-arrow {
   width: 44px;
   height: 44px;
   cursor: pointer;
@@ -4111,18 +4109,7 @@ p.subscribe {
   border-radius: 4px 4px 0px 0px;
   border: 1px solid rgba(31, 32, 65, 0.5); }
 
-.dropdown-input__room_input-field::placeholder {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  width: 160px;
-  height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  margin-bottom: 12px; }
-
-.dropdown-input__room_input-field {
+.dropdown-input__room-input-field {
   border: none;
   outline: none;
   -webkit-appearance: none;
@@ -4136,6 +4123,17 @@ p.subscribe {
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75); }
+
+.dropdown-input__room-input-field::placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  width: 160px;
+  height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  margin-bottom: 12px; }
 
 .dropdown-input__img-wrapper {
   width: 44px;
@@ -6542,7 +6540,8 @@ table {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    margin-top: 30px; }
     .sign-in__wrapper .sign-in__footer .sign-in__account {
       font-family: Montserrat;
       font-style: normal;
@@ -7569,4 +7568,4 @@ p.subscribe {
     max-height: none; } }
 
 
-/*# sourceMappingURL=hotel.94ed0ea90949053d7321.css.map*/
+/*# sourceMappingURL=hotel.992d778a83aaf5abf05d.css.map*/
