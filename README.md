@@ -2,6 +2,9 @@
   ## ССылка на Github Pages
   https://mvodev.github.io/FSDCourse2/
   ## Запуск проекта
-  npm i
-  npm run build
+  npm i&npm run build
+  ## Результат сборки проекта
+  Находится в паке docs
   
+
+
