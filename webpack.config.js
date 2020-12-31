@@ -25,9 +25,12 @@ module.exports = {
  entry: {
   main: './index.js',
   UIKit: './UIKit.js',
-  hotel: './hotel.js',
   landing: './landing.js',
   details: './details.js',
+  signin: './signin.js',
+  search: './search.js',
+  registration: './registration.js',
+
  },
  output: {
   filename: '[name].[contenthash].js',
@@ -70,21 +73,21 @@ module.exports = {
   new HTMLWebpackPlugin(
    {
     template: './components/Website/search.pug',
-    chunks: ['hotel'],
+    chunks: ['search'],
     filename: 'search.html'
    }
   ),
   new HTMLWebpackPlugin(
    {
     template: './components/Website/registration.pug',
-    chunks: ['hotel'],
+    chunks: ['registration'],
     filename: 'registration.html'
    }
   ),
   new HTMLWebpackPlugin(
    {
     template: './components/Website/sign-in-page.pug',
-    chunks: ['hotel'],
+    chunks: ['signin'],
     filename: 'sign-in.html'
    }
   ),
