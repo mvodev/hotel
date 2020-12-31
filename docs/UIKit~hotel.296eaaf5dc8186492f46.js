@@ -1,23 +1,5 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["UIKit~hotel"],{
 
-/***/ "./components/UIKit/modules/burger/burger.js":
-/*!***************************************************!*\
-  !*** ./components/UIKit/modules/burger/burger.js ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function($) {$('.header-login-nav__burger-input').click(function (event) {
- $('.header-login-nav__burger-label,.header-login-nav,.header-login-nav__nav').toggleClass('active');
-});
-
-$('.header-login__burger-input').click(function (event) {
- $('.header-login__burger-label,.header-login,.header-login__nav').toggleClass('active');
-});
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
-
-/***/ }),
-
 /***/ "./components/UIKit/modules/dropdown/dropDownGuests.js":
 /*!*************************************************************!*\
   !*** ./components/UIKit/modules/dropdown/dropDownGuests.js ***!
@@ -496,4 +478,4 @@ function rateClickListener(event) {
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~hotel.3e05ab7795548efb40be.js.map
+//# sourceMappingURL=UIKit~hotel.296eaaf5dc8186492f46.js.map

@@ -1249,7 +1249,8 @@ p.subscribe {
   height: 30px;
   cursor: default;
   display: none;
-  margin-left: 10px; }
+  margin-left: 10px;
+  cursor: pointer; }
 
 @media (max-width: 1200px) {
   .header-burger {
@@ -1418,7 +1419,8 @@ p.subscribe {
   height: 30px;
   cursor: default;
   display: none;
-  margin-left: 10px; }
+  margin-left: 10px;
+  cursor: pointer; }
 
 @media (max-width: 1200px) {
   .header-burger {
@@ -1599,7 +1601,8 @@ p.subscribe {
   height: 30px;
   cursor: default;
   display: none;
-  margin-left: 10px; }
+  margin-left: 10px;
+  cursor: pointer; }
 
 @media (max-width: 1200px) {
   .header-burger {
@@ -1811,10 +1814,6 @@ p.subscribe {
     display: block; }
   .datepicker--pointer {
     display: none; }
-
-.datepickers-container {
-  width: 320px;
-  height: 369px; }
 
 .datepicker--cell.-range-from-,
 .datepicker--cell.-range-to-,
@@ -3449,4 +3448,4 @@ input:checked + .slider-round:before {
     grid-area: right; }
 
 
-/*# sourceMappingURL=UIKit.8b599b3d97503c2f82e9.css.map*/
+/*# sourceMappingURL=UIKit.e09c2c0bea40fc7ba554.css.map*/

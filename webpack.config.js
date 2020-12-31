@@ -26,6 +26,7 @@ module.exports = {
   main: './index.js',
   UIKit: './UIKit.js',
   hotel: './hotel.js',
+  landing: './landing.js',
  },
  output: {
   filename: '[name].[contenthash].js',
@@ -54,7 +55,7 @@ module.exports = {
   new HTMLWebpackPlugin(
    {
     template: './components/Website/landing.pug',
-    chunks: ['hotel'],
+    chunks: ['landing'],
     filename: 'landing.html'
    }
   ),
