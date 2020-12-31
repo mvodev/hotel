@@ -1,7 +1,8 @@
 import './styles/UIKitStyles.scss';
 import '../node_modules/ion-rangeslider/css/ion.rangeSlider.min.css'
 import '../node_modules/air-datepicker/dist/css/datepicker.min.css';
-import '../node_modules/air-datepicker/dist/js/datepicker.js';
+//import '../node_modules/air-datepicker/dist/js/datepicker.js';
+import '../src/scripts/fsdDatepicker';
 import '../src/scripts/starRating.js';
 import '../src/scripts/likeRating.js';
 import 'ion-rangeslider';
@@ -15,9 +16,9 @@ var cleave = new Cleave('.text-field_input-date', {
   delimiter: '.',
   datePattern: ['d', 'm', 'Y']
 });
-$('.dropdown-input__date-input-field').datepicker({ todayButton: true, clearButton: true });
-$('.dropdown-input__filter-input-field').datepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
-$('.cards__right-column-datepicker').datepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
+$('.dropdown-input__date-input-field').fsdDatepicker({ todayButton: true, clearButton: true });
+$('.dropdown-input__filter-input-field').fsdDatepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
+$('.cards__right-column-datepicker').fsdDatepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
 $('.range-slider__input').ionRangeSlider({
   type: "double",
   min: 0,

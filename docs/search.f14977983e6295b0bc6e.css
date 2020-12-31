@@ -766,7 +766,8 @@ p.subscribe {
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
-    cursor: pointer; }
+    cursor: pointer;
+    color: rgba(31, 32, 65, 0.75); }
   .dropdown-input__date-input-field::placeholder {
     font-family: Montserrat;
     font-style: normal;
@@ -815,14 +816,14 @@ p.subscribe {
     width: 103px;
     margin-top: 9px;
     margin-left: 14px;
-    font-family: Montserrat;
+    font-family: OpenSans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
     cursor: pointer; }
   .dropdown-input__filter-input-field::placeholder {
-    font-family: Montserrat;
+    font-family: OpenSans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -2026,4 +2027,4 @@ p.subscribe {
     justify-content: center; } }
 
 
-/*# sourceMappingURL=search.fec69cd53b10ffa6a1e8.css.map*/
+/*# sourceMappingURL=search.f14977983e6295b0bc6e.css.map*/

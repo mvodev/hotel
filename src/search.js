@@ -1,14 +1,15 @@
 import './styles/search.scss';
 import '../node_modules/ion-rangeslider/css/ion.rangeSlider.min.css';
 import '../node_modules/air-datepicker/dist/css/datepicker.min.css';
-import '../node_modules/air-datepicker/dist/js/datepicker.js';
+import '../src/scripts/fsdDatepicker';
+//import '../node_modules/air-datepicker/dist/js/datepicker.js';
 import './scripts/starRating.js';
 import 'ion-rangeslider';
 import './components/UIKit/modules/dropdown/dropDownGuests.js';
 import './components/UIKit/modules/dropdown/dropDownRoom.js';
 import './scripts/expandableCL.js';
 import './components/UIKit/modules/burger/burger.js';
-$('.dropdown-input__filter-input-field').datepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
+$('.dropdown-input__filter-input-field').fsdDatepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
 $('.range-slider__input').ionRangeSlider({
  type: "double",
  min: 0,

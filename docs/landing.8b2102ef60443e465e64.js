@@ -148,30 +148,12 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./landing.js","vendors~UIKit~details~landing~search~signin","vendors~UIKit~details~landing~search"]);
+/******/ 	deferredModules.push(["./landing.js","vendors~UIKit~details~landing~search~signin","vendors~UIKit~details~landing~search","UIKit~details~landing~search"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
 /************************************************************************/
 /******/ ({
-
-/***/ "./components/UIKit/modules/burger/burger.js":
-/*!***************************************************!*\
-  !*** ./components/UIKit/modules/burger/burger.js ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function($) {$('.header-login-nav__burger-input').on(function (event) {
- $('.header-login-nav__burger-label,.header-login-nav,.header-login-nav__nav').toggleClass('active');
-});
-
-$('.header-login__burger-input').on(function (event) {
- $('.header-login__burger-label,.header-login,.header-login__nav').toggleClass('active');
-});
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
-
-/***/ }),
 
 /***/ "./landing.js":
 /*!********************!*\
@@ -186,18 +168,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_landing_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_landing_scss__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/air-datepicker/dist/css/datepicker.min.css */ "../node_modules/air-datepicker/dist/css/datepicker.min.css");
 /* harmony import */ var _node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_air_datepicker_dist_js_datepicker_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/air-datepicker/dist/js/datepicker.js */ "../node_modules/air-datepicker/dist/js/datepicker.js");
-/* harmony import */ var _node_modules_air_datepicker_dist_js_datepicker_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_air_datepicker_dist_js_datepicker_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _src_scripts_fsdDatepicker__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../src/scripts/fsdDatepicker */ "./scripts/fsdDatepicker.js");
+/* harmony import */ var _src_scripts_fsdDatepicker__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_src_scripts_fsdDatepicker__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/UIKit/modules/burger/burger.js */ "./components/UIKit/modules/burger/burger.js");
 /* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_3__);
 
 
+//import '../node_modules/air-datepicker/dist/js/datepicker.js';
 
 
-$('dropdown-input__date-input-field').datepicker({ todayButton: true, clearButton: true });
-$('#d1').datepicker({ todayButton: true, clearButton: true });
-$('#d2').datepicker({ todayButton: true, clearButton: true });
-$('.dropdown-input__filter-input-field').datepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
+//$('dropdown-input__date-input-field').datepicker({ todayButton: true, clearButton: true });
+$('#d1').fsdDatepicker({ todayButton: true, clearButton: true });
+$('#d2').fsdDatepicker({ todayButton: true, clearButton: true });
+//$('.dropdown-input__filter-input-field').fsdDatepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
@@ -214,4 +197,4 @@ $('.dropdown-input__filter-input-field').datepicker({ todayButton: true, clearBu
 /***/ })
 
 /******/ });
-//# sourceMappingURL=landing.0102b0dcfcae608b2b4d.js.map
+//# sourceMappingURL=landing.8b2102ef60443e465e64.js.map
