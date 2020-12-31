@@ -32,10 +32,10 @@ mixin button(options)
    else if options.type=='like'
     div(class=buttonClassName)
       if options.isLiked
-        div(class='button-like-heart')='favorite'
+        div(class='button-like__heart')='favorite'
         div=options.likeNumber
       else 
-        div(class='button-like-heart')='favorite_border'
+        div(class='button-like__heart')='favorite_border'
         div=options.likeNumber
    else if options.type=='check'
     div(class=buttonClassName)

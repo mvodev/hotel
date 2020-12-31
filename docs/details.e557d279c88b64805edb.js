@@ -451,19 +451,20 @@ function expandableListHandler(event) {
 const likeButtons = document.querySelectorAll('.button-like');
 likeButtons.forEach(elem => elem.addEventListener('click', likeClickListener));
 function likeClickListener(event) {
- if (event.target.className === '') {
-  if (event.target.parentElement.classList.contains('button-like_is-liked')) {
-   event.target.innerText--;
-   event.target.parentElement.childNodes[0].innerText = 'favorite_border';
-   event.target.parentElement.classList.remove('is-liked');
-  }
-  else {
-   event.target.innerText++;
-   event.target.parentElement.classList.add('button-like_is-liked');
-   event.target.parentElement.childNodes[0].innerText = 'favorite';
-  }
- }
- else if (event.target.className == 'button-like-heart') {
+ // if (event.target.className === '') {
+ //  console.log('likeButtons handler if '+event.target);
+ //  if (event.target.parentElement.classList.contains('button-like_is-liked')) {
+ //   event.target.innerText--;
+ //   event.target.parentElement.childNodes[0].innerText = 'favorite_border';
+ //   event.target.parentElement.classList.remove('is-liked');
+ //  }
+ //  else {
+ //   event.target.innerText++;
+ //   event.target.parentElement.classList.add('button-like_is-liked');
+ //   event.target.parentElement.childNodes[0].innerText = 'favorite';
+ //  }
+ // }
+ if (event.target.className == 'button-like__heart') {
   if (event.target.parentElement.classList.contains('button-like_is-liked')) {
    event.target.parentElement.childNodes[1].innerText--;
    event.target.parentElement.childNodes[0].innerText = 'favorite_border';
@@ -491,4 +492,4 @@ function likeClickListener(event) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=details.c09d8815ec5c496f4d05.js.map
+//# sourceMappingURL=details.e557d279c88b64805edb.js.map
