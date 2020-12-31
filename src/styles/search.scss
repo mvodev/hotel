@@ -34,6 +34,9 @@
   grid-area: left;
   display: flex;
   flex-direction: column;
+  .dropdown-input__guests{
+    width: 266px;
+  }
   .search-wrapper__content_left-column-header{
     font-weight: bold;
     font-size: 12px;

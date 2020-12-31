@@ -3346,6 +3346,8 @@ p.subscribe {
     grid-area: left;
     display: flex;
     flex-direction: column; }
+    .search-wrapper .search-wrapper__content_left-column .dropdown-input__guests {
+      width: 266px; }
     .search-wrapper .search-wrapper__content_left-column .search-wrapper__content_left-column-header {
       font-weight: bold;
       font-size: 12px;
@@ -4813,4 +4815,4 @@ p.subscribe {
     max-height: none; } }
 
 
-/*# sourceMappingURL=hotel.bf134c037120a9dd792f.css.map*/
+/*# sourceMappingURL=hotel.11e4d4a492072bda8c1d.css.map*/
