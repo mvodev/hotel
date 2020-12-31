@@ -155,6 +155,32 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./components/UIKit/modules/button/likeRating.js":
+/*!*******************************************************!*\
+  !*** ./components/UIKit/modules/button/likeRating.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+const likeButtons = document.querySelectorAll('.button-like');
+likeButtons.forEach(elem => elem.addEventListener('click', likeClickListener));
+function likeClickListener(event) {
+ if (event.target.className == 'button-like__heart') {
+  if (event.target.parentElement.classList.contains('button-like_is-liked')) {
+   event.target.parentElement.childNodes[1].innerText--;
+   event.target.parentElement.childNodes[0].innerText = 'favorite_border';
+   event.target.parentElement.classList.remove('button-like_is-liked');
+  }
+  else {
+   event.target.parentElement.childNodes[1].innerText++;
+   event.target.parentElement.classList.add('button-like_is-liked');
+   event.target.parentElement.childNodes[0].innerText = 'favorite';
+  }
+ }
+}
+
+/***/ }),
+
 /***/ "./components/UIKit/modules/dropdown/dropDownGuests.js":
 /*!*************************************************************!*\
   !*** ./components/UIKit/modules/dropdown/dropDownGuests.js ***!
@@ -380,50 +406,10 @@ function counterInfant() {
 
 /***/ }),
 
-/***/ "./details.js":
-/*!********************!*\
-  !*** ./details.js ***!
-  \********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _styles_details_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/details.scss */ "./styles/details.scss");
-/* harmony import */ var _styles_details_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_details_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _scripts_likeRating_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scripts/likeRating.js */ "./scripts/likeRating.js");
-/* harmony import */ var _scripts_likeRating_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_scripts_likeRating_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_ion_rangeslider_css_ion_rangeSlider_min_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/ion-rangeslider/css/ion.rangeSlider.min.css */ "../node_modules/ion-rangeslider/css/ion.rangeSlider.min.css");
-/* harmony import */ var _node_modules_ion_rangeslider_css_ion_rangeSlider_min_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_ion_rangeslider_css_ion_rangeSlider_min_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../node_modules/air-datepicker/dist/css/datepicker.min.css */ "../node_modules/air-datepicker/dist/css/datepicker.min.css");
-/* harmony import */ var _node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _src_scripts_fsdDatepicker__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../src/scripts/fsdDatepicker */ "./scripts/fsdDatepicker.js");
-/* harmony import */ var _src_scripts_fsdDatepicker__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_src_scripts_fsdDatepicker__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _components_UIKit_modules_dropdown_dropDownGuests__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/UIKit/modules/dropdown/dropDownGuests */ "./components/UIKit/modules/dropdown/dropDownGuests.js");
-/* harmony import */ var _components_UIKit_modules_dropdown_dropDownGuests__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_dropdown_dropDownGuests__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _scripts_expandableCL_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./scripts/expandableCL.js */ "./scripts/expandableCL.js");
-/* harmony import */ var _scripts_expandableCL_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_scripts_expandableCL_js__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/UIKit/modules/burger/burger.js */ "./components/UIKit/modules/burger/burger.js");
-/* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_7__);
-
-
-
-
-//import '../node_modules/air-datepicker/dist/js/datepicker.js';
-
-
-
-
-$('#d3').fsdDatepicker({ todayButton: true, clearButton: true });
-$('#d4').fsdDatepicker({ todayButton: true, clearButton: true });
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
-
-/***/ }),
-
-/***/ "./scripts/expandableCL.js":
-/*!*********************************!*\
-  !*** ./scripts/expandableCL.js ***!
-  \*********************************/
+/***/ "./components/UIKit/modules/list/expandableCL.js":
+/*!*******************************************************!*\
+  !*** ./components/UIKit/modules/list/expandableCL.js ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -441,42 +427,43 @@ function expandableListHandler(event) {
 
 /***/ }),
 
-/***/ "./scripts/likeRating.js":
-/*!*******************************!*\
-  !*** ./scripts/likeRating.js ***!
-  \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "./details.js":
+/*!********************!*\
+  !*** ./details.js ***!
+  \********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-const likeButtons = document.querySelectorAll('.button-like');
-likeButtons.forEach(elem => elem.addEventListener('click', likeClickListener));
-function likeClickListener(event) {
- // if (event.target.className === '') {
- //  console.log('likeButtons handler if '+event.target);
- //  if (event.target.parentElement.classList.contains('button-like_is-liked')) {
- //   event.target.innerText--;
- //   event.target.parentElement.childNodes[0].innerText = 'favorite_border';
- //   event.target.parentElement.classList.remove('is-liked');
- //  }
- //  else {
- //   event.target.innerText++;
- //   event.target.parentElement.classList.add('button-like_is-liked');
- //   event.target.parentElement.childNodes[0].innerText = 'favorite';
- //  }
- // }
- if (event.target.className == 'button-like__heart') {
-  if (event.target.parentElement.classList.contains('button-like_is-liked')) {
-   event.target.parentElement.childNodes[1].innerText--;
-   event.target.parentElement.childNodes[0].innerText = 'favorite_border';
-   event.target.parentElement.classList.remove('button-like_is-liked');
-  }
-  else {
-   event.target.parentElement.childNodes[1].innerText++;
-   event.target.parentElement.classList.add('button-like_is-liked');
-   event.target.parentElement.childNodes[0].innerText = 'favorite';
-  }
- }
-}
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _styles_details_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/details.scss */ "./styles/details.scss");
+/* harmony import */ var _styles_details_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_details_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_UIKit_modules_button_likeRating_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/UIKit/modules/button/likeRating.js */ "./components/UIKit/modules/button/likeRating.js");
+/* harmony import */ var _components_UIKit_modules_button_likeRating_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_button_likeRating_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_ion_rangeslider_css_ion_rangeSlider_min_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/ion-rangeslider/css/ion.rangeSlider.min.css */ "../node_modules/ion-rangeslider/css/ion.rangeSlider.min.css");
+/* harmony import */ var _node_modules_ion_rangeslider_css_ion_rangeSlider_min_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_ion_rangeslider_css_ion_rangeSlider_min_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../node_modules/air-datepicker/dist/css/datepicker.min.css */ "../node_modules/air-datepicker/dist/css/datepicker.min.css");
+/* harmony import */ var _node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _src_scripts_fsdDatepicker__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../src/scripts/fsdDatepicker */ "./scripts/fsdDatepicker.js");
+/* harmony import */ var _src_scripts_fsdDatepicker__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_src_scripts_fsdDatepicker__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_UIKit_modules_dropdown_dropDownGuests__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/UIKit/modules/dropdown/dropDownGuests */ "./components/UIKit/modules/dropdown/dropDownGuests.js");
+/* harmony import */ var _components_UIKit_modules_dropdown_dropDownGuests__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_dropdown_dropDownGuests__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_UIKit_modules_list_expandableCL_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/UIKit/modules/list/expandableCL.js */ "./components/UIKit/modules/list/expandableCL.js");
+/* harmony import */ var _components_UIKit_modules_list_expandableCL_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_list_expandableCL_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/UIKit/modules/burger/burger.js */ "./components/UIKit/modules/burger/burger.js");
+/* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_7__);
+
+
+
+
+//import '../node_modules/air-datepicker/dist/js/datepicker.js';
+
+
+
+
+$('#d3').fsdDatepicker({ todayButton: true, clearButton: true });
+$('#d4').fsdDatepicker({ todayButton: true, clearButton: true });
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 
@@ -492,4 +479,4 @@ function likeClickListener(event) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=details.e557d279c88b64805edb.js.map
+//# sourceMappingURL=details.ca97ebb5563612f45b8a.js.map

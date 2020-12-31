@@ -395,10 +395,10 @@ function showResultInDropDown() {
 
 /***/ }),
 
-/***/ "./scripts/expandableCL.js":
-/*!*********************************!*\
-  !*** ./scripts/expandableCL.js ***!
-  \*********************************/
+/***/ "./components/UIKit/modules/list/expandableCL.js":
+/*!*******************************************************!*\
+  !*** ./components/UIKit/modules/list/expandableCL.js ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -440,4 +440,4 @@ function rateClickListener(event) {
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~search.79ca003f302e82a6501f.js.map
+//# sourceMappingURL=UIKit~search.7a0fcc0151db563fc4c5.js.map
