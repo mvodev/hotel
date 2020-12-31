@@ -15,7 +15,7 @@ mixin signup(options)
     +textfield({isMasked:true,placeholder:'ДД.ММ.ГГГГ'})
     h3='Данные для входа в сервис'
     +textfield({isDefault:true,placeholder:'Email'})
-    +textfield({isDefault:true,placeholder:'Пароль'})
+    +textfield({isDefault:true,placeholder:'Пароль',type:'password'})
     +toggle({labels:[{name:'Получать спецпредложения',  isPositive:false}]})
     +button({label:'ПЕРЕЙТИ К ОПЛАТЕ',type:'arrow',purpose:'submit'})
     div(class='sign-up__footer')

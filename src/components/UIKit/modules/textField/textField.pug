@@ -13,7 +13,7 @@ mixin textfield(options)
   inputType+=options.isSubscription ? 'email' : ''
  div(class = textfieldClassName)
   div(class='text-field__input-wrapper')
-    input(type=inputType placeholder=options.placeholder class=inputClassName)
+    input(type=options.type placeholder=options.placeholder class=inputClassName)
     if options.isSubscription
       div(class='text-field__input-wrapper_arrow')='arrow_forward'
     
