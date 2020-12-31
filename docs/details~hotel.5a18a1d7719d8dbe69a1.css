@@ -1763,6 +1763,72 @@ p.subscribe {
   margin-top: 27px;
   margin-bottom: 0px; }
 
+.text-field {
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  height: 44px;
+  width: 320px; }
+
+.text-field__input-wrapper {
+  display: flex;
+  flex-direction: row; }
+
+.text-field label {
+  white-space: nowrap;
+  height: 15px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+  margin-bottom: 5px; }
+
+.text-field input {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  width: 320px;
+  height: 44px;
+  border: none;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding-left: 15px;
+  padding-top: 13px;
+  padding-bottom: 13px; }
+
+.text-field_focused input {
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  background: transparent;
+  border-color: rgba(31, 32, 65, 0.5); }
+
+.text-field_subscription {
+  width: 266px;
+  height: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px; }
+  .text-field_subscription .text-field__input-wrapper input {
+    width: 223px; }
+
+.text-field__input-wrapper_arrow {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  color: #BC9CFF; }
+
 .details-wrapper {
   max-width: 1440px;
   height: 1937px;
@@ -1890,4 +1956,4 @@ p.subscribe {
     justify-content: center; } }
 
 
-/*# sourceMappingURL=details~hotel.11e4d4a492072bda8c1d.css.map*/
+/*# sourceMappingURL=details~hotel.5a18a1d7719d8dbe69a1.css.map*/

@@ -416,44 +416,6 @@ $('.range-slider__input').ionRangeSlider({
 
 /***/ }),
 
-/***/ "./scripts/likeRating.js":
-/*!*******************************!*\
-  !*** ./scripts/likeRating.js ***!
-  \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-const likeButtons = document.querySelectorAll('.button-like');
-likeButtons.forEach(elem => elem.addEventListener('click', likeClickListener));
-function likeClickListener(event) {
- if (event.target.className === '') {
-  if (event.target.parentElement.classList.contains('button-like_is-liked')) {
-   event.target.innerText--;
-   event.target.parentElement.childNodes[0].innerText = 'favorite_border';
-   event.target.parentElement.classList.remove('is-liked');
-  }
-  else {
-   event.target.innerText++;
-   event.target.parentElement.classList.add('button-like_is-liked');
-   event.target.parentElement.childNodes[0].innerText = 'favorite';
-  }
- }
- else if (event.target.className == 'button-like-heart') {
-  if (event.target.parentElement.classList.contains('button-like_is-liked')) {
-   event.target.parentElement.childNodes[1].innerText--;
-   event.target.parentElement.childNodes[0].innerText = 'favorite_border';
-   event.target.parentElement.classList.remove('button-like_is-liked');
-  }
-  else {
-   event.target.parentElement.childNodes[1].innerText++;
-   event.target.parentElement.classList.add('button-like_is-liked');
-   event.target.parentElement.childNodes[0].innerText = 'favorite';
-  }
- }
-}
-
-/***/ }),
-
 /***/ "./scripts/starRating.js":
 /*!*******************************!*\
   !*** ./scripts/starRating.js ***!
@@ -511,4 +473,4 @@ function rateClickListener(event) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=hotel.35a5dc8d5de251c933d0.js.map
+//# sourceMappingURL=hotel.e9ea64fd05404ccfe195.js.map
