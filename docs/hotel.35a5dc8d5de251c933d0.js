@@ -148,12 +148,182 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./hotel.js","vendors~UIKit~hotel~landing","vendors~UIKit~hotel","hotel~landing","UIKit~hotel"]);
+/******/ 	deferredModules.push(["./hotel.js","vendors~UIKit~details~hotel~landing","vendors~UIKit~details~hotel","vendors~UIKit~hotel","details~hotel","hotel~landing"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "./components/UIKit/modules/dropdown/dropDownRoom.js":
+/*!***********************************************************!*\
+  !*** ./components/UIKit/modules/dropdown/dropDownRoom.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+///////////////////////Constants////////////////////////////////////////////
+const bed = counterBed();
+const bath = counterBath();
+const bedRoom = counterBedRoom();
+const dropDownInputRoom = document.querySelectorAll(".dropdown-input__room");
+const dropDownInputFieldRoom = document.querySelectorAll(
+  ".dropdown-input__room input");
+const counterBadRoomValueTag = document.querySelectorAll(
+  ".dropdown-room__bedroom div:nth-child(3)");
+const counterBadRoomValueDecrease = document.querySelectorAll(
+  ".dropdown-room__bedroom div:nth-child(2)");
+const counterBadRoomValueIncrease = document.querySelectorAll(
+  ".dropdown-room__bedroom div:nth-child(4)");
+const counterBadValueTag = document.querySelectorAll(
+  ".dropdown-room__bed div:nth-child(3)");
+const counterBadValueDecreaseTag = document.querySelectorAll(
+  ".dropdown-room__bed div:nth-child(2)");
+const counterBadValueIncreaseTag = document.querySelectorAll(
+  ".dropdown-room__bed div:nth-child(4)");
+const counterBathValueTag = document.querySelectorAll(
+  ".dropdown-room__bath div:nth-child(3)");
+const counterBathValueDecrease = document.querySelectorAll(
+  ".dropdown-room__bath div:nth-child(2)");
+const counterBathValueIncrease = document.querySelectorAll(
+  ".dropdown-room__bath div:nth-child(4)");
+
+/////////////////////////Listeners//////////////////////////////////////////////
+dropDownInputRoom.forEach(elem => elem.addEventListener("click", dropDownRoomClickHandler));
+counterBadRoomValueIncrease.forEach(elem => elem.addEventListener("click", () =>
+  changeCounter("increase", "badroom")
+));
+counterBadRoomValueDecrease.forEach(elem => elem.addEventListener("click", () =>
+  changeCounter("decrease", "badroom")
+));
+counterBadValueDecreaseTag.forEach(elem => elem.addEventListener("click", () =>
+  changeCounter("decrease", "bad")
+));
+counterBadValueIncreaseTag.forEach(elem => elem.addEventListener("click", () =>
+  changeCounter("increase", "bad")
+));
+counterBathValueDecrease.forEach(elem => elem.addEventListener("click", () =>
+  changeCounter("decrease", "bath")
+));
+counterBathValueIncrease.forEach(elem => elem.addEventListener("click", () =>
+  changeCounter("increase", "bath")
+));
+//////////////////////Handlers//////////////////////////////////////////
+function dropDownRoomClickHandler(event) {
+  event.target.parentNode.parentNode.childNodes[1].classList.toggle('dropdown_active');
+  if (event.target.parentNode.parentNode.childNodes[1].classList.contains('dropdown_active')) {
+    event.target.parentNode.parentNode.classList.add('dropdown-input__room_rounding-corners-top');
+  }
+  else {
+    event.target.parentNode.parentNode.classList.remove('dropdown-input__room_rounding-corners-top');
+  }
+  showResultInDropDown();
+}
+function counterBedRoom() {
+  let privateCounter = 2;
+  return {
+    increase: function () {
+      privateCounter++;
+      counterBadRoomValueTag.forEach(elem => elem.innerText++);
+    },
+    decrease: function () {
+      if (privateCounter > 0) {
+        privateCounter--;
+        counterBadRoomValueTag.forEach(elem => elem.innerText--);
+      }
+    },
+    getCounter: function () {
+      return privateCounter;
+    }
+  };
+}
+function counterBed() {
+  let privateCounter = 2;
+  return {
+    increase: function () {
+      privateCounter++;
+      counterBadValueTag.forEach(elem => elem.innerText++);
+    },
+    decrease: function () {
+      if (privateCounter > 0) {
+        privateCounter--;
+        counterBadValueTag.forEach(elem => elem.innerText--);
+      }
+    },
+    getCounter: function () {
+      return privateCounter;
+    }
+  };
+}
+function counterBath() {
+  let privateCounter = 0;
+  return {
+    increase: function () {
+      privateCounter++;
+      counterBathValueTag.forEach(elem => elem.innerText++);
+    },
+    decrease: function () {
+      if (privateCounter > 0) {
+        privateCounter--;
+        counterBathValueTag.forEach(elem => elem.innerText--);
+      }
+    },
+    getCounter: function () {
+      return privateCounter;
+    }
+  };
+}
+function changeCounter(howChange, changeTarget) {
+  if (changeTarget === "badroom") {
+    if (howChange === "increase") {
+      bedRoom.increase();
+    } else {
+      if (bedRoom.getCounter() > 0) {
+        bedRoom.decrease();
+        console.log();
+      }
+    }
+  } else if (changeTarget === "bad") {
+    if (howChange === "increase") {
+      bed.increase();
+    } else {
+      if (bed.getCounter() > 0) {
+        bed.decrease();
+      }
+    }
+  } else {
+    if (howChange === "increase") {
+      bath.increase();
+    } else {
+      if (bath.getCounter() > 0) {
+        bath.decrease();
+      }
+    }
+  }
+  showResultInDropDown();
+}
+function showResultInDropDown() {
+  let result = "";
+  if (bedRoom.getCounter() === 1) {
+    result += bedRoom.getCounter() + " спальня ";
+  } else if (bedRoom.getCounter() > 1) {
+    result += bedRoom.getCounter() + " спальни ";
+  }
+  if (bed.getCounter() === 1) {
+    result += bed.getCounter() + " кровать ";
+  } else if (bed.getCounter() > 1) {
+    result += bed.getCounter() + " кровати ";
+  }
+  if (bath.getCounter() === 1) {
+    result += bath.getCounter() + " ванная ";
+  } else if (bath.getCounter() > 1) {
+    result += bath.getCounter() + " ванных ";
+  }
+  dropDownInputFieldRoom.forEach(elem => elem.value = result);
+}
+
+
+/***/ }),
 
 /***/ "./hotel.js":
 /*!******************!*\
@@ -246,14 +416,64 @@ $('.range-slider__input').ionRangeSlider({
 
 /***/ }),
 
-/***/ "./styles/details.scss":
-/*!*****************************!*\
-  !*** ./styles/details.scss ***!
-  \*****************************/
+/***/ "./scripts/likeRating.js":
+/*!*******************************!*\
+  !*** ./scripts/likeRating.js ***!
+  \*******************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-// extracted by mini-css-extract-plugin
+const likeButtons = document.querySelectorAll('.button-like');
+likeButtons.forEach(elem => elem.addEventListener('click', likeClickListener));
+function likeClickListener(event) {
+ if (event.target.className === '') {
+  if (event.target.parentElement.classList.contains('button-like_is-liked')) {
+   event.target.innerText--;
+   event.target.parentElement.childNodes[0].innerText = 'favorite_border';
+   event.target.parentElement.classList.remove('is-liked');
+  }
+  else {
+   event.target.innerText++;
+   event.target.parentElement.classList.add('button-like_is-liked');
+   event.target.parentElement.childNodes[0].innerText = 'favorite';
+  }
+ }
+ else if (event.target.className == 'button-like-heart') {
+  if (event.target.parentElement.classList.contains('button-like_is-liked')) {
+   event.target.parentElement.childNodes[1].innerText--;
+   event.target.parentElement.childNodes[0].innerText = 'favorite_border';
+   event.target.parentElement.classList.remove('button-like_is-liked');
+  }
+  else {
+   event.target.parentElement.childNodes[1].innerText++;
+   event.target.parentElement.classList.add('button-like_is-liked');
+   event.target.parentElement.childNodes[0].innerText = 'favorite';
+  }
+ }
+}
+
+/***/ }),
+
+/***/ "./scripts/starRating.js":
+/*!*******************************!*\
+  !*** ./scripts/starRating.js ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+const rateButton = document.querySelectorAll('.button-rate label');
+rateButton.forEach(elem => elem.addEventListener('click', rateClickListener)
+);
+function rateClickListener(event) {
+ let rateNumber = event.target.title.charAt(0);
+ let stars = event.target.parentNode.childNodes;
+ for (let i = 0; i < rateNumber; i++) {
+  stars[i * 2 + 1].innerHTML = 'star';
+ }
+ for (let i = rateNumber; i < 5; i++) {
+  stars[i * 2 + 1].innerHTML = 'star_border';
+ }
+}
 
 /***/ }),
 
@@ -291,4 +511,4 @@ $('.range-slider__input').ionRangeSlider({
 /***/ })
 
 /******/ });
-//# sourceMappingURL=hotel.bb4f2b4508b78dabe2a3.js.map
+//# sourceMappingURL=hotel.35a5dc8d5de251c933d0.js.map

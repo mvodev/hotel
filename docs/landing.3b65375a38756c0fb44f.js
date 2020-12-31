@@ -148,12 +148,30 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./landing.js","vendors~UIKit~hotel~landing","hotel~landing"]);
+/******/ 	deferredModules.push(["./landing.js","vendors~UIKit~details~hotel~landing","hotel~landing"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "./components/UIKit/modules/burger/burger.js":
+/*!***************************************************!*\
+  !*** ./components/UIKit/modules/burger/burger.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {$('.header-login-nav__burger-input').on(function (event) {
+ $('.header-login-nav__burger-label,.header-login-nav,.header-login-nav__nav').toggleClass('active');
+});
+
+$('.header-login__burger-input').on(function (event) {
+ $('.header-login__burger-label,.header-login,.header-login__nav').toggleClass('active');
+});
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
 
 /***/ "./landing.js":
 /*!********************!*\
@@ -185,4 +203,4 @@ $('.dropdown-input__filter-input-field').datepicker({ todayButton: true, clearBu
 /***/ })
 
 /******/ });
-//# sourceMappingURL=landing.488439283db48e071af6.js.map
+//# sourceMappingURL=landing.3b65375a38756c0fb44f.js.map

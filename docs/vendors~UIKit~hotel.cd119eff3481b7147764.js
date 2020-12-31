@@ -1,16 +1,5 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["vendors~UIKit~hotel"],{
 
-/***/ "../node_modules/ion-rangeslider/css/ion.rangeSlider.min.css":
-/*!*******************************************************************!*\
-  !*** ../node_modules/ion-rangeslider/css/ion.rangeSlider.min.css ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-
 /***/ "../node_modules/ion-rangeslider/js/ion.rangeSlider.js":
 /*!*************************************************************!*\
   !*** ../node_modules/ion-rangeslider/js/ion.rangeSlider.js ***!
@@ -2488,4 +2477,4 @@ module.exports = __webpack_amd_options__;
 /***/ })
 
 }]);
-//# sourceMappingURL=vendors~UIKit~hotel.ceae2c82fbb1d7135feb.js.map
+//# sourceMappingURL=vendors~UIKit~hotel.cd119eff3481b7147764.js.map

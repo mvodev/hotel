@@ -18,10 +18,10 @@ mixin roomprice(options)
           div(class='room-price__dropdowns')
             div(class='room-price__dropdown')
               h3='прибытие'
-              +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'date',isExpanded:false})
+              +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'date',isExpanded:false,id:'d3'})
             div(class='room-price__dropdown')
               h3='выезд'
-              +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'date',isExpanded:false})
+              +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'date',isExpanded:false,id:'d4'})
           div(class='room-price__dropdown-guests')
             h3='гости'
             +dropdown({placeholder:'Сколько гостей',typeDropdown:'guests',isExpanded:false})
