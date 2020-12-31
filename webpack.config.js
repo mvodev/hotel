@@ -65,7 +65,7 @@ module.exports = {
   ),
   new HTMLWebpackPlugin(
    {
-    template: './components/Website/details/details.pug',
+    template: './components/Website/details.pug',
     chunks: ['details'],
     filename: 'details.html',
    }
