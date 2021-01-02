@@ -162,13 +162,13 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {$('.header-login-nav__burger-input').on(function (event) {
- $('.header-login-nav__burger-label,.header-login-nav,.header-login-nav__nav').toggleClass('active');
+/* WEBPACK VAR INJECTION */(function($) {$('.js-header-burger__input').on(function (event) {
+ $('.header-burger__label,.header-login-nav,.header-login-nav__nav,.header-login,.header-login__nav').toggleClass('active');
 });
 
-$('.header-login__burger-input').on(function (event) {
- $('.header-login__burger-label,.header-login,.header-login__nav').toggleClass('active');
-});
+// $('.header-login__burger-input').on(function (event) {
+//  $('.header-login__burger-label,.header-login,.header-login__nav').toggleClass('active');
+// });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
@@ -204,4 +204,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 /******/ });
-//# sourceMappingURL=signin.8e6dcb0c65b2daa33fdf.js.map
+//# sourceMappingURL=signin.0c40192df8c1ef707fae.js.map

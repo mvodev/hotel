@@ -7,13 +7,13 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {$('.header-login-nav__burger-input').on(function (event) {
- $('.header-login-nav__burger-label,.header-login-nav,.header-login-nav__nav').toggleClass('active');
+/* WEBPACK VAR INJECTION */(function($) {$('.js-header-burger__input').on(function (event) {
+ $('.header-burger__label,.header-login-nav,.header-login-nav__nav,.header-login,.header-login__nav').toggleClass('active');
 });
 
-$('.header-login__burger-input').on(function (event) {
- $('.header-login__burger-label,.header-login,.header-login__nav').toggleClass('active');
-});
+// $('.header-login__burger-input').on(function (event) {
+//  $('.header-login__burger-label,.header-login,.header-login__nav').toggleClass('active');
+// });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
@@ -2491,4 +2491,4 @@ function counterInfant() {
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.0e5a3be14f9008391c68.js.map
+//# sourceMappingURL=UIKit~details~landing~search.dd38163aef8b88871158.js.map
