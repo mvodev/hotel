@@ -57,7 +57,7 @@
 /******/ 	// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 	// Promise = chunk loading, 0 = chunk loaded
 /******/ 	var installedChunks = {
-/******/ 		"landing": 0
+/******/ 		"signin": 0
 /******/ 	};
 /******/
 /******/ 	var deferredModules = [];
@@ -148,44 +148,54 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./landing.js","vendors~UIKit~details~landing~search~signin","UIKit~details~landing~search"]);
+/******/ 	deferredModules.push(["./signin.js","vendors~UIKit~details~landing~search~signin"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./landing.js":
-/*!********************!*\
-  !*** ./landing.js ***!
-  \********************/
+/***/ "./components/UIKit/modules/burger/burger.js":
+/*!***************************************************!*\
+  !*** ./components/UIKit/modules/burger/burger.js ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function($) {$('.header-login-nav__burger-input').on(function (event) {
+ $('.header-login-nav__burger-label,.header-login-nav,.header-login-nav__nav').toggleClass('active');
+});
+
+$('.header-login__burger-input').on(function (event) {
+ $('.header-login__burger-label,.header-login,.header-login__nav').toggleClass('active');
+});
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./signin.js":
+/*!*******************!*\
+  !*** ./signin.js ***!
+  \*******************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _styles_landing_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/landing.scss */ "./styles/landing.scss");
-/* harmony import */ var _styles_landing_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_landing_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_UIKit_modules_dropdown_fsdDatepicker_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/UIKit/modules/dropdown/fsdDatepicker.js */ "./components/UIKit/modules/dropdown/fsdDatepicker.js");
-/* harmony import */ var _components_UIKit_modules_dropdown_fsdDatepicker_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_dropdown_fsdDatepicker_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/UIKit/modules/burger/burger.js */ "./components/UIKit/modules/burger/burger.js");
-/* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_UIKit_modules_dropdown_dropDownGuests_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/UIKit/modules/dropdown/dropDownGuests.js */ "./components/UIKit/modules/dropdown/dropDownGuests.js");
-/* harmony import */ var _components_UIKit_modules_dropdown_dropDownGuests_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_dropdown_dropDownGuests_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _styles_sign_in_page_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/sign-in-page.scss */ "./styles/sign-in-page.scss");
+/* harmony import */ var _styles_sign_in_page_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_sign_in_page_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/UIKit/modules/burger/burger.js */ "./components/UIKit/modules/burger/burger.js");
+/* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_1__);
 
 
 
-
-$('#d1').fsdDatepicker({ todayButton: true, clearButton: true });
-$('#d2').fsdDatepicker({ todayButton: true, clearButton: true });
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 
-/***/ "./styles/landing.scss":
-/*!*****************************!*\
-  !*** ./styles/landing.scss ***!
-  \*****************************/
+/***/ "./styles/sign-in-page.scss":
+/*!**********************************!*\
+  !*** ./styles/sign-in-page.scss ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -194,4 +204,4 @@ $('#d2').fsdDatepicker({ todayButton: true, clearButton: true });
 /***/ })
 
 /******/ });
-//# sourceMappingURL=landing.6977c662477149b31bdd.js.map
+//# sourceMappingURL=signin.8e6dcb0c65b2daa33fdf.js.map

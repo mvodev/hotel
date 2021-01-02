@@ -40,7 +40,6 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
-    "air-datepicker": "^2.2.3",
     "cleave.js": "^1.6.0",
     "ion-rangeslider": "^2.3.1"
   }
