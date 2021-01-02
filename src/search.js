@@ -1,11 +1,14 @@
 import './styles/search.scss';
+
+import 'ion-rangeslider';
+
 import './components/UIKit/modules/dropdown/fsdDatepicker.js';
 import './components/UIKit/modules/button/starRating.js';
-import 'ion-rangeslider';
 import './components/UIKit/modules/dropdown/dropDownGuests.js';
 import './components/UIKit/modules/dropdown/dropDownRoom.js';
 import './components/UIKit/modules/list/expandableCL.js';
 import './components/UIKit/modules/burger/burger.js';
+
 $('.dropdown-input__filter-input-field').fsdDatepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
 $('.range-slider__input').ionRangeSlider({
  type: "double",
