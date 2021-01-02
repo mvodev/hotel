@@ -162,7 +162,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-const likeButtons = document.querySelectorAll('.button-like');
+const likeButtons = document.querySelectorAll('.js-button-like');
 likeButtons.forEach(elem => elem.addEventListener('click', likeClickListener));
 function likeClickListener(event) {
  if (event.target.className == 'button-like__heart') {
@@ -249,4 +249,4 @@ $('#d4').fsdDatepicker({ todayButton: true, clearButton: true });
 /***/ })
 
 /******/ });
-//# sourceMappingURL=details.23004ca675ae945d7fe6.js.map
+//# sourceMappingURL=details.29d46c1cee27332327db.js.map

@@ -245,7 +245,7 @@ $('.range-slider__input').ionRangeSlider({
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-const likeButtons = document.querySelectorAll('.button-like');
+const likeButtons = document.querySelectorAll('.js-button-like');
 likeButtons.forEach(elem => elem.addEventListener('click', likeClickListener));
 function likeClickListener(event) {
  if (event.target.className == 'button-like__heart') {
@@ -271,7 +271,7 @@ function likeClickListener(event) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-const rateButton = document.querySelectorAll('.button-rate label');
+const rateButton = document.querySelectorAll('.js-button-rate label');
 rateButton.forEach(elem => elem.addEventListener('click', rateClickListener)
 );
 function rateClickListener(event) {
@@ -490,4 +490,4 @@ function expandableListHandler(event) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=UIKit.9d2c9e43ba415ffe2417.js.map
+//# sourceMappingURL=UIKit.f14fe5a5f69b876dd86b.js.map

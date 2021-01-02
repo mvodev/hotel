@@ -1,4 +1,4 @@
-const likeButtons = document.querySelectorAll('.button-like');
+const likeButtons = document.querySelectorAll('.js-button-like');
 likeButtons.forEach(elem => elem.addEventListener('click', likeClickListener));
 function likeClickListener(event) {
  if (event.target.className == 'button-like__heart') {

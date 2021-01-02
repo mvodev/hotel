@@ -1,4 +1,4 @@
-const rateButton = document.querySelectorAll('.button-rate label');
+const rateButton = document.querySelectorAll('.js-button-rate label');
 rateButton.forEach(elem => elem.addEventListener('click', rateClickListener)
 );
 function rateClickListener(event) {
