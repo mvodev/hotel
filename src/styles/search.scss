@@ -12,6 +12,8 @@
 @import '../components/UIKit/modules/button/button.scss';
 @import '../components/UIKit/modules/roomcard/roomcard.scss';
 @import '../components/UIKit/modules/pagination/pagination.scss';
+@import '../components/UIKit//modules/dropdown/fsdDatepicker.css';
+@import '../../node_modules/ion-rangeslider/css/ion.rangeSlider.css';
 .search-wrapper{
  max-width: $container-width;
  max-height: 1880px;

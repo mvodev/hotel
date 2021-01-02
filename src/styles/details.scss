@@ -9,9 +9,11 @@
 @import '../components/UIKit/modules/list/list.scss';
 @import '../components/UIKit/modules/diagram/diagram.scss';
 @import '../components/UIKit/modules/comment/comment.scss';
-@import '../components//UIKit/modules//dropdown/dropDownGuests.scss';
+@import '../components//UIKit/modules/dropdown/dropDownGuests.scss';
 @import '../components/UIKit/modules/dropdown/dropDownDate.scss';
 @import '../components/UIKit/modules/textField/textField.scss';
+@import '../components/UIKit/modules/dropdown/fsdDatepicker.css';
+@import '../../node_modules/ion-rangeslider/css/ion.rangeSlider.css';
 .details-wrapper{
   max-width: $container-width;
   height: 1937px;
