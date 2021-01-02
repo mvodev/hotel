@@ -1202,7 +1202,7 @@ p.subscribe {
     outline: none;
     -webkit-appearance: none;
     height: 24px;
-    width: 103px;
+    min-width: 103px;
     margin-top: 9px;
     margin-left: 14px;
     font-family: OpenSans;
@@ -1210,7 +1210,8 @@ p.subscribe {
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
-    cursor: pointer; }
+    cursor: pointer;
+    color: rgba(31, 32, 65, 0.75); }
   .dropdown-input__filter-input-field::placeholder {
     font-family: OpenSans;
     font-style: normal;
@@ -1557,4 +1558,4 @@ p.subscribe {
     justify-content: center; } }
 
 
-/*# sourceMappingURL=landing.6a22e9cc19499edb7519.css.map*/
+/*# sourceMappingURL=landing.4f0f8d0b0995b378df17.css.map*/

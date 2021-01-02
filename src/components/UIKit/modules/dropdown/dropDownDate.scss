@@ -69,7 +69,7 @@
     outline: none;
     -webkit-appearance: none;
     height: 24px;
-    width: 103px;
+    min-width: 103px;
     margin-top: 9px;
     margin-left: 14px;
     font-family: $font-family-additionalRussianReplacer;
@@ -78,6 +78,7 @@
     font-size: 14px;
     line-height: 24px;
     cursor: pointer;
+    color: $darkShade75;
   }
 
   &-input-field::placeholder {
