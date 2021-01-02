@@ -168,8 +168,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_landing_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_landing_scss__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/air-datepicker/dist/css/datepicker.min.css */ "../node_modules/air-datepicker/dist/css/datepicker.min.css");
 /* harmony import */ var _node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _src_scripts_fsdDatepicker__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../src/scripts/fsdDatepicker */ "./scripts/fsdDatepicker.js");
-/* harmony import */ var _src_scripts_fsdDatepicker__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_src_scripts_fsdDatepicker__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_UIKit_modules_dropdown_fsdDatepicker__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/UIKit/modules/dropdown/fsdDatepicker */ "./components/UIKit/modules/dropdown/fsdDatepicker.js");
+/* harmony import */ var _components_UIKit_modules_dropdown_fsdDatepicker__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_dropdown_fsdDatepicker__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/UIKit/modules/burger/burger.js */ "./components/UIKit/modules/burger/burger.js");
 /* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_3__);
 
@@ -197,4 +197,4 @@ $('#d2').fsdDatepicker({ todayButton: true, clearButton: true });
 /***/ })
 
 /******/ });
-//# sourceMappingURL=landing.8b2102ef60443e465e64.js.map
+//# sourceMappingURL=landing.47bf2f312f64497ec5ca.js.map

@@ -3,7 +3,7 @@ import './components/UIKit/modules/button/likeRating.js';
 import '../node_modules/ion-rangeslider/css/ion.rangeSlider.min.css';
 import '../node_modules/air-datepicker/dist/css/datepicker.min.css';
 //import '../node_modules/air-datepicker/dist/js/datepicker.js';
-import '../src/scripts/fsdDatepicker';
+import './components/UIKit/modules/dropdown/fsdDatepicker';
 import './components/UIKit/modules/dropdown/dropDownGuests';
 import './components/UIKit/modules/list/expandableCL.js';
 import './components/UIKit/modules/burger/burger.js';

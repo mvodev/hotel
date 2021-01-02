@@ -444,8 +444,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_ion_rangeslider_css_ion_rangeSlider_min_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_ion_rangeslider_css_ion_rangeSlider_min_css__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../node_modules/air-datepicker/dist/css/datepicker.min.css */ "../node_modules/air-datepicker/dist/css/datepicker.min.css");
 /* harmony import */ var _node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _src_scripts_fsdDatepicker__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../src/scripts/fsdDatepicker */ "./scripts/fsdDatepicker.js");
-/* harmony import */ var _src_scripts_fsdDatepicker__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_src_scripts_fsdDatepicker__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_UIKit_modules_dropdown_fsdDatepicker__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/UIKit/modules/dropdown/fsdDatepicker */ "./components/UIKit/modules/dropdown/fsdDatepicker.js");
+/* harmony import */ var _components_UIKit_modules_dropdown_fsdDatepicker__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_dropdown_fsdDatepicker__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _components_UIKit_modules_dropdown_dropDownGuests__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/UIKit/modules/dropdown/dropDownGuests */ "./components/UIKit/modules/dropdown/dropDownGuests.js");
 /* harmony import */ var _components_UIKit_modules_dropdown_dropDownGuests__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_dropdown_dropDownGuests__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _components_UIKit_modules_list_expandableCL_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/UIKit/modules/list/expandableCL.js */ "./components/UIKit/modules/list/expandableCL.js");
@@ -479,4 +479,4 @@ $('#d4').fsdDatepicker({ todayButton: true, clearButton: true });
 /***/ })
 
 /******/ });
-//# sourceMappingURL=details.ca97ebb5563612f45b8a.js.map
+//# sourceMappingURL=details.4cd511c0bcda6e021e7e.js.map

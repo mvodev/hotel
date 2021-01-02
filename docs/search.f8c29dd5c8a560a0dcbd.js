@@ -170,10 +170,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_ion_rangeslider_css_ion_rangeSlider_min_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_ion_rangeslider_css_ion_rangeSlider_min_css__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/air-datepicker/dist/css/datepicker.min.css */ "../node_modules/air-datepicker/dist/css/datepicker.min.css");
 /* harmony import */ var _node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_air_datepicker_dist_css_datepicker_min_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _src_scripts_fsdDatepicker__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/scripts/fsdDatepicker */ "./scripts/fsdDatepicker.js");
-/* harmony import */ var _src_scripts_fsdDatepicker__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_src_scripts_fsdDatepicker__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _scripts_starRating_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./scripts/starRating.js */ "./scripts/starRating.js");
-/* harmony import */ var _scripts_starRating_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_scripts_starRating_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_UIKit_modules_dropdown_fsdDatepicker__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/UIKit/modules/dropdown/fsdDatepicker */ "./components/UIKit/modules/dropdown/fsdDatepicker.js");
+/* harmony import */ var _components_UIKit_modules_dropdown_fsdDatepicker__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_dropdown_fsdDatepicker__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_UIKit_modules_button_starRating_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/UIKit/modules/button/starRating.js */ "./components/UIKit/modules/button/starRating.js");
+/* harmony import */ var _components_UIKit_modules_button_starRating_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_button_starRating_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ion-rangeslider */ "../node_modules/ion-rangeslider/js/ion.rangeSlider.js");
 /* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(ion_rangeslider__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _components_UIKit_modules_dropdown_dropDownGuests_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/UIKit/modules/dropdown/dropDownGuests.js */ "./components/UIKit/modules/dropdown/dropDownGuests.js");
@@ -241,4 +241,4 @@ $('.range-slider__input').ionRangeSlider({
 /***/ })
 
 /******/ });
-//# sourceMappingURL=search.121aaa9861b91d250635.js.map
+//# sourceMappingURL=search.f8c29dd5c8a560a0dcbd.js.map

@@ -1,5 +1,28 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["UIKit~search"],{
 
+/***/ "./components/UIKit/modules/button/starRating.js":
+/*!*******************************************************!*\
+  !*** ./components/UIKit/modules/button/starRating.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+const rateButton = document.querySelectorAll('.button-rate label');
+rateButton.forEach(elem => elem.addEventListener('click', rateClickListener)
+);
+function rateClickListener(event) {
+ let rateNumber = event.target.title.charAt(0);
+ let stars = event.target.parentNode.childNodes;
+ for (let i = 0; i < rateNumber; i++) {
+  stars[i * 2 + 1].innerHTML = 'star';
+ }
+ for (let i = rateNumber; i < 5; i++) {
+  stars[i * 2 + 1].innerHTML = 'star_border';
+ }
+}
+
+/***/ }),
+
 /***/ "./components/UIKit/modules/dropdown/dropDownGuests.js":
 /*!*************************************************************!*\
   !*** ./components/UIKit/modules/dropdown/dropDownGuests.js ***!
@@ -414,30 +437,7 @@ function expandableListHandler(event) {
  }
 }
 
-/***/ }),
-
-/***/ "./scripts/starRating.js":
-/*!*******************************!*\
-  !*** ./scripts/starRating.js ***!
-  \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-const rateButton = document.querySelectorAll('.button-rate label');
-rateButton.forEach(elem => elem.addEventListener('click', rateClickListener)
-);
-function rateClickListener(event) {
- let rateNumber = event.target.title.charAt(0);
- let stars = event.target.parentNode.childNodes;
- for (let i = 0; i < rateNumber; i++) {
-  stars[i * 2 + 1].innerHTML = 'star';
- }
- for (let i = rateNumber; i < 5; i++) {
-  stars[i * 2 + 1].innerHTML = 'star_border';
- }
-}
-
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~search.7a0fcc0151db563fc4c5.js.map
+//# sourceMappingURL=UIKit~search.95766becd80fd089de23.js.map

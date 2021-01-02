@@ -2,7 +2,7 @@ import './styles/UIKitStyles.scss';
 import '../node_modules/ion-rangeslider/css/ion.rangeSlider.min.css'
 import '../node_modules/air-datepicker/dist/css/datepicker.min.css';
 //import '../node_modules/air-datepicker/dist/js/datepicker.js';
-import '../src/scripts/fsdDatepicker';
+import './components/UIKit/modules/dropdown/fsdDatepicker';
 import './components/UIKit/modules/button/starRating.js';
 import './components/UIKit/modules/button/likeRating.js';
 import 'ion-rangeslider';

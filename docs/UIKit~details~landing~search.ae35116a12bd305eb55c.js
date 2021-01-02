@@ -18,10 +18,10 @@ $('.header-login__burger-input').on(function (event) {
 
 /***/ }),
 
-/***/ "./scripts/fsdDatepicker.js":
-/*!**********************************!*\
-  !*** ./scripts/fsdDatepicker.js ***!
-  \**********************************/
+/***/ "./components/UIKit/modules/dropdown/fsdDatepicker.js":
+/*!************************************************************!*\
+  !*** ./components/UIKit/modules/dropdown/fsdDatepicker.js ***!
+  \************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2266,4 +2266,4 @@ $('.header-login__burger-input').on(function (event) {
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.6670955950e4ba28be85.js.map
+//# sourceMappingURL=UIKit~details~landing~search.ae35116a12bd305eb55c.js.map
