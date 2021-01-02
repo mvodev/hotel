@@ -57,7 +57,7 @@
 /******/ 	// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 	// Promise = chunk loading, 0 = chunk loaded
 /******/ 	var installedChunks = {
-/******/ 		"UIKit": 0
+/******/ 		"search": 0
 /******/ 	};
 /******/
 /******/ 	var deferredModules = [];
@@ -148,121 +148,12 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./UIKit.js","vendors~UIKit~details~landing~search~signin","vendors~UIKit~details~search","vendors~UIKit~search","vendors~UIKit","UIKit~details~landing~search"]);
+/******/ 	deferredModules.push(["./search.js","vendors~UIKit~details~landing~search~signin","vendors~UIKit~details~search","vendors~UIKit~search","UIKit~details~landing~search"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
 /************************************************************************/
 /******/ ({
-
-/***/ "./UIKit.js":
-/*!******************!*\
-  !*** ./UIKit.js ***!
-  \******************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _styles_UIKitStyles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/UIKitStyles.scss */ "./styles/UIKitStyles.scss");
-/* harmony import */ var _styles_UIKitStyles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_UIKitStyles_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ion-rangeslider */ "../node_modules/ion-rangeslider/js/ion.rangeSlider.js");
-/* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(ion_rangeslider__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
-/* harmony import */ var _components_UIKit_modules_dropdown_fsdDatepicker_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/UIKit/modules/dropdown/fsdDatepicker.js */ "./components/UIKit/modules/dropdown/fsdDatepicker.js");
-/* harmony import */ var _components_UIKit_modules_dropdown_fsdDatepicker_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_dropdown_fsdDatepicker_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_UIKit_modules_button_starRating_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/UIKit/modules/button/starRating.js */ "./components/UIKit/modules/button/starRating.js");
-/* harmony import */ var _components_UIKit_modules_button_starRating_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_button_starRating_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _components_UIKit_modules_button_likeRating_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/UIKit/modules/button/likeRating.js */ "./components/UIKit/modules/button/likeRating.js");
-/* harmony import */ var _components_UIKit_modules_button_likeRating_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_button_likeRating_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _components_UIKit_modules_dropdown_dropDownGuests_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/UIKit/modules/dropdown/dropDownGuests.js */ "./components/UIKit/modules/dropdown/dropDownGuests.js");
-/* harmony import */ var _components_UIKit_modules_dropdown_dropDownGuests_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_dropdown_dropDownGuests_js__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _components_UIKit_modules_dropdown_dropDownRoom_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/UIKit/modules/dropdown/dropDownRoom.js */ "./components/UIKit/modules/dropdown/dropDownRoom.js");
-/* harmony import */ var _components_UIKit_modules_dropdown_dropDownRoom_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_dropdown_dropDownRoom_js__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _components_UIKit_modules_list_expandableCL_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/UIKit/modules/list/expandableCL.js */ "./components/UIKit/modules/list/expandableCL.js");
-/* harmony import */ var _components_UIKit_modules_list_expandableCL_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_list_expandableCL_js__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/UIKit/modules/burger/burger.js */ "./components/UIKit/modules/burger/burger.js");
-/* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_9__);
-
-
-
-
-
-
-
-
-
-
-
-
-
-var cleave = new Cleave('.text-field_input-date', {
-  date: true,
-  delimiter: '.',
-  datePattern: ['d', 'm', 'Y']
-});
-$('.dropdown-input__date-input-field').fsdDatepicker({ todayButton: true, clearButton: true });
-$('.dropdown-input__filter-input-field').fsdDatepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
-$('.cards__right-column-datepicker').fsdDatepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
-$('.range-slider__input').ionRangeSlider({
-  type: "double",
-  min: 0,
-  max: 20000,
-  from: 5000,
-  to: 10000,
-  step: 1000,
-  onChange: function (data) {
-    let minValue = ''
-    let maxValue = ''
-    if (data.from >= 1000) minValue = Math.floor(data.from / 1000) + ' 000';
-    else minValue = data.from;
-    if (data.to >= 1000) maxValue = Math.floor(data.to / 1000) + ' 000';
-    else maxValue = data.to;
-    $('.range-slider__label-wrapper p:nth-child(2)').
-      html(minValue + '<span class="rub">i</span> - ' + maxValue + '<span class="rub">i</span>');
-  },
-  onStart: function (data) {
-    let minValue = ''
-    let maxValue = ''
-    if (data.from >= 1000) minValue = Math.floor(data.from / 1000) + ' 000';
-    else minValue = data.from;
-    if (data.to >= 1000) maxValue = Math.floor(data.to / 1000) + ' 000';
-    else maxValue = data.to;
-    $('.range-slider__label-wrapper p:nth-child(2)').
-      html(minValue + '<span class="rub">i</span> - ' + maxValue + '<span class="rub">i</span>');
-  }
-});
-// dropdown additional options for range dropdown:
-// range: true, dateFormat: 'dd M',inline: true
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
-
-/***/ }),
-
-/***/ "./components/UIKit/modules/button/likeRating.js":
-/*!*******************************************************!*\
-  !*** ./components/UIKit/modules/button/likeRating.js ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-const likeButtons = document.querySelectorAll('.js-button-like');
-likeButtons.forEach(elem => elem.addEventListener('click', likeClickListener));
-function likeClickListener(event) {
- if (event.target.className == 'button-like__heart') {
-  if (event.target.parentElement.classList.contains('button-like_is-liked')) {
-   event.target.parentElement.childNodes[1].innerText--;
-   event.target.parentElement.childNodes[0].innerText = 'favorite_border';
-   event.target.parentElement.classList.remove('button-like_is-liked');
-  }
-  else {
-   event.target.parentElement.childNodes[1].innerText++;
-   event.target.parentElement.classList.add('button-like_is-liked');
-   event.target.parentElement.childNodes[0].innerText = 'favorite';
-  }
- }
-}
-
-/***/ }),
 
 /***/ "./components/UIKit/modules/button/starRating.js":
 /*!*******************************************************!*\
@@ -464,10 +355,10 @@ function showResultInDropDown() {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-const bulletListExpandableArrow = document.querySelectorAll('.bullet-list-expandable span');
+const bulletListExpandableArrow = document.querySelectorAll('.js-bullet-list-expandable span');
 bulletListExpandableArrow.forEach(elem => elem.addEventListener('click', expandableListHandler));
 function expandableListHandler(event) {
- event.target.parentNode.parentNode.childNodes[1].classList.toggle('bullet-list_show');
+ event.target.parentNode.parentNode.childNodes[1].classList.toggle('bullet-list_is-visible');
  if (event.target.innerText === 'keyboard_arrow_down') {
   event.target.innerText = 'keyboard_arrow_up';
  }
@@ -478,10 +369,80 @@ function expandableListHandler(event) {
 
 /***/ }),
 
-/***/ "./styles/UIKitStyles.scss":
-/*!*********************************!*\
-  !*** ./styles/UIKitStyles.scss ***!
-  \*********************************/
+/***/ "./search.js":
+/*!*******************!*\
+  !*** ./search.js ***!
+  \*******************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _styles_search_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/search.scss */ "./styles/search.scss");
+/* harmony import */ var _styles_search_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_search_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ion-rangeslider */ "../node_modules/ion-rangeslider/js/ion.rangeSlider.js");
+/* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(ion_rangeslider__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_UIKit_modules_dropdown_fsdDatepicker_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/UIKit/modules/dropdown/fsdDatepicker.js */ "./components/UIKit/modules/dropdown/fsdDatepicker.js");
+/* harmony import */ var _components_UIKit_modules_dropdown_fsdDatepicker_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_dropdown_fsdDatepicker_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_UIKit_modules_button_starRating_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/UIKit/modules/button/starRating.js */ "./components/UIKit/modules/button/starRating.js");
+/* harmony import */ var _components_UIKit_modules_button_starRating_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_button_starRating_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_UIKit_modules_dropdown_dropDownGuests_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/UIKit/modules/dropdown/dropDownGuests.js */ "./components/UIKit/modules/dropdown/dropDownGuests.js");
+/* harmony import */ var _components_UIKit_modules_dropdown_dropDownGuests_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_dropdown_dropDownGuests_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_UIKit_modules_dropdown_dropDownRoom_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/UIKit/modules/dropdown/dropDownRoom.js */ "./components/UIKit/modules/dropdown/dropDownRoom.js");
+/* harmony import */ var _components_UIKit_modules_dropdown_dropDownRoom_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_dropdown_dropDownRoom_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_UIKit_modules_list_expandableCL_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/UIKit/modules/list/expandableCL.js */ "./components/UIKit/modules/list/expandableCL.js");
+/* harmony import */ var _components_UIKit_modules_list_expandableCL_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_list_expandableCL_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/UIKit/modules/burger/burger.js */ "./components/UIKit/modules/burger/burger.js");
+/* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_7__);
+
+
+
+
+
+
+
+
+
+
+
+$('.dropdown-input__filter-input-field').fsdDatepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
+$('.range-slider__input').ionRangeSlider({
+ type: "double",
+ min: 0,
+ max: 20000,
+ from: 5000,
+ to: 10000,
+ step: 1000,
+ onChange: function (data) {
+  let minValue = ''
+  let maxValue = ''
+  if (data.from >= 1000) minValue = Math.floor(data.from / 1000) + ' 000';
+  else minValue = data.from;
+  if (data.to >= 1000) maxValue = Math.floor(data.to / 1000) + ' 000';
+  else maxValue = data.to;
+  $('.range-slider__label-wrapper p:nth-child(2)').
+   html(minValue + '<span class="rub">i</span> - ' + maxValue + '<span class="rub">i</span>');
+ },
+ onStart: function (data) {
+  let minValue = ''
+  let maxValue = ''
+  if (data.from >= 1000) minValue = Math.floor(data.from / 1000) + ' 000';
+  else minValue = data.from;
+  if (data.to >= 1000) maxValue = Math.floor(data.to / 1000) + ' 000';
+  else maxValue = data.to;
+  $('.range-slider__label-wrapper p:nth-child(2)').
+   html(minValue + '<span class="rub">i</span> - ' + maxValue + '<span class="rub">i</span>');
+ }
+});
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./styles/search.scss":
+/*!****************************!*\
+  !*** ./styles/search.scss ***!
+  \****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -490,4 +451,4 @@ function expandableListHandler(event) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=UIKit.f14fe5a5f69b876dd86b.js.map
+//# sourceMappingURL=search.41fca995c0e906e3a8ab.js.map

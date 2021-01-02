@@ -188,10 +188,10 @@ function likeClickListener(event) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-const bulletListExpandableArrow = document.querySelectorAll('.bullet-list-expandable span');
+const bulletListExpandableArrow = document.querySelectorAll('.js-bullet-list-expandable span');
 bulletListExpandableArrow.forEach(elem => elem.addEventListener('click', expandableListHandler));
 function expandableListHandler(event) {
- event.target.parentNode.parentNode.childNodes[1].classList.toggle('bullet-list_show');
+ event.target.parentNode.parentNode.childNodes[1].classList.toggle('bullet-list_is-visible');
  if (event.target.innerText === 'keyboard_arrow_down') {
   event.target.innerText = 'keyboard_arrow_up';
  }
@@ -249,4 +249,4 @@ $('#d4').fsdDatepicker({ todayButton: true, clearButton: true });
 /***/ })
 
 /******/ });
-//# sourceMappingURL=details.29d46c1cee27332327db.js.map
+//# sourceMappingURL=details.f7f4ba9865d2f2497ad7.js.map

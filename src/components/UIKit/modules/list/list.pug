@@ -1,18 +1,18 @@
 include ../button/button.pug
 mixin list(options)
   - var listClassName='bullet-list'
-  - var isExpandedList=options.isExpand===true ? ' bullet-list_show' : '' 
+  - var isExpandedList=options.isExpand===true ? ' bullet-list_is-visible' : '' 
     if options.type==='expandable'
-      - listClassName='bullet-list-expandable'
+      - listClassName='js-bullet-list-expandable bullet-list-expandable'
     if options.type==='icons'
       - listClassName='bullet-list-icons'
     if options.type==='expandable'
       div(class=listClassName)
-        div(class=listClassName+'__label')=options.label
+        div(class='bullet-list-expandable__label')=options.label
           span(class="material-icons")=isExpandedList ? 'keyboard_arrow_up' : 'keyboard_arrow_down'
-        div(class=listClassName+'__dropdown'+isExpandedList)
+        div(class='bullet-list-expandable__dropdown'+isExpandedList)
           each val in options.labels ? options.labels : ['There are no values']
-            div(class=listClassName+'__dropdown-elem')
+            div(class='bullet-list-expandable__dropdown-elem')
               +button({type:'check',labels:[{text:val.text,isChecked:val.isChecked}]})
     else if options.type==='icons'
       div(class=listClassName)
