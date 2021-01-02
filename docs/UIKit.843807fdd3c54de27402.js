@@ -271,8 +271,8 @@ function likeClickListener(event) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-const rateButton = document.querySelectorAll('.js-button-rate label');
-rateButton.forEach(elem => elem.addEventListener('click', rateClickListener)
+const rateButtons = document.querySelectorAll('.js-button-rate label');
+rateButtons.forEach(elem => elem.addEventListener('click', rateClickListener)
 );
 function rateClickListener(event) {
  let rateNumber = event.target.title.charAt(0);
@@ -490,4 +490,4 @@ function expandableListHandler(event) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=UIKit.f11310279aece82eca60.js.map
+//# sourceMappingURL=UIKit.843807fdd3c54de27402.js.map
