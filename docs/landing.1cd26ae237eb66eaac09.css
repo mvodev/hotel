@@ -390,7 +390,7 @@ table {
 .header-burger__input:checked + .header-burger__label span {
   background-color: transparent; }
 
-@media (max-width: 1200px) {
+@media (max-width: 770px) {
   .header-burger {
     display: block; } }
 
@@ -494,7 +494,7 @@ table {
   width: 196px;
   text-align: center; }
 
-@media (max-width: 1200px) {
+@media (max-width: 770px) {
   .header-login__logo {
     display: none; }
   .header-login__nav {
@@ -560,7 +560,7 @@ table {
   height: 24px;
   color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
 
-@media (max-width: 1200px) {
+@media (max-width: 770px) {
   .footer-copyright-container {
     flex-direction: column;
     text-align: center;
@@ -719,7 +719,7 @@ p.subscribe {
   color: #1f2041;
   margin: 0px 0px 21px 0px; }
 
-@media (max-width: 1200px) {
+@media (max-width: 770px) {
   .footer-nav__container,
   .footer-nav__subscribe {
     display: flex;
@@ -763,7 +763,7 @@ p.subscribe {
     font-size: 24px;
     line-height: 30px;
     color: #1f2041;
-    padding: 40px 0px 20px 0px; }
+    padding: 40px 0px 21px 0px; }
   .search-number__wrapper h3 {
     font-family: Montserrat;
     font-style: normal;
@@ -772,7 +772,7 @@ p.subscribe {
     line-height: 15px;
     text-transform: uppercase;
     color: #1f2041;
-    margin-bottom: 5px; }
+    margin-bottom: 6px; }
   .search-number__wrapper .search-number__dropdowns {
     display: flex;
     flex-direction: row;
@@ -1149,7 +1149,7 @@ p.subscribe {
     outline: none;
     height: 24px;
     width: 89px;
-    margin-top: 11.56px;
+    margin-top: 10px;
     margin-left: 15px;
     font-family: Montserrat;
     font-style: normal;
@@ -1551,7 +1551,7 @@ p.subscribe {
       margin-top: 70px;
       margin-left: 140px; }
 
-@media (max-width: 1200px) {
+@media (max-width: 770px) {
   .landing-wrapper {
     max-width: none;
     max-height: none; }
@@ -1561,4 +1561,4 @@ p.subscribe {
     justify-content: center; } }
 
 
-/*# sourceMappingURL=landing.11cf416a806b193504d7.css.map*/
+/*# sourceMappingURL=landing.1cd26ae237eb66eaac09.css.map*/

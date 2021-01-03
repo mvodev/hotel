@@ -15,11 +15,14 @@
   }
   .cards__left-column{
    grid-area: left;
+   margin-top: 72px;
   }
   .cards__central-column{
    grid-area: central;
+   margin-top: 72px;
   }
   .cards__right-column{
    grid-area: right;
+   margin-top: 72px;
   }
 }
