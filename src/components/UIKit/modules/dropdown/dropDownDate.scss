@@ -190,6 +190,9 @@ width: 40px;
     text-align: center;
     color: $darkShade100;
   }
+    &--nav-title i{
+    color: $darkShade100;
+  }
 
   &--buttons{
     border-top: none;
@@ -204,13 +207,13 @@ width: 40px;
     text-transform: uppercase;
   }
   &--buttons span:first-child{
-    color: $darkShade50;
     padding-left: 20px;
+    color: $purple;
   }
   &--buttons span:nth-child(2){
-    color: $purple;
     padding-right: 20px;
     padding-left: 110px;
+    color: $purple;
   }
   &--button{
     display: block;

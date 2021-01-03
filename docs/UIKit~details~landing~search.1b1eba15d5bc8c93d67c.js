@@ -306,10 +306,10 @@ function counterInfant() {
 
                 // navigation
                 monthsField: 'monthsShort',
-                prevHtml: '<svg><path d="M 17,12 l -5,5 l 5,5"></path></svg>',
-                nextHtml: '<svg><path d="M 14,12 l 5,5 l -5,5"></path></svg>',
+                prevHtml: 'arrow_back',
+                nextHtml: 'arrow_forward',
                 navTitles: {
-                    days: 'MM, <i>yyyy</i>',
+                    days: 'MM <i>yyyy</i>',
                     months: 'yyyy',
                     years: 'yyyy1 - yyyy2'
                 },
@@ -680,7 +680,6 @@ function counterInfant() {
                     case /yy/.test(result):
                         result = replacer(result, boundary('yy'), d.year.toString().slice(-2));
                 }
-
                 return result;
             },
 
@@ -1592,7 +1591,7 @@ function counterInfant() {
 
                 if (this.inited) {
                     if (!this.views[val]) {
-                        this.views[val] = new $.fn.datepicker.Body(this, val, this.opts)
+                        this.views[val] = new $.fn.fsdDatepicker.Body(this, val, this.opts)
                     } else {
                         this.views[val]._render();
                     }
@@ -1731,8 +1730,8 @@ function counterInfant() {
                 daysMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
                 months: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
                 monthsShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
-                today: 'Очистить',
-                clear: 'Применить',
+                today: 'Применить',
+                clear: 'Очистить',
                 dateFormat: 'dd.mm.yyyy',
                 timeFormat: 'hh:ii',
                 firstDay: 1
@@ -2095,11 +2094,11 @@ function counterInfant() {
             },
 
             _addButtonsIfNeed: function () {
-                if (this.opts.todayButton) {
-                    this._addButton('today')
-                }
                 if (this.opts.clearButton) {
                     this._addButton('clear')
+                }
+                if (this.opts.todayButton) {
+                    this._addButton('today')
                 }
             },
 
@@ -2491,4 +2490,4 @@ function counterInfant() {
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.dd38163aef8b88871158.js.map
+//# sourceMappingURL=UIKit~details~landing~search.1b1eba15d5bc8c93d67c.js.map

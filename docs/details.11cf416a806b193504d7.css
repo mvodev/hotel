@@ -1710,6 +1710,8 @@ p.subscribe {
     line-height: 24px;
     text-align: center;
     color: #1f2041; }
+  .datepicker--nav-title i {
+    color: #1f2041; }
   .datepicker--buttons {
     border-top: none;
     display: flex;
@@ -1722,12 +1724,12 @@ p.subscribe {
     line-height: 15px;
     text-transform: uppercase; }
   .datepicker--buttons span:first-child {
-    color: rgba(31, 32, 65, 0.5);
-    padding-left: 20px; }
+    padding-left: 20px;
+    color: #BC9CFF; }
   .datepicker--buttons span:nth-child(2) {
-    color: #BC9CFF;
     padding-right: 20px;
-    padding-left: 110px; }
+    padding-left: 110px;
+    color: #BC9CFF; }
   .datepicker--button {
     display: block; }
   .datepicker--pointer {
@@ -1959,4 +1961,4 @@ p.subscribe {
     justify-content: center; } }
 
 
-/*# sourceMappingURL=details.168300a73d31017283de.css.map*/
+/*# sourceMappingURL=details.11cf416a806b193504d7.css.map*/
