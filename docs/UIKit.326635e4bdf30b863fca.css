@@ -1034,9 +1034,7 @@ table {
 .footer__logo {
   width: 560px;
   height: 108px;
-  margin-top: 100px;
-  margin-left: 440px;
-  margin-right: 440px; }
+  margin: 120px auto 0px auto; }
 
 .footer__logo img {
   margin-left: 227px;
@@ -1064,8 +1062,7 @@ table {
   width: 112px;
   height: 24px;
   display: flex;
-  justify-content: space-between;
-  margin-top: 25px; }
+  justify-content: space-between; }
 
 .footer-nav__container {
   max-width: 1440px;
@@ -1656,15 +1653,16 @@ p.subscribe {
 .headers-and-footers-container {
   width: 1440px;
   height: 1350px;
-  background: #e5e5e5; }
+  background: #e5e5e5;
+  margin-top: 62px; }
 
-.headerNavigationSection {
+.headers-and-footers__header-nav {
   margin-top: 40px; }
 
-.footerLogoSection {
+.headers-and-footers__footer-logo {
   margin-top: 40px; }
 
-.footerNavigationSection {
+.headers-and-footers__footer-nav {
   margin-top: 40px; }
 
 .dropdown-input__date {
@@ -3500,4 +3498,4 @@ input:checked + .slider-round:before {
     margin-top: 72px; }
 
 
-/*# sourceMappingURL=UIKit.21fd0fc36203c0e3de09.css.map*/
+/*# sourceMappingURL=UIKit.326635e4bdf30b863fca.css.map*/
