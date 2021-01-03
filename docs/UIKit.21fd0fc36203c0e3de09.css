@@ -338,7 +338,6 @@ table {
 
 .colors__left-column {
   margin-left: 150px;
-  margin-top: 37px;
   width: 270px;
   height: 610px;
   display: flex;
@@ -504,7 +503,6 @@ table {
   flex-direction: column;
   flex-wrap: nowrap;
   margin-right: 191px;
-  margin-top: 37px;
   height: 321px;
   width: 403px; }
 
@@ -628,7 +626,8 @@ body {
 .colors-container {
   display: flex;
   justify-content: space-between;
-  height: 792px; }
+  height: 792px;
+  margin-top: 69px; }
 
 html,
 body,
@@ -3501,4 +3500,4 @@ input:checked + .slider-round:before {
     margin-top: 72px; }
 
 
-/*# sourceMappingURL=UIKit.1cd26ae237eb66eaac09.css.map*/
+/*# sourceMappingURL=UIKit.21fd0fc36203c0e3de09.css.map*/
