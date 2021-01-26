@@ -10,44 +10,76 @@
   font-weight: 700;
   src: url("../assets/fonts/OpenSans-Bold.ttf") format("truetype");
 }
-/* quicksand-300 - latin */
+/* quicksand-300 - latin-ext_latin */
 @font-face {
-  font-family: "Quicksand";
+  font-family: 'Quicksand';
   font-style: normal;
   font-weight: 300;
-  src: url("../assets/fonts/quicksand-v20-latin-300.ttf") format("truetype");
+  src: url('../assets/fonts/quicksand-v21-latin-ext_latin-300.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../assets/fonts/quicksand-v21-latin-ext_latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/quicksand-v21-latin-ext_latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/fonts/quicksand-v21-latin-ext_latin-300.woff') format('woff'), /* Modern Browsers */
+       url('../assets/fonts/quicksand-v21-latin-ext_latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../assets/fonts/quicksand-v21-latin-ext_latin-300.svg#Quicksand') format('svg'); /* Legacy iOS */
 }
-/* quicksand-regular - latin */
+
+/* quicksand-regular - latin-ext_latin */
 @font-face {
-  font-family: "Quicksand";
+  font-family: 'Quicksand';
   font-style: normal;
   font-weight: 400;
-  src: url("../assets/fonts/quicksand-v20-latin-regular.ttf") format("truetype");
+  src: url('../assets/fonts/quicksand-v21-latin-ext_latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../assets/fonts/quicksand-v21-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/quicksand-v21-latin-ext_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/fonts/quicksand-v21-latin-ext_latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../assets/fonts/quicksand-v21-latin-ext_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../assets/fonts/quicksand-v21-latin-ext_latin-regular.svg#Quicksand') format('svg'); /* Legacy iOS */
 }
 
-/* quicksand-500 - latin */
+/* quicksand-500 - latin-ext_latin */
 @font-face {
-  font-family: "Quicksand";
+  font-family: 'Quicksand';
   font-style: normal;
   font-weight: 500;
-  src: url("../assets/fonts/quicksand-v20-latin-500.ttf") format("truetype");
+  src: url('../assets/fonts/quicksand-v21-latin-ext_latin-500.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../assets/fonts/quicksand-v21-latin-ext_latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/quicksand-v21-latin-ext_latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/fonts/quicksand-v21-latin-ext_latin-500.woff') format('woff'), /* Modern Browsers */
+       url('../assets/fonts/quicksand-v21-latin-ext_latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../assets/fonts/quicksand-v21-latin-ext_latin-500.svg#Quicksand') format('svg'); /* Legacy iOS */
 }
 
-/* quicksand-600 - latin */
+/* quicksand-600 - latin-ext_latin */
 @font-face {
-  font-family: "Quicksand";
+  font-family: 'Quicksand';
   font-style: normal;
   font-weight: 600;
-  src: url("../assets/fonts/quicksand-v20-latin-600.ttf") format("truetype");
+  src: url('../assets/fonts/quicksand-v21-latin-ext_latin-600.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../assets/fonts/quicksand-v21-latin-ext_latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/quicksand-v21-latin-ext_latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/fonts/quicksand-v21-latin-ext_latin-600.woff') format('woff'), /* Modern Browsers */
+       url('../assets/fonts/quicksand-v21-latin-ext_latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../assets/fonts/quicksand-v21-latin-ext_latin-600.svg#Quicksand') format('svg'); /* Legacy iOS */
 }
 
-/* quicksand-700 - latin */
+/* quicksand-700 - latin-ext_latin */
 @font-face {
-  font-family: "Quicksand";
+  font-family: 'Quicksand';
   font-style: normal;
   font-weight: 700;
-  src: url("../assets/fonts/quicksand-v20-latin-700.ttf") format("truetype");
+  src: url('../assets/fonts/quicksand-v21-latin-ext_latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../assets/fonts/quicksand-v21-latin-ext_latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/quicksand-v21-latin-ext_latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/fonts/quicksand-v21-latin-ext_latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../assets/fonts/quicksand-v21-latin-ext_latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../assets/fonts/quicksand-v21-latin-ext_latin-700.svg#Quicksand') format('svg'); /* Legacy iOS */
 }
+
 /* montserrat-100 - latin_cyrillic */
 @font-face {
   font-family: 'Montserrat';
