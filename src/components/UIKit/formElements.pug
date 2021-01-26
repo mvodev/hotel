@@ -13,7 +13,7 @@ include headerUiKit.pug
   h2(class='header header_text-field-default')
    div='Text Field'
    div='Default'
-  +textfield({isDefault:true,placeholder:'Email'})
+  +textfield({isDefault:true,placeholder:'Email',type:"email"})
   h2(class='header header_text-field-hover')
    div='Text Field'
    div='HOVER / FOCUS'
@@ -38,7 +38,7 @@ include headerUiKit.pug
   +dropdown({placeholder:'19 авг - 23 авг',typeDropdown:'filter',isExpanded:false})
   h2(class='header header_subscription-text-field')
     div='Subscription Text Field'
-  +textfield({isSubscription:true,placeholder:'Email'})
+  +textfield({isSubscription:true,placeholder:'Email',type:"email"})
   h2(class='header header_dropdown-room')
     div='Dropdown'
     div='DEFAULT'

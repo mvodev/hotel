@@ -6,8 +6,8 @@ mixin signin(options)
   div(class='sign-in__wrapper')
    form(action=options.action class='sign-in__form')
     h2='Войти'
-    +textfield({isDefault:true,placeholder:'Email'})
-    +textfield({isDefault:true,placeholder:'Пароль'})
+    +textfield({isDefault:true,placeholder:'Email',type:"email"})
+    +textfield({isDefault:true,placeholder:'Пароль',type:"password"})
     +button({label:'Войти',type:'arrow',purpose:'submit'})
     div(class='sign-in__footer')
      span(class='sign-in__account')='Нет аккаунта на Toxin?'
