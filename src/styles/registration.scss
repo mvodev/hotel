@@ -6,9 +6,10 @@
 @import '../components/UIKit/modules/button/button.scss';
 @import '../components/UIKit/modules/textField/textField.scss';
 @import '../components/UIKit/modules/headers/standardNavBar.scss';
-@import '../components/UIKit/modules/headers/standardLoggedInNavBar.scss';
 @import '../components/UIKit/modules/footers/footerCopyrightBar.scss';
 @import '../components/UIKit/modules/footers/footerWidget.scss';
+@import '../components/UIKit/modules/dropdown/fsdDatepicker.css';
+@import '../components/UIKit/modules/dropdown/dropDownDate.scss';
 
 .wrapper{
   max-width: $container-width;

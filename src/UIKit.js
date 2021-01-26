@@ -11,7 +11,7 @@ import './components/UIKit/modules/dropdown/dropDownRoom.js';
 import './components/UIKit/modules/list/expandableCL.js';
 import './components/UIKit/modules/burger/burger.js';
 
-var cleave = new Cleave('.text-field_input-date', {
+var cleave = new Cleave('.text-field__input-date', {
   date: true,
   delimiter: '.',
   datePattern: ['d', 'm', 'Y']

@@ -9,6 +9,15 @@
   display: flex;
   flex-direction: row;
 }
+.text-field__input-date,
+.text-field__input-date::placeholder{
+  font-family: $font-family-main,$fallback-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+}
 .text-field label {
   white-space: nowrap;
   height: 15px;
