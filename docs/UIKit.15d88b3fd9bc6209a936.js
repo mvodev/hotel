@@ -148,7 +148,7 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./UIKit.js","vendors~UIKit~details~landing~registration~search~signin","vendors~UIKit~details~search","vendors~UIKit~search","vendors~UIKit~registration","UIKit~details~landing~registration~search","UIKit~search"]);
+/******/ 	deferredModules.push(["./UIKit.js","vendors~UIKit~details~landing~registration~search~signin","vendors~UIKit~landing~registration","vendors~UIKit~details~search","vendors~UIKit~search","UIKit~details~landing~registration~search","UIKit~search"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
@@ -276,4 +276,4 @@ function likeClickListener(event) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=UIKit.dde869245403858e7368.js.map
+//# sourceMappingURL=UIKit.15d88b3fd9bc6209a936.js.map

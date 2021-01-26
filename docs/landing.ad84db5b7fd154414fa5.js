@@ -148,7 +148,7 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./landing.js","vendors~UIKit~details~landing~registration~search~signin","UIKit~details~landing~registration~search"]);
+/******/ 	deferredModules.push(["./landing.js","vendors~UIKit~details~landing~registration~search~signin","vendors~UIKit~landing~registration","UIKit~details~landing~registration~search"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
@@ -415,12 +415,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_UIKit_modules_dropdown_dropDownGuests_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/UIKit/modules/dropdown/dropDownGuests.js */ "./components/UIKit/modules/dropdown/dropDownGuests.js");
 /* harmony import */ var _components_UIKit_modules_dropdown_dropDownGuests_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_dropdown_dropDownGuests_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
 
 
 
 
 
-
+document.querySelectorAll('.dropdown-input__date-input-field').forEach(function (elem) {
+ new Cleave(elem, {
+  date: true,
+  delimiter: '.',
+  datePattern: ['d', 'm', 'Y']
+ });
+});
 $('#d1').fsdDatepicker({ todayButton: true, clearButton: true });
 $('#d2').fsdDatepicker({ todayButton: true, clearButton: true });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
@@ -439,4 +446,4 @@ $('#d2').fsdDatepicker({ todayButton: true, clearButton: true });
 /***/ })
 
 /******/ });
-//# sourceMappingURL=landing.9085a2f249f18bb41cb9.js.map
+//# sourceMappingURL=landing.ad84db5b7fd154414fa5.js.map
