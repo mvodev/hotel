@@ -39,7 +39,7 @@
   position: relative;
   width: 150px;
   height: 57px;
-  font-family: $font-family-additional;
+  font-family: $font-family-additional,$fallback-font;
   font-style: normal;
   font-weight: bold;
   font-size: 19px;

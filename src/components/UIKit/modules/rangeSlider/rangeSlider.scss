@@ -6,10 +6,10 @@
  flex-direction: row;
  justify-content: space-between;
  margin-bottom: -3px;
+ font-family: $font-family-main,$fallback-font;
+ font-style: normal;
 }
 .range-slider__label-wrapper p:first-child{
- font-family: $font-family-main;
- font-style: normal;
  font-weight: bold;
  font-size: 12px;
  line-height: 15px;
@@ -21,8 +21,6 @@
  height: 15px;
  width: 102px;
  text-align: justify;
- font-family: $font-family-main;
- font-style: normal;
  font-weight: normal;
  font-size: 12px;
  line-height: 15px;

@@ -9,7 +9,7 @@
   justify-content: space-between;
   font-style: normal;
   font-weight: normal;
-  font-family: $font-family-main;
+  font-family: $font-family-main,$fallback-font;
 }
 .footer__copyright {
   width: 367px;

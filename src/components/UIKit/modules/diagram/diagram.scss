@@ -18,7 +18,7 @@
 .diagram-description__list{
   list-style-type: none;
   position: relative;
-  font-family: $font-family-main;
+  font-family: $font-family-main,$fallback-font;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -47,12 +47,12 @@
   background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
 }
 .diagramchart__chart-text {
-  font-family: $font-family-additionalRussianReplacer;
+  font-family: $font-family-additionalRussianReplacer,$fallback-font;
   fill: $purple;
   transform: translateY(5px) translateX(-30px);
 }
 .diagramchart__chart-number {
-  font-family: $font-family-additional;
+  font-family: $font-family-additional,$fallback-font;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -61,7 +61,7 @@
   transform: translateY(-5px) translateX(12px);
 }
 .diagramchart__chart-label {
-  font-family: $font-family-main;
+  font-family: $font-family-main,$fallback-font;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;

@@ -1,9 +1,9 @@
 .expanded-comment{
  width: 711px;
  height: 133px;
+ font-family: $font-family-main,$fallback-font;
  &__body-text,
  &__header-time{
-  font-family: $font-family-main;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -27,7 +27,6 @@
   flex-direction: row;
  }
  &__header-name{
-  font-family: $font-family-main;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;

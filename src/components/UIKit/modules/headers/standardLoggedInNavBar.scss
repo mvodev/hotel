@@ -9,7 +9,7 @@
   text-align: center;
   align-items: center;
   justify-content: space-between;
-  font-family: $font-family-main;
+  font-family: $font-family-main,$fallback-font;
   font-style: normal;
   font-size: 14px;
   line-height: 17px;

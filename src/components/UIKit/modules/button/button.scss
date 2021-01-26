@@ -4,7 +4,7 @@
 	border-radius: 22px;
 	border: none;
 	cursor: pointer;
-	font-family: $font-family-main;
+	font-family: $font-family-main,$fallback-font;
 	white-space: nowrap;
 	font-style: normal;
 }

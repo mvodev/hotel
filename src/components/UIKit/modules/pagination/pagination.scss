@@ -2,30 +2,27 @@
   width: 241px;
   height: 74.56px;
   .pagination_wrapper{
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 10.56px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10.56px;
+    font-family: $font-family-main,$fallback-font;
+    font-style: normal;
+    font-weight: normal;
   }
   &__number{
-  width: 40px;
-  height: 40px;
-  font-family: $font-family-main;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: $darkShade50;
-  justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $darkShade50;
+    justify-content: center;
   }
   &__ellipsis{
     width: 40px;
     height: 40px;
-    font-family: $font-family-main;
-    font-style: normal;
-    font-weight: normal;
     font-size: 12px;
     line-height: 15px;
     display: flex;
@@ -41,8 +38,6 @@
   }
   &__arrow{
     font-family: $font-for-icons;
-    font-style: normal;
-    font-weight: normal;
     font-size: 24px;
     line-height: 20px;
     display: flex;
@@ -56,9 +51,6 @@
     justify-content: center;
   }
   &__label{
-    font-family: $font-family-main;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 19px;
     color: $darkShade75;

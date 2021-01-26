@@ -15,7 +15,7 @@
   height: 0;
 }
 .switch__name{
-  font-family: $font-family-main;
+  font-family: $font-family-main,$fallback-font;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;

@@ -1,6 +1,6 @@
 .footer-nav__container {
   max-width: $container-width;
-  font-family: $font-family-main;
+  font-family: $font-family-main,$fallback-font;
   height: 372px;
   background: $white;
   box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
@@ -127,7 +127,6 @@
 .footer-nav__subscribe-textContainer p {
   display: block;
   height: 48px;
-  font-family: $font-family-main;
   font-size: 14px;
   line-height: 24px;
   color: $darkShade75;

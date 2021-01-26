@@ -3,6 +3,7 @@
   border-radius: 4px;
   height: 44px;
   width: 320px;
+  font-family: $font-family-main,$fallback-font;
 }
 .text-field__input-wrapper{
   display: flex;
@@ -11,7 +12,6 @@
 .text-field label {
   white-space: nowrap;
   height: 15px;
-  font-family: $font-family-main;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -21,7 +21,6 @@
   margin-bottom: 5px;
 }
 .text-field input {
-  font-family: $font-family-main;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -58,7 +57,7 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  font-family: Material Icons;
+  font-family: $font-for-icons;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;

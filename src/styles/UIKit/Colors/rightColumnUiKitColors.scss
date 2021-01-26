@@ -6,18 +6,19 @@
   height: 321px;
   width: 403px;
 }
+.body,.h1,.h2,.h3{
+  font-family: $font-family-main,$fallback-font;
+}
 .h1 {
   display: flex;
   flex-wrap: nowrap;
   & p.header{
   width: 29px;
   height: 30px;
-  font-family: $font-family-main;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 29px;
-  /* identical to box height */
   text-align: right;
   color: $darkShade25;
   margin-left: 8px;
@@ -25,7 +26,7 @@
   & p.description{
   width: 336px;
   height: 60px;
-  font-family: $font-family-additional;
+  font-family: $font-family-additional,$fallback-font;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -41,7 +42,6 @@
   & p.header{
   width: 27px;
   height: 24px;
-  font-family: $font-family-main;
   font-style: normal;
   font-weight: normal;
   font-size: 19px;
@@ -53,7 +53,7 @@
   & p.description{
   width: 282px;
   height: 48px;
-  font-family: $font-family-additional;
+  font-family: $font-family-additional,$fallback-font;
   font-style: normal;
   font-weight: bold;
   font-size: 19px;
@@ -70,7 +70,6 @@
   & p.header{
   width: 17px;
   height: 15px;
-  font-family: $font-family-main;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -83,7 +82,6 @@
   & p.description{
   width: 186px;
   height: 15px;
-  font-family: $font-family-main;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -102,7 +100,6 @@
   width: 37px;
   height: 24px;
   margin-bottom: 24px;
-  font-family: $font-family-main;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -113,7 +110,6 @@
   & p.description{
   width: 301px;
   height: 48px;
-  font-family: $font-family-main;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
