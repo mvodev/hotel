@@ -194,8 +194,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
 document.querySelectorAll('.text-field__input-date').forEach(function(elem){
   new cleave_js__WEBPACK_IMPORTED_MODULE_2__["default"](elem, {
     date: true,
@@ -203,11 +201,6 @@ document.querySelectorAll('.text-field__input-date').forEach(function(elem){
     datePattern: ['d', 'm', 'Y']
   });
 });
-// var cleave = new Cleave('.text-field__input-date', {
-//   date: true,
-//   delimiter: '.',
-//   datePattern: ['d', 'm', 'Y']
-// });
 $('.dropdown-input__date-input-field').fsdDatepicker({ todayButton: true, clearButton: true });
 $('.dropdown-input__filter-input-field').fsdDatepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
 $('.cards__right-column-datepicker').fsdDatepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
@@ -283,4 +276,4 @@ function likeClickListener(event) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=UIKit.1fa9eebf2017e54394dd.js.map
+//# sourceMappingURL=UIKit.dde869245403858e7368.js.map

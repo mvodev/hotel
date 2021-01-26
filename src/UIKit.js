@@ -1,8 +1,6 @@
 import './styles/UIKitStyles.scss';
-
 import 'ion-rangeslider';
 import 'cleave.js';
-
 import './components/UIKit/modules/dropdown/fsdDatepicker.js';
 import './components/UIKit/modules/button/starRating.js';
 import './components/UIKit/modules/button/likeRating.js';
@@ -18,11 +16,6 @@ document.querySelectorAll('.text-field__input-date').forEach(function(elem){
     datePattern: ['d', 'm', 'Y']
   });
 });
-// var cleave = new Cleave('.text-field__input-date', {
-//   date: true,
-//   delimiter: '.',
-//   datePattern: ['d', 'm', 'Y']
-// });
 $('.dropdown-input__date-input-field').fsdDatepicker({ todayButton: true, clearButton: true });
 $('.dropdown-input__filter-input-field').fsdDatepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
 $('.cards__right-column-datepicker').fsdDatepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
