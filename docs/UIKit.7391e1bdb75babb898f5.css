@@ -535,7 +535,7 @@ table {
   position: relative;
   width: 150px;
   height: 57px;
-  font-family: "Quicksand";
+  font-family: "Quicksand", "Arial,sans-serif";
   font-style: normal;
   font-weight: bold;
   font-size: 19px;
@@ -664,25 +664,26 @@ table {
   height: 321px;
   width: 403px; }
 
+.body, .h1, .h2, .h3 {
+  font-family: "Montserrat", "Arial,sans-serif"; }
+
 .h1 {
   display: flex;
   flex-wrap: nowrap; }
   .h1 p.header {
     width: 29px;
     height: 30px;
-    font-family: "Montserrat";
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 29px;
-    /* identical to box height */
     text-align: right;
     color: rgba(31, 32, 65, 0.25);
     margin-left: 8px; }
   .h1 p.description {
     width: 336px;
     height: 60px;
-    font-family: "Quicksand";
+    font-family: "Quicksand", "Arial,sans-serif";
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -697,7 +698,6 @@ table {
   .h2 p.header {
     width: 27px;
     height: 24px;
-    font-family: "Montserrat";
     font-style: normal;
     font-weight: normal;
     font-size: 19px;
@@ -708,7 +708,7 @@ table {
   .h2 p.description {
     width: 282px;
     height: 48px;
-    font-family: "Quicksand";
+    font-family: "Quicksand", "Arial,sans-serif";
     font-style: normal;
     font-weight: bold;
     font-size: 19px;
@@ -723,7 +723,6 @@ table {
   .h3 p.header {
     width: 17px;
     height: 15px;
-    font-family: "Montserrat";
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -735,7 +734,6 @@ table {
   .h3 p.description {
     width: 186px;
     height: 15px;
-    font-family: "Montserrat";
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -752,7 +750,6 @@ table {
     width: 37px;
     height: 24px;
     margin-bottom: 24px;
-    font-family: "Montserrat";
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -762,7 +759,6 @@ table {
   .body p.description {
     width: 301px;
     height: 48px;
-    font-family: "Montserrat";
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1294,7 +1290,7 @@ table {
   justify-content: space-between;
   font-style: normal;
   font-weight: normal;
-  font-family: "Montserrat"; }
+  font-family: "Montserrat", "Arial,sans-serif"; }
 
 .footer__copyright {
   width: 367px;
@@ -1360,7 +1356,7 @@ table {
   display: block;
   width: 560px;
   height: 48px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", "Arial,sans-serif";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1382,7 +1378,7 @@ table {
 
 .footer-nav__container {
   max-width: 1440px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", "Arial,sans-serif";
   height: 372px;
   background: #ffffff;
   box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
@@ -1509,7 +1505,6 @@ table {
 .footer-nav__subscribe-textContainer p {
   display: block;
   height: 48px;
-  font-family: "Montserrat";
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75); }
@@ -1622,7 +1617,7 @@ p.subscribe {
   text-align: center;
   align-items: center;
   justify-content: space-between;
-  font-family: "Montserrat";
+  font-family: "Montserrat", "Arial,sans-serif";
   font-style: normal;
   font-size: 14px;
   line-height: 17px;
@@ -1789,7 +1784,7 @@ p.subscribe {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-family: "Montserrat";
+  font-family: "Montserrat", "Arial,sans-serif";
   font-style: normal;
   font-weight: normal;
   align-items: center;
@@ -1992,7 +1987,7 @@ p.subscribe {
     width: 89px;
     margin-top: 10px;
     margin-left: 15px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", "Arial,sans-serif";
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -2000,7 +1995,7 @@ p.subscribe {
     cursor: pointer;
     color: rgba(31, 32, 65, 0.75); }
   .dropdown-input__date-input-field::placeholder {
-    font-family: "Montserrat";
+    font-family: "Montserrat", "Arial,sans-serif";
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -2047,7 +2042,7 @@ p.subscribe {
     min-width: 103px;
     margin-top: 9px;
     margin-left: 14px;
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial,sans-serif";
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -2055,7 +2050,7 @@ p.subscribe {
     cursor: pointer;
     color: rgba(31, 32, 65, 0.75); }
   .dropdown-input__filter-input-field::placeholder {
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial,sans-serif";
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -2066,7 +2061,7 @@ p.subscribe {
     padding-bottom: 3px; }
 
 .datepicker--day-name {
-  font-family: "Montserrat";
+  font-family: "Montserrat", "Arial,sans-serif";
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -2091,7 +2086,7 @@ p.subscribe {
   height: 40px; }
 
 .-other-month- {
-  font-family: "Montserrat";
+  font-family: "Montserrat", "Arial,sans-serif";
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -2112,7 +2107,7 @@ p.subscribe {
 
 .datepicker {
   background: #ffffff;
-  font-family: "Montserrat";
+  font-family: "Montserrat", "Arial,sans-serif";
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
@@ -2143,7 +2138,7 @@ p.subscribe {
     border-bottom: none;
     margin-top: 15px; }
   .datepicker--nav-title {
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial,sans-serif";
     font-style: normal;
     font-weight: bold;
     font-size: 19px;
@@ -2157,7 +2152,7 @@ p.subscribe {
     display: flex;
     justify-content: space-between;
     padding: 0px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", "Arial,sans-serif";
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -2254,7 +2249,7 @@ p.subscribe {
   height: 24px;
   margin-top: 8px;
   margin-left: 15px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", "Arial,sans-serif";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -2262,7 +2257,7 @@ p.subscribe {
   color: rgba(31, 32, 65, 0.75); }
 
 .dropdown-input__room-input-field::placeholder {
-  font-family: "Montserrat";
+  font-family: "Montserrat", "Arial,sans-serif";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -2303,7 +2298,7 @@ p.subscribe {
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-family: "Montserrat";
+  font-family: "Montserrat", "Arial,sans-serif";
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -2386,14 +2381,14 @@ p.subscribe {
   height: 24px;
   margin-top: 8px;
   margin-left: 15px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", "Arial,sans-serif";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px; }
 
 .dropdown-input__guests input::placeholder {
-  font-family: "Montserrat";
+  font-family: "Montserrat", "Arial,sans-serif";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -2442,7 +2437,7 @@ p.subscribe {
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-family: "Montserrat";
+  font-family: "Montserrat", "Arial,sans-serif";
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -2512,11 +2507,11 @@ p.subscribe {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: -3px; }
+  margin-bottom: -3px;
+  font-family: "Montserrat", "Arial,sans-serif";
+  font-style: normal; }
 
 .range-slider__label-wrapper p:first-child {
-  font-family: "Montserrat";
-  font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
@@ -2528,8 +2523,6 @@ p.subscribe {
   height: 15px;
   width: 102px;
   text-align: justify;
-  font-family: "Montserrat";
-  font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
@@ -2573,7 +2566,8 @@ p.subscribe {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
   height: 44px;
-  width: 320px; }
+  width: 320px;
+  font-family: "Montserrat", "Arial,sans-serif"; }
 
 .text-field__input-wrapper {
   display: flex;
@@ -2582,7 +2576,6 @@ p.subscribe {
 .text-field label {
   white-space: nowrap;
   height: 15px;
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -2592,7 +2585,6 @@ p.subscribe {
   margin-bottom: 5px; }
 
 .text-field input {
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -2628,7 +2620,7 @@ p.subscribe {
   text-align: center;
   align-items: center;
   justify-content: center;
-  font-family: Material Icons;
+  font-family: "Material Icons";
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -2641,7 +2633,7 @@ p.subscribe {
   border-radius: 22px;
   border: none;
   cursor: pointer;
-  font-family: "Montserrat";
+  font-family: "Montserrat", "Arial,sans-serif";
   white-space: nowrap;
   font-style: normal; }
 
@@ -2947,7 +2939,7 @@ p.subscribe {
   height: 0; }
 
 .switch__name {
-  font-family: "Montserrat";
+  font-family: "Montserrat", "Arial,sans-serif";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -3087,14 +3079,14 @@ input:checked + .slider-round:before {
     text-align: center;
     margin-right: 10px; }
   .bullet-list-icons__header {
-    font-family: "Montserrat";
+    font-family: "Montserrat", "Arial,sans-serif";
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75); }
   .bullet-list-icons__text {
-    font-family: "Montserrat";
+    font-family: "Montserrat", "Arial,sans-serif";
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -3105,9 +3097,9 @@ input:checked + .slider-round:before {
 
 .expanded-comment {
   width: 711px;
-  height: 133px; }
+  height: 133px;
+  font-family: "Montserrat", "Arial,sans-serif"; }
   .expanded-comment__body-text, .expanded-comment__header-time {
-    font-family: "Montserrat";
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -3126,7 +3118,6 @@ input:checked + .slider-round:before {
     display: flex;
     flex-direction: row; }
   .expanded-comment__header-name {
-    font-family: "Montserrat";
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -3153,13 +3144,13 @@ input:checked + .slider-round:before {
   .pagination .pagination_wrapper {
     display: flex;
     flex-direction: row;
-    margin-bottom: 10.56px; }
+    margin-bottom: 10.56px;
+    font-family: "Montserrat", "Arial,sans-serif";
+    font-style: normal;
+    font-weight: normal; }
   .pagination__number {
     width: 40px;
     height: 40px;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: normal;
     font-size: 12px;
     line-height: 15px;
     display: flex;
@@ -3170,9 +3161,6 @@ input:checked + .slider-round:before {
   .pagination__ellipsis {
     width: 40px;
     height: 40px;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: normal;
     font-size: 12px;
     line-height: 15px;
     display: flex;
@@ -3186,8 +3174,6 @@ input:checked + .slider-round:before {
     color: #ffffff; }
   .pagination__arrow {
     font-family: "Material Icons";
-    font-style: normal;
-    font-weight: normal;
     font-size: 24px;
     line-height: 20px;
     display: flex;
@@ -3200,9 +3186,6 @@ input:checked + .slider-round:before {
     width: 40px;
     justify-content: center; }
   .pagination__label {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 19px;
     color: rgba(31, 32, 65, 0.75);
@@ -3217,7 +3200,6 @@ input:checked + .slider-round:before {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-family: "Montserrat";
     width: 320px;
     font-size: 12px;
     line-height: 15px;
@@ -3297,7 +3279,6 @@ input:checked + .slider-round:before {
   padding-top: 66px; }
   .form-elements__central-column h2 {
     margin-bottom: 16.56px;
-    font-family: "Montserrat";
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -3348,7 +3329,6 @@ input:checked + .slider-round:before {
   .form-elements__right-column .range-slider__wrapper {
     margin-bottom: 35px; }
   .form-elements__right-column h2 {
-    font-family: "Montserrat";
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -3389,6 +3369,7 @@ input:checked + .slider-round:before {
 .form-elements__wrapper {
   width: 1440px;
   height: 1853px;
+  font-family: "Montserrat", "Arial,sans-serif";
   display: grid;
   grid-template-areas: "header header header"  "left central right" "left central right" "left comment comment";
   grid-template-columns: 460px 407px 320px;
@@ -3400,7 +3381,7 @@ input:checked + .slider-round:before {
   background: #ffffff;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", "Arial,sans-serif";
   font-style: normal; }
   .room-card_wrapper .room-card__img {
     position: relative;
@@ -3539,14 +3520,14 @@ input:checked + .slider-round:before {
     color: #1f2041;
     font-style: normal; }
   .sign-up__wrapper h2 {
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial,sans-serif";
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
     padding-top: 40px;
     padding-bottom: 20px; }
   .sign-up__wrapper h3 {
-    font-family: "Montserrat";
+    font-family: "Montserrat", "Arial,sans-serif";
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
@@ -3571,7 +3552,7 @@ input:checked + .slider-round:before {
     justify-content: space-between;
     align-items: center; }
     .sign-up__wrapper .sign-up__footer .sign-up__account {
-      font-family: Montserrat;
+      font-family: "Montserrat", "Arial,sans-serif";
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
@@ -3587,7 +3568,7 @@ input:checked + .slider-round:before {
   padding-left: 30px;
   padding-right: 30px; }
   .search-number__wrapper h2 {
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial,sans-serif";
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -3595,7 +3576,7 @@ input:checked + .slider-round:before {
     color: #1f2041;
     padding: 40px 0px 21px 0px; }
   .search-number__wrapper h3 {
-    font-family: "Montserrat";
+    font-family: "Montserrat", "Arial,sans-serif";
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -3629,7 +3610,7 @@ input:checked + .slider-round:before {
   padding-right: 30px;
   padding-top: 40px; }
   .sign-in__wrapper h2 {
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial,sans-serif";
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
@@ -3648,7 +3629,7 @@ input:checked + .slider-round:before {
     align-items: center;
     margin-top: 30px; }
     .sign-in__wrapper .sign-in__footer .sign-in__account {
-      font-family: "Montserrat";
+      font-family: "Montserrat", "Arial,sans-serif";
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
@@ -3680,7 +3661,7 @@ input:checked + .slider-round:before {
     justify-content: center;
     margin-bottom: 13px; }
   .room-price__wrapper .room-price__number {
-    font-family: "Open Sans";
+    font-family: "Open Sans", "Arial,sans-serif";
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -3697,7 +3678,7 @@ input:checked + .slider-round:before {
     font-size: 23px;
     line-height: 23px; }
   .room-price__wrapper .room-price__type {
-    font-family: "Montserrat";
+    font-family: "Montserrat", "Arial,sans-serif";
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
@@ -3706,7 +3687,7 @@ input:checked + .slider-round:before {
   .room-price__wrapper .room-price__price {
     margin-left: auto;
     width: 100px;
-    font-family: "Montserrat";
+    font-family: "Montserrat", "Arial,sans-serif";
     font-weight: bold;
     font-size: 14px;
     line-height: 18px;
@@ -3716,7 +3697,7 @@ input:checked + .slider-round:before {
     font-weight: normal;
     font-size: 12px; }
   .room-price__wrapper h3 {
-    font-family: "Montserrat";
+    font-family: "Montserrat", "Arial,sans-serif";
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
@@ -3735,7 +3716,7 @@ input:checked + .slider-round:before {
     justify-content: space-between;
     font-weight: normal;
     font-style: normal;
-    font-family: "Montserrat";
+    font-family: "Montserrat", "Arial,sans-serif";
     font-size: 14px;
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75); }
@@ -3757,7 +3738,7 @@ input:checked + .slider-round:before {
     font-size: 19px;
     line-height: 24px;
     color: #1f2041;
-    font-family: "Open Sans"; }
+    font-family: "Open Sans", "Arial,sans-serif"; }
   .room-price__wrapper .room-price__extra-info {
     width: 20px;
     height: 20px;
@@ -3798,4 +3779,4 @@ input:checked + .slider-round:before {
     margin-top: 72px; }
 
 
-/*# sourceMappingURL=UIKit.ce992d3583018518c900.css.map*/
+/*# sourceMappingURL=UIKit.7391e1bdb75babb898f5.css.map*/
