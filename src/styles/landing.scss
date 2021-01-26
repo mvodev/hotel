@@ -12,6 +12,7 @@
 @import '../components//UIKit/modules/dropdown/fsdDatepicker.css';
 .landing-wrapper{
  max-width: $container-width;
+ font-family: $font-family-main,$fallback-font;
  max-height: 1343px;
  margin: 0px auto; 
   .img__wrapper{
@@ -24,7 +25,6 @@
     .img__header{
     height: 48px;
     width: 296px;
-    font-family: $font-family-main;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -40,16 +40,16 @@
     margin-top: 70px;
     margin-left: 140px;
   }
- }
+  }
 }
 @media (max-width:$container-mobile-width){
- .landing-wrapper{
-   max-width: none;
-   max-height: none;
- }
- .footer{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
- }
+  .landing-wrapper{
+    max-width: none;
+    max-height: none;
+  }
+  .footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }

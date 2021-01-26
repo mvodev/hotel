@@ -967,7 +967,6 @@ input:checked + .slider-round:before {
   position: relative;
   width: 30px;
   height: 30px;
-  cursor: default;
   display: none;
   margin-left: 10px;
   cursor: pointer; }
@@ -1150,7 +1149,6 @@ input:checked + .slider-round:before {
   position: relative;
   width: 30px;
   height: 30px;
-  cursor: default;
   display: none;
   margin-left: 10px;
   cursor: pointer; }
@@ -1564,4 +1562,4 @@ p.subscribe {
     max-height: none; } }
 
 
-/*# sourceMappingURL=registration.4656593804cc5660a712.css.map*/
+/*# sourceMappingURL=registration.ce992d3583018518c900.css.map*/

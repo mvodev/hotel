@@ -15,13 +15,13 @@
 @import '../components/UIKit//modules/dropdown/fsdDatepicker.css';
 @import '../../node_modules/ion-rangeslider/css/ion.rangeSlider.css';
 .search-wrapper{
- max-width: $container-width;
- max-height: 1880px;
- margin: 0px auto; 
- font-family: $font-family-main;
- font-style: normal;
- font-weight: normal;
- .search-wrapper__content{
+  max-width: $container-width;
+  max-height: 1880px;
+  margin: 0px auto; 
+  font-family: $font-family-main,$fallback-font;
+  font-style: normal;
+  font-weight: normal;
+  .search-wrapper__content{
   margin: 30px auto 0px auto;
   display: grid;
   grid-template-areas: 
@@ -29,10 +29,9 @@
   grid-template-columns: 320px 834px;
   grid-template-rows: 1fr 75px;
   column-gap: 6px;
-  //max-height: 1326px;
   max-width: 1160px;
- }
- .search-wrapper__content_left-column{
+  }
+  .search-wrapper__content_left-column{
   grid-area: left;
   display: flex;
   flex-direction: column;
@@ -50,7 +49,7 @@
   .search-wrapper__content_left-column-header:nth-child(7){
     margin-bottom: 17px;
   }
-   .search-wrapper__content_left-column-header:nth-child(9){
+  .search-wrapper__content_left-column-header:nth-child(9){
     margin-bottom: 14px;
   }
   .range-slider__wrapper{
@@ -84,10 +83,10 @@
   .bullet-list-expandable{
     margin-top: -11px;
   }
-}
+  }
 
-.search-wrapper__content_right-column{
-  grid-area: right;
+  .search-wrapper__content_right-column{
+    grid-area: right;
   .search-wrapper__content_right-column-header{
   font-family: $font-family-additionalRussianReplacer;
   font-style: normal;
@@ -103,11 +102,11 @@
     grid-template-rows: repeat(4,257px);
     row-gap: 15px;
     column-gap: 12px;
+    }
   }
-}
-.pagination{
-  margin: 41px auto 0px auto;
-}
+  .pagination{
+    margin: 41px auto 0px auto;
+  }
 }
 @media (max-width:$container-mobile-width){
  .search-wrapper{

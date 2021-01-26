@@ -2,33 +2,33 @@
 @import './common/reset.scss';
 @import './common/constants.scss';
 .wrapper{
- background-color: $grey;
- font-family: $font-family-main;
- font-weight: bold;
- font-size: 16px;
+  background-color: $grey;
+  font-family: $font-family-main,$fallback-font;
+  font-weight: bold;
+  font-size: 16px;
 }
 .wrapper h1{
- margin: 0 auto;
- text-align: center;
- margin-bottom: 50px;
- margin-top: 100px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 100px;
   color: $green;
   font-size: 2rem;
 }
 .wrapper a{
- text-decoration: none;
+  text-decoration: none;
 }
 .UIKit a,.site a{
- color:$purple;
- border: 2px solid $darkShade50;
- width: 250px;
- height: 80px;
- align-items: center;
- justify-content: center;
- text-align: center;
- margin: 0 auto 40px;
- display: flex;
-font-size: 1.5rem;
-background-color: $white;
-border-radius: .5rem;
+  color:$purple;
+  border: 2px solid $darkShade50;
+  width: 250px;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto 40px;
+  display: flex;
+  font-size: 1.5rem;
+  background-color: $white;
+  border-radius: .5rem;
 }

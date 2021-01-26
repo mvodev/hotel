@@ -41,18 +41,18 @@
 }
 
 @media (max-width:$container-mobile-width){
- .footer-copyright-container{
+  .footer-copyright-container{
   flex-direction: column;
   text-align: center;
   justify-content: center;
   align-items: center;
- }
- .footer__copyright{
+  }
+  .footer__copyright{
   margin: 5px 0px 10px 0px;
   display: flex;
   justify-content: center;
- }
- .footer__social-networks-links{
+  }
+  .footer__social-networks-links{
   margin: 0px 0px 5px 0px;
- }
+  }
 }

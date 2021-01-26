@@ -1,13 +1,13 @@
 .diagram{
- display: flex;
- flex-direction: row;
- align-items: flex-end;
- max-height: 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  max-height: 120px;
 }
 .diagram-chart{
- width: 120px;
- height: 120px;
- margin-right: 45px;
+  width: 120px;
+  height: 120px;
+  margin-right: 45px;
 }
 .diagram-description{
   position: relative;
@@ -26,32 +26,29 @@
   color: $darkShade75;
 }
 .diagram-description__list::before{
- position: absolute;
- width: 10px;
- height: 10px;
- content: '';
- top: 10px;
- left: -15px;
- border-radius: 50%;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  content: '';
+  top: 10px;
+  left: -15px;
+  border-radius: 50%;
 }
 .diagram-description_list-orange::before{
- background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+  background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
 }
 .diagram-description_list-green::before{
- background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
 }
 .diagram-description_list-blue::before{
- background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 }
 .diagram-description_list-black::before{
- background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
+  background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
 }
 .diagramchart__chart-text {
   font-family: $font-family-additionalRussianReplacer;
   fill: $purple;
-  // -moz-transform: translateY(0.25em);
-  // -ms-transform: translateY(0.25em);
-  // -webkit-transform: translateY(0.25em);
   transform: translateY(5px) translateX(-30px);
 }
 .diagramchart__chart-number {

@@ -33,18 +33,17 @@
   position: relative;
 }
 .bullet-list-expandable__label{
-font-family: $font-family-main;
-font-style: normal;
-font-weight: bold;
-font-size: 12px;
-line-height: 15px;
-/* identical to box height */
-text-transform: uppercase;
-color: $darkShade100;
-display: flex;
-justify-content: space-between;
-text-align: center;
-align-items: center;
+  font-family: $font-family-main;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $darkShade100;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
 }
 .bullet-list-expandable__label span{
   display: block;

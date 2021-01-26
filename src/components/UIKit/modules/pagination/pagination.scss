@@ -19,50 +19,50 @@
   text-align: center;
   color: $darkShade50;
   justify-content: center;
- }
- &__ellipsis{
-  width: 40px;
-  height: 40px;
-  font-family: $font-family-main;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: $darkShade50;
-  justify-content: center;
- }
- &__number_selected{
-  background: $buttonColor;
-  border-radius: 22px;
-  color: $white;
- }
- &__arrow{
-  font-family: $font-for-icons;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: $white;
-  background: $selectedDate;
-  border-radius: 22px;
-  height: 40px;
-  width: 40px;
-  justify-content: center;
- }
+  }
+  &__ellipsis{
+    width: 40px;
+    height: 40px;
+    font-family: $font-family-main;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $darkShade50;
+    justify-content: center;
+  }
+  &__number_selected{
+    background: $buttonColor;
+    border-radius: 22px;
+    color: $white;
+  }
+  &__arrow{
+    font-family: $font-for-icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $white;
+    background: $selectedDate;
+    border-radius: 22px;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+  }
   &__label{
-  font-family: $font-family-main;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-  color: $darkShade75;
-  margin-left: 5px;
-  margin-right: 5px;
+    font-family: $font-family-main;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: $darkShade75;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }

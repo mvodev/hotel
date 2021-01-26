@@ -3,7 +3,6 @@
   width: 320px;
   height: 44px;
   background: $white;
-  /* Dark 25% */
   border: 1px solid $darkShade50;
   box-sizing: border-box;
   border-radius: 2px;
@@ -44,8 +43,6 @@
   line-height: 24px;
   width: 112px;
   height: 18px;
-  /* identical to box height, or 171% */
-  /* Dark 75% */
   color: $darkShade75;
   margin-bottom: 12px;
 }
@@ -94,9 +91,7 @@
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  /* identical to box height */
   text-transform: uppercase;
-  /* Dark 100% */
   color: $darkShade100;
 }
 .dropdown-guests__adult,

@@ -1,10 +1,10 @@
 @import '../../../components/UIKit/modules/roomcard/roomcard.scss';
-  .cards__right-column{
-   padding-left: 40px;
-   .cards__right-column-datepicker{
+.cards__right-column{
+  padding-left: 40px;
+  .cards__right-column-datepicker{
     margin-bottom: 40px;
-   }
-   .room-card:nth-child(2){
-    margin-bottom: 40px;
-   }
   }
+  .room-card:nth-child(2){
+    margin-bottom: 40px;
+  }
+}

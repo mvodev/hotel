@@ -1,44 +1,40 @@
 .range-slider__wrapper{
-width: 266px;
+ width: 266px;
 }
 .range-slider__label-wrapper{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-margin-bottom: -3px;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ margin-bottom: -3px;
 }
 .range-slider__label-wrapper p:first-child{
-font-family: $font-family-main;
-font-style: normal;
-font-weight: bold;
-font-size: 12px;
-line-height: 15px;
-/* identical to box height */
-text-transform: uppercase;
-/* Dark 100% */
-color: $darkShade100;
-padding-top: 3px;
+ font-family: $font-family-main;
+ font-style: normal;
+ font-weight: bold;
+ font-size: 12px;
+ line-height: 15px;
+ text-transform: uppercase;
+ color: $darkShade100;
+ padding-top: 3px;
 }
 .range-slider__label-wrapper p:nth-child(2){
-height: 15px;
-width: 102px;
-text-align: justify;
-font-family: $font-family-main;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 15px;
-/* identical to box height */
-text-align: right;
-/* Dark 50% */
-color: $darkShade50;
+ height: 15px;
+ width: 102px;
+ text-align: justify;
+ font-family: $font-family-main;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 12px;
+ line-height: 15px;
+ text-align: right;
+ color: $darkShade50;
 }
 
 .irs--flat .irs-line{
-background-color: $white;
-border: 1px solid $darkShade25;
-border-radius: 3px;
-height: 6px;
+ background-color: $white;
+ border: 1px solid $darkShade25;
+ border-radius: 3px;
+ height: 6px;
 }
 .irs--flat .irs-handle>i:first-child {
  background: $selectedDate;
@@ -50,22 +46,20 @@ height: 6px;
 }
 .irs--flat .irs-bar {
  background: $selectedDate;
-border-radius: 3px;
-height: 6px;
+ border-radius: 3px;
+ height: 6px;
 }
 .irs-min,.irs-max{
-display: none;
+ display: none;
 }
 .irs-from,.irs-to{
-display: none;
+ display: none;
 }
 .rub{ 
-font-family: "rouble";
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 15px;
-/* identical to box height */
-/* Dark 50% */
-color: $darkShade50;
+ font-family: "rouble";
+ font-style: normal;
+ font-weight: normal;
+ font-size: 12px;
+ line-height: 15px;
+ color: $darkShade50;
 }

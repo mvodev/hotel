@@ -1559,7 +1559,6 @@ p.subscribe {
   position: relative;
   width: 30px;
   height: 30px;
-  cursor: default;
   display: none;
   margin-left: 10px;
   cursor: pointer; }
@@ -1729,7 +1728,6 @@ p.subscribe {
   position: relative;
   width: 30px;
   height: 30px;
-  cursor: default;
   display: none;
   margin-left: 10px;
   cursor: pointer; }
@@ -1912,7 +1910,6 @@ p.subscribe {
   position: relative;
   width: 30px;
   height: 30px;
-  cursor: default;
   display: none;
   margin-left: 10px;
   cursor: pointer; }
@@ -2363,7 +2360,6 @@ p.subscribe {
   width: 320px;
   height: 44px;
   background: #ffffff;
-  /* Dark 25% */
   border: 1px solid rgba(31, 32, 65, 0.5);
   box-sizing: border-box;
   border-radius: 2px;
@@ -2404,8 +2400,6 @@ p.subscribe {
   line-height: 24px;
   width: 112px;
   height: 18px;
-  /* identical to box height, or 171% */
-  /* Dark 75% */
   color: rgba(31, 32, 65, 0.75);
   margin-bottom: 12px; }
 
@@ -2453,9 +2447,7 @@ p.subscribe {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  /* identical to box height */
   text-transform: uppercase;
-  /* Dark 100% */
   color: #1f2041; }
 
 .dropdown-guests__adult,
@@ -2528,9 +2520,7 @@ p.subscribe {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  /* identical to box height */
   text-transform: uppercase;
-  /* Dark 100% */
   color: #1f2041;
   padding-top: 3px; }
 
@@ -2543,9 +2533,7 @@ p.subscribe {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  /* identical to box height */
   text-align: right;
-  /* Dark 50% */
   color: rgba(31, 32, 65, 0.5); }
 
 .irs--flat .irs-line {
@@ -2579,8 +2567,6 @@ p.subscribe {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  /* identical to box height */
-  /* Dark 50% */
   color: rgba(31, 32, 65, 0.5); }
 
 .text-field {
@@ -3044,7 +3030,6 @@ input:checked + .slider-round:before {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  /* identical to box height */
   text-transform: uppercase;
   color: #1f2041;
   display: flex;
@@ -3813,4 +3798,4 @@ input:checked + .slider-round:before {
     margin-top: 72px; }
 
 
-/*# sourceMappingURL=UIKit.4656593804cc5660a712.css.map*/
+/*# sourceMappingURL=UIKit.ce992d3583018518c900.css.map*/

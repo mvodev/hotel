@@ -1,8 +1,8 @@
-  @import '../../../components/UIKit/modules/signin/signin.scss';
-  @import '../../../components/UIKit/modules/roomprice/roomprice.scss';
-  .cards__central-column{
-   padding-left: 40px;
-   .room-price{
-     margin-bottom: 40px;
-   }
+@import '../../../components/UIKit/modules/signin/signin.scss';
+@import '../../../components/UIKit/modules/roomprice/roomprice.scss';
+.cards__central-column{
+  padding-left: 40px;
+  .room-price{
+    margin-bottom: 40px;
   }
+}

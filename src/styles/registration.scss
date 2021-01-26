@@ -11,9 +11,9 @@
 @import '../components/UIKit/modules/footers/footerWidget.scss';
 
 .wrapper{
- max-width: $container-width;
- max-height: 1197px;
- margin: 0px auto; 
+  max-width: $container-width;
+  max-height: 1197px;
+  margin: 0px auto; 
 
   .img__wrapper{
     height: 685px;
@@ -26,8 +26,8 @@
  }
 }
 @media (max-width:$container-mobile-width){
- .wrapper{
-   max-width: none;
-   max-height: none;
- }
+  .wrapper{
+    max-width: none;
+    max-height: none;
+  }
 }

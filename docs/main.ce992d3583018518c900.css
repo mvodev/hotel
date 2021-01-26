@@ -496,7 +496,7 @@ table {
 
 .wrapper {
   background-color: #e5e5e5;
-  font-family: "Montserrat";
+  font-family: "Montserrat", "Arial,sans-serif";
   font-weight: bold;
   font-size: 16px; }
 
@@ -526,4 +526,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=main.4656593804cc5660a712.css.map*/
+/*# sourceMappingURL=main.ce992d3583018518c900.css.map*/
