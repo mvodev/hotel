@@ -2622,7 +2622,7 @@ p.subscribe {
   .text-field_subscription .text-field__input-wrapper input {
     width: 223px; }
 
-.text-field__input-wrapper_arrow {
+.text-field__input-wrapper-arrow {
   width: 44px;
   height: 44px;
   display: flex;
@@ -2634,7 +2634,8 @@ p.subscribe {
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
-  color: #BC9CFF; }
+  color: #BC9CFF;
+  cursor: pointer; }
 
 .button {
   width: 99px;
@@ -3790,4 +3791,4 @@ input:checked + .slider-round:before {
     margin-top: 72px; }
 
 
-/*# sourceMappingURL=UIKit.2699e3959650a912b6c8.css.map*/
+/*# sourceMappingURL=UIKit.4c56e30df527cbb6c3c9.css.map*/
