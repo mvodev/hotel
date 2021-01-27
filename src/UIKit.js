@@ -8,6 +8,7 @@ import './components/UIKit/modules/dropdown/dropDownGuests.js';
 import './components/UIKit/modules/dropdown/dropDownRoom.js';
 import './components/UIKit/modules/list/expandableCL.js';
 import './components/UIKit/modules/burger/burger.js';
+import './components/UIKit/modules/button/radioButtonsSex.js';
 import Cleave from 'cleave.js';
 document.querySelectorAll('.text-field__input-date').forEach(function(elem){
   new Cleave(elem, {

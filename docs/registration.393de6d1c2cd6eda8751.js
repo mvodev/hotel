@@ -155,6 +155,42 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./components/UIKit/modules/button/radioButtonsSex.js":
+/*!************************************************************!*\
+  !*** ./components/UIKit/modules/button/radioButtonsSex.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+const radioButtons = document.querySelectorAll('.button-radio__checkbox-input');
+radioButtons.forEach(function (elem) {
+ elem.addEventListener('click', radioButtonsHandler);
+});
+function radioButtonsHandler(event) {
+ if (event.target.checked) {
+  if (event.srcElement.parentElement.innerText === "Женщина") {
+   if (event.srcElement.parentElement.parentElement.parentElement.firstChild.firstChild.firstChild.checked){
+    event.srcElement.parentElement.parentElement.parentElement.firstChild.firstChild.firstChild.checked=false;
+   }
+  }
+  else{
+   if (event.srcElement.parentElement.parentElement.parentElement.lastChild.firstChild.firstChild.checked) {
+    event.srcElement.parentElement.parentElement.parentElement.lastChild.firstChild.firstChild.checked = false;
+   }
+  }
+ }
+ else{
+  if (event.srcElement.parentElement.innerText === "Женщина") {
+    event.srcElement.parentElement.parentElement.parentElement.firstChild.firstChild.firstChild.checked = true;
+  }
+  else{
+   event.srcElement.parentElement.parentElement.parentElement.lastChild.firstChild.firstChild.checked = true;
+  }
+ }
+}
+
+/***/ }),
+
 /***/ "./registration.js":
 /*!*************************!*\
   !*** ./registration.js ***!
@@ -169,6 +205,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
 /* harmony import */ var _components_UIKit_modules_dropdown_fsdDatepicker_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/UIKit/modules/dropdown/fsdDatepicker.js */ "./components/UIKit/modules/dropdown/fsdDatepicker.js");
 /* harmony import */ var _components_UIKit_modules_dropdown_fsdDatepicker_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_dropdown_fsdDatepicker_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_UIKit_modules_button_radioButtonsSex_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/UIKit/modules/button/radioButtonsSex.js */ "./components/UIKit/modules/button/radioButtonsSex.js");
+/* harmony import */ var _components_UIKit_modules_button_radioButtonsSex_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_button_radioButtonsSex_js__WEBPACK_IMPORTED_MODULE_3__);
+
 
 
 
@@ -195,4 +234,4 @@ var cleave = new Cleave('.text-field__input-date', {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=registration.1ad7670cdb518c35163c.js.map
+//# sourceMappingURL=registration.393de6d1c2cd6eda8751.js.map

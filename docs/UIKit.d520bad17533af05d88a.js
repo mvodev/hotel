@@ -183,6 +183,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_UIKit_modules_list_expandableCL_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_list_expandableCL_js__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/UIKit/modules/burger/burger.js */ "./components/UIKit/modules/burger/burger.js");
 /* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _components_UIKit_modules_button_radioButtonsSex_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/UIKit/modules/button/radioButtonsSex.js */ "./components/UIKit/modules/button/radioButtonsSex.js");
+/* harmony import */ var _components_UIKit_modules_button_radioButtonsSex_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_button_radioButtonsSex_js__WEBPACK_IMPORTED_MODULE_10__);
+
 
 
 
@@ -264,6 +267,42 @@ function likeClickListener(event) {
 
 /***/ }),
 
+/***/ "./components/UIKit/modules/button/radioButtonsSex.js":
+/*!************************************************************!*\
+  !*** ./components/UIKit/modules/button/radioButtonsSex.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+const radioButtons = document.querySelectorAll('.button-radio__checkbox-input');
+radioButtons.forEach(function (elem) {
+ elem.addEventListener('click', radioButtonsHandler);
+});
+function radioButtonsHandler(event) {
+ if (event.target.checked) {
+  if (event.srcElement.parentElement.innerText === "Женщина") {
+   if (event.srcElement.parentElement.parentElement.parentElement.firstChild.firstChild.firstChild.checked){
+    event.srcElement.parentElement.parentElement.parentElement.firstChild.firstChild.firstChild.checked=false;
+   }
+  }
+  else{
+   if (event.srcElement.parentElement.parentElement.parentElement.lastChild.firstChild.firstChild.checked) {
+    event.srcElement.parentElement.parentElement.parentElement.lastChild.firstChild.firstChild.checked = false;
+   }
+  }
+ }
+ else{
+  if (event.srcElement.parentElement.innerText === "Женщина") {
+    event.srcElement.parentElement.parentElement.parentElement.firstChild.firstChild.firstChild.checked = true;
+  }
+  else{
+   event.srcElement.parentElement.parentElement.parentElement.lastChild.firstChild.firstChild.checked = true;
+  }
+ }
+}
+
+/***/ }),
+
 /***/ "./styles/UIKitStyles.scss":
 /*!*********************************!*\
   !*** ./styles/UIKitStyles.scss ***!
@@ -276,4 +315,4 @@ function likeClickListener(event) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=UIKit.2c0360377777d54fbc17.js.map
+//# sourceMappingURL=UIKit.d520bad17533af05d88a.js.map
