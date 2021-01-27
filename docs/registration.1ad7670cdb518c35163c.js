@@ -148,7 +148,7 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./registration.js","vendors~UIKit~details~landing~registration~search~signin","vendors~UIKit~landing~registration","UIKit~details~landing~registration~search"]);
+/******/ 	deferredModules.push(["./registration.js","vendors~UIKit~details~landing~registration~search~signin","vendors~UIKit~details~landing~registration","UIKit~details~landing~registration~search"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
@@ -195,4 +195,4 @@ var cleave = new Cleave('.text-field__input-date', {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=registration.d170560d0e32d4efb3d4.js.map
+//# sourceMappingURL=registration.1ad7670cdb518c35163c.js.map
