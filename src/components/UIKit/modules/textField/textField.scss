@@ -59,7 +59,7 @@
     width: 223px;
   }
 }
-.text-field__input-wrapper_arrow{
+.text-field__input-wrapper-arrow{
   width: 44px;
   height: 44px;
   display: flex;
@@ -72,4 +72,5 @@
   font-size: 24px;
   line-height: 24px;
   color: $purple;
+  cursor: pointer;
 }
