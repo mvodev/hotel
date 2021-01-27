@@ -19,6 +19,7 @@
     text-align: center;
     color: $darkShade50;
     justify-content: center;
+    cursor: pointer;
   }
   &__ellipsis{
     width: 40px;
@@ -49,6 +50,7 @@
     height: 40px;
     width: 40px;
     justify-content: center;
+    cursor: pointer;
   }
   &__label{
     font-size: 14px;

@@ -2037,7 +2037,8 @@ p.subscribe {
     align-items: center;
     text-align: center;
     color: rgba(31, 32, 65, 0.5);
-    justify-content: center; }
+    justify-content: center;
+    cursor: pointer; }
   .pagination__ellipsis {
     width: 40px;
     height: 40px;
@@ -2064,7 +2065,8 @@ p.subscribe {
     border-radius: 22px;
     height: 40px;
     width: 40px;
-    justify-content: center; }
+    justify-content: center;
+    cursor: pointer; }
   .pagination__label {
     font-size: 14px;
     line-height: 19px;
@@ -2165,4 +2167,4 @@ p.subscribe {
     justify-content: center; } }
 
 
-/*# sourceMappingURL=search.77148f92c114ada63e71.css.map*/
+/*# sourceMappingURL=search.c08cd59b085516c21709.css.map*/
