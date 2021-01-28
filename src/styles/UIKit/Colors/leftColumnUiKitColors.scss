@@ -1,119 +1,36 @@
-.darkShade100 {
-  position: relative;
-  width: 70px;
-  height: 70px;
-  background: $darkShade100;
-  border-radius: 6px;
-}
-.darkShade100 p {
-  position: relative;
-  width: 159px;
-  height: 57px;
-  display: flex;
-  align-items: center;
-  color: $darkShade100;
+.colors__left-column p{
   margin-left: 110px;
-  margin-top: 7px;
+  margin-top: 6px;
 }
-.darkShade75 {
-  position: relative;
-  width: 70px;
-  height: 70px;
-  background: $darkShade75;
-  border-radius: 6px;
+.dark-shade-100,.dark-shade-75,
+.dark-shade-50,.dark-shade-25,.dark-shade-5,
+.green,.purple{
+ width: 70px;
+ height: 70px;
+ border-radius: 6px;
 }
-.darkShade75 p {
-  position: relative;
-  width: 150px;
-  height: 57px;
-  display: flex;
-  align-items: center;
-  color: $darkShade100;
-  margin-left: 110px;
-  margin-top: 7px;
+.colors__left-column_header{
+ font-weight: bold;
+ width: 171px;
 }
-.darkShade50 {
-  position: relative;
-  width: 70px;
-  height: 70px;
-  background: $darkShade50;
-  border-radius: 6px;
+.dark-shade-100{
+ background: $darkShade100;
 }
-.darkShade50 p {
-  position: relative;
-  margin-left: 110px;
-  margin-top: 7px;
-  width: 151px;
-  height: 57px;
-  display: flex;
-  align-items: center;
-  color: $darkShade100;
+.dark-shade-75 {
+ background: $darkShade75;
 }
-.darkShade25 {
-  position: relative;
-  width: 70px;
-  height: 70px;
-  background: $darkShade25;
-  border-radius: 6px;
+.dark-shade-50 {
+ background: $darkShade50;
 }
-.darkShade25 p {
-  position: relative;
-  margin-left: 110px;
-  margin-top: 7px;
-  width: 149px;
-  height: 57px;
-  display: flex;
-  align-items: center;
-  color: $darkShade100;
+.dark-shade-25 {
+ background: $darkShade25;
 }
-.darkShade5 {
-  position: relative;
-  width: 70px;
-  height: 70px;
-  background:$darkShade5;
-  border-radius: 6px;
-}
-.darkShade5 p {
-  position: relative;
-  width: 139px;
-  height: 58px;
-  margin-left: 110px;
-  margin-top: 7px;
-  display: flex;
-  align-items: center;
-  color: $darkShade100;
+.dark-shade-5 {
+ background:$darkShade5;
 }
 .purple {
-  position: relative;
-  width: 70px;
-  height: 70px;
-  background:$purple;
-  border-radius: 6px;
-}
-.purple p {
-  position: relative;
-  margin-left: 110px;
-  margin-top: 7px;
-  width: 82px;
-  height: 58px;
-  display: flex;
-  align-items: center;
-  color: $darkShade100;
+ background:$purple;
 }
 .green {
-  position: relative;
-  width: 70px;
-  height: 70px;
-  background: $green;
-  border-radius: 6px;
-}
-.green p {
-  position: relative;
-  width: 77px;
-  height: 57px;
-  margin-left: 110px;
-  margin-top: 7px;
-  display: flex;
-  align-items: center;
-  color: $darkShade100;
+ background: $green;
 }
