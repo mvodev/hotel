@@ -1,13 +1,4 @@
-@import "leftColumnUiKitColors.scss";
-@import "rightColumnUiKitColors.scss";
 @import '../styles/common/headerUIKit.scss';
-body {
-  height: 900px;
-  width: 1440px;
-}
-.colors-container {
-  display: flex;
-  justify-content: space-between;
-  height: 792px;
-  margin-top: 69px;
+.colors-and-types{
+  flex: auto;
 }

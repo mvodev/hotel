@@ -558,6 +558,15 @@ table {
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+
+.header-login__wrapper {
+  max-width: 1160px;
+  flex: auto;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   font-family: "Montserrat", "Arial,sans-serif";
   font-style: normal;
@@ -565,23 +574,24 @@ table {
   align-items: center;
   font-size: 14px;
   line-height: 17px;
-  position: relative; }
+  border: 1px solid red; }
 
 .header-login__logo {
   height: 40px;
-  width: 105.69px;
-  margin-left: 140px; }
+  width: 105.69px; }
 
 .header-login__nav {
   list-style-type: none;
   display: flex;
-  align-items: center; }
+  justify-content: space-between;
+  align-items: center;
+  max-width: 770px;
+  flex: auto; }
 
 .header-login__nav a {
   text-decoration: none; }
 
 .header-login__nav_link {
-  margin-right: 20px;
   color: rgba(31, 32, 65, 0.5); }
 
 .header-login__nav_link:first-child {
@@ -646,7 +656,6 @@ table {
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   border-radius: 22px;
   padding: 9px 20px 10px 19px;
-  margin-right: 140px;
   height: 34px;
   width: 196px;
   text-align: center; }
@@ -2118,4 +2127,4 @@ p.subscribe {
     justify-content: center; } }
 
 
-/*# sourceMappingURL=details.4c56e30df527cbb6c3c9.css.map*/
+/*# sourceMappingURL=details.47b17bff744b69486f1d.css.map*/

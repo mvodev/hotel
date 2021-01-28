@@ -1,15 +1,16 @@
 include ../burger/burger.pug
 .header-login
- .header-login__logo
-  img(src="logo-toxin.svg", alt="")
- +burger
- nav.header-login__nav
-  a(class = 'header-login__nav_link' href='#' ) О нас
-  a(href='#' class = 'header-login__nav_link') Услуги
-  .expand-more-container='keyboard_arrow_down'
-  a(href='#' class = 'header-login__nav_link') Вакансии
-  a(href='#' class = 'header-login__nav_link') Новости
-  a(href='#' class = 'header-login__nav_link') Соглашения
-  .expand-more-container='keyboard_arrow_down'
-  a(href='#' class = 'header-login__nav_link login') ВОЙТИ
-  a(href='#' class = 'header-login__nav_link register') ЗАРЕГИСТРИРОВАТЬСЯ
+ .header-login__wrapper
+  .header-login__logo
+   img(src="logo-toxin.svg", alt="")
+  +burger
+  nav.header-login__nav
+   a(class = 'header-login__nav_link' href='#' ) О нас
+   a(href='#' class = 'header-login__nav_link') Услуги
+   .expand-more-container='keyboard_arrow_down'
+   a(href='#' class = 'header-login__nav_link') Вакансии
+   a(href='#' class = 'header-login__nav_link') Новости
+   a(href='#' class = 'header-login__nav_link') Соглашения
+   .expand-more-container='keyboard_arrow_down'
+   a(href='#' class = 'header-login__nav_link login') ВОЙТИ
+   a(href='#' class = 'header-login__nav_link register') ЗАРЕГИСТРИРОВАТЬСЯ

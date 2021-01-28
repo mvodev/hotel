@@ -6,14 +6,15 @@ html(lang="en")
   include ../Favicon/favicon.pug
   title UIKit
  body
-  section.colorsAndTypes
-   +header
-   include colors.pug
-  section.headersAndFooters
-   +header
-   include headersAndFooters.pug
-  section.formElements
-   include formElements.pug
-  section.cards
-   include cards.pug
+  main.wrapper
+   section(class="colors-and-types content-container")
+    +header
+    include colors.pug
+  //- section.headersAndFooters
+  //-  +header
+  //-  include headersAndFooters.pug
+  //- section.formElements
+  //-  include formElements.pug
+  //- section.cards
+  //-  include cards.pug
    
