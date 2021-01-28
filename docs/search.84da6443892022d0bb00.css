@@ -573,8 +573,7 @@ table {
   font-weight: normal;
   align-items: center;
   font-size: 14px;
-  line-height: 17px;
-  border: 1px solid red; }
+  line-height: 17px; }
 
 .header-login__logo {
   height: 40px;
@@ -663,16 +662,17 @@ table {
 @media (max-width: 770px) {
   .header-login__logo {
     display: none; }
-  .header-login__nav {
-    display: none; }
   .header-login.active {
     height: 230px;
     padding-right: 10px; }
+  .header-login__nav {
+    display: none; }
   .header-login__nav.active {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-right: 0px; }
+    justify-content: left; }
   .expand-more-container {
     display: none; }
   .header-login__nav_link,
@@ -2176,4 +2176,4 @@ p.subscribe {
     justify-content: center; } }
 
 
-/*# sourceMappingURL=search.3cd80a38a964f5b9f8e2.css.map*/
+/*# sourceMappingURL=search.84da6443892022d0bb00.css.map*/
