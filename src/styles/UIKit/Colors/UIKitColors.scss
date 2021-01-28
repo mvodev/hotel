@@ -1,0 +1,31 @@
+@import '../styles/common/headerUIKit.scss';
+@import '../Colors/leftColumnUiKitColors.scss';
+@import '../Colors/rightColumnUiKitColors.scss';
+.colors-and-types{
+  width: 100%;
+  font-family: $font-family-main,$fallback-font;
+  background-color: $white;
+}
+.colors{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 145px;
+}
+.colors__left-column{
+  margin-left: 10.14%;
+  max-width: 281px;
+  min-height: 610px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 29px;
+}
+.colors__right-column{
+  margin-right: 10.68%;
+  max-width: 436px;
+  font-style: normal;
+}
