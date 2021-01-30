@@ -162,8 +162,8 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {$('.js-header-burger__input').on(function (event) {
- $('.header-burger__label,.header-login-nav,.header-login-nav__nav,.header-login,.header-login__nav').toggleClass('active');
+/* WEBPACK VAR INJECTION */(function($) {$('.js-header-burger__input').click(function (event) {
+ $('.header-burger__label,.header-login-nav,.header-login-nav__nav,.header-login,.header-login__nav,.header-login__wrapper').toggleClass('active');
 });
 
 // $('.header-login__burger-input').on(function (event) {
@@ -204,4 +204,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 /******/ });
-//# sourceMappingURL=signin.7291953f2bfd44690ef7.js.map
+//# sourceMappingURL=signin.0f2ded03770f1abd9376.js.map

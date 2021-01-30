@@ -7,8 +7,8 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {$('.js-header-burger__input').on(function (event) {
- $('.header-burger__label,.header-login-nav,.header-login-nav__nav,.header-login,.header-login__nav').toggleClass('active');
+/* WEBPACK VAR INJECTION */(function($) {$('.js-header-burger__input').click(function (event) {
+ $('.header-burger__label,.header-login-nav,.header-login-nav__nav,.header-login,.header-login__nav,.header-login__wrapper').toggleClass('active');
 });
 
 // $('.header-login__burger-input').on(function (event) {
@@ -458,4 +458,4 @@ function expandableListHandler(event) {
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~search.b698e12fc2b7425b0cea.js.map
+//# sourceMappingURL=UIKit~search.e69a0d41f55bf42427fa.js.map
