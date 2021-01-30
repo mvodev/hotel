@@ -37,69 +37,38 @@
 .footer-nav__links {
   display: flex;
   flex-direction: row;
-  width: 549px;
-}
-.footer-nav__links_navigation {
-  display: flex;
-  flex-direction: column;
-  width: 143px;
+  width: 560px;
   height: 168px;
-  margin-right: 57px;
-  line-height: 17px;
 }
-.footer-nav__links_navigation a {
-  display: block;
-  white-space: nowrap;
-  margin-bottom: 20px;
-}
-.footer-nav__links_navigation a:last-child {
-  margin-bottom: 0px;
-}
-.footer-nav__links_navigation a:first-child {
-  font-weight: bold;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: $darkShade100;
-  margin-bottom: 21px;
-}
-.footer-nav__links_navigation a:nth-child(2) {
-  width: 64px;
-  height: 18px;
+.footer-nav__links a{
   font-size: 14px;
   line-height: 17px;
+  text-decoration: none;
   color: $darkShade50;
 }
+.footer-nav__links_navigation,
+.footer-nav__links_about-us,
+.footer-nav__links_support{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-nav__links_navigation {
+  width: 143px;
+  margin-right: 57px;
+}
+
 .footer-nav__links_about-us a {
   display: block;
   white-space: nowrap;
 }
 .footer-nav__links_about-us {
-  display: flex;
-  flex-direction: column;
   width: 108px;
-  height: 168px;
-  justify-content: space-between;
   flex-wrap: nowrap;
   margin-right: 92px;
 }
-.footer-nav__links_about-us a:first-child {
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: $darkShade100;
-}
-.footer-nav__links_link {
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 17px;
-  color: $darkShade50;
-  display: inline-block;
-}
-.footer-nav__links_support a {
-  display: block;
-  white-space: nowrap;
-}
+.footer-nav__links_about-us a:first-child,
+.footer-nav__links_navigation a:first-child,
 .footer-nav__links_support a:first-child {
   font-weight: bold;
   font-size: 12px;
@@ -107,12 +76,13 @@
   text-transform: uppercase;
   color: $darkShade100;
 }
+.footer-nav__links_support a {
+  display: block;
+  white-space: nowrap;
+}
 .footer-nav__links_support {
-  display: flex;
-  flex-direction: column;
   width: 149px;
   height: 130px;
-  justify-content: space-between;
 }
 .footer-nav__subscribe {
   display: flex;
@@ -143,7 +113,14 @@ p.subscribe {
   color: $darkShade100;
   margin: 0px 0px 21px 0px;
 }
-
+@media(max-width:1130px){
+  .footer-nav__logo{
+    display: none;
+  }
+  .footer-nav__wrapper{
+    justify-content: center;
+  }
+}
 @media (max-width:$container-mobile-width){
   .footer-nav__container,
   .footer-nav__subscribe{

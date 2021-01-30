@@ -7,11 +7,13 @@ html(lang="en")
   title UIKit
  body
   main.wrapper
-   section(class="headers-and-footers content-container")
-    +header
-    include headersAndFooters.pug
-  //- section.formElements
-  //-  include formElements.pug
-  //- section.cards
-  //-  include cards.pug
-   
+    section(class="colors-and-types content-container")
+      +header
+      include colors.pug
+    section(class="headers-and-footers content-container")
+      +header
+      include headersAndFooters.pug
+    section(class="form-elements content-container")
+      include formElements.pug
+    section(class="cards content-container")
+      include cards.pug

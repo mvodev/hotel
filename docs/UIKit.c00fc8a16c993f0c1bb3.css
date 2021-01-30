@@ -498,7 +498,7 @@ header {
   background: transparent;
   position: relative;
   left: 30px;
-  top: 36px; }
+  top: 39px; }
 
 .colors__left-column p {
   margin-left: 110px;
@@ -1286,69 +1286,37 @@ table {
 .footer-nav__links {
   display: flex;
   flex-direction: row;
-  width: 549px; }
+  width: 560px;
+  height: 168px; }
 
-.footer-nav__links_navigation {
-  display: flex;
-  flex-direction: column;
-  width: 143px;
-  height: 168px;
-  margin-right: 57px;
-  line-height: 17px; }
-
-.footer-nav__links_navigation a {
-  display: block;
-  white-space: nowrap;
-  margin-bottom: 20px; }
-
-.footer-nav__links_navigation a:last-child {
-  margin-bottom: 0px; }
-
-.footer-nav__links_navigation a:first-child {
-  font-weight: bold;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #1f2041;
-  margin-bottom: 21px; }
-
-.footer-nav__links_navigation a:nth-child(2) {
-  width: 64px;
-  height: 18px;
+.footer-nav__links a {
   font-size: 14px;
   line-height: 17px;
+  text-decoration: none;
   color: rgba(31, 32, 65, 0.5); }
+
+.footer-nav__links_navigation,
+.footer-nav__links_about-us,
+.footer-nav__links_support {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.footer-nav__links_navigation {
+  width: 143px;
+  margin-right: 57px; }
 
 .footer-nav__links_about-us a {
   display: block;
   white-space: nowrap; }
 
 .footer-nav__links_about-us {
-  display: flex;
-  flex-direction: column;
   width: 108px;
-  height: 168px;
-  justify-content: space-between;
   flex-wrap: nowrap;
   margin-right: 92px; }
 
-.footer-nav__links_about-us a:first-child {
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #1f2041; }
-
-.footer-nav__links_link {
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 17px;
-  color: rgba(31, 32, 65, 0.5);
-  display: inline-block; }
-
-.footer-nav__links_support a {
-  display: block;
-  white-space: nowrap; }
-
+.footer-nav__links_about-us a:first-child,
+.footer-nav__links_navigation a:first-child,
 .footer-nav__links_support a:first-child {
   font-weight: bold;
   font-size: 12px;
@@ -1356,12 +1324,13 @@ table {
   text-transform: uppercase;
   color: #1f2041; }
 
+.footer-nav__links_support a {
+  display: block;
+  white-space: nowrap; }
+
 .footer-nav__links_support {
-  display: flex;
-  flex-direction: column;
   width: 149px;
-  height: 130px;
-  justify-content: space-between; }
+  height: 130px; }
 
 .footer-nav__subscribe {
   display: flex;
@@ -1391,6 +1360,12 @@ p.subscribe {
   text-transform: uppercase;
   color: #1f2041;
   margin: 0px 0px 21px 0px; }
+
+@media (max-width: 1130px) {
+  .footer-nav__logo {
+    display: none; }
+  .footer-nav__wrapper {
+    justify-content: center; } }
 
 @media (max-width: 770px) {
   .footer-nav__container,
@@ -3707,5 +3682,8 @@ body {
   height: 100%;
   min-width: 320px; }
 
+.headers-and-footers__footer-copy {
+  margin-top: 3px; }
 
-/*# sourceMappingURL=UIKit.d7e29263d70fc063bb12.css.map*/
+
+/*# sourceMappingURL=UIKit.c00fc8a16c993f0c1bb3.css.map*/

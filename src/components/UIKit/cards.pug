@@ -4,7 +4,7 @@ include modules/signup/signup.pug
 include modules/signin/signin.pug
 include modules/searchnumber/searchnumber.pug
 include headerUiKit.pug
-div(class="content-container cards")
+.cards__wrapper
  +header
  .cards__left-column
   +searchnumber({action:'#'})
