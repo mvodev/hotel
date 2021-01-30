@@ -162,13 +162,14 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {$('.js-header-burger__input').click(function (event) {
+/* WEBPACK VAR INJECTION */(function($) {const $headerBurgerInput = $('.js-header-burger__input');
+$headerBurgerInput.click(function (event) {
  $('.header-burger__label,.header-login-nav,.header-login-nav__nav,.header-login,.header-login__nav,.header-login__wrapper').toggleClass('active');
 });
-
-// $('.header-login__burger-input').on(function (event) {
-//  $('.header-login__burger-label,.header-login,.header-login__nav').toggleClass('active');
-// });
+const $headerLoginBurgerInput = $('.header-login__burger-input');
+$headerLoginBurgerInput.click(function (event) {
+ $('.header-login__burger-label,.header-login,.header-login__nav').toggleClass('active');
+});
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
@@ -204,4 +205,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 /******/ });
-//# sourceMappingURL=signin.0f2ded03770f1abd9376.js.map
+//# sourceMappingURL=signin.0b91bd8ff276de3c0ffb.js.map

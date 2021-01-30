@@ -1037,7 +1037,12 @@ input:checked + .slider-round:before {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  font-family: "Montserrat", "Arial,sans-serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px; }
 
 .header-login__wrapper {
   max-width: 1160px;
@@ -1045,12 +1050,7 @@ input:checked + .slider-round:before {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-family: "Montserrat", "Arial,sans-serif";
-  font-style: normal;
-  font-weight: normal;
-  align-items: center;
-  font-size: 14px;
-  line-height: 17px; }
+  align-items: center; }
 
 .header-login__logo {
   height: 40px;
@@ -1059,7 +1059,7 @@ input:checked + .slider-round:before {
 .header-login__nav {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   max-width: 770px;
   flex: auto; }
@@ -1068,17 +1068,17 @@ input:checked + .slider-round:before {
   text-decoration: none; }
 
 .header-login__nav-link {
-  color: rgba(31, 32, 65, 0.5); }
+  color: rgba(31, 32, 65, 0.5);
+  height: 18px;
+  margin-right: 20px; }
 
 .header-login__nav-link:first-child {
   width: 43px;
-  height: 18px;
   font-weight: bold;
   color: rgba(31, 32, 65, 0.75); }
 
 .header-login__nav-link:nth-child(2) {
   width: 50px;
-  height: 18px;
   white-space: nowrap;
   margin-right: 0px; }
 
@@ -1097,16 +1097,13 @@ input:checked + .slider-round:before {
   margin-right: 20px; }
 
 .header-login__nav-link:nth-child(4) {
-  width: 72px;
-  height: 18px; }
+  width: 72px; }
 
 .header-login__nav-link:nth-child(5) {
-  width: 62px;
-  height: 18px; }
+  width: 62px; }
 
 .header-login__nav-link:nth-child(6) {
   width: 92px;
-  height: 18px;
   margin-right: 0px; }
 
 .login {
@@ -1134,11 +1131,18 @@ input:checked + .slider-round:before {
   padding: 9px 20px 10px 19px;
   height: 34px;
   width: 196px;
-  text-align: center; }
+  text-align: center;
+  margin-right: 0px; }
 
-@media (max-width: 770px) {
+@media (max-width: 900px) {
   .header-login__logo {
     display: none; }
+  .header-login__wrapper {
+    justify-content: center; } }
+
+@media (max-width: 770px) {
+  .header-login__wrapper {
+    justify-content: space-between; }
   .header-login__nav {
     display: none; }
   .header-login.active {
@@ -1642,4 +1646,4 @@ p.subscribe {
     max-height: none; } }
 
 
-/*# sourceMappingURL=registration.18e34b3e0b66a176f721.css.map*/
+/*# sourceMappingURL=registration.d7e29263d70fc063bb12.css.map*/

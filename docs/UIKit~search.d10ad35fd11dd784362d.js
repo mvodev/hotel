@@ -7,13 +7,14 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {$('.js-header-burger__input').click(function (event) {
+/* WEBPACK VAR INJECTION */(function($) {const $headerBurgerInput = $('.js-header-burger__input');
+$headerBurgerInput.click(function (event) {
  $('.header-burger__label,.header-login-nav,.header-login-nav__nav,.header-login,.header-login__nav,.header-login__wrapper').toggleClass('active');
 });
-
-// $('.header-login__burger-input').on(function (event) {
-//  $('.header-login__burger-label,.header-login,.header-login__nav').toggleClass('active');
-// });
+const $headerLoginBurgerInput = $('.header-login__burger-input');
+$headerLoginBurgerInput.click(function (event) {
+ $('.header-login__burger-label,.header-login,.header-login__nav').toggleClass('active');
+});
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
@@ -458,4 +459,4 @@ function expandableListHandler(event) {
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~search.e69a0d41f55bf42427fa.js.map
+//# sourceMappingURL=UIKit~search.d10ad35fd11dd784362d.js.map
