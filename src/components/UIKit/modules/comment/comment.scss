@@ -1,15 +1,15 @@
 .expanded-comment{
- width: 711px;
- height: 133px;
+ max-width: 711px;
+ min-height: 133px;
  font-family: $font-family-main,$fallback-font;
- &__body-text,
- &__header-time{
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: $darkShade75;
- }
+ font-style: normal;
+ font-weight: normal;
+ font-size: 14px;
+ line-height: 24px;
+ color: $darkShade75;
+ display: flex;
+ flex-direction: column;
+ flex: auto;
  &__header{
   margin-bottom: 10px;
  }
@@ -41,14 +41,16 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 72px;
-  width: 711px;
+  min-height: 72px;
+  max-width: 711px;
  }
  &__body-text{
-  width: 653px;
+  max-width: 653px;
+  height: 100%;
  } 
   &__like-button{
   margin-left: 3px;
   margin-top: 2px;
+  margin-right: 14px;
  } 
 }
