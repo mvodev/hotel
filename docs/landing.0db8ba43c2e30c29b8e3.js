@@ -155,25 +155,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./components/UIKit/modules/burger/burger.js":
-/*!***************************************************!*\
-  !*** ./components/UIKit/modules/burger/burger.js ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function($) {const $headerBurgerInput = $('.js-header-burger__input');
-$headerBurgerInput.click(function (event) {
- $('.header-burger__label,.header-login-nav,.header-login-nav__nav,.header-login,.header-login__nav,.header-login__wrapper').toggleClass('active');
-});
-const $headerLoginBurgerInput = $('.header-login__burger-input');
-$headerLoginBurgerInput.click(function (event) {
- $('.header-login__burger-label,.header-login,.header-login__nav').toggleClass('active');
-});
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
-
-/***/ }),
-
 /***/ "./components/UIKit/modules/dropdown/dropDownGuests.js":
 /*!*************************************************************!*\
   !*** ./components/UIKit/modules/dropdown/dropDownGuests.js ***!
@@ -447,4 +428,4 @@ $('#d2').fsdDatepicker({ todayButton: true, clearButton: true });
 /***/ })
 
 /******/ });
-//# sourceMappingURL=landing.2fa652c36546696b2bd7.js.map
+//# sourceMappingURL=landing.0db8ba43c2e30c29b8e3.js.map

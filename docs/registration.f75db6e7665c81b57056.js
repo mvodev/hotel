@@ -207,6 +207,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_UIKit_modules_dropdown_fsdDatepicker_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_dropdown_fsdDatepicker_js__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_UIKit_modules_button_radioButtonsSex_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/UIKit/modules/button/radioButtonsSex.js */ "./components/UIKit/modules/button/radioButtonsSex.js");
 /* harmony import */ var _components_UIKit_modules_button_radioButtonsSex_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_button_radioButtonsSex_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/UIKit/modules/burger/burger.js */ "./components/UIKit/modules/burger/burger.js");
+/* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 
@@ -234,4 +237,4 @@ var cleave = new Cleave('.text-field__input-date', {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=registration.393de6d1c2cd6eda8751.js.map
+//# sourceMappingURL=registration.f75db6e7665c81b57056.js.map
