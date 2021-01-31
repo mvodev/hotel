@@ -1,17 +1,23 @@
 .footer-copyright-container {
-  max-width: $container-width - 280px;
-  height: 70px;
+  max-width: $container-width;
+  min-height: 70px;
   background: $white;
   box-shadow: 0px 10px 20px $darkShade5;
+  font-style: normal;
+  font-weight: normal;
+  font-family: $font-family-main,$fallback-font;
+  display: flex;
+  align-items: center;
+}
+.footer-copyright__wrapper{
+  margin: 0px auto;
+  max-width: $container-width - 280px;
   display: flex;
   text-align: center;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-style: normal;
-  font-weight: normal;
-  font-family: $font-family-main,$fallback-font;
-  margin: 0px auto;
+  flex: auto;
 }
 .footer__copyright {
   max-width: 367px;
@@ -34,7 +40,7 @@
 }
 
 @media (max-width:$container-mobile-width){
-  .footer-copyright-container{
+  .footer-copyright__wrapper{
   flex-direction: column;
   text-align: center;
   justify-content: center;
