@@ -1599,14 +1599,15 @@ p.subscribe {
   max-width: 1440px;
   max-height: 1197px;
   margin: 0px auto; }
-  .wrapper .img__wrapper {
-    height: 685px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1440px;
-    background-image: url(79b5cde0053638ad01f1d11a34b1cb11.jpg);
-    background-size: cover; }
+
+.img__wrapper {
+  height: 685px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1440px;
+  background-image: url(79b5cde0053638ad01f1d11a34b1cb11.jpg);
+  background-size: cover; }
 
 @media (max-width: 770px) {
   .wrapper {
@@ -1614,4 +1615,4 @@ p.subscribe {
     max-height: none; } }
 
 
-/*# sourceMappingURL=registration.1a0dea5e94cd7713750f.css.map*/
+/*# sourceMappingURL=registration.94287bc7905d3c311122.css.map*/
