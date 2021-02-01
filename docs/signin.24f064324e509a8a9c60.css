@@ -1361,7 +1361,7 @@ input:checked + .slider-round:before {
   line-height: 17px;
   color: rgba(31, 32, 65, 0.75); }
 
-.footer__social-networks-links {
+.footer__social-networks-links ul {
   display: flex;
   text-align: center;
   flex-direction: row;
@@ -1556,4 +1556,4 @@ p.subscribe {
     max-height: none; } }
 
 
-/*# sourceMappingURL=signin.c84c3ca8f48e9861b5c8.css.map*/
+/*# sourceMappingURL=signin.24f064324e509a8a9c60.css.map*/
