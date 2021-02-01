@@ -11,25 +11,25 @@
 }
 .footer__logo {
   max-width: 560px;
-}
-.footer__logo img {
-  margin-left: 227px;
-  margin-right: 227px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 .footer__logo p {
-  display: block;
-  width: 560px;
-  height: 48px;
   font-family: $font-family-main,$fallback-font;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  /* or 171% */
   text-align: center;
-  /* Dark 75% */
   color: $darkShade75;
   margin-top: 16px;
+}
+.social-links ul{
+  display: flex;
+  flex-direction: row;
 }
 .social-links__link {
   text-decoration: none;
@@ -37,6 +37,9 @@
 .footer__logo-social-networks-links {
   width: 112px;
   height: 24px;
+}
+.footer__logo-social-networks-links ul{
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
