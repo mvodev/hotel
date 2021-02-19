@@ -34,7 +34,7 @@ function rateClickListener(event) {
 const adult = counterAdult();
 const child = counterChild();
 const infant = counterInfant();
-const dropDownInputGuests = document.querySelectorAll(".dropdown-input__guests-arrow");
+const dropDownInputGuests = document.querySelectorAll(".dropdown-arrow");
 const dropDownInputFieldGuests = document.querySelectorAll(
   ".dropdown-input__guests input"
 );
@@ -440,4 +440,4 @@ function expandableListHandler(event) {
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~search.b853470958dfee5a566a.js.map
+//# sourceMappingURL=UIKit~search.1078482d81013f27a068.js.map

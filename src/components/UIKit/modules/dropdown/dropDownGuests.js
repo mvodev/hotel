@@ -2,7 +2,7 @@
 const adult = counterAdult();
 const child = counterChild();
 const infant = counterInfant();
-const dropDownInputGuests = document.querySelectorAll(".dropdown-input__guests-arrow");
+const dropDownInputGuests = document.querySelectorAll(".dropdown-arrow");
 const dropDownInputFieldGuests = document.querySelectorAll(
   ".dropdown-input__guests input"
 );

@@ -1,0 +1,8 @@
+mixin dropdown-counter( options )
+  section.dropdown-counter.js-dropdown-counter
+     .dropdown-counter__header 
+       h3=options.text
+     .dropdown-counter__container.container-dropdown 
+       .container-dropdown__decrease -
+       .container-dropdown__value=options.counterNumber
+       .container-dropdown__increase +

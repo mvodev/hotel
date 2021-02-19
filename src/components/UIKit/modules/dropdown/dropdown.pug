@@ -1,3 +1,5 @@
+include ./dropdown-counter/dropdown-counter.pug
+
 mixin dropdown(options)
  -
   var dropDownClassName = ''
@@ -13,7 +15,7 @@ mixin dropdown(options)
  div(class= dropDownClassName+expandedCorners)
   div(class=dropDownClassName+'-wrapper')
     input(class=dropDownClassName+'-input-field' placeholder=options.placeholder type='text' id=options.id)
-    div(class=dropDownClassName+'-arrow')='keyboard_arrow_down'
+    div(class='dropdown-arrow')='keyboard_arrow_down'
   case options.typeDropdown
     when 'guests'
       div(class = 'dropdown-guests'+isExpanded)

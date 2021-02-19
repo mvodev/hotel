@@ -928,8 +928,7 @@ p.subscribe {
     color: rgba(31, 32, 65, 0.75);
     margin-bottom: 12px; }
 
-.dropdown-input__date-arrow,
-.dropdown-input__filter-arrow {
+.dropdown-arrow {
   width: 44px;
   height: 44px;
   display: flex;
@@ -1175,7 +1174,7 @@ p.subscribe {
   color: rgba(31, 32, 65, 0.75);
   margin-bottom: 12px; }
 
-.dropdown-input__guests-arrow {
+.dropdown-arrow {
   width: 44px;
   height: 44px;
   cursor: pointer;
@@ -1295,7 +1294,7 @@ p.subscribe {
   display: flex;
   flex-direction: row; }
 
-.dropdown-input__room-arrow {
+.dropdown-arrow {
   width: 44px;
   height: 44px;
   cursor: pointer;
@@ -2253,4 +2252,4 @@ h3 {
     justify-content: center; } }
 
 
-/*# sourceMappingURL=search.9f59ee87d6a64626370c.css.map*/
+/*# sourceMappingURL=search.396074ed2b0e2c6fd859.css.map*/
