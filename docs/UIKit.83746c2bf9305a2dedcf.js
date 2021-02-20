@@ -353,10 +353,14 @@ class DropdownCounter {
    this.valueNumber--;
    this.value.innerHTML = this.valueNumber;
   }
+  if (this.valueNumber === 0){
+   this.minus.classList.remove('container-dropdown__decrease_dark');
+  }
  }
  handlePlus() {
   this.valueNumber++;
   this.value.innerHTML = this.valueNumber;
+  this.minus.classList.add('container-dropdown__decrease_dark');
  }
 }
 
@@ -414,4 +418,4 @@ function expandableListHandler(event) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=UIKit.008ba53381a966a34a98.js.map
+//# sourceMappingURL=UIKit.83746c2bf9305a2dedcf.js.map

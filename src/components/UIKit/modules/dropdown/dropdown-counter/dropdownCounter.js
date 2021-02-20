@@ -20,10 +20,14 @@ class DropdownCounter {
    this.valueNumber--;
    this.value.innerHTML = this.valueNumber;
   }
+  if (this.valueNumber === 0){
+   this.minus.classList.remove('container-dropdown__decrease_dark');
+  }
  }
  handlePlus() {
   this.valueNumber++;
   this.value.innerHTML = this.valueNumber;
+  this.minus.classList.add('container-dropdown__decrease_dark');
  }
 }
 

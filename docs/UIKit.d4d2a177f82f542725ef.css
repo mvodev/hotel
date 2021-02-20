@@ -1890,6 +1890,10 @@ p.subscribe {
   border: 1px solid rgba(31, 32, 65, 0.5);
   color: rgba(31, 32, 65, 0.5); }
 
+.container-dropdown__decrease_dark {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  color: rgba(31, 32, 65, 0.5); }
+
 .datepicker--day-name {
   font-family: "Montserrat", "Arial,sans-serif";
   font-style: normal;
@@ -3599,4 +3603,4 @@ body {
   margin-top: 3px; }
 
 
-/*# sourceMappingURL=UIKit.69bb87fd31b13a62844d.css.map*/
+/*# sourceMappingURL=UIKit.d4d2a177f82f542725ef.css.map*/
