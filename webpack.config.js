@@ -56,41 +56,41 @@ module.exports = {
     chunks: ['UIKit'],
    }
   ),
-  new HTMLWebpackPlugin(
-   {
-    template: './components/Website/landing.pug',
-    chunks: ['landing'],
-    filename: 'landing.html'
-   }
-  ),
-  new HTMLWebpackPlugin(
-   {
-    template: './components/Website/details.pug',
-    chunks: ['details'],
-    filename: 'details.html',
-   }
-  ),
-  new HTMLWebpackPlugin(
-   {
-    template: './components/Website/search.pug',
-    chunks: ['search'],
-    filename: 'search.html'
-   }
-  ),
-  new HTMLWebpackPlugin(
-   {
-    template: './components/Website/registration.pug',
-    chunks: ['registration'],
-    filename: 'registration.html'
-   }
-  ),
-  new HTMLWebpackPlugin(
-   {
-    template: './components/Website/sign-in-page.pug',
-    chunks: ['signin'],
-    filename: 'sign-in.html'
-   }
-  ),
+  // new HTMLWebpackPlugin(
+  //  {
+  //   template: './components/Website/landing.pug',
+  //   chunks: ['landing'],
+  //   filename: 'landing.html'
+  //  }
+  // ),
+  // new HTMLWebpackPlugin(
+  //  {
+  //   template: './components/Website/details.pug',
+  //   chunks: ['details'],
+  //   filename: 'details.html',
+  //  }
+  // ),
+  // new HTMLWebpackPlugin(
+  //  {
+  //   template: './components/Website/search.pug',
+  //   chunks: ['search'],
+  //   filename: 'search.html'
+  //  }
+  // ),
+  // new HTMLWebpackPlugin(
+  //  {
+  //   template: './components/Website/registration.pug',
+  //   chunks: ['registration'],
+  //   filename: 'registration.html'
+  //  }
+  // ),
+  // new HTMLWebpackPlugin(
+  //  {
+  //   template: './components/Website/sign-in-page.pug',
+  //   chunks: ['signin'],
+  //   filename: 'sign-in.html'
+  //  }
+  // ),
   new CleanWebpackPlugin(),
   new webpack.ProvidePlugin({
    $: 'jquery',

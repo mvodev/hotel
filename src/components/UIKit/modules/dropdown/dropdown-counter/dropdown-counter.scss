@@ -1,0 +1,18 @@
+.dropdown-counter{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ height: 40px;
+ margin-left: 15px;
+ margin-right: 7px;
+}
+.dropdown-counter__header{
+ overflow: hidden;
+}
+.dropdown-counter__container{
+ width: 92px;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}

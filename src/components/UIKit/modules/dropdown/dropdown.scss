@@ -1,0 +1,119 @@
+@import './dropdown-counter/dropdown-counter.scss';
+@import './dropDownDate.scss';
+.dropdown{
+  position: relative;
+  font-family: $font-family-additionalRussianReplacer,$fallback-font;
+}
+.dropdown-input {
+  position: relative;
+  width: 320px;
+  height: 44px;
+  background: $white;
+  border: 1px solid $darkShade50;
+  box-sizing: border-box;
+  border-radius: 2px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.dropdown_rounding-corners-top{
+  border-radius: 2px 2px 0px 0px;
+  border: 1px solid $darkShade50;
+}
+.dropdown__input-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.dropdown__input{
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  width: 276px;
+  height: 24px;
+  margin-top: 8px;
+  margin-left: 15px;
+  font-family: $font-family-main,$fallback-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+.dropdown__input::placeholder {
+  font-family: $font-family-main,$fallback-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  width: 112px;
+  height: 18px;
+  color: $darkShade75;
+  margin-bottom: 12px;
+}
+.dropdown__arrow {
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: $darkShade50;
+}
+.dropdown__body {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: none;
+  position: absolute;
+  top:42px;
+  left: -1px;
+  z-index: 3;
+  width: 320px;
+  height: 159px;
+  background: $white;
+  border: 1px solid $darkShade50;
+  box-sizing: border-box;
+  border-radius: 0px 0px 2px 2px;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+.dropdown_active {
+  display: block;
+}
+.dropdown__body-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 14px;
+  margin-right: 7px;
+  color: $purple;
+}
+.dropdown-counter{
+  margin-left: 15px;
+  margin-right: 7px;
+}
+.hidden {
+  visibility: hidden;
+  cursor: none;
+}
+.container-dropdown__decrease,
+.container-dropdown__increase{
+  border-radius: 22px;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  text-align: center;
+}
+.container-dropdown__decrease{
+  border: 1px solid $darkShade25;
+}
+.container-dropdown__increase{
+  border: 1px solid $darkShade50;
+}

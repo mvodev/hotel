@@ -2,55 +2,23 @@ include ./dropdown-counter/dropdown-counter.pug
 
 mixin dropdown(options)
  -
-  var dropDownClassName = ''
+  var dropDownClassName = 'dropdown'
   var expandedCorners=''
   var isExpanded=options.isExpanded===true ? ' dropdown_active' : ''
   var typeDropdown = options.typeDropdown
-  expandedCorners+=options.isExpanded&typeDropdown==='room' ? '  dropdown-input__room_rounding-corners-top ' : ''
-  expandedCorners+=options.isExpanded&typeDropdown==='guests' ? '  dropdown-input__guests_rounding-corners-top ' : ''
-  dropDownClassName+=typeDropdown==='guests' ? ' dropdown-input__guests' : ''
-  dropDownClassName+=typeDropdown==='date' ? 'dropdown-input__date' : ''
-  dropDownClassName+=typeDropdown==='filter' ? 'dropdown-input__filter' : ''
-  dropDownClassName+=typeDropdown==='room' ? ' dropdown-input__room' : ''
+  expandedCorners+=options.isExpanded ? ' dropdown_rounding-corners-top ' : ''
+  dropDownClassName+=typeDropdown==='guests' ? ' dropdown__guests' : ''
+  dropDownClassName+=typeDropdown==='date' ? ' dropdown__date ' : ''
+  dropDownClassName+=typeDropdown==='filter' ? ' dropdown__filter ' : ''
+  dropDownClassName+=typeDropdown==='room' ? ' dropdown__room ' : ''
  div(class= dropDownClassName+expandedCorners)
-  div(class=dropDownClassName+'-wrapper')
-    input(class=dropDownClassName+'-input-field' placeholder=options.placeholder type='text' id=options.id)
-    div(class='dropdown-arrow')='keyboard_arrow_down'
-  case options.typeDropdown
-    when 'guests'
-      div(class = 'dropdown-guests'+isExpanded)
-        div(class='dropdown-guests__adult') 
-          div взрослые 
-          div -
-          div 0
-          div +
-        div(class='dropdown-guests__child')
-          div дети
-          div -
-          div 0
-          div +
-        div(class='dropdown-guests__infant')
-          div младенцы
-          div -
-          div 0
-          div +
-        div(class='dropdown-guests__apply-button')
-          div(class= 'dropdown-guests__erase-button dropdown_button-hidden') очистить
-          div применить
-    when 'room'
-        div(class='dropdown-room'+isExpanded)
-          div(class='dropdown-room__bedroom') 
-            div спальни
-            div -
-            div 2
-            div +
-          div(class='dropdown-room__bed')
-            div кровати
-            div -
-            div 2
-            div +
-          div(class='dropdown-room__bath')
-            div ванные комнаты
-            div -
-            div 0
-            div +
+  div(class='dropdown__input-wrapper')
+    input(class='dropdown__input' placeholder=options.placeholder type='text' id=options.id)
+    div(class='dropdown__arrow')='keyboard_arrow_down'
+  div(class="dropdown__body"+isExpanded)
+    each line in options.lines 
+      +dropdown-counter({text:line.text,counterNumber:line.counterNumber})
+    if options.withButtons 
+      .dropdown__body-buttons.buttons__dropdown
+        .buttons__dropdown__clear.hidden Очистить
+        .buttons__dropdown__apply Применить

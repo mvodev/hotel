@@ -4,8 +4,6 @@ import 'cleave.js';
 import './components/UIKit/modules/dropdown/fsdDatepicker.js';
 import './components/UIKit/modules/button/starRating.js';
 import './components/UIKit/modules/button/likeRating.js';
-import './components/UIKit/modules/dropdown/dropDownGuests.js';
-import './components/UIKit/modules/dropdown/dropDownRoom.js';
 import './components/UIKit/modules/list/expandableCL.js';
 import './components/UIKit/modules/burger/burger.js';
 import './components/UIKit/modules/button/radioButtonsSex.js';
@@ -17,8 +15,8 @@ document.querySelectorAll('.text-field__input-date').forEach(function(elem){
     datePattern: ['d', 'm', 'Y']
   });
 });
-$('.dropdown-input__date-input-field').fsdDatepicker({ todayButton: true, clearButton: true });
-$('.dropdown-input__filter-input-field').fsdDatepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
+// $('.dropdown-input__date-input-field').fsdDatepicker({ todayButton: true, clearButton: true });
+// $('.dropdown-input__filter-input-field').fsdDatepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
 $('.cards__right-column-datepicker').fsdDatepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
 $('.range-slider__input').ionRangeSlider({
   type: "double",
