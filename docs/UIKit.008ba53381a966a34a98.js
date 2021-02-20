@@ -171,16 +171,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
 /* harmony import */ var _components_UIKit_modules_dropdown_fsdDatepicker_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/UIKit/modules/dropdown/fsdDatepicker.js */ "./components/UIKit/modules/dropdown/fsdDatepicker.js");
 /* harmony import */ var _components_UIKit_modules_dropdown_fsdDatepicker_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_dropdown_fsdDatepicker_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_UIKit_modules_button_starRating_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/UIKit/modules/button/starRating.js */ "./components/UIKit/modules/button/starRating.js");
-/* harmony import */ var _components_UIKit_modules_button_starRating_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_button_starRating_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _components_UIKit_modules_button_likeRating_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/UIKit/modules/button/likeRating.js */ "./components/UIKit/modules/button/likeRating.js");
-/* harmony import */ var _components_UIKit_modules_button_likeRating_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_button_likeRating_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _components_UIKit_modules_list_expandableCL_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/UIKit/modules/list/expandableCL.js */ "./components/UIKit/modules/list/expandableCL.js");
-/* harmony import */ var _components_UIKit_modules_list_expandableCL_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_list_expandableCL_js__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/UIKit/modules/burger/burger.js */ "./components/UIKit/modules/burger/burger.js");
-/* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _components_UIKit_modules_button_radioButtonsSex_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/UIKit/modules/button/radioButtonsSex.js */ "./components/UIKit/modules/button/radioButtonsSex.js");
-/* harmony import */ var _components_UIKit_modules_button_radioButtonsSex_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_button_radioButtonsSex_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _components_UIKit_modules_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/UIKit/modules/dropdown/dropdown.js */ "./components/UIKit/modules/dropdown/dropdown.js");
+/* harmony import */ var _components_UIKit_modules_button_starRating_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/UIKit/modules/button/starRating.js */ "./components/UIKit/modules/button/starRating.js");
+/* harmony import */ var _components_UIKit_modules_button_starRating_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_button_starRating_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_UIKit_modules_button_likeRating_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/UIKit/modules/button/likeRating.js */ "./components/UIKit/modules/button/likeRating.js");
+/* harmony import */ var _components_UIKit_modules_button_likeRating_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_button_likeRating_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _components_UIKit_modules_list_expandableCL_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/UIKit/modules/list/expandableCL.js */ "./components/UIKit/modules/list/expandableCL.js");
+/* harmony import */ var _components_UIKit_modules_list_expandableCL_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_list_expandableCL_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/UIKit/modules/burger/burger.js */ "./components/UIKit/modules/burger/burger.js");
+/* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _components_UIKit_modules_button_radioButtonsSex_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/UIKit/modules/button/radioButtonsSex.js */ "./components/UIKit/modules/button/radioButtonsSex.js");
+/* harmony import */ var _components_UIKit_modules_button_radioButtonsSex_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_button_radioButtonsSex_js__WEBPACK_IMPORTED_MODULE_9__);
 
 
 
@@ -191,7 +192,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-document.querySelectorAll('.text-field__input-date').forEach(function(elem){
+
+document.querySelectorAll('.text-field__input-date').forEach(function (elem) {
   new cleave_js__WEBPACK_IMPORTED_MODULE_2__["default"](elem, {
     date: true,
     delimiter: '.',
@@ -320,6 +322,65 @@ function rateClickListener(event) {
 
 /***/ }),
 
+/***/ "./components/UIKit/modules/dropdown/dropdown-counter/dropdownCounter.js":
+/*!*******************************************************************************!*\
+  !*** ./components/UIKit/modules/dropdown/dropdown-counter/dropdownCounter.js ***!
+  \*******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+class DropdownCounter {
+
+ constructor(container) {
+  this.container = container;
+  this.getElements();
+  this.bindEvents();
+ }
+ getElements() {
+  this.minus = this.container.querySelector('.js-container-dropdown__decrease');
+  this.plus = this.container.querySelector('.js-container-dropdown__increase');
+  this.value = this.container.querySelector('.js-container-dropdown__value');
+  this.valueNumber = parseInt(this.value.textContent, 10);
+ }
+ bindEvents() {
+  this.minus.addEventListener('click', this.handleMinus.bind(this));
+  this.plus.addEventListener('click', this.handlePlus.bind(this));
+ }
+ handleMinus() {
+  if (this.valueNumber > 0) {
+   this.valueNumber--;
+   this.value.innerHTML = this.valueNumber;
+  }
+ }
+ handlePlus() {
+  this.valueNumber++;
+  this.value.innerHTML = this.valueNumber;
+ }
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (DropdownCounter);
+
+/***/ }),
+
+/***/ "./components/UIKit/modules/dropdown/dropdown.js":
+/*!*******************************************************!*\
+  !*** ./components/UIKit/modules/dropdown/dropdown.js ***!
+  \*******************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _dropdown_counter_dropdownCounter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dropdown-counter/dropdownCounter */ "./components/UIKit/modules/dropdown/dropdown-counter/dropdownCounter.js");
+
+document.querySelectorAll('.js-dropdown-counter').forEach(elem => {
+ new _dropdown_counter_dropdownCounter__WEBPACK_IMPORTED_MODULE_0__["default"](elem);
+})
+
+/***/ }),
+
 /***/ "./components/UIKit/modules/list/expandableCL.js":
 /*!*******************************************************!*\
   !*** ./components/UIKit/modules/list/expandableCL.js ***!
@@ -353,4 +414,4 @@ function expandableListHandler(event) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=UIKit.991886237d243a7b1419.js.map
+//# sourceMappingURL=UIKit.008ba53381a966a34a98.js.map

@@ -1069,7 +1069,8 @@ p.subscribe {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row; }
+  flex-direction: row;
+  cursor: pointer; }
 
 .container-dropdown__decrease {
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -2155,4 +2156,4 @@ h3 {
     justify-content: center; } }
 
 
-/*# sourceMappingURL=search.f5ce00b0c86e2e89d9e7.css.map*/
+/*# sourceMappingURL=search.69bb87fd31b13a62844d.css.map*/

@@ -2,13 +2,14 @@ import './styles/UIKitStyles.scss';
 import 'ion-rangeslider';
 import 'cleave.js';
 import './components/UIKit/modules/dropdown/fsdDatepicker.js';
+import './components/UIKit/modules/dropdown/dropdown.js';
 import './components/UIKit/modules/button/starRating.js';
 import './components/UIKit/modules/button/likeRating.js';
 import './components/UIKit/modules/list/expandableCL.js';
 import './components/UIKit/modules/burger/burger.js';
 import './components/UIKit/modules/button/radioButtonsSex.js';
 import Cleave from 'cleave.js';
-document.querySelectorAll('.text-field__input-date').forEach(function(elem){
+document.querySelectorAll('.text-field__input-date').forEach(function (elem) {
   new Cleave(elem, {
     date: true,
     delimiter: '.',
