@@ -7,7 +7,7 @@ import 'cleave.js';
 
 $('#d3').fsdDatepicker({ todayButton: true, clearButton: true });
 $('#d4').fsdDatepicker({ todayButton: true, clearButton: true });
-document.querySelectorAll('.dropdown-input__date-input-field').forEach(function (elem) {
+document.querySelectorAll('#d3').forEach(function (elem) {
  new Cleave(elem, {
   date: true,
   delimiter: '.',

@@ -231,7 +231,7 @@ __webpack_require__.r(__webpack_exports__);
 
 $('#d3').fsdDatepicker({ todayButton: true, clearButton: true });
 $('#d4').fsdDatepicker({ todayButton: true, clearButton: true });
-document.querySelectorAll('.dropdown-input__date-input-field').forEach(function (elem) {
+document.querySelectorAll('#d3').forEach(function (elem) {
  new Cleave(elem, {
   date: true,
   delimiter: '.',
@@ -254,4 +254,4 @@ document.querySelectorAll('.dropdown-input__date-input-field').forEach(function 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=details.dd2c33d386dffc2b0f90.js.map
+//# sourceMappingURL=details.05472a9ea16a0fc42bc4.js.map

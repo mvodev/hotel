@@ -2,7 +2,8 @@
 @import './dropDownDate.scss';
 .dropdown{
   position: relative;
-  font-family: $font-family-additionalRussianReplacer,$fallback-font;
+  font-family: $font-family-main,$fallback-font;
+  line-height: 14.63px;
 }
 .dropdown-input {
   position: relative;
@@ -94,26 +95,12 @@
   margin-left: 14px;
   margin-right: 7px;
   color: $purple;
+  margin-top: 20px;
 }
 .dropdown-counter{
-  margin-left: 15px;
-  margin-right: 7px;
+  margin: 5px 7px 8px 15px;
 }
 .hidden {
   visibility: hidden;
   cursor: none;
-}
-.container-dropdown__decrease,
-.container-dropdown__increase{
-  border-radius: 22px;
-  width: 30px;
-  height: 30px;
-  align-items: center;
-  text-align: center;
-}
-.container-dropdown__decrease{
-  border: 1px solid $darkShade25;
-}
-.container-dropdown__increase{
-  border: 1px solid $darkShade50;
 }
