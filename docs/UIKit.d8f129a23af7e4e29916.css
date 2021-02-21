@@ -2134,6 +2134,10 @@ p.subscribe {
   color: #BC9CFF;
   margin-top: 20px; }
 
+.buttons-dropdown__clear,
+.buttons-dropdown__apply {
+  cursor: pointer; }
+
 .dropdown-counter {
   margin: 5px 7px 8px 15px; }
 
@@ -3603,4 +3607,4 @@ body {
   margin-top: 3px; }
 
 
-/*# sourceMappingURL=UIKit.d4d2a177f82f542725ef.css.map*/
+/*# sourceMappingURL=UIKit.d8f129a23af7e4e29916.css.map*/

@@ -2,7 +2,7 @@ include ./dropdown-counter/dropdown-counter.pug
 
 mixin dropdown(options)
  -
-  var dropDownClassName = 'dropdown'
+  var dropDownClassName = 'js-dropdown dropdown'
   var expandedCorners=''
   var isExpanded=options.isExpanded===true ? ' dropdown_active' : ''
   var typeDropdown = options.typeDropdown
@@ -19,6 +19,6 @@ mixin dropdown(options)
     each line in options.lines 
       +dropdown-counter({text:line.text,counterNumber:line.counterNumber})
     if options.withButtons 
-      .dropdown__body-buttons.buttons__dropdown
-        .buttons__dropdown__clear.hidden Очистить
-        .buttons__dropdown__apply Применить
+      .dropdown__body-buttons.buttons-dropdown
+        .buttons-dropdown__clear.hidden Очистить
+        .buttons-dropdown__apply Применить

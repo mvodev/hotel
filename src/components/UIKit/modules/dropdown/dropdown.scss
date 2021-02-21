@@ -97,6 +97,10 @@
   color: $purple;
   margin-top: 20px;
 }
+.buttons-dropdown__clear,
+.buttons-dropdown__apply{
+  cursor: pointer;
+}
 .dropdown-counter{
   margin: 5px 7px 8px 15px;
 }
