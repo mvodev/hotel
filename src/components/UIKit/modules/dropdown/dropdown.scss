@@ -13,6 +13,9 @@
 .dropdown__guests{
  width: 320px;
 }
+.dropdown__room{
+ width: 266px;
+}
 .dropdown_rounding-corners-top{
   border-radius: 2px 2px 0px 0px;
   border: 1px solid $darkShade50;
@@ -35,6 +38,10 @@
   font-size: 14px;
   line-height: 24px;
   width: 100%;
+}
+.dropdown__guests .dropdown__input{
+ width: 180px;
+ overflow: hidden;
 }
 .dropdown__input::placeholder {
   font-family: $font-family-main,$fallback-font;
@@ -68,10 +75,8 @@
   display: none;
   position: absolute;
   top:42px;
-  left: -1px;
   z-index: 3;
-  width: 320px;
-  height: 159px;
+  width: inherit;
   background: $white;
   border: 1px solid $darkShade50;
   box-sizing: border-box;

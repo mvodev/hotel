@@ -2056,6 +2056,9 @@ p.subscribe {
 .dropdown__guests {
   width: 320px; }
 
+.dropdown__room {
+  width: 266px; }
+
 .dropdown_rounding-corners-top {
   border-radius: 2px 2px 0px 0px;
   border: 1px solid rgba(31, 32, 65, 0.5); }
@@ -2078,6 +2081,10 @@ p.subscribe {
   font-size: 14px;
   line-height: 24px;
   width: 100%; }
+
+.dropdown__guests .dropdown__input {
+  width: 180px;
+  overflow: hidden; }
 
 .dropdown__input::placeholder {
   font-family: "Montserrat", "Arial,sans-serif";
@@ -2111,10 +2118,8 @@ p.subscribe {
   display: none;
   position: absolute;
   top: 42px;
-  left: -1px;
   z-index: 3;
-  width: 320px;
-  height: 159px;
+  width: inherit;
   background: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.5);
   box-sizing: border-box;
@@ -2855,7 +2860,9 @@ input:checked + .slider-round:before {
 .form-elements__left-column {
   grid-area: left;
   padding-left: 140px;
-  padding-top: 65px; }
+  padding-top: 65px;
+  display: flex;
+  flex-direction: column; }
   .form-elements__left-column .header_date-dropdown {
     display: flex;
     flex-direction: row;
@@ -3434,4 +3441,4 @@ body {
   margin-top: 3px; }
 
 
-/*# sourceMappingURL=UIKit.a29f578977016f2e4b71.css.map*/
+/*# sourceMappingURL=UIKit.da77e804f51aac71d942.css.map*/

@@ -2,7 +2,8 @@
   grid-area: left;
   padding-left: 140px;
   padding-top: 65px;
-  
+  display: flex;
+  flex-direction: column;
 
   .header_date-dropdown{
     display: flex;

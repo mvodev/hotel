@@ -17,7 +17,6 @@
   height: 40px;
   width: 40px;
   }
-
 .datepicker--cell-day {
   font-style: normal;
   font-weight: normal;
@@ -30,7 +29,6 @@
   width: 14.28571%;
   height: 40px;
 }
-
 .-other-month-{
   font-family:$font-family-main,$fallback-font ;
   font-style: normal;
@@ -42,7 +40,6 @@
   text-align: center;
   color: $darkShade25;
 }
-
 .datepicker--cell.-selected-, 
 .datepicker--cell.-selected-.-weekend-{
   color:$white;
@@ -52,7 +49,6 @@
 .datepicker--cell.-current- {
   color: $darkShade50;
 }
-
 .datepicker{
   background: $white;
   font-family: $font-family-main,$fallback-font;
@@ -136,8 +132,7 @@
 
 .datepicker--cell.-range-from-,
 .datepicker--cell.-range-to-,
-.datepicker--cell.-selected-.-range-to-
-{
+.datepicker--cell.-selected-.-range-to-{
 background: $buttonColor;
 }
 

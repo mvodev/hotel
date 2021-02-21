@@ -18,7 +18,7 @@ mixin dropdown(options)
     div(class='dropdown__arrow')='keyboard_arrow_down'
   if typeDropdown==='guests'||typeDropdown==='room'
     div(class="dropdown__body"+isExpanded)
-      each line in options.lines 
+      each line in options.labels 
         +dropdown-counter({text:line.text,counterNumber:line.counterNumber})
       if options.withButtons 
         .dropdown__body-buttons.buttons-dropdown
