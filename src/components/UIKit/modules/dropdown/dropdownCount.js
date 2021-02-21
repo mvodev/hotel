@@ -4,7 +4,7 @@ class DropdownCount {
  constructor(rootElem) {
   this.data = 0;
   this.dropdownType = '';
-  const spellCases = {
+  this.spellCases = {
    guests: ["гость", "гостя", "гостей"],
    infants: ['младенец', 'младенца', 'младенцев'],
    bedrooms: ['спальня, ', 'спальни, ', 'спален, '],
@@ -20,13 +20,14 @@ class DropdownCount {
   this.arrow = this.rootElem.querySelector(".dropdown__arrow");
   this.input = this.rootElem.querySelector(".dropdown__input");
   this.body = this.rootElem.querySelector(".dropdown__body");
-  this.applyButton = this.rootElem.querySelector(".buttons-dropdown__apply");
-  this.clearButton = this.rootElem.querySelector(".buttons-dropdown__clear");
   this.counters = this.rootElem.querySelectorAll(".dropdown-counter");
-  if (this.rootElem.classList.contains(".dropdown__room")) {
+  if (this.rootElem.classList.contains("dropdown__room")) {
    this.dropdownType = 'room';
-  } else if (this.rootElem.classList.contains(".dropdown__guests")) {
+  } else if (this.rootElem.classList.contains("dropdown__guests")) {
+   console.log('inside get elem else if dropdown__guests');
    this.dropdownType = 'guests';
+   this.applyButton = this.rootElem.querySelector(".buttons-dropdown__apply");
+   this.clearButton = this.rootElem.querySelector(".buttons-dropdown__clear");
   }
 
   this.counters.forEach(elem => {
@@ -43,8 +44,11 @@ class DropdownCount {
  }
  bindEvents() {
   this.arrow.addEventListener('click', this.handleDropdown.bind(this));
-  this.clearButton.addEventListener('click', this.handleClearButton.bind(this));
-  this.applyButton.addEventListener('click', this.handleApplyButton.bind(this));
+  console.log('inside bind events dropdownCount ' + this.dropdownType);
+  if (this.dropdownType === 'guests') {
+   this.clearButton.addEventListener('click', this.handleClearButton.bind(this));
+   this.applyButton.addEventListener('click', this.handleApplyButton.bind(this));
+  }
  }
  handleDropdown() {
   if (this.rootElem.classList.contains("dropdown_active")) {
@@ -52,7 +56,7 @@ class DropdownCount {
   } else this.showDropdown();
  }
  handleApplyButton() {
-  this.setData(this.collectData());
+  this.setData(this.collectDataGuests());
   this.showClearButton();
  }
  handleClearButton() {
@@ -89,13 +93,14 @@ class DropdownCount {
   }
  }
  setData() {
+  let result;
   if (this.dropdownType === 'guests') {
-   let result = this.collectDataGuests();
+   result = this.collectDataGuests();
    let lastNumber = this.getLastNumber(result);
-   this.input.value = result+" "+spellCases.guests[this.getPosInSpellCasesArray(result)];
+   this.input.value = result + " " + this.spellCases.guests[this.getPosInSpellCasesArray(result)];
   }
   else {
-   this.input.value = result.badrooms + " " + spellCases.badrooms[this.getPosInSpellCasesArray(result.badrooms)] + result.bads+spellCases.bads[this.getPosInSpellCasesArray(result.bads)]+result.baths+spellCases.baths[this.getPosInSpellCasesArray[result.baths]];
+   this.input.value = result.badrooms + " " + this.spellCases.badrooms[this.getPosInSpellCasesArray(result.badrooms)] + result.bads + this.spellCases.bads[this.getPosInSpellCasesArray(result.bads)] + result.baths + this.spellCases.baths[this.getPosInSpellCasesArray[result.baths]];
   }
  }
  getLastNumber(value) {

@@ -21,23 +21,24 @@ include headerUiKit.pug
   h2(class='header header_dropdown-default')
    div='Dropdown'
    div='Default'
-  +dropdown({placeholder:'Сколько гостей',typeDropdown:'guests',isExpanded:true,
+  +dropdown({placeholder:'Сколько гостей',typeDropdown:'guests',isExpanded:false,
   lines:[
     {text:"взрослые",counterNumber:0},
     {text:"дети",counterNumber:0},
     {text:"младенцы",counterNumber:0},
   ],withButtons:true})
-//-   h2(class='header header_masked-text-field')
-//-    div='Masked Text Field'
-//-    div='Default'
-//-   +textfield({isMasked:true,placeholder:'ДД.ММ.ГГГГ'})
-//-   .form-elements__left-column-dropdown-wrapper
-//-    h2(class='header header_date-dropdown')
-//-     div='Date Dropdown'
-//-     div='Date Dropdown'
-//-    div
-//-     +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'date',isExpanded:false})
-//-     +dropdown({placeholder:'19.08.2019',typeDropdown:'date',isExpanded:false})
+  h2(class='header header_masked-text-field')
+   div='Masked Text Field'
+   div='Default'
+  +textfield({isMasked:true,placeholder:'ДД.ММ.ГГГГ'})
+  .form-elements__left-column-dropdown-wrapper
+   h2(class='header header_date-dropdown')
+    div='Date Dropdown'
+    div='Date Dropdown'
+   div
+    //- +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'date',isExpanded:false,
+    //- withButtons:false})
+  //-   +dropdown({placeholder:'19.08.2019',typeDropdown:'date',isExpanded:false})
 //-   h2(class='header header_filter-date-dropdown') 
 //-     div='Filter Date Dropdown'
 //-   +dropdown({placeholder:'19 авг - 23 авг',typeDropdown:'filter',isExpanded:false})

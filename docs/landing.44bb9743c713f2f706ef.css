@@ -1295,6 +1295,9 @@ p.subscribe {
   color: #BC9CFF;
   cursor: pointer; }
 
+.dropdown__date {
+  width: 150px; }
+
 .datepicker--day-name {
   font-family: "Montserrat", "Arial,sans-serif";
   font-style: normal;
@@ -1482,6 +1485,9 @@ p.subscribe {
   border: 1px solid rgba(31, 32, 65, 0.5);
   color: rgba(31, 32, 65, 0.5); }
 
+.dropdown__date {
+  width: 150px; }
+
 .datepicker--day-name {
   font-family: "Montserrat", "Arial,sans-serif";
   font-style: normal;
@@ -1628,20 +1634,13 @@ p.subscribe {
 .dropdown {
   position: relative;
   font-family: "Montserrat", "Arial,sans-serif";
-  line-height: 14.63px; }
-
-.dropdown-input {
-  position: relative;
+  line-height: 14.63px;
   width: 320px;
   height: 44px;
   background: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.5);
   box-sizing: border-box;
-  border-radius: 2px;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: space-between; }
+  border-radius: 2px; }
 
 .dropdown_rounding-corners-top {
   border-radius: 2px 2px 0px 0px;
@@ -1777,4 +1776,4 @@ p.subscribe {
     justify-content: center; } }
 
 
-/*# sourceMappingURL=landing.d8f129a23af7e4e29916.css.map*/
+/*# sourceMappingURL=landing.44bb9743c713f2f706ef.css.map*/

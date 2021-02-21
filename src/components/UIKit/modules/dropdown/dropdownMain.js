@@ -8,10 +8,14 @@ class DropdownMain {
  }
  initDropdowns() {
   this.rootElem.forEach(elem => {
-   if (elem.classList.contains(".dropdown__date") || elem.classList.contains(".dropdown__filter")) {
+   if (elem.classList.contains("dropdown__date") || elem.classList.contains("dropdown__filter")) {
     new DropdownDate(elem);
+    console.log("inside if DropdownMain");
    }
-   else new DropdownCount(elem);
+   else {
+    console.log("inside else DropdownMain "+ elem.classList);
+    new DropdownCount(elem)
+   };
   });
  }
 }

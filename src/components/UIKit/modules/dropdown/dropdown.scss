@@ -4,19 +4,12 @@
   position: relative;
   font-family: $font-family-main,$fallback-font;
   line-height: 14.63px;
-}
-.dropdown-input {
-  position: relative;
   width: 320px;
   height: 44px;
   background: $white;
   border: 1px solid $darkShade50;
   box-sizing: border-box;
   border-radius: 2px;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: space-between;
 }
 .dropdown_rounding-corners-top{
   border-radius: 2px 2px 0px 0px;

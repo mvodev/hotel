@@ -168,9 +168,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_UIKitStyles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_UIKitStyles_scss__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ion-rangeslider */ "../node_modules/ion-rangeslider/js/ion.rangeSlider.js");
 /* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(ion_rangeslider__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
-/* harmony import */ var _components_UIKit_modules_dropdown_fsdDatepicker_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/UIKit/modules/dropdown/fsdDatepicker.js */ "./components/UIKit/modules/dropdown/fsdDatepicker.js");
-/* harmony import */ var _components_UIKit_modules_dropdown_fsdDatepicker_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_dropdown_fsdDatepicker_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_UIKit_modules_dropdown_fsdDatepicker_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/UIKit/modules/dropdown/fsdDatepicker.js */ "./components/UIKit/modules/dropdown/fsdDatepicker.js");
+/* harmony import */ var _components_UIKit_modules_dropdown_fsdDatepicker_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_dropdown_fsdDatepicker_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_UIKit_modules_textField_textField_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/UIKit/modules/textField/textField.js */ "./components/UIKit/modules/textField/textField.js");
 /* harmony import */ var _components_UIKit_modules_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/UIKit/modules/dropdown/dropdown.js */ "./components/UIKit/modules/dropdown/dropdown.js");
 /* harmony import */ var _components_UIKit_modules_button_starRating_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/UIKit/modules/button/starRating.js */ "./components/UIKit/modules/button/starRating.js");
 /* harmony import */ var _components_UIKit_modules_button_starRating_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_button_starRating_js__WEBPACK_IMPORTED_MODULE_5__);
@@ -193,13 +193,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-document.querySelectorAll('.text-field__input-date').forEach(function (elem) {
-  new cleave_js__WEBPACK_IMPORTED_MODULE_2__["default"](elem, {
-    date: true,
-    delimiter: '.',
-    datePattern: ['d', 'm', 'Y']
-  });
-});
 // $('.dropdown-input__date-input-field').fsdDatepicker({ todayButton: true, clearButton: true });
 // $('.dropdown-input__filter-input-field').fsdDatepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
 $('.cards__right-column-datepicker').fsdDatepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
@@ -408,7 +401,7 @@ class DropdownCount {
  constructor(rootElem) {
   this.data = 0;
   this.dropdownType = '';
-  const spellCases = {
+  this.spellCases = {
    guests: ["гость", "гостя", "гостей"],
    infants: ['младенец', 'младенца', 'младенцев'],
    bedrooms: ['спальня, ', 'спальни, ', 'спален, '],
@@ -424,13 +417,14 @@ class DropdownCount {
   this.arrow = this.rootElem.querySelector(".dropdown__arrow");
   this.input = this.rootElem.querySelector(".dropdown__input");
   this.body = this.rootElem.querySelector(".dropdown__body");
-  this.applyButton = this.rootElem.querySelector(".buttons-dropdown__apply");
-  this.clearButton = this.rootElem.querySelector(".buttons-dropdown__clear");
   this.counters = this.rootElem.querySelectorAll(".dropdown-counter");
-  if (this.rootElem.classList.contains(".dropdown__room")) {
+  if (this.rootElem.classList.contains("dropdown__room")) {
    this.dropdownType = 'room';
-  } else if (this.rootElem.classList.contains(".dropdown__guests")) {
+  } else if (this.rootElem.classList.contains("dropdown__guests")) {
+   console.log('inside get elem else if dropdown__guests');
    this.dropdownType = 'guests';
+   this.applyButton = this.rootElem.querySelector(".buttons-dropdown__apply");
+   this.clearButton = this.rootElem.querySelector(".buttons-dropdown__clear");
   }
 
   this.counters.forEach(elem => {
@@ -447,8 +441,11 @@ class DropdownCount {
  }
  bindEvents() {
   this.arrow.addEventListener('click', this.handleDropdown.bind(this));
-  this.clearButton.addEventListener('click', this.handleClearButton.bind(this));
-  this.applyButton.addEventListener('click', this.handleApplyButton.bind(this));
+  console.log('inside bind events dropdownCount ' + this.dropdownType);
+  if (this.dropdownType === 'guests') {
+   this.clearButton.addEventListener('click', this.handleClearButton.bind(this));
+   this.applyButton.addEventListener('click', this.handleApplyButton.bind(this));
+  }
  }
  handleDropdown() {
   if (this.rootElem.classList.contains("dropdown_active")) {
@@ -456,7 +453,7 @@ class DropdownCount {
   } else this.showDropdown();
  }
  handleApplyButton() {
-  this.setData(this.collectData());
+  this.setData(this.collectDataGuests());
   this.showClearButton();
  }
  handleClearButton() {
@@ -493,13 +490,14 @@ class DropdownCount {
   }
  }
  setData() {
+  let result;
   if (this.dropdownType === 'guests') {
-   let result = this.collectDataGuests();
+   result = this.collectDataGuests();
    let lastNumber = this.getLastNumber(result);
-   this.input.value = result+" "+spellCases.guests[this.getPosInSpellCasesArray(result)];
+   this.input.value = result + " " + this.spellCases.guests[this.getPosInSpellCasesArray(result)];
   }
   else {
-   this.input.value = result.badrooms + " " + spellCases.badrooms[this.getPosInSpellCasesArray(result.badrooms)] + result.bads+spellCases.bads[this.getPosInSpellCasesArray(result.bads)]+result.baths+spellCases.baths[this.getPosInSpellCasesArray[result.baths]];
+   this.input.value = result.badrooms + " " + this.spellCases.badrooms[this.getPosInSpellCasesArray(result.badrooms)] + result.bads + this.spellCases.bads[this.getPosInSpellCasesArray(result.bads)] + result.baths + this.spellCases.baths[this.getPosInSpellCasesArray[result.baths]];
   }
  }
  getLastNumber(value) {
@@ -531,7 +529,7 @@ class DropdownCount {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _dropdown_fsdDatepicker_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../dropdown/fsdDatepicker.js */ "./components/UIKit/modules/dropdown/fsdDatepicker.js");
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _dropdown_fsdDatepicker_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../dropdown/fsdDatepicker.js */ "./components/UIKit/modules/dropdown/fsdDatepicker.js");
 /* harmony import */ var _dropdown_fsdDatepicker_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_dropdown_fsdDatepicker_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
 
@@ -543,23 +541,29 @@ class DropdownDate {
   this.init();
  }
  getElem() {
+  // $('dropdown__date dropdowm__input').fsdDatepicker({ todayButton: true, clearButton: true });
   this.input = this.rootElem.querySelector(".dropdown__input");
+
+  // $('.dropdown-input__date-input-field').fsdDatepicker({ todayButton: true, clearButton: true });
  }
  init() {
-  if (this.rootElem.classList.contains(".dropdown__date")) {
-   this.input.fsdDatepicker({ todayButton: true, clearButton: true });
+  if (this.rootElem.classList.contains("dropdown__date")) {
+   //this.input.fsdDatepicker({ todayButton: true, clearButton: true });
+   $('dropdown__date dropdown__input').fsdDatepicker({ todayButton: true, clearButton: true });
    new Cleave(this.input, {
     date: true,
     delimiter: '.',
     datePattern: ['d', 'm', 'Y']
    });
   }
-  else if (this.rootElem.classList.contains(".dropdown__filter")) {
+  else if (this.rootElem.classList.contains("dropdown__filter")) {
+   // this.input.fsdDatepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
+   $('dropdown__date dropdown__input').fsdDatepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
   }
-  this.input.fsdDatepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
  }
 }
 /* harmony default export */ __webpack_exports__["default"] = (DropdownDate);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 
@@ -584,10 +588,14 @@ class DropdownMain {
  }
  initDropdowns() {
   this.rootElem.forEach(elem => {
-   if (elem.classList.contains(".dropdown__date") || elem.classList.contains(".dropdown__filter")) {
+   if (elem.classList.contains("dropdown__date") || elem.classList.contains("dropdown__filter")) {
     new _dropdown_dropdownDate__WEBPACK_IMPORTED_MODULE_0__["default"](elem);
+    console.log("inside if DropdownMain");
    }
-   else new _dropdown_dropdownCount__WEBPACK_IMPORTED_MODULE_1__["default"](elem);
+   else {
+    console.log("inside else DropdownMain "+ elem.classList);
+    new _dropdown_dropdownCount__WEBPACK_IMPORTED_MODULE_1__["default"](elem)
+   };
   });
  }
 }
@@ -616,6 +624,27 @@ function expandableListHandler(event) {
 
 /***/ }),
 
+/***/ "./components/UIKit/modules/textField/textField.js":
+/*!*********************************************************!*\
+  !*** ./components/UIKit/modules/textField/textField.js ***!
+  \*********************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
+
+document.querySelectorAll('.text-field__input-date').forEach(function (elem) {
+ new Cleave(elem, {
+  date: true,
+  delimiter: '.',
+  datePattern: ['d', 'm', 'Y']
+ });
+});
+
+/***/ }),
+
 /***/ "./styles/UIKitStyles.scss":
 /*!*********************************!*\
   !*** ./styles/UIKitStyles.scss ***!
@@ -628,4 +657,4 @@ function expandableListHandler(event) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=UIKit.c99692e0104faac9cab9.js.map
+//# sourceMappingURL=UIKit.9b6e50ab43199d273d11.js.map

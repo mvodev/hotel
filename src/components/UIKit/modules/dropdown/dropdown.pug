@@ -15,10 +15,11 @@ mixin dropdown(options)
   div(class='dropdown__input-wrapper')
     input(class='dropdown__input' placeholder=options.placeholder type='text' id=options.id)
     div(class='dropdown__arrow')='keyboard_arrow_down'
-  div(class="dropdown__body"+isExpanded)
-    each line in options.lines 
-      +dropdown-counter({text:line.text,counterNumber:line.counterNumber})
-    if options.withButtons 
-      .dropdown__body-buttons.buttons-dropdown
-        .buttons-dropdown__clear.hidden Очистить
-        .buttons-dropdown__apply Применить
+  if typeDropdown==='guests'||typeDropdown==='room'
+    div(class="dropdown__body"+isExpanded)
+      each line in options.lines 
+        +dropdown-counter({text:line.text,counterNumber:line.counterNumber})
+      if options.withButtons 
+        .dropdown__body-buttons.buttons-dropdown
+          .buttons-dropdown__clear.hidden Очистить
+          .buttons-dropdown__apply Применить
