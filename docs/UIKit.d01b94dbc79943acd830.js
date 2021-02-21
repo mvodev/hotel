@@ -421,7 +421,6 @@ class DropdownCount {
   if (this.rootElem.classList.contains("dropdown__room")) {
    this.dropdownType = 'room';
   } else if (this.rootElem.classList.contains("dropdown__guests")) {
-   console.log('inside get elem else if dropdown__guests');
    this.dropdownType = 'guests';
    this.applyButton = this.rootElem.querySelector(".buttons-dropdown__apply");
    this.clearButton = this.rootElem.querySelector(".buttons-dropdown__clear");
@@ -441,7 +440,6 @@ class DropdownCount {
  }
  bindEvents() {
   this.arrow.addEventListener('click', this.handleDropdown.bind(this));
-  console.log('inside bind events dropdownCount ' + this.dropdownType);
   if (this.dropdownType === 'guests') {
    this.clearButton.addEventListener('click', this.handleClearButton.bind(this));
    this.applyButton.addEventListener('click', this.handleApplyButton.bind(this));
@@ -590,10 +588,8 @@ class DropdownMain {
   this.rootElem.forEach(elem => {
    if (elem.classList.contains("dropdown__date") || elem.classList.contains("dropdown__filter")) {
     new _dropdown_dropdownDate__WEBPACK_IMPORTED_MODULE_0__["default"](elem);
-    console.log("inside if DropdownMain");
    }
    else {
-    console.log("inside else DropdownMain "+ elem.classList);
     new _dropdown_dropdownCount__WEBPACK_IMPORTED_MODULE_1__["default"](elem)
    };
   });
@@ -657,4 +653,4 @@ document.querySelectorAll('.text-field__input-date').forEach(function (elem) {
 /***/ })
 
 /******/ });
-//# sourceMappingURL=UIKit.9b6e50ab43199d273d11.js.map
+//# sourceMappingURL=UIKit.d01b94dbc79943acd830.js.map

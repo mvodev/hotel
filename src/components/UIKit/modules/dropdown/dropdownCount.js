@@ -24,7 +24,6 @@ class DropdownCount {
   if (this.rootElem.classList.contains("dropdown__room")) {
    this.dropdownType = 'room';
   } else if (this.rootElem.classList.contains("dropdown__guests")) {
-   console.log('inside get elem else if dropdown__guests');
    this.dropdownType = 'guests';
    this.applyButton = this.rootElem.querySelector(".buttons-dropdown__apply");
    this.clearButton = this.rootElem.querySelector(".buttons-dropdown__clear");
@@ -44,7 +43,6 @@ class DropdownCount {
  }
  bindEvents() {
   this.arrow.addEventListener('click', this.handleDropdown.bind(this));
-  console.log('inside bind events dropdownCount ' + this.dropdownType);
   if (this.dropdownType === 'guests') {
    this.clearButton.addEventListener('click', this.handleClearButton.bind(this));
    this.applyButton.addEventListener('click', this.handleApplyButton.bind(this));

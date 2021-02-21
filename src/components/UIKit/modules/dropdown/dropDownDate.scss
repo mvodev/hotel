@@ -1,6 +1,9 @@
 .dropdown__date{
   width: 150px;
 }
+.dropdown__date .dropdown__input{
+  width: 91px;
+}
 .datepicker--day-name{
   font-family: $font-family-main,$fallback-font;
   font-style: normal;

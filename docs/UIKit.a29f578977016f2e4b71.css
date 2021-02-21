@@ -1897,6 +1897,9 @@ p.subscribe {
 .dropdown__date {
   width: 150px; }
 
+.dropdown__date .dropdown__input {
+  width: 91px; }
+
 .datepicker--day-name {
   font-family: "Montserrat", "Arial,sans-serif";
   font-style: normal;
@@ -2044,12 +2047,14 @@ p.subscribe {
   position: relative;
   font-family: "Montserrat", "Arial,sans-serif";
   line-height: 14.63px;
-  width: 320px;
   height: 44px;
   background: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.5);
   box-sizing: border-box;
   border-radius: 2px; }
+
+.dropdown__guests {
+  width: 320px; }
 
 .dropdown_rounding-corners-top {
   border-radius: 2px 2px 0px 0px;
@@ -2058,14 +2063,12 @@ p.subscribe {
 .dropdown__input-wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 100%; }
+  justify-content: space-between; }
 
 .dropdown__input {
   border: none;
   outline: none;
   -webkit-appearance: none;
-  width: 276px;
   height: 24px;
   margin-top: 8px;
   margin-left: 15px;
@@ -2073,7 +2076,8 @@ p.subscribe {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px; }
+  line-height: 24px;
+  width: 100%; }
 
 .dropdown__input::placeholder {
   font-family: "Montserrat", "Arial,sans-serif";
@@ -2081,7 +2085,6 @@ p.subscribe {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  width: 112px;
   height: 18px;
   color: rgba(31, 32, 65, 0.75);
   margin-bottom: 12px; }
@@ -2853,41 +2856,12 @@ input:checked + .slider-round:before {
   grid-area: left;
   padding-left: 140px;
   padding-top: 65px; }
-  .form-elements__left-column .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 320px;
-    font-size: 12px;
-    line-height: 15px;
-    font-style: normal;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: #1f2041; }
-  .form-elements__left-column .header div:first-child {
-    font-weight: bold;
-    color: #1f2041; }
-  .form-elements__left-column .header_text-field-default div:first-child {
-    padding-top: 3px; }
-  .form-elements__left-column .header_text-field-default div:nth-child(2) {
-    height: 15px;
-    margin-bottom: 8px; }
-  .form-elements__left-column .text-field {
-    margin-bottom: 20px; }
-  .form-elements__left-column .header_text-field-hover div:first-child {
-    margin-top: 0px;
-    margin-bottom: 5px; }
   .form-elements__left-column .header_date-dropdown {
     display: flex;
     flex-direction: row;
     justify-content: left; }
   .form-elements__left-column .header_dropdown-default {
     margin-bottom: 5px; }
-  .form-elements__left-column .dropdown-input__date:first-child {
-    margin-right: 20px; }
-  .form-elements__left-column .dropdown-input__guests {
-    margin-bottom: 20px; }
   .form-elements__left-column .header_masked-text-field div:first-child {
     padding-top: 3px; }
   .form-elements__left-column .header_masked-text-field {
@@ -3460,4 +3434,4 @@ body {
   margin-top: 3px; }
 
 
-/*# sourceMappingURL=UIKit.44bb9743c713f2f706ef.css.map*/
+/*# sourceMappingURL=UIKit.a29f578977016f2e4b71.css.map*/

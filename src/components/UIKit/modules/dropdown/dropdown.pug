@@ -2,7 +2,7 @@ include ./dropdown-counter/dropdown-counter.pug
 
 mixin dropdown(options)
  -
-  var dropDownClassName = 'js-dropdown dropdown'
+  var dropDownClassName = 'dropdown'
   var expandedCorners=''
   var isExpanded=options.isExpanded===true ? ' dropdown_active' : ''
   var typeDropdown = options.typeDropdown
@@ -11,6 +11,7 @@ mixin dropdown(options)
   dropDownClassName+=typeDropdown==='date' ? ' dropdown__date ' : ''
   dropDownClassName+=typeDropdown==='filter' ? ' dropdown__filter ' : ''
   dropDownClassName+=typeDropdown==='room' ? ' dropdown__room ' : ''
+  dropDownClassName+=' js-dropdown'
  div(class= dropDownClassName+expandedCorners)
   div(class='dropdown__input-wrapper')
     input(class='dropdown__input' placeholder=options.placeholder type='text' id=options.id)

@@ -2,37 +2,7 @@
   grid-area: left;
   padding-left: 140px;
   padding-top: 65px;
-  .header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 320px;
-    font-size: 12px;
-    line-height: 15px;
-    font-style: normal;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: $darkShade100;
-  }
-  .header div:first-child{
-    font-weight: bold;
-    color: $darkShade100;
-  }
-  .header_text-field-default div:first-child{
-    padding-top: 3px;
-  }
-  .header_text-field-default div:nth-child(2){
-    height: 15px;
-    margin-bottom: 8px;
-  }
-  .text-field{
-    margin-bottom: 20px;
-  }
-  .header_text-field-hover div:first-child{
-    margin-top: 0px;
-    margin-bottom: 5px;
-  }
+  
 
   .header_date-dropdown{
     display: flex;
@@ -43,12 +13,6 @@
     margin-bottom: 5px;
   }
 
-  .dropdown-input__date:first-child{
-    margin-right: 20px;
-  }
-  .dropdown-input__guests{
-    margin-bottom: 20px;
-  }
   .header_masked-text-field div:first-child{
     padding-top: 3px;
   }
