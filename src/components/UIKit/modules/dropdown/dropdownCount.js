@@ -7,9 +7,9 @@ class DropdownCount {
   this.spellCases = {
    guests: ["гость", "гостя", "гостей"],
    infants: ['младенец', 'младенца', 'младенцев'],
-   bedrooms: ['спальня, ', 'спальни, ', 'спален, '],
-   bads: ['кровать, ', 'кровати, ', 'кроватей, '],
-   baths: ['ванная комната ', 'ванные комнаты ', 'ванных комнат '],
+   bedrooms: ['спальня', 'спальни', 'спален'],
+   beds: ['кровать', 'кровати ', 'кроватей '],
+   baths: ['ванная комната', 'ванные комнаты', 'ванных комнат'],
   };
   this.dropdownCounters = [];
   this.rootElem = rootElem;
@@ -47,6 +47,13 @@ class DropdownCount {
    this.clearButton.addEventListener('click', this.handleClearButton.bind(this));
    this.applyButton.addEventListener('click', this.handleApplyButton.bind(this));
   }
+  this.rootElem.addEventListener('counterChanged',this.handleCounter.bind(this));
+ }
+ handleCounter(){
+  this.setData(this.collectData());
+  if(this.dropdownType==='guests'){
+   this.showClearButton();
+  }
  }
  handleDropdown() {
   if (this.rootElem.classList.contains("dropdown_active")) {
@@ -54,26 +61,28 @@ class DropdownCount {
   } else this.showDropdown();
  }
  handleApplyButton() {
-  this.setData(this.collectDataGuests());
+  this.hideDropdown();
   this.showClearButton();
  }
  handleClearButton() {
   this.clearData();
   this.hideClearButton();
  }
- collectDataGuests() {
-  let temp = 0;
-  for (let i = 0; i < this.dropdownCounters.length; i++) {
-   temp += this.dropdownCounters[i].getData();
+ collectData() {
+  if(this.dropdownType==='guests'){
+   let temp = 0;
+   for (let i = 0; i < this.dropdownCounters.length; i++) {
+    temp += this.dropdownCounters[i].getData();
+   }
+   return temp;
   }
-  return temp;
- }
- collectDataRoom() {
-  let room = {};
-  room.badrooms = this.dropdownCounters[0].getData();
-  room.bads = this.dropdownCounters[1].getData();
-  room.baths = this.dropdownCounters[2].getData();
-  return room;
+  else {
+   let room = {};
+   room.bedrooms = this.dropdownCounters[0].getData();
+   room.beds = this.dropdownCounters[1].getData();
+   room.baths = this.dropdownCounters[2].getData();
+   return room;
+  }
  }
  getPosInSpellCasesArray(result) {
   if (result === 1) {
@@ -91,14 +100,30 @@ class DropdownCount {
   }
  }
  setData() {
-  let result;
+  let result = this.collectData();
   if (this.dropdownType === 'guests') {
-   result = this.collectDataGuests();
    let lastNumber = this.getLastNumber(result);
    this.input.value = result + " " + this.spellCases.guests[this.getPosInSpellCasesArray(result)];
   }
   else {
-   this.input.value = result.badrooms + " " + this.spellCases.badrooms[this.getPosInSpellCasesArray(result.badrooms)] + result.bads + this.spellCases.bads[this.getPosInSpellCasesArray(result.bads)] + result.baths + this.spellCases.baths[this.getPosInSpellCasesArray[result.baths]];
+   let temp = '';
+   if(result.bedrooms>0){
+    temp+= result.bedrooms + " " + this.spellCases.bedrooms[this.getPosInSpellCasesArray(result.bedrooms)];
+   }
+   if(result.beds>0){
+    if(temp.length>0){
+     temp += "," + result.beds + this.spellCases.beds[this.getPosInSpellCasesArray(result.beds)];
+    }
+    else temp += result.beds + this.spellCases.beds[this.getPosInSpellCasesArray(result.beds)];
+   }
+   if (result.baths>0){
+    if(temp.length>0){
+     temp += "," + result.baths + this.spellCases.baths[this.getPosInSpellCasesArray(result.baths)];
+    }
+    else temp +=result.baths + this.spellCases.baths[this.getPosInSpellCasesArray(result.baths)];
+   }
+   temp+='...'
+   this.input.value =temp;
   }
  }
  getLastNumber(value) {

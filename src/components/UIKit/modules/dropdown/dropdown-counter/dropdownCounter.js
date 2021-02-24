@@ -23,11 +23,13 @@ class DropdownCounter {
   if (this.valueNumber === 0) {
    this.minus.classList.remove('container-dropdown__decrease_dark');
   }
+  this.container.dispatchEvent(new CustomEvent("counterChanged", { bubbles: true }));
  }
  handlePlus() {
   this.valueNumber++;
   this.value.innerHTML = this.valueNumber;
   this.minus.classList.add('container-dropdown__decrease_dark');
+  this.container.dispatchEvent(new CustomEvent("counterChanged",{bubbles:true}));
  }
  getData() {
   return this.valueNumber;
