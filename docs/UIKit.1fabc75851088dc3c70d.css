@@ -2133,10 +2133,8 @@ p.subscribe {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-left: 14px;
-  margin-right: 7px;
   color: #BC9CFF;
-  margin-top: 20px; }
+  margin: 20px 7px 13px 14px; }
 
 .buttons-dropdown__clear,
 .buttons-dropdown__apply {
@@ -3441,4 +3439,4 @@ body {
   margin-top: 3px; }
 
 
-/*# sourceMappingURL=UIKit.36136683c273af1151e6.css.map*/
+/*# sourceMappingURL=UIKit.1fabc75851088dc3c70d.css.map*/
