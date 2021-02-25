@@ -47,11 +47,11 @@ class DropdownCount {
    this.clearButton.addEventListener('click', this.handleClearButton.bind(this));
    this.applyButton.addEventListener('click', this.handleApplyButton.bind(this));
   }
-  this.rootElem.addEventListener('counterChanged',this.handleCounter.bind(this));
+  this.rootElem.addEventListener('counterChanged', this.handleCounter.bind(this));
  }
- handleCounter(){
+ handleCounter() {
   this.setData(this.collectData());
-  if(this.dropdownType==='guests'){
+  if (this.dropdownType === 'guests') {
    this.showClearButton();
   }
  }
@@ -69,7 +69,7 @@ class DropdownCount {
   this.hideClearButton();
  }
  collectData() {
-  if(this.dropdownType==='guests'){
+  if (this.dropdownType === 'guests') {
    let temp = 0;
    for (let i = 0; i < this.dropdownCounters.length; i++) {
     temp += this.dropdownCounters[i].getData();
@@ -107,23 +107,23 @@ class DropdownCount {
   }
   else {
    let temp = '';
-   if(result.bedrooms>0){
-    temp+= result.bedrooms + " " + this.spellCases.bedrooms[this.getPosInSpellCasesArray(result.bedrooms)];
+   if (result.bedrooms > 0) {
+    temp += result.bedrooms + " " + this.spellCases.bedrooms[this.getPosInSpellCasesArray(result.bedrooms)];
    }
-   if(result.beds>0){
-    if(temp.length>0){
-     temp += "," + result.beds + this.spellCases.beds[this.getPosInSpellCasesArray(result.beds)];
+   if (result.beds > 0) {
+    if (temp.length > 0) {
+     temp += "," + result.beds + " " + this.spellCases.beds[this.getPosInSpellCasesArray(result.beds)];
     }
-    else temp += result.beds + this.spellCases.beds[this.getPosInSpellCasesArray(result.beds)];
+    else temp += result.beds + " " + this.spellCases.beds[this.getPosInSpellCasesArray(result.beds)];
    }
-   if (result.baths>0){
-    if(temp.length>0){
-     temp += "," + result.baths + this.spellCases.baths[this.getPosInSpellCasesArray(result.baths)];
+   if (result.baths > 0) {
+    if (temp.length > 0) {
+     temp += "," + result.baths + " " + this.spellCases.baths[this.getPosInSpellCasesArray(result.baths)];
     }
-    else temp +=result.baths + this.spellCases.baths[this.getPosInSpellCasesArray(result.baths)];
+    else temp += result.baths + " " + this.spellCases.baths[this.getPosInSpellCasesArray(result.baths)];
    }
-   temp+='...'
-   this.input.value =temp;
+   temp += '...'
+   this.input.value = temp;
   }
  }
  getLastNumber(value) {

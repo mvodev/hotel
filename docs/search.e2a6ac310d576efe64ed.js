@@ -57,7 +57,7 @@
 /******/ 	// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 	// Promise = chunk loading, 0 = chunk loaded
 /******/ 	var installedChunks = {
-/******/ 		"details": 0
+/******/ 		"search": 0
 /******/ 	};
 /******/
 /******/ 	var deferredModules = [];
@@ -148,34 +148,31 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./details.js","vendors~UIKit~details~landing~registration~search~signin","vendors~UIKit~details~landing~registration~search","vendors~UIKit~details~search","UIKit~details~landing~registration~search"]);
+/******/ 	deferredModules.push(["./search.js","vendors~UIKit~details~landing~registration~search~signin","vendors~UIKit~details~landing~registration~search","vendors~UIKit~details~search","vendors~UIKit~search","UIKit~details~landing~registration~search"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./components/UIKit/modules/button/likeRating.js":
+/***/ "./components/UIKit/modules/button/starRating.js":
 /*!*******************************************************!*\
-  !*** ./components/UIKit/modules/button/likeRating.js ***!
+  !*** ./components/UIKit/modules/button/starRating.js ***!
   \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-const likeButtons = document.querySelectorAll('.js-button-like');
-likeButtons.forEach(elem => elem.addEventListener('click', likeClickListener));
-function likeClickListener(event) {
- if (event.target.className == 'button-like__heart') {
-  if (event.target.parentElement.classList.contains('button-like_is-liked')) {
-   event.target.parentElement.childNodes[1].innerText--;
-   event.target.parentElement.childNodes[0].innerText = 'favorite_border';
-   event.target.parentElement.classList.remove('button-like_is-liked');
-  }
-  else {
-   event.target.parentElement.childNodes[1].innerText++;
-   event.target.parentElement.classList.add('button-like_is-liked');
-   event.target.parentElement.childNodes[0].innerText = 'favorite';
-  }
+const rateButtons = document.querySelectorAll('.js-button-rate label');
+rateButtons.forEach(elem => elem.addEventListener('click', rateClickListener)
+);
+function rateClickListener(event) {
+ let rateNumber = event.target.title.charAt(0);
+ let stars = event.target.parentNode.childNodes;
+ for (let i = 0; i < rateNumber; i++) {
+  stars[i * 2 + 1].innerHTML = 'star';
+ }
+ for (let i = rateNumber; i < 5; i++) {
+  stars[i * 2 + 1].innerHTML = 'star_border';
  }
 }
 
@@ -377,15 +374,15 @@ class DropdownCount {
    }
    if(result.beds>0){
     if(temp.length>0){
-     temp += "," + result.beds + this.spellCases.beds[this.getPosInSpellCasesArray(result.beds)];
+     temp += "," + result.beds + " "+this.spellCases.beds[this.getPosInSpellCasesArray(result.beds)];
     }
-    else temp += result.beds + this.spellCases.beds[this.getPosInSpellCasesArray(result.beds)];
+    else temp += result.beds + " "+this.spellCases.beds[this.getPosInSpellCasesArray(result.beds)];
    }
    if (result.baths>0){
     if(temp.length>0){
-     temp += "," + result.baths + this.spellCases.baths[this.getPosInSpellCasesArray(result.baths)];
+     temp += "," + result.baths + " "+this.spellCases.baths[this.getPosInSpellCasesArray(result.baths)];
     }
-    else temp +=result.baths + this.spellCases.baths[this.getPosInSpellCasesArray(result.baths)];
+    else temp +=result.baths + " "+this.spellCases.baths[this.getPosInSpellCasesArray(result.baths)];
    }
    temp+='...'
    this.input.value =temp;
@@ -508,48 +505,69 @@ function expandableListHandler(event) {
 
 /***/ }),
 
-/***/ "./details.js":
-/*!********************!*\
-  !*** ./details.js ***!
-  \********************/
+/***/ "./search.js":
+/*!*******************!*\
+  !*** ./search.js ***!
+  \*******************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _styles_details_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/details.scss */ "./styles/details.scss");
-/* harmony import */ var _styles_details_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_details_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_UIKit_modules_button_likeRating_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/UIKit/modules/button/likeRating.js */ "./components/UIKit/modules/button/likeRating.js");
-/* harmony import */ var _components_UIKit_modules_button_likeRating_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_button_likeRating_js__WEBPACK_IMPORTED_MODULE_1__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _styles_search_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/search.scss */ "./styles/search.scss");
+/* harmony import */ var _styles_search_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_search_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ion-rangeslider */ "../node_modules/ion-rangeslider/js/ion.rangeSlider.js");
+/* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(ion_rangeslider__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_UIKit_modules_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/UIKit/modules/dropdown/dropdown.js */ "./components/UIKit/modules/dropdown/dropdown.js");
-/* harmony import */ var _components_UIKit_modules_list_expandableCL_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/UIKit/modules/list/expandableCL.js */ "./components/UIKit/modules/list/expandableCL.js");
-/* harmony import */ var _components_UIKit_modules_list_expandableCL_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_list_expandableCL_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/UIKit/modules/burger/burger.js */ "./components/UIKit/modules/burger/burger.js");
-/* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
+/* harmony import */ var _components_UIKit_modules_button_starRating_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/UIKit/modules/button/starRating.js */ "./components/UIKit/modules/button/starRating.js");
+/* harmony import */ var _components_UIKit_modules_button_starRating_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_button_starRating_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_UIKit_modules_list_expandableCL_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/UIKit/modules/list/expandableCL.js */ "./components/UIKit/modules/list/expandableCL.js");
+/* harmony import */ var _components_UIKit_modules_list_expandableCL_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_list_expandableCL_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/UIKit/modules/burger/burger.js */ "./components/UIKit/modules/burger/burger.js");
+/* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_5__);
 
 
 
 
 
 
+$('.range-slider__input').ionRangeSlider({
+  type: "double",
+  min: 0,
+  max: 20000,
+  from: 5000,
+  to: 10000,
+  step: 1000,
+  onChange: function (data) {
+    let minValue = ''
+    let maxValue = ''
+    if (data.from >= 1000) minValue = Math.floor(data.from / 1000) + ' 000';
+    else minValue = data.from;
+    if (data.to >= 1000) maxValue = Math.floor(data.to / 1000) + ' 000';
+    else maxValue = data.to;
+    $('.range-slider__label-wrapper p:nth-child(2)').
+      html(minValue + '<span class="rub">i</span> - ' + maxValue + '<span class="rub">i</span>');
+  },
+  onStart: function (data) {
+    let minValue = ''
+    let maxValue = ''
+    if (data.from >= 1000) minValue = Math.floor(data.from / 1000) + ' 000';
+    else minValue = data.from;
+    if (data.to >= 1000) maxValue = Math.floor(data.to / 1000) + ' 000';
+    else maxValue = data.to;
+    $('.range-slider__label-wrapper p:nth-child(2)').
+      html(minValue + '<span class="rub">i</span> - ' + maxValue + '<span class="rub">i</span>');
+  }
+});
 
-// $('#d3').fsdDatepicker({ todayButton: true, clearButton: true });
-// $('#d4').fsdDatepicker({ todayButton: true, clearButton: true });
-// document.querySelectorAll('#d3').forEach(function (elem) {
-//  new Cleave(elem, {
-//   date: true,
-//   delimiter: '.',
-//   datePattern: ['d', 'm', 'Y']
-//  });
-// });
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 
-/***/ "./styles/details.scss":
-/*!*****************************!*\
-  !*** ./styles/details.scss ***!
-  \*****************************/
+/***/ "./styles/search.scss":
+/*!****************************!*\
+  !*** ./styles/search.scss ***!
+  \****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -558,4 +576,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 /******/ });
-//# sourceMappingURL=details.6f7174644fbea55568f7.js.map
+//# sourceMappingURL=search.e2a6ac310d576efe64ed.js.map
