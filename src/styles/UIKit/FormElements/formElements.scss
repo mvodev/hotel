@@ -35,6 +35,21 @@
   text-transform: uppercase;
   color: $darkShade100; 
 }
+.form-elements__central-column {
+  grid-area: central;
+  padding-left: 126px;
+  padding-top: 75px;
+}
+.form-elements__left-column {
+  grid-area: left;
+  padding-left: 140px;
+  padding-top: 75px;
+}
+.form-elements__right-column {
+  grid-area: right;
+  padding-left: 112px;
+  padding-top: 75px;
+}
 
 
 

@@ -1,57 +1,47 @@
-.form-elements__right-column {
-  grid-area: right;
-  padding-left: 112px;
-  padding-top: 65px;
-  .range-slider__wrapper{
-    margin-bottom: 35px;
-  }
-  h2{
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: $darkShade100;
-  margin-bottom: 16px;
-  }
-  h2:nth-child(6){
-    margin-bottom: 5px;
-  }
-  h2:nth-child(8){
-    margin-top: 256px;
-    margin-bottom: 13px;
-  }
-  .form-elements__right-column-buttons-wrapper{
-    width: 218px;
-    .form-elements__right-column-buttons-wrapper_first-row,
-    .form-elements__right-column-buttons-wrapper_second-row,
-    .form-elements__right-column-buttons-wrapper_third-row{
-      display: flex;
-      flex-direction: row;
-    }
-    .form-elements__right-column-buttons-wrapper_first-row{
-      .button:first-child{
-        margin-right: 19px;
-        margin-bottom: 30px;
-      }
-    }
-    .form-elements__right-column-buttons-wrapper_second-row{
-      .button:first-child{
-        margin-right: 20px;
-        margin-bottom: 31px;
-      }
-    }
-    .form-elements__right-column-buttons-wrapper_third-row{
-      .button:first-child{
-        margin-right: 20px;
-        margin-bottom: 30px;
-      }
-    }
-    .form-elements__right-column-buttons-wrapper_fourth-row{
-      margin-bottom: 40px;
-    }
-  }
-  .pagination{
-    margin-bottom: 231px;
-  } 
+
+.range-slider__wrapper{
+  margin-bottom: 35px;
 }
+.header_buttons{
+  margin-bottom: 16px;
+}
+.form-elements__right-column-buttons-wrapper{
+  width: 218px;
+}
+.form-elements__right-column-buttons-wrapper_first-row,
+.form-elements__right-column-buttons-wrapper_second-row,
+.form-elements__right-column-buttons-wrapper_third-row{
+  display: flex;
+  flex-direction: row;
+}
+.form-elements__right-column-buttons-wrapper_first-row{
+  .button:first-child{
+    margin-right: 19px;
+    margin-bottom: 30px;
+  }
+}
+.form-elements__right-column-buttons-wrapper_second-row{
+  .button:first-child{
+    margin-right: 20px;
+    margin-bottom: 31px;
+  }
+}
+.form-elements__right-column-buttons-wrapper_third-row{
+  .button:first-child{
+    margin-right: 20px;
+    margin-bottom: 30px;
+  }
+}
+.form-elements__right-column-buttons-wrapper_fourth-row{
+  margin-bottom: 40px;
+}
+.header_pagination{
+  margin-bottom: 16px;
+}
+.header_bullet{
+  margin-top: 256px;
+  margin-bottom: 12px;
+}
+.pagination{
+  margin-bottom: 230px;
+} 
