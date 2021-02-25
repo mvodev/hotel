@@ -57,7 +57,7 @@
 /******/ 	// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 	// Promise = chunk loading, 0 = chunk loaded
 /******/ 	var installedChunks = {
-/******/ 		"registration": 0
+/******/ 		"landing": 0
 /******/ 	};
 /******/
 /******/ 	var deferredModules = [];
@@ -148,86 +148,39 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./registration.js","vendors~UIKit~details~landing~registration~search~signin","vendors~UIKit~details~landing~registration~search","UIKit~details~landing~registration~search"]);
+/******/ 	deferredModules.push(["./landing.js","vendors~UIKit~details~landing~registration~search~signin","vendors~UIKit~details~landing~registration~search","UIKit~details~landing~registration~search","UIKit~details~landing~search"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./components/UIKit/modules/button/radioButtonsSex.js":
-/*!************************************************************!*\
-  !*** ./components/UIKit/modules/button/radioButtonsSex.js ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-const radioButtons = document.querySelectorAll('.button-radio__checkbox-input');
-radioButtons.forEach(function (elem) {
- elem.addEventListener('click', radioButtonsHandler);
-});
-function radioButtonsHandler(event) {
- if (event.target.checked) {
-  if (event.srcElement.parentElement.innerText === "Женщина") {
-   if (event.srcElement.parentElement.parentElement.parentElement.firstChild.firstChild.firstChild.checked){
-    event.srcElement.parentElement.parentElement.parentElement.firstChild.firstChild.firstChild.checked=false;
-   }
-  }
-  else{
-   if (event.srcElement.parentElement.parentElement.parentElement.lastChild.firstChild.firstChild.checked) {
-    event.srcElement.parentElement.parentElement.parentElement.lastChild.firstChild.firstChild.checked = false;
-   }
-  }
- }
- else{
-  if (event.srcElement.parentElement.innerText === "Женщина") {
-    event.srcElement.parentElement.parentElement.parentElement.firstChild.firstChild.firstChild.checked = true;
-  }
-  else{
-   event.srcElement.parentElement.parentElement.parentElement.lastChild.firstChild.firstChild.checked = true;
-  }
- }
-}
-
-/***/ }),
-
-/***/ "./registration.js":
-/*!*************************!*\
-  !*** ./registration.js ***!
-  \*************************/
+/***/ "./landing.js":
+/*!********************!*\
+  !*** ./landing.js ***!
+  \********************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _styles_registration_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/registration.scss */ "./styles/registration.scss");
-/* harmony import */ var _styles_registration_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_registration_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
-/* harmony import */ var _components_UIKit_modules_dropdown_fsdDatepicker_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/UIKit/modules/dropdown/fsdDatepicker.js */ "./components/UIKit/modules/dropdown/fsdDatepicker.js");
-/* harmony import */ var _components_UIKit_modules_dropdown_fsdDatepicker_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_dropdown_fsdDatepicker_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_UIKit_modules_button_radioButtonsSex_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/UIKit/modules/button/radioButtonsSex.js */ "./components/UIKit/modules/button/radioButtonsSex.js");
-/* harmony import */ var _components_UIKit_modules_button_radioButtonsSex_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_button_radioButtonsSex_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/UIKit/modules/burger/burger.js */ "./components/UIKit/modules/burger/burger.js");
-/* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _styles_landing_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/landing.scss */ "./styles/landing.scss");
+/* harmony import */ var _styles_landing_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_landing_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/UIKit/modules/burger/burger.js */ "./components/UIKit/modules/burger/burger.js");
+/* harmony import */ var _components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_UIKit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
+/* harmony import */ var _components_UIKit_modules_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/UIKit/modules/dropdown/dropdown.js */ "./components/UIKit/modules/dropdown/dropdown.js");
 
 
 
-
-
-// $('.text-field__input-date').fsdDatepicker({ todayButton: true, clearButton: true });
-// var cleave = new Cleave('.text-field__input-date', {
-//  date: true,
-//  delimiter: '.',
-//  datePattern: ['d', 'm', 'Y']
-// });
 
 
 /***/ }),
 
-/***/ "./styles/registration.scss":
-/*!**********************************!*\
-  !*** ./styles/registration.scss ***!
-  \**********************************/
+/***/ "./styles/landing.scss":
+/*!*****************************!*\
+  !*** ./styles/landing.scss ***!
+  \*****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -236,4 +189,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 /******/ });
-//# sourceMappingURL=registration.bba12c150ea7234b4353.js.map
+//# sourceMappingURL=landing.927de78ac085bfb53838.js.map

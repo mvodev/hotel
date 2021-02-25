@@ -503,48 +503,59 @@ table {
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   padding-left: 30px;
   padding-right: 30px; }
-  .sign-up__wrapper h2, .sign-up__wrapper h3 {
-    color: #1f2041;
-    font-style: normal; }
-  .sign-up__wrapper h2 {
-    font-family: "Open Sans", "Arial,sans-serif";
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 30px;
-    padding-top: 40px;
-    padding-bottom: 20px; }
-  .sign-up__wrapper h3 {
-    font-family: "Montserrat", "Arial,sans-serif";
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    margin-bottom: 5px; }
-  .sign-up__wrapper h3:nth-child(7) {
-    margin-top: 20px; }
-  .sign-up__wrapper .text-field {
-    margin-bottom: 10px; }
-  .sign-up__wrapper .sign-up__radio-button-wrapper {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 20px; }
-    .sign-up__wrapper .sign-up__radio-button-wrapper .button-radio:first-child {
-      margin-right: 20px; }
-  .sign-up__wrapper .toggle {
-    margin-bottom: 20px; }
-  .sign-up__wrapper .sign-up__footer {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; }
-    .sign-up__wrapper .sign-up__footer .sign-up__account {
-      font-family: "Montserrat", "Arial,sans-serif";
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 18px;
-      color: #000000; }
+
+.sign-up__header-reg,
+.sign-up__header-birthday,
+.sign-up__header-data {
+  color: #1f2041;
+  font-style: normal;
+  font-weight: bold;
+  font-family: "Open Sans", "Arial,sans-serif"; }
+
+.sign-up__header-reg {
+  font-size: 24px;
+  line-height: 30px;
+  padding-top: 40px;
+  padding-bottom: 20px; }
+
+.sign-up__header-birthday,
+.sign-up__header-data {
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  margin-bottom: 5px; }
+
+.sign-up__header-data {
+  margin-top: 20px; }
+
+.text-field {
+  margin-bottom: 10px; }
+
+.sign-up__radio-button-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px; }
+
+.sign-up__radio-button-wrapper .button-radio:first-child {
+  margin-right: 20px; }
+
+.toggle {
+  margin-bottom: 20px; }
+
+.sign-up__footer {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.sign-up__account {
+  font-family: "Montserrat", "Arial,sans-serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000; }
 
 .switch__container {
   display: flex;
@@ -1547,4 +1558,4 @@ p.subscribe {
     max-height: none; } }
 
 
-/*# sourceMappingURL=registration.d61a98781b497465a19b.css.map*/
+/*# sourceMappingURL=registration.1c568d43e7910dafb4e3.css.map*/

@@ -7,27 +7,29 @@
  box-shadow: 0px 0px 25px $boxShadow;
  padding-left: 30px;
  padding-right: 30px;
- h2,h3{
+}
+.sign-up__header-reg,
+.sign-up__header-birthday,
+.sign-up__header-data{
   color: $darkShade100;
   font-style: normal;
- }
- h2{
-  font-family: $font-family-additionalRussianReplacer,$fallback-font;
   font-weight: bold;
+  font-family: $font-family-additionalRussianReplacer,$fallback-font;
+ }
+ .sign-up__header-reg{
   font-size: 24px;
   line-height: 30px;
   padding-top: 40px;
   padding-bottom: 20px;
  }
- h3{
-  font-family: $font-family-main,$fallback-font;
-  font-weight: bold;
+.sign-up__header-birthday,
+.sign-up__header-data{
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
   margin-bottom: 5px;
  }
- h3:nth-child(7){
+ .sign-up__header-data{
   margin-top: 20px;
  }
  .text-field{
@@ -36,11 +38,11 @@
  .sign-up__radio-button-wrapper{
   display: flex;
   flex-direction: row;
-  margin-bottom: 20px;
-  .button-radio:first-child{
-   margin-right: 20px;
-  }
+  margin-bottom: 20px;  
  }
+.sign-up__radio-button-wrapper .button-radio:first-child{
+  margin-right: 20px;
+}
  .toggle{
   margin-bottom: 20px;
  }
@@ -50,13 +52,12 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  .sign-up__account{
-   font-family: $font-family-main,$fallback-font;
-   font-style: normal;
-   font-weight: normal;
-   font-size: 14px;
-   line-height: 18px;
-   color: #000000;
-  }
  }
+.sign-up__account{
+  font-family: $font-family-main,$fallback-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
 }

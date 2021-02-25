@@ -77,13 +77,13 @@ module.exports = {
     filename: 'search.html'
    }
   ),
-  // new HTMLWebpackPlugin(
-  //  {
-  //   template: './components/Website/registration.pug',
-  //   chunks: ['registration'],
-  //   filename: 'registration.html'
-  //  }
-  // ),
+  new HTMLWebpackPlugin(
+   {
+    template: './components/Website/registration.pug',
+    chunks: ['registration'],
+    filename: 'registration.html'
+   }
+  ),
   // new HTMLWebpackPlugin(
   //  {
   //   template: './components/Website/sign-in-page.pug',
