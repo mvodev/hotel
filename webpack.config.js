@@ -84,13 +84,13 @@ module.exports = {
     filename: 'registration.html'
    }
   ),
-  // new HTMLWebpackPlugin(
-  //  {
-  //   template: './components/Website/sign-in-page.pug',
-  //   chunks: ['signin'],
-  //   filename: 'sign-in.html'
-  //  }
-  // ),
+  new HTMLWebpackPlugin(
+   {
+    template: './components/Website/sign-in-page.pug',
+    chunks: ['signin'],
+    filename: 'sign-in.html'
+   }
+  ),
   new CleanWebpackPlugin(),
   new webpack.ProvidePlugin({
    $: 'jquery',

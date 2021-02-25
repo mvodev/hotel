@@ -5,7 +5,7 @@ mixin signin(options)
  div(class='sign-in')
   div(class='sign-in__wrapper')
    form(action=options.action class='sign-in__form')
-    h2='Войти'
+    h2(class="sign-in__header")='Войти'
     +textfield({isDefault:true,placeholder:'Email',type:"email"})
     +textfield({isDefault:true,placeholder:'Пароль',type:"password"})
     +button({label:'Войти',type:'arrow',purpose:'submit'})
