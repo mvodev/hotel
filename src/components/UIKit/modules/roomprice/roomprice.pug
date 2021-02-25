@@ -24,7 +24,11 @@ mixin roomprice(options)
               +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'date',isExpanded:false,id:'d4'})
           div(class='room-price__dropdown-guests')
             h3='гости'
-            +dropdown({placeholder:'Сколько гостей',typeDropdown:'guests',isExpanded:false})
+            +dropdown({placeholder:"Сколько гостей",typeDropdown:'guests',isExpanded:false,labels:[
+    {text:"взрослые",counterNumber:0},
+    {text:"дети",counterNumber:0},
+    {text:"младенцы",counterNumber:0},
+    ],withButtons:true})
           div(class='room-price__start-price')
             div=options.price
             div=options.total

@@ -1,7 +1,6 @@
 mixin dropdown-counter( options )
   section.dropdown-counter.js-dropdown-counter
-     .dropdown-counter__header 
-       h3=options.text
+     h3.dropdown-counter__header=options.text
      .dropdown-counter__container.container-dropdown 
        .container-dropdown__decrease.js-container-dropdown__decrease  -
        .container-dropdown__value.js-container-dropdown__value=options.counterNumber

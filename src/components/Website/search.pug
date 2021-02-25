@@ -16,26 +16,34 @@ html(lang="en")
    include ../UIKit/modules/headers/standardNavBar.pug
   main.search-wrapper__content
    div.search-wrapper__content_left-column
-    h1(class='search-wrapper__content_left-column-header')='ДАТЫ ПРЕБЫВАНИЯ В ОТЕЛЕ'
-    +dropdown({placeholder:'19 авг - 23 авг',typeDropdown:'filter',isExpanded:false})
-    h2(class='search-wrapper__content_left-column-header')='ГОСТИ'
-    +dropdown({placeholder:"3 гостя 1 младенец",typeDropdown:'guests',isExpanded:false})
+    h1(class='left-column-header left-column-header_dates')='ДАТЫ ПРЕБЫВАНИЯ В ОТЕЛЕ'
+    +dropdown({placeholder:'19 авг - 23 авг',typeDropdown:'filter'})
+    h2(class='left-column-header left-column-header_guests')='ГОСТИ'
+    +dropdown({placeholder:"3 гостя,1 младенец",typeDropdown:'guests',labels:[
+    {text:"взрослые",counterNumber:3},
+    {text:"дети",counterNumber:0},
+    {text:"младенцы",counterNumber:1},
+    ],withButtons:true})
     +rangeSlider({label:'ДИАПАЗОН ЦЕНЫ'})
-    h3='Стоимость за сутки пребывания в номере'
-    h2(class='search-wrapper__content_left-column-header')='ПРАВИЛА ДОМА'
+    h3(class='left-column-header left-column-header_price')='Стоимость за сутки пребывания в номере'
+    h2(class='left-column-header left-column-header_rules')='ПРАВИЛА ДОМА'
     +button({type:'check',labels:[{text:'Можно курить',isChecked:false},{text:'Можно с питомцами',isChecked:true},{text:'Можно пригласить гостей(до 10 человек)',isChecked:false}]})
-    h2(class='search-wrapper__content_left-column-header')='доступность'
+    h2(class='left-column-header left-column-header_availability')='доступность'
     div.button-rich_first
       +button({type:'rich',header:'Широкий коридор',label:'Ширина коридоров в номере не менее 91 см.'})
     div.button-rich_last
       +button({type:'rich',header:'Помощник для инвалидов',label:'На 1 этаже вас встретит специалист  и проводит до номера.'})
-    h2(class='search-wrapper__content_left-column-header')='удобства номера'
-    +dropdown({typeDropdown:'room',placeholder:'2 спальни,2 кровати'})
+    h2(class='left-column-header left-column-header_comfort')='удобства номера'
+    +dropdown({typeDropdown:'room',placeholder:'2 спальни,2 кровати', labels:[
+    {text:"спальни",counterNumber:2},
+    {text:"кровати",counterNumber:2},
+    {text:"ванныe комнаты",counterNumber:0},
+    ]})
     +list({type:'expandable',label:'дополнительные удобства',isExpand:false,
     labels:[{text:'Завтрак',isChecked:false},
     {text:'Письменный стол',isChecked:true},{text:'Стул для кормления',isChecked:true},{text:'Кроватка',isChecked:true},{text:'Телевизор',isChecked:false},{text:'Шампунь',isChecked:false}]})
    div.search-wrapper__content_right-column
-    h1(class='search-wrapper__content_right-column-header')='Номера, которые мы для вас подобрали'
+    h1(class='right-column-header right-column-header_main')='Номера, которые мы для вас подобрали'
     div.rooms
       +roomcard({imgSource:'room1.png',roomNumber:888,price:'9 990₽',rate:5,roomType:'люкс',commentNumber:145})
       +roomcard({imgSource:'room2.png',roomNumber:840,price:'9 990₽',rate:4,commentNumber:65})

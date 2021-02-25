@@ -63,20 +63,20 @@ module.exports = {
     filename: 'landing.html'
    }
   ),
-  // new HTMLWebpackPlugin(
-  //  {
-  //   template: './components/Website/details.pug',
-  //   chunks: ['details'],
-  //   filename: 'details.html',
-  //  }
-  // ),
-  // new HTMLWebpackPlugin(
-  //  {
-  //   template: './components/Website/search.pug',
-  //   chunks: ['search'],
-  //   filename: 'search.html'
-  //  }
-  // ),
+  new HTMLWebpackPlugin(
+   {
+    template: './components/Website/details.pug',
+    chunks: ['details'],
+    filename: 'details.html',
+   }
+  ),
+  new HTMLWebpackPlugin(
+   {
+    template: './components/Website/search.pug',
+    chunks: ['search'],
+    filename: 'search.html'
+   }
+  ),
   // new HTMLWebpackPlugin(
   //  {
   //   template: './components/Website/registration.pug',

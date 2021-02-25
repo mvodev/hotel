@@ -31,74 +31,77 @@
   grid-template-rows: 1fr 75px;
   column-gap: 6px;
   max-width: 1160px;
+  height: 1325px;
 }
 .search-wrapper__content_left-column{
   grid-area: left;
   display: flex;
   flex-direction: column;
-  .dropdown-input__guests{
-    width: 266px;
-  }
 }
-.search-wrapper__content_left-column-header{
+.search-wrapper__content_left-column .dropdown__guests{
+width: 266px;
+}
+.left-column-header{
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
   color: $darkShade100;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
-.search-wrapper__content_left-column-header:nth-child(7){
-  margin-bottom: 17px;
-}
-.search-wrapper__content_left-column-header:nth-child(9){
-  margin-bottom: 14px;
+.left-column-header_guests{
+  margin-top: 20px;
 }
 .range-slider__wrapper{
   margin-bottom: 2px;
+  margin-top: 30px;
 }
 .dropdown-input__filter{
   margin-bottom: 20.44px;
 }
-h3{
+.left-column-header_price{
   font-size: 12px;
   line-height: 14px;
   color: $darkShade50;
   margin-bottom: 31px;
+  font-weight: normal;
+  text-transform: none;
+}
+.left-column-header_rules,
+.left-column-header_availability{
+  margin-bottom: 16px;
 }
 .button-check{
   margin-bottom: 20px;
 }
 .button-rich_first{
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 .button-rich_last{
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 .dropdown-input__room,
 .dropdown-input__guests{
   margin-bottom: 30px;
 }
-.bullet-list-expandable__dropdown-elem .button-check{
-  margin-bottom: 0px;
-}
-.bullet-list-expandable{
-  margin-top: -11px;
-}
 .search-wrapper__content_right-column{
   grid-area: right;
+}
+.bullet-list-expandable{
+  margin-top: 15px;
 }
 .rooms{
   display: grid;
   grid-template-columns: repeat(3,270px);
   grid-template-rows: repeat(4,257px);
-  row-gap: 15px;
+  row-gap: 20px;
   column-gap: 12px;
   }
 .pagination{
-  margin: 41px auto 0px auto;
+  margin-top: 44px;
+  margin-left: 290px;
 }
-.search-wrapper__content_right-column-header{
+.right-column-header{
   font-family: $font-family-additionalRussianReplacer;
   font-style: normal;
   font-weight: bold;

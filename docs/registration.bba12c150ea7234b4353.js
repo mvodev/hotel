@@ -148,7 +148,7 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./registration.js","vendors~UIKit~details~landing~registration~search~signin","vendors~UIKit~details~landing~registration","UIKit~details~landing~registration~search"]);
+/******/ 	deferredModules.push(["./registration.js","vendors~UIKit~details~landing~registration~search~signin","vendors~UIKit~details~landing~registration~search","UIKit~details~landing~registration~search"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
@@ -236,4 +236,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 /******/ });
-//# sourceMappingURL=registration.6f0762b4b2ebfe8b2fe8.js.map
+//# sourceMappingURL=registration.bba12c150ea7234b4353.js.map
