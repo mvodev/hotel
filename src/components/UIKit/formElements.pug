@@ -31,10 +31,10 @@ include headerUiKit.pug
       div='Masked Text Field'
       div='Default'
     +textfield({isMasked:true,placeholder:'ДД.ММ.ГГГГ'})
+    h2(class='header header_date-dropdown')
+      div='Date Dropdown'
+      div='Date Dropdown'
     .form-elements__left-column-dropdown-wrapper
-      h2(class='header header_date-dropdown')
-        div='Date Dropdown'
-        div='Date Dropdown'
       +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'date',isExpanded:false,
         withButtons:false})
       +dropdown({placeholder:'19.08.2019',typeDropdown:'date',isExpanded:false})
@@ -59,21 +59,21 @@ include headerUiKit.pug
     {text:"кровати",counterNumber:2},
     {text:"ванныe комнаты",counterNumber:0},
     ],isExpanded:true})
-    div(class='bullet-list-expandable_first')
+    div(class='bullet-list-expandable bullet-list-expandable_first')
       +list({type:'expandable',label:'expandable checkbox list',isExpand:false,
       labels:[{text:'Завтрак',isChecked:false},
       {text:'Письменный стол',isChecked:true},{text:'Стул для кормления',isChecked:true},{text:'Кроватка',isChecked:true},{text:'Телевизор',isChecked:false},{text:'Шампунь',isChecked:false}]})
     +list({type:'expandable',label:'expandable checkbox list',isExpand:true,
       labels:[{text:'Завтрак',isChecked:false},
       {text:'Письменный стол',isChecked:true},{text:'Стул для кормления',isChecked:true},{text:'Кроватка',isChecked:true},{text:'Телевизор',isChecked:false},{text:'Шампунь',isChecked:false}]})
-    div(class='bullet-list-icons_first')
+    div(class='bullet-list-icons-wrapper')
       +list({type:'icons',icon:'insert_emoticon',header:'Комфорт',text:'Шумопоглощающие стены'})
       +list({type:'icons',icon:'location_city',header:'Удобство',text:'Окно в каждой из спален'})
   .form-elements__central-column
-    h2(class='header header_checkbox-buttons')='CHECkBOX BUTTONS'
+    h2(class='header header_checkbox-buttons')='CHECKBOX BUTTONS'
     +button({type:'check',labels:[{text:'Можно курить',isChecked:false},{text:'Можно с питомцами',isChecked:true},{text:'Можно пригласить гостей(до 10 человек)',isChecked:false}]})
     h2(class='header header_radio-buttons')='RADIO BUTTONS'
-    .radio-button-wrapper
+    .radio-buttons-wrapper
       +button({type:'radio',label:'Мужчина',isChecked:true})
       +button({type:'radio',label:'Женщина'})
     h2(class='header header_toggle')='TOGGLE'

@@ -903,6 +903,9 @@ p.subscribe {
 .dropdown__date .dropdown__input {
   width: 91px; }
 
+.dropdown__filter {
+  width: 266px; }
+
 .datepicker--day-name {
   font-family: "Montserrat", "Arial,sans-serif";
   font-style: normal;
@@ -1052,7 +1055,8 @@ p.subscribe {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 30px; }
+  height: 30px;
+  margin: 6px 7px 7px 15px; }
 
 .dropdown-counter__header {
   overflow: hidden;
@@ -1095,6 +1099,9 @@ p.subscribe {
 
 .dropdown__date .dropdown__input {
   width: 91px; }
+
+.dropdown__filter {
+  width: 266px; }
 
 .datepicker--day-name {
   font-family: "Montserrat", "Arial,sans-serif";
@@ -1330,14 +1337,11 @@ p.subscribe {
   flex-direction: row;
   justify-content: space-between;
   color: #BC9CFF;
-  margin: 20px 7px 13px 14px; }
+  margin: 20px 7px 12px 14px; }
 
 .buttons-dropdown__clear,
 .buttons-dropdown__apply {
   cursor: pointer; }
-
-.dropdown-counter {
-  margin: 5px 7px 8px 15px; }
 
 .hidden {
   visibility: hidden;
@@ -1413,7 +1417,8 @@ p.subscribe {
   background-color: #ffffff; }
 
 .bullet-list-expandable__dropdown-elem {
-  margin-bottom: 10.56px; }
+  margin-bottom: 10px;
+  margin-top: 3px; }
 
 .bullet-list_is-visible {
   display: block; }
@@ -2172,4 +2177,4 @@ h3 {
     justify-content: center; } }
 
 
-/*# sourceMappingURL=search.1fabc75851088dc3c70d.css.map*/
+/*# sourceMappingURL=search.3094a20d03e19401a4c3.css.map*/
