@@ -111,27 +111,29 @@ width: 266px;
   margin-bottom: 21px;
 }
 @media (max-width:$container-mobile-width){
- .search-wrapper{
-   max-width: none;
-   max-height: none;
-  .search-wrapper__content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  .search-wrapper__content_right-column{
-  .rooms{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  }
- }
- }
- .footer{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
- }
+.search-wrapper{
+  max-width: none;
+  max-height: none;
+}
+.search-wrapper__content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.search-wrapper__content_right-column .rooms{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.search-wrapper__content_right-column .pagination{
+  margin: 10px auto 0px auto;
+}
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 }
