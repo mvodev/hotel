@@ -56,13 +56,13 @@ module.exports = {
     chunks: ['UIKit'],
    }
   ),
-  // new HTMLWebpackPlugin(
-  //  {
-  //   template: './components/Website/landing.pug',
-  //   chunks: ['landing'],
-  //   filename: 'landing.html'
-  //  }
-  // ),
+  new HTMLWebpackPlugin(
+   {
+    template: './components/Website/landing.pug',
+    chunks: ['landing'],
+    filename: 'landing.html'
+   }
+  ),
   // new HTMLWebpackPlugin(
   //  {
   //   template: './components/Website/details.pug',
