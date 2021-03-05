@@ -4,7 +4,7 @@
   ## Запуск проекта
   npm i&npm run build
   ## Результат сборки проекта
-  Находится в паке docs
+  Находится в папке docs
 
   В папке scripts находится файл fsdDatepicker.js - fork проекта t1m0n/air-datepicker
 
