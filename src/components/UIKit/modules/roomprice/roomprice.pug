@@ -17,13 +17,13 @@ mixin roomprice(options)
                 span='  в сутки'
           div(class='room-price__dropdowns')
             div(class='room-price__dropdown')
-              h3='прибытие'
+              h3(class='room-price__header')='прибытие'
               +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'date',isExpanded:false,id:'d3'})
             div(class='room-price__dropdown')
-              h3='выезд'
+              h3(class='room-price__header')='выезд'
               +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'date',isExpanded:false,id:'d4'})
           div(class='room-price__dropdown-guests')
-            h3='гости'
+            h3(class='room-price__header')='гости'
             +dropdown({placeholder:"Сколько гостей",typeDropdown:'guests',isExpanded:false,labels:[
     {text:"взрослые",counterNumber:0},
     {text:"дети",counterNumber:0},

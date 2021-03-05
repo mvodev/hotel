@@ -3401,7 +3401,7 @@ input:checked + .slider-round:before {
   .room-price__wrapper .room-price__price span:nth-child(2) {
     font-weight: normal;
     font-size: 12px; }
-  .room-price__wrapper h3 {
+  .room-price__wrapper .room-price__header {
     font-family: "Montserrat", "Arial,sans-serif";
     font-weight: bold;
     font-size: 12px;
@@ -3508,4 +3508,4 @@ body {
   margin-top: 3px; }
 
 
-/*# sourceMappingURL=UIKit.813257c138f200287118.css.map*/
+/*# sourceMappingURL=UIKit.06b674a7b51c9a229570.css.map*/
