@@ -33,12 +33,12 @@
   max-width: 1160px;
   height: 1325px;
 }
-.search-wrapper__content_left-column{
+.left-column{
   grid-area: left;
   display: flex;
   flex-direction: column;
 }
-.search-wrapper__content_left-column .dropdown__guests{
+.left-column .dropdown__guests{
 width: 266px;
 }
 .left-column-header{
@@ -84,7 +84,7 @@ width: 266px;
 .dropdown-input__guests{
   margin-bottom: 30px;
 }
-.search-wrapper__content_right-column{
+.right-column{
   grid-area: right;
 }
 .bullet-list-expandable{
@@ -122,13 +122,13 @@ width: 266px;
   align-items: center;
   height: auto;
 }
-.search-wrapper__content_right-column .rooms{
+.right-column .rooms{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.search-wrapper__content_right-column .pagination{
+.right-column .pagination{
   margin: 10px auto 0px auto;
 }
 .footer{

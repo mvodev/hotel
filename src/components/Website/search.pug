@@ -15,7 +15,7 @@ html(lang="en")
   header.header
    include ../UIKit/modules/headers/standardNavBar.pug
   main.search-wrapper__content
-   div.search-wrapper__content_left-column
+   section.left-column
     h1(class='left-column-header left-column-header_dates')='ДАТЫ ПРЕБЫВАНИЯ В ОТЕЛЕ'
     +dropdown({placeholder:'19 авг - 23 авг',typeDropdown:'filter'})
     h2(class='left-column-header left-column-header_guests')='ГОСТИ'
@@ -42,7 +42,7 @@ html(lang="en")
     +list({type:'expandable',label:'дополнительные удобства',isExpand:false,
     labels:[{text:'Завтрак',isChecked:false},
     {text:'Письменный стол',isChecked:true},{text:'Стул для кормления',isChecked:true},{text:'Кроватка',isChecked:true},{text:'Телевизор',isChecked:false},{text:'Шампунь',isChecked:false}]})
-   div.search-wrapper__content_right-column
+   section.right-column
     h1(class='right-column-header right-column-header_main')='Номера, которые мы для вас подобрали'
     div.rooms
       +roomcard({imgSource:'room1.png',roomNumber:888,price:'9 990₽',rate:5,roomType:'люкс',commentNumber:145})
