@@ -3112,11 +3112,11 @@ input:checked + .slider-round:before {
     background: #ffffff;
     box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3); }
   .room-card_wrapper .room-card__room-specifications,
-  .room-card_wrapper .room-card_bottom-line {
+  .room-card_wrapper .room-card__bottom-line {
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
-  .room-card_wrapper .room-card_bottom-line {
+  .room-card_wrapper .room-card__bottom-line {
     margin-top: 10px; }
   .room-card_wrapper .room-card__delimeter {
     width: 230px;
@@ -3259,7 +3259,7 @@ input:checked + .slider-round:before {
   padding-left: 30px;
   padding-right: 30px; }
 
-.search-number__wrapper h2 {
+.search-number__header {
   font-family: "Open Sans", "Arial,sans-serif";
   font-style: normal;
   font-weight: bold;
@@ -3268,7 +3268,7 @@ input:checked + .slider-round:before {
   color: #1f2041;
   padding: 40px 0px 21px 0px; }
 
-.search-number__wrapper h3 {
+.search-number__dropdown-header {
   font-family: "Montserrat", "Arial,sans-serif";
   font-style: normal;
   font-weight: bold;
@@ -3508,4 +3508,4 @@ body {
   margin-top: 3px; }
 
 
-/*# sourceMappingURL=UIKit.06b674a7b51c9a229570.css.map*/
+/*# sourceMappingURL=UIKit.0fce28e6d889bc0c21af.css.map*/
