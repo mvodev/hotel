@@ -1,4 +1,4 @@
-  # Верстка в рамках 2 задания учебного курса Fullstack Development.
+  # Верстка в рамках 2 задания учебного курса Znack.
   ## Ссылка на Github Pages
   https://mvodev.github.io/FSDCourse2/
   ## Запуск проекта
