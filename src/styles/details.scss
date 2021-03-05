@@ -30,19 +30,19 @@
   flex-direction: row;
   justify-content: center;
 }
-.details-wrapper__room-images-big{
+.details-wrapper__room-images_big{
   max-width: 981px;
   max-height: 485px;
   object-fit: cover;
 }
-.details-wrapper__room-images-small{
+.details-wrapper__room-images_small{
   display: flex;
   flex-direction: column;
   max-width: 461px;
   max-height: 485px;
 }
-.details-wrapper__room-images-small-top,
-.details-wrapper__room-images-small-bottom{
+.details-wrapper__room-images_small-top,
+.details-wrapper__room-images_small-bottom{
   object-fit: cover;
   max-height: 50%;
 }
