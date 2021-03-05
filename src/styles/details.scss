@@ -86,7 +86,7 @@
   color: $darkShade100;
 }
 .left-column-comments h2{
-margin-bottom: 18px;
+  margin-bottom: 18px;
 }
 .left-column-comments .expanded-comment{
   margin-bottom: 20px;
@@ -130,14 +130,14 @@ margin-bottom: 18px;
     padding-right: 10px;
   }
   .details-wrapper__content{
-  height: auto;
+    height: auto;
   }
   .details-wrapper__room-images{
-  margin: 0px auto;
+    margin: 0px auto;
   }
   .details-wrapper__room-images-small-top,
   .details-wrapper__room-images-small-bottom{
-  display: none;
+    display: none;
   }
   .details-wrapper__body{
     flex-direction: column;
@@ -153,8 +153,8 @@ margin-bottom: 18px;
     margin-right: 0px;
   }
   .left-column-rules{
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }

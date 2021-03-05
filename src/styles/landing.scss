@@ -11,10 +11,10 @@
 @import '../components/UIKit/modules/dropdown/dropdown.scss';
 @import '../components//UIKit/modules/dropdown/fsdDatepicker.css';
 .landing-wrapper{
- max-width: $container-width;
- font-family: $font-family-main,$fallback-font;
- min-height: 1343px;
- margin: 0px auto; 
+  max-width: $container-width;
+  font-family: $font-family-main,$fallback-font;
+  min-height: 1343px;
+  margin: 0px auto; 
 }
 .img__wrapper{
   height: 831px;
