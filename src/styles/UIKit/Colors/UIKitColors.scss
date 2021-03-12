@@ -8,26 +8,28 @@
   height: 900px;
 }
 .colors{
+  max-width: $container-width - 300;
+  margin: 0px auto;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 105px;
+  font-style: normal;
+  font-weight: normal;
 }
 .colors__left-column{
-  margin-left: 10.5%;
-  max-width: 281px;
-  min-height: 610px;
+  width: 281px;
+  height: 610px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-style: normal;
-  font-weight: normal;
   font-size: 17px;
   line-height: 26px;
   color: $darkShade100;
 }
 .colors__right-column{
-  margin-right: 13.3%;
-  max-width: 436px;
-  font-style: normal;
+  width: 436px;
+  height: 321px;
+  margin-right: 8px;
 }
