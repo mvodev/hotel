@@ -897,121 +897,47 @@ p.subscribe {
   .footer-nav__subscribe {
     margin-top: 10px; } }
 
-.room-price__wrapper {
+.search-number__wrapper {
   width: 380px;
-  height: 511px;
-  font-style: normal;
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
+  height: 374px;
+  background-color: #ffffff;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 40px 30px 30px 30px; }
-  .room-price__wrapper .room-price__room-specifications,
-  .room-price__wrapper .room-price__dropdowns {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
-  .room-price__wrapper .room-price__room-specifications {
-    margin-bottom: 20px;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 13px; }
-  .room-price__wrapper .room-price__number {
-    font-family: "Open Sans", "Arial,sans-serif";
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    width: 64px;
-    height: 33px;
-    margin-right: 5px;
-    font-weight: bold;
-    white-space: pre;
-    margin-top: 3px; }
-  .room-price__wrapper .room-price__number span:first-child {
-    font-size: 14px;
-    line-height: 17px; }
-  .room-price__wrapper .room-price__number span:nth-child(2) {
-    font-size: 23px;
-    line-height: 23px; }
-  .room-price__wrapper .room-price__type {
-    font-family: "Montserrat", "Arial,sans-serif";
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: #BC9CFF; }
-  .room-price__wrapper .room-price__price {
-    margin-left: auto;
-    width: 100px;
-    font-family: "Montserrat", "Arial,sans-serif";
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 18px;
-    color: rgba(31, 32, 65, 0.5);
-    white-space: pre; }
-  .room-price__wrapper .room-price__price span:nth-child(2) {
-    font-weight: normal;
-    font-size: 12px; }
-  .room-price__wrapper .room-price__header {
-    font-family: "Montserrat", "Arial,sans-serif";
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: #1f2041;
-    margin-bottom: 6px; }
-  .room-price__wrapper .room-price__dropdowns,
-  .room-price__wrapper .room-price__dropdown-guests {
-    margin-bottom: 19px; }
-  .room-price__wrapper .room-price__start-price,
-  .room-price__wrapper .room-price__service-fee,
-  .room-price__wrapper .room-price__service-extra-fee,
-  .room-price__wrapper .room-price__total-price {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-weight: normal;
-    font-style: normal;
-    font-family: "Montserrat", "Arial,sans-serif";
-    font-size: 14px;
-    line-height: 24px;
-    color: rgba(31, 32, 65, 0.75); }
-  .room-price__wrapper .room-price__start-price div:first-child,
-  .room-price__wrapper .room-price__service-fee div:first-child,
-  .room-price__wrapper .room-price__service-extra-fee div:first-child {
-    width: 239px; }
-  .room-price__wrapper .room-price__service-extra-fee div:first-child {
-    line-height: 18px;
-    height: 36px; }
-  .room-price__wrapper .room-price__start-price,
-  .room-price__wrapper .room-price__service-fee {
-    margin-bottom: 10px; }
-  .room-price__wrapper .room-price__service-extra-fee {
-    margin-bottom: 30px; }
-  .room-price__wrapper .room-price__total-price {
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-size: 19px;
-    line-height: 24px;
-    color: #1f2041;
-    font-family: "Open Sans", "Arial,sans-serif"; }
-  .room-price__wrapper .room-price__extra-info {
-    width: 20px;
-    height: 20px;
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    color: rgba(31, 32, 65, 0.25);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 5px; }
-  .room-price__wrapper .room-price__service-fee div:first-child,
-  .room-price__wrapper .room-price__service-extra-fee div:first-child {
-    display: flex;
-    flex-direction: row; }
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.search-number__header {
+  font-family: "Open Sans", "Arial,sans-serif";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1f2041;
+  padding: 40px 0px 21px 0px; }
+
+.search-number__dropdown-header {
+  font-family: "Montserrat", "Arial,sans-serif";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+  margin-bottom: 6px; }
+
+.search-number__dropdowns {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px; }
+
+.search-number__wrapper .button-with-arrow {
+  margin-top: 31px; }
+
+.search-number__dropdown:first-child {
+  margin-right: 20px; }
+
+.dropdown-input__guests {
+  margin-bottom: 31px; }
 
 .button {
   width: 99px;
@@ -1302,237 +1228,232 @@ p.subscribe {
   background-repeat: no-repeat;
   background-position: center; }
 
-.bullet-list {
-  max-width: 243px;
-  list-style-type: none;
-  display: block; }
+.text-field {
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  height: 44px;
+  width: 320px;
+  font-family: "Montserrat", "Arial,sans-serif"; }
 
-.bullet-list__elem {
-  font-family: "Montserrat";
+.text-field__input-wrapper {
+  display: flex;
+  flex-direction: row; }
+
+.text-field__input-date,
+.text-field__input-date::placeholder {
+  font-family: "Montserrat", "Arial,sans-serif";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  padding-left: 20.86px;
-  position: relative;
-  width: 253px;
-  margin-bottom: 10px; }
+  color: rgba(31, 32, 65, 0.25); }
 
-.bullet-list__elem:before {
-  content: '';
-  position: absolute;
-  top: 8px;
-  left: 0px;
-  width: 10px;
-  height: 10px;
-  background-color: rgba(31, 32, 65, 0.25);
-  border-radius: 50%; }
-
-.bullet-list-expandable {
-  width: 266px;
-  height: 44px;
-  position: relative; }
-
-.bullet-list-expandable__label {
-  font-family: "Montserrat";
+.text-field label {
+  white-space: nowrap;
+  height: 15px;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
   color: #1f2041;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center; }
+  margin-bottom: 5px; }
 
-.bullet-list-expandable__label span {
-  display: block;
+.text-field input {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  width: 320px;
+  height: 44px;
+  border: none;
+  box-sizing: border-box;
+  background-color: transparent;
+  padding-left: 15px;
+  padding-top: 13px;
+  padding-bottom: 13px; }
+
+.text-field_focused input {
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  background: transparent;
+  border-color: rgba(31, 32, 65, 0.5); }
+
+.text-field_subscription {
+  width: 266px;
+  height: 44px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px; }
+  .text-field_subscription .text-field__input-wrapper input {
+    width: 223px; }
+
+.text-field__input-wrapper-arrow {
   width: 44px;
   height: 44px;
-  cursor: pointer;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   font-family: "Material Icons";
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  color: rgba(31, 32, 65, 0.5); }
-
-.bullet-list-expandable__dropdown {
-  position: absolute;
-  top: 44px;
-  left: 0px;
-  display: none;
-  z-index: 1;
-  background-color: #ffffff; }
-
-.bullet-list-expandable__dropdown-elem {
-  margin-bottom: 10px;
-  margin-top: 3px; }
-
-.bullet-list_is-visible {
-  display: block; }
-
-.bullet-list-icons {
-  min-height: 69px;
-  width: 280px;
-  border-bottom: 1px solid rgba(31, 32, 65, 0.1);
-  display: flex;
-  flex-direction: row; }
-  .bullet-list-icons__icon {
-    width: 48px;
-    height: 48px;
-    color: #BC9CFF;
-    font-family: "Material Icons";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 48px;
-    line-height: 41px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin-right: 10px; }
-  .bullet-list-icons__header {
-    font-family: "Montserrat", "Arial,sans-serif";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 24px;
-    color: rgba(31, 32, 65, 0.75); }
-  .bullet-list-icons__text {
-    font-family: "Montserrat", "Arial,sans-serif";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-    color: rgba(31, 32, 65, 0.5);
-    padding-top: 5px;
-    margin-bottom: 17px; }
-
-.diagram {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  max-height: 120px; }
-
-.diagram-chart {
-  width: 120px;
-  height: 120px;
-  margin-right: 45px; }
-
-.diagram-description {
-  position: relative;
-  width: 146px;
-  height: 96px;
-  margin-bottom: -3px; }
-
-.diagram-description__list {
-  list-style-type: none;
-  position: relative;
-  font-family: "Montserrat", "Arial,sans-serif";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75); }
-
-.diagram-description__list::before {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  content: '';
-  top: 10px;
-  left: -15px;
-  border-radius: 50%; }
-
-.diagram-description_list-orange::before {
-  background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%); }
-
-.diagram-description_list-green::before {
-  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%); }
-
-.diagram-description_list-blue::before {
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
-
-.diagram-description_list-black::before {
-  background: linear-gradient(180deg, #919191 0%, #3D4975 100%); }
-
-.diagramchart__chart-text {
-  font-family: "Open Sans", "Arial,sans-serif";
-  fill: #BC9CFF;
-  transform: translateY(5px) translateX(-30px); }
-
-.diagramchart__chart-number {
-  font-family: "Quicksand", "Arial,sans-serif";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 30px;
   color: #BC9CFF;
-  transform: translateY(-5px) translateX(12px); }
+  cursor: pointer; }
 
-.diagramchart__chart-label {
+.dropdown__date {
+  width: 150px; }
+
+.dropdown__date .dropdown__input {
+  width: 91px; }
+
+.dropdown__filter {
+  width: 266px; }
+
+.datepicker--day-name {
   font-family: "Montserrat", "Arial,sans-serif";
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  display: flex;
+  align-items: center;
   text-align: center;
-  text-transform: uppercase;
   color: #BC9CFF;
-  transform: translateY(14px); }
+  height: 40px;
+  width: 40px; }
 
-.expanded-comment {
-  max-width: 711px;
-  min-height: 133px;
+.datepicker--cell-day {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: rgba(31, 32, 65, 0.5);
+  width: 14.28571%;
+  height: 40px; }
+
+.-other-month- {
   font-family: "Montserrat", "Arial,sans-serif";
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
+  font-size: 12px;
+  line-height: 15px;
   display: flex;
-  flex-direction: column;
-  flex: auto; }
-  .expanded-comment__header {
-    margin-bottom: 10px; }
-  .expanded-comment__header-img {
-    height: 48px;
-    width: 48px;
-    margin-right: 10px; }
-  .expanded-comment__header-img img {
-    max-width: 100%;
-    height: auto; }
-  .expanded-comment__header {
+  align-items: center;
+  text-align: center;
+  color: rgba(31, 32, 65, 0.25); }
+
+.datepicker--cell.-selected-,
+.datepicker--cell.-selected-.-weekend- {
+  color: #ffffff;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border-radius: 50%; }
+
+.datepicker--cell.-current- {
+  color: rgba(31, 32, 65, 0.5); }
+
+.datepicker {
+  background: #ffffff;
+  font-family: "Montserrat", "Arial,sans-serif";
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 4px;
+  width: 320px;
+  min-height: 369px; }
+  .datepicker--content {
+    padding: 0px;
+    width: 280px;
+    margin-left: 20.94px;
+    margin-right: 19.94px;
+    margin-bottom: 20.44px; }
+  .datepicker--nav-action {
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 20px;
     display: flex;
-    flex-direction: row; }
-  .expanded-comment__header-name {
+    align-items: center;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+    color: #BC9CFF;
+    margin-left: 17px;
+    margin-right: 17px; }
+  .datepicker--nav {
+    border-bottom: none;
+    margin-top: 15px; }
+  .datepicker--nav-title {
+    font-family: "Open Sans", "Arial,sans-serif";
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 19px;
     line-height: 24px;
-    color: rgba(31, 32, 65, 0.75); }
-  .expanded-comment__header-name-wrapper {
+    text-align: center;
+    color: #1f2041; }
+  .datepicker--nav-title i {
+    color: #1f2041; }
+  .datepicker--buttons {
+    border-top: none;
     display: flex;
-    flex-direction: column; }
-  .expanded-comment__body {
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    min-height: 72px;
-    max-width: 711px; }
-  .expanded-comment__body-text {
-    max-width: 653px;
-    height: 100%; }
-  .expanded-comment__like-button {
-    margin-left: 3px;
-    margin-top: 2px;
-    margin-right: 14px; }
+    padding: 0px;
+    font-family: "Montserrat", "Arial,sans-serif";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase; }
+  .datepicker--buttons span:first-child {
+    padding-left: 20px;
+    color: #BC9CFF; }
+  .datepicker--buttons span:nth-child(2) {
+    padding-right: 20px;
+    padding-left: 110px;
+    color: #BC9CFF; }
+  .datepicker--button {
+    display: block; }
+  .datepicker--pointer {
+    display: none; }
+
+.datepicker--cell.-range-from-,
+.datepicker--cell.-range-to-,
+.datepicker--cell.-selected-.-range-to- {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
+
+.datepicker--cell.-in-range- {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  opacity: 0.25; }
+
+.datepicker--cell.-selected-.-range-to-::before {
+  content: '';
+  width: 20px;
+  height: 40px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  opacity: 0.25; }
+
+.datepicker--cell.-selected-.-range-from- +
+.datepicker--cell.-in-range-::before {
+  content: '';
+  width: 20px;
+  height: 40px;
+  position: absolute;
+  top: 0px;
+  left: -20px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
+
+.datepicker--days-names {
+  margin-top: 27px;
+  margin-bottom: 0px; }
 
 .dropdown-counter {
   font-family: "Montserrat", "Arial,sans-serif";
@@ -1832,368 +1753,48 @@ p.subscribe {
   visibility: hidden;
   cursor: none; }
 
-.dropdown__date {
-  width: 150px; }
-
-.dropdown__date .dropdown__input {
-  width: 91px; }
-
-.dropdown__filter {
-  width: 266px; }
-
-.datepicker--day-name {
-  font-family: "Montserrat", "Arial,sans-serif";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #BC9CFF;
-  height: 40px;
-  width: 40px; }
-
-.datepicker--cell-day {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: rgba(31, 32, 65, 0.5);
-  width: 14.28571%;
-  height: 40px; }
-
-.-other-month- {
-  font-family: "Montserrat", "Arial,sans-serif";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: rgba(31, 32, 65, 0.25); }
-
-.datepicker--cell.-selected-,
-.datepicker--cell.-selected-.-weekend- {
-  color: #ffffff;
-  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
-  border-radius: 50%; }
-
-.datepicker--cell.-current- {
-  color: rgba(31, 32, 65, 0.5); }
-
-.datepicker {
-  background: #ffffff;
-  font-family: "Montserrat", "Arial,sans-serif";
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-  border-radius: 4px;
-  width: 320px;
-  min-height: 369px; }
-  .datepicker--content {
-    padding: 0px;
-    width: 280px;
-    margin-left: 20.94px;
-    margin-right: 19.94px;
-    margin-bottom: 20.44px; }
-  .datepicker--nav-action {
-    font-family: Material Icons;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    width: 24px;
-    height: 24px;
-    color: #BC9CFF;
-    margin-left: 17px;
-    margin-right: 17px; }
-  .datepicker--nav {
-    border-bottom: none;
-    margin-top: 15px; }
-  .datepicker--nav-title {
-    font-family: "Open Sans", "Arial,sans-serif";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 19px;
-    line-height: 24px;
-    text-align: center;
-    color: #1f2041; }
-  .datepicker--nav-title i {
-    color: #1f2041; }
-  .datepicker--buttons {
-    border-top: none;
-    display: flex;
-    justify-content: space-between;
-    padding: 0px;
-    font-family: "Montserrat", "Arial,sans-serif";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase; }
-  .datepicker--buttons span:first-child {
-    padding-left: 20px;
-    color: #BC9CFF; }
-  .datepicker--buttons span:nth-child(2) {
-    padding-right: 20px;
-    padding-left: 110px;
-    color: #BC9CFF; }
-  .datepicker--button {
-    display: block; }
-  .datepicker--pointer {
-    display: none; }
-
-.datepicker--cell.-range-from-,
-.datepicker--cell.-range-to-,
-.datepicker--cell.-selected-.-range-to- {
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
-
-.datepicker--cell.-in-range- {
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  opacity: 0.25; }
-
-.datepicker--cell.-selected-.-range-to-::before {
-  content: '';
-  width: 20px;
-  height: 40px;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  opacity: 0.25; }
-
-.datepicker--cell.-selected-.-range-from- +
-.datepicker--cell.-in-range-::before {
-  content: '';
-  width: 20px;
-  height: 40px;
-  position: absolute;
-  top: 0px;
-  left: -20px;
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
-
-.datepicker--days-names {
-  margin-top: 27px;
-  margin-bottom: 0px; }
-
-.text-field {
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 4px;
-  height: 44px;
-  width: 320px;
-  font-family: "Montserrat", "Arial,sans-serif"; }
-
-.text-field__input-wrapper {
-  display: flex;
-  flex-direction: row; }
-
-.text-field__input-date,
-.text-field__input-date::placeholder {
-  font-family: "Montserrat", "Arial,sans-serif";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.25); }
-
-.text-field label {
-  white-space: nowrap;
-  height: 15px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #1f2041;
-  margin-bottom: 5px; }
-
-.text-field input {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.25);
-  width: 320px;
-  height: 44px;
-  border: none;
-  box-sizing: border-box;
-  background-color: transparent;
-  padding-left: 15px;
-  padding-top: 13px;
-  padding-bottom: 13px; }
-
-.text-field_focused input {
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  background: transparent;
-  border-color: rgba(31, 32, 65, 0.5); }
-
-.text-field_subscription {
-  width: 266px;
-  height: 44px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 4px; }
-  .text-field_subscription .text-field__input-wrapper input {
-    width: 223px; }
-
-.text-field__input-wrapper-arrow {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  font-family: "Material Icons";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 24px;
-  color: #BC9CFF;
-  cursor: pointer; }
-
-.details-wrapper {
+.landing-wrapper {
   max-width: 1440px;
-  height: 1937px;
-  margin: 0px auto;
   font-family: "Montserrat", "Arial,sans-serif";
-  font-style: normal;
-  font-weight: normal; }
+  min-height: 1343px;
+  margin: 0px auto; }
 
-.details-wrapper__content {
-  height: 1425px; }
-
-.details-wrapper__room-images {
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
-
-.details-wrapper__room-images_big {
-  max-width: 981px;
-  max-height: 485px;
-  object-fit: cover; }
-
-.details-wrapper__room-images_small {
+.img__wrapper {
+  height: 831px;
   display: flex;
   flex-direction: column;
-  max-width: 461px;
-  max-height: 485px; }
+  justify-content: space-between;
+  max-width: 1440px;
+  background-image: url(1ca84be73b11b9f36c7a4439c39dddb3.jpg); }
 
-.details-wrapper__room-images_small-top,
-.details-wrapper__room-images_small-bottom {
-  object-fit: cover;
-  max-height: 50%; }
+.search-number {
+  margin-top: 70px;
+  margin-left: 140px; }
 
-.details-wrapper__body {
-  margin: 70px auto;
-  max-width: 1160px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-
-.left-column-info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-
-.left-column-info h1 {
-  margin-bottom: 20px;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 23px; }
-
-.left-column-info__impressions {
-  margin-right: 40px; }
-
-.left-column-info__impressions h2 {
-  margin-bottom: 21px; }
-
-.left-column-info .bullet-list-icons {
-  margin-bottom: 20px; }
-
-.left-column-info .bullet-list-icons:last-child {
-  margin-bottom: 12px;
-  border: none; }
-
-.details-wrapper__body h2 {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 19px;
-  line-height: 24px;
-  color: #1f2041; }
-
-.left-column-comments h2 {
-  margin-bottom: 18px; }
-
-.left-column-comments .expanded-comment {
-  margin-bottom: 20px; }
-
-.left-column-comments .expanded-comment:last-child {
-  margin-bottom: 5px; }
-
-.left-column-rules {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-
-.left-column-rules__text-wrapper {
-  display: flex;
-  flex-direction: column; }
-
-.left-column-rules__text-wrapper h2 {
-  margin-bottom: 20px;
-  margin-left: 20px; }
-
-.left-column-rules__text-wrapper:last-child {
-  margin-right: 10px; }
-
-.left-column-rules__text-wrapper:last-child h2 {
-  margin-left: 0px; }
-
-.left-column-rules__text-wrapper p {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: normal;
+.img__header {
+  height: 48px;
+  width: 296px;
   font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 24px;
+  letter-spacing: 0em;
+  text-align: right;
   color: rgba(31, 32, 65, 0.75);
-  max-width: 341px; }
+  margin-right: 130px;
+  margin-left: auto;
+  margin-bottom: 22px; }
 
-@media (max-width: 1120px) {
-  .details-wrapper {
+@media (max-width: 770px) {
+  .landing-wrapper {
     max-width: none;
-    max-height: none;
-    padding-left: 10px;
-    padding-right: 10px; }
-  .details-wrapper__content {
-    height: auto; }
-  .details-wrapper__room-images {
+    max-height: none; }
+  .search-number {
     margin: 0px auto; }
-  .details-wrapper__room-images-small-top,
-  .details-wrapper__room-images-small-bottom {
-    display: none; }
-  .details-wrapper__body {
+  .footer {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-  .left-column-info {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-  .left-column-info__impressions {
-    margin-right: 0px; }
-  .left-column-rules {
-    flex-direction: column;
-    align-items: center;
     justify-content: center; } }
 
 
-/*# sourceMappingURL=details.4ec65aaed370880c7d5a.css.map*/
+/*# sourceMappingURL=landing.0461abb96b1ba3ba3b0d.css.map*/
