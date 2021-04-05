@@ -103,15 +103,15 @@ module.exports = {
    patterns: [
     {
      from: path.resolve(__dirname, 'src/assets/img/svg'),
-     to: path.resolve(__dirname, 'docs')
+     to: path.resolve(__dirname, 'docs/assets/img/svg')
     },
     {
      from: path.resolve(__dirname, 'src/assets/img/jpg'),
-     to: path.resolve(__dirname, 'docs')
+     to: path.resolve(__dirname, 'docs/assets/img/jpg')
     },
     {
      from: path.resolve(__dirname, 'src/assets/img/png'),
-     to: path.resolve(__dirname, 'docs')
+     to: path.resolve(__dirname, 'docs/assets/img/png')
     },
     {
      from: path.resolve(__dirname, 'src/assets/favicons'),
