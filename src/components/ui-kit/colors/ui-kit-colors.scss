@@ -1,6 +1,6 @@
-@import '../styles/common/header-ui-kit.scss';
-@import '../colors/left-column-ui-kit-colors.scss';
-@import '../colors/right-column-ui-kit-colors.scss';
+@import '../../../styles/common/header-ui-kit.scss';
+@import 'left-column-ui-kit-colors.scss';
+@import 'right-column-ui-kit-colors.scss';
 .colors-and-types{
   width: 100%;
   font-family: $font-family-main,$fallback-font;
