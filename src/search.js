@@ -1,9 +1,9 @@
 import './styles/search.scss';
 import 'ion-rangeslider';
-import './components/UIKit/modules/dropdown/dropdown.js';
-import './components/UIKit/modules/button/starRating.js';
-import './components/UIKit/modules/list/expandableCL.js';
-import './components/UIKit/modules/burger/burger.js';
+import './components/ui-kit/modules/dropdown/dropdown.js';
+import './components/ui-kit/modules/button/star-rating.js';
+import './components/ui-kit/modules/list/expandable-cl.js';
+import './components/ui-kit/modules/burger/burger.js';
 $('.js-range-slider__input').ionRangeSlider({
   type: "double",
   min: 0,

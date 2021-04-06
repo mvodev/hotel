@@ -1,15 +1,15 @@
 @import './common/fonts.scss';
 @import './common/reset.scss';
 @import './common/constants.scss';
-@import '../components/UIKit/modules/signup/signup.scss';
-@import '../components/UIKit/modules/switch/switch.scss';
-@import '../components/UIKit/modules/button/button.scss';
-@import '../components/UIKit/modules/textField/textField.scss';
-@import '../components/UIKit/modules/headers/standardNavBar.scss';
-@import '../components/UIKit/modules/footers/footerCopyrightBar.scss';
-@import '../components/UIKit/modules/footers/footerWidget.scss';
-@import '../components/UIKit/modules/dropdown/fsdDatepicker.css';
-@import '../components/UIKit/modules/dropdown/dropDownDate.scss';
+@import '../components/ui-kit/modules/sign-up/sign-up.scss';
+@import '../components/ui-kit/modules/switch/switch.scss';
+@import '../components/ui-kit/modules/button/button.scss';
+@import '../components/ui-kit/modules/text-field/text-field.scss';
+@import '../components/ui-kit/modules/headers/standard-nav-bar.scss';
+@import '../components/ui-kit/modules/footers/footer-copyright-bar.scss';
+@import '../components/ui-kit/modules/footers/footer-widget.scss';
+@import '../components/ui-kit/modules/dropdown/fsd-datepicker.css';
+@import '../components/ui-kit/modules/dropdown/dropdown-date.scss';
 
 .wrapper{
   max-width: $container-width;

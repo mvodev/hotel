@@ -1,0 +1,14 @@
+include ../button/button.pug
+include ../text-field/text-field.pug
+include ../toggle/toggle.pug
+mixin signin(options)
+ div(class='sign-in')
+  div(class='sign-in__wrapper')
+   form(action=options.action class='sign-in__form')
+    h2(class="sign-in__header")='Войти'
+    +textfield({isDefault:true,placeholder:'Email',type:"email"})
+    +textfield({isDefault:true,placeholder:'Пароль',type:"password"})
+    +button({label:'Войти',type:'arrow',purpose:'submit'})
+    div(class='sign-in__footer')
+     span(class='sign-in__account')='Нет аккаунта на Toxin?'
+     +button({label:'Создать',type:'white',purpose:'submit'})

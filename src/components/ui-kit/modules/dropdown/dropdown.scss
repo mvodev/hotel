@@ -1,0 +1,103 @@
+@import './dropdown-counter/dropdown-counter.scss';
+@import './dropdown-date.scss';
+.dropdown{
+  position: relative;
+  font-family: $font-family-main,$fallback-font;
+  line-height: 14.63px;
+  height: 44px;
+  background: $white;
+  border: 1px solid $darkShade50;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+.dropdown__guests{
+ width: 320px;
+}
+.dropdown__room{
+ width: 266px;
+}
+.dropdown_rounding-corners-top{
+  border-radius: 2px 2px 0px 0px;
+  border: 1px solid $darkShade50;
+}
+.dropdown__input-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.dropdown__input{
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  height: 24px;
+  margin-top: 8px;
+  margin-left: 15px;
+  font-family: $font-family-main,$fallback-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  width: 100%;
+}
+.dropdown__guests .dropdown__input{
+ width: 180px;
+ overflow: hidden;
+}
+.dropdown__input::placeholder {
+  font-family: $font-family-main,$fallback-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  height: 18px;
+  color: $darkShade75;
+  margin-bottom: 12px;
+}
+.dropdown__arrow {
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: $darkShade50;
+}
+.dropdown__body {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: none;
+  position: absolute;
+  top:42px;
+  z-index: 3;
+  width: inherit;
+  background: $white;
+  border: 1px solid $darkShade50;
+  box-sizing: border-box;
+  border-radius: 0px 0px 2px 2px;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+.dropdown_active {
+  display: block;
+}
+.dropdown__body-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: $purple;
+  margin: 20px 7px 12px 14px;
+}
+.buttons-dropdown__clear,
+.buttons-dropdown__apply{
+  cursor: pointer;
+}
+.hidden {
+  visibility: hidden;
+  cursor: none;
+}

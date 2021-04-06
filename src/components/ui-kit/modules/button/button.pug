@@ -1,0 +1,71 @@
+mixin button(options)
+ - var buttonClassName='button'
+ - var darkStar= options.darkStar
+ - var lightStar=5-darkStar
+ - var isChecked=options.isChecked===true ? 'checked' : ''
+ - buttonClassName+=options.type==='arrow' ? ' button-with-arrow' : ''
+ - buttonClassName+=options.type==='dark' ? ' button-dark' : ''
+ - buttonClassName+=options.type==='dark50' ? ' button-dark50' : ''
+ - buttonClassName+=options.type==='white' ? ' button-white' : ''
+ - buttonClassName+=options.type==='white50' ? ' button-white50' : ''
+ - buttonClassName+=options.type==='transparent' ? ' button-transparent' : ''
+ - buttonClassName+=options.type==='transparent50' ? ' button-transparent50' : ''
+ - buttonClassName+=options.type==='rate' ? ' button-rate js-button-rate' : ''
+ - buttonClassName+=options.type==='like' ? ' button-like js-button-like' : ''
+ - buttonClassName+=options.isLiked ? ' button-like_is-liked' : ''
+ - buttonClassName+=options.type==='check' ? ' button-check' : ''
+ - buttonClassName+=options.type==='rich' ? ' button-rich' : ''
+ - buttonClassName+=options.type==='radio' ? ' button-radio' : ''
+   if options.type=='arrow'
+    button(class=buttonClassName type=options.purpose?options.purpose:'button')
+     div=options.label
+     div(class='button-with-arrow__arr')='arrow_forward'
+   else if options.type=='rate'
+    div(class=buttonClassName)
+      - var n=1
+      while darkStar-- > 0
+        input(class=buttonClassName+'__input' id='star-rating-'+n type='radio' name='rating')
+        label(class='material-icons button-rate-star' for='star-rating-'+n title=n++ +" out of 5 stars")='star'
+      while lightStar-- > 0
+        input(class=buttonClassName+'__input' id='star-rating-'+n type='radio' name='rating')
+        label(class='material-icons button-rate-star' for='star-rating-'+n title=n++ +" out of 5 stars")='star_border'
+   else if options.type=='like'
+    div(class=buttonClassName)
+      if options.isLiked
+        div(class='button-like__heart')='favorite'
+        div=options.likeNumber
+      else 
+        div(class='button-like__heart')='favorite_border'
+        div=options.likeNumber
+   else if options.type=='check'
+    div(class=buttonClassName)
+        each val in options.labels ? options.labels : ['There are no values']
+          if val.isChecked
+              input(class='button-check__checkbox-input' type='checkbox' checked)
+              div(class='button-check__checkbox-text')=val.text
+          else
+              input(class='button-check__checkbox-input' type='checkbox')
+              div(class='button-check__checkbox-text')=val.text
+   else if options.type=='rich'
+    div(class=buttonClassName)
+      label(class='button-rich__checkbox-label')
+        if options.isChecked
+          input(class='button-rich__checkbox-input' type='checkbox' checked)
+          div(class='button-rich__checkbox-header')=options.header
+          div(class='button-rich__checkbox-text')=options.label
+        else
+          input(class='button-rich__checkbox-input' type='checkbox')
+          div(class='button-rich__checkbox-header')=options.header
+          div(class='button-rich__checkbox-text')=options.label
+   else if options.type=='radio'
+    div(class=buttonClassName)
+      label(class='button-radio__checkbox-label')
+        if options.isChecked
+          input(class='js-button-radio__checkbox-input button-radio__checkbox-input' type='checkbox' checked)
+          div(class='button-radio__checkbox-text')=options.label
+        else
+          input(class='js-button-radio__checkbox-input button-radio__checkbox-input' type='checkbox')
+          div(class='button-radio__checkbox-text')=options.label
+   else
+    button(class=buttonClassName type=options.purpose?options.purpose:'button')
+     span=options.label

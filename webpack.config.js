@@ -24,10 +24,10 @@ module.exports = {
  mode: 'development',
  entry: {
   main: './index.js',
-  UIKit: './UIKit.js',
+  UIKit: './ui-kit.js',
   landing: './landing.js',
   details: './details.js',
-  signin: './signin.js',
+  signin: './sign-in.js',
   search: './search.js',
   registration: './registration.js',
 
@@ -51,42 +51,42 @@ module.exports = {
   ),
   new HTMLWebpackPlugin(
    {
-    template: './components/UIKit/UIKit.pug',
+    template: './components/ui-kit/ui-kit.pug',
     filename: 'UIKit.html',
     chunks: ['UIKit'],
    }
   ),
   new HTMLWebpackPlugin(
    {
-    template: './components/Website/landing.pug',
+    template: './components/website/landing.pug',
     chunks: ['landing'],
     filename: 'landing.html'
    }
   ),
   new HTMLWebpackPlugin(
    {
-    template: './components/Website/details.pug',
+    template: './components/website/details.pug',
     chunks: ['details'],
     filename: 'details.html',
    }
   ),
   new HTMLWebpackPlugin(
    {
-    template: './components/Website/search.pug',
+    template: './components/website/search.pug',
     chunks: ['search'],
     filename: 'search.html'
    }
   ),
   new HTMLWebpackPlugin(
    {
-    template: './components/Website/registration.pug',
+    template: './components/website/registration.pug',
     chunks: ['registration'],
     filename: 'registration.html'
    }
   ),
   new HTMLWebpackPlugin(
    {
-    template: './components/Website/sign-in-page.pug',
+    template: './components/website/sign-in-page.pug',
     chunks: ['signin'],
     filename: 'sign-in.html'
    }

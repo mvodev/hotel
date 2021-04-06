@@ -1,0 +1,56 @@
+@import '../../../components/ui-kit/modules/dropdown/dropdown.scss';
+@import '../../../components/ui-kit/modules/range-slider/range-slider.scss';
+@import '../../../components/ui-kit/modules/text-field/text-field.scss';
+@import '../../../components/ui-kit/modules/button/button.scss';
+@import '../../../components/ui-kit/modules/toggle/toggle.scss';
+@import '../../../components/ui-kit/modules/switch/switch.scss';
+@import '../../../components/ui-kit/modules/list/list.scss';
+@import '../../../components/ui-kit/modules/comment/comment.scss';
+@import '../../../components/ui-kit/modules/pagination/pagination.scss';
+@import './form-elements-left-column.scss';
+@import './form-elements-central-column.scss';
+@import './form-elements-right-column.scss';
+@import './form-elements-comment.scss';
+
+.form-elements__wrapper{
+  width: 1440px;
+  height: 1853px;
+  font-family: $font-family-main,$fallback-font;
+  display: grid;
+  grid-template-areas:
+    "header header header" 
+    "left central right"
+    "left central right"
+    "left comment comment";
+
+  grid-template-columns: 460px 407px 320px;
+  grid-template-rows: 78px 1fr 1fr 279px;
+}
+.header{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $darkShade100; 
+}
+.form-elements__central-column {
+  grid-area: central;
+  padding-left: 126px;
+  padding-top: 75px;
+}
+.form-elements__left-column {
+  grid-area: left;
+  padding-left: 140px;
+  padding-top: 75px;
+}
+.form-elements__right-column {
+  grid-area: right;
+  padding-left: 112px;
+  padding-top: 75px;
+}
+
+
+
+
+

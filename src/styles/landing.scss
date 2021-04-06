@@ -1,15 +1,14 @@
 @import './common/fonts.scss';
 @import './common/reset.scss';
 @import './common/constants.scss';
-@import '../components/UIKit/modules/headers/standardNavBar.scss';
-@import '../components/UIKit/modules/footers/footerCopyrightBar.scss';
-@import '../components/UIKit/modules/footers/footerWidget.scss';
-@import '../components/UIKit/modules/searchnumber/searchnumber.scss';
-@import '../components/UIKit/modules/button/button.scss';
-@import '../components/UIKit/modules/textField/textField.scss';
-@import '../components/UIKit/modules/dropdown/dropDownDate.scss';
-@import '../components/UIKit/modules/dropdown/dropdown.scss';
-@import '../components//UIKit/modules/dropdown/fsdDatepicker.css';
+@import '../components/ui-kit/modules/headers/standard-nav-bar.scss';
+@import '../components/ui-kit/modules/footers/footer-copyright-bar.scss';
+@import '../components/ui-kit/modules/footers/footer-widget.scss';
+@import '../components/ui-kit/modules/search-number/search-number.scss';
+@import '../components/ui-kit/modules/button/button.scss';
+@import '../components/ui-kit/modules/text-field/text-field.scss';
+@import '../components/ui-kit/modules/dropdown/dropdown.scss';
+@import '../components/ui-kit/modules/dropdown/fsd-datepicker.css';
 .landing-wrapper{
   max-width: $container-width;
   font-family: $font-family-main,$fallback-font;

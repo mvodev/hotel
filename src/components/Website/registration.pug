@@ -1,19 +1,19 @@
-include ../UIKit/modules/signup/signup.pug
+include ../ui-kit/modules/sign-up/sign-up.pug
 html(lang="en")
  head
   meta(charset="UTF-8")
   meta(name="viewport", content="width=device-width, initial-scale=1.0")
   meta(name="description", content="отель страница регистрации")
-  include ../Favicon/favicon.pug
+  include ../favicon/favicon.pug
   title Registration page
  body.wrapper
   header.header
-   include ../UIKit/modules/headers/standardNavBar.pug
+   include ../ui-kit/modules/headers/standard-nav-bar.pug
   div.img__wrapper
    +signup({action:'#'})
   footer.footer
-   include ../UIKit/modules/footers/footerWidget.pug
-   include ../UIKit/modules/footers/footerCopyrightBar.pug
+   include ../ui-kit/modules/footers/footer-widget.pug
+   include ../ui-kit/modules/footers/footer-copyright-bar.pug
   
 
  

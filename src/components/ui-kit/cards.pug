@@ -1,0 +1,18 @@
+include modules/room-card/room-card.pug
+include modules/room-price/room-price.pug
+include modules/sign-up/sign-up.pug
+include modules/sign-in/sign-in.pug
+include modules/search-number/search-number.pug
+include headerUiKit.pug
+.cards__wrapper
+ +header
+ .cards__left-column
+  +searchnumber({action:'/mock-address/change-me'})
+  +signup({action:'/mock-address/change-me'})
+ .cards__central-column
+  +roomprice({roomNumber:888,priceHeader:'9 990₽',roomType:'люкс',commentNumber:145,price:'9 990₽ х 4 суток',total:'39 960₽',discount:'Сбор за услуги: скидка 2 179₽',fee:'0₽',extraFee:'300₽',totalPrice:'38 081₽',action:'#'})
+  +signin({action:'/mock-address/change-me'})
+ .cards__right-column
+  div(class='js-cards__right-column-datepicker cards__right-column-datepicker')
+  +roomcard({imgSource:'./assets/img/png/room1.png',roomNumber:888,price:'9 990₽',rate:5,roomType:'люкс',commentNumber:145})
+  +roomcard({imgSource:'./assets/img/png/room2.png',roomNumber:840,price:'9 990₽',rate:4,commentNumber:65})

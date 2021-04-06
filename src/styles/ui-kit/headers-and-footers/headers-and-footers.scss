@@ -1,0 +1,26 @@
+@import "../../common/reset.scss";
+@import "../../common/fonts.scss";
+@import '../../common/constants.scss';
+@import '../../../components/ui-kit/modules/footers/footer-copyright-bar.scss';
+@import '../../../components/ui-kit/modules/footers/footer-creative.scss';
+@import '../../../components/ui-kit/modules/footers/footer-widget.scss';
+@import '../../../components/ui-kit/modules/headers/standard-logged-in-nav-bar.scss';
+@import '../../../components/ui-kit/modules/headers/standard-nav-bar.scss';
+@import '../../../components/ui-kit/modules/burger/burger.scss';
+.headers-and-footers{
+  width: 100%;
+  height: 1350px;
+  background-color: $grey
+}
+.headers-and-footers__login{
+  margin-top: 100px;
+}
+.headers-and-footers__header-nav {
+  margin-top: 40px;
+}
+.headers-and-footers__footer-logo {
+  margin-top: 40px;
+}
+.headers-and-footers__footer-nav {
+  margin-top: 40px;
+}
