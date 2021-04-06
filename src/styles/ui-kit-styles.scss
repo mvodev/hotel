@@ -4,7 +4,7 @@
 @import './ui-kit/colors/ui-kit-colors.scss';
 @import './ui-kit/headers-and-footers/headers-and-footers.scss';
 @import './ui-kit/form-elements/form-elements.scss';
-@import './ui-kit/cards/cards.scss';
+@import '../components/ui-kit/cards/cards.scss';
 @import '../components/ui-kit/modules/dropdown/fsd-datepicker.css';
 @import '../../node_modules/ion-rangeslider/css/ion.rangeSlider.css';
 .wrapper{
