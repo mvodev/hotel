@@ -25,8 +25,8 @@ module.exports = {
  entry: {
   main: './index.js',
   UIKit: './ui-kit.js',
-  landing: './landing.js',
-  details: './details.js',
+  landing: './components/website/landing/landing.js',
+  details: './components/website/details/details.js',
   signin: './sign-in.js',
   search: './search.js',
   registration: './registration.js',
@@ -58,14 +58,14 @@ module.exports = {
   ),
   new HTMLWebpackPlugin(
    {
-    template: './components/website/landing.pug',
+    template: './components/website/landing/landing.pug',
     chunks: ['landing'],
-    filename: 'landing.html'
+    filename: 'landing.html',
    }
   ),
   new HTMLWebpackPlugin(
    {
-    template: './components/website/details.pug',
+    template: './components/website/details/details.pug',
     chunks: ['details'],
     filename: 'details.html',
    }

@@ -2,15 +2,15 @@ include ../burger/burger.pug
 .header-login
  .header-login__wrapper
   .header-login__logo
-   img(src="./assets/img/svg/logo-toxin.svg", alt="")
+   img(src="./assets/img/svg/logo-toxin.svg", alt="Logo Toxin image")
   +burger
   nav.header-login__nav
    a(class = 'header-login__nav-link' href='/mock-address/change-me' ) О нас
    a(href='/mock-address/change-me' class = 'header-login__nav-link') Услуги
-   .expand-more-container='keyboard_arrow_down'
+   div(class='expand-more-container') keyboard_arrow_down
    a(href='/mock-address/change-me' class = 'header-login__nav-link') Вакансии
    a(href='/mock-address/change-me' class = 'header-login__nav-link') Новости
    a(href='/mock-address/change-me' class = 'header-login__nav-link') Соглашения
-   .expand-more-container='keyboard_arrow_down'
-   a(href='/mock-address/change-me' class = 'header-login__nav-link login') ВОЙТИ
-   a(href='/mock-address/change-me' class = 'header-login__nav-link register') ЗАРЕГИСТРИРОВАТЬСЯ
+   div(class='expand-more-container') keyboard_arrow_down
+   a(href='/mock-address/change-me' class = 'header-login__nav-link login') войти
+   a(href='/mock-address/change-me' class = 'header-login__nav-link register') зарегистрироваться
