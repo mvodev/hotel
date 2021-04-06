@@ -61,7 +61,7 @@ mixin button(options)
     div(class=buttonClassName)
       label(class='button-radio__checkbox-label')
         if options.isChecked
-          input(class='button-radio__checkbox-input' type='checkbox' checked)
+          input(class='js-button-radio__checkbox-input button-radio__checkbox-input' type='checkbox' checked)
           div(class='button-radio__checkbox-text')=options.label
         else
           input(class='button-radio__checkbox-input' type='checkbox')

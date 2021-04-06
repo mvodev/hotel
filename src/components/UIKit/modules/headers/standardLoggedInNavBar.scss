@@ -85,7 +85,7 @@
   height: 18px;
   margin-right: 0px;
 }
-.delimeter{
+.header-delimeter{
   margin-right: 20px;
   height: 30px;
   width: 1px;
@@ -97,11 +97,10 @@
   color: $darkShade50;
 }
 
-
 @media (max-width:$container-mobile-width){
   .header-login-nav__logo,
   .header-login-nav__nav,
-  .delimeter{
+  .header-delimeter{
     display: none;
   }
 .header-login-nav.active{

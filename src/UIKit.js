@@ -8,11 +8,8 @@ import './components/UIKit/modules/button/likeRating.js';
 import './components/UIKit/modules/list/expandableCL.js';
 import './components/UIKit/modules/burger/burger.js';
 import './components/UIKit/modules/button/radioButtonsSex.js';
-
-// $('.dropdown-input__date-input-field').fsdDatepicker({ todayButton: true, clearButton: true });
-// $('.dropdown-input__filter-input-field').fsdDatepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
 $('.cards__right-column-datepicker').fsdDatepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
-$('.range-slider__input').ionRangeSlider({
+$('.js-range-slider__input').ionRangeSlider({
   type: "double",
   min: 0,
   max: 20000,
@@ -26,7 +23,7 @@ $('.range-slider__input').ionRangeSlider({
     else minValue = data.from;
     if (data.to >= 1000) maxValue = Math.floor(data.to / 1000) + ' 000';
     else maxValue = data.to;
-    $('.range-slider__label-wrapper p:nth-child(2)').
+    $('.js-range-slider__label-wrapper p:nth-child(2)').
       html(minValue + '<span class="rub">i</span> - ' + maxValue + '<span class="rub">i</span>');
   },
   onStart: function (data) {
@@ -36,7 +33,7 @@ $('.range-slider__input').ionRangeSlider({
     else minValue = data.from;
     if (data.to >= 1000) maxValue = Math.floor(data.to / 1000) + ' 000';
     else maxValue = data.to;
-    $('.range-slider__label-wrapper p:nth-child(2)').
+    $('.js-range-slider__label-wrapper p:nth-child(2)').
       html(minValue + '<span class="rub">i</span> - ' + maxValue + '<span class="rub">i</span>');
   }
 });

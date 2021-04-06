@@ -5,7 +5,7 @@ mixin textfield(options)
   textfieldClassName+=options.isMasked ? ' text-field_masked' : ''
   textfieldClassName+=options.isSubscription ? ' text-field_subscription' : ''
   var inputClassName = ''
-  inputClassName+=options.isMasked ? 'text-field__input-date': ''
+  inputClassName+=options.isMasked ? 'js-text-field__input-date text-field__input-date': ''
   var inputType=''
   inputType+=options.isFocused ? 'text' : ''
   inputType+=options.isDefault ? 'email' : ''
