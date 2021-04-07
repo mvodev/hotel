@@ -334,7 +334,8 @@ table {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 17px; }
+  line-height: 17px;
+  width: 100%; }
 
 .header-login__wrapper {
   max-width: 1160px;
@@ -871,7 +872,8 @@ table {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 17px; }
+  line-height: 17px;
+  width: 100%; }
 
 .header-login__wrapper {
   max-width: 1160px;
@@ -1672,7 +1674,7 @@ table {
     margin-left: 5px;
     margin-right: 5px; }
 
-header {
+.header-toxin-logo {
   background: transparent;
   position: relative;
   left: 30px;
@@ -1717,7 +1719,7 @@ header {
 .h1 {
   display: flex;
   flex-wrap: nowrap; }
-  .h1 p.header {
+  .h1 p.colors-header {
     width: 29px;
     height: 30px;
     font-weight: normal;
@@ -1739,7 +1741,7 @@ header {
   display: flex;
   flex-wrap: nowrap;
   margin-top: 50px; }
-  .h2 p.header {
+  .h2 p.colors-header {
     width: 27px;
     height: 24px;
     font-weight: normal;
@@ -1761,7 +1763,7 @@ header {
   display: flex;
   flex-wrap: nowrap;
   margin-top: 50px; }
-  .h3 p.header {
+  .h3 p.colors-header {
     width: 17px;
     height: 15px;
     font-weight: normal;
@@ -1785,7 +1787,7 @@ header {
   display: flex;
   flex-wrap: nowrap;
   margin-top: 50px; }
-  .body p.header {
+  .body p.colors-header {
     width: 37px;
     height: 24px;
     margin-bottom: 24px;
@@ -2106,6 +2108,7 @@ table {
   min-height: 70px;
   background: #ffffff;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-top: 1px solid #e5e5e5;
   font-style: normal;
   font-weight: normal;
   font-family: Montserrat, Arial, sans-serif;
@@ -2203,6 +2206,7 @@ table {
   max-width: 1440px;
   font-family: Montserrat, Arial, sans-serif;
   height: 372px;
+  border-top: 1px solid #e5e5e5;
   background: #ffffff;
   box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
   -webkit-box-sizing: border-box;
@@ -2423,7 +2427,8 @@ p.subscribe {
   font-style: normal;
   font-size: 14px;
   line-height: 17px;
-  font-weight: normal; }
+  font-weight: normal;
+  max-width: 100%; }
 
 .header-login-nav__wrapper {
   max-width: 1160px;
@@ -2599,7 +2604,8 @@ p.subscribe {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 17px; }
+  line-height: 17px;
+  width: 100%; }
 
 .header-login__wrapper {
   max-width: 1160px;
@@ -4996,7 +5002,8 @@ input:checked + .slider-round:before {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 17px; }
+  line-height: 17px;
+  width: 100%; }
 
 .header-login__wrapper {
   max-width: 1160px;
@@ -5194,7 +5201,8 @@ input:checked + .slider-round:before {
   font-style: normal;
   font-size: 14px;
   line-height: 17px;
-  font-weight: normal; }
+  font-weight: normal;
+  max-width: 100%; }
 
 .header-login-nav__wrapper {
   max-width: 1160px;
@@ -5305,6 +5313,7 @@ input:checked + .slider-round:before {
   min-height: 70px;
   background: #ffffff;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-top: 1px solid #e5e5e5;
   font-style: normal;
   font-weight: normal;
   font-family: Montserrat, Arial, sans-serif;
@@ -5357,6 +5366,7 @@ input:checked + .slider-round:before {
   max-width: 1440px;
   font-family: Montserrat, Arial, sans-serif;
   height: 372px;
+  border-top: 1px solid #e5e5e5;
   background: #ffffff;
   box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
   -webkit-box-sizing: border-box;
@@ -5610,29 +5620,5 @@ p.subscribe {
   background-color: #ffffff;
   border-radius: .5rem; }
 
-.wrapper {
-  width: 100%;
-  min-height: 100%;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column; }
 
-.content-container {
-  max-width: 1440px;
-  margin: 0 auto; }
-
-html,
-body {
-  height: 100%;
-  min-width: 320px; }
-
-.headers-and-footers__footer-copy {
-  margin-top: 3px; }
-
-
-/*# sourceMappingURL=UIKit.7259f6d0ec5f510cc083.css.map*/
+/*# sourceMappingURL=details~landing~main.0b81cf419a9abe3459e6.css.map*/

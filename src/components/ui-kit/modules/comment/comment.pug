@@ -1,12 +1,12 @@
 include ../button/button.pug
 mixin comment(options)
-  div(class='expanded-comment')
+  article(class='expanded-comment')
     div(class='expanded-comment__header')
       div(class='expanded-comment__header-img')
         img(src=options.imgSource, alt="user photo")
       div(class='expanded-comment__header-name-wrapper')
         div(class='expanded-comment__header-name')=options.headerName
-        div(class='expanded-comment__header-time')=options.headerTime
+        time(class='expanded-comment__header-time')=options.headerTime
     div(class='expanded-comment__body')
       div(class='expanded-comment__like-button')
         +button({type:'like',likeNumber:options.likeNumber,isLiked:options.isLiked})
