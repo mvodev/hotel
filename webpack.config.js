@@ -29,7 +29,7 @@ module.exports = {
   details: './components/website/details/details.js',
   signin: './sign-in.js',
   search: './search.js',
-  registration: './registration.js',
+  registration: './components/website/registration/registration.js',
 
  },
  output: {
@@ -79,7 +79,7 @@ module.exports = {
   ),
   new HTMLWebpackPlugin(
    {
-    template: './components/website/registration.pug',
+    template: './components/website/registration/registration.pug',
     chunks: ['registration'],
     filename: 'registration.html'
    }

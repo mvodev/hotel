@@ -1,0 +1,155 @@
+.details-wrapper {
+  max-width: 1440px;
+  margin: 0px auto;
+  font-family: Montserrat, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%; }
+
+.details-header {
+  margin: 0px auto; }
+
+.details__room-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.details__room-image_big {
+  max-width: 981px;
+  height: 485px; }
+
+.details__room-image {
+  object-fit: cover; }
+
+.details__room-images_right {
+  display: flex;
+  flex-direction: column; }
+
+.details__room-image_small {
+  display: flex;
+  flex-direction: column;
+  max-width: 461px;
+  height: 485px;
+  width: 100%; }
+
+.details__room-image_small-top, .details__room-image_small-bottom {
+  height: 50%; }
+
+.details__body h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: #1f2041; }
+
+.details__body {
+  margin: 70px auto 60px auto;
+  max-width: 1160px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.left-column {
+  display: flex;
+  flex-direction: row; }
+
+.left-column__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.left-column__header {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px; }
+
+.left-column__impressions {
+  margin-right: 40px; }
+
+.left-column__impressions h2 {
+  margin-bottom: 21px; }
+
+.left-column__content {
+  margin-right: 80px; }
+
+.left-column__content .bullet-list-icons {
+  margin-bottom: 20px; }
+
+.left-column__content .bullet-list-icons:last-child {
+  margin-bottom: 12px;
+  border: none; }
+
+.left-column__comments h2 {
+  margin-bottom: 20px; }
+
+.details-comment_first {
+  margin-bottom: 20px; }
+
+.details-comment_second {
+  margin-bottom: 10px; }
+
+.left-column__rules {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.rules__text-wrapper {
+  display: flex;
+  flex-direction: column; }
+
+.rules__text-wrapper h2 {
+  margin-bottom: 15px;
+  margin-left: 20px; }
+
+.rules__text-wrapper:last-child {
+  margin-right: 10px; }
+
+.rules__text-wrapper:last-child h2 {
+  margin-left: 0px; }
+
+.rules__text-wrapper p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  max-width: 341px; }
+
+@media (max-width: 1120px) {
+  .details-wrapper {
+    max-width: none;
+    max-height: none;
+    padding-left: 10px;
+    padding-right: 10px; }
+  .details__content {
+    height: auto; }
+  .details__room-images {
+    margin: 0px auto; }
+  .details__room-images-right {
+    display: none; }
+  .details__body {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .left-column {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .left-column__content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .left-column__impressions {
+    margin-right: 0px; }
+  .left-column__rules {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .rules__text-wrapper h2 {
+    text-align: center; } }
+
+
+/*# sourceMappingURL=details.b6135455ffb195f3ec63.css.map*/

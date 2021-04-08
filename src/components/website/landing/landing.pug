@@ -6,12 +6,12 @@ html(lang="en")
   meta(name="description", content="отель")
   include ../../favicon/favicon.pug
   title Landing page
- body.landing-wrapper
-  header.landing-header
+ body.landing.landing-wrapper
+  header.landing__header
    include ../../ui-kit/modules/headers/standard-nav-bar.pug
-  div.img__wrapper
+  div.landing__img-wrapper
    +searchnumber({action:'#'})
-   h1.img__header='Лучшие номера для вашей работы, отдыха и просто вдохновения'
+   h1='Лучшие номера для вашей работы, отдыха и просто вдохновения'
   footer.footer
    include ../../ui-kit/modules/footers/footer-widget.pug
    include ../../ui-kit/modules/footers/footer-copyright-bar.pug
