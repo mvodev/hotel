@@ -27,10 +27,9 @@ module.exports = {
   UIKit: './ui-kit.js',
   landing: './components/website/landing/landing.js',
   details: './components/website/details/details.js',
-  signin: './sign-in.js',
-  search: './search.js',
+  signin: './components/website/sign-in-page/sign-in-page.js',
+  search: './components/website/search/search.js',
   registration: './components/website/registration/registration.js',
-
  },
  output: {
   filename: '[name].[contenthash].js',
@@ -72,7 +71,7 @@ module.exports = {
   ),
   new HTMLWebpackPlugin(
    {
-    template: './components/website/search.pug',
+    template: './components/website/search/search.pug',
     chunks: ['search'],
     filename: 'search.html'
    }
@@ -86,7 +85,7 @@ module.exports = {
   ),
   new HTMLWebpackPlugin(
    {
-    template: './components/website/sign-in-page.pug',
+    template: './components/website/sign-in-page/sign-in-page.pug',
     chunks: ['signin'],
     filename: 'sign-in.html'
    }
