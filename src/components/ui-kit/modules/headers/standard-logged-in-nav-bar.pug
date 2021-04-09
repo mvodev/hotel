@@ -1,8 +1,9 @@
 include ../burger/burger.pug
+include ../logo/logo-toxin.pug
 .header-login-nav
   .header-login-nav__wrapper
     .header-login-nav__logo
-      img(src="./assets/img/svg/logo-toxin.svg", alt="Logo Toxin image")
+      +logo()
     +burger
     nav.header-login-nav__nav
       a(class = 'header-login-nav__nav-link' href='/mock-address/change-me' ) О нас

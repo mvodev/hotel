@@ -1,8 +1,9 @@
 include ../burger/burger.pug
+include ../logo/logo-toxin.pug
 .header-login
  .header-login__wrapper
   .header-login__logo
-   img(src="./assets/img/svg/logo-toxin.svg", alt="Logo Toxin image")
+   +logo()
   +burger
   nav.header-login__nav
    a(class = 'header-login__nav-link' href='/mock-address/change-me' ) О нас
@@ -12,5 +13,5 @@ include ../burger/burger.pug
    a(href='/mock-address/change-me' class = 'header-login__nav-link') Новости
    a(href='/mock-address/change-me' class = 'header-login__nav-link') Соглашения
    div(class='expand-more-container') keyboard_arrow_down
-   a(href='/mock-address/change-me' class = 'header-login__nav-link login') войти
-   a(href='/mock-address/change-me' class = 'header-login__nav-link register') зарегистрироваться
+   a(href='registration.html' class = 'header-login__nav-link login') войти
+   a(href='sign-in-page.html' class = 'header-login__nav-link register') зарегистрироваться
