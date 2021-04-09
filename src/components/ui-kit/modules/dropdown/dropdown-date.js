@@ -1,5 +1,4 @@
 import './fsd-datepicker.js';
-import 'cleave.js';
 class DropdownDate {
  constructor(rootElem) {
   this.rootElem = rootElem;

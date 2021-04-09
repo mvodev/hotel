@@ -1,7 +1,7 @@
 include ../button/button.pug
 mixin roomcard(options)
   - var roomtype=options.roomType ? options.roomType : ''
-    div(class='room-card')
+    article(class='room-card')
       .room-card_wrapper
         div(class='room-card__img')
           img(src=options.imgSource, alt="room image")

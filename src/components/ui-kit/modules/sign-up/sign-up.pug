@@ -2,7 +2,7 @@ include ../button/button.pug
 include ../text-field/text-field.pug
 include ../toggle/toggle.pug
 mixin signup(options)
- div(class='sign-up')
+ article(class='sign-up')
   div(class='sign-up__wrapper')
    form(action=options.action class="sign-up__form")
     h2(class="sign-up__header-reg")='Регистрация аккаунта'
@@ -18,6 +18,6 @@ mixin signup(options)
     +textfield({isDefault:true,placeholder:'Пароль',type:'password'})
     +toggle({labels:[{name:'Получать спецпредложения',  isPositive:false}]})
     +button({label:'ПЕРЕЙТИ К ОПЛАТЕ',type:'arrow',purpose:'submit'})
-    div(class='sign-up__footer')
+    footer(class='sign-up__footer')
      span(class='sign-up__account')='Уже есть аккаунт на Toxin'
      +button({label:'Войти',type:'white',purpose:'submit'})

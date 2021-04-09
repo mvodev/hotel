@@ -244,8 +244,6 @@ class DropdownCounter {
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _fsd_datepicker_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fsd-datepicker.js */ "./components/ui-kit/modules/dropdown/fsd-datepicker.js");
 /* harmony import */ var _fsd_datepicker_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_fsd_datepicker_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
-
 
 class DropdownDate {
  constructor(rootElem) {
@@ -2572,4 +2570,4 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.8a3ebfe2b3fd65309ebf.js.map
+//# sourceMappingURL=UIKit~details~landing~search.823eea8be6d95bc76c73.js.map

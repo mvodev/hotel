@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["vendors~UIKit~details~landing~registration~search"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["vendors~UIKit~details~landing~registration"],{
 
 /***/ "../node_modules/cleave.js/dist/cleave-esm.js":
 /*!****************************************************!*\
@@ -1604,4 +1604,4 @@ module.exports = g;
 /***/ })
 
 }]);
-//# sourceMappingURL=vendors~UIKit~details~landing~registration~search.6489c56241c7f6e2679d.js.map
+//# sourceMappingURL=vendors~UIKit~details~landing~registration.cfa8b6c671588d0ce9f8.js.map

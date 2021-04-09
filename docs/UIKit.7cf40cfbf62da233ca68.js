@@ -148,7 +148,7 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./components/ui-kit/ui-kit-page/ui-kit.js","vendors~UIKit~details~landing~main~registration~search~signin","vendors~UIKit~details~landing~registration~search~signin","vendors~UIKit~details~landing~registration~search","vendors~UIKit~search","UIKit~details~landing~main~registration~search~signin","UIKit~details~landing~search"]);
+/******/ 	deferredModules.push(["./components/ui-kit/ui-kit-page/ui-kit.js","vendors~UIKit~details~landing~main~registration~search~signin","vendors~UIKit~details~landing~registration~search~signin","vendors~UIKit~details~landing~registration","vendors~UIKit~search","UIKit~details~landing~main~registration~search~signin","UIKit~details~landing~search"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
@@ -322,6 +322,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var _modules_button_radio_buttons_sex_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../modules/button/radio-buttons-sex.js */ "./components/ui-kit/modules/button/radio-buttons-sex.js");
 /* harmony import */ var _modules_button_radio_buttons_sex_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_modules_button_radio_buttons_sex_js__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
+
 
 
 
@@ -369,4 +371,4 @@ $('.js-range-slider__input').ionRangeSlider({
 /***/ })
 
 /******/ });
-//# sourceMappingURL=UIKit.5066c7e0dab46fe2bd56.js.map
+//# sourceMappingURL=UIKit.7cf40cfbf62da233ca68.js.map

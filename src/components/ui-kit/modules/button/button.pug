@@ -30,7 +30,7 @@ mixin button(options)
         input(class=buttonClassName+'__input' id='star-rating-'+n type='radio' name='rating')
         label(class='material-icons button-rate-star' for='star-rating-'+n title=n++ +" out of 5 stars")='star_border'
    else if options.type=='like'
-    div(class=buttonClassName)
+    button(class=buttonClassName)
       if options.isLiked
         div(class='button-like__heart')='favorite'
         div=options.likeNumber

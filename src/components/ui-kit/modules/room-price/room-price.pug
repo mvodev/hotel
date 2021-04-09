@@ -2,7 +2,7 @@ include ../button/button.pug
 include ../dropdown/dropdown.pug
 mixin roomprice(options)
   - var roomtype=options.roomType ? options.roomType : ''
-    div(class='room-price')
+    article(class='room-price')
       div(class='room-price__wrapper')
         form(action=options.action class="room-price__form")
           div(class='room-price__room-specifications')
@@ -39,10 +39,10 @@ mixin roomprice(options)
             div=options.fee
           div(class='room-price__service-extra-fee')
             div
-              div='Сбор за дополнительные услуги'
+              h3='Сбор за дополнительные услуги'
               div(class='room-price__extra-info')='i'
             div=options.extraFee
           div(class='room-price__total-price')
-            div='Итого'
+            h3='Итого'
             div=options.totalPrice
           +button({label:'забронировать',type:'arrow',purpose:'submit'})

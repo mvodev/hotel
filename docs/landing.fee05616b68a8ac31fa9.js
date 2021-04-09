@@ -57,7 +57,7 @@
 /******/ 	// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 	// Promise = chunk loading, 0 = chunk loaded
 /******/ 	var installedChunks = {
-/******/ 		"details": 0
+/******/ 		"landing": 0
 /******/ 	};
 /******/
 /******/ 	var deferredModules = [];
@@ -148,83 +148,30 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./components/website/details/details.js","vendors~UIKit~details~landing~main~registration~search~signin","vendors~UIKit~details~landing~registration~search~signin","vendors~UIKit~details~landing~registration~search","UIKit~details~landing~main~registration~search~signin","UIKit~details~landing~search"]);
+/******/ 	deferredModules.push(["./components/website/landing/landing.js","vendors~UIKit~details~landing~main~registration~search~signin","vendors~UIKit~details~landing~registration~search~signin","vendors~UIKit~details~landing~registration","UIKit~details~landing~main~registration~search~signin","UIKit~details~landing~search"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./components/ui-kit/modules/button/like-rating.js":
-/*!*********************************************************!*\
-  !*** ./components/ui-kit/modules/button/like-rating.js ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-const likeButtons = document.querySelectorAll('.js-button-like');
-likeButtons.forEach(elem => elem.addEventListener('click', likeClickListener));
-function likeClickListener(event) {
- if (event.target.className == 'button-like__heart') {
-  if (event.target.parentElement.classList.contains('button-like_is-liked')) {
-   event.target.parentElement.childNodes[1].innerText--;
-   event.target.parentElement.childNodes[0].innerText = 'favorite_border';
-   event.target.parentElement.classList.remove('button-like_is-liked');
-  }
-  else {
-   event.target.parentElement.childNodes[1].innerText++;
-   event.target.parentElement.classList.add('button-like_is-liked');
-   event.target.parentElement.childNodes[0].innerText = 'favorite';
-  }
- }
-}
-
-/***/ }),
-
-/***/ "./components/ui-kit/modules/list/expandable-cl.js":
-/*!*********************************************************!*\
-  !*** ./components/ui-kit/modules/list/expandable-cl.js ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-const bulletListExpandableArrow = document.querySelectorAll('.js-bullet-list-expandable span');
-bulletListExpandableArrow.forEach(elem => elem.addEventListener('click', expandableListHandler));
-function expandableListHandler(event) {
- event.target.parentNode.parentNode.childNodes[1].classList.toggle('bullet-list_is-visible');
- if (event.target.innerText === 'keyboard_arrow_down') {
-  event.target.innerText = 'keyboard_arrow_up';
- }
- else if (event.target.innerText === 'keyboard_arrow_up') {
-  event.target.innerText = 'keyboard_arrow_down';
- }
-}
-
-/***/ }),
-
-/***/ "./components/website/details/details.js":
+/***/ "./components/website/landing/landing.js":
 /*!***********************************************!*\
-  !*** ./components/website/details/details.js ***!
+  !*** ./components/website/landing/landing.js ***!
   \***********************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../styles/style.scss */ "./styles/style.scss");
-/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_style_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _details_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./details.scss */ "./components/website/details/details.scss");
-/* harmony import */ var _details_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_details_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _ui_kit_modules_button_like_rating_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../ui-kit/modules/button/like-rating.js */ "./components/ui-kit/modules/button/like-rating.js");
-/* harmony import */ var _ui_kit_modules_button_like_rating_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_modules_button_like_rating_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _ui_kit_modules_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../ui-kit/modules/dropdown/dropdown.js */ "./components/ui-kit/modules/dropdown/dropdown.js");
-/* harmony import */ var _ui_kit_modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../ui-kit/modules/list/expandable-cl.js */ "./components/ui-kit/modules/list/expandable-cl.js");
-/* harmony import */ var _ui_kit_modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../ui-kit/modules/burger/burger.js */ "./components/ui-kit/modules/burger/burger.js");
-/* harmony import */ var _ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
-
-
+/* harmony import */ var _landing_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./landing.scss */ "./components/website/landing/landing.scss");
+/* harmony import */ var _landing_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_landing_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../styles/style.scss */ "./styles/style.scss");
+/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_style_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../ui-kit/modules/burger/burger.js */ "./components/ui-kit/modules/burger/burger.js");
+/* harmony import */ var _ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
+/* harmony import */ var _ui_kit_modules_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../ui-kit/modules/dropdown/dropdown.js */ "./components/ui-kit/modules/dropdown/dropdown.js");
 
 
 
@@ -233,9 +180,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./components/website/details/details.scss":
+/***/ "./components/website/landing/landing.scss":
 /*!*************************************************!*\
-  !*** ./components/website/details/details.scss ***!
+  !*** ./components/website/landing/landing.scss ***!
   \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -245,4 +192,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 /******/ });
-//# sourceMappingURL=details.403dadc91de63e4a7ac5.js.map
+//# sourceMappingURL=landing.fee05616b68a8ac31fa9.js.map

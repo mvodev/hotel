@@ -57,7 +57,7 @@
 /******/ 	// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 	// Promise = chunk loading, 0 = chunk loaded
 /******/ 	var installedChunks = {
-/******/ 		"search": 0
+/******/ 		"details": 0
 /******/ 	};
 /******/
 /******/ 	var deferredModules = [];
@@ -148,31 +148,34 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./components/website/search/search.js","vendors~UIKit~details~landing~main~registration~search~signin","vendors~UIKit~details~landing~registration~search~signin","vendors~UIKit~details~landing~registration~search","vendors~UIKit~search","UIKit~details~landing~main~registration~search~signin","UIKit~details~landing~search"]);
+/******/ 	deferredModules.push(["./components/website/details/details.js","vendors~UIKit~details~landing~main~registration~search~signin","vendors~UIKit~details~landing~registration~search~signin","vendors~UIKit~details~landing~registration","UIKit~details~landing~main~registration~search~signin","UIKit~details~landing~search"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./components/ui-kit/modules/button/star-rating.js":
+/***/ "./components/ui-kit/modules/button/like-rating.js":
 /*!*********************************************************!*\
-  !*** ./components/ui-kit/modules/button/star-rating.js ***!
+  !*** ./components/ui-kit/modules/button/like-rating.js ***!
   \*********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-const rateButtons = document.querySelectorAll('.js-button-rate label');
-rateButtons.forEach(elem => elem.addEventListener('click', rateClickListener)
-);
-function rateClickListener(event) {
- let rateNumber = event.target.title.charAt(0);
- let stars = event.target.parentNode.childNodes;
- for (let i = 0; i < rateNumber; i++) {
-  stars[i * 2 + 1].innerHTML = 'star';
- }
- for (let i = rateNumber; i < 5; i++) {
-  stars[i * 2 + 1].innerHTML = 'star_border';
+const likeButtons = document.querySelectorAll('.js-button-like');
+likeButtons.forEach(elem => elem.addEventListener('click', likeClickListener));
+function likeClickListener(event) {
+ if (event.target.className == 'button-like__heart') {
+  if (event.target.parentElement.classList.contains('button-like_is-liked')) {
+   event.target.parentElement.childNodes[1].innerText--;
+   event.target.parentElement.childNodes[0].innerText = 'favorite_border';
+   event.target.parentElement.classList.remove('button-like_is-liked');
+  }
+  else {
+   event.target.parentElement.childNodes[1].innerText++;
+   event.target.parentElement.classList.add('button-like_is-liked');
+   event.target.parentElement.childNodes[0].innerText = 'favorite';
+  }
  }
 }
 
@@ -199,28 +202,27 @@ function expandableListHandler(event) {
 
 /***/ }),
 
-/***/ "./components/website/search/search.js":
-/*!*********************************************!*\
-  !*** ./components/website/search/search.js ***!
-  \*********************************************/
+/***/ "./components/website/details/details.js":
+/*!***********************************************!*\
+  !*** ./components/website/details/details.js ***!
+  \***********************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _search_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./search.scss */ "./components/website/search/search.scss");
-/* harmony import */ var _search_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_search_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../styles/style.scss */ "./styles/style.scss");
-/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_style_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ion-rangeslider */ "../node_modules/ion-rangeslider/js/ion.rangeSlider.js");
-/* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(ion_rangeslider__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../styles/style.scss */ "./styles/style.scss");
+/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_style_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _details_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./details.scss */ "./components/website/details/details.scss");
+/* harmony import */ var _details_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_details_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _ui_kit_modules_button_like_rating_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../ui-kit/modules/button/like-rating.js */ "./components/ui-kit/modules/button/like-rating.js");
+/* harmony import */ var _ui_kit_modules_button_like_rating_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_modules_button_like_rating_js__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _ui_kit_modules_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../ui-kit/modules/dropdown/dropdown.js */ "./components/ui-kit/modules/dropdown/dropdown.js");
-/* harmony import */ var _ui_kit_modules_button_star_rating_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../ui-kit/modules/button/star-rating.js */ "./components/ui-kit/modules/button/star-rating.js");
-/* harmony import */ var _ui_kit_modules_button_star_rating_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_modules_button_star_rating_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _ui_kit_modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../ui-kit/modules/list/expandable-cl.js */ "./components/ui-kit/modules/list/expandable-cl.js");
-/* harmony import */ var _ui_kit_modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../ui-kit/modules/burger/burger.js */ "./components/ui-kit/modules/burger/burger.js");
-/* harmony import */ var _ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _ui_kit_modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../ui-kit/modules/list/expandable-cl.js */ "./components/ui-kit/modules/list/expandable-cl.js");
+/* harmony import */ var _ui_kit_modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../ui-kit/modules/burger/burger.js */ "./components/ui-kit/modules/burger/burger.js");
+/* harmony import */ var _ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
 
 
 
@@ -228,43 +230,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-$('.js-range-slider__input').ionRangeSlider({
-  type: "double",
-  min: 0,
-  max: 20000,
-  from: 5000,
-  to: 10000,
-  step: 1000,
-  onChange: function (data) {
-    let minValue = ''
-    let maxValue = ''
-    if (data.from >= 1000) minValue = Math.floor(data.from / 1000) + ' 000';
-    else minValue = data.from;
-    if (data.to >= 1000) maxValue = Math.floor(data.to / 1000) + ' 000';
-    else maxValue = data.to;
-    $('.js-range-slider__label-wrapper p:nth-child(2)').
-      html(minValue + '<span class="rub">i</span> - ' + maxValue + '<span class="rub">i</span>');
-  },
-  onStart: function (data) {
-    let minValue = ''
-    let maxValue = ''
-    if (data.from >= 1000) minValue = Math.floor(data.from / 1000) + ' 000';
-    else minValue = data.from;
-    if (data.to >= 1000) maxValue = Math.floor(data.to / 1000) + ' 000';
-    else maxValue = data.to;
-    $('.js-range-slider__label-wrapper p:nth-child(2)').
-      html(minValue + '<span class="rub">i</span> - ' + maxValue + '<span class="rub">i</span>');
-  }
-});
-
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 
-/***/ "./components/website/search/search.scss":
-/*!***********************************************!*\
-  !*** ./components/website/search/search.scss ***!
-  \***********************************************/
+/***/ "./components/website/details/details.scss":
+/*!*************************************************!*\
+  !*** ./components/website/details/details.scss ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -273,4 +245,4 @@ $('.js-range-slider__input').ionRangeSlider({
 /***/ })
 
 /******/ });
-//# sourceMappingURL=search.9f64d2e38bf45da380f0.js.map
+//# sourceMappingURL=details.0851ffe4f6e67bb1a2e3.js.map
