@@ -22,7 +22,7 @@ html(lang="ru")
       .details__room-image.details__room-image_small-bottom
         img(src="./assets/img/jpg/room-details-small-bottom.jpg", alt="room image small")
    section.details__body
-    aside.details__body-left
+    section.details__body-left
       article.left-column
           .left-column__content
             h1.left-column__header='Сведения о номере'
@@ -49,7 +49,7 @@ html(lang="ru")
         .rules__text-wrapper
           h2='Отмена'
           p='Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.'
-    .details__body-right
+    section.details__body-right
       +roomprice({roomNumber:888,priceHeader:'9 990₽',roomType:'люкс',commentNumber:145,price:'9 990₽ х 4 суток',total:'39 960₽',discount:'Сбор за услуги: скидка 2 179₽',fee:'0₽',extraFee:'300₽',totalPrice:'38 081₽',action:'#'})
   footer.details-footer
    include ../../ui-kit/modules/footers/footer-widget.pug

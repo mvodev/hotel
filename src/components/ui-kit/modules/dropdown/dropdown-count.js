@@ -136,10 +136,10 @@ class DropdownCount {
   });
  }
  showClearButton() {
-  this.clearButton.classList.remove('hidden');
+  this.clearButton.classList.remove('buttons-dropdown_hidden');
  }
  hideClearButton() {
-  this.clearButton.classList.add('hidden');
+  this.clearButton.classList.add('buttons-dropdown_hidden');
  }
 }
 export default DropdownCount;

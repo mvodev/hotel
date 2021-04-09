@@ -167,10 +167,10 @@ class DropdownCount {
   });
  }
  showClearButton() {
-  this.clearButton.classList.remove('hidden');
+  this.clearButton.classList.remove('buttons-dropdown_hidden');
  }
  hideClearButton() {
-  this.clearButton.classList.add('hidden');
+  this.clearButton.classList.add('buttons-dropdown_hidden');
  }
 }
 /* harmony default export */ __webpack_exports__["default"] = (DropdownCount);
@@ -2570,4 +2570,4 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.823eea8be6d95bc76c73.js.map
+//# sourceMappingURL=UIKit~details~landing~search.809a6f299053ec35afce.js.map
