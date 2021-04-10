@@ -3963,15 +3963,6 @@ p.subscribe {
     color: rgba(31, 32, 65, 0.25);
     display: flex; }
 
-.is-liked {
-  border: 1px solid #BC9CFF; }
-
-.is-liked div:first-child {
-  color: #BC9CFF; }
-
-.is-liked div:nth-child(2) {
-  color: #BC9CFF; }
-
 .button-check {
   width: 222px;
   height: max-content; }
@@ -5292,15 +5283,6 @@ input:checked + .slider-round:before {
     color: rgba(31, 32, 65, 0.25);
     display: flex; }
 
-.is-liked {
-  border: 1px solid #BC9CFF; }
-
-.is-liked div:first-child {
-  color: #BC9CFF; }
-
-.is-liked div:nth-child(2) {
-  color: #BC9CFF; }
-
 .button-check {
   width: 222px;
   height: max-content; }
@@ -6201,4 +6183,4 @@ p.subscribe {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.f6b88ff58e8b8b2060d8.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.0161e01fdb62f8937195.css.map*/
