@@ -1,3 +1,4 @@
+include ./button-radio/button-radio.pug
 mixin button(options)
  - var buttonClassName='button'
  - var darkStar= options.darkStar
@@ -58,14 +59,7 @@ mixin button(options)
           div(class='button-rich__checkbox-header')=options.header
           div(class='button-rich__checkbox-text')=options.label
    else if options.type=='radio'
-    div(class=buttonClassName)
-      label(class='button-radio__checkbox-label')
-        if options.isChecked
-          input(class='js-button-radio__checkbox-input button-radio__checkbox-input' type='checkbox' checked)
-          div(class='button-radio__checkbox-text')=options.label
-        else
-          input(class='js-button-radio__checkbox-input button-radio__checkbox-input' type='checkbox')
-          div(class='button-radio__checkbox-text')=options.label
+    +button-radio({ label:options.label, isChecked:options.isChecked ,id:options.id})
    else
     button(class=buttonClassName type=options.purpose?options.purpose:'button')
-     span=options.label
+      span=options.label

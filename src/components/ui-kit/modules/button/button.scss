@@ -1,3 +1,4 @@
+@import './button-radio/button-radio.scss';
 .button{
 	width: 99px;
 	height: 44px;
@@ -204,65 +205,7 @@ background-repeat: no-repeat;
 background-position: center;
 }
 
-.button-radio{
- height: 24px;
-	max-width: 99px;
 
-	&__checkbox-input {
-		position: absolute;
-		z-index: -1;
-		opacity: 0;
-		margin-left: 10px;
-	}
-	&__checkbox-text{
-		position: relative;
-		cursor: pointer;
-		padding-left: 30px;
-		font-weight: normal;
-		font-size: 14px;
-		line-height: 24px;
-		color: $darkShade50;
-		height: 18px;
-		max-width: 73px;
-	}
-	&__checkbox-text:before {
-		content: '';
-		position: absolute;
-		top: 2px;
-		left: 0;
-		width: 20px;
-		height: 20px;
-		background: $white;
-		border: 1px solid $darkShade25;
-		box-sizing: border-box;
-		border-radius: 10px;
-		}
-
-		&__checkbox-text:after {
-			content: '';
-			position: absolute;
-			top: 6px;
-			left: 4px;
-			width: 12px;
-			height: 12px;
-			border-radius: 50%;
-			background: $buttonColor;
-			opacity: 0;
-		}
-}
-
-.button-radio__checkbox-input:checked + .button-radio__checkbox-text:after {
-	opacity: 1;
-}
-.button-radio__checkbox-input:checked + .button-radio__checkbox-text {
-	color: $darkShade75;
-}
-.button-radio__checkbox-input:checked+.button-radio__checkbox-text:before{
-	background: $white;
-	border: 1px solid $purple;
-	box-sizing: border-box;
-	border-radius: 10px;
-}
 
 .button-rich{
  width: 266px;

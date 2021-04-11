@@ -87,7 +87,7 @@ module.exports = {
    {
     template: './components/website/sign-in-page/sign-in-page.pug',
     chunks: ['signin'],
-    filename: 'sign-in.html'
+    filename: 'sign-in-page.html'
    }
   ),
   new CleanWebpackPlugin(),
@@ -103,6 +103,10 @@ module.exports = {
     {
      from: path.resolve(__dirname, 'src/assets/img/svg'),
      to: path.resolve(__dirname, 'docs/assets/img/svg')
+    },
+    {
+     from: path.resolve(__dirname, 'src/assets/fonts'),
+     to: path.resolve(__dirname, 'docs/assets/fonts')
     },
     {
      from: path.resolve(__dirname, 'src/assets/img/jpg'),

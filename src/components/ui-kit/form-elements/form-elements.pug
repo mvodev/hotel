@@ -74,8 +74,8 @@ include ../header-ui-kit/header-ui-kit.pug
     +button({type:'check',labels:[{text:'Можно курить',isChecked:false},{text:'Можно с питомцами',isChecked:true},{text:'Можно пригласить гостей(до 10 человек)',isChecked:false}]})
     h2(class='header header_radio-buttons')='RADIO BUTTONS'
     .radio-buttons-wrapper
-      +button({type:'radio',label:'Мужчина',isChecked:true})
-      +button({type:'radio',label:'Женщина'})
+      +button({type:'radio',label:'Мужчина',isChecked:true,id:'male'})
+      +button({type:'radio',label:'Женщина',id:'female'})
     h2(class='header header_toggle')='TOGGLE'
     +toggle({labels:[{name:'Получать спецпредложения',  isPositive:true},{name:'Получать спецпредложения',  isPositive:false}]})
     h2(class='header header_like-buttons')='LIKE BUTTON'

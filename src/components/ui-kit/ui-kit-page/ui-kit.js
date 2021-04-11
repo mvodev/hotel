@@ -8,7 +8,6 @@ import '../modules/button/star-rating.js';
 import '../modules/button/like-rating.js';
 import '../modules/list/expandable-cl.js';
 import '../modules/burger/burger.js';
-import '../modules/button/radio-buttons-sex.js';
 import 'cleave.js';
 $('.js-cards__right-column-datepicker').fsdDatepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
 $('.js-range-slider__input').ionRangeSlider({
