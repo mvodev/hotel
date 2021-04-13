@@ -5,18 +5,22 @@ mixin signup(options)
  article(class='sign-up')
   div(class='sign-up__wrapper')
    form(action=options.action class="sign-up__form")
-    h2(class="sign-up__header-reg")='Регистрация аккаунта'
-    +textfield({isDefault:true,placeholder:'Имя'})
-    +textfield({isDefault:true,placeholder:'Фамилия'})
+    h2(class="sign-up__header sign-up__header-reg")='Регистрация аккаунта'
+    .sign-up__text-wrapper
+     +textfield({isDefault:true,placeholder:'Имя'})
+     +textfield({isDefault:true,placeholder:'Фамилия'})
     div(class='sign-up__radio-button-wrapper')
-     +button({type:'radio',label:'Мужчина',isChecked:true,id:'male'})
-     +button({type:'radio',label:'Женщина',id:'female'})
-    h3(class="sign-up__header-birthday")='Дата рождения'
+     .sign-up__radio-button-wrapper_first-button
+      +button({type:'radio',label:'Мужчина',isChecked:true,id:'sign-male'})
+     +button({type:'radio',label:'Женщина',id:'sign-female'})
+    h3(class="sign-up__header sign-up__header-birthday")='Дата рождения'
     +textfield({isMasked:true,placeholder:'ДД.ММ.ГГГГ'})
-    h3(class="sign-up__header-data")='Данные для входа в сервис'
-    +textfield({isDefault:true,placeholder:'Email',type:"email"})
-    +textfield({isDefault:true,placeholder:'Пароль',type:'password'})
-    +toggle({labels:[{name:'Получать спецпредложения',  isPositive:false}]})
+    h3(class="sign-up__header sign-up__header-data")='Данные для входа в сервис'
+    .sign-up__text-wrapper
+     +textfield({isDefault:true,placeholder:'Email',type:"email"})
+     +textfield({isDefault:true,placeholder:'Пароль',type:'password'})
+    .sign-up__toogle
+     +toggle({labels:[{name:'Получать спецпредложения',  isPositive:false}]})
     +button({label:'ПЕРЕЙТИ К ОПЛАТЕ',type:'arrow',purpose:'submit'})
     footer(class='sign-up__footer')
      span(class='sign-up__account')='Уже есть аккаунт на Toxin'

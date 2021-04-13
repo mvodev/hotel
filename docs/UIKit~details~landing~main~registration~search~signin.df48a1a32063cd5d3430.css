@@ -4460,9 +4460,14 @@ input:checked + .slider-round:before {
   padding-left: 30px;
   padding-right: 30px; }
 
-.sign-up__header-reg,
-.sign-up__header-birthday,
-.sign-up__header-data {
+.sign-up__text-wrapper {
+  height: 98px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 10px; }
+
+.sign-up__header {
   color: #1f2041;
   font-style: normal;
   font-weight: bold;
@@ -4474,8 +4479,7 @@ input:checked + .slider-round:before {
   padding-top: 40px;
   padding-bottom: 20px; }
 
-.sign-up__header-birthday,
-.sign-up__header-data {
+.sign-up__header-birthday, .sign-up__header-data {
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
@@ -4489,10 +4493,10 @@ input:checked + .slider-round:before {
   flex-direction: row;
   margin-bottom: 20px; }
 
-.sign-up__radio-button-wrapper .button-radio:first-child {
+.sign-up__radio-button-wrapper_first-button {
   margin-right: 20px; }
 
-.toggle {
+.sign-up__toggle {
   margin-bottom: 20px; }
 
 .sign-up__footer {
@@ -5441,4 +5445,4 @@ input:checked + .slider-round:before {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.0793cfa5aff43a610e9b.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.df48a1a32063cd5d3430.css.map*/
