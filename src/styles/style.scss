@@ -1,10 +1,14 @@
 @import './common/fonts.scss';
 @import './common/reset.scss';
 @import './common/constants.scss';
-@import '../components/ui-kit/modules/headers/standard-nav-bar.scss';
+
+@import '../components/ui-kit/modules/headers/standard-nav-bar/standard-nav-bar.scss';
+@import '../components/ui-kit/modules/headers/standard-logged-in-nav-bar/standard-logged-in-nav-bar.scss';
+
+@import '../components/ui-kit/modules/footers/footer-copyright-bar/footer-copyright-bar.scss';
+@import '../components/ui-kit/modules/footers/footer-widget/footer-widget.scss';
+
 @import '../components/ui-kit/modules/search-number/search-number.scss';
-@import '../components/ui-kit/modules/dropdown/dropdown.scss';
-@import '../components/ui-kit/modules/headers/standard-nav-bar.scss';
 @import '../components/ui-kit/modules/dropdown/dropdown.scss';
 @import '../components/ui-kit/modules/list/list.scss';
 @import '../components/ui-kit/modules/range-slider/range-slider.scss';
@@ -20,10 +24,6 @@
 @import '../components/ui-kit/modules/switch/switch.scss';
 @import '../components/ui-kit/modules/button/button.scss';
 @import '../components/ui-kit/modules/text-field/text-field.scss';
-@import '../components/ui-kit/modules/headers/standard-nav-bar.scss';
-@import '../components/ui-kit/modules/headers/standard-logged-in-nav-bar.scss';
-@import '../components/ui-kit/modules/footers/footer-copyright-bar/footer-copyright-bar.scss';
-@import '../components/ui-kit/modules/footers/footer-widget/footer-widget.scss';
 @import '../components/ui-kit/modules/diagram/diagram.scss';
 
 .wrapper{
