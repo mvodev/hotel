@@ -1,41 +1,11 @@
-.header_date-dropdown,
-.header_text-field-default,
-.header_text-field-hover,
-.header_dropdown-default,
-.header_masked-text-field,
-.header_dropdown-room,
-.header_dropdown-room-expanded,
-.header_filter-date-dropdown,
-.header_subscription-text-field{
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 5px;
-}
 .header_date-dropdown{
   justify-content: left;
 }
-.header_text-field-default,
-.header_text-field-hover,
-.header_dropdown-default,
-.header_masked-text-field,
-.header_date-dropdown,
-.header_dropdown-room,
-.header_dropdown-room-expanded{
-  justify-content: space-between;
-}
-.header_text-field-default div:last-child,
-.header_text-field-hover div:last-child,
-.header_dropdown-default div:last-child,
-.header_masked-text-field div:last-child,
-.header_dropdown-room div:last-child,
-.header_dropdown-room-expanded div:last-child{
-  color: $darkShade50;
-  font-weight: normal;
-}
+
 .header_text-field-hover,
 .header_dropdown-default,
 .header_dropdown-room-expanded{
-  margin-top: 20px;
+  margin-top: 21px;
 }
 .header_masked-text-field{
   margin-top: 22px;
@@ -48,7 +18,7 @@
 .header_subscription-text-field{
   margin-top: 41px;
 }
-.header_date-dropdown div:last-child{
+.header_date-dropdown span:last-child{
   margin-right: 30px;
 }
 .header_dropdown-room{
@@ -58,7 +28,7 @@
 .header_dropdown-room-expanded{
   width: 266px;
 }
-.form-elements__left-column-dropdown-wrapper{
+.left-column-dropdown-wrapper{
   display: flex;
   flex-direction: row;
   justify-content: space-between;

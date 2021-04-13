@@ -40,7 +40,7 @@
 			opacity: 0;
 		}
   &__input:checked +.button-radio__label:after{
-	  opacity: 1;
+	   opacity: 1;
   }
   &__input:checked + .button-radio__-label {
    color: $darkShade75;

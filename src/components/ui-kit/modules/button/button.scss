@@ -8,62 +8,63 @@
 	font-family: $font-family-main,$fallback-font;
 	white-space: nowrap;
 	font-style: normal;
-}
 
-.button-dark{
+	&-dark{
  background: $buttonColor;
-}
-
-.button-dark50{
- background: $buttonColor;
- opacity: 0.5;
-}
-
-.button-dark span,
-.button-dark50 span{
-	font-weight: bold;
-	font-size: 12px;
-	line-height: 15px;
 	text-transform: uppercase;
-	color: $white;
-}
+	}
+	&-dark50{
+		background: $buttonColor;
+		text-transform: uppercase;
+		opacity: 0.5;
+	}
 
-.button-white{
-background: none;
-border:2px solid $purple;
-}
+	&-dark span,
+	&-dark50 span{
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 15px;
+		text-transform: uppercase;
+		color: $white;
+	}
 
-.button-white50{
- background: none;
- border:2px solid rgba($color: $purple, $alpha: 0.5);
-}
-
-.button-white span,
-.button-white50 span,
-.button-transparent span{
-font-weight: bold;
-font-size: 12px;
-line-height: 15px;
-text-transform: uppercase;
-color:$purple;
-white-space: nowrap;
-}
-
-.button-transparent,
-.button-transparent50{
- border: none;
+	&-white{
 	background: none;
-	height: 15px;
-	width: 61px;
-	padding: 0px;
-}
+	border:2px solid $purple;
+	}
 
-.button-transparent50 span{
+	&-white50{
+		background: none;
+		border:2px solid rgba($color: $purple, $alpha: 0.5);
+	}
+
+	&-white span,
+	&-white50 span,
+	&-transparent span{
 	font-weight: bold;
 	font-size: 12px;
 	line-height: 15px;
 	text-transform: uppercase;
-	color: $darkShade50;
+	color:$purple;
+	white-space: nowrap;
+	}
+
+	&-transparent,
+	&-transparent50{
+		border: none;
+		background: none;
+		height: 15px;
+		width: 61px;
+		padding: 0px;
+	}
+
+	&-transparent50 span{
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 15px;
+		text-transform: uppercase;
+		color: $darkShade50;
+	}
 }
 
 .button-with-arrow{
@@ -75,7 +76,7 @@ white-space: nowrap;
 	flex-direction: row;
 	align-items: center;
 	justify-content: right;
-		& div:first-child{
+		& span{
 		font-weight: bold;
 		font-size: 12px;
 		line-height: 15px;
@@ -112,7 +113,6 @@ white-space: nowrap;
 			& input{
 			display: none;
 			}
-
 }
 
 .button-rate-star{
@@ -167,26 +167,79 @@ white-space: nowrap;
 	width: 222px;
 	height: max-content;
 
-	&__checkbox-input{
-		position: absolute;
-		z-index: 1;
-		opacity: 0;
-		margin-left: 3px;
-	}
-	&__checkbox-text{
+		&__checkbox-input{
+			position: absolute;
+			z-index: 1;
+			opacity: 0;
+			margin-left: 3px;
+		}
+		&__checkbox-text{
+				position: relative;
+				cursor: pointer;
+				padding-left: 30px;
+				font-weight: normal;
+				font-size: 14px;
+				line-height: 18px;
+				color: $darkShade50;
+				max-height: 36px;
+				max-width: 192px;
+				margin-bottom: 13px;
+				white-space: break-spaces;
+		}
+		&__checkbox-text:before{
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 20px;
+				height: 20px;
+				background: $white;
+				border: 1px solid $darkShade25;
+				box-sizing: border-box;
+				border-radius: 4px;
+		}
+		&__checkbox-input:checked+.button-check__checkbox-text:before{
+				background-image: url('../assets/img/svg/checkbox.svg');
+				background-repeat: no-repeat;
+				background-position: center;
+		}
+}
+
+.button-rich{
+ width: 266px;
+	height: 51px;
+
+		&__checkbox-input {
+			position: absolute;
+			z-index: -1;
+			opacity: 0;
+			margin-left: 10px;
+		}
+		&__checkbox-header{
 			position: relative;
 			cursor: pointer;
 			padding-left: 30px;
-			font-weight: normal;
+			font-weight: bold;
 			font-size: 14px;
 			line-height: 18px;
+			color: $darkShade75;
+			height: 18px;
+			max-width: 236px;
+		}
+		&__checkbox-text{
+			position: relative;
+			cursor: pointer;
+			margin-left: 30px;
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 14px;
 			color: $darkShade50;
-			max-height: 36px;
-			max-width: 192px;
-			margin-bottom: 13px;
+			height: 28px;
+			width: 236px;
+			margin-top: 5px;
 			white-space: break-spaces;
-	}
-	&__checkbox-text:before{
+		}
+		&__checkbox-header:before {
 			content: '';
 			position: absolute;
 			top: 0;
@@ -197,66 +250,12 @@ white-space: nowrap;
 			border: 1px solid $darkShade25;
 			box-sizing: border-box;
 			border-radius: 4px;
-	}
-}
-.button-check__checkbox-input:checked+.button-check__checkbox-text:before{
-background-image: url('../assets/img/svg/checkbox.svg');
-background-repeat: no-repeat;
-background-position: center;
-}
-
-
-
-.button-rich{
- width: 266px;
-	height: 51px;
-
-	&__checkbox-input {
-		position: absolute;
-		z-index: -1;
-		opacity: 0;
-		margin-left: 10px;
-	}
-	&__checkbox-header{
-		position: relative;
-		cursor: pointer;
-		padding-left: 30px;
-		font-weight: bold;
-		font-size: 14px;
-		line-height: 18px;
-		color: $darkShade75;
-		height: 18px;
-		max-width: 236px;
-	}
-	&__checkbox-text{
-		position: relative;
-		cursor: pointer;
-		margin-left: 30px;
-		font-weight: normal;
-		font-size: 12px;
-		line-height: 14px;
-		color: $darkShade50;
-		height: 28px;
-		width: 236px;
-		margin-top: 5px;
-		white-space: break-spaces;
-	}
-	&__checkbox-header:before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 20px;
-		height: 20px;
-		background: $white;
-		border: 1px solid $darkShade25;
-		box-sizing: border-box;
-		border-radius: 4px;
-	}
+		}
+		&__checkbox-input:checked+.button-rich__checkbox-header:before{
+				background-image: url('../assets/img/svg/checkbox.svg');
+				background-repeat: no-repeat;
+				background-position: center;
+		}
 }
 
-.button-rich__checkbox-input:checked+.button-rich__checkbox-header:before{
-	background-image: url('../assets/img/svg/checkbox.svg');
-	background-repeat: no-repeat;
-	background-position: center;
-}
+
