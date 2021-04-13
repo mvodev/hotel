@@ -1483,8 +1483,7 @@ p.subscribe {
   background-color: #ffffff;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding-left: 30px;
-  padding-right: 30px; }
+  padding: 40px 30px 30px 30px; }
 
 .search-number__header {
   font-family: Montserrat, Arial, sans-serif;
@@ -1493,31 +1492,22 @@ p.subscribe {
   font-size: 24px;
   line-height: 30px;
   color: #1f2041;
-  padding: 40px 0px 21px 0px; }
+  margin-bottom: 21px; }
 
 .search-number__dropdown-header {
-  font-family: Montserrat, Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
-  color: #1f2041;
   margin-bottom: 6px; }
 
 .search-number__dropdowns {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin-bottom: 20px; }
 
-.search-number__wrapper .button-with-arrow {
+.search-number__button {
   margin-top: 31px; }
-
-.search-number__dropdown:first-child {
-  margin-right: 20px; }
-
-.dropdown-input__guests {
-  margin-bottom: 31px; }
 
 .dropdown-counter {
   font-family: Montserrat, Arial, sans-serif;
@@ -4520,8 +4510,7 @@ input:checked + .slider-round:before {
   background-color: #ffffff;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding-left: 30px;
-  padding-right: 30px; }
+  padding: 40px 30px 30px 30px; }
 
 .search-number__header {
   font-family: Montserrat, Arial, sans-serif;
@@ -4530,31 +4519,22 @@ input:checked + .slider-round:before {
   font-size: 24px;
   line-height: 30px;
   color: #1f2041;
-  padding: 40px 0px 21px 0px; }
+  margin-bottom: 21px; }
 
 .search-number__dropdown-header {
-  font-family: Montserrat, Arial, sans-serif;
-  font-style: normal;
-  font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
-  color: #1f2041;
   margin-bottom: 6px; }
 
 .search-number__dropdowns {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin-bottom: 20px; }
 
-.search-number__wrapper .button-with-arrow {
+.search-number__button {
   margin-top: 31px; }
-
-.search-number__dropdown:first-child {
-  margin-right: 20px; }
-
-.dropdown-input__guests {
-  margin-bottom: 31px; }
 
 .cards__left-column {
   padding-left: 140px; }
@@ -5445,4 +5425,4 @@ input:checked + .slider-round:before {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.df48a1a32063cd5d3430.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.2be86606681355375747.css.map*/
