@@ -1,19 +1,12 @@
-include ../../ui-kit/modules/sign-in/sign-in.pug
-html(lang="en")
- head
-  meta(charset="UTF-8")
-  meta(name="viewport", content="width=device-width, initial-scale=1.0")
-  meta(name="description", content="отель страница регистрации")
-  include ../../favicon/favicon.pug
-  title SignIn page
- body.sign.sign__wrapper
-  header.sign__header
-   include ../../ui-kit/modules/headers/standard-nav-bar/standard-nav-bar.pug
-  div.sign__img-wrapper
-   +signin({action:'#'})
-  footer.sign__footer
-   include ../../ui-kit/modules/footers/footer-widget/footer-widget.pug
-   include ../../ui-kit/modules/footers/footer-copyright-bar/footer-copyright-bar.pug
-  
+extends ../../ui-kit/modules/template.pug
 
- 
+block variables
+  - var pageTitle = 'Sign-in page'
+
+block content
+
+  include ../../ui-kit/modules/sign-in/sign-in.pug
+
+  body.sign.sign__wrapper
+   div.sign__img-wrapper
+    +signin({action:'#'})

@@ -1,0 +1,7 @@
+mixin footer(options)
+ if options.type==='widget'
+  include ./footer-widget/footer-widget.pug 
+ else if options.type==='creative'
+  include ./footer-creative/footer-creative.pug
+ else if options.type==='copyright'
+  include ./footer-copyright-bar/footer-copyright-bar.pug   
