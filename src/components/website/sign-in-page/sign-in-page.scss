@@ -1,20 +1,23 @@
 @import '../../../styles/common/constants.scss';
 
-.sign__wrapper{
-  max-width: $container-width;
-  margin: 0px auto; 
-  width: 100%;
+.sign{
+  &__wrapper{
+    max-width: $container-width;
+    margin: 0px auto; 
+    width: 100%;
+  }
+  &__img-wrapper{
+    height: 702px;
+    max-width: $container-width;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../../assets/img/jpg/registration.jpg');
+    background-size: cover;
+  }
 }
-.sign__img-wrapper{
-  height: 702px;
-  max-width: $container-width;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url('../../../assets/img/jpg/registration.jpg');
-  background-size: cover;
-}
+
 @media (max-width:$container-mobile-width){
 .sign__wrapper{
   max-width: none;

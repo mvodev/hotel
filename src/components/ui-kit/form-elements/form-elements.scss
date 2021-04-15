@@ -12,11 +12,9 @@
 @import './form-elements-right-column.scss';
 @import './form-elements-comment.scss';
 .form-elements{
-
+  background-color: white;
   &__wrapper{
-    width: 1440px;
-    height: 1853px;
-    background-color: white;
+    padding: 0px 141px;
     font-family: $font-family-main,$fallback-font;
     display: grid;
     grid-template-areas:
@@ -30,18 +28,15 @@
 
   &__central-column {
     grid-area: central;
-    padding-left: 126px;
-    padding-top: 75px;
+    width: 320px;
   }
   &__left-column {
     grid-area: left;
-    padding-left: 140px;
-    padding-top: 75px;
+    width: 320px;
   }
   &__right-column {
     grid-area: right;
-    padding-left: 112px;
-    padding-top: 75px;
+    width: 320px;
   }
   &__header{
     display: flex;

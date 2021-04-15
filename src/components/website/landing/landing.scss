@@ -3,7 +3,6 @@
   &-wrapper{
     max-width: $container-width;
     font-family: $font-family-main,$fallback-font;
-    min-height: 1343px;
     margin: 0px auto; 
   }
   &__img-wrapper{
@@ -28,23 +27,17 @@
     margin-left: auto;
     margin-bottom: 22px;
   }
-}
-.search-number{
+
+  &__search-wrapper{
   margin-top: 70px;
   margin-left: 140px;
-}
-
-@media (max-width:$container-mobile-width){
-  .landing-wrapper{
-    max-width: none;
-    max-height: none;
   }
-  .search-number{
-    margin: 0px auto;
-  }
-  .footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  @media (max-width:$container-mobile-width){
+    &-wrapper{
+      max-width: none;
+    }
+    .landing__search-wrapper{
+      margin: 0px auto;
+    }
   }
 }

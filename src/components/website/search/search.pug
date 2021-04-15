@@ -14,26 +14,30 @@ block content
 
   body.search.search-wrapper
     main.search__content
-      section.left-column
+      section.search__left-column.left-column
         h1(class='left-column__header left-column__header_dates')='ДАТЫ ПРЕБЫВАНИЯ В ОТЕЛЕ'
-        +dropdown({placeholder:'19 авг - 23 авг',typeDropdown:'filter'})
+        .left-column__dropdown-filter
+          +dropdown({placeholder:'19 авг - 23 авг',typeDropdown:'filter'})
         h2(class='left-column__header left-column__header_guests')='ГОСТИ'
-        +dropdown({placeholder:"3 гостя,1 младенец",typeDropdown:'guests',labels:[
-        {text:"взрослые",counterNumber:3},
-        {text:"дети",counterNumber:0},
-        {text:"младенцы",counterNumber:1},
-        ],withButtons:true})
+        .left-column__dropdown-guests
+          +dropdown({placeholder:"3 гостя,1 младенец",typeDropdown:'guests',labels:[
+          {text:"взрослые",counterNumber:3},
+          {text:"дети",counterNumber:0},
+          {text:"младенцы",counterNumber:1},
+          ],withButtons:true})
         +rangeSlider({label:'ДИАПАЗОН ЦЕНЫ'})
         h3(class='left-column__header left-column__header_price')='Стоимость за сутки пребывания в номере'
         h2(class='left-column__header left-column__header_rules')='ПРАВИЛА ДОМА'
-        +button({type:'check',labels:[{text:'Можно курить',isChecked:false},{text:'Можно с питомцами',isChecked:true},{text:'Можно пригласить гостей(до 10 человек)',isChecked:false}]})
+        .left-column__button-check
+          +button({type:'check',labels:[{text:'Можно курить',isChecked:false},{text:'Можно с питомцами',isChecked:true},{text:'Можно пригласить гостей(до 10 человек)',isChecked:false}]})
         h2(class='left-column__header left-column__header_availability')='доступность'
-        div.button-rich_first
+        div.left-column__button-rich.left-column__button-rich_first
           +button({type:'rich',header:'Широкий коридор',label:'Ширина коридоров в номере не менее 91 см.'})
-        div.button-rich_last
+        div.left-column__button-rich.left-column__button-rich_last
           +button({type:'rich',header:'Помощник для инвалидов',label:'На 1 этаже вас встретит специалист  и проводит до номера.'})
         h2(class='left-column__header left-column__header_comfort')='удобства номера'
-        +dropdown({typeDropdown:'room',placeholder:'2 спальни,2 кровати', labels:[
+        .left-column__dropdown-room
+          +dropdown({typeDropdown:'room',placeholder:'2 спальни,2 кровати', labels:[
         {text:"спальни",counterNumber:2},
         {text:"кровати",counterNumber:2},
         {text:"ванныe комнаты",counterNumber:0},
@@ -41,9 +45,9 @@ block content
         +list({type:'expandable',label:'дополнительные удобства',isExpand:false,
         labels:[{text:'Завтрак',isChecked:false},
         {text:'Письменный стол',isChecked:true},{text:'Стул для кормления',isChecked:true},{text:'Кроватка',isChecked:true},{text:'Телевизор',isChecked:false},{text:'Шампунь',isChecked:false}]})
-      section.right-column
+      section.search__right-column.right-column
         h1(class='right-column__header right-column__header_main')='Номера, которые мы для вас подобрали'
-        div.rooms
+        .right-column__rooms
           +roomcard({imgSource:'./assets/img/png/room1.png',roomNumber:888,price:'9 990₽',rate:5,roomType:'люкс',commentNumber:145})
           +roomcard({imgSource:'./assets/img/png/room2.png',roomNumber:840,price:'9 990₽',rate:4,commentNumber:65})
           +roomcard({imgSource:'./assets/img/png/room3.png',roomNumber:980,price:'8 500₽',rate:3,roomType:'люкс',commentNumber:35})
@@ -56,4 +60,5 @@ block content
           +roomcard({imgSource:'./assets/img/png/room10.png',roomNumber:666,price:'5 000₽',rate:3,commentNumber:15})
           +roomcard({imgSource:'./assets/img/png/room11.png',roomNumber:444,price:'5 000₽',rate:3,commentNumber:15})
           +roomcard({imgSource:'./assets/img/png/room12.png',roomNumber:352,price:'5 000₽',rate:3,commentNumber:55})
-        +pagination({isEllipsis:true,firstNumbers:[1,2,3],lastNumber:15,selectedPage:1,label:'1 – 12 из 100+ вариантов аренды'})
+        .right-column__pagination
+          +pagination({isEllipsis:true,firstNumbers:[1,2,3],lastNumber:15,selectedPage:1,label:'1 – 12 из 100+ вариантов аренды'})

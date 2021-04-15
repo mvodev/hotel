@@ -28,20 +28,20 @@
 .header_dropdown-room-expanded{
   width: 266px;
 }
-.left-column-dropdown-wrapper{
+.left-column__dropdown-wrapper{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.bullet-list-expandable_first{
+.bullet-expandable_first{
   margin-top: 159px;
   margin-bottom: 18px;
 }
-.bullet-list-icons-wrapper{
+.bullet-icons__wrapper{
   display: flex;
   flex-direction: column;
   margin-top: 275px;
 }
-.bullet-list-icons-wrapper .bullet-list-icons:first-child{
+.bullet-icons__first{
   margin-bottom: 20px;
 }

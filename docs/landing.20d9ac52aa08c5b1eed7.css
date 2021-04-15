@@ -1,7 +1,6 @@
 .landing-wrapper {
   max-width: 1440px;
   font-family: Montserrat, Arial, sans-serif;
-  min-height: 1343px;
   margin: 0px auto; }
 
 .landing__img-wrapper {
@@ -26,20 +25,15 @@
   margin-left: auto;
   margin-bottom: 22px; }
 
-.search-number {
+.landing__search-wrapper {
   margin-top: 70px;
   margin-left: 140px; }
 
 @media (max-width: 770px) {
   .landing-wrapper {
-    max-width: none;
-    max-height: none; }
-  .search-number {
-    margin: 0px auto; }
-  .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; } }
+    max-width: none; }
+  .landing .landing__search-wrapper {
+    margin: 0px auto; } }
 
 
-/*# sourceMappingURL=landing.33f86e86e5dd07374a9e.css.map*/
+/*# sourceMappingURL=landing.20d9ac52aa08c5b1eed7.css.map*/

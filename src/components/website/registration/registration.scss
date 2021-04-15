@@ -1,20 +1,24 @@
 @import '../../../styles/common/constants.scss';
-.reg-wrapper{
-  max-width: $container-width;
-  margin: 0px auto; 
-}
-.reg__img-wrapper{
-  height: 685px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: $container-width;
-  background-image: url('../../../assets/img/jpg/registration.jpg');
-  background-size: cover;
-}
-@media (max-width:$container-mobile-width){
-  .reg-wrapper{
+
+.reg{
+  &-wrapper{
+    max-width: $container-width;
+    margin: 0px auto; 
+  }
+  &__img-wrapper{
+    height: 685px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: $container-width;
+    background-image: url('../../../assets/img/jpg/registration.jpg');
+    background-size: cover;
+  }
+  @media (max-width:$container-mobile-width){
+  &-wrapper{
     max-width: none;
     max-height: none;
   }
+  }
 }
+

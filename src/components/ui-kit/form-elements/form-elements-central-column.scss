@@ -6,14 +6,10 @@
   margin-top: 40.88px;
   margin-bottom: 14px;
 }
-.radio-buttons-wrapper{
+.central-column__radio-buttons-wrapper{
   display: flex;
   display: -webkit-flex;
   flex-direction: row;
-}
-.radio-buttons-wrapper .button-radio:first-child,
-.rate-buttons-wrapper .button-rate:first-child{
-  margin-right: 20px;
 }
 .header_toggle,
 .header_like-buttons,
@@ -21,14 +17,14 @@
   margin-top: 40px;
   margin-bottom: 16px;
 }
-.like-buttons-wrapper{
+.central-column__like-buttons-wrapper{
   display: flex;
   flex-direction: row;
 }
 .like-buttons-wrapper .button-like:first-child{
   margin-right: 10px;
 }
-.rate-buttons-wrapper{
+.central-column__rate-buttons-wrapper{
   display: flex;
   flex-direction: row;
 }
