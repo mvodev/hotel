@@ -98,7 +98,7 @@ include ../header-ui-kit/header-ui-kit.pug
       +button({type:'rich',header:'Помощник для инвалидов',label:'На 1 этаже вас встретит специалист  и проводит до номера.'})
     section.form-elements__right-column.right-column
       +rangeSlider({label:'RANGE SLIDER'})
-      h2(class='form-elements__header form-elements__header-right header_buttons')='BUTTONS'
+      h2(class='form-elements__header form-elements__header-right form-elements__header_buttons')='BUTTONS'
       .form-elements__buttons-wrapper
         .form-elements__buttons-wrapper_first-row
           +button({label:'click me',type:'dark'})
@@ -111,7 +111,7 @@ include ../header-ui-kit/header-ui-kit.pug
           +button({label:'click me',type:'transparent50'})
         .form-elements__buttons-wrapper_fourth-row
           +button({label:'перейти к оплате',type:'arrow'})
-      h2(class="form-elements__header form-elements__header-right header_pagination")='pagination'
+      h2(class="form-elements__header form-elements__header-right form-elements__header_pagination")='pagination'
       .form-elements__pagination
         +pagination({isEllipsis:true,firstNumbers:[1,2,3],lastNumber:15,selectedPage:1,
         label:'1 – 12 из 100+ вариантов аренды'})
@@ -121,7 +121,7 @@ include ../header-ui-kit/header-ui-kit.pug
       {text:"дети",counterNumber:0},
       {text:"младенцы",counterNumber:0},
       ],withButtons:true})
-      h2(class="form-elements__header form-elements__header-right header_bullet")='Bullet List'
+      h2(class="form-elements__header form-elements__header-right form-elements__header_bullet")='Bullet List'
       +list({labels:['Нельзя с питомцами','Без вечеринок и мероприятий','Время прибытия — после 13:00,а выезд до 12:00']})
     .form-elements__comment
       +comment({headerName:'Мурад Сарафанов',headerTime:'5 дней назад',imgSource:'./assets/img/png/muradik.png',likeNumber:12,isLiked:true,text:'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})
