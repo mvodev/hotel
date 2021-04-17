@@ -1238,26 +1238,26 @@ table {
   color: rgba(31, 32, 65, 0.5); }
 
 @media (max-width: 770px) {
-  .header-login-nav__logo,
-  .header-login-nav__nav,
-  .header-delimeter {
+  .header-nav__logo,
+  .header-nav__nav,
+  .header-nav__delimeter {
     display: none; }
-  .header-login-nav.active {
+  .header-nav.active {
     height: 100%;
     width: 100%;
     padding-right: 10px;
     align-items: flex-start;
     padding-top: 20px; }
-  .header-login-nav__nav.active {
+  .header-nav__nav.active {
     display: flex;
     flex-direction: column;
     margin-right: 0px; }
-  .expand-more-container {
+  .header-nav__expand-more {
     display: none; }
-  .header-login-nav__nav-link,
-  .header-login-nav__nav-link:first-child,
-  .header-login-nav__nav-link:nth-child(4),
-  .header-login-nav__nav-link:nth-child(5) {
+  .header-nav__nav-link,
+  .header-nav__nav-link:first-child,
+  .header-nav__nav-link:nth-child(4),
+  .header-nav__nav-link:nth-child(5) {
     margin-right: 0px;
     margin-bottom: 10px; } }
 
@@ -2932,26 +2932,26 @@ table {
   color: rgba(31, 32, 65, 0.5); }
 
 @media (max-width: 770px) {
-  .header-login-nav__logo,
-  .header-login-nav__nav,
-  .header-delimeter {
+  .header-nav__logo,
+  .header-nav__nav,
+  .header-nav__delimeter {
     display: none; }
-  .header-login-nav.active {
+  .header-nav.active {
     height: 100%;
     width: 100%;
     padding-right: 10px;
     align-items: flex-start;
     padding-top: 20px; }
-  .header-login-nav__nav.active {
+  .header-nav__nav.active {
     display: flex;
     flex-direction: column;
     margin-right: 0px; }
-  .expand-more-container {
+  .header-nav__expand-more {
     display: none; }
-  .header-login-nav__nav-link,
-  .header-login-nav__nav-link:first-child,
-  .header-login-nav__nav-link:nth-child(4),
-  .header-login-nav__nav-link:nth-child(5) {
+  .header-nav__nav-link,
+  .header-nav__nav-link:first-child,
+  .header-nav__nav-link:nth-child(4),
+  .header-nav__nav-link:nth-child(5) {
     margin-right: 0px;
     margin-bottom: 10px; } }
 
@@ -5291,4 +5291,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.43dff7c31fce7e670e32.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.a0e7c9f54ac5ed24ac39.css.map*/
