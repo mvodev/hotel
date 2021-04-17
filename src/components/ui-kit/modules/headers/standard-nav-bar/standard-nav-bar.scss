@@ -54,7 +54,7 @@
   white-space: nowrap;
   margin-right: 0px;
 }
-.expand-more-container {
+.header-login__expand-more {
   width: 24px;
   height: 21px;
   font-family: $font-for-icons;
@@ -79,7 +79,7 @@
   width: 92px;
   margin-right: 0px;
 }
-.login {
+.header-login__nav-link_login {
   height: 34px;
   width: 87px;
   font-weight: bold;
@@ -93,7 +93,7 @@
   margin-right: 20px;
   text-align: center;
 }
-.register {
+.header-login__nav-link_register {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
@@ -116,31 +116,27 @@
   }
 }
 @media (max-width:$container-mobile-width){
-  // .header-login__logo{
-  //   display: none;
-  // }
   .header-login__wrapper{
     justify-content: space-between;
   }
-  .header-login__nav{
-    display: none;
-  }
-  .header-login.active{
+
+  .header-login{
     height: 100%;
     align-items: flex-start;
   }
-  .header-login__wrapper.active{
+  .header-login__wrapper{
     padding-top: 20px;
     align-items: flex-start;
   }
-  .header-login__nav.active{
+  .header-login__nav{
+    display: none;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: left;
   }
-  .expand-more-container{
+  .header-login__expand-more{
     display: none;
   }
   .header-login__nav-link,
@@ -150,8 +146,8 @@
     margin-right: 0px;
     margin-bottom: 10px;
   }
-  .login,
-  .register{
+  .header-login__nav-link_login,
+  .header-login__nav-link_register{
     margin-right: 0px;
   }
 }

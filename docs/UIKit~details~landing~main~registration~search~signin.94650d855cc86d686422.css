@@ -1004,7 +1004,7 @@ table {
   white-space: nowrap;
   margin-right: 0px; }
 
-.expand-more-container {
+.header-login__expand-more {
   width: 24px;
   height: 21px;
   font-family: Material Icons;
@@ -1028,7 +1028,7 @@ table {
   width: 92px;
   margin-right: 0px; }
 
-.login {
+.header-login__nav-link_login {
   height: 34px;
   width: 87px;
   font-weight: bold;
@@ -1042,7 +1042,7 @@ table {
   margin-right: 20px;
   text-align: center; }
 
-.register {
+.header-login__nav-link_register {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
@@ -1065,21 +1065,20 @@ table {
 @media (max-width: 770px) {
   .header-login__wrapper {
     justify-content: space-between; }
-  .header-login__nav {
-    display: none; }
-  .header-login.active {
+  .header-login {
     height: 100%;
     align-items: flex-start; }
-  .header-login__wrapper.active {
+  .header-login__wrapper {
     padding-top: 20px;
     align-items: flex-start; }
-  .header-login__nav.active {
+  .header-login__nav {
+    display: none;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: left; }
-  .expand-more-container {
+  .header-login__expand-more {
     display: none; }
   .header-login__nav-link,
   .header-login__nav-link:first-child,
@@ -1087,8 +1086,8 @@ table {
   .header-login__nav-link:nth-child(5) {
     margin-right: 0px;
     margin-bottom: 10px; }
-  .login,
-  .register {
+  .header-login__nav-link_login,
+  .header-login__nav-link_register {
     margin-right: 0px; } }
 
 .header-burger {
@@ -1242,13 +1241,13 @@ table {
   .header-nav__nav,
   .header-nav__delimeter {
     display: none; }
-  .header-nav.active {
+  .header-nav {
     height: 100%;
     width: 100%;
     padding-right: 10px;
     align-items: flex-start;
     padding-top: 20px; }
-  .header-nav__nav.active {
+  .header-nav__nav {
     display: flex;
     flex-direction: column;
     margin-right: 0px; }
@@ -2936,13 +2935,13 @@ table {
   .header-nav__nav,
   .header-nav__delimeter {
     display: none; }
-  .header-nav.active {
+  .header-nav {
     height: 100%;
     width: 100%;
     padding-right: 10px;
     align-items: flex-start;
     padding-top: 20px; }
-  .header-nav__nav.active {
+  .header-nav__nav {
     display: flex;
     flex-direction: column;
     margin-right: 0px; }
@@ -3066,7 +3065,7 @@ table {
   white-space: nowrap;
   margin-right: 0px; }
 
-.expand-more-container {
+.header-login__expand-more {
   width: 24px;
   height: 21px;
   font-family: Material Icons;
@@ -3090,7 +3089,7 @@ table {
   width: 92px;
   margin-right: 0px; }
 
-.login {
+.header-login__nav-link_login {
   height: 34px;
   width: 87px;
   font-weight: bold;
@@ -3104,7 +3103,7 @@ table {
   margin-right: 20px;
   text-align: center; }
 
-.register {
+.header-login__nav-link_register {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
@@ -3127,21 +3126,20 @@ table {
 @media (max-width: 770px) {
   .header-login__wrapper {
     justify-content: space-between; }
-  .header-login__nav {
-    display: none; }
-  .header-login.active {
+  .header-login {
     height: 100%;
     align-items: flex-start; }
-  .header-login__wrapper.active {
+  .header-login__wrapper {
     padding-top: 20px;
     align-items: flex-start; }
-  .header-login__nav.active {
+  .header-login__nav {
+    display: none;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: left; }
-  .expand-more-container {
+  .header-login__expand-more {
     display: none; }
   .header-login__nav-link,
   .header-login__nav-link:first-child,
@@ -3149,8 +3147,8 @@ table {
   .header-login__nav-link:nth-child(5) {
     margin-right: 0px;
     margin-bottom: 10px; }
-  .login,
-  .register {
+  .header-login__nav-link_login,
+  .header-login__nav-link_register {
     margin-right: 0px; } }
 
 .header-burger {
@@ -5291,4 +5289,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.a0e7c9f54ac5ed24ac39.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.94650d855cc86d686422.css.map*/

@@ -96,14 +96,14 @@
   .header-nav__delimeter{
     display: none;
   }
-  .header-nav.active{
+  .header-nav{
     height: 100%;
     width: 100%;
     padding-right: 10px;
     align-items: flex-start;
     padding-top: 20px;
   }
-  .header-nav__nav.active{
+  .header-nav__nav{
     display:flex;
     flex-direction: column;
     margin-right: 0px;
