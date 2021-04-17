@@ -1,17 +1,17 @@
 include ../../burger/burger.pug
 include ../../logo/logo-toxin.pug
-.header-login-nav
-  .header-login-nav__wrapper
-    .header-login-nav__logo
+.header-nav
+  .header-nav__wrapper
+    .header-nav__logo
       +logo()
     +burger
-    nav.header-login-nav__nav
-      a(class = 'header-login-nav__nav-link' href='/mock-address/change-me' ) О нас
+    nav.header-nav__nav
+      a(class = 'header-nav__nav-link' href='/mock-address/change-me' ) О нас
       a(href='/mock-address/change-me' class = 'header-login-nav__nav-link') Услуги
-      div(class='expand-more-container') keyboard_arrow_down
-      a(href='/mock-address/change-me' class = 'header-login-nav__nav-link') Вакансии
-      a(href='/mock-address/change-me' class = 'header-login-nav__nav-link') Новости
-      a(href='/mock-address/change-me' class = 'header-login-nav__nav-link') Соглашения
-      .expand-more-container='keyboard_arrow_down'
-      .header-delimeter
-      a(href='/mock-address/change-me' class = 'header-login-nav__nav-link_logged-in') Юлий Цезарь
+      .header-nav__expand-more='keyboard_arrow_down'
+      a(href='/mock-address/change-me' class = 'header-nav__nav-link') Вакансии
+      a(href='/mock-address/change-me' class = 'header-nav__nav-link') Новости
+      a(href='/mock-address/change-me' class = 'header-nav__nav-link') Соглашения
+      .header-nav__expand-more='keyboard_arrow_down'
+      .header-nav__delimeter
+      a(href='/mock-address/change-me' class = 'header-nav__nav-link_logged-in') Юлий Цезарь
