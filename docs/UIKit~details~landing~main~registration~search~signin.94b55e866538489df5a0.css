@@ -3652,74 +3652,66 @@ p.subscribe {
   height: 44px;
   width: 320px;
   font-family: Montserrat, Arial, sans-serif; }
-
-.text-field__input-wrapper {
-  display: flex;
-  flex-direction: row; }
-
-.text-field__input-date,
-.text-field__input-date::placeholder {
-  font-family: Montserrat, Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.25); }
-
-.text-field label {
-  white-space: nowrap;
-  height: 15px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #1f2041;
-  margin-bottom: 5px; }
-
-.text-field input {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.25);
-  width: 320px;
-  height: 44px;
-  border: none;
-  box-sizing: border-box;
-  background-color: transparent;
-  padding-left: 15px;
-  padding-top: 13px;
-  padding-bottom: 13px; }
-
-.text-field_focused input {
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  background: transparent;
-  border-color: rgba(31, 32, 65, 0.5); }
-
-.text-field_subscription {
-  width: 266px;
-  height: 44px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 4px; }
-  .text-field_subscription .text-field__input-wrapper input {
-    width: 223px; }
-
-.text-field__input-wrapper-arrow {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  font-family: Material Icons;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 24px;
-  color: #BC9CFF;
-  cursor: pointer; }
+  .text-field__input-wrapper {
+    display: flex;
+    flex-direction: row; }
+  .text-field__input-date, .text-field__input-date::placeholder {
+    font-family: Montserrat, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.25); }
+  .text-field label {
+    white-space: nowrap;
+    height: 15px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041;
+    margin-bottom: 5px; }
+  .text-field input {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.25);
+    width: 320px;
+    height: 44px;
+    border: none;
+    box-sizing: border-box;
+    background-color: transparent;
+    padding-left: 15px;
+    padding-top: 13px;
+    padding-bottom: 13px; }
+  .text-field_focused input {
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    background: transparent;
+    border-color: rgba(31, 32, 65, 0.5); }
+  .text-field_subscription {
+    width: 266px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px; }
+    .text-field_subscription .text-field__input-wrapper input {
+      width: 223px; }
+  .text-field__input-wrapper-arrow {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    color: #BC9CFF;
+    cursor: pointer; }
 
 .button-radio {
   height: 24px; }
@@ -5214,74 +5206,66 @@ p.subscribe {
   height: 44px;
   width: 320px;
   font-family: Montserrat, Arial, sans-serif; }
-
-.text-field__input-wrapper {
-  display: flex;
-  flex-direction: row; }
-
-.text-field__input-date,
-.text-field__input-date::placeholder {
-  font-family: Montserrat, Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.25); }
-
-.text-field label {
-  white-space: nowrap;
-  height: 15px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #1f2041;
-  margin-bottom: 5px; }
-
-.text-field input {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: rgba(31, 32, 65, 0.25);
-  width: 320px;
-  height: 44px;
-  border: none;
-  box-sizing: border-box;
-  background-color: transparent;
-  padding-left: 15px;
-  padding-top: 13px;
-  padding-bottom: 13px; }
-
-.text-field_focused input {
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  background: transparent;
-  border-color: rgba(31, 32, 65, 0.5); }
-
-.text-field_subscription {
-  width: 266px;
-  height: 44px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 4px; }
-  .text-field_subscription .text-field__input-wrapper input {
-    width: 223px; }
-
-.text-field__input-wrapper-arrow {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  font-family: Material Icons;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 24px;
-  color: #BC9CFF;
-  cursor: pointer; }
+  .text-field__input-wrapper {
+    display: flex;
+    flex-direction: row; }
+  .text-field__input-date, .text-field__input-date::placeholder {
+    font-family: Montserrat, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.25); }
+  .text-field label {
+    white-space: nowrap;
+    height: 15px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1f2041;
+    margin-bottom: 5px; }
+  .text-field input {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.25);
+    width: 320px;
+    height: 44px;
+    border: none;
+    box-sizing: border-box;
+    background-color: transparent;
+    padding-left: 15px;
+    padding-top: 13px;
+    padding-bottom: 13px; }
+  .text-field_focused input {
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    background: transparent;
+    border-color: rgba(31, 32, 65, 0.5); }
+  .text-field_subscription {
+    width: 266px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px; }
+    .text-field_subscription .text-field__input-wrapper input {
+      width: 223px; }
+  .text-field__input-wrapper-arrow {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: Material Icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    color: #BC9CFF;
+    cursor: pointer; }
 
 .diagram {
   display: flex;
@@ -5380,4 +5364,4 @@ p.subscribe {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.16bbee4d0bbf105b7400.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.94b55e866538489df5a0.css.map*/

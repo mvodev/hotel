@@ -4,73 +4,74 @@
   height: 44px;
   width: 320px;
   font-family: $font-family-main,$fallback-font;
-}
-.text-field__input-wrapper{
-  display: flex;
-  flex-direction: row;
-}
-.text-field__input-date,
-.text-field__input-date::placeholder{
-  font-family: $font-family-main,$fallback-font;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.25);
-}
-.text-field label {
-  white-space: nowrap;
-  height: 15px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: $darkShade100;
-  margin-bottom: 5px;
-}
-.text-field input {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: $darkShade25;
-  width: 320px;
-  height: 44px;
-  border: none;
-  box-sizing: border-box;
-  background-color: transparent;
-  padding-left: 15px;
-  padding-top: 13px;
-  padding-bottom: 13px;
-}
-.text-field_focused input {
-  line-height: 24px;
-  color: $darkShade75;
-  background: transparent;
-  border-color: rgba(31, 32, 65, 0.5);
-}
-.text-field_subscription{
-  width: 266px;
-  height: 44px;
-  border: 1px solid $darkShade25;
-  border-radius: 4px;
-  .text-field__input-wrapper input{
-    width: 223px;
+  
+  &__input-wrapper{
+    display: flex;
+    flex-direction: row;
   }
-}
-.text-field__input-wrapper-arrow{
-  width: 44px;
-  height: 44px;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  font-family: $font-for-icons;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 24px;
-  color: $purple;
-  cursor: pointer;
+  &__input-date,
+  &__input-date::placeholder{
+    font-family: $font-family-main,$fallback-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.25);
+  }
+  & label {
+    white-space: nowrap;
+    height: 15px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $darkShade100;
+    margin-bottom: 5px;
+  }
+  & input {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: $darkShade25;
+    width: 320px;
+    height: 44px;
+    border: none;
+    box-sizing: border-box;
+    background-color: transparent;
+    padding-left: 15px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+  &_focused input {
+    line-height: 24px;
+    color: $darkShade75;
+    background: transparent;
+    border-color: rgba(31, 32, 65, 0.5);
+  }
+  &_subscription{
+    width: 266px;
+    height: 44px;
+    border: 1px solid $darkShade25;
+    border-radius: 4px;
+    .text-field__input-wrapper input{
+      width: 223px;
+    }
+  }
+  &__input-wrapper-arrow{
+    width: 44px;
+    height: 44px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: $font-for-icons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    color: $purple;
+    cursor: pointer;
+  }
 }
