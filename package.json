@@ -40,6 +40,7 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
+    "chart.js": "^3.1.0",
     "cleave.js": "^1.6.0",
     "ion-rangeslider": "^2.3.1"
   }
