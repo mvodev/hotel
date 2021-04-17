@@ -1,12 +1,12 @@
 include ../../text-field/text-field.pug
 include ../../logo/logo-toxin.pug
-.footer-nav__container
-  .footer-nav__wrapper
-    .footer-nav__logo
+.footer-widget
+  .footer-widget__wrapper
+    .footer-widget__logo
       +logo()
       p Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды».
-    nav(class="footer-nav__links")
-      ul(class="footer-nav__links_navigation") 
+    nav(class="footer-widget__links nav-links")
+      ul(class="nav-links__navigation") 
         li
           a(href='/mock-address/change-me' ) навигация
         li
@@ -17,7 +17,7 @@ include ../../logo/logo-toxin.pug
           a(href='/mock-address/change-me' ) Служба поддержки
         li
           a(href='/mock-address/change-me' ) Услуги
-      ul(class="footer-nav__links_about-us")
+      ul(class="nav-links__about-us")
         li
           a(href='/mock-address/change-me' ) о нас
         li
@@ -28,7 +28,7 @@ include ../../logo/logo-toxin.pug
           a(href='/mock-address/change-me' ) Вакансии
         li
           a(href='/mock-address/change-me' ) Инвесторы
-      ul(class="footer-nav__links_support")
+      ul(class="nav-links__support")
         li
           a(href='/mock-address/change-me' ) служба поддержки
         li
@@ -37,9 +37,9 @@ include ../../logo/logo-toxin.pug
           a(href='/mock-address/change-me' ) Сообщества
         li
           a(href='/mock-address/change-me' ) Связь с нами
-    .footer-nav__subscribe
-      .footer-nav__subscribe-textContainer
-        p.subscribe Подписка
-        p Получайте специальные <br> предложения и новости сервиса
-      .footer-nav__subscribe-form
+    .footer-widget__subscribe.subscribe-footer
+      .subscribe-footer__text-container
+        h3.subscribe-footer__subscription Подписка
+        p.subscribe-footer__proposal Получайте специальные <br> предложения и новости сервиса
+      .subscribe-footer__form
         +textfield({isSubscription:true,placeholder:'Email',type:"email"})
