@@ -1962,7 +1962,7 @@ p.subscribe {
   line-height: 15px;
   color: rgba(31, 32, 65, 0.5); }
 
-.room-card_wrapper {
+.room-card__wrapper {
   width: 270px;
   height: 257px;
   background: #ffffff;
@@ -2028,8 +2028,7 @@ p.subscribe {
   background: #ffffff;
   box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3); }
 
-.room-card__room-specifications,
-.room-card__bottom-line {
+.room-card__room-specifications, .room-card__bottom-line {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -4671,7 +4670,7 @@ input:checked + .slider-round:before {
   .cards__central-column .room-price {
     margin-bottom: 40px; }
 
-.room-card_wrapper {
+.room-card__wrapper {
   width: 270px;
   height: 257px;
   background: #ffffff;
@@ -4737,8 +4736,7 @@ input:checked + .slider-round:before {
   background: #ffffff;
   box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3); }
 
-.room-card__room-specifications,
-.room-card__bottom-line {
+.room-card__room-specifications, .room-card__bottom-line {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -5384,4 +5382,4 @@ input:checked + .slider-round:before {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.c284e4c1d700955e3810.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.354b385224ae6029ea8e.css.map*/

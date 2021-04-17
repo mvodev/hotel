@@ -2,7 +2,7 @@ include ../button/button.pug
 mixin roomcard(options)
   - var roomtype=options.roomType ? options.roomType : ''
     article(class='room-card')
-      .room-card_wrapper
+      .room-card__wrapper
         div(class='room-card__img')
           img(src=options.imgSource, alt="room image")
           div(class='room-card__arrows')
