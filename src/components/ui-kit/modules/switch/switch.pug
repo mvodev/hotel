@@ -1,10 +1,9 @@
 mixin switch(options)
   div(class='switch switch__container')
-    label(class='switch__label')
+    label(class='switch__label')=options.name
       if options.isPositive
         input(type='checkbox' class="switch__input" checked='checked')
         span(class='switch__slider-round')
       else
         input(type='checkbox' class="switch__input")
-        span(class='switch__slider-round')
-      span(class='switch__name')=options.name   
+        span(class='switch__slider-round')  
