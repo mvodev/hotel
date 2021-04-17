@@ -21,11 +21,11 @@
   display: flex;
   flex-direction: column; }
 
-.left-column__dropdown-filter {
+.search .left-column__dropdown-filter {
   width: 266px;
   margin-bottom: 20.44px; }
 
-.left-column__header {
+.search .left-column__header {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
@@ -33,14 +33,14 @@
   color: #1f2041;
   margin-bottom: 5px; }
 
-.left-column__header_guests {
+.search .left-column__header_guests {
   margin-top: 20px; }
 
-.range-slider__wrapper {
+.search .range-slider__wrapper {
   margin-bottom: 2px;
   margin-top: 30px; }
 
-.left-column__header_price {
+.search .left-column__header_price {
   font-size: 12px;
   line-height: 14px;
   color: rgba(31, 32, 65, 0.5);
@@ -48,43 +48,43 @@
   font-weight: normal;
   text-transform: none; }
 
-.left-column__header_rules,
-.left-column__header_availability {
+.search .left-column__header_rules,
+.search .left-column__header_availability {
   margin-bottom: 16px; }
 
-.left-column__button-check {
+.search .left-column__button-check {
   margin-bottom: 20px; }
 
-.left-column__button-rich_first {
+.search .left-column__button-rich_first {
   margin-bottom: 10px; }
 
-.left-column__button-rich_last {
+.search .left-column__button-rich_last {
   margin-bottom: 31px; }
 
-.left-column__dropdown-room,
-.left-column__dropdown-guests {
+.search .left-column__dropdown-room,
+.search .left-column__dropdown-guests {
   margin-bottom: 30px;
   width: 266px; }
 
-.right-column {
+.search .right-column {
   grid-area: right; }
 
-.bullet-list-expandable {
+.search .bullet-list-expandable {
   margin-top: 15px; }
 
-.right-column__rooms {
+.search .right-column__rooms {
   display: grid;
   grid-template-columns: repeat(3, 270px);
   grid-template-rows: repeat(4, 257px);
   row-gap: 20px;
   column-gap: 12px; }
 
-.right-column__pagination {
+.search .right-column__pagination {
   margin-top: 44px;
   display: flex;
   justify-content: center; }
 
-.right-column__header {
+.search .right-column__header {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -103,13 +103,13 @@
     justify-content: center;
     align-items: center;
     height: auto; }
-  .right-column .rooms {
+  .search .right-column__rooms {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-  .right-column .pagination {
+  .search .right-column__pagination {
     margin: 10px auto 0px auto; } }
 
 
-/*# sourceMappingURL=search.94b55e866538489df5a0.css.map*/
+/*# sourceMappingURL=search.db1d49b9e1aae09663e4.css.map*/

@@ -50,66 +50,66 @@
   flex-direction: row;
   justify-content: space-between; }
 
-.left-column {
+.details .left-column {
   display: flex;
   flex-direction: row; }
 
-.left-column__content {
+.details .left-column__content {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
 
-.left-column__header {
+.details .left-column__header {
   margin-bottom: 20px;
   font-weight: bold;
   font-size: 18px;
   line-height: 23px; }
 
-.left-column__impressions {
+.details .left-column__impressions {
   margin-right: 40px; }
 
-.left-column__impressions h2 {
+.details .left-column__impressions h2 {
   margin-bottom: 21px; }
 
-.left-column__content {
+.details .left-column__content {
   margin-right: 80px; }
 
-.left-column__content .bullet-list-icons {
+.details .left-column__content .bullet-list-icons {
   margin-bottom: 20px; }
 
-.left-column__content .bullet-list-icons:last-child {
+.details .left-column__content .bullet-list-icons:last-child {
   margin-bottom: 12px;
   border: none; }
 
-.left-column__comments h2 {
+.details .left-column__comments h2 {
   margin-bottom: 20px; }
 
-.details-comment_first {
+.details .details-comment_first {
   margin-bottom: 20px; }
 
-.details-comment_second {
+.details .details-comment_second {
   margin-bottom: 10px; }
 
-.left-column__rules {
+.details .left-column__rules {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
 
-.rules__text-wrapper {
+.details .rules__text-wrapper {
   display: flex;
   flex-direction: column; }
 
-.rules__text-wrapper h2 {
+.details .rules__text-wrapper h2 {
   margin-bottom: 15px;
   margin-left: 20px; }
 
-.rules__text-wrapper:last-child {
+.details .rules__text-wrapper:last-child {
   margin-right: 10px; }
 
-.rules__text-wrapper:last-child h2 {
+.details .rules__text-wrapper:last-child h2 {
   margin-left: 0px; }
 
-.rules__text-wrapper p {
+.details .rules__text-wrapper p {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -152,4 +152,4 @@
     text-align: center; } }
 
 
-/*# sourceMappingURL=details.94b55e866538489df5a0.css.map*/
+/*# sourceMappingURL=details.db1d49b9e1aae09663e4.css.map*/
