@@ -46,24 +46,22 @@
   &__radio-button-wrapper_first-button{
     margin-right: 20px;
   }
-}
-
-
- .sign-up__toggle{
-  margin-bottom: 20px;
- }
- .sign-up__footer{
-  margin-top: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
- }
-.sign-up__account{
-  font-family: $font-family-main,$fallback-font;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  color: #000000;
+  &__toggle{
+    margin-bottom: 20px;
+  }
+  &__footer{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__account{
+    font-family: $font-family-main,$fallback-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+  }
 }
