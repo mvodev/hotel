@@ -1,154 +1,129 @@
 @import '../../burger/burger.scss';
 .header-login {
-  max-width: $container-width;
-  height: 70px;
-  background: $white;
-  box-shadow: 0px 10px 20px $darkShade5;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-family: $font-family-main,$fallback-font;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  width: 100%;
-}
-.header-login__wrapper{
-  max-width: $container-width - 280px;
-  flex:auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  
-}
-.header-login__logo {
-  height: 40px;
-  width: 105.69px;
-}
-.header-login__nav {
-  list-style-type: none;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  max-width: 770px;
-  flex: auto;
-}
-.header-login__nav a {
-  text-decoration: none;
-}
-.header-login__nav-link{
-  color: $darkShade50;
-  height: 18px;
-  margin-right: 20px;
-}
-.header-login__nav-link:first-child {
-  width: 43px;
-  font-weight: bold;
-  color: $darkShade75;
-}
-.header-login__nav-link:nth-child(2) {
-  width: 50px;
-  white-space: nowrap;
-  margin-right: 0px;
-}
-.header-login__expand-more {
-  width: 24px;
-  height: 21px;
-  font-family: $font-for-icons;
-  font-size: 24px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  color:$darkShade50;
-  cursor: pointer;
-  margin-right: 20px;
-}
-.header-login__nav-link:nth-child(4) {
-  width: 72px;
+    max-width: $container-width;
+    height: 70px;
+    background: $white;
+    box-shadow: 0px 10px 20px $darkShade5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-family-main,$fallback-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    width: 100%;
+  &__wrapper{
+    max-width: $container-width - 280px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    height: 40px;
+    width: 105.69px;
+  }
+  &__nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+  &__nav-link{
+    text-decoration: none;
+    color: $darkShade50;
+    height: 18px;
+    margin-right: 20px;
+  }
+  &__nav-link:first-child {
+    font-weight: bold;
+    color: $darkShade75;
+  }
+  &__nav-link:nth-child(2) {
+    white-space: nowrap;
+    margin-right: 0px;
+  }
+  &__expand-more {
+    width: 24px;
+    height: 21px;
+    font-family: $font-for-icons;
+    font-size: 24px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color:$darkShade50;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  &__nav-link:nth-child(6) {
+    margin-right: 0px;
+  }
+  &__nav-link_login {
+    height: 34px;
+    width: 87px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $purple;
+    border-radius: 22px;
+    border: 2px solid $purple;
+    padding: 9px 20px 10px 20px;
+    margin-right: 20px;
+    text-align: center;
+  }
+  &__nav-link_register {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $white;
+    background: $buttonColor;
+    border-radius: 22px;
+    padding: 9px 20px 10px 19px;
+    height: 34px;
+    width: 196px;
+    text-align: center;
+    margin-right: 0px;
+  }
 }
 
-.header-login__nav-link:nth-child(5) {
-  width: 62px;
-}
-.header-login__nav-link:nth-child(6) {
-  width: 92px;
-  margin-right: 0px;
-}
-.header-login__nav-link_login {
-  height: 34px;
-  width: 87px;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: $purple;
-  border-radius: 22px;
-  border: 2px solid $purple;
-  padding: 9px 20px 10px 20px;
-  margin-right: 20px;
-  text-align: center;
-}
-.header-login__nav-link_register {
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: $white;
-  background: $buttonColor;
-  border-radius: 22px;
-  padding: 9px 20px 10px 19px;
-  height: 34px;
-  width: 196px;
-  text-align: center;
-  margin-right: 0px;
-}
 @media (max-width:900px){
 .header-login__logo{
     display: none;
   }
-  .header-login__wrapper{
-    justify-content: center;
-  }
 }
 @media (max-width:$container-mobile-width){
   .header-login__wrapper{
-    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
   }
-
   .header-login{
-    height: 100%;
-    align-items: flex-start;
-  }
-  .header-login__wrapper{
-    padding-top: 20px;
-    align-items: flex-start;
+    height: auto;
   }
   .header-login__nav{
     display: none;
-    width: 100%;
-    height: 100%;
-    display: flex;
     flex-direction: column;
-    justify-content: left;
+    width: 200px;
+  }
+  .header-login__nav.burger-active{
+    display: flex;
   }
   .header-login__expand-more{
     display: none;
   }
-  .header-login__nav-link,
-  .header-login__nav-link:first-child,
-  .header-login__nav-link:nth-child(4),
-  .header-login__nav-link:nth-child(5){
+  .header-login__nav-link{
     margin-right: 0px;
     margin-bottom: 10px;
   }
-  .header-login__nav-link_login,
   .header-login__nav-link_register{
-    margin-right: 0px;
+    margin-bottom: 0px;
   }
 }
 

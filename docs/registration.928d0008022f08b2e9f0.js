@@ -57,7 +57,7 @@
 /******/ 	// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 	// Promise = chunk loading, 0 = chunk loaded
 /******/ 	var installedChunks = {
-/******/ 		"signin": 0
+/******/ 		"registration": 0
 /******/ 	};
 /******/
 /******/ 	var deferredModules = [];
@@ -148,7 +148,7 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./components/website/sign-in-page/sign-in-page.js","vendors~UIKit~details~landing~main~registration~search~signin","vendors~UIKit~details~landing~registration~search~signin","UIKit~details~landing~main~registration~search~signin"]);
+/******/ 	deferredModules.push(["./components/website/registration/registration.js","vendors~UIKit~details~landing~main~registration~search~signin","vendors~UIKit~details~landing~registration~search~signin","vendors~UIKit~details~landing~registration","UIKit~details~landing~main~registration~search~signin"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
@@ -162,42 +162,66 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {const $headerBurgerInput = $('.js-header-burger__input');
-$headerBurgerInput.click(function (event) {
- $('.header-burger__label,.header-nav,.header-nav__nav,.header-login,.header-login__nav,.header-login__wrapper').toggleClass('active');
-});
-const $headerLoginBurgerInput = $('.header-login__burger-input');
-$headerLoginBurgerInput.click(function (event) {
- $('.header-login__burger-label,.header-login,.header-login__nav').toggleClass('active');
-});
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
+/* WEBPACK VAR INJECTION */(function(jQuery, $) {jQuery(function(){
+ const $headerBurgerInput = $('.js-header-burger');
+ $headerBurgerInput.click(function (event) {
+  $('.header-burger,.js-header-nav').toggleClass('burger-active');
+ });
+})
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js"), __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 
-/***/ "./components/website/sign-in-page/sign-in-page.js":
+/***/ "./components/ui-kit/modules/text-field/text-field.js":
+/*!************************************************************!*\
+  !*** ./components/ui-kit/modules/text-field/text-field.js ***!
+  \************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
+
+document.querySelectorAll('.js-text-field__input-date').forEach(function (elem) {
+ new Cleave(elem, {
+  date: true,
+  delimiter: '.',
+  datePattern: ['d', 'm', 'Y']
+ });
+});
+
+/***/ }),
+
+/***/ "./components/website/registration/registration.js":
 /*!*********************************************************!*\
-  !*** ./components/website/sign-in-page/sign-in-page.js ***!
+  !*** ./components/website/registration/registration.js ***!
   \*********************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _sign_in_page_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sign-in-page.scss */ "./components/website/sign-in-page/sign-in-page.scss");
-/* harmony import */ var _sign_in_page_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sign_in_page_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _registration_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./registration.scss */ "./components/website/registration/registration.scss");
+/* harmony import */ var _registration_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_registration_scss__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../styles/style.scss */ "./styles/style.scss");
 /* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_style_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../ui-kit/modules/burger/burger.js */ "./components/ui-kit/modules/burger/burger.js");
-/* harmony import */ var _ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
+/* harmony import */ var _ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../ui-kit/modules/burger/burger.js */ "./components/ui-kit/modules/burger/burger.js");
+/* harmony import */ var _ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _ui_kit_modules_text_field_text_field_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../ui-kit/modules/text-field/text-field.js */ "./components/ui-kit/modules/text-field/text-field.js");
+
+
+
 
 
 
 
 /***/ }),
 
-/***/ "./components/website/sign-in-page/sign-in-page.scss":
+/***/ "./components/website/registration/registration.scss":
 /*!***********************************************************!*\
-  !*** ./components/website/sign-in-page/sign-in-page.scss ***!
+  !*** ./components/website/registration/registration.scss ***!
   \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -207,4 +231,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 /******/ });
-//# sourceMappingURL=signin.67355a92222fb311cf1c.js.map
+//# sourceMappingURL=registration.928d0008022f08b2e9f0.js.map

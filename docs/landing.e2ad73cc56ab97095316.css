@@ -29,11 +29,11 @@
   margin-top: 70px;
   margin-left: 140px; }
 
-@media (max-width: 770px) {
+@media (max-width: 767px) {
   .landing-wrapper {
     max-width: none; }
   .landing .landing__search-wrapper {
     margin: 0px auto; } }
 
 
-/*# sourceMappingURL=landing.94650d855cc86d686422.css.map*/
+/*# sourceMappingURL=landing.e2ad73cc56ab97095316.css.map*/

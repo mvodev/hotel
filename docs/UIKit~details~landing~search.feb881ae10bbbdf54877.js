@@ -7,15 +7,13 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {const $headerBurgerInput = $('.js-header-burger__input');
-$headerBurgerInput.click(function (event) {
- $('.header-burger__label,.header-nav,.header-nav__nav,.header-login,.header-login__nav,.header-login__wrapper').toggleClass('active');
-});
-const $headerLoginBurgerInput = $('.header-login__burger-input');
-$headerLoginBurgerInput.click(function (event) {
- $('.header-login__burger-label,.header-login,.header-login__nav').toggleClass('active');
-});
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
+/* WEBPACK VAR INJECTION */(function(jQuery, $) {jQuery(function(){
+ const $headerBurgerInput = $('.js-header-burger');
+ $headerBurgerInput.click(function (event) {
+  $('.header-burger,.js-header-nav').toggleClass('burger-active');
+ });
+})
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js"), __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 
@@ -2570,4 +2568,4 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.3f0e3f5a586154f8f883.js.map
+//# sourceMappingURL=UIKit~details~landing~search.feb881ae10bbbdf54877.js.map

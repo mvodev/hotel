@@ -93,7 +93,7 @@
   color: #1f2041;
   margin-bottom: 21px; }
 
-@media (max-width: 770px) {
+@media (max-width: 767px) {
   .search-wrapper {
     max-width: none;
     max-height: none; }
@@ -112,4 +112,4 @@
     margin: 10px auto 0px auto; } }
 
 
-/*# sourceMappingURL=search.94650d855cc86d686422.css.map*/
+/*# sourceMappingURL=search.e2ad73cc56ab97095316.css.map*/
