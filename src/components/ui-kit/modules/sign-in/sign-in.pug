@@ -2,9 +2,8 @@ include ../button/button.pug
 include ../text-field/text-field.pug
 include ../toggle/toggle.pug
 mixin signin(options)
- article(class='sign-in')
+ form(class='sign-in' action=options.action)
   div(class='sign-in__wrapper')
-   form(action=options.action class='sign-in__form')
     h2(class="sign-in__header")='Войти'
     .sign-in__text-wrapper
      +textfield({isDefault:true,placeholder:'Email',type:"email"})

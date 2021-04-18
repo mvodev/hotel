@@ -2,9 +2,8 @@ include ../button/button.pug
 include ../text-field/text-field.pug
 include ../toggle/toggle.pug
 mixin signup(options)
- article(class='sign-up')
+ form(class='sign-up' action=options.action)
   div(class='sign-up__wrapper')
-   form(action=options.action class="sign-up__form")
     h2(class="sign-up__header sign-up__header-reg")='Регистрация аккаунта'
     .sign-up__text-wrapper
      +textfield({isDefault:true,placeholder:'Имя'})

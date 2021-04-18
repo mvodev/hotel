@@ -2,9 +2,8 @@ include ../button/button.pug
 include ../text-field/text-field.pug
 include ../dropdown/dropdown.pug
 mixin searchnumber(options)
- article(class='search-number')
+ form(class='search-number')
   div(class='search-number__wrapper')
-    form(action=options.action class="search-number__form")
       h2(class="search-number__header")='Найдём номера под ваши пожелания'
       div(class='search-number__dropdowns')
         div(class='search-number__dropdown')
