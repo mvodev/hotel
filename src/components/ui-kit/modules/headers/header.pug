@@ -1,5 +1,5 @@
-mixin header( options )
- if options.type==='nav'
+mixin header( { type = 'nav',} = {})
+ if type==='nav'
   include ./standard-nav-bar/standard-nav-bar.pug 
- else if options.type==='login'
+ else if type==='login'
   include ./standard-logged-in-nav-bar/standard-logged-in-nav-bar.pug 

@@ -8,10 +8,10 @@ mixin searchnumber(options)
       div(class='search-number__dropdowns')
         div(class='search-number__dropdown')
           h3(class="search-number__header search-number__dropdown-header")='прибытие'
-          +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'date',isExpanded:false,id:'d1'})
+          +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'date',isExpanded:false,})
         div(class='search-number__dropdown')
           h3(class="search-number__header search-number__dropdown-header")='выезд'
-          +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'date',isExpanded:false,id:'d2'})
+          +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'date',isExpanded:false,})
       h3(class="search-number__header search-number__dropdown-header")='гости'
       +dropdown({placeholder:"Сколько гостей",typeDropdown:'guests',isExpanded:false,   labels:[
       {text:"взрослые",counterNumber:0},

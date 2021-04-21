@@ -19,8 +19,8 @@ mixin button(options)
  - buttonClassName+=options.type==='radio' ? ' button-radio' : ''
    if options.type=='arrow'
     button(class=buttonClassName type=options.purpose?options.purpose:'button')
-     span=options.label
-     div(class='button-with-arrow__arr')='arrow_forward'
+      span=options.label
+      div(class='button-with-arrow__arr')='arrow_forward'
    else if options.type=='rate'
     div(class=buttonClassName)
       - var n=1

@@ -1,13 +1,13 @@
 include ../button/button.pug
-mixin comment(options)
+mixin comment({ imgSource = '', headerName = 'provide user name', text = 'provide description', time = 'provide time', likeNumber = 0, isLiked = false,} = {})
   article(class='expanded-comment')
     h3(class='expanded-comment__header')
       div(class='expanded-comment__header-img')
-        img(src=options.imgSource, alt="user photo")
+        img(src=imgSource, alt="user photo")
       div(class='expanded-comment__header-name-wrapper')
-        h3(class='expanded-comment__header-name')=options.headerName
-        time(class='expanded-comment__header-time')=options.headerTime
+        h3(class='expanded-comment__header-name')=headerName
+        time(class='expanded-comment__header-time')=headerTime
     div(class='expanded-comment__body')
       div(class='expanded-comment__like-button')
-        +button({type:'like',likeNumber:options.likeNumber,isLiked:options.isLiked})
-      p(class='expanded-comment__body-text')=options.text
+        +button({type:'like',likeNumber: likeNumber,isLiked: isLiked})
+      p(class='expanded-comment__body-text')=text

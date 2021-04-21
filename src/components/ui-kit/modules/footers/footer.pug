@@ -1,7 +1,7 @@
-mixin footer(options)
- if options.type==='widget'
+mixin footer( { type = 'widget', } = {} )
+ if type==='widget'
   include ./footer-widget/footer-widget.pug 
- else if options.type==='creative'
+ else if type==='creative'
   include ./footer-creative/footer-creative.pug
- else if options.type==='copyright'
+ else if type==='copyright'
   include ./footer-copyright-bar/footer-copyright-bar.pug   

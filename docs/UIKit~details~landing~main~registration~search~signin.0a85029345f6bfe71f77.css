@@ -2003,8 +2003,6 @@ table {
   margin-left: 20px; }
 
 .room-card__comment {
-  width: 90px;
-  height: 18px;
   font-size: 14px;
   line-height: 18px;
   text-align: right;
@@ -4609,8 +4607,6 @@ table {
   margin-left: 20px; }
 
 .room-card__comment {
-  width: 90px;
-  height: 18px;
   font-size: 14px;
   line-height: 18px;
   text-align: right;
@@ -4623,9 +4619,9 @@ table {
 
 .cards__right-column {
   padding-left: 40px; }
-  .cards__right-column .cards__right-column-datepicker {
+  .cards__right-column .cards__datepicker {
     margin-bottom: 40px; }
-  .cards__right-column .room-card:nth-child(2) {
+  .cards__right-column_first-room {
     margin-bottom: 40px; }
 
 .cards__wrapper {
@@ -5173,4 +5169,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.0d7d7f5b6b3f62c08bbb.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.0a85029345f6bfe71f77.css.map*/

@@ -1,10 +1,9 @@
 include ../button/button.pug
-mixin roomcard(options)
-  - var roomtype=options.roomType ? options.roomType : ''
+mixin roomcard( { imgSource = '',roomType = '', roomNumber = 0, price = 0, units = '  в сутки', commentNumber = 0, rate = 1, }={} )
     article(class='room-card')
       .room-card__wrapper
         div(class='room-card__img')
-          img(src=options.imgSource, alt="room image")
+          img(src=imgSource, alt="room image")
           div(class='room-card__arrows')
             div(class='room-card__arrow room-card__arrow-left')='keyboard_arrow_left'
             div(class='room-card__arrow room-card__arrow-right')='keyboard_arrow_right'
@@ -17,15 +16,15 @@ mixin roomcard(options)
           div(class='room-card__number')
             span
               span='№  '
-              span=options.roomNumber
-          div(class='room-card__type')=roomtype
+              span=roomNumber
+          div(class='room-card__type')=roomType
           div(class='room-card__price')
-            span=options.price
-            span='  в сутки'
+            span=price
+            span=units
         div(class='room-card__delimeter')
         div.room-card__bottom-line
           div(class='room-card__rate')
-          +button({type:'rate',darkStar:options.rate})
+          +button({type:'rate',darkStar:rate})
           div(class='room-card__comment')
-            span=options.commentNumber
+            span=commentNumber
             span=' Отзывов'

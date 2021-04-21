@@ -1,7 +1,7 @@
-mixin dropdown-counter( options )
+mixin dropdown-counter( {text = 'provide text', counterNumber = 0} = {} )
   section.dropdown-counter.js-dropdown-counter
-     h3.dropdown-counter__header=options.text
-     .dropdown-counter__container.container-dropdown 
-       .container-dropdown__decrease.js-container-dropdown__decrease  -
-       .container-dropdown__value.js-container-dropdown__value=options.counterNumber
-       .container-dropdown__increase.js-container-dropdown__increase +
+    h3.dropdown-counter__header=text
+    .dropdown-counter__container.container-dropdown 
+      .container-dropdown__decrease.js-container-dropdown__decrease  -
+      .container-dropdown__value.js-container-dropdown__value=counterNumber
+      .container-dropdown__increase.js-container-dropdown__increase +
