@@ -14,7 +14,7 @@
 .form-elements{
   background-color: white;
   &__wrapper{
-    padding: 0px 141px;
+    padding: 65px 141px 0px 141px;
     font-family: $font-family-main,$fallback-font;
     display: grid;
     grid-template-areas:
@@ -23,7 +23,7 @@
       "left central right"
       "left comment comment";
     grid-template-columns: 460px 407px 320px;
-    grid-template-rows: 78px 1fr 1fr 279px;
+    grid-template-rows: 78px 1fr 1fr 158px;
   }
 
   &__central-column {
@@ -37,6 +37,9 @@
   &__right-column {
     grid-area: right;
     width: 320px;
+  }
+  &__comment{
+    height: 133px;
   }
   &__header{
     display: flex;

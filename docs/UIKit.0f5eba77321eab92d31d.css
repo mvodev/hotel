@@ -18,7 +18,8 @@
 
 .content-container {
   max-width: 1440px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 100%; }
 
 html,
 body {
@@ -29,4 +30,4 @@ body {
   margin-top: 3px; }
 
 
-/*# sourceMappingURL=UIKit.0a85029345f6bfe71f77.css.map*/
+/*# sourceMappingURL=UIKit.0f5eba77321eab92d31d.css.map*/

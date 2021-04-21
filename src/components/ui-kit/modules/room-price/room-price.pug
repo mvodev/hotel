@@ -1,20 +1,18 @@
 include ../button/button.pug
 include ../dropdown/dropdown.pug
-mixin roomprice(options)
-  - var roomtype=options.roomType ? options.roomType : ''
-    article(class='room-price')
+mixin roomprice( {roomType = '', roomNumber, priceHeader, units='  в сутки',price,  total, discount, fee, extraFee, totalPrice, } = {} )
+    form(class='room-price')
       div(class='room-price__wrapper')
-        form(action=options.action class="room-price__form")
           div(class='room-price__room-specifications')
             div(class='room-price__number')
               span
                 span='№  '
-                span=options.roomNumber
-            div(class='room-price__type')=roomtype
+                span=roomNumber
+            div(class='room-price__type')=roomType
             div(class='room-price__price')
               span
-                span=options.priceHeader
-                span='  в сутки'
+                span=priceHeader
+                span=units
           div(class='room-price__dropdowns')
             div(class='room-price__dropdown')
               h3(class='room-price__header')='прибытие'
@@ -30,19 +28,19 @@ mixin roomprice(options)
     {text:"младенцы",counterNumber:0},
     ],withButtons:true})
           div(class='room-price__start-price')
-            div=options.price
-            div=options.total
+            div=price
+            div=total
           div(class='room-price__service-fee')
             div
-              div=options.discount
+              div=discount
               div(class='room-price__extra-info')='i'
-            div=options.fee
+            div=fee
           div(class='room-price__service-extra-fee')
             div
               h3='Сбор за дополнительные услуги'
               div(class='room-price__extra-info')='i'
-            div=options.extraFee
+            div=extraFee
           div(class='room-price__total-price')
             h3='Итого'
-            div=options.totalPrice
+            div=totalPrice
           +button({label:'забронировать',type:'arrow',purpose:'submit'})

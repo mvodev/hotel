@@ -4167,12 +4167,12 @@ table {
 .form-elements {
   background-color: white; }
   .form-elements__wrapper {
-    padding: 0px 141px;
+    padding: 65px 141px 0px 141px;
     font-family: Montserrat, Arial, sans-serif;
     display: grid;
     grid-template-areas: "header header header"  "left central right" "left central right" "left comment comment";
     grid-template-columns: 460px 407px 320px;
-    grid-template-rows: 78px 1fr 1fr 279px; }
+    grid-template-rows: 78px 1fr 1fr 158px; }
   .form-elements__central-column {
     grid-area: central;
     width: 320px; }
@@ -4182,6 +4182,8 @@ table {
   .form-elements__right-column {
     grid-area: right;
     width: 320px; }
+  .form-elements__comment {
+    height: 133px; }
   .form-elements__header {
     display: flex;
     flex-direction: row;
@@ -5169,4 +5171,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.0a85029345f6bfe71f77.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.0f5eba77321eab92d31d.css.map*/
