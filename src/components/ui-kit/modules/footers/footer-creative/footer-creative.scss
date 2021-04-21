@@ -1,3 +1,4 @@
+@import '../../social-networks/social-networks.scss';
 .footer-creative {
   max-width: 768px;
   height: 367px;
@@ -25,22 +26,6 @@
     text-align: center;
     color: $darkShade75;
     margin-top: 16px;
-  }
-  .social-links ul{
-    display: flex;
-    flex-direction: row;
-  }
-  .social-links__link {
-    text-decoration: none;
-  }
-  &__links {
-    width: 112px;
-    height: 24px;
-  }
-  &__links ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
   }
 }
 

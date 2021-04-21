@@ -1,0 +1,12 @@
+mixin social-networks({ twitter = '/mock-address/change-me',facebook = '/mock-address/change-me', instagram = '/mock-address/change-me', } = {})
+  address.social-networks
+    ul
+      li
+        a(class = 'social-networks-link',href = twitter , target="_blank", rel="noopener noreferrer") 
+          img(src="./assets/img/svg/twitter.svg", alt="twitter logo")
+      li
+        a(href=facebook ,class = 'social-networks-link',target="_blank", rel="noopener noreferrer")  
+          img(src="./assets/img/svg/facebook.svg", alt="facebook logo")
+      li
+        a(href=instagram ,class = 'social-networks-link',target="_blank", rel="noopener noreferrer") 
+          img(src="./assets/img/svg/instagram.svg", alt="instagramm logo")

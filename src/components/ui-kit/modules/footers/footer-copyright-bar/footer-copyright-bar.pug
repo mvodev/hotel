@@ -1,14 +1,6 @@
+include ../../social-networks/social-networks.pug
 .footer-copyright
   .footer-copyright__wrapper
     .footer-copyright__rights Copyright © 2018 Toxin отель. Все права зачищены.
-    address.footer__social-networks-links
-      ul
-        li
-          a(class = 'footer__social-networks-link',href='/mock-address/change-me',target="_blank", rel="noopener noreferrer") 
-            img(src="./assets/img/svg/twitter.svg", alt="twitter logo")
-        li
-          a(href='/mock-address/change-me',class = 'footer__social-networks-link',target="_blank", rel="noopener noreferrer")  
-            img(src="./assets/img/svg/facebook.svg", alt="facebook logo")
-        li
-          a(href='/mock-address/change-me',class = 'footer__social-networks-link',target="_blank", rel="noopener noreferrer") 
-            img(src="./assets/img/svg/instagram.svg", alt="instagramm logo")
+    .footer__social-networks-links
+      +social-networks()

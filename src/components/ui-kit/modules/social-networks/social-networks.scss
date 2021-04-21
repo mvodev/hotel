@@ -1,0 +1,14 @@
+
+.social-networks ul{
+ display: flex;
+ text-align: center;
+ flex-direction: row;
+ width: 112px;
+ justify-content: space-between;
+}
+.social-networks-link {
+ text-decoration: none;
+ width: 24px;
+ height: 24px;
+ color: $buttonColor;
+}
