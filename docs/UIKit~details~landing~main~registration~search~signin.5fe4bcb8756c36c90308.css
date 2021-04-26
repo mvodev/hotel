@@ -5084,16 +5084,27 @@ table {
   flex-direction: row;
   align-items: flex-end;
   max-height: 120px; }
-  .diagram-chart {
+  .diagram__chart {
     width: 120px;
     height: 120px;
     margin-right: 45px; }
-  .diagram-description {
+  .diagram .donut-chart__unit {
+    fill: none;
+    stroke-width: 4; }
+  .diagram .donut-chart__unit:nth-child(1) {
+    stroke: #FFE39C; }
+  .diagram .donut-chart__unit:nth-child(2) {
+    stroke: #6FCF97; }
+  .diagram .donut-chart__unit:nth-child(3) {
+    stroke: #BC9CFF; }
+  .diagram .donut-chart__unit:nth-child(4) {
+    stroke: #919191; }
+  .diagram__description {
     position: relative;
     width: 146px;
     height: 96px;
     margin-bottom: -3px; }
-  .diagram-description__list {
+  .diagram__description-item {
     list-style-type: none;
     position: relative;
     font-family: Montserrat, Arial, sans-serif;
@@ -5102,7 +5113,7 @@ table {
     font-size: 14px;
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75); }
-  .diagram-description__list::before {
+  .diagram__description-item::before {
     position: absolute;
     width: 10px;
     height: 10px;
@@ -5110,13 +5121,13 @@ table {
     top: 10px;
     left: -15px;
     border-radius: 50%; }
-  .diagram-description_list-orange::before {
+  .diagram__description-item_orange::before {
     background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%); }
-  .diagram-description_list-green::before {
+  .diagram__description-item_green::before {
     background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%); }
-  .diagram-description_list-blue::before {
+  .diagram__description-item_blue::before {
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
-  .diagram-description_list-black::before {
+  .diagram__description-item_black::before {
     background: linear-gradient(180deg, #919191 0%, #3D4975 100%); }
 
 .diagramchart__chart-text {
@@ -5176,4 +5187,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.857133167744999be3ae.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.5fe4bcb8756c36c90308.css.map*/

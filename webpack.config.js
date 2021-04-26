@@ -149,7 +149,15 @@ module.exports = {
    {
     test: /\.s[ac]ss$/,
     use: cssLoaders('sass-loader')
-   }
+   },
+   {
+    test: /\.tsx?$/,
+    use: 'ts-loader',
+    exclude: /node_modules/,
+   },
   ]
- }
+ },
+ resolve: {
+  extensions: ['.tsx', '.ts', '.js'],
+ },
 };

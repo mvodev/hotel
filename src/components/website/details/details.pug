@@ -10,6 +10,7 @@ block content
   include ../../ui-kit/modules/diagram/diagram.pug
   include ../../ui-kit/modules/comment/comment.pug
 
+
   body(class='details details-wrapper')
     main.details__content
       .details__room-images
@@ -30,11 +31,7 @@ block content
                 +list({type:'icons',icon:'local_fire_department',header:'Уют',text:'Номер оснащен камином'})
               .left-column__impressions  
                 h2='Впечатления от номера'
-                +diagram({number:260,label:'голосов',segments:[
-                  {class:"diagramchart__donut-segment",stroke:"#BC9CFF",dasharray:"90 282",dashoffset:"98"},
-                  {class:"diagramchart__donut-segment",stroke:"#6FCF97",dasharray:"90 282",dashoffset:"0"},
-                  {class:"diagramchart__donut-segment-delimeter",stroke:"#fff",dasharray:"4 372",dashoffset:"102"},{class:"diagramchart__donut-segment-delimeter",stroke:"#fff",dasharray:"4 372", dashoffset:"0"},{class:"diagramchart__donut-segment-delimeter",stroke:"#fff",dasharray:"4 372",dashoffset:"290"}
-                  ]})
+                +diagram()
           article.left-column__comments
             h2='Отзывы посетителей номера'
             .details-comment.details-comment_first

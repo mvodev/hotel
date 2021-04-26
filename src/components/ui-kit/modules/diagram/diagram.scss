@@ -3,18 +3,39 @@
   flex-direction: row;
   align-items: flex-end;
   max-height: 120px;
-  &-chart{
+  &__chart{
     width: 120px;
     height: 120px;
     margin-right: 45px;
   }
-  &-description{
+  .donut-chart__unit{
+    fill: none;
+    stroke-width: 4;
+  }
+  .donut-chart__unit:nth-child(1) {
+    stroke:  #FFE39C;
+  }
+  .donut-chart__unit:nth-child(2) {
+    stroke: #6FCF97;
+    // stroke-dasharray: 91 1000;
+    // stroke-dashoffset: -273;
+  }
+  .donut-chart__unit:nth-child(3) {
+    stroke: #BC9CFF;
+    //stroke-dasharray: 91 1000;
+  }
+  .donut-chart__unit:nth-child(4) {
+    stroke: #919191;
+    // stroke-dasharray: 60 364;
+    // stroke-dashoffset: -302;
+  }
+  &__description{
     position: relative;
     width: 146px;
     height: 96px;
     margin-bottom: -3px;
   }
-  &-description__list{
+  &__description-item{
     list-style-type: none;
     position: relative;
     font-family: $font-family-main,$fallback-font;
@@ -24,7 +45,7 @@
     line-height: 24px;
     color: $darkShade75;
   }
-  &-description__list::before{
+  &__description-item::before{
     position: absolute;
     width: 10px;
     height: 10px;
@@ -33,16 +54,16 @@
     left: -15px;
     border-radius: 50%;
   }
-  &-description_list-orange::before{
+  &__description-item_orange::before{
     background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
   }
-  &-description_list-green::before{
+  &__description-item_green::before{
     background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
   }
-  &-description_list-blue::before{
+  &__description-item_blue::before{
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   }
-  &-description_list-black::before{
+  &__description-item_black::before{
     background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
   }
 }
