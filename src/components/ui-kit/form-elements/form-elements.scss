@@ -10,11 +10,10 @@
 @import './form-elements-left-column.scss';
 @import './form-elements-central-column.scss';
 @import './form-elements-right-column.scss';
-@import './form-elements-comment.scss';
 .form-elements{
   background-color: white;
   &__wrapper{
-    padding: 65px 141px 0px 141px;
+    padding: 25px 141px 0px 141px;
     font-family: $font-family-main,$fallback-font;
     display: grid;
     grid-template-areas:
@@ -22,24 +21,25 @@
       "left central right"
       "left central right"
       "left comment comment";
-    grid-template-columns: 460px 407px 320px;
+    grid-template-columns: 320px 446px 320px;
     grid-template-rows: 78px 1fr 1fr 158px;
   }
 
   &__central-column {
     grid-area: central;
-    width: 320px;
+    padding-left: 126px;
   }
   &__left-column {
     grid-area: left;
-    width: 320px;
   }
   &__right-column {
     grid-area: right;
-    width: 320px;
+    padding-left: 72px;
   }
   &__comment{
-    height: 133px;
+    grid-area: comment;
+    padding-left: 125px;
+    padding-top: 8px;
   }
   &__header{
     display: flex;
