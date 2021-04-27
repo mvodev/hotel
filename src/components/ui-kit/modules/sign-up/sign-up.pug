@@ -2,25 +2,25 @@ include ../button/button.pug
 include ../text-field/text-field.pug
 include ../toggle/toggle.pug
 mixin signup(options)
- form(class='sign-up' action=options.action)
-  div(class='sign-up__wrapper')
-    h2(class="sign-up__header sign-up__header-reg")='Регистрация аккаунта'
-    .sign-up__text-wrapper
-     +textfield({isDefault:true,placeholder:'Имя'})
-     +textfield({isDefault:true,placeholder:'Фамилия'})
-    div(class='sign-up__radio-button-wrapper')
-     .sign-up__radio-button-wrapper_first-button
-      +button({type:'radio',label:'Мужчина',isChecked:true,id:'sign-male'})
-     +button({type:'radio',label:'Женщина',id:'sign-female'})
-    h3(class="sign-up__header sign-up__header-birthday")='Дата рождения'
-    +textfield({isMasked:true,placeholder:'ДД.ММ.ГГГГ'})
-    h3(class="sign-up__header sign-up__header-data")='Данные для входа в сервис'
-    .sign-up__text-wrapper
-     +textfield({isDefault:true,placeholder:'Email',type:"email"})
-     +textfield({isDefault:true,placeholder:'Пароль',type:'password'})
-    .sign-up__toogle
-     +toggle({labels:[{name:'Получать спецпредложения',  isPositive:false}]})
-    +button({label:'ПЕРЕЙТИ К ОПЛАТЕ',type:'arrow',purpose:'submit'})
-    footer(class='sign-up__footer')
-     span(class='sign-up__account')='Уже есть аккаунт на Toxin'
-     +button({label:'Войти',type:'white',purpose:'submit'})
+  form(class='sign-up' action=options.action)
+    div(class='sign-up__wrapper')
+      h2(class="sign-up__header sign-up__header-reg")='Регистрация аккаунта'
+      .sign-up__text-wrapper
+        +textfield({isDefault:true,placeholder:'Имя'})
+        +textfield({isDefault:true,placeholder:'Фамилия'})
+      div(class='sign-up__radio-button-wrapper')
+        .sign-up__radio-button-wrapper_first-button
+          +button({type:'radio',label:'Мужчина',isChecked:true,id:'sign-male'})
+        +button({type:'radio',label:'Женщина',id:'sign-female'})
+      h3(class="sign-up__header sign-up__header-birthday")='Дата рождения'
+      +textfield({isMasked:true,placeholder:'ДД.ММ.ГГГГ'})
+      h3(class="sign-up__header sign-up__header-data")='Данные для входа в сервис'
+      .sign-up__text-wrapper
+        +textfield({isDefault:true,placeholder:'Email',type:"email"})
+        +textfield({isDefault:true,placeholder:'Пароль',type:'password'})
+      .sign-up__toggle
+        +toggle({labels:[{name:'Получать спецпредложения',  isPositive:false}]})
+      +button({label:'ПЕРЕЙТИ К ОПЛАТЕ',type:'arrow',purpose:'submit'})
+      footer(class='sign-up__footer')
+        span(class='sign-up__account')='Уже есть аккаунт на Toxin'
+        +button({label:'Войти',type:'white',purpose:'submit'})

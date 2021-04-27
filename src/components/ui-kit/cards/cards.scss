@@ -3,27 +3,23 @@
 @import './cards-right-column.scss';
 .cards__wrapper{
   width: 1440px;
-  height: 1350px;
   background-color: white;
   display: grid;
   grid-template-areas:
     "header header header"
     "left central right";
   grid-template-columns: 520px 420px 360px;
-  grid-template-rows: 78px 1fr;
+  grid-template-rows: 158px 1fr;
   .header{
     grid-area: header;
   }
   .cards__left-column{
     grid-area: left;
-    margin-top: 72px;
   }
   .cards__central-column{
     grid-area: central;
-    margin-top: 72px;
   }
   .cards__right-column{
     grid-area: right;
-    margin-top: 72px;
   }
 }

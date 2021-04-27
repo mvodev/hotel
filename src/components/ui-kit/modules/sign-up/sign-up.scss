@@ -19,8 +19,8 @@
   &__header{
     color: $darkShade100;
     font-style: normal;
-    font-weight: bold;
-    font-family: $font-family-additionalRussianReplacer,$fallback-font;
+    font-weight: 700;
+    font-family: $font-family-main,$fallback-font;
   }
   &__header-reg{
     font-size: 24px;
@@ -41,7 +41,6 @@
   &__radio-button-wrapper{
     display: flex;
     flex-direction: row;
-    margin-bottom: 20px;  
   }
   &__radio-button-wrapper_first-button{
     margin-right: 20px;

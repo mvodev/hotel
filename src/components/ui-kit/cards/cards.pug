@@ -10,7 +10,8 @@ include ../header-ui-kit/header-ui-kit.pug
   +searchnumber({action:'/mock-address/change-me'})
   +signup({action:'/mock-address/change-me'})
  .cards__central-column
-  +roomprice({roomNumber:888,priceHeader:'9 990₽',roomType:'люкс',commentNumber:145,price:'9 990₽ х 4 суток',total:'39 960₽',discount:'Сбор за услуги: скидка 2 179₽',fee:'0₽',extraFee:'300₽',totalPrice:'38 081₽',action:'#'})
+  .cards__central-column_room-price
+   +roomprice({roomNumber:888,priceHeader:'9 990₽',roomType:'люкс',commentNumber:145,price:'9 990₽ х 4 суток',total:'39 960₽',discount:'Сбор за услуги: скидка 2 179₽',fee:'0₽',extraFee:'300₽',totalPrice:'38 081₽',action:'#'})
   +signin({action:'/mock-address/change-me'})
  .cards__right-column
   div(class='js-cards__datepicker cards__datepicker')
