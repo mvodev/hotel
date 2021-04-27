@@ -1,5 +1,5 @@
 include ../button/button.pug
-mixin roomcard( { imgSource = '',roomType = '', roomNumber = 0, price = 0, units = '  в сутки', commentNumber = 0, rate = 1, }={} )
+mixin roomcard( { imgSource = '',roomType = '', roomNumber = 0, price = 0, units = '  в сутки', commentNumber = 0, rate = 1, commentLabel=' Отзывов',}={} )
     article(class='room-card')
       .room-card__wrapper
         div(class='room-card__img')
@@ -24,7 +24,7 @@ mixin roomcard( { imgSource = '',roomType = '', roomNumber = 0, price = 0, units
         div(class='room-card__delimeter')
         div.room-card__bottom-line
           div(class='room-card__rate')
-          +button({type:'rate',darkStar:rate})
+            +button({type:'rate',darkStar:rate})
           div(class='room-card__comment')
             span=commentNumber
-            span=' Отзывов'
+            span=commentLabel
