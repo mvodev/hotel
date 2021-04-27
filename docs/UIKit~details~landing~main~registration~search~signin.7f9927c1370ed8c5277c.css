@@ -5087,18 +5087,30 @@ table {
   .diagram__chart {
     width: 120px;
     height: 120px;
-    margin-right: 45px; }
-  .diagram .donut-chart__unit {
-    fill: none;
-    stroke-width: 4; }
-  .diagram .donut-chart__unit:nth-child(1) {
-    stroke: #FFE39C; }
-  .diagram .donut-chart__unit:nth-child(2) {
-    stroke: #6FCF97; }
-  .diagram .donut-chart__unit:nth-child(3) {
-    stroke: #BC9CFF; }
-  .diagram .donut-chart__unit:nth-child(4) {
-    stroke: #919191; }
+    margin-right: 45px;
+    position: relative; }
+  .diagram-donut {
+    width: 120px;
+    height: 120px; }
+  .diagram .labels-diargam {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat, Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    color: #BC9CFF; }
+  .diagram .labels-diargam__number {
+    font-size: 24px;
+    line-height: 29px; }
+  .diagram .labels-diargam__label {
+    font-size: 12px;
+    line-height: 15px; }
   .diagram__description {
     position: relative;
     width: 146px;
@@ -5187,4 +5199,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.5fe4bcb8756c36c90308.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.7f9927c1370ed8c5277c.css.map*/
