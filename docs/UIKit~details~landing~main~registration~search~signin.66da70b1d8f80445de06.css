@@ -1352,7 +1352,7 @@ table {
     text-transform: uppercase;
     color: #1f2041;
     margin: 0px 0px 18px 0px; }
-  .footer-widget .subscribe-footer__form.text-field_subscription {
+  .footer-widget .subscribe-footer__form {
     width: 260px; }
 
 @media (max-width: 1130px) {
@@ -1398,17 +1398,17 @@ table {
 .search-number__header {
   font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   color: #1f2041;
-  margin-bottom: 21px; }
+  margin-bottom: 22px; }
 
 .search-number__dropdown-header {
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
-  margin-bottom: 6px; }
+  margin-bottom: 5px; }
 
 .search-number__dropdowns {
   display: flex;
@@ -2689,7 +2689,7 @@ table {
     text-transform: uppercase;
     color: #1f2041;
     margin: 0px 0px 18px 0px; }
-  .footer-widget .subscribe-footer__form.text-field_subscription {
+  .footer-widget .subscribe-footer__form {
     width: 260px; }
 
 @media (max-width: 1130px) {
@@ -4289,17 +4289,17 @@ table {
 .search-number__header {
   font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   color: #1f2041;
-  margin-bottom: 21px; }
+  margin-bottom: 22px; }
 
 .search-number__dropdown-header {
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
-  margin-bottom: 6px; }
+  margin-bottom: 5px; }
 
 .search-number__dropdowns {
   display: flex;
@@ -5205,4 +5205,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.9a981b35d796fc318380.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.66da70b1d8f80445de06.css.map*/
