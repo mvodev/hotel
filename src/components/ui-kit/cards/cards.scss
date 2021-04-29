@@ -3,6 +3,7 @@
 @import './cards-right-column.scss';
 .cards__wrapper{
   width: 1440px;
+  padding-bottom: 140px;
   background-color: white;
   display: grid;
   grid-template-areas:

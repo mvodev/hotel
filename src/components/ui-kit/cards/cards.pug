@@ -7,7 +7,8 @@ include ../header-ui-kit/header-ui-kit.pug
 .cards__wrapper
  +header
  .cards__left-column
-  +searchnumber({action:'/mock-address/change-me'})
+  .cards__left-column_search
+   +searchnumber({action:'/mock-address/change-me'})
   +signup({action:'/mock-address/change-me'})
  .cards__central-column
   .cards__central-column_room-price

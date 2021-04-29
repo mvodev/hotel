@@ -4316,7 +4316,7 @@ table {
 
 .cards__left-column {
   padding-left: 140px; }
-  .cards__left-column .search-number {
+  .cards__left-column_search {
     margin-bottom: 40px; }
 
 .sign-in__wrapper {
@@ -4646,6 +4646,7 @@ table {
 
 .cards__wrapper {
   width: 1440px;
+  padding-bottom: 140px;
   background-color: white;
   display: grid;
   grid-template-areas: "header header header" "left central right";
@@ -5208,4 +5209,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.3d9adbc7b3b34d9c46fa.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.2c80eba634229f4dbc40.css.map*/
