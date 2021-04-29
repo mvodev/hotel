@@ -33,7 +33,9 @@ block content
                 h2='Впечатления от номера'
                 +diagram({number:260,label:'голосов'})
           article.left-column__comments
-            h2='Отзывы посетителей номера'
+            h2.left-column__comments-header
+              span.left-column__comments-header_main='Отзывы посетителей номера'
+              span.left-column__comments-header_number='2 отзыва'
             .details-comment.details-comment_first
               +comment({headerName:'Мурад Сарафанов',headerTime:'5 дней назад',imgSource:'./assets/img/png/muradik.png',likeNumber:12,isLiked:true,text:'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})
             .details-comment.details-comment_second

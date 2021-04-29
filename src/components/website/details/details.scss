@@ -47,7 +47,7 @@
     color: $darkShade100;
   }
   &__body{
-    margin: 70px auto 60px auto;
+    margin: 65px auto 63px auto;
     max-width: $container-width - 280px;
     display: flex;
     flex-direction: row;
@@ -75,7 +75,7 @@
     margin-bottom: 21px;
   }
   .left-column__content{
-    margin-right: 80px;
+    margin-right: 82px;
   }
   .left-column__content .bullet-list-icons{
     margin-bottom: 20px;
@@ -84,14 +84,21 @@
     margin-bottom: 12px;
     border: none;
   }
-  .left-column__comments h2{
+  .left-column__comments-header{
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .left-column__comments-header_number{
+    font-weight: 400;
+    font-size: 14px;
   }
   .details-comment_first{
     margin-bottom: 20px;
   }
   .details-comment_second{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
   .left-column__rules{
     display: flex;

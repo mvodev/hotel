@@ -5109,13 +5109,12 @@ table {
     justify-content: center;
     font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     color: #BC9CFF; }
   .diagram .labels-diargam__number {
-    font-size: 24px;
-    line-height: 29px; }
+    font-size: 24px; }
   .diagram .labels-diargam__label {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 15px; }
   .diagram__description {
     position: relative;
@@ -5205,4 +5204,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.66da70b1d8f80445de06.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.6e7eb35bd8fcff3ea79c.css.map*/
