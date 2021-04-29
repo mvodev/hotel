@@ -1283,8 +1283,7 @@ table {
     margin-top: -3px; }
   .footer-widget__logo p {
     width: 260px;
-    height: 72px;
-    margin-top: 18px;
+    margin-top: 14px;
     display: block;
     font-size: 14px;
     line-height: 24px;
@@ -1333,12 +1332,11 @@ table {
   .footer-widget__subscribe {
     display: flex;
     flex-direction: column;
-    width: 260px;
-    margin-top: 4px; }
+    width: 260px; }
   .footer-widget .subscribe-footer__text-container {
     width: 260px;
     height: 84px;
-    margin-bottom: 17px; }
+    margin-bottom: 20px; }
   .footer-widget .subscribe-footer__proposal {
     font-size: 14px;
     line-height: 24px;
@@ -1353,7 +1351,7 @@ table {
     line-height: 15px;
     text-transform: uppercase;
     color: #1f2041;
-    margin: 0px 0px 16px 0px; }
+    margin: 0px 0px 18px 0px; }
   .footer-widget .subscribe-footer__form.text-field_subscription {
     width: 260px; }
 
@@ -2622,8 +2620,7 @@ table {
     margin-top: -3px; }
   .footer-widget__logo p {
     width: 260px;
-    height: 72px;
-    margin-top: 18px;
+    margin-top: 14px;
     display: block;
     font-size: 14px;
     line-height: 24px;
@@ -2672,12 +2669,11 @@ table {
   .footer-widget__subscribe {
     display: flex;
     flex-direction: column;
-    width: 260px;
-    margin-top: 4px; }
+    width: 260px; }
   .footer-widget .subscribe-footer__text-container {
     width: 260px;
     height: 84px;
-    margin-bottom: 17px; }
+    margin-bottom: 20px; }
   .footer-widget .subscribe-footer__proposal {
     font-size: 14px;
     line-height: 24px;
@@ -2692,7 +2688,7 @@ table {
     line-height: 15px;
     text-transform: uppercase;
     color: #1f2041;
-    margin: 0px 0px 16px 0px; }
+    margin: 0px 0px 18px 0px; }
   .footer-widget .subscribe-footer__form.text-field_subscription {
     width: 260px; }
 
@@ -4332,7 +4328,7 @@ table {
   padding-top: 40px; }
 
 .sign-in__header {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: Montserrat, Arial, sans-serif;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
@@ -4674,7 +4670,7 @@ table {
   padding-top: 40px; }
 
 .sign-in__header {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: Montserrat, Arial, sans-serif;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
@@ -5209,4 +5205,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.2c80eba634229f4dbc40.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.9a981b35d796fc318380.css.map*/

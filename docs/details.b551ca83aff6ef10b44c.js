@@ -148,7 +148,7 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./components/website/details/details.js","vendors~UIKit~details~landing~main~registration~search~signin","vendors~UIKit~details~landing~registration~search~signin","vendors~UIKit~details~landing~registration","vendors~details","UIKit~details~landing~main~registration~search~signin","UIKit~details~landing~search"]);
+/******/ 	deferredModules.push(["./components/website/details/details.js","vendors~UIKit~details~landing~main~registration~search~signin","vendors~UIKit~details~landing~registration~search~signin","vendors~UIKit~details~landing~registration","UIKit~details~landing~main~registration~search~signin","UIKit~details~landing~search"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
@@ -333,10 +333,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ui_kit_modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../ui-kit/modules/burger/burger.js */ "./components/ui-kit/modules/burger/burger.js");
 /* harmony import */ var _ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _node_modules_chart_js_dist_chart_min_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../node_modules/chart.js/dist/chart.min.js */ "../node_modules/chart.js/dist/chart.min.js");
-/* harmony import */ var _node_modules_chart_js_dist_chart_min_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_node_modules_chart_js_dist_chart_min_js__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _ui_kit_modules_diagram_diagram_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../ui-kit/modules/diagram/diagram.js */ "./components/ui-kit/modules/diagram/diagram.js");
-
+/* harmony import */ var _ui_kit_modules_diagram_diagram_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../ui-kit/modules/diagram/diagram.js */ "./components/ui-kit/modules/diagram/diagram.js");
 
 
 
@@ -364,4 +361,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 /******/ });
-//# sourceMappingURL=details.a0b5c4114dd1274bffc1.js.map
+//# sourceMappingURL=details.b551ca83aff6ef10b44c.js.map
