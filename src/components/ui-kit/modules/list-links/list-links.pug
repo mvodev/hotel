@@ -1,0 +1,7 @@
+mixin list-links({ links = [], } = {})
+  ul.list-links
+    each link in links
+      li.list-links__link(class=link.isExpandable ? 'list-links__link_is-expandable' : '')
+        a.list-links__ref(href=link.href class=link.isActive ? 'list-links__ref_active' : '')=link.text
+        if link.isExpandable
+          .list-links__arrow='keyboard_arrow_down'

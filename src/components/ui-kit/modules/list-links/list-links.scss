@@ -1,0 +1,44 @@
+@import '../../../../styles/common/constants.scss';
+.list-links{
+ display: flex;
+
+ &__arrow {
+   width: 24px;
+   height: 21px;
+   font-family: $font-for-icons;
+   font-size: 24px;
+   line-height: 20px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+   color:$darkShade50;
+   cursor: pointer;
+ }
+ &__link{
+  color: $darkShade50;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  font-family: $font-family-main,$fallback-font;
+  margin-right: 20px;
+  cursor: pointer;
+ }
+ &__ref_active{
+  font-weight: bold;
+  color: $darkShade75;
+ }
+ &__link_is-expandable{
+  display: flex;
+ }
+}
+@media (max-width:$container-mobile-width){
+  .list-links{
+   flex-direction: column;
+   justify-content: center;
+   &__link{
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  }
+}

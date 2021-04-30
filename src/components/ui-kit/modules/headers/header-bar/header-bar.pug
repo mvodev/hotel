@@ -1,0 +1,19 @@
+include ../../burger/burger.pug
+include ../../button/button.pug
+include ../../list-links/list-links.pug
+include ../../logo/logo-toxin.pug
+mixin header-bar( {type='nav',links=[],signInButtonText = 'Войти',registerButtonText = 'Зарегистрироваться',signInRef = 'sign-in-page.html',registerRef = 'registration.html',userName='Юлий Цезарь',userRef = '/mock-address/change-me'} = {})
+ .header-bar
+  .header-bar__wrapper
+   .header-bar__logo
+    +logo()
+   +burger
+   nav.header-bar__nav.js-header-nav
+     +list-links({links})
+     if type==='nav'
+      .header-bar__nav_first
+       +button({label:signInButtonText,type:'white',ref:signInRef})
+      +button({label:registerButtonText,type:'dark', wide:true,ref:registerRef})
+     else if type==='login'
+      .header-bar__delimeter
+      a(href=userRef class='header-bar__user')=userName 

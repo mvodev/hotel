@@ -26,7 +26,6 @@
   }
   .left-column__dropdown-filter{
     width: 266px;
-    margin-bottom: 20.44px;
   }
   .left-column__header{
     font-weight: bold;
@@ -40,8 +39,7 @@
     margin-top: 20px;
   }
   .range-slider__wrapper{
-    margin-bottom: 2px;
-    margin-top: 30px;
+    margin-bottom: 5px;
   }
 
   .left-column__header_price{
@@ -57,7 +55,7 @@
     margin-bottom: 16px;
   }
   .left-column__button-check{
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
   .left-column__button-rich_first{
     margin-bottom: 10px;
@@ -67,14 +65,16 @@
   }
   .left-column__dropdown-room,
   .left-column__dropdown-guests{
-    margin-bottom: 30px;
     width: 266px;
   }
-  .right-column{
-    grid-area: right;
+  .left-column__dropdown-guests{
+    margin-bottom: 27px;
   }
-  .bullet-list-expandable{
-    margin-top: 15px;
+  .left-column__dropdown-room{
+    margin-bottom: 15px;
+  }
+  &__right-column{
+    grid-area: right;
   }
   .right-column__rooms{
     display: grid;
@@ -89,9 +89,9 @@
     justify-content: center;
   }
   .right-column__header{
-    font-family: $font-family-main;
+    font-family: $font-family-main,$fallback-font;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 24px;
     line-height: 30px;
     color: $darkShade100;

@@ -1,5 +1,6 @@
-mixin header( { type = 'nav',} = {})
- if type==='nav'
-  include ./standard-nav-bar/standard-nav-bar.pug 
- else if type==='login'
-  include ./standard-logged-in-nav-bar/standard-logged-in-nav-bar.pug 
+include ./header-bar/header-bar.pug 
+mixin header({ type = 'nav',links= [],} = {})
+  if type==='nav'
+   +header-bar({ type:'nav',links:links}) 
+  else if type==='login'
+   +header-bar({ type:'login',links:links}) 

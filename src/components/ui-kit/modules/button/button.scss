@@ -1,17 +1,20 @@
 @import './button-radio/button-radio.scss';
 .button{
-	width: 99px;
-	height: 44px;
-	border-radius: 22px;
-	border: none;
-	cursor: pointer;
-	font-family: $font-family-main,$fallback-font;
-	white-space: nowrap;
-	font-style: normal;
-
+		width: 99px;
+		height: 44px;
+		border-radius: 22px;
+		border: none;
+		cursor: pointer;
+		font-family: $font-family-main,$fallback-font;
+		white-space: nowrap;
+		font-style: normal;
+		text-decoration: none;
+	&_wide{
+		width: 196px;
+	}
 	&-dark{
- background: $buttonColor;
-	text-transform: uppercase;
+		background: $buttonColor;
+		text-transform: uppercase;
 	}
 	&-dark50{
 		background: $buttonColor;
@@ -19,18 +22,19 @@
 		opacity: 0.5;
 	}
 
-	&-dark span,
-	&-dark50 span{
+	&-dark a,
+	&-dark50 a{
 		font-weight: bold;
 		font-size: 12px;
 		line-height: 15px;
 		text-transform: uppercase;
 		color: $white;
+		text-decoration: none;
 	}
 
 	&-white{
-	background: none;
-	border:2px solid $purple;
+		background: none;
+		border:2px solid $purple;
 	}
 
 	&-white50{
@@ -38,15 +42,16 @@
 		border:2px solid rgba($color: $purple, $alpha: 0.5);
 	}
 
-	&-white span,
-	&-white50 span,
-	&-transparent span{
-	font-weight: bold;
-	font-size: 12px;
-	line-height: 15px;
-	text-transform: uppercase;
-	color:$purple;
-	white-space: nowrap;
+	&-white a,
+	&-white50 a,
+	&-transparent a{
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 15px;
+		text-transform: uppercase;
+		color:$purple;
+		white-space: nowrap;
+		text-decoration: none;
 	}
 
 	&-transparent,
@@ -58,34 +63,36 @@
 		padding: 0px;
 	}
 
-	&-transparent50 span{
+	&-transparent50 a{
 		font-weight: bold;
 		font-size: 12px;
 		line-height: 15px;
 		text-transform: uppercase;
 		color: $darkShade50;
+		text-decoration: none;
 	}
 }
 
 .button-with-arrow{
-	width: 320px;
-	height: 44px;
-	padding: 0px;
-	background: $buttonColor;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: right;
-		& span{
-		font-weight: bold;
-		font-size: 12px;
-		line-height: 15px;
-		text-align: center;
-		text-transform: uppercase;
-		color: $white;
-		margin-left: auto;
-		margin-right: auto;
-		padding-left: 44px;
+		width: 320px;
+		height: 44px;
+		padding: 0px;
+		background: $buttonColor;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: right;
+		& a{
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 12px;
+			line-height: 15px;
+			text-align: center;
+			text-transform: uppercase;
+			color: $white;
+			margin-left: auto;
+			margin-right: auto;
+			padding-left: 44px;
 	}
 		
 		&__arr{

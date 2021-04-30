@@ -22,8 +22,7 @@
   flex-direction: column; }
 
 .search .left-column__dropdown-filter {
-  width: 266px;
-  margin-bottom: 20.44px; }
+  width: 266px; }
 
 .search .left-column__header {
   font-weight: bold;
@@ -37,8 +36,7 @@
   margin-top: 20px; }
 
 .search .range-slider__wrapper {
-  margin-bottom: 2px;
-  margin-top: 30px; }
+  margin-bottom: 5px; }
 
 .search .left-column__header_price {
   font-size: 12px;
@@ -53,7 +51,7 @@
   margin-bottom: 16px; }
 
 .search .left-column__button-check {
-  margin-bottom: 20px; }
+  margin-bottom: 18px; }
 
 .search .left-column__button-rich_first {
   margin-bottom: 10px; }
@@ -63,14 +61,16 @@
 
 .search .left-column__dropdown-room,
 .search .left-column__dropdown-guests {
-  margin-bottom: 30px;
   width: 266px; }
 
-.search .right-column {
-  grid-area: right; }
+.search .left-column__dropdown-guests {
+  margin-bottom: 27px; }
 
-.search .bullet-list-expandable {
-  margin-top: 15px; }
+.search .left-column__dropdown-room {
+  margin-bottom: 15px; }
+
+.search__right-column {
+  grid-area: right; }
 
 .search .right-column__rooms {
   display: grid;
@@ -85,9 +85,9 @@
   justify-content: center; }
 
 .search .right-column__header {
-  font-family: Montserrat;
+  font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   color: #1f2041;
@@ -112,4 +112,4 @@
     margin: 10px auto 0px auto; } }
 
 
-/*# sourceMappingURL=search.6e7eb35bd8fcff3ea79c.css.map*/
+/*# sourceMappingURL=search.ab1c2b3c05d363a9ef61.css.map*/

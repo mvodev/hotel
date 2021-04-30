@@ -1,7 +1,7 @@
 include ./button-radio/button-radio.pug
-mixin button( { darkStar = 1, lightStar, type = '', isChecked = false, isLiked = false, purpose = 'button', label = '', header = '', likeNumber = 0, text = '', labels = [], id, } = {})
+mixin button( { darkStar = 1, lightStar, type = '', isChecked = false, isLiked = false, purpose = 'button', label = '', header = '', likeNumber = 0, text = '', labels = [], id, ref='/mock-address/change-me', wide=false,} = {})
  - var buttonClassName='button'
- -var lightStar = 5 - darkStar
+ - var lightStar = 5 - darkStar
  - var isChecked=isChecked===true ? 'checked' : ''
  - buttonClassName+=type==='arrow' ? ' button-with-arrow' : ''
  - buttonClassName+=type==='dark' ? ' button-dark' : ''
@@ -18,7 +18,7 @@ mixin button( { darkStar = 1, lightStar, type = '', isChecked = false, isLiked =
  - buttonClassName+=type==='radio' ? ' button-radio' : ''
    if type=='arrow'
     button(class=buttonClassName type=purpose)
-      span=label
+      a(href=ref)=label
       div(class='button-with-arrow__arr')='arrow_forward'
    else if type=='rate'
     div(class=buttonClassName)
@@ -60,5 +60,5 @@ mixin button( { darkStar = 1, lightStar, type = '', isChecked = false, isLiked =
    else if type=='radio'
     +button-radio({ label: label, isChecked: isChecked ,id:id})
    else
-    button(class=buttonClassName type=purpose)
-      span=label
+    button(class=wide ? buttonClassName+' button_wide':buttonClassName  type=purpose)
+      a(href=ref)=label
