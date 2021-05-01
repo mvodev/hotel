@@ -28,6 +28,24 @@
   font-weight: bold;
   color: $darkShade75;
  }
+ &_vertical{
+     flex-direction: column;
+  
+     .list-links__ref_active{
+      text-transform: uppercase;
+      margin-bottom: 21px;
+      color: $darkShade100;
+      font-size: 12px;
+     }
+     .list-links__link{
+      margin-right: 0px;
+      margin-bottom: 20px;
+      font-size: 12px;
+     } 
+     .list-links__link:last-child{
+      margin-bottom: 0px;
+     }
+ }
  &__link_is-expandable{
   display: flex;
  }

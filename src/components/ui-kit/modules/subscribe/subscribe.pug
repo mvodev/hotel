@@ -1,0 +1,8 @@
+include ../text-field/text-field.pug
+mixin subscribe( {header='Подписка',proposal='Получайте специальные предложения и новости сервиса',placeholder='Email'}={})
+ .subscribe
+  .subscribe__text-container
+   h3.subscribe__header=header
+   p.subscribe__proposal=proposal 
+  .subscribe__form
+      +textfield({isSubscription:true,placeholder:placeholder,type:"email"})

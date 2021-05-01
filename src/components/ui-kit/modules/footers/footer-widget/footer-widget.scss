@@ -1,8 +1,9 @@
+@import '../../subscribe/subscribe.scss';
 .footer-widget {
   max-width: $container-width;
   font-family: $font-family-main,$fallback-font;
   height: 372px;
-  border-top: 1px solid $grey;
+  border-top: 1px solid $darkShade25;
   background: $white;
   box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
   -webkit-box-sizing: border-box;
@@ -28,92 +29,22 @@
   }
   &__logo p {
     width: 260px;
-    margin-top: 14px;
+    margin-top: 15px;
     display: block;
     font-size: 14px;
     line-height: 24px;
     color: $darkShade75;
   }
-  &__links {
+  &__links{
+    max-width: 549px;
+    margin-right: 10px;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    width: 560px;
-    height: 168px;
-  }
-  &__links ul li a{
-    font-size: 14px;
-    line-height: 17px;
-    text-decoration: none;
-    color: $darkShade50;
-  }
-  .nav-links__navigation,
-  .nav-links__about-us,
-  .nav-links__support{
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
   }
-  .nav-links__navigation {
-    width: 143px;
-    margin-right: 57px;
-  }
-
-  .nav-links__about-us li a {
-    display: block;
-    white-space: nowrap;
-  }
-  .nav-links__about-us {
-    width: 108px;
-    flex-wrap: nowrap;
-    margin-right: 92px;
-  }
-  .nav-links__about-us li:first-child a,
-  .nav-links__navigation li:first-child a,
-  .nav-links__support li:first-child a,
-  .subscribe-footer__subscription{
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: $darkShade100;
-  }
-  .nav-links__support ul li a {
-    display: block;
-    white-space: nowrap;
-  }
-  .nav-links__support {
-    width: 149px;
-    height: 130px;
-  }
-  &__subscribe {
-    display: flex;
-    flex-direction: column;
-    width: 260px;
-  }
-  .subscribe-footer__text-container{
-    width: 260px;
-    height: 84px;
-    margin-bottom: 20px;
-  }
-  .subscribe-footer__proposal {
-    font-size: 14px;
-    line-height: 24px;
-    color: $darkShade75;
-  }
-  .subscribe-footer__subscription {
-    height: 15px;
-    width: 208px;
-    display: block;
-    white-space: nowrap;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: $darkShade100;
-    margin: 0px 0px 18px 0px;
-  }
-  .subscribe-footer__form{
-    width: 260px;
+  &__links .list-links:nth-child(2){
+    margin-right: 30px;
   }
 }
 

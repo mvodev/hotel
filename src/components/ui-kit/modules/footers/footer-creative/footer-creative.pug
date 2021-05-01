@@ -1,8 +1,9 @@
 include ../../logo/logo-toxin.pug
 include ../../social-networks/social-networks.pug
-.footer-creative
-  .footer-creative__logo
-    +logo()
-    p='Copyright © 2018 Toxin отель. Все права зачищены.'
-  .footer-creative__links
-    +social-networks()
+mixin footer-creative( {copyrightText='Copyright © 2018 Toxin отель. Все права зачищены.'}={})
+  footer.footer-creative
+    .footer-creative__logo
+      +logo()
+      p=copyrightText
+    .footer-creative__links
+      +social-networks()

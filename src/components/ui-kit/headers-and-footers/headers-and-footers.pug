@@ -1,4 +1,5 @@
 include ../modules/headers/header.pug
+include ../modules/footers/footer.pug
 .headers-and-footers__login
  +header({ type:'nav',links:[
       { text: 'О нас' ,isActive: true },
@@ -14,9 +15,9 @@ include ../modules/headers/header.pug
       { text: 'Новости' },
       { text: 'Соглашения', isExpandable: true },]})
 .headers-and-footers__footer-nav
- include ../modules/footers/footer-widget/footer-widget.pug
+ +footer({type:'widget'})
 .headers-and-footers__footer-copy
- include ../modules/footers/footer-copyright-bar/footer-copyright-bar.pug
+ +footer({type:'copyright'})
 .headers-and-footers__footer-logo
- include ../modules/footers/footer-creative/footer-creative.pug
+ +footer({type:'creative'})
 
