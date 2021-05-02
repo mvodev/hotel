@@ -4733,7 +4733,8 @@ table {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  max-height: 120px; }
+  height: 120px;
+  width: 311px; }
   .diagram__chart {
     width: 120px;
     height: 120px;
@@ -4761,10 +4762,11 @@ table {
     font-size: 14px;
     line-height: 15px; }
   .diagram__description {
-    position: relative;
+    position: absolute;
     width: 146px;
     height: 96px;
-    margin-bottom: -3px; }
+    top: 24px;
+    left: 165px; }
   .diagram__description-item {
     list-style-type: none;
     position: relative;
@@ -4848,4 +4850,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.95c04a0a7573857477ee.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.e444b613b3a1bbcad84c.css.map*/

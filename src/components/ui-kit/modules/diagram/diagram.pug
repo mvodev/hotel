@@ -1,14 +1,14 @@
 include diagram-chart.pug
 mixin diagram(options)
-  .diagram
+  section.diagram
     figure.diagram__chart
       +diagram-chart(options)
-      .diagram__label.labels-diargam
+      figcaption.diagram__label.labels-diargam
         .labels-diargam__number=options.number
         .labels-diargam__label=options.label
-    .diagram__description
-      ul
-        li(class='diagram__description-item diagram__description-item_orange')='Великолепно'
-        li(class='diagram__description-item diagram__description-item_green')='Хорошо'
-        li(class='diagram__description-item diagram__description-item_blue')='Удовлетворительно'
-        li(class='diagram__description-item diagram__description-item_black')='Разочарован'
+      figcaption.diagram__description
+        ul
+          li(class='diagram__description-item diagram__description-item_orange')='Великолепно'
+          li(class='diagram__description-item diagram__description-item_green')='Хорошо'
+          li(class='diagram__description-item diagram__description-item_blue')='Удовлетворительно'
+          li(class='diagram__description-item diagram__description-item_black')='Разочарован'
