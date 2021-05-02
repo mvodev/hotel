@@ -15,10 +15,10 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    height: 485px;
   }
   &__room-image_big{
     max-width: 981px;
-    height: 485px;
   }
   &__room-image{
     object-fit: cover;
@@ -31,7 +31,6 @@
     display: flex;
     flex-direction: column;
     max-width: 461px;
-    height: 485px;
     width: 100%;
   }
   &__room-image_small-top,

@@ -1,22 +1,20 @@
-.sign__wrapper {
+.reg-wrapper {
   max-width: 1440px;
-  margin: 0px auto;
-  width: 100%; }
+  margin: 0px auto; }
 
-.sign__img-wrapper {
-  height: 702px;
-  max-width: 1440px;
-  width: 100%;
+.reg__img-wrapper {
+  height: 685px;
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 1440px;
   background-image: url(79b5cde0053638ad01f1d11a34b1cb11.jpg);
   background-size: cover; }
 
 @media (max-width: 767px) {
-  .sign__wrapper {
+  .reg-wrapper {
     max-width: none;
     max-height: none; } }
 
 
-/*# sourceMappingURL=signin.e444b613b3a1bbcad84c.css.map*/
+/*# sourceMappingURL=registration.02df5deca9c8e2c34641.css.map*/

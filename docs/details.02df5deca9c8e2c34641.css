@@ -12,11 +12,11 @@
 .details__room-images {
   display: flex;
   flex-direction: row;
-  justify-content: center; }
+  justify-content: center;
+  height: 485px; }
 
 .details__room-image_big {
-  max-width: 981px;
-  height: 485px; }
+  max-width: 981px; }
 
 .details__room-image {
   object-fit: cover; }
@@ -29,7 +29,6 @@
   display: flex;
   flex-direction: column;
   max-width: 461px;
-  height: 485px;
   width: 100%; }
 
 .details__room-image_small-top, .details__room-image_small-bottom {
@@ -159,4 +158,4 @@
     text-align: center; } }
 
 
-/*# sourceMappingURL=details.e444b613b3a1bbcad84c.css.map*/
+/*# sourceMappingURL=details.02df5deca9c8e2c34641.css.map*/
