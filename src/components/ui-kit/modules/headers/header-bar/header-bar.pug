@@ -2,18 +2,18 @@ include ../../burger/burger.pug
 include ../../button/button.pug
 include ../../list-links/list-links.pug
 include ../../logo/logo-toxin.pug
-mixin header-bar( {type='nav',links=[],signInButtonText = 'Войти',registerButtonText = 'Зарегистрироваться',signInRef = 'sign-in-page.html',registerRef = 'registration.html',userName='Юлий Цезарь',userRef = '/mock-address/change-me',isVertical=false} = {})
+mixin header-bar( {type='nav',links=[],signInLinkText = 'Войти',registerLinkText = 'Зарегистрироваться',signInRef = 'sign-in-page.html',registerRef = 'registration.html',userName='Юлий Цезарь',userRef = '/mock-address/change-me',isVertical=false} = {})
  .header-bar
   .header-bar__wrapper
-   .header-bar__logo
-    +logo()
-   +burger
-   nav.header-bar__nav.js-header-nav
-     +list-links({links,isVertical})
-     if type==='nav'
-      .header-bar__nav_first
-       +button({label:signInButtonText,type:'white',ref:signInRef})
-      +button({label:registerButtonText,type:'dark', wide:true,ref:registerRef})
-     else if type==='login'
-      .header-bar__delimeter
-      a(href=userRef class='header-bar__user')=userName 
+    .header-bar__logo
+      +logo()
+    +burger
+    nav.header-bar__nav.js-header-nav
+      +list-links({links,isVertical})
+      if type==='nav'
+        a(href=signInRef class='header-bar__nav_sign-in')=signInLinkText 
+        a(href=registerRef class='header-bar__nav_register')=registerLinkText 
+      else if type==='login'
+        .header-bar__delimeter
+        a(href=userRef class='header-bar__user')=userName
+        

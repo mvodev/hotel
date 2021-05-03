@@ -12,26 +12,17 @@
 	&_wide{
 		width: 196px;
 	}
-	&-dark{
+	&-dark,&-dark50{
 		background: $buttonColor;
 		text-transform: uppercase;
-	}
-	&-dark50{
-		background: $buttonColor;
-		text-transform: uppercase;
-		opacity: 0.5;
-	}
-
-	&-dark a,
-	&-dark50 a{
+		color: $white;
 		font-weight: bold;
 		font-size: 12px;
 		line-height: 15px;
-		text-transform: uppercase;
-		color: $white;
-		text-decoration: none;
 	}
-
+	&-dark50{
+		opacity: 0.5;
+	}
 	&-white{
 		background: none;
 		border:2px solid $purple;
@@ -42,16 +33,15 @@
 		border:2px solid rgba($color: $purple, $alpha: 0.5);
 	}
 
-	&-white a,
-	&-white50 a,
-	&-transparent a{
+	&-white,
+	&-white50,
+	&-transparent{
 		font-weight: bold;
 		font-size: 12px;
 		line-height: 15px;
 		text-transform: uppercase;
 		color:$purple;
 		white-space: nowrap;
-		text-decoration: none;
 	}
 
 	&-transparent,
@@ -63,7 +53,7 @@
 		padding: 0px;
 	}
 
-	&-transparent50 a{
+	&-transparent50{
 		font-weight: bold;
 		font-size: 12px;
 		line-height: 15px;
@@ -76,29 +66,19 @@
 .button-with-arrow{
 		width: 320px;
 		height: 44px;
-		padding: 0px;
+		position: relative;
 		background: $buttonColor;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		justify-content: right;
-		& a{
-			text-decoration: none;
-			font-weight: bold;
-			font-size: 12px;
-			line-height: 15px;
-			text-align: center;
-			text-transform: uppercase;
-			color: $white;
-			margin-left: auto;
-			margin-right: auto;
-			padding-left: 44px;
-	}
-		
+		justify-content: center;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 15px;
+		text-transform: uppercase;
+		color: $white;
 		&__arr{
-			font-family: $font-for-icons;
 			font-weight: normal;
-			font-size: 24px;
 			line-height: 24px;
 			display: flex;
 			align-items: center;
@@ -107,6 +87,9 @@
 			color: $white;
 			height: 44px;
 			width: 44px;
+			position: absolute;
+			top: 0;
+			left: 276px;
 		}
 }
 

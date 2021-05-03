@@ -2543,7 +2543,8 @@ table {
     top: 9px; } }
 
 .list-links {
-  display: flex; }
+  display: flex;
+  align-items: center; }
   .list-links__arrow {
     width: 24px;
     height: 21px;
@@ -2563,12 +2564,15 @@ table {
     font-weight: 400;
     font-family: Montserrat, Arial, sans-serif;
     margin-right: 20px;
-    cursor: pointer; }
+    cursor: pointer;
+    text-align: center; }
   .list-links__ref_active {
     font-weight: bold;
-    color: rgba(31, 32, 65, 0.75); }
+    color: rgba(31, 32, 65, 0.75);
+    text-align: center; }
   .list-links_vertical {
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: flex-start; }
     .list-links_vertical .list-links__ref_active {
       text-transform: uppercase;
       margin-bottom: 21px;
@@ -2581,7 +2585,8 @@ table {
     .list-links_vertical .list-links__link:last-child {
       margin-bottom: 0px; }
   .list-links__link_is-expandable {
-    display: flex; }
+    display: flex;
+    align-items: center; }
 
 @media (max-width: 767px) {
   .list-links {
@@ -2627,8 +2632,27 @@ table {
     height: 30px;
     width: 1px;
     background: rgba(31, 32, 65, 0.1); }
-  .header-bar__nav_first {
-    margin-right: 20px; }
+  .header-bar__nav_sign-in {
+    margin-right: 20px;
+    width: 87px;
+    height: 34px;
+    border-radius: 22px;
+    border: 2px solid #BC9CFF;
+    color: #BC9CFF;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .header-bar__nav_register {
+    width: 196px;
+    height: 34px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .header-bar__user {
     color: rgba(31, 32, 65, 0.5);
     font-family: Montserrat, Arial, sans-serif;
@@ -3210,44 +3234,35 @@ table {
   text-decoration: none; }
   .button_wide {
     width: 196px; }
-  .button-dark {
+  .button-dark, .button-dark50 {
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    text-transform: uppercase; }
-  .button-dark50 {
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    text-transform: uppercase;
-    opacity: 0.5; }
-  .button-dark a,
-  .button-dark50 a {
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
     text-transform: uppercase;
     color: #ffffff;
-    text-decoration: none; }
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px; }
+  .button-dark50 {
+    opacity: 0.5; }
   .button-white {
     background: none;
     border: 2px solid #BC9CFF; }
   .button-white50 {
     background: none;
     border: 2px solid rgba(188, 156, 255, 0.5); }
-  .button-white a,
-  .button-white50 a,
-  .button-transparent a {
+  .button-white, .button-white50, .button-transparent {
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
     color: #BC9CFF;
-    white-space: nowrap;
-    text-decoration: none; }
+    white-space: nowrap; }
   .button-transparent, .button-transparent50 {
     border: none;
     background: none;
     height: 15px;
     width: 61px;
     padding: 0px; }
-  .button-transparent50 a {
+  .button-transparent50 {
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
@@ -3258,27 +3273,19 @@ table {
 .button-with-arrow {
   width: 320px;
   height: 44px;
-  padding: 0px;
+  position: relative;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: right; }
-  .button-with-arrow a {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 44px; }
+  justify-content: center;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #ffffff; }
   .button-with-arrow__arr {
-    font-family: Material Icons;
     font-weight: normal;
-    font-size: 24px;
     line-height: 24px;
     display: flex;
     align-items: center;
@@ -3286,7 +3293,10 @@ table {
     justify-content: center;
     color: #ffffff;
     height: 44px;
-    width: 44px; }
+    width: 44px;
+    position: absolute;
+    top: 0;
+    left: 276px; }
 
 .button-rate {
   height: 24px;
@@ -4447,44 +4457,35 @@ table {
   text-decoration: none; }
   .button_wide {
     width: 196px; }
-  .button-dark {
+  .button-dark, .button-dark50 {
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    text-transform: uppercase; }
-  .button-dark50 {
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    text-transform: uppercase;
-    opacity: 0.5; }
-  .button-dark a,
-  .button-dark50 a {
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
     text-transform: uppercase;
     color: #ffffff;
-    text-decoration: none; }
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px; }
+  .button-dark50 {
+    opacity: 0.5; }
   .button-white {
     background: none;
     border: 2px solid #BC9CFF; }
   .button-white50 {
     background: none;
     border: 2px solid rgba(188, 156, 255, 0.5); }
-  .button-white a,
-  .button-white50 a,
-  .button-transparent a {
+  .button-white, .button-white50, .button-transparent {
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
     color: #BC9CFF;
-    white-space: nowrap;
-    text-decoration: none; }
+    white-space: nowrap; }
   .button-transparent, .button-transparent50 {
     border: none;
     background: none;
     height: 15px;
     width: 61px;
     padding: 0px; }
-  .button-transparent50 a {
+  .button-transparent50 {
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
@@ -4495,27 +4496,19 @@ table {
 .button-with-arrow {
   width: 320px;
   height: 44px;
-  padding: 0px;
+  position: relative;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: right; }
-  .button-with-arrow a {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 44px; }
+  justify-content: center;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #ffffff; }
   .button-with-arrow__arr {
-    font-family: Material Icons;
     font-weight: normal;
-    font-size: 24px;
     line-height: 24px;
     display: flex;
     align-items: center;
@@ -4523,7 +4516,10 @@ table {
     justify-content: center;
     color: #ffffff;
     height: 44px;
-    width: 44px; }
+    width: 44px;
+    position: absolute;
+    top: 0;
+    left: 276px; }
 
 .button-rate {
   height: 24px;
@@ -4850,4 +4846,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.02df5deca9c8e2c34641.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.c3babd0fea94a789d29f.css.map*/

@@ -40,9 +40,30 @@
     width: 1px;
     background: rgba(31, 32, 65, 0.1);
   }
-  &__nav_first{
+  &__nav_sign-in{
     margin-right: 20px;
+    width: 87px;
+    height: 34px;
+    border-radius: 22px;
+    border: 2px solid $purple;
+    color: $purple;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  &__nav_register{
+    width: 196px;
+    height: 34px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    color: $white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   &__user{
     color: $darkShade50;
     font-family: $font-family-main,$fallback-font;
