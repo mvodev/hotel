@@ -1,63 +1,63 @@
 include ./button-radio/button-radio.pug
 mixin button( { darkStar = 1, lightStar, type = '', isChecked = false, isLiked = false, purpose = 'button', label = '', header = '', likeNumber = 0, text = '', labels = [], id, ref='/mock-address/change-me', wide=false,} = {})
- - var buttonClassName='button'
- - var lightStar = 5 - darkStar
- - var isChecked=isChecked===true ? 'checked' : ''
- - buttonClassName+=type==='arrow' ? ' button-with-arrow' : ''
- - buttonClassName+=type==='dark' ? ' button-dark' : ''
- - buttonClassName+=type==='dark50' ? ' button-dark50' : ''
- - buttonClassName+=type==='white' ? ' button-white' : ''
- - buttonClassName+=type==='white50' ? ' button-white50' : ''
- - buttonClassName+=type==='transparent' ? ' button-transparent' : ''
- - buttonClassName+=type==='transparent50' ? ' button-transparent50' : ''
- - buttonClassName+=type==='rate' ? ' button-rate js-button-rate' : ''
- - buttonClassName+=type==='like' ? ' button-like js-button-like' : ''
- - buttonClassName+=isLiked ? ' button-like_is-liked' : ''
- - buttonClassName+=type==='check' ? ' button-check' : ''
- - buttonClassName+=type==='rich' ? ' button-rich' : ''
- - buttonClassName+=type==='radio' ? ' button-radio' : ''
-   if type=='arrow'
-    button(class=buttonClassName type=purpose)
-      div(class='button-with-arrow__label')=label
-      div(class='button-with-arrow__arr material-icons')='arrow_forward'
-   else if type=='rate'
-    div(class=buttonClassName)
-      - var n=1
-      while darkStar-- > 0
-        input(class=buttonClassName+'__input' id='star-rating-'+n type='radio' name='rating')
-        label(class='material-icons button-rate-star' for='star-rating-'+n title=n++ +" out of 5 stars")='star'
-      while lightStar-- > 0
-        input(class=buttonClassName+'__input' id='star-rating-'+n type='radio' name='rating')
-        label(class='material-icons button-rate-star' for='star-rating-'+n title=n++ +" out of 5 stars")='star_border'
-   else if type=='like'
-    button(class=buttonClassName)
-      if isLiked
-        div(class='button-like__heart')='favorite'
-        div=likeNumber
-      else 
-        div(class='button-like__heart')='favorite_border'
-        div=likeNumber
-   else if type=='check'
-    div(class=buttonClassName)
-        each val in labels ? labels : ['There are no values']
-          if val.isChecked
-              input(class='button-check__checkbox-input' type='checkbox' checked)
-              div(class='button-check__checkbox-text')=val.text
+  - var buttonClassName='button'
+  - var lightStar = 5 - darkStar
+  - var isChecked=isChecked===true ? 'checked' : ''
+  - buttonClassName+=type==='arrow' ? ' button-with-arrow' : ''
+  - buttonClassName+=type==='dark' ? ' button-dark' : ''
+  - buttonClassName+=type==='dark50' ? ' button-dark50' : ''
+  - buttonClassName+=type==='white' ? ' button-white' : ''
+  - buttonClassName+=type==='white50' ? ' button-white50' : ''
+  - buttonClassName+=type==='transparent' ? ' button-transparent' : ''
+  - buttonClassName+=type==='transparent50' ? ' button-transparent50' : ''
+  - buttonClassName+=type==='rate' ? ' button-rate js-button-rate' : ''
+  - buttonClassName+=type==='like' ? ' button-like js-button-like' : ''
+  - buttonClassName+=isLiked ? ' button-like_is-liked' : ''
+  - buttonClassName+=type==='check' ? ' button-check' : ''
+  - buttonClassName+=type==='rich' ? ' button-rich' : ''
+  - buttonClassName+=type==='radio' ? ' button-radio' : ''
+    if type=='arrow'
+      button(class=buttonClassName type=purpose)
+        div(class='button-with-arrow__label')=label
+        div(class='button-with-arrow__arr material-icons')='arrow_forward'
+    else if type=='rate'
+      div(class=buttonClassName)
+        - var n=1
+        while darkStar-- > 0
+          input(class=buttonClassName+'__input' id='star-rating-'+n type='radio' name='rating')
+          label(class='material-icons button-rate-star' for='star-rating-'+n title=n++ +" out of 5 stars")='star'
+        while lightStar-- > 0
+          input(class=buttonClassName+'__input' id='star-rating-'+n type='radio' name='rating')
+          label(class='material-icons button-rate-star' for='star-rating-'+n title=n++ +" out of 5 stars")='star_border'
+    else if type=='like'
+      button(class=buttonClassName)
+        if isLiked
+          div(class='button-like__heart')='favorite'
+          div=likeNumber
+        else 
+          div(class='button-like__heart')='favorite_border'
+          div=likeNumber
+    else if type=='check'
+      div(class=buttonClassName)
+          each val in labels ? labels : ['There are no values']
+            if val.isChecked
+                input(class='button-check__checkbox-input' type='checkbox' checked)
+                div(class='button-check__checkbox-text')=val.text
+            else
+                input(class='button-check__checkbox-input' type='checkbox')
+                div(class='button-check__checkbox-text')=val.text
+    else if type=='rich'
+      div(class=buttonClassName)
+        label(class='button-rich__checkbox-label')
+          if isChecked
+            input(class='button-rich__checkbox-input' type='checkbox' checked)
+            div(class='button-rich__checkbox-header')=header
+            div(class='button-rich__checkbox-text')=label
           else
-              input(class='button-check__checkbox-input' type='checkbox')
-              div(class='button-check__checkbox-text')=val.text
-   else if type=='rich'
-    div(class=buttonClassName)
-      label(class='button-rich__checkbox-label')
-        if isChecked
-          input(class='button-rich__checkbox-input' type='checkbox' checked)
-          div(class='button-rich__checkbox-header')=header
-          div(class='button-rich__checkbox-text')=label
-        else
-          input(class='button-rich__checkbox-input' type='checkbox')
-          div(class='button-rich__checkbox-header')=header
-          div(class='button-rich__checkbox-text')=label
-   else if type=='radio'
-    +button-radio({ label: label, isChecked: isChecked ,id:id})
-   else
-    button(class=wide ? buttonClassName+' button_wide':buttonClassName  type=purpose)=label
+            input(class='button-rich__checkbox-input' type='checkbox')
+            div(class='button-rich__checkbox-header')=header
+            div(class='button-rich__checkbox-text')=label
+    else if type=='radio'
+      +button-radio({ label: label, isChecked: isChecked ,id:id})
+    else
+      button(class=buttonClassName type=purpose)=label
