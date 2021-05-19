@@ -37,7 +37,7 @@ class DropdownCount {
    guests: ["гость", "гостя", "гостей"],
    infants: ['младенец', 'младенца', 'младенцев'],
    bedrooms: ['спальня', 'спальни', 'спален'],
-   beds: ['кровать', 'кровати ', 'кроватей '],
+   beds: ['кровать', 'кровати', 'кроватей'],
    baths: ['ванная комната', 'ванные комнаты', 'ванных комнат'],
   };
   this.dropdownCounters = [];
@@ -141,13 +141,13 @@ class DropdownCount {
    }
    if (result.beds > 0) {
     if (temp.length > 0) {
-     temp += "," + result.beds + " " + this.spellCases.beds[this.getPosInSpellCasesArray(result.beds)];
+     temp += ", " + result.beds + " " + this.spellCases.beds[this.getPosInSpellCasesArray(result.beds)];
     }
     else temp += result.beds + " " + this.spellCases.beds[this.getPosInSpellCasesArray(result.beds)];
    }
    if (result.baths > 0) {
     if (temp.length > 0) {
-     temp += "," + result.baths + " " + this.spellCases.baths[this.getPosInSpellCasesArray(result.baths)];
+     temp += ", " + result.baths + " " + this.spellCases.baths[this.getPosInSpellCasesArray(result.baths)];
     }
     else temp += result.baths + " " + this.spellCases.baths[this.getPosInSpellCasesArray(result.baths)];
    }
@@ -2568,4 +2568,4 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.feb881ae10bbbdf54877.js.map
+//# sourceMappingURL=UIKit~details~landing~search.5ff8ab8451cd679c5fcb.js.map

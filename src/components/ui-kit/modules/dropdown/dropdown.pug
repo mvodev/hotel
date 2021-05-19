@@ -14,7 +14,7 @@ mixin dropdown(options)
   dropDownClassName+=' js-dropdown'
  section(class= dropDownClassName+expandedCorners)
   div(class='dropdown__input-wrapper')
-    input(class='dropdown__input' placeholder=options.placeholder type='text' id=options.id)
+    input(class='dropdown__input' placeholder=options.placeholder type='text' id=options.id readonly)
     div(class='dropdown__arrow')='keyboard_arrow_down'
   if typeDropdown==='guests'||typeDropdown==='room'
     div(class="dropdown__body"+isExpanded)
