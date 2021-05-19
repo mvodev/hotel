@@ -33,10 +33,10 @@ mixin button( { darkStar = 1, lightStar, type = '', isChecked = false, isLiked =
       button(class=buttonClassName)
         if isLiked
           div(class='button-like__heart')='favorite'
-          div=likeNumber
+          div(class='button-like__number')=likeNumber
         else 
           div(class='button-like__heart')='favorite_border'
-          div=likeNumber
+          div(class='button-like__number')=likeNumber
     else if type=='check'
       div(class=buttonClassName)
           each val in labels ? labels : ['There are no values']
