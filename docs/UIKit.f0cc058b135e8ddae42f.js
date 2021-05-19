@@ -175,7 +175,6 @@ function likeClickListener(event) {
    event.target.parentElement.classList.add('button-like_is-liked');
    event.target.parentElement.childNodes[0].innerText = 'favorite';
   }
- 
 }
 
 /***/ }),
@@ -331,4 +330,4 @@ $('.js-range-slider__input').ionRangeSlider({
 /***/ })
 
 /******/ });
-//# sourceMappingURL=UIKit.ae0d51b314e97dd44708.js.map
+//# sourceMappingURL=UIKit.f0cc058b135e8ddae42f.js.map

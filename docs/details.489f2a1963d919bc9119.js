@@ -175,7 +175,6 @@ function likeClickListener(event) {
    event.target.parentElement.classList.add('button-like_is-liked');
    event.target.parentElement.childNodes[0].innerText = 'favorite';
   }
- 
 }
 
 /***/ }),
@@ -360,4 +359,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 /******/ });
-//# sourceMappingURL=details.31ae5fbdfc2df31921b3.js.map
+//# sourceMappingURL=details.489f2a1963d919bc9119.js.map

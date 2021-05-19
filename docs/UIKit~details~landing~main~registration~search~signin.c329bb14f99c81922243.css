@@ -1562,6 +1562,9 @@ table {
   text-align: right;
   color: rgba(31, 32, 65, 0.5); }
 
+.irs, .irs-handle {
+  cursor: pointer; }
+
 .irs--flat .irs-line {
   background-color: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -3075,6 +3078,9 @@ table {
   line-height: 15px;
   text-align: right;
   color: rgba(31, 32, 65, 0.5); }
+
+.irs, .irs-handle {
+  cursor: pointer; }
 
 .irs--flat .irs-line {
   background-color: #ffffff;
@@ -4856,4 +4862,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.e02c1ec210e64524bfc3.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.c329bb14f99c81922243.css.map*/
