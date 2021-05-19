@@ -99,11 +99,16 @@ class DropdownCount {
  }
  collectData() {
   if (this.dropdownType === 'guests') {
-   let temp = 0;
+   let guests = {};
+   guests.total = 0;
+   guests.infants = 0;
    for (let i = 0; i < this.dropdownCounters.length; i++) {
-    temp += this.dropdownCounters[i].getData();
+    guests.total += this.dropdownCounters[i].getData();
+    if (i === this.dropdownCounters.length - 1) {
+     guests.infants = this.dropdownCounters[i].getData();
+    }
    }
-   return temp;
+   return guests;
   }
   else {
    let room = {};
@@ -130,9 +135,14 @@ class DropdownCount {
  }
  setData() {
   let result = this.collectData();
+
   if (this.dropdownType === 'guests') {
-   let lastNumber = this.getLastNumber(result);
-   this.input.value = result + " " + this.spellCases.guests[this.getPosInSpellCasesArray(result)];
+   let temp = '';
+   temp = result.total + " " + this.spellCases.guests[this.getPosInSpellCasesArray(result.total)];
+   if (result.infants>0){
+    temp +=', ' + result.infants + " "+ this.spellCases.infants[this.getPosInSpellCasesArray(result.infants)];
+   }
+   this.input.value = temp;
   }
   else {
    let temp = '';
@@ -2568,4 +2578,4 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.5ff8ab8451cd679c5fcb.js.map
+//# sourceMappingURL=UIKit~details~landing~search.a78f54d9d9f62b0792dc.js.map
