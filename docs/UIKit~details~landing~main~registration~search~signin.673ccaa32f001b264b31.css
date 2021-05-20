@@ -4797,7 +4797,7 @@ table {
     width: 10px;
     height: 10px;
     content: '';
-    top: 10px;
+    top: 7px;
     left: -15px;
     border-radius: 50%; }
   .diagram__description-item_orange::before {
@@ -4866,4 +4866,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.22a200e83479b52ed8fc.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.673ccaa32f001b264b31.css.map*/
