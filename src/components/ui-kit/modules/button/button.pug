@@ -60,4 +60,4 @@ mixin button( { darkStar = 1, lightStar, type = '', isChecked = false, isLiked =
     else if type=='radio'
       +button-radio({ label: label, isChecked: isChecked ,id:id})
     else
-      button(class=buttonClassName type=purpose)=label
+      button(class=buttonClassName+' button-common' type=purpose)=label

@@ -3165,7 +3165,8 @@ table {
     right: 0; }
 
 .button-radio {
-  height: 24px; }
+  height: 24px;
+  width: 100%; }
   .button-radio__input {
     display: none; }
   .button-radio__label {
@@ -3210,9 +3211,6 @@ table {
     border-radius: 10px; }
 
 .button {
-  width: 99px;
-  height: 44px;
-  border-radius: 22px;
   border: none;
   cursor: pointer;
   font-family: Montserrat, Arial, sans-serif;
@@ -3220,6 +3218,10 @@ table {
   font-style: normal;
   text-decoration: none;
   overflow: hidden; }
+  .button-common {
+    width: 99px;
+    height: 44px;
+    border-radius: 22px; }
   .button_wide {
     width: 196px; }
   .button-dark, .button-dark50 {
@@ -4371,7 +4373,8 @@ table {
     border-radius: 50%; }
 
 .button-radio {
-  height: 24px; }
+  height: 24px;
+  width: 100%; }
   .button-radio__input {
     display: none; }
   .button-radio__label {
@@ -4416,9 +4419,6 @@ table {
     border-radius: 10px; }
 
 .button {
-  width: 99px;
-  height: 44px;
-  border-radius: 22px;
   border: none;
   cursor: pointer;
   font-family: Montserrat, Arial, sans-serif;
@@ -4426,6 +4426,10 @@ table {
   font-style: normal;
   text-decoration: none;
   overflow: hidden; }
+  .button-common {
+    width: 99px;
+    height: 44px;
+    border-radius: 22px; }
   .button_wide {
     width: 196px; }
   .button-dark, .button-dark50 {
@@ -4822,4 +4826,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.d32cc01d95dee5ffc7dd.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.dc4a91ccd1617c1d2573.css.map*/
