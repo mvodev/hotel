@@ -1,17 +1,11 @@
 include ../button/button.pug
-mixin roomcard( { imgSource = '',roomType = '', roomNumber = 0, price = 0, units = '  в сутки', commentNumber = 0, rate = 1, commentLabel=' Отзывов',}={} )
+mixin roomcard( { imgSource = '',roomType = '', roomNumber = 0, price = 0, units = '  в сутки', commentNumber = 0, rate = 1, commentLabel=' Отзывов',withArrows = false,}={} )
     article(class='room-card')
-      .room-card__wrapper
-        div(class='room-card__img')
-          img(src=imgSource, alt="room image")
-          div(class='room-card__arrows')
-            div(class='room-card__arrow room-card__arrow-left')='keyboard_arrow_left'
-            div(class='room-card__arrow room-card__arrow-right')='keyboard_arrow_right'
-          div(class='room-card__img-pagination')
-            div(class='room-card__pagination room-card__pagination_active')
-            div(class='room-card__pagination')
-            div(class='room-card__pagination')
-            div(class='room-card__pagination')
+        figure.room-card__slider.js-room-card__slider(class=withArrows?'room-card__slider_with-arrow':'')
+          img(src=imgSource, class='room-card__img', alt="room image")
+          img(src=imgSource, class='room-card__img', alt="room image")
+          img(src=imgSource, class='room-card__img', alt="room image")
+          img(src=imgSource, class='room-card__img', alt="room image")
         div(class='room-card__room-specifications')
           div(class='room-card__number')
             span

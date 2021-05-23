@@ -57,7 +57,7 @@
 /******/ 	// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 	// Promise = chunk loading, 0 = chunk loaded
 /******/ 	var installedChunks = {
-/******/ 		"UIKit": 0
+/******/ 		"search": 0
 /******/ 	};
 /******/
 /******/ 	var deferredModules = [];
@@ -148,36 +148,12 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./components/ui-kit/ui-kit-page/ui-kit.js","vendors~UIKit~details~landing~main~registration~search~signin","vendors~UIKit~details~landing~registration~search~signin","vendors~UIKit~details~landing~registration","vendors~UIKit~search","UIKit~details~landing~main~registration~search~signin","UIKit~details~landing~search"]);
+/******/ 	deferredModules.push(["./components/website/search/search.js","vendors~UIKit~details~landing~main~registration~search~signin","vendors~UIKit~details~landing~registration~search~signin","vendors~UIKit~search","UIKit~details~landing~main~registration~search~signin","UIKit~details~landing~search"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
 /************************************************************************/
 /******/ ({
-
-/***/ "./components/ui-kit/modules/button/like-rating.js":
-/*!*********************************************************!*\
-  !*** ./components/ui-kit/modules/button/like-rating.js ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-const likeButtons = document.querySelectorAll('.js-button-like');
-likeButtons.forEach(elem => elem.addEventListener('click', likeClickListener));
-function likeClickListener(event) {
-  if (event.target.parentElement.classList.contains('button-like_is-liked')) {
-   event.target.parentElement.childNodes[1].innerText--;
-   event.target.parentElement.childNodes[0].innerText = 'favorite_border';
-   event.target.parentElement.classList.remove('button-like_is-liked');
-  }
-  else {
-   event.target.parentElement.childNodes[1].innerText++;
-   event.target.parentElement.classList.add('button-like_is-liked');
-   event.target.parentElement.childNodes[0].innerText = 'favorite';
-  }
-}
-
-/***/ }),
 
 /***/ "./components/ui-kit/modules/button/star-rating.js":
 /*!*********************************************************!*\
@@ -223,66 +199,93 @@ function expandableListHandler(event) {
 
 /***/ }),
 
-/***/ "./components/ui-kit/modules/text-field/text-field.js":
-/*!************************************************************!*\
-  !*** ./components/ui-kit/modules/text-field/text-field.js ***!
-  \************************************************************/
+/***/ "./components/ui-kit/modules/room-card/room-card-slider.js":
+/*!*****************************************************************!*\
+  !*** ./components/ui-kit/modules/room-card/room-card-slider.js ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {class RoomCardSlider {
+ constructor(rootElem) {
+  this.rootElem = rootElem;
+  this.initSlider();
+ }
+ withArrows() {
+  if ($(this.rootElem).hasClass('room-card__slider_with-arrow')) {
+   return true;
+  }
+  return false;
+ }
+ initSlider() {
+  $(this.rootElem).slick({
+   infinite: true,
+   dots: true,
+   dotsClass: 'room-card__slider-dots',
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   useCSS: false,
+   arrows: this.withArrows(),
+   prevArrow:
+    '<button class="room-card__arrow room-card__arrow-left">expand_more</button>',
+   nextArrow:
+    '<button class="room-card__arrow room-card__arrow-right">expand_more</button>',
+  });
+ }
+}
+/* harmony default export */ __webpack_exports__["default"] = (RoomCardSlider);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./components/ui-kit/modules/room-card/room-card.js":
+/*!**********************************************************!*\
+  !*** ./components/ui-kit/modules/room-card/room-card.js ***!
+  \**********************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
+/* harmony import */ var _room_card_slider_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./room-card-slider.js */ "./components/ui-kit/modules/room-card/room-card-slider.js");
 
-document.querySelectorAll('.js-text-field__input-date').forEach(function (elem) {
- new Cleave(elem, {
-  date: true,
-  delimiter: '.',
-  datePattern: ['d', 'm', 'Y']
- });
+document.querySelectorAll('.js-room-card__slider').forEach(elem=>{
+ new _room_card_slider_js__WEBPACK_IMPORTED_MODULE_0__["default"](elem);
 });
 
 /***/ }),
 
-/***/ "./components/ui-kit/ui-kit-page/ui-kit-styles.scss":
-/*!**********************************************************!*\
-  !*** ./components/ui-kit/ui-kit-page/ui-kit-styles.scss ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-
-/***/ "./components/ui-kit/ui-kit-page/ui-kit.js":
-/*!*************************************************!*\
-  !*** ./components/ui-kit/ui-kit-page/ui-kit.js ***!
-  \*************************************************/
+/***/ "./components/website/search/search.js":
+/*!*********************************************!*\
+  !*** ./components/website/search/search.js ***!
+  \*********************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _ui_kit_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ui-kit-styles.scss */ "./components/ui-kit/ui-kit-page/ui-kit-styles.scss");
-/* harmony import */ var _ui_kit_styles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_styles_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _search_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./search.scss */ "./components/website/search/search.scss");
+/* harmony import */ var _search_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_search_scss__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../styles/style.scss */ "./styles/style.scss");
 /* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_style_scss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ion-rangeslider */ "../node_modules/ion-rangeslider/js/ion.rangeSlider.js");
 /* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(ion_rangeslider__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _modules_dropdown_fsd_datepicker_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../modules/dropdown/fsd-datepicker.js */ "./components/ui-kit/modules/dropdown/fsd-datepicker.js");
-/* harmony import */ var _modules_dropdown_fsd_datepicker_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_dropdown_fsd_datepicker_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _modules_text_field_text_field_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../modules/text-field/text-field.js */ "./components/ui-kit/modules/text-field/text-field.js");
-/* harmony import */ var _modules_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../modules/dropdown/dropdown.js */ "./components/ui-kit/modules/dropdown/dropdown.js");
-/* harmony import */ var _modules_button_star_rating_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../modules/button/star-rating.js */ "./components/ui-kit/modules/button/star-rating.js");
-/* harmony import */ var _modules_button_star_rating_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_button_star_rating_js__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _modules_button_like_rating_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../modules/button/like-rating.js */ "./components/ui-kit/modules/button/like-rating.js");
-/* harmony import */ var _modules_button_like_rating_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_button_like_rating_js__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../modules/list/expandable-cl.js */ "./components/ui-kit/modules/list/expandable-cl.js");
-/* harmony import */ var _modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../modules/burger/burger.js */ "./components/ui-kit/modules/burger/burger.js");
-/* harmony import */ var _modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
+/* harmony import */ var _node_modules_slick_carousel_slick_slick_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/slick-carousel/slick/slick.js */ "../node_modules/slick-carousel/slick/slick.js");
+/* harmony import */ var _node_modules_slick_carousel_slick_slick_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_slick_carousel_slick_slick_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_slick_carousel_slick_slick_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../node_modules/slick-carousel/slick/slick.scss */ "../node_modules/slick-carousel/slick/slick.scss");
+/* harmony import */ var _node_modules_slick_carousel_slick_slick_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_slick_carousel_slick_slick_scss__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_slick_carousel_slick_slick_theme_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../node_modules/slick-carousel/slick/slick-theme.scss */ "../node_modules/slick-carousel/slick/slick-theme.scss");
+/* harmony import */ var _node_modules_slick_carousel_slick_slick_theme_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_slick_carousel_slick_slick_theme_scss__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _ui_kit_modules_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../ui-kit/modules/dropdown/dropdown.js */ "./components/ui-kit/modules/dropdown/dropdown.js");
+/* harmony import */ var _ui_kit_modules_button_star_rating_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../ui-kit/modules/button/star-rating.js */ "./components/ui-kit/modules/button/star-rating.js");
+/* harmony import */ var _ui_kit_modules_button_star_rating_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_modules_button_star_rating_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _ui_kit_modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../ui-kit/modules/list/expandable-cl.js */ "./components/ui-kit/modules/list/expandable-cl.js");
+/* harmony import */ var _ui_kit_modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../ui-kit/modules/burger/burger.js */ "./components/ui-kit/modules/burger/burger.js");
+/* harmony import */ var _ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _ui_kit_modules_room_card_room_card_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../ui-kit/modules/room-card/room-card.js */ "./components/ui-kit/modules/room-card/room-card.js");
 
 
 
@@ -294,7 +297,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-$('.js-cards__datepicker').fsdDatepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
 $('.js-range-slider__input').ionRangeSlider({
   type: "double",
   min: 0,
@@ -323,11 +325,21 @@ $('.js-range-slider__input').ionRangeSlider({
       html(minValue + '<span class="rub">i</span> - ' + maxValue + '<span class="rub">i</span>');
   }
 });
-// dropdown additional options for range dropdown:
-// range: true, dateFormat: 'dd M',inline: true
+
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./components/website/search/search.scss":
+/*!***********************************************!*\
+  !*** ./components/website/search/search.scss ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=UIKit.f0cc058b135e8ddae42f.js.map
+//# sourceMappingURL=search.a4cc9d310d958ccbfa10.js.map

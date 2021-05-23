@@ -1,5 +1,4 @@
 .room-card{
-  &__wrapper{
     width: 270px;
     height: 257px;
     background: $white;
@@ -7,64 +6,77 @@
     border-radius: 4px;
     font-family: $font-family-main,$fallback-font;
     font-style: normal;
-  }
-  &__img{
     position: relative;
-    overflow:hidden;
-    height: 152px;
-    width: 270px;
-    border-radius: 4px 4px 0px 0px;
+  &__slider{
+    height: 151px;
+    margin-bottom: 0px !important;
   }
-  &__img img{
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    width:270px;
-    height:152px;
-    object-fit:cover;
-  }
-  &__img-pagination{
-    position: absolute;
-    top:129px;
-    left:214px;
+  &__slider-dots{
     display: flex;
-    flex-direction: row;
-    cursor: pointer;
-  }
-  &__arrows{
-    position: relative;
-    cursor: pointer;
-  }
-  &__arrow{
     position: absolute;
-    font-family: $font-for-icons;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 24px;
-    color: $white;
+    bottom: 15px;
+    left: 212px;
   }
-  &__arrow-left{
-    top:63px;
-    left:11px;
-  }
-  &__arrow-right{
-    top:63px;
-    left:237px;
-  }
-  &__pagination{
+  &__slider img{
+    border-radius: 4px 4px 0 0;
+  }  
+  &__slider-dots li button{
     width: 7px;
     height: 7px;
     border-radius: 50%;
     border: 1px solid $white;
-    filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
-    margin-right: 4px;
+    cursor: pointer;
+    font-size: 0;
+    margin-right: 2px;
+    background: transparent;
   }
-  &__pagination_active{
+    &__slider-dots li.slick-active button{
     background: $white;
-    box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3);
   }
+  &__arrow{
+    position: absolute;
+    top: 53px;
+    cursor: pointer;
+    font-family: $font-for-icons;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    background-color: transparent;
+    border: none;
+    z-index: 999999;
+  }
+  &__arrow-left{
+    transform: rotate(90deg);
+    left: 0;
+  }
+  &__arrow-right{
+    transform: rotate(-90deg);
+    right: 0;
+  }
+  // &__slider{
+  //   position: relative;
+  //   overflow:hidden;
+  //   height: 152px;
+  //   width: 270px;
+  //   border-radius: 4px 4px 0px 0px;
+  // }
+  // &__slider img{
+  //   position: absolute;
+  //   top:50%;
+  //   left:50%;
+  //   transform:translate(-50%,-50%);
+  //   width:270px;
+  //   height:152px;
+  //   object-fit:cover;
+  // }
   &__room-specifications,
   &__bottom-line{
     display: flex;
