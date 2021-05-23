@@ -3742,7 +3742,7 @@ table {
   margin-bottom: 16.56px; }
 
 .form-elements__header_radio-buttons {
-  margin-top: 40.88px;
+  margin-top: 30px;
   margin-bottom: 14px; }
 
 .form-elements .central-column__radio-buttons-wrapper {
@@ -3754,7 +3754,7 @@ table {
   margin-right: 10px; }
 
 .form-elements__header_toggle {
-  margin-top: 19px; }
+  margin-top: 34px; }
 
 .form-elements__header_rate {
   margin-top: 40px; }
@@ -3777,7 +3777,7 @@ table {
   margin-right: 20px; }
 
 .form-elements__header_dropdown {
-  margin-top: 184px;
+  margin-top: 197px;
   margin-bottom: 4px !important; }
 
 .form-elements__buttons-rich_second {
@@ -3815,7 +3815,7 @@ table {
   margin-bottom: 12px; }
 
 .form-elements__header_dropdown-right {
-  margin-top: 234px;
+  margin-top: 232px;
   margin-bottom: 4px !important; }
 
 .form-elements {
@@ -4826,4 +4826,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.dc4a91ccd1617c1d2573.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.45ba1b576d073ee83a3b.css.map*/
