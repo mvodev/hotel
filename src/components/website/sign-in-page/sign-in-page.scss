@@ -20,6 +20,12 @@
   &__img-wrapper .sign-in{
     margin: 172px auto;
   }
+  .sign__content{
+    flex: 1 0 auto;
+  }
+  .sign footer{
+    flex: 0 0 auto;
+  }
 }
 
 @media (max-width:$container-mobile-width){

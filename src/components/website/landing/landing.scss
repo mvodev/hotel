@@ -7,10 +7,14 @@
     flex-direction: column;
     min-height: 100%;
   }
+  .landing__content{
+    flex: 1 0 auto;
+  }
   &__img-wrapper{
-    height: 831px;
+    max-height: 831px;
     width: 100%;
     margin: 0px auto;
+    flex: 1 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -31,7 +35,9 @@
     margin-left: auto;
     margin-bottom: 22px;
   }
-
+  .landing footer{
+    flex: 0 0 auto;
+  }
   &__search-wrapper{
     margin: 70px auto;
     width: 100%;

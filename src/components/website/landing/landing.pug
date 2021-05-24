@@ -8,7 +8,8 @@ block content
   include ../../ui-kit/modules/search-number/search-number.pug
 
   body.landing.landing-wrapper
-    div.landing__img-wrapper
-      .landing__search-wrapper
-        +searchnumber({action:'#'})
-      h1='Лучшие номера для вашей работы, отдыха и просто вдохновения'
+    main.landing__content
+      .landing__img-wrapper
+        .landing__search-wrapper
+          +searchnumber({action:'#'})
+        h1='Лучшие номера для вашей работы, отдыха и просто вдохновения'

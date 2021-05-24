@@ -17,6 +17,12 @@
 .sign__img-wrapper .sign-in {
   margin: 172px auto; }
 
+.sign .sign__content {
+  flex: 1 0 auto; }
+
+.sign .sign footer {
+  flex: 0 0 auto; }
+
 @media (max-width: 767px) {
   .sign__wrapper {
     max-width: none;
@@ -25,4 +31,4 @@
     margin: 20px auto; } }
 
 
-/*# sourceMappingURL=signin.cfbbdc80fc0d2399cbea.css.map*/
+/*# sourceMappingURL=signin.edcab772bdeb28644eed.css.map*/

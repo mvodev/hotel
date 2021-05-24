@@ -1,11 +1,14 @@
 .search-wrapper {
-  max-height: 1880px;
   margin: 0px auto;
   font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
-  font-weight: normal; }
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; }
 
 .search__content {
+  flex: 1 0 auto;
   margin: 30px auto 0px auto;
   max-width: 1440px;
   display: grid;
@@ -15,6 +18,9 @@
   column-gap: 6px;
   max-width: 1160px;
   height: 1325px; }
+
+.search .search footer {
+  flex: 0 0 auto; }
 
 .search__left-column {
   grid-area: left;
@@ -112,4 +118,4 @@
     margin: 10px auto 0px auto; } }
 
 
-/*# sourceMappingURL=search.cfbbdc80fc0d2399cbea.css.map*/
+/*# sourceMappingURL=search.edcab772bdeb28644eed.css.map*/

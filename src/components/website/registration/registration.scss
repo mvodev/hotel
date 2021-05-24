@@ -8,6 +8,12 @@
     width: 100%;
     margin: 0px auto; 
   }
+  .reg__content{
+    flex: 1 0 auto;
+  }
+  .reg footer{
+    flex: 0 0 auto;
+  }
   &__img-wrapper{
     height: 685px;
     display: flex;

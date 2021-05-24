@@ -3897,7 +3897,8 @@ table {
 
 .sign-up__radio-button-wrapper {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  margin-bottom: 19px; }
 
 .sign-up__radio-button-wrapper_first-button {
   margin-right: 20px; }
@@ -4829,4 +4830,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.cfbbdc80fc0d2399cbea.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.edcab772bdeb28644eed.css.map*/

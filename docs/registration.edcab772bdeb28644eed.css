@@ -5,6 +5,12 @@
   width: 100%;
   margin: 0px auto; }
 
+.reg .reg__content {
+  flex: 1 0 auto; }
+
+.reg .reg footer {
+  flex: 0 0 auto; }
+
 .reg__img-wrapper {
   height: 685px;
   display: flex;
@@ -22,4 +28,4 @@
     max-height: none; } }
 
 
-/*# sourceMappingURL=registration.cfbbdc80fc0d2399cbea.css.map*/
+/*# sourceMappingURL=registration.edcab772bdeb28644eed.css.map*/
