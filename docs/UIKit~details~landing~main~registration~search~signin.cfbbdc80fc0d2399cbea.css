@@ -907,7 +907,7 @@ table {
   color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
 
 .footer-copyright {
-  max-width: 1440px;
+  max-width: 100%;
   min-height: 70px;
   background: #ffffff;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
@@ -1040,9 +1040,9 @@ table {
     width: 260px; }
 
 .footer-widget {
-  max-width: 1440px;
+  max-width: 100%;
   font-family: Montserrat, Arial, sans-serif;
-  height: 372px;
+  min-height: 372px;
   border-top: 1px solid rgba(31, 32, 65, 0.25);
   background: #ffffff;
   box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
@@ -2221,7 +2221,7 @@ table {
   color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
 
 .footer-copyright {
-  max-width: 1440px;
+  max-width: 100%;
   min-height: 70px;
   background: #ffffff;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
@@ -2394,9 +2394,9 @@ table {
     width: 260px; }
 
 .footer-widget {
-  max-width: 1440px;
+  max-width: 100%;
   font-family: Montserrat, Arial, sans-serif;
-  height: 372px;
+  min-height: 372px;
   border-top: 1px solid rgba(31, 32, 65, 0.25);
   background: #ffffff;
   box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
@@ -2580,8 +2580,8 @@ table {
       margin-bottom: 10px; } }
 
 .header-bar {
-  max-width: 1440px;
-  height: 70px;
+  max-width: 100%;
+  min-height: 70px;
   background: #ffffff;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   display: flex;
@@ -2656,7 +2656,8 @@ table {
     align-items: flex-start;
     padding: 20px; }
   .header-bar {
-    height: auto; }
+    height: auto;
+    min-height: auto; }
   .header-bar__nav {
     display: none;
     flex-direction: column;
@@ -3263,6 +3264,7 @@ table {
 .button-with-arrow {
   width: 320px;
   height: 44px;
+  border-radius: 22px;
   position: relative;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   display: flex;
@@ -3718,7 +3720,7 @@ table {
 .form-elements__header_dropdown-room {
   margin-top: 100px; }
 
-.form-elements__header_dropdown-room, .form-elements__header_dropdown-room-expanded, .form-elements__header_dropdown-default {
+.form-elements__header_dropdown-room, .form-elements__header_dropdown-room-expanded {
   width: 266px; }
 
 .form-elements .left-column__dropdown-wrapper {
@@ -4471,6 +4473,7 @@ table {
 .button-with-arrow {
   width: 320px;
   height: 44px;
+  border-radius: 22px;
   position: relative;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   display: flex;
@@ -4826,4 +4829,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.45ba1b576d073ee83a3b.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.cfbbdc80fc0d2399cbea.css.map*/

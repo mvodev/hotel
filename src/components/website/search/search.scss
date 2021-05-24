@@ -1,7 +1,6 @@
 @import '../../../styles/common/constants.scss';
 .search{
   &-wrapper{
-    max-width: $container-width;
     max-height: 1880px;
     margin: 0px auto; 
     font-family: $font-family-main,$fallback-font;
@@ -10,6 +9,7 @@
   }
   &__content{
     margin: 30px auto 0px auto;
+    max-width: $container-width;
     display: grid;
     grid-template-areas: 
     'left right';

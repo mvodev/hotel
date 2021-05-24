@@ -1,8 +1,8 @@
 @import '../../burger/burger.scss';
 @import '../../list-links/list-links.scss';
 .header-bar {
-    max-width: $container-width;
-    height: 70px;
+    max-width: 100%;
+    min-height: 70px;
     background: $white;
     box-shadow: 0px 10px 20px $darkShade5;
     display: flex;
@@ -89,6 +89,7 @@
   }
   .header-bar{
     height: auto;
+    min-height: auto;
   }
   .header-bar__nav{
     display: none;

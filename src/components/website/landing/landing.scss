@@ -1,16 +1,20 @@
 @import '../../../styles/common/constants.scss';
 .landing{
   &-wrapper{
-    max-width: $container-width;
     font-family: $font-family-main,$fallback-font;
     margin: 0px auto; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
   }
   &__img-wrapper{
     height: 831px;
+    width: 100%;
+    margin: 0px auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: $container-width;
+    object-fit: cover;
     background-image: url('../../../assets/img/jpg/landing.jpg');
   }
   &__img-wrapper h1{
@@ -29,15 +33,20 @@
   }
 
   &__search-wrapper{
-  margin-top: 70px;
-  margin-left: 140px;
+    margin: 70px auto;
+    width: 100%;
+    max-width: $container-width - 280px;
   }
   @media (max-width:$container-mobile-width){
     &-wrapper{
       max-width: none;
     }
     .landing__search-wrapper{
-      margin: 0px auto;
+      margin: 10px auto;
+      width: 380px;
+    }
+    .landing__img-wrapper h1{
+      display: none;
     }
   }
 }
