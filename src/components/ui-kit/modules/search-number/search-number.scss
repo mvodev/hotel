@@ -16,17 +16,23 @@
     color: $darkShade100;
     margin-bottom: 22px;
   }
+  &__dropdown-headers{
+    display: flex;
+    flex-direction: row;
+  }
   &__dropdown-header{
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
     margin-bottom: 5px;
+    width: 150px;
+    overflow: hidden;
   }
-  &__dropdowns{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 20px;
+  &__dropdown-header:first-child{
+    margin-right: 20px;
+  }
+  &__dropdown-header_guests{
+    margin-top: 20px;
   }
   &__button{
     margin-top: 31px;

@@ -1,5 +1,6 @@
 import DropdownDate from './dropdown-date';
 import DropdownCount from './dropdown-count';
+import DropdownFilter from './dropdown-filter';
 
 class DropdownMain {
  constructor(rootElem) {
@@ -8,8 +9,11 @@ class DropdownMain {
  }
  initDropdowns() {
   this.rootElem.forEach(elem => {
-   if (elem.classList.contains("dropdown__date") || elem.classList.contains("dropdown__filter")) {
+   if (elem.classList.contains("dropdown__filter-date")) {
     new DropdownDate(elem);
+   }
+   else if (elem.classList.contains("dropdown__filter")){
+    new DropdownFilter(elem);
    }
    else {
     new DropdownCount(elem)

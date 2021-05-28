@@ -1,8 +1,32 @@
-.dropdown__date{
+.dropdown__filter{
+  width: 266px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+}
+.dropdown__filter-date .dropdown__input-wrapper{
   width: 150px;
 }
-.dropdown__date.dropdown__input{
+.dropdown__date,
+.dropdown__filter-date{
+  width: 150px;
+}
+.dropdown__filter-date{
+  display: flex;
+  flex-direction: row;
+  width: 320px;
+  justify-content: space-between;
+}
+.dropdown__date .dropdown__input,
+.dropdown__filter-date .dropdown__input{
   width: 91px;
+}
+.dropdown__filter-date .dropdown__input-wrapper{
+  width: 150px;
+  border: 1px solid $darkShade25;
+  border-radius: 4px;
+}
+.dropdown__filter .dropdown__input{
+  width: 150px;
 }
 .dropdown__filter{
   width: 266px;

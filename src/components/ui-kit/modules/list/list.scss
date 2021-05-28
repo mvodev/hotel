@@ -67,11 +67,8 @@
     display: none;
     z-index: 1;
     background-color: $white;
+    margin-bottom: 2px;
   }
-  &-expandable__dropdown-elem{
-    margin-bottom: 10px;
-  }
-
   &_is-visible {
     display: block;
   }

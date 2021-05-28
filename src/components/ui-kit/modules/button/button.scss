@@ -3,7 +3,6 @@
 		border: none;
 		cursor: pointer;
 		font-family: $font-family-main,$fallback-font;
-		white-space: nowrap;
 		font-style: normal;
 		text-decoration: none;
 		overflow: hidden;
@@ -135,53 +134,51 @@
 		display: flex;
 		flex-direction: row;
 				& div:first-child{
-				width: 50%;
-				height: 20px;
-				text-align: center;
-				align-items: center;
-				display: block;
-				font-family: $font-for-icons;
-				font-weight: normal;
-				font-size: 10px;
-				line-height: 9px;
-				color: $darkShade25;
-				padding-top: 5px;
+					width: 50%;
+					height: 20px;
+					text-align: center;
+					align-items: center;
+					display: block;
+					font-family: $font-for-icons;
+					font-weight: normal;
+					font-size: 10px;
+					line-height: 9px;
+					color: $darkShade25;
+					padding-top: 5px;
 				}
 				& div:nth-child(2){
-				width: 50%;
-				height: 100%;
-				font-weight: normal;
-				font-size: 10px;
-				line-height: 12px;
-				text-align: center;
-				align-items: center;
-				color: $darkShade25;
-				display: flex;
+					width: 50%;
+					height: 100%;
+					font-weight: normal;
+					font-size: 10px;
+					line-height: 12px;
+					text-align: center;
+					align-items: center;
+					color: $darkShade25;
+					display: flex;
 				}
-			
 }
 .button-check{
 	width: 222px;
-	height: max-content;
 
 		&__checkbox-input{
 			position: absolute;
 			z-index: 1;
 			opacity: 0;
 			margin-left: 3px;
+			cursor: pointer;
 		}
 		&__checkbox-text{
 				position: relative;
-				cursor: pointer;
 				padding-left: 30px;
 				font-weight: normal;
 				font-size: 14px;
 				line-height: 18px;
 				color: $darkShade50;
-				max-height: 36px;
-				max-width: 192px;
-				margin-bottom: 13px;
-				white-space: break-spaces;
+				width: 192px;
+		}
+		&__elem{
+			margin-bottom: 13px;
 		}
 		&__checkbox-text:before{
 				content: '';

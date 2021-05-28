@@ -41,9 +41,11 @@ mixin button( { darkStar = 1, lightStar, type = '', isChecked = false, isLiked =
       div(class=buttonClassName)
           each val in labels ? labels : ['There are no values']
             if val.isChecked
+              .button-check__elem
                 input(class='button-check__checkbox-input' type='checkbox' checked)
                 div(class='button-check__checkbox-text')=val.text
             else
+              .button-check__elem
                 input(class='button-check__checkbox-input' type='checkbox')
                 div(class='button-check__checkbox-text')=val.text
     else if type=='rich'

@@ -256,27 +256,85 @@ __webpack_require__.r(__webpack_exports__);
 class DropdownDate {
  constructor(rootElem) {
   this.rootElem = rootElem;
-  this.getElem();
+  this.getElems();
   this.init();
+  this.bindEvents();
  }
- getElem() {
-  this.input = this.rootElem.querySelector(".dropdown__input");
+ getElems() {
+  this.startInput = this.rootElem.querySelectorAll(".dropdown__input")[0];
+  this.endInput = this.rootElem.querySelectorAll(".dropdown__input")[1];
+  this.$dpInput = $(this.startInput);
+  this.$endInput = $(this.endInput);
+  this.arrows = this.rootElem.querySelectorAll('.dropdown__arrow');
+  this.startDropdownArrow = this.arrows[0];
+  this.endDropdownArrow = this.arrows[1];
  }
+ bindEvents() {
+  this.startDropdownArrow.addEventListener('click', this.handlerStartArrowDropdown.bind(this));
+  this.endDropdownArrow.addEventListener('click', this.handlerEndArrowDropdown.bind(this));
+ }
+
  init() {
-  if (this.rootElem.classList.contains("dropdown__date")) {
-   $('.dropdown__date input').fsdDatepicker({ todayButton: true, clearButton: true });
-   new Cleave(this.input, {
-    date: true,
-    delimiter: '.',
-    datePattern: ['d', 'm', 'Y']
-   });
-  }
-  else if (this.rootElem.classList.contains("dropdown__filter")) {
-   $('.dropdown__filter input').fsdDatepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
-  }
+  this.$dpInput.fsdDatepicker({
+   todayButton: true, clearButton: true, range: true,
+   multipleDatesSeparator: '     ',
+   onSelect: function (fd, d, picker) {
+    picker.$el.val(fd.split('     ')[0]);
+    picker.$el.parent().parent().children().last().children().first().val(fd.split('     ')[1]);
+    if (fd.length === 0) {
+     picker.$el.parent().parent().children().last().children().first().val('');
+    }
+   }
+  });
+ }
+ handlerStartArrowDropdown() {
+  this.$dpInput.fsdDatepicker().data('fsd-datepicker').show();
+ }
+ handlerEndArrowDropdown() {
+  this.$dpInput.fsdDatepicker().data('fsd-datepicker').show();
  }
 }
 /* harmony default export */ __webpack_exports__["default"] = (DropdownDate);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./components/ui-kit/modules/dropdown/dropdown-filter.js":
+/*!***************************************************************!*\
+  !*** ./components/ui-kit/modules/dropdown/dropdown-filter.js ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _fsd_datepicker_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fsd-datepicker.js */ "./components/ui-kit/modules/dropdown/fsd-datepicker.js");
+/* harmony import */ var _fsd_datepicker_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_fsd_datepicker_js__WEBPACK_IMPORTED_MODULE_0__);
+
+class DropdownFilter {
+ constructor(rootElem) {
+  this.rootElem = rootElem;
+  this.getElems();
+  this.init();
+  this.bindEvents();
+ }
+ getElems() {
+  this.input = this.rootElem.querySelector(".dropdown__input");
+  this.arrow = this.rootElem.querySelector('.dropdown__arrow');
+ }
+ bindEvents() {
+  this.arrow.addEventListener('click', this.handlerArrowDropdown.bind(this));
+ }
+
+ init() {
+   this.$dpInput = $('.dropdown__filter input');
+   this.$dpInput.fsdDatepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
+ }
+ handlerArrowDropdown() {
+  this.$dpInput.fsdDatepicker().data('fsd-datepicker').show();
+ }
+}
+/* harmony default export */ __webpack_exports__["default"] = (DropdownFilter);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
@@ -292,6 +350,8 @@ class DropdownDate {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _dropdown_date__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dropdown-date */ "./components/ui-kit/modules/dropdown/dropdown-date.js");
 /* harmony import */ var _dropdown_count__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dropdown-count */ "./components/ui-kit/modules/dropdown/dropdown-count.js");
+/* harmony import */ var _dropdown_filter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./dropdown-filter */ "./components/ui-kit/modules/dropdown/dropdown-filter.js");
+
 
 
 
@@ -302,8 +362,11 @@ class DropdownMain {
  }
  initDropdowns() {
   this.rootElem.forEach(elem => {
-   if (elem.classList.contains("dropdown__date") || elem.classList.contains("dropdown__filter")) {
+   if (elem.classList.contains("dropdown__filter-date")) {
     new _dropdown_date__WEBPACK_IMPORTED_MODULE_0__["default"](elem);
+   }
+   else if (elem.classList.contains("dropdown__filter")){
+    new _dropdown_filter__WEBPACK_IMPORTED_MODULE_2__["default"](elem);
    }
    else {
     new _dropdown_count__WEBPACK_IMPORTED_MODULE_1__["default"](elem)
@@ -894,7 +957,7 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
                 if (!(date instanceof Date)) return;
 
                 return selected.some(function (curDate, i) {
-                    if (datepicker.isSame(curDate, date)) {
+                    if (fsdDatepicker.isSame(curDate, date)) {
                         selected.splice(i, 1);
 
                         if (!_this.selectedDates.length) {
@@ -918,14 +981,7 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
             },
 
             today: function () {
-                this.silent = true;
-                this.view = this.opts.minView;
-                this.silent = false;
-                this.date = new Date();
-
-                if (this.opts.todayButton instanceof Date) {
-                    this.selectDate(this.opts.todayButton)
-                }
+                this.hide();
             },
 
             clear: function () {
@@ -2578,4 +2634,4 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.a78f54d9d9f62b0792dc.js.map
+//# sourceMappingURL=UIKit~details~landing~search.85347ecca1acfa98d240.js.map

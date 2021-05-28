@@ -554,7 +554,7 @@
                 if (!(date instanceof Date)) return;
 
                 return selected.some(function (curDate, i) {
-                    if (datepicker.isSame(curDate, date)) {
+                    if (fsdDatepicker.isSame(curDate, date)) {
                         selected.splice(i, 1);
 
                         if (!_this.selectedDates.length) {
@@ -578,14 +578,7 @@
             },
 
             today: function () {
-                this.silent = true;
-                this.view = this.opts.minView;
-                this.silent = false;
-                this.date = new Date();
-
-                if (this.opts.todayButton instanceof Date) {
-                    this.selectDate(this.opts.todayButton)
-                }
+                this.hide();
             },
 
             clear: function () {
