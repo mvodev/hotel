@@ -29,6 +29,9 @@
   &__room-image_big{
     max-width: 981px;
   }
+  &__room-image_big img{
+    max-width: 100%;
+  }
   &__room-image{
     object-fit: cover;
   }

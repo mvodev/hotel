@@ -27,6 +27,9 @@
 .details__room-image_big {
   max-width: 981px; }
 
+.details__room-image_big img {
+  max-width: 100%; }
+
 .details__room-image {
   object-fit: cover; }
 
@@ -171,4 +174,4 @@
     text-align: center; } }
 
 
-/*# sourceMappingURL=details.93194ffa247baa234723.css.map*/
+/*# sourceMappingURL=details.38a312328a3e4bf4166b.css.map*/
