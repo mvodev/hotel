@@ -155,15 +155,19 @@
     margin: 0px auto; }
   .details__body-left {
     flex-direction: column; }
-  .details__body-left.left-column {
+  .details__body-left .left-column {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0px auto; }
+  .details .left-column__rules {
+    flex-direction: column; }
   .left-column__content {
     flex-direction: column;
     align-items: center;
     justify-content: center; }
+  .left-column__comments {
+    margin-top: 15px; }
   .left-column__impressions {
     margin-right: 0px; }
   .left-column__rules {
@@ -174,4 +178,4 @@
     text-align: center; } }
 
 
-/*# sourceMappingURL=details.38a312328a3e4bf4166b.css.map*/
+/*# sourceMappingURL=details.e52d499be57bf6dd1b43.css.map*/
