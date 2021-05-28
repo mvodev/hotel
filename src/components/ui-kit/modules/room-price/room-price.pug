@@ -13,13 +13,12 @@ mixin roomprice( {roomType = '', roomNumber, priceHeader, units='  в сутки
               span
                 span=priceHeader
                 span=units
-          div(class='room-price__dropdowns')
-            div(class='room-price__dropdown')
-              h3(class='room-price__header')='прибытие'
-              +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'date',isExpanded:false,id:'d3'})
-            div(class='room-price__dropdown')
-              h3(class='room-price__header')='выезд'
-              +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'date',isExpanded:false,id:'d4'})
+          div(class='room-price__dropdown-date')
+              div(class='room-price__dropdown-date-header')
+                h3(class='room-price__header room-price__dropdown-header')='прибытие'
+                h3(class='room-price__header room-price__dropdown-header')='выезд'
+              div(class='room-price__dropdown')
+                +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'filter-date',isExpanded:false,id:'d3'})
           div(class='room-price__dropdown-guests')
             h3(class='room-price__header')='гости'
             +dropdown({placeholder:"Сколько гостей",typeDropdown:'guests',isExpanded:false,labels:[

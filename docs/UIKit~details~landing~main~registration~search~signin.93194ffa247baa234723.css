@@ -4070,12 +4070,7 @@ table {
   border-radius: 4px;
   padding: 40px 30px 30px 30px; }
 
-.room-price__room-specifications, .room-price__dropdowns {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
-
-.room-price__room-specifications {
+.room-price__room-specifications, .room-price__room-specifications {
   margin-bottom: 20px;
   align-items: center;
   display: flex;
@@ -4134,8 +4129,19 @@ table {
   color: #1f2041;
   margin-bottom: 6px; }
 
-.room-price__dropdowns, .room-price__dropdown-guests {
-  margin-bottom: 19px; }
+.room-price__dropdown-date-header {
+  display: flex;
+  flex-direction: row; }
+
+.room-price__dropdown-header {
+  width: 150px; }
+
+.room-price__dropdown-header:first-child {
+  margin-right: 20px; }
+
+.room-price__dropdown-guests {
+  margin-bottom: 19px;
+  margin-top: 20px; }
 
 .room-price__start-price, .room-price__service-fee, .room-price__service-extra-fee, .room-price__total-price {
   display: flex;
@@ -4886,4 +4892,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.fc6212e0541d53a22871.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.93194ffa247baa234723.css.map*/
