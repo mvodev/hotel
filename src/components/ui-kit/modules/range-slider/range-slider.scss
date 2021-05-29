@@ -9,6 +9,7 @@
     margin-bottom: -3px;
     font-family: $font-family-main,$fallback-font;
     font-style: normal;
+    white-space: nowrap;
   }
   &__label-wrapper p:first-child{
     font-weight: bold;
