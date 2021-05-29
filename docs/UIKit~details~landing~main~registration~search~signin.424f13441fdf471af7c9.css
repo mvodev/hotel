@@ -3667,7 +3667,11 @@ table {
     margin-right: 10px; }
   .expanded-comment__header-img img {
     max-width: 100%;
-    height: auto; }
+    height: auto;
+    display: block;
+    border: 2px solid #ffffff;
+    filter: drop-shadow(0px 10px 20px rgba(31, 32, 65, 0.1));
+    border-radius: 50%; }
   .expanded-comment__header {
     display: flex;
     flex-direction: row; }
@@ -4894,4 +4898,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.bb3edef0b0e29905a180.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.424f13441fdf471af7c9.css.map*/
