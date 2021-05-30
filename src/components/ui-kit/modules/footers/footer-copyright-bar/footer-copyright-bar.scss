@@ -13,13 +13,14 @@
 
   &__wrapper{
     margin: 0px auto;
-    max-width: $container-width - 280px;
+    max-width: $container-width - 250px;
     display: flex;
     text-align: center;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex: auto;
+    width: 100%;
+    padding: 0px 15px 0px 15px;
   }
   .footer-copyright__rights {
     max-width: 367px;

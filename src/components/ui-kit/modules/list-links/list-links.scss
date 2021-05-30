@@ -1,65 +1,66 @@
 @import '../../../../styles/common/constants.scss';
 .list-links{
- display: flex;
- align-items: center;
- &__arrow {
-   width: 24px;
-   height: 21px;
-   font-family: $font-for-icons;
-   font-size: 24px;
-   line-height: 20px;
-   display: flex;
-   align-items: center;
-   text-align: center;
-   justify-content: center;
-   color:$darkShade50;
-   cursor: pointer;
- }
- &__link{
-  color: $darkShade50;
-  font-size: 14px;
-  line-height: 17px;
-  font-weight: 400;
-  font-family: $font-family-main,$fallback-font;
-  margin-right: 20px;
-  cursor: pointer;
-  text-align: center;
- }
- &__ref_active{
-  font-weight: bold;
-  color: $darkShade75;
-  text-align: center;
- }
- &_vertical{
-     flex-direction: column;
-     align-items: flex-start;
-     .list-links__ref_active{
-      text-transform: uppercase;
-      margin-bottom: 21px;
-      color: $darkShade100;
-      font-size: 12px;
-     }
-     .list-links__link{
-      margin-right: 0px;
-      margin-bottom: 20px;
-      font-size: 12px;
-     } 
-     .list-links__link:last-child{
-      margin-bottom: 0px;
-     }
- }
- &__link_is-expandable{
   display: flex;
   align-items: center;
- }
+  &__arrow {
+    width: 24px;
+    height: 21px;
+    font-family: $font-for-icons;
+    font-size: 24px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color:$darkShade50;
+    cursor: pointer;
+  }
+  &__link{
+    color: $darkShade50;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    font-family: $font-family-main,$fallback-font;
+    margin-right: 20px;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+  }
+  &__ref_active{
+    font-weight: bold;
+    color: $darkShade75;
+    text-align: center;
+  }
+  &_vertical{
+    flex-direction: column;
+    align-items: flex-start;
+      .list-links__ref_active{
+        text-transform: uppercase;
+        margin-bottom: 21px;
+        color: $darkShade100;
+        font-size: 12px;
+      }
+      .list-links__link{
+        margin-right: 0px;
+        margin-bottom: 20px;
+        font-size: 12px;
+      } 
+      .list-links__link:last-child{
+        margin-bottom: 0px;
+      }
+  }
+  &__link_is-expandable{
+    display: flex;
+    align-items: center;
+  }
 }
 @media (max-width:$container-mobile-width){
   .list-links{
-   flex-direction: column;
-   justify-content: center;
-   &__link{
-    margin-right: 0px;
-    margin-bottom: 10px;
-  }
+    flex-direction: column;
+    justify-content: center;
+    &__link{
+      margin-right: 0px;
+      margin-bottom: 10px;
+    }
   }
 }

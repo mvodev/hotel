@@ -39,7 +39,8 @@
 .landing__search-wrapper {
   margin: 70px auto;
   width: 100%;
-  max-width: 1160px; }
+  max-width: 1190px;
+  padding: 0px 15px 0px 15px; }
 
 @media (max-width: 767px) {
   .landing-wrapper {
@@ -51,4 +52,4 @@
     display: none; } }
 
 
-/*# sourceMappingURL=landing.424f13441fdf471af7c9.css.map*/
+/*# sourceMappingURL=landing.99493633994fbbc47170.css.map*/

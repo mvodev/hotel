@@ -41,7 +41,8 @@
   &__search-wrapper{
     margin: 70px auto;
     width: 100%;
-    max-width: $container-width - 280px;
+    max-width: $container-width - 250px;
+    padding: 0px 15px 0px 15px;
   }
   @media (max-width:$container-mobile-width){
     &-wrapper{
