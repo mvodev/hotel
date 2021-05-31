@@ -1873,7 +1873,7 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
                 daysShort: ['Вос', 'Пон', 'Вто', 'Сре', 'Чет', 'Пят', 'Суб'],
                 daysMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
                 months: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
-                monthsShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
+                monthsShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Мая', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
                 today: 'Применить',
                 clear: 'Очистить',
                 dateFormat: 'dd.mm.yyyy',
@@ -2634,4 +2634,4 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.85347ecca1acfa98d240.js.map
+//# sourceMappingURL=UIKit~details~landing~search.ec69ff8d0cddf08e1189.js.map

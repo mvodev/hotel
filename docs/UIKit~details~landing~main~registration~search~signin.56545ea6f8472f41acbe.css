@@ -1216,7 +1216,7 @@ table {
 
 .dropdown__date .dropdown__input,
 .dropdown__filter-date .dropdown__input {
-  width: 91px; }
+  width: 106px; }
 
 .dropdown__filter-date .dropdown__input-wrapper {
   width: 150px;
@@ -1392,20 +1392,20 @@ table {
   .dropdown__input-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-between;
+    position: relative; }
   .dropdown__input {
     border: none;
     outline: none;
     -webkit-appearance: none;
     height: 24px;
+    padding-left: 15px;
     margin-top: 8px;
-    margin-left: 15px;
     font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
-    width: 100%; }
+    line-height: 24px; }
   .dropdown__guests .dropdown__input {
     width: 180px;
     overflow: hidden; }
@@ -1416,8 +1416,7 @@ table {
     font-size: 14px;
     line-height: 24px;
     height: 18px;
-    color: rgba(31, 32, 65, 0.75);
-    margin-bottom: 12px; }
+    color: rgba(31, 32, 65, 0.75); }
   .dropdown__arrow {
     width: 44px;
     height: 44px;
@@ -1431,7 +1430,10 @@ table {
     align-items: center;
     text-align: center;
     justify-content: center;
-    color: rgba(31, 32, 65, 0.5); }
+    color: rgba(31, 32, 65, 0.5);
+    position: absolute;
+    right: 0;
+    top: 0; }
   .dropdown__body {
     font-size: 12px;
     font-weight: bold;
@@ -2846,7 +2848,7 @@ table {
 
 .dropdown__date .dropdown__input,
 .dropdown__filter-date .dropdown__input {
-  width: 91px; }
+  width: 106px; }
 
 .dropdown__filter-date .dropdown__input-wrapper {
   width: 150px;
@@ -3022,20 +3024,20 @@ table {
   .dropdown__input-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-between;
+    position: relative; }
   .dropdown__input {
     border: none;
     outline: none;
     -webkit-appearance: none;
     height: 24px;
+    padding-left: 15px;
     margin-top: 8px;
-    margin-left: 15px;
     font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
-    width: 100%; }
+    line-height: 24px; }
   .dropdown__guests .dropdown__input {
     width: 180px;
     overflow: hidden; }
@@ -3046,8 +3048,7 @@ table {
     font-size: 14px;
     line-height: 24px;
     height: 18px;
-    color: rgba(31, 32, 65, 0.75);
-    margin-bottom: 12px; }
+    color: rgba(31, 32, 65, 0.75); }
   .dropdown__arrow {
     width: 44px;
     height: 44px;
@@ -3061,7 +3062,10 @@ table {
     align-items: center;
     text-align: center;
     justify-content: center;
-    color: rgba(31, 32, 65, 0.5); }
+    color: rgba(31, 32, 65, 0.5);
+    position: absolute;
+    right: 0;
+    top: 0; }
   .dropdown__body {
     font-size: 12px;
     font-weight: bold;
@@ -4902,4 +4906,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.99493633994fbbc47170.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.56545ea6f8472f41acbe.css.map*/
