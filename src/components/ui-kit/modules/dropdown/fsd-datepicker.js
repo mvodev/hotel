@@ -1764,6 +1764,7 @@
             // -------------------------------------------------
 
             _handleClick: function (el) {
+                console.log('inside _handleClick');
                 var date = el.data('date') || 1,
                     month = el.data('month') || 0,
                     year = el.data('year') || this.d.parsedDate.year,

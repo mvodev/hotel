@@ -2167,6 +2167,7 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
             // -------------------------------------------------
 
             _handleClick: function (el) {
+                console.log('inside _handleClick');
                 var date = el.data('date') || 1,
                     month = el.data('month') || 0,
                     year = el.data('year') || this.d.parsedDate.year,
@@ -2634,4 +2635,4 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.ec69ff8d0cddf08e1189.js.map
+//# sourceMappingURL=UIKit~details~landing~search.d09ce615976ab1f52015.js.map
