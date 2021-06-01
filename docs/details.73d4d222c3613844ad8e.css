@@ -69,6 +69,10 @@
   flex-direction: row;
   justify-content: space-between; }
 
+.details__body-right {
+  max-width: 380px;
+  width: 100%; }
+
 .details .left-column {
   display: flex;
   flex-direction: row; }
@@ -149,7 +153,8 @@
     max-width: none;
     max-height: none; }
   .details__content {
-    height: auto; }
+    height: auto;
+    padding: 0px; }
   .details__room-images {
     margin: 0px auto; }
   .details__room-images_right {
@@ -162,11 +167,15 @@
     justify-content: center;
     margin: 0px auto; }
   .details__body-left {
-    flex-direction: column; }
+    flex-direction: column;
+    padding: 0px 10px 0px 10px; }
   .details__body-left .left-column {
     flex-direction: column;
     justify-content: center;
-    margin: 0px auto; }
+    margin: 0px auto;
+    align-items: center; }
+  .details__body-right {
+    margin-bottom: 10px; }
   .details .left-column__rules {
     flex-direction: column; }
   .details .left-column__content {
@@ -178,7 +187,8 @@
   .left-column__comments {
     margin-top: 15px; }
   .details .left-column__comments-header {
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center; }
   .details .left-column__impressions {
     margin-right: 0px; }
   .left-column__rules {
@@ -190,4 +200,4 @@
     text-align: center; } }
 
 
-/*# sourceMappingURL=details.97097782cd578fca8b35.css.map*/
+/*# sourceMappingURL=details.73d4d222c3613844ad8e.css.map*/

@@ -4113,14 +4113,17 @@ table {
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  width: 380px; }
+  max-width: 380px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box; }
   .room-price__wrapper {
     width: 320px;
     display: block;
     height: 511px;
+    margin: 0px auto;
     font-style: normal;
     background: #ffffff;
-    margin: 0px auto;
     padding-top: 40px; }
   .room-price__room-specifications, .room-price__room-specifications {
     margin-bottom: 20px;
@@ -4938,4 +4941,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.97097782cd578fca8b35.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.73d4d222c3613844ad8e.css.map*/
