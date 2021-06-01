@@ -2,7 +2,6 @@
 .footer-widget {
   max-width: 100%;
   font-family: $font-family-main,$fallback-font;
-  height: 372px;
   border-top: 1px solid $darkShade25;
   background: $white;
   box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
@@ -11,6 +10,7 @@
   box-sizing: border-box;
   font-style: normal;
   font-weight: normal;
+  min-height: 372px;
 
   &__wrapper{
     display: flex;

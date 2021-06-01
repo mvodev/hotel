@@ -1040,7 +1040,6 @@ table {
 .footer-widget {
   max-width: 100%;
   font-family: Montserrat, Arial, sans-serif;
-  height: 372px;
   border-top: 1px solid rgba(31, 32, 65, 0.25);
   background: #ffffff;
   box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
@@ -1048,7 +1047,8 @@ table {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-style: normal;
-  font-weight: normal; }
+  font-weight: normal;
+  min-height: 372px; }
   .footer-widget__wrapper {
     display: flex;
     flex-direction: row;
@@ -1655,7 +1655,8 @@ table {
   position: relative; }
   .room-card__slider {
     height: 151px;
-    margin-bottom: 0px !important; }
+    margin-bottom: 0px !important;
+    cursor: pointer; }
   .room-card__slider-dots {
     display: flex;
     position: absolute;
@@ -1663,21 +1664,28 @@ table {
     left: 212px; }
   .room-card__slider img {
     border-radius: 4px 4px 0 0; }
+  .room-card__slider:hover {
+    filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3)); }
+  .room-card__slider:hover .room-card__arrow {
+    opacity: 1;
+    transition-duration: 500ms; }
   .room-card__slider-dots li button {
     width: 7px;
-    height: 7px;
+    height: 9px;
+    cursor: pointer;
     border-radius: 50%;
     border: 1px solid #ffffff;
-    cursor: pointer;
     font-size: 0;
     margin-right: 2px;
-    background: transparent; }
+    background: transparent;
+    filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3)); }
   .room-card__slider-dots li.slick-active button {
-    background: #ffffff; }
+    background: #ffffff;
+    box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3); }
   .room-card__arrow {
     position: absolute;
-    top: 53px;
     cursor: pointer;
+    top: 53px;
     font-family: Material Icons;
     font-size: 24px;
     font-style: normal;
@@ -1692,7 +1700,8 @@ table {
     color: #ffffff;
     background-color: transparent;
     border: none;
-    z-index: 999999; }
+    z-index: 999999;
+    opacity: 0; }
   .room-card__arrow-left {
     transform: rotate(90deg);
     left: 0; }
@@ -2444,7 +2453,6 @@ table {
 .footer-widget {
   max-width: 100%;
   font-family: Montserrat, Arial, sans-serif;
-  height: 372px;
   border-top: 1px solid rgba(31, 32, 65, 0.25);
   background: #ffffff;
   box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
@@ -2452,7 +2460,8 @@ table {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-style: normal;
-  font-weight: normal; }
+  font-weight: normal;
+  min-height: 372px; }
   .footer-widget__wrapper {
     display: flex;
     flex-direction: row;
@@ -4250,7 +4259,8 @@ table {
   position: relative; }
   .room-card__slider {
     height: 151px;
-    margin-bottom: 0px !important; }
+    margin-bottom: 0px !important;
+    cursor: pointer; }
   .room-card__slider-dots {
     display: flex;
     position: absolute;
@@ -4258,21 +4268,28 @@ table {
     left: 212px; }
   .room-card__slider img {
     border-radius: 4px 4px 0 0; }
+  .room-card__slider:hover {
+    filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3)); }
+  .room-card__slider:hover .room-card__arrow {
+    opacity: 1;
+    transition-duration: 500ms; }
   .room-card__slider-dots li button {
     width: 7px;
-    height: 7px;
+    height: 9px;
+    cursor: pointer;
     border-radius: 50%;
     border: 1px solid #ffffff;
-    cursor: pointer;
     font-size: 0;
     margin-right: 2px;
-    background: transparent; }
+    background: transparent;
+    filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3)); }
   .room-card__slider-dots li.slick-active button {
-    background: #ffffff; }
+    background: #ffffff;
+    box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3); }
   .room-card__arrow {
     position: absolute;
-    top: 53px;
     cursor: pointer;
+    top: 53px;
     font-family: Material Icons;
     font-size: 24px;
     font-style: normal;
@@ -4287,7 +4304,8 @@ table {
     color: #ffffff;
     background-color: transparent;
     border: none;
-    z-index: 999999; }
+    z-index: 999999;
+    opacity: 0; }
   .room-card__arrow-left {
     transform: rotate(90deg);
     left: 0; }
@@ -4933,4 +4951,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.5baf8293bdbd3ba1871e.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.7b9d05485189adf5c204.css.map*/
