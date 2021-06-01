@@ -78,8 +78,8 @@
     font-family: $font-family-additionalRussianReplacer,$fallback-font;
     fill: $purple;
     transform: translateY(5px) translateX(-30px);
-  }
-  .diagramchart__chart-number {
+}
+.diagramchart__chart-number {
     font-family: $font-family-additional,$fallback-font;
     font-style: normal;
     font-weight: bold;
@@ -87,8 +87,8 @@
     line-height: 30px;
     color: $purple;
     transform: translateY(-5px) translateX(12px);
-  }
-  .diagramchart__chart-label {
+}
+.diagramchart__chart-label {
     font-family: $font-family-main,$fallback-font;
     font-style: normal;
     font-weight: bold;
@@ -98,4 +98,9 @@
     text-transform: uppercase;
     color: $purple;
     transform: translateY(14px);
+}
+@media (max-width:$container-mobile-width){
+  .diagram__description{
+    left: 145px;
   }
+}
