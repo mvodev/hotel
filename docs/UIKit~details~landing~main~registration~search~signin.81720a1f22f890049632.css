@@ -368,9 +368,6 @@
       -ms-flex-align: center;
           align-items: center;
   height: 32px; }
-  .datepicker--button:hover {
-    color: #4a4a4a;
-    background: #f0f0f0; }
 
 .datepicker--cell-day.-other-month-, .datepicker--cell-year.-other-decade- {
   color: #dedede; }
@@ -4941,4 +4938,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.73d4d222c3613844ad8e.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.81720a1f22f890049632.css.map*/
