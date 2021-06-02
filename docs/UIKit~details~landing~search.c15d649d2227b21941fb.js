@@ -328,7 +328,14 @@ class DropdownFilter {
 
  init() {
    this.$dpInput = $('.dropdown__filter input');
-   this.$dpInput.fsdDatepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
+   this.$dpInput.fsdDatepicker({
+     todayButton: true, clearButton: true, range: true, dateFormat: 'dd M', 
+     onSelect: function (fd, d, picker) {
+       picker.$el.val(fd);
+       if (fd.length === 0) {
+         picker.$el.val('');
+       }
+     } });
  }
  handlerArrowDropdown() {
   this.$dpInput.fsdDatepicker().data('fsd-datepicker').show();
@@ -2639,4 +2646,4 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.8ed906fef632bcd87446.js.map
+//# sourceMappingURL=UIKit~details~landing~search.c15d649d2227b21941fb.js.map
