@@ -47,9 +47,11 @@
     max-width: none; }
   .landing .landing__search-wrapper {
     margin: 10px auto;
-    width: 380px; }
+    max-width: 380px;
+    width: 100%;
+    padding: 0px; }
   .landing .landing__img-wrapper h1 {
     display: none; } }
 
 
-/*# sourceMappingURL=landing.b5b738db4c6b7d48baac.css.map*/
+/*# sourceMappingURL=landing.77be3c5cbe4540d4d99b.css.map*/

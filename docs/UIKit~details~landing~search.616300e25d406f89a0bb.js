@@ -312,34 +312,35 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _fsd_datepicker_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_fsd_datepicker_js__WEBPACK_IMPORTED_MODULE_0__);
 
 class DropdownFilter {
- constructor(rootElem) {
-  this.rootElem = rootElem;
-  this.getElems();
-  this.init();
-  this.bindEvents();
- }
- getElems() {
-  this.input = this.rootElem.querySelector(".dropdown__input");
-  this.arrow = this.rootElem.querySelector('.dropdown__arrow');
- }
- bindEvents() {
-  this.arrow.addEventListener('click', this.handlerArrowDropdown.bind(this));
- }
+  constructor(rootElem) {
+    this.rootElem = rootElem;
+    this.getElems();
+    this.init();
+    this.bindEvents();
+  }
+  getElems() {
+    this.input = this.rootElem.querySelector(".dropdown__input");
+    this.arrow = this.rootElem.querySelector('.dropdown__arrow');
+  }
+  bindEvents() {
+    this.arrow.addEventListener('click', this.handlerArrowDropdown.bind(this));
+  }
 
- init() {
-   this.$dpInput = $('.dropdown__filter input');
-   this.$dpInput.fsdDatepicker({
-     todayButton: true, clearButton: true, range: true, dateFormat: 'dd M', 
-     onSelect: function (fd, d, picker) {
-       picker.$el.val(fd);
-       if (fd.length === 0) {
-         picker.$el.val('');
-       }
-     } });
- }
- handlerArrowDropdown() {
-  this.$dpInput.fsdDatepicker().data('fsd-datepicker').show();
- }
+  init() {
+    this.$dpInput = $('.dropdown__filter input');
+    this.$dpInput.fsdDatepicker({
+      todayButton: true, clearButton: true, range: true, dateFormat: 'dd M',
+      onSelect: function (fd, d, picker) {
+        picker.$el.val(fd);
+        if (fd.length === 0) {
+          picker.$el.val('');
+        }
+      }
+    });
+  }
+  handlerArrowDropdown() {
+    this.$dpInput.fsdDatepicker().data('fsd-datepicker').show();
+  }
 }
 /* harmony default export */ __webpack_exports__["default"] = (DropdownFilter);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
@@ -2646,4 +2647,4 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.c15d649d2227b21941fb.js.map
+//# sourceMappingURL=UIKit~details~landing~search.616300e25d406f89a0bb.js.map

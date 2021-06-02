@@ -1,11 +1,15 @@
 .search-number{
-  &__wrapper{
-    width: 380px;
-    height: 374px;
+    max-width: 380px;
+    width: 100%;
     background-color: $white;
     box-shadow: 0px 0px 25px $boxShadow;
     border-radius: 4px;
-    padding: 40px 30px 30px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+  &__wrapper{    
+    padding-top: 40px;
+    margin: 0px auto;
+    width: 320px;
+    height: 374px;
   }
   &__header{
     font-family: $font-family-main,$fallback-font;

@@ -50,7 +50,9 @@
     }
     .landing__search-wrapper{
       margin: 10px auto;
-      width: 380px;
+      max-width: 380px;
+      width: 100%;
+      padding: 0px;
     }
     .landing__img-wrapper h1{
       display: none;
