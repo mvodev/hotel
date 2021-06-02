@@ -407,6 +407,7 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
             pluginName = 'fsd-datepicker',
             autoInitSelector = '.fsd-datepicker-here',
             $body, $datepickersContainer,
+            dateValue = '',
             containerBuilt = false,
             baseTemplate = '' +
                 '<div class="datepicker">' +
@@ -933,11 +934,11 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
                     _this.selectedDates = [date];
                 }
 
-                _this._setInputValue();
+                //_this._setInputValue();
 
-                if (opts.onSelect) {
-                    _this._triggerOnChange();
-                }
+                // if (opts.onSelect) {
+                //     _this._triggerOnChange();
+                // }
 
                 if (opts.autoClose && !this.timepickerIsActive) {
                     if (!opts.multipleDates && !opts.range) {
@@ -975,12 +976,16 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
                             _this._triggerOnChange();
                         }
 
+
                         return true
                     }
                 })
             },
 
             today: function () {
+                if (this.opts.onSelect) {
+                    this._triggerOnChange()
+                }
                 this.hide();
             },
 
@@ -1091,8 +1096,8 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
                 }
 
                 value = value.join(this.opts.multipleDatesSeparator);
-
-                this.$el.val(value)
+                this.dateValue = value;
+                //this.$el.val(value);
             },
 
             /**
@@ -2167,7 +2172,6 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
             // -------------------------------------------------
 
             _handleClick: function (el) {
-                console.log('inside _handleClick');
                 var date = el.data('date') || 1,
                     month = el.data('month') || 0,
                     year = el.data('year') || this.d.parsedDate.year,
@@ -2635,4 +2639,4 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.d09ce615976ab1f52015.js.map
+//# sourceMappingURL=UIKit~details~landing~search.8ed906fef632bcd87446.js.map

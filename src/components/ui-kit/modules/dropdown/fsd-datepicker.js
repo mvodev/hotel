@@ -4,6 +4,7 @@
             pluginName = 'fsd-datepicker',
             autoInitSelector = '.fsd-datepicker-here',
             $body, $datepickersContainer,
+            dateValue = '',
             containerBuilt = false,
             baseTemplate = '' +
                 '<div class="datepicker">' +
@@ -530,11 +531,11 @@
                     _this.selectedDates = [date];
                 }
 
-                _this._setInputValue();
+                //_this._setInputValue();
 
-                if (opts.onSelect) {
-                    _this._triggerOnChange();
-                }
+                // if (opts.onSelect) {
+                //     _this._triggerOnChange();
+                // }
 
                 if (opts.autoClose && !this.timepickerIsActive) {
                     if (!opts.multipleDates && !opts.range) {
@@ -572,12 +573,16 @@
                             _this._triggerOnChange();
                         }
 
+
                         return true
                     }
                 })
             },
 
             today: function () {
+                if (this.opts.onSelect) {
+                    this._triggerOnChange()
+                }
                 this.hide();
             },
 
@@ -688,8 +693,8 @@
                 }
 
                 value = value.join(this.opts.multipleDatesSeparator);
-
-                this.$el.val(value)
+                this.dateValue = value;
+                //this.$el.val(value);
             },
 
             /**
@@ -1764,7 +1769,6 @@
             // -------------------------------------------------
 
             _handleClick: function (el) {
-                console.log('inside _handleClick');
                 var date = el.data('date') || 1,
                     month = el.data('month') || 0,
                     year = el.data('year') || this.d.parsedDate.year,
