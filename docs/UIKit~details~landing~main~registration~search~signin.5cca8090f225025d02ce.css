@@ -4059,11 +4059,11 @@ table {
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-radius: 4px; }
+  border-radius: 4px;
+  background: #ffffff; }
   .sign-in__wrapper {
     width: 320px;
     height: 358px;
-    background: #ffffff;
     font-style: normal;
     margin: 0px auto;
     padding-top: 40px; }
@@ -4378,11 +4378,11 @@ table {
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  border-radius: 4px; }
+  border-radius: 4px;
+  background: #ffffff; }
   .sign-in__wrapper {
     width: 320px;
     height: 358px;
-    background: #ffffff;
     font-style: normal;
     margin: 0px auto;
     padding-top: 40px; }
@@ -4924,4 +4924,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.67f453c59998679b3db2.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.5cca8090f225025d02ce.css.map*/
