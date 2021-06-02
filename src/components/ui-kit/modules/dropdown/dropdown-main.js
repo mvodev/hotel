@@ -12,7 +12,7 @@ class DropdownMain {
    if (elem.classList.contains("dropdown__filter-date")) {
     new DropdownDate(elem);
    }
-   else if (elem.classList.contains("dropdown__filter")){
+   else if (elem.classList.contains("dropdown__filter")) {
     new DropdownFilter(elem);
    }
    else {
