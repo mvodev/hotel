@@ -12,7 +12,8 @@
   align-items: center;
   justify-content: center;
   background-image: url(79b5cde0053638ad01f1d11a34b1cb11.jpg);
-  object-fit: cover; }
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .sign__img-wrapper .sign-in {
   margin: 172px auto; }
@@ -31,4 +32,4 @@
     margin: 20px auto; } }
 
 
-/*# sourceMappingURL=signin.5cca8090f225025d02ce.css.map*/
+/*# sourceMappingURL=signin.2e97b118a0898f1ad8b2.css.map*/

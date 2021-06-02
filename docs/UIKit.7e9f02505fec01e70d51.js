@@ -367,7 +367,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-$('.js-cards__datepicker').fsdDatepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
+$('.js-cards__datepicker').fsdDatepicker({ applyButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
 $('.js-range-slider__input').ionRangeSlider({
   type: "double",
   min: 0,
@@ -403,4 +403,4 @@ $('.js-range-slider__input').ionRangeSlider({
 /***/ })
 
 /******/ });
-//# sourceMappingURL=UIKit.e1619c3b8b9b6c263d4b.js.map
+//# sourceMappingURL=UIKit.7e9f02505fec01e70d51.js.map

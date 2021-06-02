@@ -17,7 +17,7 @@ import '../modules/list/expandable-cl.js';
 import '../modules/burger/burger.js';
 import '../modules/room-card/room-card.js';
 
-$('.js-cards__datepicker').fsdDatepicker({ todayButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
+$('.js-cards__datepicker').fsdDatepicker({ applyButton: true, clearButton: true, range: true, dateFormat: 'dd M' });
 $('.js-range-slider__input').ionRangeSlider({
   type: "double",
   min: 0,

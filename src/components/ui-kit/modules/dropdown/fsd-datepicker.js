@@ -4,7 +4,6 @@
             pluginName = 'fsd-datepicker',
             autoInitSelector = '.fsd-datepicker-here',
             $body, $datepickersContainer,
-            dateValue = '',
             containerBuilt = false,
             baseTemplate = '' +
                 '<div class="datepicker">' +
@@ -47,7 +46,7 @@
                 multipleDatesSeparator: ' - ',
                 range: false,
 
-                todayButton: false,
+                applyButton: false,
                 clearButton: false,
 
                 showEvent: 'focus',
@@ -579,7 +578,7 @@
                 })
             },
 
-            today: function () {
+            apply: function () {
                 if (this.opts.onSelect) {
                     this._triggerOnChange()
                 }
@@ -1476,7 +1475,7 @@
                 daysMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
                 months: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
                 monthsShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Мая', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
-                today: 'Применить',
+                apply: 'Применить',
                 clear: 'Очистить',
                 dateFormat: 'dd.mm.yyyy',
                 timeFormat: 'hh:ii',
@@ -1843,8 +1842,8 @@
                 if (this.opts.clearButton) {
                     this._addButton('clear')
                 }
-                if (this.opts.todayButton) {
-                    this._addButton('today')
+                if (this.opts.applyButton) {
+                    this._addButton('apply')
                 }
             },
 

@@ -16,7 +16,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-image: url(1ca84be73b11b9f36c7a4439c39dddb3.jpg); }
 
 .landing__img-wrapper h1 {
@@ -54,4 +55,4 @@
     display: none; } }
 
 
-/*# sourceMappingURL=landing.5cca8090f225025d02ce.css.map*/
+/*# sourceMappingURL=landing.2e97b118a0898f1ad8b2.css.map*/

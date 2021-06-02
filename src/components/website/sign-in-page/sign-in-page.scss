@@ -15,7 +15,8 @@
     align-items: center;
     justify-content: center;
     background-image: url('../../../assets/img/jpg/registration.jpg');
-    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   &__img-wrapper .sign-in{
     margin: 172px auto;

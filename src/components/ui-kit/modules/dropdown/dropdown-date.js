@@ -22,7 +22,7 @@ class DropdownDate {
 
  init() {
   this.$dpInput.fsdDatepicker({
-   todayButton: true, clearButton: true, range: true,
+   applyButton: true, clearButton: true, range: true,
    multipleDatesSeparator: '     ',
    onSelect: function (fd, d, picker) {
     picker.$el.val(fd.split('     ')[0]);

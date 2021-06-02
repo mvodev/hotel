@@ -17,7 +17,7 @@ class DropdownFilter {
   init() {
     this.$dpInput = $('.dropdown__filter input');
     this.$dpInput.fsdDatepicker({
-      todayButton: true, clearButton: true, range: true, dateFormat: 'dd M',
+      applyButton: true, clearButton: true, range: true, dateFormat: 'dd M',
       onSelect: function (fd, d, picker) {
         picker.$el.val(fd);
         if (fd.length === 0) {

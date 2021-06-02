@@ -276,7 +276,7 @@ class DropdownDate {
 
  init() {
   this.$dpInput.fsdDatepicker({
-   todayButton: true, clearButton: true, range: true,
+   applyButton: true, clearButton: true, range: true,
    multipleDatesSeparator: '     ',
    onSelect: function (fd, d, picker) {
     picker.$el.val(fd.split('     ')[0]);
@@ -329,7 +329,7 @@ class DropdownFilter {
   init() {
     this.$dpInput = $('.dropdown__filter input');
     this.$dpInput.fsdDatepicker({
-      todayButton: true, clearButton: true, range: true, dateFormat: 'dd M',
+      applyButton: true, clearButton: true, range: true, dateFormat: 'dd M',
       onSelect: function (fd, d, picker) {
         picker.$el.val(fd);
         if (fd.length === 0) {
@@ -415,7 +415,6 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
             pluginName = 'fsd-datepicker',
             autoInitSelector = '.fsd-datepicker-here',
             $body, $datepickersContainer,
-            dateValue = '',
             containerBuilt = false,
             baseTemplate = '' +
                 '<div class="datepicker">' +
@@ -458,7 +457,7 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
                 multipleDatesSeparator: ' - ',
                 range: false,
 
-                todayButton: false,
+                applyButton: false,
                 clearButton: false,
 
                 showEvent: 'focus',
@@ -990,7 +989,7 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
                 })
             },
 
-            today: function () {
+            apply: function () {
                 if (this.opts.onSelect) {
                     this._triggerOnChange()
                 }
@@ -1887,7 +1886,7 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
                 daysMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
                 months: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
                 monthsShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Мая', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
-                today: 'Применить',
+                apply: 'Применить',
                 clear: 'Очистить',
                 dateFormat: 'dd.mm.yyyy',
                 timeFormat: 'hh:ii',
@@ -2254,8 +2253,8 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
                 if (this.opts.clearButton) {
                     this._addButton('clear')
                 }
-                if (this.opts.todayButton) {
-                    this._addButton('today')
+                if (this.opts.applyButton) {
+                    this._addButton('apply')
                 }
             },
 
@@ -2647,4 +2646,4 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.616300e25d406f89a0bb.js.map
+//# sourceMappingURL=UIKit~details~landing~search.f6b5b94c2e4c82694ab7.js.map

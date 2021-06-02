@@ -18,7 +18,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: url('../../../assets/img/jpg/landing.jpg');
   }
   &__img-wrapper h1{
