@@ -373,7 +373,7 @@ class DropdownMain {
    if (elem.classList.contains("dropdown__filter-date")) {
     new _dropdown_date__WEBPACK_IMPORTED_MODULE_0__["default"](elem);
    }
-   else if (elem.classList.contains("dropdown__filter")){
+   else if (elem.classList.contains("dropdown__filter")) {
     new _dropdown_filter__WEBPACK_IMPORTED_MODULE_2__["default"](elem);
    }
    else {
@@ -2646,4 +2646,4 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.f6b5b94c2e4c82694ab7.js.map
+//# sourceMappingURL=UIKit~details~landing~search.e00ffc9bd96364157b55.js.map

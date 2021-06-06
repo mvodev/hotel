@@ -1667,12 +1667,13 @@ table {
     transition-duration: 500ms; }
   .room-card__slider-dots li button {
     width: 7px;
-    height: 9px;
+    height: 7px;
+    padding: 0px;
     cursor: pointer;
     border-radius: 50%;
     border: 1px solid #ffffff;
     font-size: 0;
-    margin-right: 2px;
+    margin-right: 5px;
     background: transparent;
     filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3)); }
   .room-card__slider-dots li.slick-active button {
@@ -4246,12 +4247,13 @@ table {
     transition-duration: 500ms; }
   .room-card__slider-dots li button {
     width: 7px;
-    height: 9px;
+    height: 7px;
+    padding: 0px;
     cursor: pointer;
     border-radius: 50%;
     border: 1px solid #ffffff;
     font-size: 0;
-    margin-right: 2px;
+    margin-right: 5px;
     background: transparent;
     filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3)); }
   .room-card__slider-dots li.slick-active button {
@@ -4924,4 +4926,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.2e97b118a0898f1ad8b2.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.fd78bbda83621ab4eed4.css.map*/
