@@ -79,9 +79,11 @@ class DropdownCount {
   this.rootElem.addEventListener('counterChanged', this.handleCounter.bind(this));
  }
  handleCounter() {
-  this.setData(this.collectData());
   if (this.dropdownType === 'guests') {
    this.showClearButton();
+  }
+  if (this.dropdownType === 'room'){
+   this.setData(this.collectData());
   }
  }
  handleDropdown() {
@@ -90,6 +92,7 @@ class DropdownCount {
   } else this.showDropdown();
  }
  handleApplyButton() {
+  this.setData(this.collectData());
   this.hideDropdown();
   this.showClearButton();
  }
@@ -2646,4 +2649,4 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.e00ffc9bd96364157b55.js.map
+//# sourceMappingURL=UIKit~details~landing~search.62658693709451aaa127.js.map

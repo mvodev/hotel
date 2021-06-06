@@ -50,9 +50,11 @@ class DropdownCount {
   this.rootElem.addEventListener('counterChanged', this.handleCounter.bind(this));
  }
  handleCounter() {
-  this.setData(this.collectData());
   if (this.dropdownType === 'guests') {
    this.showClearButton();
+  }
+  if (this.dropdownType === 'room'){
+   this.setData(this.collectData());
   }
  }
  handleDropdown() {
@@ -61,6 +63,7 @@ class DropdownCount {
   } else this.showDropdown();
  }
  handleApplyButton() {
+  this.setData(this.collectData());
   this.hideDropdown();
   this.showClearButton();
  }
