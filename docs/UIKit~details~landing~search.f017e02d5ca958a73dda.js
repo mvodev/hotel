@@ -82,7 +82,7 @@ class DropdownCount {
   if (this.dropdownType === 'guests') {
    this.showClearButton();
   }
-  if (this.dropdownType === 'room'){
+  if (this.dropdownType === 'room') {
    this.setData(this.collectData());
   }
  }
@@ -142,8 +142,8 @@ class DropdownCount {
   if (this.dropdownType === 'guests') {
    let temp = '';
    temp = result.total + " " + this.spellCases.guests[this.getPosInSpellCasesArray(result.total)];
-   if (result.infants>0){
-    temp +=', ' + result.infants + " "+ this.spellCases.infants[this.getPosInSpellCasesArray(result.infants)];
+   if (result.infants > 0) {
+    temp += ', ' + result.infants + " " + this.spellCases.infants[this.getPosInSpellCasesArray(result.infants)];
    }
    this.input.value = temp;
   }
@@ -2649,4 +2649,4 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.62658693709451aaa127.js.map
+//# sourceMappingURL=UIKit~details~landing~search.f017e02d5ca958a73dda.js.map

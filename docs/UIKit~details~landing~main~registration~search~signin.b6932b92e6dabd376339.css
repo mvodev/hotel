@@ -1659,12 +1659,8 @@ table {
     bottom: 15px;
     left: 212px; }
   .room-card__slider img {
-    border-radius: 4px 4px 0 0; }
-  .room-card__slider:hover {
-    filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3)); }
-  .room-card__slider:hover .room-card__arrow {
-    opacity: 1;
-    transition-duration: 500ms; }
+    border-radius: 4px 4px 0 0;
+    position: relative; }
   .room-card__slider-dots li button {
     width: 7px;
     height: 7px;
@@ -1682,29 +1678,37 @@ table {
   .room-card__arrow {
     position: absolute;
     cursor: pointer;
-    top: 53px;
     font-family: Material Icons;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0em;
-    width: 44px;
-    height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #ffffff;
     background-color: transparent;
     border: none;
-    z-index: 999999;
+    z-index: 9;
     opacity: 0; }
   .room-card__arrow-left {
     transform: rotate(90deg);
-    left: 0; }
+    left: -55px;
+    height: 42px;
+    width: 151px;
+    top: 55px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%); }
   .room-card__arrow-right {
     transform: rotate(-90deg);
-    right: 0; }
+    right: -55px;
+    width: 151px;
+    top: 55px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+    height: 42px; }
+  .room-card__slider:hover .room-card__arrow {
+    opacity: 1;
+    transition-duration: 500ms; }
   .room-card__room-specifications, .room-card__bottom-line {
     display: flex;
     flex-direction: row;
@@ -4239,12 +4243,8 @@ table {
     bottom: 15px;
     left: 212px; }
   .room-card__slider img {
-    border-radius: 4px 4px 0 0; }
-  .room-card__slider:hover {
-    filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3)); }
-  .room-card__slider:hover .room-card__arrow {
-    opacity: 1;
-    transition-duration: 500ms; }
+    border-radius: 4px 4px 0 0;
+    position: relative; }
   .room-card__slider-dots li button {
     width: 7px;
     height: 7px;
@@ -4262,29 +4262,37 @@ table {
   .room-card__arrow {
     position: absolute;
     cursor: pointer;
-    top: 53px;
     font-family: Material Icons;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0em;
-    width: 44px;
-    height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #ffffff;
     background-color: transparent;
     border: none;
-    z-index: 999999;
+    z-index: 9;
     opacity: 0; }
   .room-card__arrow-left {
     transform: rotate(90deg);
-    left: 0; }
+    left: -55px;
+    height: 42px;
+    width: 151px;
+    top: 55px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%); }
   .room-card__arrow-right {
     transform: rotate(-90deg);
-    right: 0; }
+    right: -55px;
+    width: 151px;
+    top: 55px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+    height: 42px; }
+  .room-card__slider:hover .room-card__arrow {
+    opacity: 1;
+    transition-duration: 500ms; }
   .room-card__room-specifications, .room-card__bottom-line {
     display: flex;
     flex-direction: row;
@@ -4926,4 +4934,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.0290bea5adae58438534.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.b6932b92e6dabd376339.css.map*/

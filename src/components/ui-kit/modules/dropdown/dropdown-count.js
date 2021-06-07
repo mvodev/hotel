@@ -53,7 +53,7 @@ class DropdownCount {
   if (this.dropdownType === 'guests') {
    this.showClearButton();
   }
-  if (this.dropdownType === 'room'){
+  if (this.dropdownType === 'room') {
    this.setData(this.collectData());
   }
  }
@@ -113,8 +113,8 @@ class DropdownCount {
   if (this.dropdownType === 'guests') {
    let temp = '';
    temp = result.total + " " + this.spellCases.guests[this.getPosInSpellCasesArray(result.total)];
-   if (result.infants>0){
-    temp +=', ' + result.infants + " "+ this.spellCases.infants[this.getPosInSpellCasesArray(result.infants)];
+   if (result.infants > 0) {
+    temp += ', ' + result.infants + " " + this.spellCases.infants[this.getPosInSpellCasesArray(result.infants)];
    }
    this.input.value = temp;
   }
