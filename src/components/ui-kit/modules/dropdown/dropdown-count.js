@@ -48,6 +48,14 @@ class DropdownCount {
    this.applyButton.addEventListener('click', this.handleApplyButton.bind(this));
   }
   this.rootElem.addEventListener('counterChanged', this.handleCounter.bind(this));
+  document.addEventListener('click', this.handleClickOutsideDropdown.bind(this));
+ }
+ handleClickOutsideDropdown(e) {
+  const target = e.target;
+  const its_dropdown = target === this.rootElem || this.rootElem.contains(target);
+  if (!its_dropdown) {
+   this.hideDropdown();
+  }
  }
  handleCounter() {
   if (this.dropdownType === 'guests') {

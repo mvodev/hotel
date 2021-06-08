@@ -77,6 +77,17 @@ class DropdownCount {
    this.applyButton.addEventListener('click', this.handleApplyButton.bind(this));
   }
   this.rootElem.addEventListener('counterChanged', this.handleCounter.bind(this));
+  document.addEventListener('click', this.handleClickOutsideDropdown.bind(this));
+ }
+ handleClickOutsideDropdown(e){
+  
+  const target = e.target;
+  
+  const its_dropdown = target === this.rootElem || this.rootElem.contains(target);
+  console.log(target+ ' '+its_dropdown);
+  if (!its_dropdown) {
+   this.hideDropdown();
+  }
  }
  handleCounter() {
   if (this.dropdownType === 'guests') {
@@ -2649,4 +2660,4 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.f017e02d5ca958a73dda.js.map
+//# sourceMappingURL=UIKit~details~landing~search.236269e3794d94c35854.js.map
