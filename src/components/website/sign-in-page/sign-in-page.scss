@@ -9,14 +9,16 @@
     min-height: 100%;
   }
   &__img-wrapper{
-    height: 702px;
+    min-height: 702px;
     width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-image: url('../../../assets/img/jpg/registration.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position-y: center;
   }
   &__img-wrapper .sign-in{
     margin: 172px auto;

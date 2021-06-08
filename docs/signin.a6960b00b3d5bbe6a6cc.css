@@ -6,14 +6,16 @@
   min-height: 100%; }
 
 .sign__img-wrapper {
-  height: 702px;
+  min-height: 702px;
   width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-image: url(79b5cde0053638ad01f1d11a34b1cb11.jpg);
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position-y: center; }
 
 .sign__img-wrapper .sign-in {
   margin: 172px auto; }
@@ -32,4 +34,4 @@
     margin: 20px auto; } }
 
 
-/*# sourceMappingURL=signin.b6932b92e6dabd376339.css.map*/
+/*# sourceMappingURL=signin.a6960b00b3d5bbe6a6cc.css.map*/
