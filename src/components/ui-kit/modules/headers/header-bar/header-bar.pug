@@ -11,9 +11,9 @@ mixin header-bar( {type='nav',links=[],signInLinkText = 'Войти',registerLin
     nav.header-bar__nav.js-header-nav
       +list-links({links,isVertical})
       if type==='nav'
-        a(href=signInRef class='header-bar__nav_sign-in')=signInLinkText 
-        a(href=registerRef class='header-bar__nav_register')=registerLinkText 
+        a(href=signInRef class='header-bar__nav_sign-in' target="_blank", rel="noopener noreferrer")=signInLinkText 
+        a(href=registerRef class='header-bar__nav_register' target="_blank", rel="noopener noreferrer")=registerLinkText 
       else if type==='login'
         .header-bar__delimeter
-        a(href=userRef class='header-bar__user')=userName
+        a(href=userRef class='header-bar__user' target="_blank", rel="noopener noreferrer")=userName
         

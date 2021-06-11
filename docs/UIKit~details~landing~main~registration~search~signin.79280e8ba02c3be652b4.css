@@ -842,6 +842,9 @@ video {
   vertical-align: baseline;
   box-sizing: border-box; }
 
+a {
+  text-decoration: none; }
+
 html,
 body {
   height: 100%; }
@@ -2079,6 +2082,9 @@ video {
   vertical-align: baseline;
   box-sizing: border-box; }
 
+a {
+  text-decoration: none; }
+
 html,
 body {
   height: 100%; }
@@ -2599,14 +2605,15 @@ table {
     color: rgba(31, 32, 65, 0.5);
     cursor: pointer; }
   .list-links__link {
+    margin-right: 20px;
+    cursor: pointer;
+    text-align: center; }
+  .list-links__ref {
     color: rgba(31, 32, 65, 0.5);
     font-size: 14px;
     line-height: 17px;
     font-weight: 400;
     font-family: Montserrat, Arial, sans-serif;
-    margin-right: 20px;
-    cursor: pointer;
-    text-align: center;
     white-space: nowrap; }
   .list-links__ref_active {
     font-weight: bold;
@@ -4934,4 +4941,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.9b711026aacd1b435fb7.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.79280e8ba02c3be652b4.css.map*/

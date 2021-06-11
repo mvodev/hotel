@@ -12,11 +12,11 @@ html(lang='en')
 
     include ./headers/header.pug
     +header({type:'nav',links:[
-      { text: 'О нас' ,isActive: true },
-      { text: 'Услуги', isExpandable: true },
-      { text: 'Вакансии'  },
-      { text: 'Новости' },
-      { text: 'Соглашения', isExpandable: true },]})
+      { text: 'О нас' ,isActive: true, href:'/mock-address/change-me'},
+      { text: 'Услуги', isExpandable: true,href:'/mock-address/change-me'},
+      { text: 'Вакансии',href:'/mock-address/change-me'},
+      { text: 'Новости',href:'/mock-address/change-me'},
+      { text: 'Соглашения', isExpandable: true,href:'/mock-address/change-me' },]})
     
     block content
     
