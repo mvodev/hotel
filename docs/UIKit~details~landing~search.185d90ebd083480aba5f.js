@@ -79,12 +79,9 @@ class DropdownCount {
   this.rootElem.addEventListener('counterChanged', this.handleCounter.bind(this));
   document.addEventListener('click', this.handleClickOutsideDropdown.bind(this));
  }
- handleClickOutsideDropdown(e){
-  
+ handleClickOutsideDropdown(e) {
   const target = e.target;
-  
   const its_dropdown = target === this.rootElem || this.rootElem.contains(target);
-  console.log(target+ ' '+its_dropdown);
   if (!its_dropdown) {
    this.hideDropdown();
   }
@@ -151,32 +148,32 @@ class DropdownCount {
   let result = this.collectData();
 
   if (this.dropdownType === 'guests') {
-   let temp = '';
-   temp = result.total + " " + this.spellCases.guests[this.getPosInSpellCasesArray(result.total)];
-   if (result.infants > 0) {
-    temp += ', ' + result.infants + " " + this.spellCases.infants[this.getPosInSpellCasesArray(result.infants)];
-   }
-   this.input.value = temp;
+    let temp = '';
+    temp = result.total + " " + this.spellCases.guests[this.getPosInSpellCasesArray(result.total)];
+    if (result.infants > 0) {
+     temp += ',  ' + result.infants + " " + this.spellCases.infants[this.getPosInSpellCasesArray(result.infants)];
+    }
+    this.input.value = temp;
   }
   else {
-   let temp = '';
-   if (result.bedrooms > 0) {
-    temp += result.bedrooms + " " + this.spellCases.bedrooms[this.getPosInSpellCasesArray(result.bedrooms)];
-   }
-   if (result.beds > 0) {
-    if (temp.length > 0) {
-     temp += ", " + result.beds + " " + this.spellCases.beds[this.getPosInSpellCasesArray(result.beds)];
+    let temp = '';
+    if (result.bedrooms > 0) {
+     temp += result.bedrooms + " " + this.spellCases.bedrooms[this.getPosInSpellCasesArray(result.bedrooms)];
     }
-    else temp += result.beds + " " + this.spellCases.beds[this.getPosInSpellCasesArray(result.beds)];
-   }
-   if (result.baths > 0) {
-    if (temp.length > 0) {
-     temp += ", " + result.baths + " " + this.spellCases.baths[this.getPosInSpellCasesArray(result.baths)];
+    if (result.beds > 0) {
+     if (temp.length > 0) {
+      temp += ",  " + result.beds + " " + this.spellCases.beds[this.getPosInSpellCasesArray(result.beds)];
+     }
+     else temp += result.beds + " " + this.spellCases.beds[this.getPosInSpellCasesArray(result.beds)];
     }
-    else temp += result.baths + " " + this.spellCases.baths[this.getPosInSpellCasesArray(result.baths)];
-   }
-   temp += '...'
-   this.input.value = temp;
+    if (result.baths > 0) {
+     if (temp.length > 0) {
+      temp += ",  " + result.baths + " " + this.spellCases.baths[this.getPosInSpellCasesArray(result.baths)];
+     }
+     else temp += result.baths + " " + this.spellCases.baths[this.getPosInSpellCasesArray(result.baths)];
+    }
+    temp += '...';
+    this.input.value = temp;
   }
  }
  getLastNumber(value) {
@@ -2660,4 +2657,4 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.236269e3794d94c35854.js.map
+//# sourceMappingURL=UIKit~details~landing~search.185d90ebd083480aba5f.js.map
