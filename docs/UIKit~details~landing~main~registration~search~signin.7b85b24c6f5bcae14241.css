@@ -951,6 +951,10 @@ table {
   height: 44px;
   width: 320px;
   font-family: Montserrat, Arial, sans-serif; }
+  .text-field:hover {
+    border: 1px solid rgba(31, 32, 65, 0.5); }
+  .text-field:focus {
+    border: 1px solid rgba(55, 57, 102, 0.5); }
   .text-field__input-wrapper {
     display: flex;
     flex-direction: row;
@@ -986,8 +990,9 @@ table {
     padding-left: 15px;
     padding-top: 13px;
     padding-bottom: 13px;
-    padding-right: 44px; }
-  .text-field_focused input {
+    padding-right: 44px;
+    outline: none; }
+  .text-field_focused {
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75);
     background: transparent;
@@ -2371,6 +2376,10 @@ table {
   height: 44px;
   width: 320px;
   font-family: Montserrat, Arial, sans-serif; }
+  .text-field:hover {
+    border: 1px solid rgba(31, 32, 65, 0.5); }
+  .text-field:focus {
+    border: 1px solid rgba(55, 57, 102, 0.5); }
   .text-field__input-wrapper {
     display: flex;
     flex-direction: row;
@@ -2406,8 +2415,9 @@ table {
     padding-left: 15px;
     padding-top: 13px;
     padding-bottom: 13px;
-    padding-right: 44px; }
-  .text-field_focused input {
+    padding-right: 44px;
+    outline: none; }
+  .text-field_focused {
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75);
     background: transparent;
@@ -3211,6 +3221,10 @@ table {
   height: 44px;
   width: 320px;
   font-family: Montserrat, Arial, sans-serif; }
+  .text-field:hover {
+    border: 1px solid rgba(31, 32, 65, 0.5); }
+  .text-field:focus {
+    border: 1px solid rgba(55, 57, 102, 0.5); }
   .text-field__input-wrapper {
     display: flex;
     flex-direction: row;
@@ -3246,8 +3260,9 @@ table {
     padding-left: 15px;
     padding-top: 13px;
     padding-bottom: 13px;
-    padding-right: 44px; }
-  .text-field_focused input {
+    padding-right: 44px;
+    outline: none; }
+  .text-field_focused {
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75);
     background: transparent;
@@ -4753,6 +4768,10 @@ table {
   height: 44px;
   width: 320px;
   font-family: Montserrat, Arial, sans-serif; }
+  .text-field:hover {
+    border: 1px solid rgba(31, 32, 65, 0.5); }
+  .text-field:focus {
+    border: 1px solid rgba(55, 57, 102, 0.5); }
   .text-field__input-wrapper {
     display: flex;
     flex-direction: row;
@@ -4788,8 +4807,9 @@ table {
     padding-left: 15px;
     padding-top: 13px;
     padding-bottom: 13px;
-    padding-right: 44px; }
-  .text-field_focused input {
+    padding-right: 44px;
+    outline: none; }
+  .text-field_focused {
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75);
     background: transparent;
@@ -4941,4 +4961,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.79280e8ba02c3be652b4.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.7b85b24c6f5bcae14241.css.map*/
