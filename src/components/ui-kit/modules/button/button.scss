@@ -160,7 +160,6 @@
 }
 .button-check{
 	width: 222px;
-
 		&__checkbox-input{
 			position: absolute;
 			z-index: 1;
@@ -176,9 +175,12 @@
 				line-height: 18px;
 				color: $darkShade50;
 				width: 192px;
+				cursor: pointer;
 		}
 		&__elem{
-			margin-bottom: 13px;
+			margin-bottom: 10px;
+			min-height: 20px;
+			display: block;
 		}
 		&__checkbox-text:before{
 				content: '';

@@ -3486,9 +3486,12 @@ table {
     font-size: 14px;
     line-height: 18px;
     color: rgba(31, 32, 65, 0.5);
-    width: 192px; }
+    width: 192px;
+    cursor: pointer; }
   .button-check__elem {
-    margin-bottom: 13px; }
+    margin-bottom: 10px;
+    min-height: 20px;
+    display: block; }
   .button-check__checkbox-text:before {
     content: '';
     position: absolute;
@@ -3870,7 +3873,7 @@ table {
   margin-bottom: 10px; }
 
 .form-elements__header_radio-buttons {
-  margin-top: 30px;
+  margin-top: 35px;
   margin-bottom: 14px; }
 
 .form-elements .central-column__radio-buttons-wrapper {
@@ -4701,9 +4704,12 @@ table {
     font-size: 14px;
     line-height: 18px;
     color: rgba(31, 32, 65, 0.5);
-    width: 192px; }
+    width: 192px;
+    cursor: pointer; }
   .button-check__elem {
-    margin-bottom: 13px; }
+    margin-bottom: 10px;
+    min-height: 20px;
+    display: block; }
   .button-check__checkbox-text:before {
     content: '';
     position: absolute;
@@ -4965,4 +4971,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.022fe05cc2cdeb044475.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.edcb47cfc662f34f9d60.css.map*/
