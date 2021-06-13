@@ -1,5 +1,5 @@
 .landing-wrapper {
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: Montserrat, "Arial,sans-serif";
   margin: 0px auto;
   display: flex;
   flex-direction: column;
@@ -62,4 +62,4 @@
     display: none; } }
 
 
-/*# sourceMappingURL=landing.edcb47cfc662f34f9d60.css.map*/
+/*# sourceMappingURL=landing.bc78fb65fd4c1cf67c98.css.map*/

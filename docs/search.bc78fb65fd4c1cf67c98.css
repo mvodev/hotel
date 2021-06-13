@@ -1,6 +1,6 @@
 .search-wrapper {
   margin: 0px auto;
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: Montserrat, "Arial,sans-serif";
   font-style: normal;
   font-weight: normal;
   display: flex;
@@ -91,7 +91,7 @@
   justify-content: center; }
 
 .search .right-column__header {
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: Montserrat, "Arial,sans-serif";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -123,4 +123,4 @@
     margin: 10px auto 0px auto; } }
 
 
-/*# sourceMappingURL=search.edcb47cfc662f34f9d60.css.map*/
+/*# sourceMappingURL=search.bc78fb65fd4c1cf67c98.css.map*/
