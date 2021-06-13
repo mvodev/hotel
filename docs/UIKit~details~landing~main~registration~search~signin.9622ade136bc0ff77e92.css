@@ -4125,8 +4125,7 @@ table {
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  max-width: 380px;
-  width: 100%;
+  width: 380px;
   display: block;
   box-sizing: border-box; }
   .room-price__wrapper {
@@ -4240,6 +4239,11 @@ table {
   .room-price__service-extra-fee div:first-child {
     display: flex;
     flex-direction: row; }
+
+@media (max-width: 380px) {
+  .room-price {
+    max-width: 380px;
+    width: 100%; } }
 
 .cards__central-column {
   padding-left: 40px; }
@@ -4961,4 +4965,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.7b85b24c6f5bcae14241.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.9622ade136bc0ff77e92.css.map*/

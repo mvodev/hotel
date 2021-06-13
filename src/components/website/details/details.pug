@@ -13,14 +13,14 @@ block content
 
   body.details.details-wrapper
     main.details__content
-      .details__room-images
-        .details__room-image.details__room-image_big
-          img(src="./assets/img/jpg/room-details-big.jpg", alt="room image")
-        .details__room-images_right
-          .details__room-image.details__room-image_small-top
-            img(src="./assets/img/jpg/room-details-small-top.jpg", alt="room image small")
-          .details__room-image.details__room-image_small-bottom
-            img(src="./assets/img/jpg/room-details-small-bottom.jpg", alt="room image small")
+      section.details__room-images
+        .details__room-image.room-images-left
+          img.details__room-image(src="./assets/img/jpg/room-details-big.jpg", alt="room image")
+        .room-images-right
+          .room-images-right__top
+            img.details__room-image(src="./assets/img/jpg/room-details-small-top.jpg", alt="room image small")
+          .room-images-right__bottom
+            img.details__room-image(src="./assets/img/jpg/room-details-small-bottom.jpg", alt="room image small")
       section.details__body
         section.details__body-left
           article.left-column
