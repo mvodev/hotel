@@ -5,9 +5,9 @@ import DropdownFilter from './dropdown-filter';
 class DropdownMain {
  constructor(rootElem) {
   this.rootElem = rootElem;
-  this.initDropdowns();
+  this._initDropdowns();
  }
- initDropdowns() {
+ _initDropdowns() {
   this.rootElem.forEach(elem => {
    if (elem.classList.contains("dropdown__filter-date")) {
     new DropdownDate(elem);

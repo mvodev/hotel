@@ -33,6 +33,13 @@ class DropdownCount {
  constructor(rootElem) {
   this.data = 0;
   this.dropdownType = '';
+  this.spellCases = {};
+  this.dropdownCounters = [];
+  this.rootElem = rootElem;
+  this._getElems();
+  this._bindEvents();
+ }
+ _getElems() {
   this.spellCases = {
    guests: ["гость", "гостя", "гостей"],
    infants: ['младенец', 'младенца', 'младенцев'],
@@ -40,12 +47,6 @@ class DropdownCount {
    beds: ['кровать', 'кровати', 'кроватей'],
    baths: ['ванная комната', 'ванные комнаты', 'ванных комнат'],
   };
-  this.dropdownCounters = [];
-  this.rootElem = rootElem;
-  this.getElem();
-  this.bindEvents();
- }
- getElem() {
   this.arrow = this.rootElem.querySelector(".dropdown__arrow");
   this.input = this.rootElem.querySelector(".dropdown__input");
   this.body = this.rootElem.querySelector(".dropdown__body");
@@ -57,7 +58,6 @@ class DropdownCount {
    this.applyButton = this.rootElem.querySelector(".buttons-dropdown__apply");
    this.clearButton = this.rootElem.querySelector(".buttons-dropdown__clear");
   }
-
   this.counters.forEach(elem => {
    this.dropdownCounters.push(new _dropdown_counter_dropdown_counter__WEBPACK_IMPORTED_MODULE_0__["default"](elem));
   });
@@ -70,45 +70,45 @@ class DropdownCount {
   this.rootElem.classList.remove("dropdown_active");
   this.body.classList.remove("dropdown_active");
  }
- bindEvents() {
-  this.arrow.addEventListener('click', this.handleDropdown.bind(this));
+ _bindEvents() {
+  this.arrow.addEventListener('click', this._handleDropdown.bind(this));
   if (this.dropdownType === 'guests') {
-   this.clearButton.addEventListener('click', this.handleClearButton.bind(this));
-   this.applyButton.addEventListener('click', this.handleApplyButton.bind(this));
+   this.clearButton.addEventListener('click', this._handleClearButton.bind(this));
+   this.applyButton.addEventListener('click', this._handleApplyButton.bind(this));
   }
-  this.rootElem.addEventListener('counterChanged', this.handleCounter.bind(this));
-  document.addEventListener('click', this.handleClickOutsideDropdown.bind(this));
+  this.rootElem.addEventListener('counterChanged', this._handleCounter.bind(this));
+  document.addEventListener('click', this._handleClickOutsideDropdown.bind(this));
  }
- handleClickOutsideDropdown(e) {
+ _handleClickOutsideDropdown(e) {
   const target = e.target;
   const its_dropdown = target === this.rootElem || this.rootElem.contains(target);
   if (!its_dropdown) {
    this.hideDropdown();
   }
  }
- handleCounter() {
+ _handleCounter() {
   if (this.dropdownType === 'guests') {
-   this.showClearButton();
+   this._showClearButton();
   }
   if (this.dropdownType === 'room') {
-   this.setData(this.collectData());
+   this.setData(this._collectData());
   }
  }
- handleDropdown() {
+ _handleDropdown() {
   if (this.rootElem.classList.contains("dropdown_active")) {
    this.hideDropdown();
   } else this.showDropdown();
  }
- handleApplyButton() {
-  this.setData(this.collectData());
+ _handleApplyButton() {
+  this.setData(this._collectData());
   this.hideDropdown();
-  this.showClearButton();
+  this._showClearButton();
  }
- handleClearButton() {
-  this.clearData();
-  this.hideClearButton();
+ _handleClearButton() {
+  this._clearData();
+  this._hideClearButton();
  }
- collectData() {
+ _collectData() {
   if (this.dropdownType === 'guests') {
    let guests = {};
    guests.total = 0;
@@ -129,7 +129,7 @@ class DropdownCount {
    return room;
   }
  }
- getPosInSpellCasesArray(result) {
+ _getPosInSpellCasesArray(result) {
   if (result === 1) {
    return 0;
   }
@@ -145,32 +145,32 @@ class DropdownCount {
   }
  }
  setData() {
-  let result = this.collectData();
+  let result = this._collectData();
 
   if (this.dropdownType === 'guests') {
     let temp = '';
-    temp = result.total + " " + this.spellCases.guests[this.getPosInSpellCasesArray(result.total)];
+    temp = result.total + " " + this.spellCases.guests[this._getPosInSpellCasesArray(result.total)];
     if (result.infants > 0) {
-     temp += ',  ' + result.infants + " " + this.spellCases.infants[this.getPosInSpellCasesArray(result.infants)];
+     temp += ',  ' + result.infants + " " + this.spellCases.infants[this._getPosInSpellCasesArray(result.infants)];
     }
     this.input.value = temp;
   }
   else {
     let temp = '';
     if (result.bedrooms > 0) {
-     temp += result.bedrooms + " " + this.spellCases.bedrooms[this.getPosInSpellCasesArray(result.bedrooms)];
+     temp += result.bedrooms + " " + this.spellCases.bedrooms[this._getPosInSpellCasesArray(result.bedrooms)];
     }
     if (result.beds > 0) {
      if (temp.length > 0) {
-      temp += ",  " + result.beds + " " + this.spellCases.beds[this.getPosInSpellCasesArray(result.beds)];
+      temp += ",  " + result.beds + " " + this.spellCases.beds[this._getPosInSpellCasesArray(result.beds)];
      }
-     else temp += result.beds + " " + this.spellCases.beds[this.getPosInSpellCasesArray(result.beds)];
+     else temp += result.beds + " " + this.spellCases.beds[this._getPosInSpellCasesArray(result.beds)];
     }
     if (result.baths > 0) {
      if (temp.length > 0) {
-      temp += ",  " + result.baths + " " + this.spellCases.baths[this.getPosInSpellCasesArray(result.baths)];
+      temp += ",  " + result.baths + " " + this.spellCases.baths[this._getPosInSpellCasesArray(result.baths)];
      }
-     else temp += result.baths + " " + this.spellCases.baths[this.getPosInSpellCasesArray(result.baths)];
+     else temp += result.baths + " " + this.spellCases.baths[this._getPosInSpellCasesArray(result.baths)];
     }
     temp += '...';
     this.input.value = temp;
@@ -179,16 +179,16 @@ class DropdownCount {
  getLastNumber(value) {
   return value.toString().split("").pop();
  }
- clearData() {
+ _clearData() {
   this.input.value = "";
   this.dropdownCounters.forEach(elem => {
    elem.resetData();
   });
  }
- showClearButton() {
+ _showClearButton() {
   this.clearButton.classList.remove('buttons-dropdown_hidden');
  }
- hideClearButton() {
+ _hideClearButton() {
   this.clearButton.classList.add('buttons-dropdown_hidden');
  }
 }
@@ -209,20 +209,20 @@ class DropdownCounter {
 
  constructor(container) {
   this.container = container;
-  this.getElements();
-  this.bindEvents();
+  this._getElements();
+  this._bindEvents();
  }
- getElements() {
+ _getElements() {
   this.minus = this.container.querySelector('.js-container-dropdown__decrease');
   this.plus = this.container.querySelector('.js-container-dropdown__increase');
   this.value = this.container.querySelector('.js-container-dropdown__value');
   this.valueNumber = parseInt(this.value.textContent, 10);
  }
- bindEvents() {
-  this.minus.addEventListener('click', this.handleMinus.bind(this));
-  this.plus.addEventListener('click', this.handlePlus.bind(this));
+ _bindEvents() {
+  this.minus.addEventListener('click', this._handleMinus.bind(this));
+  this.plus.addEventListener('click', this._handlePlus.bind(this));
  }
- handleMinus() {
+ _handleMinus() {
   if (this.valueNumber > 0) {
    this.valueNumber--;
    this.value.innerHTML = this.valueNumber;
@@ -232,7 +232,7 @@ class DropdownCounter {
   }
   this.container.dispatchEvent(new CustomEvent("counterChanged", { bubbles: true }));
  }
- handlePlus() {
+ _handlePlus() {
   this.valueNumber++;
   this.value.innerHTML = this.valueNumber;
   this.minus.classList.add('container-dropdown__decrease_dark');
@@ -267,11 +267,11 @@ __webpack_require__.r(__webpack_exports__);
 class DropdownDate {
  constructor(rootElem) {
   this.rootElem = rootElem;
-  this.getElems();
-  this.init();
-  this.bindEvents();
+  this._getElems();
+  this._init();
+  this._bindEvents();
  }
- getElems() {
+ _getElems() {
   this.startInput = this.rootElem.querySelectorAll(".dropdown__input")[0];
   this.endInput = this.rootElem.querySelectorAll(".dropdown__input")[1];
   this.$dpInput = $(this.startInput);
@@ -280,28 +280,30 @@ class DropdownDate {
   this.startDropdownArrow = this.arrows[0];
   this.endDropdownArrow = this.arrows[1];
  }
- bindEvents() {
-  this.startDropdownArrow.addEventListener('click', this.handlerStartArrowDropdown.bind(this));
-  this.endDropdownArrow.addEventListener('click', this.handlerEndArrowDropdown.bind(this));
+ _bindEvents() {
+  this.startDropdownArrow.addEventListener('click', this._handlerStartArrowDropdown.bind(this));
+  this.endDropdownArrow.addEventListener('click', this._handlerEndArrowDropdown.bind(this));
  }
 
- init() {
+ _init() {
   this.$dpInput.fsdDatepicker({
    applyButton: true, clearButton: true, range: true,
    multipleDatesSeparator: '     ',
    onSelect: function (fd, d, picker) {
-    picker.$el.val(fd.split('     ')[0]);
-    picker.$el.parent().parent().children().last().children().first().val(fd.split('     ')[1]);
+    const $leftDatepicker = picker.$el;
+    const $rightDatepicker = picker.$el.parent().parent().children().last().children().first();
+    $leftDatepicker.val(fd.split('     ')[0]);
+    $rightDatepicker.val(fd.split('     ')[1]);
     if (fd.length === 0) {
-     picker.$el.parent().parent().children().last().children().first().val('');
+     $rightDatepicker.val('');
     }
    }
   });
  }
- handlerStartArrowDropdown() {
+ _handlerStartArrowDropdown() {
   this.$dpInput.fsdDatepicker().data('fsd-datepicker').show();
  }
- handlerEndArrowDropdown() {
+ _handlerEndArrowDropdown() {
   this.$dpInput.fsdDatepicker().data('fsd-datepicker').show();
  }
 }
@@ -325,19 +327,19 @@ __webpack_require__.r(__webpack_exports__);
 class DropdownFilter {
   constructor(rootElem) {
     this.rootElem = rootElem;
-    this.getElems();
-    this.init();
-    this.bindEvents();
+    this._getElems();
+    this._init();
+    this._bindEvents();
   }
-  getElems() {
+  _getElems() {
     this.input = this.rootElem.querySelector(".dropdown__input");
     this.arrow = this.rootElem.querySelector('.dropdown__arrow');
   }
-  bindEvents() {
-    this.arrow.addEventListener('click', this.handlerArrowDropdown.bind(this));
+  _bindEvents() {
+    this.arrow.addEventListener('click', this._handlerArrowDropdown.bind(this));
   }
 
-  init() {
+  _init() {
     this.$dpInput = $('.dropdown__filter input');
     this.$dpInput.fsdDatepicker({
       applyButton: true, clearButton: true, range: true, dateFormat: 'dd M',
@@ -349,7 +351,7 @@ class DropdownFilter {
       }
     });
   }
-  handlerArrowDropdown() {
+  _handlerArrowDropdown() {
     this.$dpInput.fsdDatepicker().data('fsd-datepicker').show();
   }
 }
@@ -377,9 +379,9 @@ __webpack_require__.r(__webpack_exports__);
 class DropdownMain {
  constructor(rootElem) {
   this.rootElem = rootElem;
-  this.initDropdowns();
+  this._initDropdowns();
  }
- initDropdowns() {
+ _initDropdowns() {
   this.rootElem.forEach(elem => {
    if (elem.classList.contains("dropdown__filter-date")) {
     new _dropdown_date__WEBPACK_IMPORTED_MODULE_0__["default"](elem);
@@ -2657,4 +2659,4 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.185d90ebd083480aba5f.js.map
+//# sourceMappingURL=UIKit~details~landing~search.1e904912de94d2b70cf4.js.map

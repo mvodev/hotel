@@ -2,19 +2,19 @@ import './fsd-datepicker.js';
 class DropdownFilter {
   constructor(rootElem) {
     this.rootElem = rootElem;
-    this.getElems();
-    this.init();
-    this.bindEvents();
+    this._getElems();
+    this._init();
+    this._bindEvents();
   }
-  getElems() {
+  _getElems() {
     this.input = this.rootElem.querySelector(".dropdown__input");
     this.arrow = this.rootElem.querySelector('.dropdown__arrow');
   }
-  bindEvents() {
-    this.arrow.addEventListener('click', this.handlerArrowDropdown.bind(this));
+  _bindEvents() {
+    this.arrow.addEventListener('click', this._handlerArrowDropdown.bind(this));
   }
 
-  init() {
+  _init() {
     this.$dpInput = $('.dropdown__filter input');
     this.$dpInput.fsdDatepicker({
       applyButton: true, clearButton: true, range: true, dateFormat: 'dd M',
@@ -26,7 +26,7 @@ class DropdownFilter {
       }
     });
   }
-  handlerArrowDropdown() {
+  _handlerArrowDropdown() {
     this.$dpInput.fsdDatepicker().data('fsd-datepicker').show();
   }
 }

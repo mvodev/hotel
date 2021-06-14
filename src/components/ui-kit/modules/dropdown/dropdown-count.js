@@ -4,6 +4,13 @@ class DropdownCount {
  constructor(rootElem) {
   this.data = 0;
   this.dropdownType = '';
+  this.spellCases = {};
+  this.dropdownCounters = [];
+  this.rootElem = rootElem;
+  this._getElems();
+  this._bindEvents();
+ }
+ _getElems() {
   this.spellCases = {
    guests: ["гость", "гостя", "гостей"],
    infants: ['младенец', 'младенца', 'младенцев'],
@@ -11,12 +18,6 @@ class DropdownCount {
    beds: ['кровать', 'кровати', 'кроватей'],
    baths: ['ванная комната', 'ванные комнаты', 'ванных комнат'],
   };
-  this.dropdownCounters = [];
-  this.rootElem = rootElem;
-  this.getElem();
-  this.bindEvents();
- }
- getElem() {
   this.arrow = this.rootElem.querySelector(".dropdown__arrow");
   this.input = this.rootElem.querySelector(".dropdown__input");
   this.body = this.rootElem.querySelector(".dropdown__body");
@@ -28,7 +29,6 @@ class DropdownCount {
    this.applyButton = this.rootElem.querySelector(".buttons-dropdown__apply");
    this.clearButton = this.rootElem.querySelector(".buttons-dropdown__clear");
   }
-
   this.counters.forEach(elem => {
    this.dropdownCounters.push(new DropdownCounter(elem));
   });
@@ -41,45 +41,45 @@ class DropdownCount {
   this.rootElem.classList.remove("dropdown_active");
   this.body.classList.remove("dropdown_active");
  }
- bindEvents() {
-  this.arrow.addEventListener('click', this.handleDropdown.bind(this));
+ _bindEvents() {
+  this.arrow.addEventListener('click', this._handleDropdown.bind(this));
   if (this.dropdownType === 'guests') {
-   this.clearButton.addEventListener('click', this.handleClearButton.bind(this));
-   this.applyButton.addEventListener('click', this.handleApplyButton.bind(this));
+   this.clearButton.addEventListener('click', this._handleClearButton.bind(this));
+   this.applyButton.addEventListener('click', this._handleApplyButton.bind(this));
   }
-  this.rootElem.addEventListener('counterChanged', this.handleCounter.bind(this));
-  document.addEventListener('click', this.handleClickOutsideDropdown.bind(this));
+  this.rootElem.addEventListener('counterChanged', this._handleCounter.bind(this));
+  document.addEventListener('click', this._handleClickOutsideDropdown.bind(this));
  }
- handleClickOutsideDropdown(e) {
+ _handleClickOutsideDropdown(e) {
   const target = e.target;
   const its_dropdown = target === this.rootElem || this.rootElem.contains(target);
   if (!its_dropdown) {
    this.hideDropdown();
   }
  }
- handleCounter() {
+ _handleCounter() {
   if (this.dropdownType === 'guests') {
-   this.showClearButton();
+   this._showClearButton();
   }
   if (this.dropdownType === 'room') {
-   this.setData(this.collectData());
+   this.setData(this._collectData());
   }
  }
- handleDropdown() {
+ _handleDropdown() {
   if (this.rootElem.classList.contains("dropdown_active")) {
    this.hideDropdown();
   } else this.showDropdown();
  }
- handleApplyButton() {
-  this.setData(this.collectData());
+ _handleApplyButton() {
+  this.setData(this._collectData());
   this.hideDropdown();
-  this.showClearButton();
+  this._showClearButton();
  }
- handleClearButton() {
-  this.clearData();
-  this.hideClearButton();
+ _handleClearButton() {
+  this._clearData();
+  this._hideClearButton();
  }
- collectData() {
+ _collectData() {
   if (this.dropdownType === 'guests') {
    let guests = {};
    guests.total = 0;
@@ -100,7 +100,7 @@ class DropdownCount {
    return room;
   }
  }
- getPosInSpellCasesArray(result) {
+ _getPosInSpellCasesArray(result) {
   if (result === 1) {
    return 0;
   }
@@ -116,32 +116,32 @@ class DropdownCount {
   }
  }
  setData() {
-  let result = this.collectData();
+  let result = this._collectData();
 
   if (this.dropdownType === 'guests') {
     let temp = '';
-    temp = result.total + " " + this.spellCases.guests[this.getPosInSpellCasesArray(result.total)];
+    temp = result.total + " " + this.spellCases.guests[this._getPosInSpellCasesArray(result.total)];
     if (result.infants > 0) {
-     temp += ',  ' + result.infants + " " + this.spellCases.infants[this.getPosInSpellCasesArray(result.infants)];
+     temp += ',  ' + result.infants + " " + this.spellCases.infants[this._getPosInSpellCasesArray(result.infants)];
     }
     this.input.value = temp;
   }
   else {
     let temp = '';
     if (result.bedrooms > 0) {
-     temp += result.bedrooms + " " + this.spellCases.bedrooms[this.getPosInSpellCasesArray(result.bedrooms)];
+     temp += result.bedrooms + " " + this.spellCases.bedrooms[this._getPosInSpellCasesArray(result.bedrooms)];
     }
     if (result.beds > 0) {
      if (temp.length > 0) {
-      temp += ",  " + result.beds + " " + this.spellCases.beds[this.getPosInSpellCasesArray(result.beds)];
+      temp += ",  " + result.beds + " " + this.spellCases.beds[this._getPosInSpellCasesArray(result.beds)];
      }
-     else temp += result.beds + " " + this.spellCases.beds[this.getPosInSpellCasesArray(result.beds)];
+     else temp += result.beds + " " + this.spellCases.beds[this._getPosInSpellCasesArray(result.beds)];
     }
     if (result.baths > 0) {
      if (temp.length > 0) {
-      temp += ",  " + result.baths + " " + this.spellCases.baths[this.getPosInSpellCasesArray(result.baths)];
+      temp += ",  " + result.baths + " " + this.spellCases.baths[this._getPosInSpellCasesArray(result.baths)];
      }
-     else temp += result.baths + " " + this.spellCases.baths[this.getPosInSpellCasesArray(result.baths)];
+     else temp += result.baths + " " + this.spellCases.baths[this._getPosInSpellCasesArray(result.baths)];
     }
     temp += '...';
     this.input.value = temp;
@@ -150,16 +150,16 @@ class DropdownCount {
  getLastNumber(value) {
   return value.toString().split("").pop();
  }
- clearData() {
+ _clearData() {
   this.input.value = "";
   this.dropdownCounters.forEach(elem => {
    elem.resetData();
   });
  }
- showClearButton() {
+ _showClearButton() {
   this.clearButton.classList.remove('buttons-dropdown_hidden');
  }
- hideClearButton() {
+ _hideClearButton() {
   this.clearButton.classList.add('buttons-dropdown_hidden');
  }
 }
