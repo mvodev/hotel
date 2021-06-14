@@ -223,10 +223,10 @@ __webpack_require__.r(__webpack_exports__);
 class DiagramChart {
   constructor(rootElem, options) {
     this.rootElem = rootElem;
-    this.options = this.getOptions(options);
-    this.initCanvas();
+    this.options = this._getOptions(options);
+    this._initCanvas();
   }
-  initCanvas() {
+  _initCanvas() {
     const canvas = document.createElement('canvas');
     this.rootElem.append(canvas);
     canvas.width = this.options.width;
@@ -234,17 +234,16 @@ class DiagramChart {
     const ctx = canvas.getContext("2d");
     this.ctx = ctx;
   }
-  drawArc(centerX, centerY, radius, startAngle, endAngle, color) {
+  _drawArc(centerX, centerY, radius, startAngle, endAngle, color) {
     this.ctx.strokeStyle = color;
     this.ctx.beginPath();
     this.ctx.lineWidth = this.options.lineWidth;
     this.ctx.arc(centerX, centerY, radius, startAngle, endAngle, false);
     this.ctx.stroke();
   }
-  drawText(ctx, text, position, style) {
+  _drawText(ctx, text, position, style) {
     ctx.fillStyle = this.options.fontColor;
     ctx.font = this.options.fontWeight + ' ' + style.fontSize + ' ' + this.options.font;
-    console.log(this.options.fontWeight + ' ' + style.fontSize + ' ' + this.options.font);
     ctx.fillText(text, position.x, position.y);
   }
   drawChart() {
@@ -258,23 +257,21 @@ class DiagramChart {
     let poorAngle = (this.options.segments.poor / this.options.number) * 2 * Math.PI;
     let satisfactoryAngle = (this.options.segments.satisfactory / this.options.number) * 2 * Math.PI;
     if (poorAngle != 0) {
-      this.drawArc(centerX, centerY, radius, this.options.initialAngle + this.options.delimeterAngle, this.options.initialAngle + poorAngle, this.options.backgroundColor.poor);
+      this._drawArc(centerX, centerY, radius, this.options.initialAngle + this.options.delimeterAngle, this.options.initialAngle + poorAngle, this.options.backgroundColor.poor);
     }
     if (satisfactoryAngle != 0) {
-      this.drawArc(centerX, centerY, radius, this.options.initialAngle + this.options.delimeterAngle + poorAngle,
+      this._drawArc(centerX, centerY, radius, this.options.initialAngle + this.options.delimeterAngle + poorAngle,
         this.options.initialAngle + poorAngle + satisfactoryAngle,
         this.options.backgroundColor.satisfactory);
     }
     if (goodAngle != 0) {
-      this.drawArc(centerX, centerY, radius, this.options.initialAngle + poorAngle + satisfactoryAngle + this.options.delimeterAngle, this.options.initialAngle + poorAngle + satisfactoryAngle + goodAngle, this.options.backgroundColor.good);
+      this._drawArc(centerX, centerY, radius, this.options.initialAngle + poorAngle + satisfactoryAngle + this.options.delimeterAngle, this.options.initialAngle + poorAngle + satisfactoryAngle + goodAngle, this.options.backgroundColor.good);
     }
     if (perfectAngle != 0) {
-      this.drawArc(centerX, centerY, radius, this.options.delimeterAngle + this.options.initialAngle + poorAngle + satisfactoryAngle + goodAngle, this.options.initialAngle + poorAngle + satisfactoryAngle + goodAngle + perfectAngle, this.options.backgroundColor.perfect);
+      this._drawArc(centerX, centerY, radius, this.options.delimeterAngle + this.options.initialAngle + poorAngle + satisfactoryAngle + goodAngle, this.options.initialAngle + poorAngle + satisfactoryAngle + goodAngle + perfectAngle, this.options.backgroundColor.perfect);
     }
-    //this.drawText(this.ctx, this.options.number, { x: 60, y: 37 }, {fontSize: '24px',});
-    //this.drawText(this.ctx, this.options.label, { x: 80, y: 67 }, {fontSize: '12px',});
   }
-  getOptions(options) {
+  _getOptions(options) {
     let width = options.width || 120;
     let height = options.height || 120;
     let font = options.font || 'Montserrat,sans-serif';
@@ -390,4 +387,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 /******/ });
-//# sourceMappingURL=details.f39b8275675a29b48ec7.js.map
+//# sourceMappingURL=details.530093b75c27f7bf04e0.js.map
