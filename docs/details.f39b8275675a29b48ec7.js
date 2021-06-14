@@ -155,26 +155,10 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./components/ui-kit/modules/button/like-rating.js":
-/*!*********************************************************!*\
-  !*** ./components/ui-kit/modules/button/like-rating.js ***!
-  \*********************************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _like_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./like.js */ "./components/ui-kit/modules/button/like.js");
-
-const likeButtons = document.querySelectorAll('.js-button-like');
-likeButtons.forEach(elem => new _like_js__WEBPACK_IMPORTED_MODULE_0__["default"](elem));
-
-/***/ }),
-
-/***/ "./components/ui-kit/modules/button/like.js":
-/*!**************************************************!*\
-  !*** ./components/ui-kit/modules/button/like.js ***!
-  \**************************************************/
+/***/ "./components/ui-kit/modules/button/like-rating-class.js":
+/*!***************************************************************!*\
+  !*** ./components/ui-kit/modules/button/like-rating-class.js ***!
+  \***************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -208,6 +192,22 @@ class LikeRating {
  }
 }
 /* harmony default export */ __webpack_exports__["default"] = (LikeRating);
+
+/***/ }),
+
+/***/ "./components/ui-kit/modules/button/like-rating.js":
+/*!*********************************************************!*\
+  !*** ./components/ui-kit/modules/button/like-rating.js ***!
+  \*********************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _like_rating_class_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./like-rating-class.js */ "./components/ui-kit/modules/button/like-rating-class.js");
+
+const likeButtons = document.querySelectorAll('.js-button-like');
+likeButtons.forEach(elem => new _like_rating_class_js__WEBPACK_IMPORTED_MODULE_0__["default"](elem));
 
 /***/ }),
 
@@ -390,4 +390,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 /******/ });
-//# sourceMappingURL=details.21269b5bc2e26776a8b5.js.map
+//# sourceMappingURL=details.f39b8275675a29b48ec7.js.map

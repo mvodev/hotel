@@ -155,26 +155,55 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./components/ui-kit/modules/button/star-rating-class.js":
+/*!***************************************************************!*\
+  !*** ./components/ui-kit/modules/button/star-rating-class.js ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+class StarRating{
+constructor(starRating){
+ this.starRating = starRating;
+ this._getElems();
+ this._bindEvents();
+}
+_getElems(){
+ this.starRatingLabels = this.starRating.querySelectorAll('.js-button-rate__star');
+}
+_bindEvents(){
+ this.starRatingLabels.forEach(elem => elem.addEventListener('click', this._handleRateButtonClick.bind(this)));
+}
+_handleRateButtonClick(event) {
+ let rateNumberUserChoice = event.target.title.charAt(0);
+ for (let i = 0; i < rateNumberUserChoice; i++) {
+  this.starRatingLabels[i].innerHTML = 'star';
+ }
+ for (let j = rateNumberUserChoice; j < 5; j++) {
+  this.starRatingLabels[j].innerHTML = 'star_border';
+ }
+}
+}
+/* harmony default export */ __webpack_exports__["default"] = (StarRating);
+
+/***/ }),
+
 /***/ "./components/ui-kit/modules/button/star-rating.js":
 /*!*********************************************************!*\
   !*** ./components/ui-kit/modules/button/star-rating.js ***!
   \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-const rateButtons = document.querySelectorAll('.js-button-rate label');
-rateButtons.forEach(elem => elem.addEventListener('click', handleRateButtonClick)
-);
-function handleRateButtonClick(event) {
- let rateNumber = event.target.title.charAt(0);
- let stars = event.target.parentNode.childNodes;
- for (let i = 0; i < rateNumber; i++) {
-  stars[i * 2 + 1].innerHTML = 'star';
- }
- for (let i = rateNumber; i < 5; i++) {
-  stars[i * 2 + 1].innerHTML = 'star_border';
- }
-}
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _star_rating_class_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./star-rating-class.js */ "./components/ui-kit/modules/button/star-rating-class.js");
+
+const rateButtons = document.querySelectorAll('.js-button-rate');
+rateButtons.forEach(elem => new _star_rating_class_js__WEBPACK_IMPORTED_MODULE_0__["default"](elem));
+
 
 /***/ }),
 
@@ -280,7 +309,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_slick_carousel_slick_slick_theme_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_slick_carousel_slick_slick_theme_scss__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _ui_kit_modules_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../ui-kit/modules/dropdown/dropdown.js */ "./components/ui-kit/modules/dropdown/dropdown.js");
 /* harmony import */ var _ui_kit_modules_button_star_rating_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../ui-kit/modules/button/star-rating.js */ "./components/ui-kit/modules/button/star-rating.js");
-/* harmony import */ var _ui_kit_modules_button_star_rating_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_modules_button_star_rating_js__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _ui_kit_modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../ui-kit/modules/list/expandable-cl.js */ "./components/ui-kit/modules/list/expandable-cl.js");
 /* harmony import */ var _ui_kit_modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../ui-kit/modules/burger/burger.js */ "./components/ui-kit/modules/burger/burger.js");
@@ -342,4 +370,4 @@ $('.js-range-slider__input').ionRangeSlider({
 /***/ })
 
 /******/ });
-//# sourceMappingURL=search.38df1f4b70cd882aa9c2.js.map
+//# sourceMappingURL=search.a1d1660f9823f8321378.js.map
