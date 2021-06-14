@@ -172,6 +172,35 @@
 
 /***/ }),
 
+/***/ "./components/ui-kit/modules/text-field/text-field-class.js":
+/*!******************************************************************!*\
+  !*** ./components/ui-kit/modules/text-field/text-field-class.js ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
+
+class TextField {
+ constructor(textFieldInput) {
+  this.textFieldInput = textFieldInput;
+  this._init();
+ }
+ _init() {
+  new Cleave(this.textFieldInput, {
+   date: true,
+   delimiter: '.',
+   datePattern: ['d', 'm', 'Y']
+  });
+ }
+
+}
+/* harmony default export */ __webpack_exports__["default"] = (TextField);
+
+/***/ }),
+
 /***/ "./components/ui-kit/modules/text-field/text-field.js":
 /*!************************************************************!*\
   !*** ./components/ui-kit/modules/text-field/text-field.js ***!
@@ -181,15 +210,9 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
+/* harmony import */ var _text_field_class_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./text-field-class.js */ "./components/ui-kit/modules/text-field/text-field-class.js");
 
-document.querySelectorAll('.js-text-field__input-date').forEach(function (elem) {
- new Cleave(elem, {
-  date: true,
-  delimiter: '.',
-  datePattern: ['d', 'm', 'Y']
- });
-});
+document.querySelectorAll('.js-text-field__input-date').forEach(elem=>new _text_field_class_js__WEBPACK_IMPORTED_MODULE_0__["default"](elem));
 
 /***/ }),
 
@@ -231,4 +254,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 /******/ });
-//# sourceMappingURL=registration.9ecad1aec7dfdc26dcdf.js.map
+//# sourceMappingURL=registration.7d0c02b736859c22a713.js.map
