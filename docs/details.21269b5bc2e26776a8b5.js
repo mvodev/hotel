@@ -159,23 +159,55 @@
 /*!*********************************************************!*\
   !*** ./components/ui-kit/modules/button/like-rating.js ***!
   \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _like_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./like.js */ "./components/ui-kit/modules/button/like.js");
 
 const likeButtons = document.querySelectorAll('.js-button-like');
-likeButtons.forEach(elem => elem.addEventListener('click', likeClickListener));
-function likeClickListener(event) {
+likeButtons.forEach(elem => new _like_js__WEBPACK_IMPORTED_MODULE_0__["default"](elem));
+
+/***/ }),
+
+/***/ "./components/ui-kit/modules/button/like.js":
+/*!**************************************************!*\
+  !*** ./components/ui-kit/modules/button/like.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+class LikeRating {
+
+ constructor(likeButton) {
+  this.likeButton = likeButton;
+  this._getElems();
+  this._bindEvents();
+ }
+ _bindEvents() {
+  this.likeButton.addEventListener('click', this._handlelikeButtonClick.bind(this));
+ }
+ _getElems(){
+  this.heart = this.likeButton.querySelector('.js-button-like__heart');
+  this.numberOfLikes = this.likeButton.querySelector('.js-button-like__number');
+ }
+ _handlelikeButtonClick(event) {
   if (event.target.parentElement.classList.contains('button-like_is-liked')) {
-   event.target.parentElement.childNodes[1].innerText--;
-   event.target.parentElement.childNodes[0].innerText = 'favorite_border';
-   event.target.parentElement.classList.remove('button-like_is-liked');
+   this.numberOfLikes.innerText--;
+   this.heart.innerText = 'favorite_border';
+   this.likeButton.classList.remove('button-like_is-liked');
   }
   else {
-   event.target.parentElement.childNodes[1].innerText++;
-   event.target.parentElement.classList.add('button-like_is-liked');
-   event.target.parentElement.childNodes[0].innerText = 'favorite';
+   this.numberOfLikes.innerText++;
+   this.likeButton.classList.add('button-like_is-liked');
+   this.heart.innerText = 'favorite';
   }
+ }
 }
+/* harmony default export */ __webpack_exports__["default"] = (LikeRating);
 
 /***/ }),
 
@@ -325,7 +357,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _details_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_details_scss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
 /* harmony import */ var _ui_kit_modules_button_like_rating_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../ui-kit/modules/button/like-rating.js */ "./components/ui-kit/modules/button/like-rating.js");
-/* harmony import */ var _ui_kit_modules_button_like_rating_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_modules_button_like_rating_js__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _ui_kit_modules_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../ui-kit/modules/dropdown/dropdown.js */ "./components/ui-kit/modules/dropdown/dropdown.js");
 /* harmony import */ var _ui_kit_modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../ui-kit/modules/list/expandable-cl.js */ "./components/ui-kit/modules/list/expandable-cl.js");
 /* harmony import */ var _ui_kit_modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_5__);
@@ -359,4 +390,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 /******/ });
-//# sourceMappingURL=details.03a3cedb753abbeb9126.js.map
+//# sourceMappingURL=details.21269b5bc2e26776a8b5.js.map

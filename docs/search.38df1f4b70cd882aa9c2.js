@@ -163,9 +163,9 @@
 /***/ (function(module, exports) {
 
 const rateButtons = document.querySelectorAll('.js-button-rate label');
-rateButtons.forEach(elem => elem.addEventListener('click', rateClickListener)
+rateButtons.forEach(elem => elem.addEventListener('click', handleRateButtonClick)
 );
-function rateClickListener(event) {
+function handleRateButtonClick(event) {
  let rateNumber = event.target.title.charAt(0);
  let stars = event.target.parentNode.childNodes;
  for (let i = 0; i < rateNumber; i++) {
@@ -342,4 +342,4 @@ $('.js-range-slider__input').ionRangeSlider({
 /***/ })
 
 /******/ });
-//# sourceMappingURL=search.a4cc9d310d958ccbfa10.js.map
+//# sourceMappingURL=search.38df1f4b70cd882aa9c2.js.map

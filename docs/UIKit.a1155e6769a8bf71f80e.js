@@ -159,23 +159,55 @@
 /*!*********************************************************!*\
   !*** ./components/ui-kit/modules/button/like-rating.js ***!
   \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _like_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./like.js */ "./components/ui-kit/modules/button/like.js");
 
 const likeButtons = document.querySelectorAll('.js-button-like');
-likeButtons.forEach(elem => elem.addEventListener('click', likeClickListener));
-function likeClickListener(event) {
+likeButtons.forEach(elem => new _like_js__WEBPACK_IMPORTED_MODULE_0__["default"](elem));
+
+/***/ }),
+
+/***/ "./components/ui-kit/modules/button/like.js":
+/*!**************************************************!*\
+  !*** ./components/ui-kit/modules/button/like.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+class LikeRating {
+
+ constructor(likeButton) {
+  this.likeButton = likeButton;
+  this._getElems();
+  this._bindEvents();
+ }
+ _bindEvents() {
+  this.likeButton.addEventListener('click', this._handlelikeButtonClick.bind(this));
+ }
+ _getElems(){
+  this.heart = this.likeButton.querySelector('.js-button-like__heart');
+  this.numberOfLikes = this.likeButton.querySelector('.js-button-like__number');
+ }
+ _handlelikeButtonClick(event) {
   if (event.target.parentElement.classList.contains('button-like_is-liked')) {
-   event.target.parentElement.childNodes[1].innerText--;
-   event.target.parentElement.childNodes[0].innerText = 'favorite_border';
-   event.target.parentElement.classList.remove('button-like_is-liked');
+   this.numberOfLikes.innerText--;
+   this.heart.innerText = 'favorite_border';
+   this.likeButton.classList.remove('button-like_is-liked');
   }
   else {
-   event.target.parentElement.childNodes[1].innerText++;
-   event.target.parentElement.classList.add('button-like_is-liked');
-   event.target.parentElement.childNodes[0].innerText = 'favorite';
+   this.numberOfLikes.innerText++;
+   this.likeButton.classList.add('button-like_is-liked');
+   this.heart.innerText = 'favorite';
   }
+ }
 }
+/* harmony default export */ __webpack_exports__["default"] = (LikeRating);
 
 /***/ }),
 
@@ -187,9 +219,9 @@ function likeClickListener(event) {
 /***/ (function(module, exports) {
 
 const rateButtons = document.querySelectorAll('.js-button-rate label');
-rateButtons.forEach(elem => elem.addEventListener('click', rateClickListener)
+rateButtons.forEach(elem => elem.addEventListener('click', handleRateButtonClick)
 );
-function rateClickListener(event) {
+function handleRateButtonClick(event) {
  let rateNumber = event.target.title.charAt(0);
  let stars = event.target.parentNode.childNodes;
  for (let i = 0; i < rateNumber; i++) {
@@ -342,7 +374,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_button_star_rating_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../modules/button/star-rating.js */ "./components/ui-kit/modules/button/star-rating.js");
 /* harmony import */ var _modules_button_star_rating_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_modules_button_star_rating_js__WEBPACK_IMPORTED_MODULE_10__);
 /* harmony import */ var _modules_button_like_rating_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../modules/button/like-rating.js */ "./components/ui-kit/modules/button/like-rating.js");
-/* harmony import */ var _modules_button_like_rating_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_modules_button_like_rating_js__WEBPACK_IMPORTED_MODULE_11__);
 /* harmony import */ var _modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../modules/list/expandable-cl.js */ "./components/ui-kit/modules/list/expandable-cl.js");
 /* harmony import */ var _modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_12__);
 /* harmony import */ var _modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../modules/burger/burger.js */ "./components/ui-kit/modules/burger/burger.js");
@@ -403,4 +434,4 @@ $('.js-range-slider__input').ionRangeSlider({
 /***/ })
 
 /******/ });
-//# sourceMappingURL=UIKit.7e9f02505fec01e70d51.js.map
+//# sourceMappingURL=UIKit.a1155e6769a8bf71f80e.js.map

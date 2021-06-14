@@ -1,7 +1,7 @@
 const rateButtons = document.querySelectorAll('.js-button-rate label');
-rateButtons.forEach(elem => elem.addEventListener('click', rateClickListener)
+rateButtons.forEach(elem => elem.addEventListener('click', handleRateButtonClick)
 );
-function rateClickListener(event) {
+function handleRateButtonClick(event) {
  let rateNumber = event.target.title.charAt(0);
  let stars = event.target.parentNode.childNodes;
  for (let i = 0; i < rateNumber; i++) {
