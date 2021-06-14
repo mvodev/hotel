@@ -1,6 +1,8 @@
-import './search.scss';
 import '../../../styles/style.scss';
+import './search.scss';
+
 import 'ion-rangeslider';
+
 import '../../../../node_modules/slick-carousel/slick/slick.js';
 import '../../../../node_modules/slick-carousel/slick/slick.scss';
 import '../../../../node_modules/slick-carousel/slick/slick-theme.scss';
