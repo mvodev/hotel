@@ -207,24 +207,56 @@ rateButtons.forEach(elem => new _star_rating_class_js__WEBPACK_IMPORTED_MODULE_0
 
 /***/ }),
 
+/***/ "./components/ui-kit/modules/list/expandable-cl-class.js":
+/*!***************************************************************!*\
+  !*** ./components/ui-kit/modules/list/expandable-cl-class.js ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+class ExpandableCL {
+ constructor(bulletList) {
+  this.bulletList = bulletList;
+  this._getElems();
+  this._bindEvents();
+ }
+ _getElems() {
+  this.bulletListExpandableArrow =
+  this.bulletList.querySelector('.js-bullet-list-expandable__arrow');
+  this.bulletListDropdown = this.bulletList.querySelector('.js-bullet-list-expandable__dropdown');
+ }
+ _bindEvents() {
+  this.bulletListExpandableArrow.addEventListener('click', this._handleExpandableList.bind(this));
+ }
+ _handleExpandableList(event) {
+  this.bulletListDropdown.classList.toggle('bullet-list_is-visible');
+  if (this.bulletListExpandableArrow.innerText === 'keyboard_arrow_down') {
+   this.bulletListExpandableArrow.innerText = 'keyboard_arrow_up';
+  }
+  else if (this.bulletListExpandableArrow.innerText === 'keyboard_arrow_up') {
+   this.bulletListExpandableArrow.innerText = 'keyboard_arrow_down';
+  }
+ }
+}
+/* harmony default export */ __webpack_exports__["default"] = (ExpandableCL);
+
+/***/ }),
+
 /***/ "./components/ui-kit/modules/list/expandable-cl.js":
 /*!*********************************************************!*\
   !*** ./components/ui-kit/modules/list/expandable-cl.js ***!
   \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-const bulletListExpandableArrow = document.querySelectorAll('.js-bullet-list-expandable span');
-bulletListExpandableArrow.forEach(elem => elem.addEventListener('click', expandableListHandler));
-function expandableListHandler(event) {
- event.target.parentNode.parentNode.childNodes[1].classList.toggle('bullet-list_is-visible');
- if (event.target.innerText === 'keyboard_arrow_down') {
-  event.target.innerText = 'keyboard_arrow_up';
- }
- else if (event.target.innerText === 'keyboard_arrow_up') {
-  event.target.innerText = 'keyboard_arrow_down';
- }
-}
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _expandable_cl_class_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./expandable-cl-class.js */ "./components/ui-kit/modules/list/expandable-cl-class.js");
+
+const bulletListExpandable = document.querySelectorAll('.js-bullet-list-expandable');
+bulletListExpandable.forEach(elem => new _expandable_cl_class_js__WEBPACK_IMPORTED_MODULE_0__["default"](elem));
 
 /***/ }),
 
@@ -310,7 +342,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ui_kit_modules_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../ui-kit/modules/dropdown/dropdown.js */ "./components/ui-kit/modules/dropdown/dropdown.js");
 /* harmony import */ var _ui_kit_modules_button_star_rating_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../ui-kit/modules/button/star-rating.js */ "./components/ui-kit/modules/button/star-rating.js");
 /* harmony import */ var _ui_kit_modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../ui-kit/modules/list/expandable-cl.js */ "./components/ui-kit/modules/list/expandable-cl.js");
-/* harmony import */ var _ui_kit_modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../ui-kit/modules/burger/burger.js */ "./components/ui-kit/modules/burger/burger.js");
 /* harmony import */ var _ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var _ui_kit_modules_room_card_room_card_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../ui-kit/modules/room-card/room-card.js */ "./components/ui-kit/modules/room-card/room-card.js");
@@ -370,4 +401,4 @@ $('.js-range-slider__input').ionRangeSlider({
 /***/ })
 
 /******/ });
-//# sourceMappingURL=search.a1d1660f9823f8321378.js.map
+//# sourceMappingURL=search.dd66fdfd6133165b1d6f.js.map

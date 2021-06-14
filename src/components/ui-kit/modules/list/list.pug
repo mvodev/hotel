@@ -9,8 +9,8 @@ mixin list(options)
     if options.type==='expandable'
       div(class=listClassName)
         div(class='bullet-list-expandable__label')=options.label
-          span(class="material-icons")=isExpandedList ? 'keyboard_arrow_up' : 'keyboard_arrow_down'
-        div(class='bullet-list-expandable__dropdown'+isExpandedList)
+          span(class="material-icons js-bullet-list-expandable__arrow")=isExpandedList ? 'keyboard_arrow_up' : 'keyboard_arrow_down'
+        div(class='bullet-list-expandable__dropdown js-bullet-list-expandable__dropdown'+isExpandedList)
           each val in options.labels ? options.labels : ['There are no values']
             div(class='bullet-list-expandable__dropdown-elem')
               +button({type:'check',labels:[{text:val.text,isChecked:val.isChecked}]})

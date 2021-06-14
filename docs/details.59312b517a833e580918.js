@@ -318,24 +318,56 @@ diagramChart.drawChart();
 
 /***/ }),
 
+/***/ "./components/ui-kit/modules/list/expandable-cl-class.js":
+/*!***************************************************************!*\
+  !*** ./components/ui-kit/modules/list/expandable-cl-class.js ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+class ExpandableCL {
+ constructor(bulletList) {
+  this.bulletList = bulletList;
+  this._getElems();
+  this._bindEvents();
+ }
+ _getElems() {
+  this.bulletListExpandableArrow =
+  this.bulletList.querySelector('.js-bullet-list-expandable__arrow');
+  this.bulletListDropdown = this.bulletList.querySelector('.js-bullet-list-expandable__dropdown');
+ }
+ _bindEvents() {
+  this.bulletListExpandableArrow.addEventListener('click', this._handleExpandableList.bind(this));
+ }
+ _handleExpandableList(event) {
+  this.bulletListDropdown.classList.toggle('bullet-list_is-visible');
+  if (this.bulletListExpandableArrow.innerText === 'keyboard_arrow_down') {
+   this.bulletListExpandableArrow.innerText = 'keyboard_arrow_up';
+  }
+  else if (this.bulletListExpandableArrow.innerText === 'keyboard_arrow_up') {
+   this.bulletListExpandableArrow.innerText = 'keyboard_arrow_down';
+  }
+ }
+}
+/* harmony default export */ __webpack_exports__["default"] = (ExpandableCL);
+
+/***/ }),
+
 /***/ "./components/ui-kit/modules/list/expandable-cl.js":
 /*!*********************************************************!*\
   !*** ./components/ui-kit/modules/list/expandable-cl.js ***!
   \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-const bulletListExpandableArrow = document.querySelectorAll('.js-bullet-list-expandable span');
-bulletListExpandableArrow.forEach(elem => elem.addEventListener('click', expandableListHandler));
-function expandableListHandler(event) {
- event.target.parentNode.parentNode.childNodes[1].classList.toggle('bullet-list_is-visible');
- if (event.target.innerText === 'keyboard_arrow_down') {
-  event.target.innerText = 'keyboard_arrow_up';
- }
- else if (event.target.innerText === 'keyboard_arrow_up') {
-  event.target.innerText = 'keyboard_arrow_down';
- }
-}
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _expandable_cl_class_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./expandable-cl-class.js */ "./components/ui-kit/modules/list/expandable-cl-class.js");
+
+const bulletListExpandable = document.querySelectorAll('.js-bullet-list-expandable');
+bulletListExpandable.forEach(elem => new _expandable_cl_class_js__WEBPACK_IMPORTED_MODULE_0__["default"](elem));
 
 /***/ }),
 
@@ -356,7 +388,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ui_kit_modules_button_like_rating_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../ui-kit/modules/button/like-rating.js */ "./components/ui-kit/modules/button/like-rating.js");
 /* harmony import */ var _ui_kit_modules_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../ui-kit/modules/dropdown/dropdown.js */ "./components/ui-kit/modules/dropdown/dropdown.js");
 /* harmony import */ var _ui_kit_modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../ui-kit/modules/list/expandable-cl.js */ "./components/ui-kit/modules/list/expandable-cl.js");
-/* harmony import */ var _ui_kit_modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../ui-kit/modules/burger/burger.js */ "./components/ui-kit/modules/burger/burger.js");
 /* harmony import */ var _ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _ui_kit_modules_diagram_diagram_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../ui-kit/modules/diagram/diagram.js */ "./components/ui-kit/modules/diagram/diagram.js");
@@ -387,4 +418,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 /******/ });
-//# sourceMappingURL=details.530093b75c27f7bf04e0.js.map
+//# sourceMappingURL=details.59312b517a833e580918.js.map
