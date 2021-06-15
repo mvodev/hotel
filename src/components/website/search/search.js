@@ -12,3 +12,4 @@ import '../../ui-kit/modules/list/expandable-cl.js';
 import '../../ui-kit/modules/burger/burger.js';
 import '../../ui-kit/modules/room-card/room-card.js';
 import '../../ui-kit/modules/range-slider/range-slider.js';
+import '../../ui-kit/modules/list-links/sublinks.js';

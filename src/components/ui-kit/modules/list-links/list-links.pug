@@ -4,4 +4,5 @@ mixin list-links({ links = [], isVertical = false,} = {})
       li.list-links__link(class=link.isExpandable ? 'list-links__link_is-expandable' : '')
         a.list-links__ref(href=link.href class=link.isActive ? 'list-links__ref_active' : '' target="_blank", rel="noopener noreferrer")=link.text
         if link.isExpandable
-          .list-links__arrow='keyboard_arrow_down'
+          .list-links__arrow.js-list-links__arrow='keyboard_arrow_down'
+          .list-links__sub-links

@@ -16,5 +16,6 @@ import '../modules/list/expandable-cl.js';
 import '../modules/burger/burger.js';
 import '../modules/room-card/room-card.js';
 import '../modules/range-slider/range-slider.js';
+import '../modules/list-links/sublinks.js';
 
 $('.js-cards__datepicker').fsdDatepicker({ applyButton: true, clearButton: true, range: true, dateFormat: 'dd M' });

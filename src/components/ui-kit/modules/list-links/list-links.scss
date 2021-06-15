@@ -19,6 +19,7 @@
     margin-right: 20px;
     cursor: pointer;
     text-align: center;
+    position: relative;
   }
   &__ref{
     color: $darkShade50;
@@ -27,6 +28,18 @@
     font-weight: 400;
     font-family: $font-family-main,$fallback-font;
     white-space: nowrap;
+  }
+  &__sub-links{
+    display: none;
+    width: 100px;
+    height: 100px;
+    background-color: $grey;
+    position: absolute;
+    top: 30px;
+    left: 0;
+  }
+  &__sub-links_is-visible{
+    display: block;
   }
   &__ref_active{
     font-weight: bold;
