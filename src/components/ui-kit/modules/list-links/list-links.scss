@@ -21,7 +21,8 @@
     text-align: center;
     position: relative;
   }
-  &__ref{
+  &__ref,
+  &__sub-ref{
     color: $darkShade50;
     font-size: 14px;
     line-height: 17px;
@@ -29,17 +30,24 @@
     font-family: $font-family-main,$fallback-font;
     white-space: nowrap;
   }
+  &__sub-ref{
+    margin-bottom: 10px;
+  }
+  &__sub-ref:hover{
+    color: $darkShade75;
+  }
   &__sub-links{
     display: none;
-    width: 100px;
-    height: 100px;
+    width: auto;
+    height: auto;
     background-color: $grey;
     position: absolute;
     top: 30px;
     left: 0;
   }
   &__sub-links_is-visible{
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
   &__ref_active{
     font-weight: bold;

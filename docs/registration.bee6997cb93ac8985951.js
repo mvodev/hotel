@@ -57,7 +57,7 @@
 /******/ 	// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 	// Promise = chunk loading, 0 = chunk loaded
 /******/ 	var installedChunks = {
-/******/ 		"signin": 0
+/******/ 		"registration": 0
 /******/ 	};
 /******/
 /******/ 	var deferredModules = [];
@@ -148,7 +148,7 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./components/website/sign-in-page/sign-in-page.js","vendors~UIKit~details~landing~main~registration~search~signin","vendors~UIKit~details~landing~registration~search~signin","UIKit~details~landing~main~registration~search~signin"]);
+/******/ 	deferredModules.push(["./components/website/registration/registration.js","vendors~UIKit~details~landing~main~registration~search~signin","vendors~UIKit~details~landing~registration~search~signin","vendors~UIKit~details~registration","UIKit~details~landing~main~registration~search~signin"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
@@ -191,6 +191,15 @@ class SubLinks{
  }
  _handleMenuArrow(e){
   this.subMenuArrow.nextElementSibling.classList.toggle('list-links__sub-links_is-visible');
+  this._toggleArrow();
+ }
+ _toggleArrow() {
+  if (this.subMenuArrow.innerText === 'keyboard_arrow_down') {
+   this.subMenuArrow.innerText = 'keyboard_arrow_up';
+  }
+  else if (this.subMenuArrow.innerText === 'keyboard_arrow_up') {
+   this.subMenuArrow.innerText = 'keyboard_arrow_down';
+  }
  }
 }
 /* harmony default export */ __webpack_exports__["default"] = (SubLinks);
@@ -212,9 +221,53 @@ document.querySelectorAll('.js-list-links__arrow').forEach(elem=>new _sublinks_c
 
 /***/ }),
 
-/***/ "./components/website/sign-in-page/sign-in-page.js":
+/***/ "./components/ui-kit/modules/text-field/text-field-class.js":
+/*!******************************************************************!*\
+  !*** ./components/ui-kit/modules/text-field/text-field-class.js ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
+
+class TextField {
+ constructor(textFieldInput) {
+  this.textFieldInput = textFieldInput;
+  this._init();
+ }
+ _init() {
+  new Cleave(this.textFieldInput, {
+   date: true,
+   delimiter: '.',
+   datePattern: ['d', 'm', 'Y']
+  });
+ }
+
+}
+/* harmony default export */ __webpack_exports__["default"] = (TextField);
+
+/***/ }),
+
+/***/ "./components/ui-kit/modules/text-field/text-field.js":
+/*!************************************************************!*\
+  !*** ./components/ui-kit/modules/text-field/text-field.js ***!
+  \************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _text_field_class_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./text-field-class.js */ "./components/ui-kit/modules/text-field/text-field-class.js");
+
+document.querySelectorAll('.js-text-field__input-date').forEach(elem=>new _text_field_class_js__WEBPACK_IMPORTED_MODULE_0__["default"](elem));
+
+/***/ }),
+
+/***/ "./components/website/registration/registration.js":
 /*!*********************************************************!*\
-  !*** ./components/website/sign-in-page/sign-in-page.js ***!
+  !*** ./components/website/registration/registration.js ***!
   \*********************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -223,11 +276,17 @@ document.querySelectorAll('.js-list-links__arrow').forEach(elem=>new _sublinks_c
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../styles/style.scss */ "./styles/style.scss");
 /* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_style_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _sign_in_page_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sign-in-page.scss */ "./components/website/sign-in-page/sign-in-page.scss");
-/* harmony import */ var _sign_in_page_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sign_in_page_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../ui-kit/modules/burger/burger.js */ "./components/ui-kit/modules/burger/burger.js");
-/* harmony import */ var _ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _ui_kit_modules_list_links_sublinks_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../ui-kit/modules/list-links/sublinks.js */ "./components/ui-kit/modules/list-links/sublinks.js");
+/* harmony import */ var _registration_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./registration.scss */ "./components/website/registration/registration.scss");
+/* harmony import */ var _registration_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_registration_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
+/* harmony import */ var _ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../ui-kit/modules/burger/burger.js */ "./components/ui-kit/modules/burger/burger.js");
+/* harmony import */ var _ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _ui_kit_modules_text_field_text_field_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../ui-kit/modules/text-field/text-field.js */ "./components/ui-kit/modules/text-field/text-field.js");
+/* harmony import */ var _ui_kit_modules_list_links_sublinks_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../ui-kit/modules/list-links/sublinks.js */ "./components/ui-kit/modules/list-links/sublinks.js");
+
+
+
+
 
 
 
@@ -236,9 +295,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./components/website/sign-in-page/sign-in-page.scss":
+/***/ "./components/website/registration/registration.scss":
 /*!***********************************************************!*\
-  !*** ./components/website/sign-in-page/sign-in-page.scss ***!
+  !*** ./components/website/registration/registration.scss ***!
   \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -248,4 +307,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 /******/ });
-//# sourceMappingURL=signin.ec7e64596a85ecf8f5c7.js.map
+//# sourceMappingURL=registration.bee6997cb93ac8985951.js.map

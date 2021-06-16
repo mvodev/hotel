@@ -6,3 +6,5 @@ mixin list-links({ links = [], isVertical = false,} = {})
         if link.isExpandable
           .list-links__arrow.js-list-links__arrow='keyboard_arrow_down'
           .list-links__sub-links
+            each sublink in link.sublinks
+              a.list-links__sub-ref(href=sublink.href target="_blank", rel="noopener noreferrer")=sublink.text

@@ -280,7 +280,7 @@ class ExpandableCL {
  }
  _getElems() {
   this.bulletListExpandableArrow =
-  this.bulletList.querySelector('.js-bullet-list-expandable__arrow');
+   this.bulletList.querySelector('.js-bullet-list-expandable__arrow');
   this.bulletListDropdown = this.bulletList.querySelector('.js-bullet-list-expandable__dropdown');
  }
  _bindEvents() {
@@ -288,6 +288,9 @@ class ExpandableCL {
  }
  _handleExpandableList(event) {
   this.bulletListDropdown.classList.toggle('bullet-list_is-visible');
+  this._toggleArrow();
+ }
+ _toggleArrow() {
   if (this.bulletListExpandableArrow.innerText === 'keyboard_arrow_down') {
    this.bulletListExpandableArrow.innerText = 'keyboard_arrow_up';
   }
@@ -563,4 +566,4 @@ $('.js-cards__datepicker').fsdDatepicker({ applyButton: true, clearButton: true,
 /***/ })
 
 /******/ });
-//# sourceMappingURL=UIKit.2a823845f7d064cb1203.js.map
+//# sourceMappingURL=UIKit.394e5d9c69cbdcfb3159.js.map

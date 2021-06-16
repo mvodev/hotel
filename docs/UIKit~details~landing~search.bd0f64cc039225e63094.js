@@ -2676,6 +2676,15 @@ class SubLinks{
  }
  _handleMenuArrow(e){
   this.subMenuArrow.nextElementSibling.classList.toggle('list-links__sub-links_is-visible');
+  this._toggleArrow();
+ }
+ _toggleArrow() {
+  if (this.subMenuArrow.innerText === 'keyboard_arrow_down') {
+   this.subMenuArrow.innerText = 'keyboard_arrow_up';
+  }
+  else if (this.subMenuArrow.innerText === 'keyboard_arrow_up') {
+   this.subMenuArrow.innerText = 'keyboard_arrow_down';
+  }
  }
 }
 /* harmony default export */ __webpack_exports__["default"] = (SubLinks);
@@ -2698,4 +2707,4 @@ document.querySelectorAll('.js-list-links__arrow').forEach(elem=>new _sublinks_c
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.510ba6dd74861d3b23f4.js.map
+//# sourceMappingURL=UIKit~details~landing~search.bd0f64cc039225e63094.js.map

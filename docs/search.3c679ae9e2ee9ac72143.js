@@ -224,7 +224,7 @@ class ExpandableCL {
  }
  _getElems() {
   this.bulletListExpandableArrow =
-  this.bulletList.querySelector('.js-bullet-list-expandable__arrow');
+   this.bulletList.querySelector('.js-bullet-list-expandable__arrow');
   this.bulletListDropdown = this.bulletList.querySelector('.js-bullet-list-expandable__dropdown');
  }
  _bindEvents() {
@@ -232,6 +232,9 @@ class ExpandableCL {
  }
  _handleExpandableList(event) {
   this.bulletListDropdown.classList.toggle('bullet-list_is-visible');
+  this._toggleArrow();
+ }
+ _toggleArrow() {
   if (this.bulletListExpandableArrow.innerText === 'keyboard_arrow_down') {
    this.bulletListExpandableArrow.innerText = 'keyboard_arrow_up';
   }
@@ -452,4 +455,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 /******/ });
-//# sourceMappingURL=search.60f9b9efb532a2af8c5f.js.map
+//# sourceMappingURL=search.3c679ae9e2ee9ac72143.js.map

@@ -2619,23 +2619,28 @@ table {
     cursor: pointer;
     text-align: center;
     position: relative; }
-  .list-links__ref {
+  .list-links__ref, .list-links__sub-ref {
     color: rgba(31, 32, 65, 0.5);
     font-size: 14px;
     line-height: 17px;
     font-weight: 400;
     font-family: Montserrat, "Arial,sans-serif";
     white-space: nowrap; }
+  .list-links__sub-ref {
+    margin-bottom: 10px; }
+  .list-links__sub-ref:hover {
+    color: rgba(31, 32, 65, 0.75); }
   .list-links__sub-links {
     display: none;
-    width: 100px;
-    height: 100px;
+    width: auto;
+    height: auto;
     background-color: #e5e5e5;
     position: absolute;
     top: 30px;
     left: 0; }
   .list-links__sub-links_is-visible {
-    display: block; }
+    display: flex;
+    flex-direction: column; }
   .list-links__ref_active {
     font-weight: bold;
     color: rgba(31, 32, 65, 0.75);
@@ -4980,4 +4985,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.13dcfd16af46aacca729.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.d4581f209c86ce1b44cf.css.map*/
