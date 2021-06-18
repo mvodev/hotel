@@ -25,9 +25,15 @@
 	&-dark50{
 		opacity: 0.5;
 	}
-	&-white{
+	&-white,&-link{
 		background: none;
 		border:2px solid $purple;
+	}
+	&-link{
+		text-decoration: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	&-white50{
@@ -36,6 +42,7 @@
 	}
 
 	&-white,
+	&-link,
 	&-white50,
 	&-transparent{
 		font-weight: bold;

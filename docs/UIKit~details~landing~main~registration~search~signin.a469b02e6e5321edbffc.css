@@ -3375,13 +3375,18 @@ table {
     line-height: 15px; }
   .button-dark50 {
     opacity: 0.5; }
-  .button-white {
+  .button-white, .button-link {
     background: none;
     border: 2px solid #BC9CFF; }
+  .button-link {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .button-white50 {
     background: none;
     border: 2px solid rgba(188, 156, 255, 0.5); }
-  .button-white, .button-white50, .button-transparent {
+  .button-white, .button-link, .button-white50, .button-transparent {
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
@@ -4592,13 +4597,18 @@ table {
     line-height: 15px; }
   .button-dark50 {
     opacity: 0.5; }
-  .button-white {
+  .button-white, .button-link {
     background: none;
     border: 2px solid #BC9CFF; }
+  .button-link {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .button-white50 {
     background: none;
     border: 2px solid rgba(188, 156, 255, 0.5); }
-  .button-white, .button-white50, .button-transparent {
+  .button-white, .button-link, .button-white50, .button-transparent {
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
@@ -4987,4 +4997,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.b9a3ae16eb60357ebb7e.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.a469b02e6e5321edbffc.css.map*/

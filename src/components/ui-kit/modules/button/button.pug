@@ -1,5 +1,5 @@
 include ../button-radio/button-radio.pug
-mixin button( { darkStar = 1, lightStar, type = '', isChecked = false, isLiked = false, purpose = 'button', label = '', header = '', likeNumber = 0, text = '', labels = [], id, ref='/mock-address/change-me', wide=false,} = {})
+mixin button( { darkStar = 1, lightStar, type = '', isChecked = false, isLiked = false, purpose = 'button', label = '', header = '', likeNumber = 0, text = '', labels = [], id, ref='/mock-address/change-me', wide=false,href='/mock-address/change-me'} = {})
   - var buttonClassName='button'
   - var lightStar = 5 - darkStar
   - var isChecked=isChecked===true ? 'checked' : ''
@@ -16,6 +16,7 @@ mixin button( { darkStar = 1, lightStar, type = '', isChecked = false, isLiked =
   - buttonClassName+=type==='check' ? ' button-check' : ''
   - buttonClassName+=type==='rich' ? ' button-rich' : ''
   - buttonClassName+=type==='radio' ? ' button-radio' : ''
+  - buttonClassName+=type==='link' ? ' button-link button-common' : ''
     if type=='arrow'
       button(class=buttonClassName type=purpose)
         div(class='button-with-arrow__label')=label
@@ -61,5 +62,7 @@ mixin button( { darkStar = 1, lightStar, type = '', isChecked = false, isLiked =
             div(class='button-rich__checkbox-text')=label
     else if type=='radio'
       +button-radio({ label: label, isChecked: isChecked ,id:id})
+    else if type=='link'
+      a(class=buttonClassName,href=href,target="_blank", rel="noopener noreferrer")=label
     else
       button(class=buttonClassName+' button-common' type=purpose)=label
