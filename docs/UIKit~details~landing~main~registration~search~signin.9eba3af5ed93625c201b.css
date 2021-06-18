@@ -2627,6 +2627,8 @@ table {
     font-family: Montserrat, "Arial,sans-serif";
     white-space: nowrap; }
   .list-links__sub-ref {
+    margin: 10px 10px 0px 10px; }
+  .list-links__sub-ref:last-child {
     margin-bottom: 10px; }
   .list-links__sub-ref:hover {
     color: rgba(31, 32, 65, 0.75); }
@@ -4985,4 +4987,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.d4581f209c86ce1b44cf.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.9eba3af5ed93625c201b.css.map*/

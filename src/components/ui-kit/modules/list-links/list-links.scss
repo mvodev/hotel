@@ -31,6 +31,9 @@
     white-space: nowrap;
   }
   &__sub-ref{
+    margin:10px 10px 0px 10px;
+  }
+  &__sub-ref:last-child{
     margin-bottom: 10px;
   }
   &__sub-ref:hover{
