@@ -225,6 +225,7 @@ class DiagramChart {
     this.rootElem = rootElem;
     this.options = this._getOptions(options);
     this._initCanvas();
+    this._drawChart();
   }
   _initCanvas() {
     const canvas = document.createElement('canvas');
@@ -246,7 +247,7 @@ class DiagramChart {
     ctx.font = this.options.fontWeight + ' ' + style.fontSize + ' ' + this.options.font;
     ctx.fillText(text, position.x, position.y);
   }
-  drawChart() {
+  _drawChart() {
     let centerX = this.options.width / 2;
     let centerY = this.options.width / 2;
     let radius = (this.options.width > this.options.height)
@@ -314,7 +315,6 @@ __webpack_require__.r(__webpack_exports__);
 
 const diagramChartRootElem = document.querySelector('.js-diagram-donut');
 const diagramChart = new _diagram_chart_js__WEBPACK_IMPORTED_MODULE_0__["default"](diagramChartRootElem, { number: 260, label: 'голосов', segments: { perfect: 130, good: 65, satisfactory: 65, poor: 0, } });
-diagramChart.drawChart();
 
 /***/ }),
 
@@ -424,4 +424,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 /******/ });
-//# sourceMappingURL=details.5d8ba47b233f3247894d.js.map
+//# sourceMappingURL=details.518b572b7d20a53ebee2.js.map

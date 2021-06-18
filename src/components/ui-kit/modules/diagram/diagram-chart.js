@@ -3,6 +3,7 @@ class DiagramChart {
     this.rootElem = rootElem;
     this.options = this._getOptions(options);
     this._initCanvas();
+    this._drawChart();
   }
   _initCanvas() {
     const canvas = document.createElement('canvas');
@@ -24,7 +25,7 @@ class DiagramChart {
     ctx.font = this.options.fontWeight + ' ' + style.fontSize + ' ' + this.options.font;
     ctx.fillText(text, position.x, position.y);
   }
-  drawChart() {
+  _drawChart() {
     let centerX = this.options.width / 2;
     let centerY = this.options.width / 2;
     let radius = (this.options.width > this.options.height)
