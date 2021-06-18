@@ -148,7 +148,7 @@
     max-width: 341px;
   }
 }
-@media (max-width:$container-width){
+@media (max-width:$container-width - 140px){
   .details__room-images{
     max-width: $container-width;
     width: 100%;

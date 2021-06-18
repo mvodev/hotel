@@ -145,7 +145,7 @@
   color: rgba(31, 32, 65, 0.75);
   max-width: 341px; }
 
-@media (max-width: 1440px) {
+@media (max-width: 1300px) {
   .details__room-images {
     max-width: 1440px;
     width: 100%;
@@ -208,4 +208,4 @@
     text-align: center; } }
 
 
-/*# sourceMappingURL=details.9eba3af5ed93625c201b.css.map*/
+/*# sourceMappingURL=details.d55b9d214984438d51af.css.map*/
