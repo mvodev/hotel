@@ -45,6 +45,62 @@ document.querySelectorAll('.js-header-burger').forEach(elem => new _burger_class
 
 /***/ }),
 
+/***/ "./components/ui-kit/modules/dropdown-counter/dropdown-counter.js":
+/*!************************************************************************!*\
+  !*** ./components/ui-kit/modules/dropdown-counter/dropdown-counter.js ***!
+  \************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+class DropdownCounter {
+
+ constructor(container) {
+  this.container = container;
+  this._getElements();
+  this._bindEvents();
+ }
+ _getElements() {
+  this.minus = this.container.querySelector('.js-container-dropdown__decrease');
+  this.plus = this.container.querySelector('.js-container-dropdown__increase');
+  this.value = this.container.querySelector('.js-container-dropdown__value');
+  this.valueNumber = parseInt(this.value.textContent, 10);
+ }
+ _bindEvents() {
+  this.minus.addEventListener('click', this._handleMinus.bind(this));
+  this.plus.addEventListener('click', this._handlePlus.bind(this));
+ }
+ _handleMinus() {
+  if (this.valueNumber > 0) {
+   this.valueNumber--;
+   this.value.innerHTML = this.valueNumber;
+  }
+  if (this.valueNumber === 0) {
+   this.minus.classList.remove('container-dropdown__decrease_dark');
+  }
+  this.container.dispatchEvent(new CustomEvent("counterChanged", { bubbles: true }));
+ }
+ _handlePlus() {
+  this.valueNumber++;
+  this.value.innerHTML = this.valueNumber;
+  this.minus.classList.add('container-dropdown__decrease_dark');
+  this.container.dispatchEvent(new CustomEvent("counterChanged",{bubbles:true}));
+ }
+ getData() {
+  return this.valueNumber;
+ }
+ resetData() {
+  this.value.innerHTML = '0';
+  this.valueNumber = 0;
+  this.minus.classList.remove('container-dropdown__decrease_dark');
+ }
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (DropdownCounter);
+
+/***/ }),
+
 /***/ "./components/ui-kit/modules/dropdown/dropdown-count.js":
 /*!**************************************************************!*\
   !*** ./components/ui-kit/modules/dropdown/dropdown-count.js ***!
@@ -54,7 +110,7 @@ document.querySelectorAll('.js-header-burger').forEach(elem => new _burger_class
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _dropdown_counter_dropdown_counter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dropdown-counter/dropdown-counter */ "./components/ui-kit/modules/dropdown/dropdown-counter/dropdown-counter.js");
+/* harmony import */ var _dropdown_counter_dropdown_counter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../dropdown-counter/dropdown-counter */ "./components/ui-kit/modules/dropdown-counter/dropdown-counter.js");
 
 
 class DropdownCount {
@@ -220,62 +276,6 @@ class DropdownCount {
   }
 }
 /* harmony default export */ __webpack_exports__["default"] = (DropdownCount);
-
-/***/ }),
-
-/***/ "./components/ui-kit/modules/dropdown/dropdown-counter/dropdown-counter.js":
-/*!*********************************************************************************!*\
-  !*** ./components/ui-kit/modules/dropdown/dropdown-counter/dropdown-counter.js ***!
-  \*********************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-class DropdownCounter {
-
- constructor(container) {
-  this.container = container;
-  this._getElements();
-  this._bindEvents();
- }
- _getElements() {
-  this.minus = this.container.querySelector('.js-container-dropdown__decrease');
-  this.plus = this.container.querySelector('.js-container-dropdown__increase');
-  this.value = this.container.querySelector('.js-container-dropdown__value');
-  this.valueNumber = parseInt(this.value.textContent, 10);
- }
- _bindEvents() {
-  this.minus.addEventListener('click', this._handleMinus.bind(this));
-  this.plus.addEventListener('click', this._handlePlus.bind(this));
- }
- _handleMinus() {
-  if (this.valueNumber > 0) {
-   this.valueNumber--;
-   this.value.innerHTML = this.valueNumber;
-  }
-  if (this.valueNumber === 0) {
-   this.minus.classList.remove('container-dropdown__decrease_dark');
-  }
-  this.container.dispatchEvent(new CustomEvent("counterChanged", { bubbles: true }));
- }
- _handlePlus() {
-  this.valueNumber++;
-  this.value.innerHTML = this.valueNumber;
-  this.minus.classList.add('container-dropdown__decrease_dark');
-  this.container.dispatchEvent(new CustomEvent("counterChanged",{bubbles:true}));
- }
- getData() {
-  return this.valueNumber;
- }
- resetData() {
-  this.value.innerHTML = '0';
-  this.valueNumber = 0;
-  this.minus.classList.remove('container-dropdown__decrease_dark');
- }
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (DropdownCounter);
 
 /***/ }),
 
@@ -2735,4 +2735,4 @@ document.querySelectorAll('.js-list-links__arrow').forEach(elem=>new _sublinks_c
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.f18e9a2765dc1d55ee3f.js.map
+//# sourceMappingURL=UIKit~details~landing~search.922de70d7d211afd0aee.js.map
