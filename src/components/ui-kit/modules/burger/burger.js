@@ -1,6 +1,2 @@
-jQuery(function(){
- const $headerBurgerInput = $('.js-header-burger');
- $headerBurgerInput.click(function (event) {
-  $('.header-burger,.js-header-nav').toggleClass('burger-active');
- });
-})
+import Burger from './burger-class.js';
+document.querySelectorAll('.js-header-burger').forEach(elem => new Burger(elem));
