@@ -47,6 +47,7 @@
     position: absolute;
     top: 30px;
     left: 0;
+    z-index: 9;
   }
   &__sub-links_is-visible{
     display: flex;

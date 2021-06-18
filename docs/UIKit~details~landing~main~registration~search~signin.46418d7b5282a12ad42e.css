@@ -2639,7 +2639,8 @@ table {
     background-color: #e5e5e5;
     position: absolute;
     top: 30px;
-    left: 0; }
+    left: 0;
+    z-index: 9; }
   .list-links__sub-links_is-visible {
     display: flex;
     flex-direction: column; }
@@ -4997,4 +4998,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.a469b02e6e5321edbffc.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.46418d7b5282a12ad42e.css.map*/
