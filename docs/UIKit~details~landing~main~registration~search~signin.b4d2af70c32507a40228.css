@@ -496,13 +496,9 @@
     -webkit-appearance: none; }
     .datepicker--time-row input[type='range']::-webkit-slider-thumb {
       -webkit-appearance: none; }
-    .datepicker--time-row input[type='range']::-ms-tooltip {
-      display: none; }
     .datepicker--time-row input[type='range']:hover::-webkit-slider-thumb {
       border-color: #b8b8b8; }
     .datepicker--time-row input[type='range']:hover::-moz-range-thumb {
-      border-color: #b8b8b8; }
-    .datepicker--time-row input[type='range']:hover::-ms-thumb {
       border-color: #b8b8b8; }
     .datepicker--time-row input[type='range']:focus {
       outline: none; }
@@ -510,9 +506,6 @@
         background: #5cc4ef;
         border-color: #5cc4ef; }
       .datepicker--time-row input[type='range']:focus::-moz-range-thumb {
-        background: #5cc4ef;
-        border-color: #5cc4ef; }
-      .datepicker--time-row input[type='range']:focus::-ms-thumb {
         background: #5cc4ef;
         border-color: #5cc4ef; }
     .datepicker--time-row input[type='range']::-webkit-slider-thumb {
@@ -525,15 +518,6 @@
       cursor: pointer;
       transition: background .2s; }
     .datepicker--time-row input[type='range']::-moz-range-thumb {
-      box-sizing: border-box;
-      height: 12px;
-      width: 12px;
-      border-radius: 3px;
-      border: 1px solid #dedede;
-      background: #fff;
-      cursor: pointer;
-      transition: background .2s; }
-    .datepicker--time-row input[type='range']::-ms-thumb {
       box-sizing: border-box;
       height: 12px;
       width: 12px;
@@ -555,16 +539,6 @@
       height: 1px;
       cursor: pointer;
       color: transparent;
-      background: transparent; }
-    .datepicker--time-row input[type='range']::-ms-track {
-      border: none;
-      height: 1px;
-      cursor: pointer;
-      color: transparent;
-      background: transparent; }
-    .datepicker--time-row input[type='range']::-ms-fill-lower {
-      background: transparent; }
-    .datepicker--time-row input[type='range']::-ms-fill-upper {
       background: transparent; }
   .datepicker--time-row span {
     padding: 0 12px; }
@@ -748,8 +722,6 @@
   -webkit-font-smoothing: antialiased;
   /* Support for Safari and Chrome. */
   text-rendering: optimizeLegibility;
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
   /* Support for IE. */
   font-feature-settings: 'liga'; }
 
@@ -901,7 +873,7 @@ table {
   text-decoration: none;
   width: 24px;
   height: 24px;
-  color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
+  color: #BC9CFF; }
 
 .footer-copyright {
   max-width: 100%;
@@ -1741,7 +1713,6 @@ table {
     margin-top: 24px;
     display: flex;
     flex-direction: row;
-    justify-content: baseline;
     white-space: pre; }
   .room-card__number span:nth-child(2) {
     font-size: 19px;
@@ -2268,8 +2239,6 @@ table {
   -webkit-font-smoothing: antialiased;
   /* Support for Safari and Chrome. */
   text-rendering: optimizeLegibility;
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
   /* Support for IE. */
   font-feature-settings: 'liga'; }
 
@@ -2284,7 +2253,7 @@ table {
   text-decoration: none;
   width: 24px;
   height: 24px;
-  color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
+  color: #BC9CFF; }
 
 .footer-copyright {
   max-width: 100%;
@@ -2339,7 +2308,7 @@ table {
   text-decoration: none;
   width: 24px;
   height: 24px;
-  color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
+  color: #BC9CFF; }
 
 .footer-creative {
   max-width: 768px;
@@ -4369,7 +4338,6 @@ table {
     margin-top: 24px;
     display: flex;
     flex-direction: row;
-    justify-content: baseline;
     white-space: pre; }
   .room-card__number span:nth-child(2) {
     font-size: 19px;
@@ -4998,4 +4966,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.559f7dc790470f9b7923.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.b4d2af70c32507a40228.css.map*/

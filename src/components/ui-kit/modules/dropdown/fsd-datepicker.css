@@ -496,13 +496,9 @@
     -webkit-appearance: none; }
     .datepicker--time-row input[type='range']::-webkit-slider-thumb {
       -webkit-appearance: none; }
-    .datepicker--time-row input[type='range']::-ms-tooltip {
-      display: none; }
     .datepicker--time-row input[type='range']:hover::-webkit-slider-thumb {
       border-color: #b8b8b8; }
     .datepicker--time-row input[type='range']:hover::-moz-range-thumb {
-      border-color: #b8b8b8; }
-    .datepicker--time-row input[type='range']:hover::-ms-thumb {
       border-color: #b8b8b8; }
     .datepicker--time-row input[type='range']:focus {
       outline: none; }
@@ -510,9 +506,6 @@
         background: #5cc4ef;
         border-color: #5cc4ef; }
       .datepicker--time-row input[type='range']:focus::-moz-range-thumb {
-        background: #5cc4ef;
-        border-color: #5cc4ef; }
-      .datepicker--time-row input[type='range']:focus::-ms-thumb {
         background: #5cc4ef;
         border-color: #5cc4ef; }
     .datepicker--time-row input[type='range']::-webkit-slider-thumb {
@@ -525,15 +518,6 @@
       cursor: pointer;
       transition: background .2s; }
     .datepicker--time-row input[type='range']::-moz-range-thumb {
-      box-sizing: border-box;
-      height: 12px;
-      width: 12px;
-      border-radius: 3px;
-      border: 1px solid #dedede;
-      background: #fff;
-      cursor: pointer;
-      transition: background .2s; }
-    .datepicker--time-row input[type='range']::-ms-thumb {
       box-sizing: border-box;
       height: 12px;
       width: 12px;
@@ -555,16 +539,6 @@
       height: 1px;
       cursor: pointer;
       color: transparent;
-      background: transparent; }
-    .datepicker--time-row input[type='range']::-ms-track {
-      border: none;
-      height: 1px;
-      cursor: pointer;
-      color: transparent;
-      background: transparent; }
-    .datepicker--time-row input[type='range']::-ms-fill-lower {
-      background: transparent; }
-    .datepicker--time-row input[type='range']::-ms-fill-upper {
       background: transparent; }
   .datepicker--time-row span {
     padding: 0 12px; }
