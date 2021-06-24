@@ -36,18 +36,39 @@ class DiagramChart {
     let poorAngle = (this.options.segments.poor / this.options.number) * 2 * Math.PI;
     let satisfactoryAngle = (this.options.segments.satisfactory / this.options.number) * 2 * Math.PI;
     if (poorAngle != 0) {
-      this._drawArc(centerX, centerY, radius, this.options.initialAngle + this.options.delimeterAngle, this.options.initialAngle + poorAngle, this.options.backgroundColor.poor);
+      this._drawArc(
+        centerX,
+        centerY,
+        radius,
+        this.options.initialAngle + this.options.delimeterAngle,
+        this.options.initialAngle + poorAngle,
+        this.options.backgroundColor.poor);
     }
     if (satisfactoryAngle != 0) {
-      this._drawArc(centerX, centerY, radius, this.options.initialAngle + this.options.delimeterAngle + poorAngle,
+      this._drawArc(
+        centerX,
+        centerY,
+        radius,
+        this.options.initialAngle + this.options.delimeterAngle + poorAngle,
         this.options.initialAngle + poorAngle + satisfactoryAngle,
         this.options.backgroundColor.satisfactory);
     }
     if (goodAngle != 0) {
-      this._drawArc(centerX, centerY, radius, this.options.initialAngle + poorAngle + satisfactoryAngle + this.options.delimeterAngle, this.options.initialAngle + poorAngle + satisfactoryAngle + goodAngle, this.options.backgroundColor.good);
+      this._drawArc(
+        centerX,
+        centerY,
+        radius,
+        this.options.initialAngle + poorAngle + satisfactoryAngle + this.options.delimeterAngle,
+        this.options.initialAngle + poorAngle + satisfactoryAngle + goodAngle,
+        this.options.backgroundColor.good);
     }
     if (perfectAngle != 0) {
-      this._drawArc(centerX, centerY, radius, this.options.delimeterAngle + this.options.initialAngle + poorAngle + satisfactoryAngle + goodAngle, this.options.initialAngle + poorAngle + satisfactoryAngle + goodAngle + perfectAngle, this.options.backgroundColor.perfect);
+      this._drawArc(
+        centerX,
+        centerY,
+        radius,
+        this.options.delimeterAngle + this.options.initialAngle + poorAngle + satisfactoryAngle + goodAngle,
+        this.options.initialAngle + poorAngle + satisfactoryAngle + goodAngle + perfectAngle, this.options.backgroundColor.perfect);
     }
   }
   _getOptions(options) {
