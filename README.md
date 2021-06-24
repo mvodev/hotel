@@ -4,7 +4,7 @@
   ## Запуск проекта
   npm i&npm run build
   ## Результат сборки проекта
-  Находится в папке docs
+  Находится в папке docs.Верстка проверена в Pixel Perfect в Chrome и Firefox.
 
   В папке scripts находится файл fsd-datepicker.js 
   
