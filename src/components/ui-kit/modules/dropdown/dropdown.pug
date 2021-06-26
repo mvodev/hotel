@@ -1,38 +1,38 @@
 include ../dropdown-counter/dropdown-counter.pug
 
 mixin dropdown(options)
- -
-  var dropDownClassName = 'dropdown'
-  var expandedCorners=''
-  var isExpanded=options.isExpanded===true ? ' dropdown_active' : ''
-  var typeDropdown = options.typeDropdown
-  expandedCorners+=options.isExpanded ? ' dropdown_active' : ''
-  dropDownClassName+=typeDropdown==='guests' ? ' dropdown__guests' : ''
-  dropDownClassName+=typeDropdown==='date' ? ' dropdown__date ' : ''
-  dropDownClassName+=typeDropdown==='filter' ? ' dropdown__filter ' : ''
-  dropDownClassName+=typeDropdown==='room' ? ' dropdown__room ' : ''
-  dropDownClassName+=typeDropdown==='filter-date' ? ' dropdown__filter-date ' : ''
-  dropDownClassName+=' js-dropdown'
- section(class= dropDownClassName+expandedCorners)
-  if typeDropdown==='guests'||typeDropdown==='room'
-    div(class='dropdown__input-wrapper')
-      input(class='dropdown__input' placeholder=options.placeholder type='text' id=options.id readonly)
-      div(class='dropdown__arrow')='keyboard_arrow_down'
-    div(class="dropdown__body"+isExpanded)
-        each line in options.labels 
-          +dropdown-counter({text:line.text,counterNumber:line.counterNumber})
-        if options.withButtons 
-          .dropdown__body-buttons.buttons-dropdown
-            .buttons-dropdown__clear.buttons-dropdown_hidden Очистить
-            .buttons-dropdown__apply Применить
-  if typeDropdown==='date'||typeDropdown==='filter'
-    div(class='dropdown__input-wrapper')
-      input(class='dropdown__input' placeholder=options.placeholder type='text' id=options.id readonly)
-      div(class='dropdown__arrow')='keyboard_arrow_down'
-  if typeDropdown==='filter-date'
+  -
+    var dropDownClassName = 'dropdown'
+    var expandedCorners=''
+    var isExpanded=options.isExpanded===true ? ' dropdown_active' : ''
+    var typeDropdown = options.typeDropdown
+    expandedCorners+=options.isExpanded ? ' dropdown_active' : ''
+    dropDownClassName+=typeDropdown==='guests' ? ' dropdown__guests' : ''
+    dropDownClassName+=typeDropdown==='date' ? ' dropdown__date ' : ''
+    dropDownClassName+=typeDropdown==='filter' ? ' dropdown__filter ' : ''
+    dropDownClassName+=typeDropdown==='room' ? ' dropdown__room ' : ''
+    dropDownClassName+=typeDropdown==='filter-date' ? ' dropdown__filter-date ' : ''
+    dropDownClassName+=' js-dropdown'
+  section(class= dropDownClassName+expandedCorners)
+    if typeDropdown==='guests'||typeDropdown==='room'
       div(class='dropdown__input-wrapper')
-        input(class='dropdown__input' placeholder=options.placeholder type='text' readonly)
+        input(class='dropdown__input' placeholder=options.placeholder type='text' id=options.id readonly)
         div(class='dropdown__arrow')='keyboard_arrow_down'
+      div(class="dropdown__body"+isExpanded)
+          each line in options.labels 
+            +dropdown-counter({text:line.text,counterNumber:line.counterNumber})
+          if options.withButtons 
+            .dropdown__body-buttons.buttons-dropdown
+              .buttons-dropdown__clear.buttons-dropdown_hidden Очистить
+              .buttons-dropdown__apply Применить
+    if typeDropdown==='date'||typeDropdown==='filter'
       div(class='dropdown__input-wrapper')
-        input(class='dropdown__input' placeholder=options.placeholder type='text' readonly)
+        input(class='dropdown__input' placeholder=options.placeholder type='text' id=options.id readonly)
         div(class='dropdown__arrow')='keyboard_arrow_down'
+    if typeDropdown==='filter-date'
+        div(class='dropdown__input-wrapper')
+          input(class='dropdown__input' placeholder=options.placeholder type='text' readonly)
+          div(class='dropdown__arrow')='keyboard_arrow_down'
+        div(class='dropdown__input-wrapper')
+          input(class='dropdown__input' placeholder=options.placeholder type='text' readonly)
+          div(class='dropdown__arrow')='keyboard_arrow_down'

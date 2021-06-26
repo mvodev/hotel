@@ -56,45 +56,45 @@ document.querySelectorAll('.js-header-burger').forEach(elem => new _burger_class
 __webpack_require__.r(__webpack_exports__);
 class DropdownCounter {
 
- constructor(container) {
-  this.container = container;
-  this._getElements();
-  this._bindEvents();
- }
- _getElements() {
-  this.minus = this.container.querySelector('.js-container-dropdown__decrease');
-  this.plus = this.container.querySelector('.js-container-dropdown__increase');
-  this.value = this.container.querySelector('.js-container-dropdown__value');
-  this.valueNumber = parseInt(this.value.textContent, 10);
- }
- _bindEvents() {
-  this.minus.addEventListener('click', this._handleMinus.bind(this));
-  this.plus.addEventListener('click', this._handlePlus.bind(this));
- }
- _handleMinus() {
-  if (this.valueNumber > 0) {
-   this.valueNumber--;
-   this.value.innerHTML = this.valueNumber;
+  constructor(container) {
+    this.container = container;
+    this._getElements();
+    this._bindEvents();
   }
-  if (this.valueNumber === 0) {
-   this.minus.classList.remove('container-dropdown__decrease_dark');
+  _getElements() {
+    this.minus = this.container.querySelector('.js-container-dropdown__decrease');
+    this.plus = this.container.querySelector('.js-container-dropdown__increase');
+    this.value = this.container.querySelector('.js-container-dropdown__value');
+    this.valueNumber = parseInt(this.value.textContent, 10);
   }
-  this.container.dispatchEvent(new CustomEvent("counterChanged", { bubbles: true }));
- }
- _handlePlus() {
-  this.valueNumber++;
-  this.value.innerHTML = this.valueNumber;
-  this.minus.classList.add('container-dropdown__decrease_dark');
-  this.container.dispatchEvent(new CustomEvent("counterChanged",{bubbles:true}));
- }
- getData() {
-  return this.valueNumber;
- }
- resetData() {
-  this.value.innerHTML = '0';
-  this.valueNumber = 0;
-  this.minus.classList.remove('container-dropdown__decrease_dark');
- }
+  _bindEvents() {
+    this.minus.addEventListener('click', this._handleMinus.bind(this));
+    this.plus.addEventListener('click', this._handlePlus.bind(this));
+  }
+  _handleMinus() {
+    if (this.valueNumber > 0) {
+    this.valueNumber--;
+    this.value.innerHTML = this.valueNumber;
+    }
+    if (this.valueNumber === 0) {
+    this.minus.classList.remove('container-dropdown__decrease_dark');
+    }
+    this.container.dispatchEvent(new CustomEvent("counterChanged", { bubbles: true }));
+  }
+  _handlePlus() {
+    this.valueNumber++;
+    this.value.innerHTML = this.valueNumber;
+    this.minus.classList.add('container-dropdown__decrease_dark');
+    this.container.dispatchEvent(new CustomEvent("counterChanged",{bubbles:true}));
+  }
+  getData() {
+    return this.valueNumber;
+  }
+  resetData() {
+    this.value.innerHTML = '0';
+    this.valueNumber = 0;
+    this.minus.classList.remove('container-dropdown__decrease_dark');
+  }
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (DropdownCounter);
@@ -131,20 +131,20 @@ class DropdownCount {
       beds: ['кровать', 'кровати', 'кроватей'],
       baths: ['ванная комната', 'ванные комнаты', 'ванных комнат'],
     };
-  this.arrow = this.rootElem.querySelector(".dropdown__arrow");
-  this.input = this.rootElem.querySelector(".dropdown__input");
-  this.body = this.rootElem.querySelector(".dropdown__body");
-  this.counters = this.rootElem.querySelectorAll(".dropdown-counter");
-  if (this.rootElem.classList.contains("dropdown__room")) {
-    this.dropdownType = 'room';
-  } else if (this.rootElem.classList.contains("dropdown__guests")) {
-    this.dropdownType = 'guests';
-    this.applyButton = this.rootElem.querySelector(".buttons-dropdown__apply");
-    this.clearButton = this.rootElem.querySelector(".buttons-dropdown__clear");
-  }
-  this.counters.forEach(elem => {
-    this.dropdownCounters.push(new _dropdown_counter_dropdown_counter__WEBPACK_IMPORTED_MODULE_0__["default"](elem));
-  });
+    this.arrow = this.rootElem.querySelector(".dropdown__arrow");
+    this.input = this.rootElem.querySelector(".dropdown__input");
+    this.body = this.rootElem.querySelector(".dropdown__body");
+    this.counters = this.rootElem.querySelectorAll(".dropdown-counter");
+    if (this.rootElem.classList.contains("dropdown__room")) {
+      this.dropdownType = 'room';
+    } else if (this.rootElem.classList.contains("dropdown__guests")) {
+      this.dropdownType = 'guests';
+      this.applyButton = this.rootElem.querySelector(".buttons-dropdown__apply");
+      this.clearButton = this.rootElem.querySelector(".buttons-dropdown__clear");
+    }
+    this.counters.forEach(elem => {
+      this.dropdownCounters.push(new _dropdown_counter_dropdown_counter__WEBPACK_IMPORTED_MODULE_0__["default"](elem));
+    });
 }
   showDropdown() {
     this.rootElem.classList.add("dropdown_active");
@@ -292,47 +292,50 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _fsd_datepicker_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_fsd_datepicker_js__WEBPACK_IMPORTED_MODULE_0__);
 
 class DropdownDate {
- constructor(rootElem) {
-  this.rootElem = rootElem;
-  this._getElems();
-  this._init();
-  this._bindEvents();
- }
- _getElems() {
-  this.startInput = this.rootElem.querySelectorAll(".dropdown__input")[0];
-  this.endInput = this.rootElem.querySelectorAll(".dropdown__input")[1];
-  this.$dpInput = $(this.startInput);
-  this.$endInput = $(this.endInput);
-  this.arrows = this.rootElem.querySelectorAll('.dropdown__arrow');
-  this.startDropdownArrow = this.arrows[0];
-  this.endDropdownArrow = this.arrows[1];
- }
- _bindEvents() {
-  this.startDropdownArrow.addEventListener('click', this._handlerStartArrowDropdown.bind(this));
-  this.endDropdownArrow.addEventListener('click', this._handlerEndArrowDropdown.bind(this));
- }
+  constructor(rootElem) {
+    this.rootElem = rootElem;
+    this._getElems();
+    this._init();
+    this._bindEvents();
+  }
+  _getElems() {
+    this.startInput = this.rootElem.querySelectorAll(".dropdown__input")[0];
+    this.endInput = this.rootElem.querySelectorAll(".dropdown__input")[1];
+    this.$dpInput = $(this.startInput);
+    this.$endInput = $(this.endInput);
+    this.arrows = this.rootElem.querySelectorAll('.dropdown__arrow');
+    this.startDropdownArrow = this.arrows[0];
+    this.endDropdownArrow = this.arrows[1];
+  }
+  _bindEvents() {
+    this.startDropdownArrow.addEventListener('click', this._handlerStartArrowDropdown.bind(this));
+    this.endDropdownArrow.addEventListener('click', this._handlerEndArrowDropdown.bind(this));
+  }
 
- _init() {
-  this.$dpInput.fsdDatepicker({
-   applyButton: true, clearButton: true, range: true,
-   multipleDatesSeparator: '     ',
-   onSelect: function (fd, d, picker) {
-    const $leftDatepicker = picker.$el;
-    const $rightDatepicker = picker.$el.parent().parent().children().last().children().first();
-    $leftDatepicker.val(fd.split('     ')[0]);
-    $rightDatepicker.val(fd.split('     ')[1]);
-    if (fd.length === 0) {
-     $rightDatepicker.val('');
-    }
-   }
-  });
- }
- _handlerStartArrowDropdown() {
-  this.$dpInput.fsdDatepicker().data('fsd-datepicker').show();
- }
- _handlerEndArrowDropdown() {
-  this.$dpInput.fsdDatepicker().data('fsd-datepicker').show();
- }
+  _init() {
+    this.$dpInput.
+    fsdDatepicker({
+      applyButton: true,
+      clearButton: true, 
+      range: true,
+      multipleDatesSeparator: '     ',
+      onSelect: function (fd, d, picker) {
+        const $leftDatepicker = picker.$el;
+        const $rightDatepicker = picker.$el.parent().parent().children().last().children().first();
+        $leftDatepicker.val(fd.split('     ')[0]);
+        $rightDatepicker.val(fd.split('     ')[1]);
+        if (fd.length === 0) {
+          $rightDatepicker.val('');
+        }
+      }
+    });
+  }
+  _handlerStartArrowDropdown() {
+    this.$dpInput.fsdDatepicker().data('fsd-datepicker').show();
+  }
+  _handlerEndArrowDropdown() {
+    this.$dpInput.fsdDatepicker().data('fsd-datepicker').show();
+  }
 }
 /* harmony default export */ __webpack_exports__["default"] = (DropdownDate);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js")))
@@ -369,7 +372,10 @@ class DropdownFilter {
   _init() {
     this.$dpInput = $('.dropdown__filter input');
     this.$dpInput.fsdDatepicker({
-      applyButton: true, clearButton: true, range: true, dateFormat: 'dd M',
+      applyButton: true, 
+      clearButton: true, 
+      range: true, 
+      dateFormat: 'dd M',
       onSelect: function (fd, d, picker) {
         picker.$el.val(fd);
         if (fd.length === 0) {
@@ -404,23 +410,23 @@ __webpack_require__.r(__webpack_exports__);
 
 
 class DropdownMain {
- constructor(rootElem) {
-  this.rootElem = rootElem;
-  this._initDropdowns();
- }
- _initDropdowns() {
-  this.rootElem.forEach(elem => {
-   if (elem.classList.contains("dropdown__filter-date")) {
-    new _dropdown_date__WEBPACK_IMPORTED_MODULE_0__["default"](elem);
-   }
-   else if (elem.classList.contains("dropdown__filter")) {
-    new _dropdown_filter__WEBPACK_IMPORTED_MODULE_2__["default"](elem);
-   }
-   else {
-    new _dropdown_count__WEBPACK_IMPORTED_MODULE_1__["default"](elem)
-   };
-  });
- }
+  constructor(rootElem) {
+    this.rootElem = rootElem;
+    this._initDropdowns();
+  }
+  _initDropdowns() {
+    this.rootElem.forEach(elem => {
+    if (elem.classList.contains("dropdown__filter-date")) {
+      new _dropdown_date__WEBPACK_IMPORTED_MODULE_0__["default"](elem);
+    }
+    else if (elem.classList.contains("dropdown__filter")) {
+      new _dropdown_filter__WEBPACK_IMPORTED_MODULE_2__["default"](elem);
+    }
+    else {
+      new _dropdown_count__WEBPACK_IMPORTED_MODULE_1__["default"](elem)
+    };
+    });
+  }
 }
 /* harmony default export */ __webpack_exports__["default"] = (DropdownMain);
 
@@ -2735,4 +2741,4 @@ document.querySelectorAll('.js-list-links__arrow').forEach(elem=>new _sublinks_c
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.607717924526905b5358.js.map
+//# sourceMappingURL=UIKit~details~landing~search.38dc266d313cd0b4ad2e.js.map

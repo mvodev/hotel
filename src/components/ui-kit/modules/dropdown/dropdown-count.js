@@ -18,20 +18,20 @@ class DropdownCount {
       beds: ['кровать', 'кровати', 'кроватей'],
       baths: ['ванная комната', 'ванные комнаты', 'ванных комнат'],
     };
-  this.arrow = this.rootElem.querySelector(".dropdown__arrow");
-  this.input = this.rootElem.querySelector(".dropdown__input");
-  this.body = this.rootElem.querySelector(".dropdown__body");
-  this.counters = this.rootElem.querySelectorAll(".dropdown-counter");
-  if (this.rootElem.classList.contains("dropdown__room")) {
-    this.dropdownType = 'room';
-  } else if (this.rootElem.classList.contains("dropdown__guests")) {
-    this.dropdownType = 'guests';
-    this.applyButton = this.rootElem.querySelector(".buttons-dropdown__apply");
-    this.clearButton = this.rootElem.querySelector(".buttons-dropdown__clear");
-  }
-  this.counters.forEach(elem => {
-    this.dropdownCounters.push(new DropdownCounter(elem));
-  });
+    this.arrow = this.rootElem.querySelector(".dropdown__arrow");
+    this.input = this.rootElem.querySelector(".dropdown__input");
+    this.body = this.rootElem.querySelector(".dropdown__body");
+    this.counters = this.rootElem.querySelectorAll(".dropdown-counter");
+    if (this.rootElem.classList.contains("dropdown__room")) {
+      this.dropdownType = 'room';
+    } else if (this.rootElem.classList.contains("dropdown__guests")) {
+      this.dropdownType = 'guests';
+      this.applyButton = this.rootElem.querySelector(".buttons-dropdown__apply");
+      this.clearButton = this.rootElem.querySelector(".buttons-dropdown__clear");
+    }
+    this.counters.forEach(elem => {
+      this.dropdownCounters.push(new DropdownCounter(elem));
+    });
 }
   showDropdown() {
     this.rootElem.classList.add("dropdown_active");
