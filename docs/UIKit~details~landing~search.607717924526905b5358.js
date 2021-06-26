@@ -10,21 +10,21 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 class Burger {
- constructor(burger) {
-  this.burger = burger;
-  this._getElems()
-  this._bindEvents();
- }
- _getElems() {
-  this.nav = this.burger.parentNode.querySelector('.js-header-nav');
- }
- _bindEvents() {
-  this.burger.addEventListener('click', this._handleBurgerClick.bind(this));
- }
- _handleBurgerClick(e) {
-  this.burger.classList.toggle('burger-active');
-  this.nav.classList.toggle('burger-active');
- }
+  constructor(burger) {
+    this.burger = burger;
+    this._getElems()
+    this._bindEvents();
+  }
+  _getElems() {
+    this.nav = this.burger.parentNode.querySelector('.js-header-nav');
+  }
+  _bindEvents() {
+    this.burger.addEventListener('click', this._handleBurgerClick.bind(this));
+  }
+  _handleBurgerClick(e) {
+    this.burger.classList.toggle('burger-active');
+    this.nav.classList.toggle('burger-active');
+  }
 }
 /* harmony default export */ __webpack_exports__["default"] = (Burger);
 
@@ -2735,4 +2735,4 @@ document.querySelectorAll('.js-list-links__arrow').forEach(elem=>new _sublinks_c
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.922de70d7d211afd0aee.js.map
+//# sourceMappingURL=UIKit~details~landing~search.607717924526905b5358.js.map
