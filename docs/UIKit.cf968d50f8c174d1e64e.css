@@ -11,9 +11,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column; }
 
 .content-container {
@@ -30,4 +27,4 @@ body {
   margin-top: 3px; }
 
 
-/*# sourceMappingURL=UIKit.a4e6891eb5dcda84e3a4.css.map*/
+/*# sourceMappingURL=UIKit.cf968d50f8c174d1e64e.css.map*/
