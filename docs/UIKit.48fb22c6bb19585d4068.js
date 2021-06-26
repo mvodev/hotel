@@ -166,30 +166,30 @@
 __webpack_require__.r(__webpack_exports__);
 class LikeRating {
 
- constructor(likeButton) {
-  this.likeButton = likeButton;
-  this._getElems();
-  this._bindEvents();
- }
- _bindEvents() {
-  this.likeButton.addEventListener('click', this._handlelikeButtonClick.bind(this));
- }
- _getElems(){
-  this.heart = this.likeButton.querySelector('.js-button-like__heart');
-  this.numberOfLikes = this.likeButton.querySelector('.js-button-like__number');
- }
- _handlelikeButtonClick(event) {
-  if (event.target.parentElement.classList.contains('button-like_is-liked')) {
-   this.numberOfLikes.innerText--;
-   this.heart.innerText = 'favorite_border';
-   this.likeButton.classList.remove('button-like_is-liked');
+  constructor(likeButton) {
+    this.likeButton = likeButton;
+    this._getElems();
+    this._bindEvents();
   }
-  else {
-   this.numberOfLikes.innerText++;
-   this.likeButton.classList.add('button-like_is-liked');
-   this.heart.innerText = 'favorite';
+  _bindEvents() {
+    this.likeButton.addEventListener('click', this._handlelikeButtonClick.bind(this));
   }
- }
+  _getElems(){
+    this.heart = this.likeButton.querySelector('.js-button-like__heart');
+    this.numberOfLikes = this.likeButton.querySelector('.js-button-like__number');
+  }
+  _handlelikeButtonClick(event) {
+    if (event.target.parentElement.classList.contains('button-like_is-liked')) {
+      this.numberOfLikes.innerText--;
+      this.heart.innerText = 'favorite_border';
+      this.likeButton.classList.remove('button-like_is-liked');
+    }
+    else {
+      this.numberOfLikes.innerText++;
+      this.likeButton.classList.add('button-like_is-liked');
+      this.heart.innerText = 'favorite';
+    }
+  }
 }
 /* harmony default export */ __webpack_exports__["default"] = (LikeRating);
 
@@ -221,26 +221,26 @@ likeButtons.forEach(elem => new _like_rating_class_js__WEBPACK_IMPORTED_MODULE_0
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 class StarRating{
-constructor(starRating){
- this.starRating = starRating;
- this._getElems();
- this._bindEvents();
-}
-_getElems(){
- this.starRatingLabels = this.starRating.querySelectorAll('.js-button-rate__star');
-}
-_bindEvents(){
- this.starRatingLabels.forEach(elem => elem.addEventListener('click', this._handleRateButtonClick.bind(this)));
-}
-_handleRateButtonClick(event) {
- let rateNumberUserChoice = event.target.title.charAt(0);
- for (let i = 0; i < rateNumberUserChoice; i++) {
-  this.starRatingLabels[i].innerHTML = 'star';
- }
- for (let j = rateNumberUserChoice; j < 5; j++) {
-  this.starRatingLabels[j].innerHTML = 'star_border';
- }
-}
+  constructor(starRating){
+    this.starRating = starRating;
+    this._getElems();
+    this._bindEvents();
+  }
+  _getElems(){
+    this.starRatingLabels = this.starRating.querySelectorAll('.js-button-rate__star');
+  }
+  _bindEvents(){
+    this.starRatingLabels.forEach(elem => elem.addEventListener('click', this._handleRateButtonClick.bind(this)));
+  }
+  _handleRateButtonClick(event) {
+     let rateNumberUserChoice = event.target.title.charAt(0);
+     for (let i = 0; i < rateNumberUserChoice; i++) {
+       this.starRatingLabels[i].innerHTML = 'star';
+     }
+     for (let j = rateNumberUserChoice; j < 5; j++) {
+       this.starRatingLabels[j].innerHTML = 'star_border';
+     }
+  }
 }
 /* harmony default export */ __webpack_exports__["default"] = (StarRating);
 
@@ -565,4 +565,4 @@ $('.js-cards__datepicker').fsdDatepicker({ applyButton: true, clearButton: true,
 /***/ })
 
 /******/ });
-//# sourceMappingURL=UIKit.904521dcc6e9d81bce5d.js.map
+//# sourceMappingURL=UIKit.48fb22c6bb19585d4068.js.map

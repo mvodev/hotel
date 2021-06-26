@@ -1,75 +1,76 @@
 @import '../button-radio/button-radio.scss';
 .button{
-		border: none;
-		cursor: pointer;
-		font-family: $font-family-main,$fallback-font;
-		font-style: normal;
-		text-decoration: none;
-		overflow: hidden;
-	&-common{
-		width: 99px;
-		height: 44px;
-		border-radius: 22px;
-	}
-	&_wide{
-		width: 196px;
-	}
-	&-dark,&-dark50{
-		background: $buttonColor;
-		text-transform: uppercase;
-		color: $white;
-		font-weight: bold;
-		font-size: 12px;
-		line-height: 15px;
-	}
-	&-dark50{
-		opacity: 0.5;
-	}
-	&-white,&-link{
-		background: none;
-		border:2px solid $purple;
-	}
-	&-link{
-		text-decoration: none;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+			border: none;
+			cursor: pointer;
+			font-family: $font-family-main,$fallback-font;
+			font-style: normal;
+			text-decoration: none;
+			overflow: hidden;
 
-	&-white50{
-		background: none;
-		border:2px solid rgba($color: $purple, $alpha: 0.5);
-	}
+			&-common{
+					width: 99px;
+					height: 44px;
+					border-radius: 22px;
+			}
+		&_wide{
+				width: 196px;
+		}
+		&-dark,&-dark50{
+				background: $buttonColor;
+				text-transform: uppercase;
+				color: $white;
+				font-weight: bold;
+				font-size: 12px;
+				line-height: 15px;
+		}
+		&-dark50{
+				opacity: 0.5;
+		}
+		&-white,&-link{
+				background: none;
+				border:2px solid $purple;
+		}
+		&-link{
+				text-decoration: none;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+		}
 
-	&-white,
-	&-link,
-	&-white50,
-	&-transparent{
-		font-weight: bold;
-		font-size: 12px;
-		line-height: 15px;
-		text-transform: uppercase;
-		color:$purple;
-		white-space: nowrap;
-	}
+		&-white50{
+				background: none;
+				border:2px solid rgba($color: $purple, $alpha: 0.5);
+		}
 
-	&-transparent,
-	&-transparent50{
-		border: none;
-		background: none;
-		height: 15px;
-		width: 61px;
-		padding: 0px;
-	}
+		&-white,
+		&-link,
+		&-white50,
+		&-transparent{
+				font-weight: bold;
+				font-size: 12px;
+				line-height: 15px;
+				text-transform: uppercase;
+				color:$purple;
+				white-space: nowrap;
+		}
 
-	&-transparent50{
-		font-weight: bold;
-		font-size: 12px;
-		line-height: 15px;
-		text-transform: uppercase;
-		color: $darkShade50;
-		text-decoration: none;
-	}
+		&-transparent,
+		&-transparent50{
+				border: none;
+				background: none;
+				height: 15px;
+				width: 61px;
+				padding: 0px;
+		}
+
+		&-transparent50{
+				font-weight: bold;
+				font-size: 12px;
+				line-height: 15px;
+				text-transform: uppercase;
+				color: $darkShade50;
+				text-decoration: none;
+		}
 }
 .button-with-arrow{
 		width: 320px;
@@ -86,24 +87,25 @@
 		line-height: 15px;
 		text-transform: uppercase;
 		color: $white;
+
 		&__arr{
-			font-weight: normal;
-			line-height: 24px;
-			display: flex;
-			align-items: center;
-			text-align: center;
-			justify-content: center;
-			color: $white;
-			height: 44px;
-			width: 44px;
-			position: absolute;
-			top: 0;
-			left: 276px;
+				font-weight: normal;
+				line-height: 24px;
+				display: flex;
+				align-items: center;
+				text-align: center;
+				justify-content: center;
+				color: $white;
+				height: 44px;
+				width: 44px;
+				position: absolute;
+				top: 0;
+				left: 276px;
 		}
 		&__label{
-			max-width: 256px;
-			max-height: 15px;
-			overflow: hidden;
+				max-width: 256px;
+				max-height: 15px;
+				overflow: hidden;
 		}
 }
 .button-rate{
@@ -130,48 +132,50 @@
 }
 
 .button-like{
-		width: 40px;
-		height: 20px;
-		background: $white;
-		border: 1px solid $darkShade25;
-		box-sizing: border-box;
-		white-space: nowrap;
-		border-radius: 10px;
-		display: flex;
-		flex-direction: row;
-				& div:first-child{
-					width: 50%;
-					height: 20px;
-					text-align: center;
-					align-items: center;
-					display: block;
-					font-family: $font-for-icons;
-					font-weight: normal;
-					font-size: 10px;
-					line-height: 9px;
-					color: $darkShade25;
-					padding-top: 5px;
-				}
-				& div:nth-child(2){
-					width: 50%;
-					height: 100%;
-					font-weight: normal;
-					font-size: 10px;
-					line-height: 12px;
-					text-align: center;
-					align-items: center;
-					color: $darkShade25;
-					display: flex;
-				}
+			width: 40px;
+			height: 20px;
+			background: $white;
+			border: 1px solid $darkShade25;
+			box-sizing: border-box;
+			white-space: nowrap;
+			border-radius: 10px;
+			display: flex;
+			flex-direction: row;
+
+					& div:first-child{
+							width: 50%;
+							height: 20px;
+							text-align: center;
+							align-items: center;
+							display: block;
+							font-family: $font-for-icons;
+							font-weight: normal;
+							font-size: 10px;
+							line-height: 9px;
+							color: $darkShade25;
+							padding-top: 5px;
+						}
+						& div:nth-child(2){
+								width: 50%;
+								height: 100%;
+								font-weight: normal;
+								font-size: 10px;
+								line-height: 12px;
+								text-align: center;
+								align-items: center;
+								color: $darkShade25;
+								display: flex;
+						}
 }
 .button-check{
-	width: 222px;
+		width: 222px;
+
 		&__checkbox-input{
-			position: absolute;
-			z-index: 1;
-			opacity: 0;
-			margin-left: 3px;
-			cursor: pointer;
+				position: absolute;
+				z-index: 1;
+				opacity: 0;
+				margin-left: 3px;
+				cursor: pointer;
 		}
 		&__checkbox-text{
 				position: relative;
@@ -184,9 +188,9 @@
 				cursor: pointer;
 		}
 		&__elem{
-			margin-bottom: 10px;
-			min-height: 20px;
-			display: block;
+				margin-bottom: 10px;
+				min-height: 20px;
+				display: block;
 		}
 		&__checkbox-text:before{
 				content: '';
@@ -212,46 +216,46 @@
 	height: 51px;
 
 		&__checkbox-input {
-			position: absolute;
-			z-index: -1;
-			opacity: 0;
-			margin-left: 10px;
+				position: absolute;
+				z-index: -1;
+				opacity: 0;
+				margin-left: 10px;
 		}
 		&__checkbox-header{
-			position: relative;
-			cursor: pointer;
-			padding-left: 30px;
-			font-weight: bold;
-			font-size: 14px;
-			line-height: 18px;
-			color: $darkShade75;
-			height: 18px;
-			max-width: 236px;
+				position: relative;
+				cursor: pointer;
+				padding-left: 30px;
+				font-weight: bold;
+				font-size: 14px;
+				line-height: 18px;
+				color: $darkShade75;
+				height: 18px;
+				max-width: 236px;
 		}
 		&__checkbox-text{
-			position: relative;
-			cursor: pointer;
-			margin-left: 30px;
-			font-weight: normal;
-			font-size: 12px;
-			line-height: 14px;
-			color: $darkShade50;
-			height: 28px;
-			width: 236px;
-			margin-top: 5px;
-			white-space: break-spaces;
+				position: relative;
+				cursor: pointer;
+				margin-left: 30px;
+				font-weight: normal;
+				font-size: 12px;
+				line-height: 14px;
+				color: $darkShade50;
+				height: 28px;
+				width: 236px;
+				margin-top: 5px;
+				white-space: break-spaces;
 		}
 		&__checkbox-header:before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 20px;
-			height: 20px;
-			background: $white;
-			border: 1px solid $darkShade25;
-			box-sizing: border-box;
-			border-radius: 4px;
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 20px;
+				height: 20px;
+				background: $white;
+				border: 1px solid $darkShade25;
+				box-sizing: border-box;
+				border-radius: 4px;
 		}
 		&__checkbox-input:checked+.button-rich__checkbox-header:before{
 				background-image: url('../assets/img/svg/checkbox.svg');

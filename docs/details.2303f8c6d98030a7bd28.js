@@ -166,30 +166,30 @@
 __webpack_require__.r(__webpack_exports__);
 class LikeRating {
 
- constructor(likeButton) {
-  this.likeButton = likeButton;
-  this._getElems();
-  this._bindEvents();
- }
- _bindEvents() {
-  this.likeButton.addEventListener('click', this._handlelikeButtonClick.bind(this));
- }
- _getElems(){
-  this.heart = this.likeButton.querySelector('.js-button-like__heart');
-  this.numberOfLikes = this.likeButton.querySelector('.js-button-like__number');
- }
- _handlelikeButtonClick(event) {
-  if (event.target.parentElement.classList.contains('button-like_is-liked')) {
-   this.numberOfLikes.innerText--;
-   this.heart.innerText = 'favorite_border';
-   this.likeButton.classList.remove('button-like_is-liked');
+  constructor(likeButton) {
+    this.likeButton = likeButton;
+    this._getElems();
+    this._bindEvents();
   }
-  else {
-   this.numberOfLikes.innerText++;
-   this.likeButton.classList.add('button-like_is-liked');
-   this.heart.innerText = 'favorite';
+  _bindEvents() {
+    this.likeButton.addEventListener('click', this._handlelikeButtonClick.bind(this));
   }
- }
+  _getElems(){
+    this.heart = this.likeButton.querySelector('.js-button-like__heart');
+    this.numberOfLikes = this.likeButton.querySelector('.js-button-like__number');
+  }
+  _handlelikeButtonClick(event) {
+    if (event.target.parentElement.classList.contains('button-like_is-liked')) {
+      this.numberOfLikes.innerText--;
+      this.heart.innerText = 'favorite_border';
+      this.likeButton.classList.remove('button-like_is-liked');
+    }
+    else {
+      this.numberOfLikes.innerText++;
+      this.likeButton.classList.add('button-like_is-liked');
+      this.heart.innerText = 'favorite';
+    }
+  }
 }
 /* harmony default export */ __webpack_exports__["default"] = (LikeRating);
 
@@ -445,4 +445,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 /******/ });
-//# sourceMappingURL=details.65a85df50c82f5dc8a4c.js.map
+//# sourceMappingURL=details.2303f8c6d98030a7bd28.js.map

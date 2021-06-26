@@ -165,26 +165,26 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 class StarRating{
-constructor(starRating){
- this.starRating = starRating;
- this._getElems();
- this._bindEvents();
-}
-_getElems(){
- this.starRatingLabels = this.starRating.querySelectorAll('.js-button-rate__star');
-}
-_bindEvents(){
- this.starRatingLabels.forEach(elem => elem.addEventListener('click', this._handleRateButtonClick.bind(this)));
-}
-_handleRateButtonClick(event) {
- let rateNumberUserChoice = event.target.title.charAt(0);
- for (let i = 0; i < rateNumberUserChoice; i++) {
-  this.starRatingLabels[i].innerHTML = 'star';
- }
- for (let j = rateNumberUserChoice; j < 5; j++) {
-  this.starRatingLabels[j].innerHTML = 'star_border';
- }
-}
+  constructor(starRating){
+    this.starRating = starRating;
+    this._getElems();
+    this._bindEvents();
+  }
+  _getElems(){
+    this.starRatingLabels = this.starRating.querySelectorAll('.js-button-rate__star');
+  }
+  _bindEvents(){
+    this.starRatingLabels.forEach(elem => elem.addEventListener('click', this._handleRateButtonClick.bind(this)));
+  }
+  _handleRateButtonClick(event) {
+     let rateNumberUserChoice = event.target.title.charAt(0);
+     for (let i = 0; i < rateNumberUserChoice; i++) {
+       this.starRatingLabels[i].innerHTML = 'star';
+     }
+     for (let j = rateNumberUserChoice; j < 5; j++) {
+       this.starRatingLabels[j].innerHTML = 'star_border';
+     }
+  }
 }
 /* harmony default export */ __webpack_exports__["default"] = (StarRating);
 
@@ -454,4 +454,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 /******/ });
-//# sourceMappingURL=search.10b8201cee5fdc0905e7.js.map
+//# sourceMappingURL=search.4685fc90a6b0bff420e2.js.map
