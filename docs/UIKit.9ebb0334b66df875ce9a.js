@@ -464,18 +464,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
 
 class TextField {
- constructor(textFieldInput) {
-  this.textFieldInput = textFieldInput;
-  this._init();
- }
- _init() {
-  new Cleave(this.textFieldInput, {
-   date: true,
-   delimiter: '.',
-   datePattern: ['d', 'm', 'Y']
-  });
- }
-
+  constructor(textFieldInput) {
+    this.textFieldInput = textFieldInput;
+    this._init();
+  }
+  _init() {
+    new Cleave(this.textFieldInput, {
+    date: true,
+    delimiter: '.',
+    datePattern: ['d', 'm', 'Y']
+    });
+  }
 }
 /* harmony default export */ __webpack_exports__["default"] = (TextField);
 
@@ -566,4 +565,4 @@ $('.js-cards__datepicker').fsdDatepicker({ applyButton: true, clearButton: true,
 /***/ })
 
 /******/ });
-//# sourceMappingURL=UIKit.65e25fdc486b8e3790d8.js.map
+//# sourceMappingURL=UIKit.9ebb0334b66df875ce9a.js.map

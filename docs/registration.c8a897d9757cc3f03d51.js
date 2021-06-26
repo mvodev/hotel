@@ -261,18 +261,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
 
 class TextField {
- constructor(textFieldInput) {
-  this.textFieldInput = textFieldInput;
-  this._init();
- }
- _init() {
-  new Cleave(this.textFieldInput, {
-   date: true,
-   delimiter: '.',
-   datePattern: ['d', 'm', 'Y']
-  });
- }
-
+  constructor(textFieldInput) {
+    this.textFieldInput = textFieldInput;
+    this._init();
+  }
+  _init() {
+    new Cleave(this.textFieldInput, {
+    date: true,
+    delimiter: '.',
+    datePattern: ['d', 'm', 'Y']
+    });
+  }
 }
 /* harmony default export */ __webpack_exports__["default"] = (TextField);
 
@@ -334,4 +333,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 /******/ });
-//# sourceMappingURL=registration.b685f33c6b88d068b771.js.map
+//# sourceMappingURL=registration.c8a897d9757cc3f03d51.js.map

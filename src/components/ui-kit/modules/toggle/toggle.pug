@@ -1,8 +1,11 @@
 include ../switch/switch.pug
 mixin toggle(options)
- div(class='toggle')
-    div(class='toggle__container')
-      each val in options.labels
-        +switch({isPositive:val.isPositive,name:val.name})
+  div(class='toggle')
+      div(class='toggle__container')
+        each val in options.labels
+          +switch({
+                  isPositive:val.isPositive,
+                  name:val.name
+                  })
         
     
