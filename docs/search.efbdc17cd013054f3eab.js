@@ -217,31 +217,31 @@ rateButtons.forEach(elem => new _star_rating_class_js__WEBPACK_IMPORTED_MODULE_0
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 class ExpandableCL {
- constructor(bulletList) {
-  this.bulletList = bulletList;
-  this._getElems();
-  this._bindEvents();
- }
- _getElems() {
-  this.bulletListExpandableArrow =
-   this.bulletList.querySelector('.js-bullet-list-expandable__arrow');
-  this.bulletListDropdown = this.bulletList.querySelector('.js-bullet-list-expandable__dropdown');
- }
- _bindEvents() {
-  this.bulletListExpandableArrow.addEventListener('click', this._handleExpandableList.bind(this));
- }
- _handleExpandableList(event) {
-  this.bulletListDropdown.classList.toggle('bullet-list_is-visible');
-  this._toggleArrow();
- }
- _toggleArrow() {
-  if (this.bulletListExpandableArrow.innerText === 'keyboard_arrow_down') {
-   this.bulletListExpandableArrow.innerText = 'keyboard_arrow_up';
+  constructor(bulletList) {
+    this.bulletList = bulletList;
+    this._getElems();
+    this._bindEvents();
   }
-  else if (this.bulletListExpandableArrow.innerText === 'keyboard_arrow_up') {
-   this.bulletListExpandableArrow.innerText = 'keyboard_arrow_down';
+  _getElems() {
+    this.bulletListExpandableArrow =
+    this.bulletList.querySelector('.js-bullet-list-expandable__arrow');
+    this.bulletListDropdown = this.bulletList.querySelector('.js-bullet-list-expandable__dropdown');
   }
- }
+  _bindEvents() {
+    this.bulletListExpandableArrow.addEventListener('click', this._handleExpandableList.bind(this));
+  }
+  _handleExpandableList(event) {
+    this.bulletListDropdown.classList.toggle('bullet-list_is-visible');
+    this._toggleArrow();
+  }
+  _toggleArrow() {
+    if (this.bulletListExpandableArrow.innerText === 'keyboard_arrow_down') {
+    this.bulletListExpandableArrow.innerText = 'keyboard_arrow_up';
+    }
+    else if (this.bulletListExpandableArrow.innerText === 'keyboard_arrow_up') {
+    this.bulletListExpandableArrow.innerText = 'keyboard_arrow_down';
+    }
+  }
 }
 /* harmony default export */ __webpack_exports__["default"] = (ExpandableCL);
 
@@ -454,4 +454,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 /******/ });
-//# sourceMappingURL=search.4685fc90a6b0bff420e2.js.map
+//# sourceMappingURL=search.efbdc17cd013054f3eab.js.map

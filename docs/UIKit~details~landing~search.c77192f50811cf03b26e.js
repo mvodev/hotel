@@ -2701,25 +2701,25 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 class SubLinks{
- constructor(arrow){
-  this.subMenuArrow = arrow;
-  this._bindEvents();
- }
- _bindEvents(){
-  this.subMenuArrow.addEventListener('click',this._handleMenuArrow.bind(this));
- }
- _handleMenuArrow(e){
-  this.subMenuArrow.nextElementSibling.classList.toggle('list-links__sub-links_is-visible');
-  this._toggleArrow();
- }
- _toggleArrow() {
-  if (this.subMenuArrow.innerText === 'keyboard_arrow_down') {
-   this.subMenuArrow.innerText = 'keyboard_arrow_up';
+  constructor(arrow){
+    this.subMenuArrow = arrow;
+    this._bindEvents();
   }
-  else if (this.subMenuArrow.innerText === 'keyboard_arrow_up') {
-   this.subMenuArrow.innerText = 'keyboard_arrow_down';
+  _bindEvents(){
+    this.subMenuArrow.addEventListener('click',this._handleMenuArrow.bind(this));
   }
- }
+  _handleMenuArrow(e){
+    this.subMenuArrow.nextElementSibling.classList.toggle('list-links__sub-links_is-visible');
+    this._toggleArrow();
+  }
+  _toggleArrow() {
+    if (this.subMenuArrow.innerText === 'keyboard_arrow_down') {
+    this.subMenuArrow.innerText = 'keyboard_arrow_up';
+    }
+    else if (this.subMenuArrow.innerText === 'keyboard_arrow_up') {
+    this.subMenuArrow.innerText = 'keyboard_arrow_down';
+    }
+  }
 }
 /* harmony default export */ __webpack_exports__["default"] = (SubLinks);
 
@@ -2741,4 +2741,4 @@ document.querySelectorAll('.js-list-links__arrow').forEach(elem=>new _sublinks_c
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.38dc266d313cd0b4ad2e.js.map
+//# sourceMappingURL=UIKit~details~landing~search.c77192f50811cf03b26e.js.map
