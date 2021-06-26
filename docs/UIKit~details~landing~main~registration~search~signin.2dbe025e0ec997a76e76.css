@@ -862,14 +862,14 @@ table {
 *:after {
   box-sizing: inherit; }
 
-.social-networks ul {
+.social-networks__list {
   display: flex;
   text-align: center;
   flex-direction: row;
   width: 112px;
   justify-content: space-between; }
 
-.social-networks-link {
+.social-networks__link {
   text-decoration: none;
   width: 24px;
   height: 24px;
@@ -2240,14 +2240,14 @@ table {
   /* Support for IE. */
   font-feature-settings: 'liga'; }
 
-.social-networks ul {
+.social-networks__list {
   display: flex;
   text-align: center;
   flex-direction: row;
   width: 112px;
   justify-content: space-between; }
 
-.social-networks-link {
+.social-networks__link {
   text-decoration: none;
   width: 24px;
   height: 24px;
@@ -2295,14 +2295,14 @@ table {
   .footer__social-networks-links {
     margin: 0px 0px 25px 0px; } }
 
-.social-networks ul {
+.social-networks__list {
   display: flex;
   text-align: center;
   flex-direction: row;
   width: 112px;
   justify-content: space-between; }
 
-.social-networks-link {
+.social-networks__link {
   text-decoration: none;
   width: 24px;
   height: 24px;
@@ -4954,4 +4954,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.3cac42525137c342383f.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.2dbe025e0ec997a76e76.css.map*/

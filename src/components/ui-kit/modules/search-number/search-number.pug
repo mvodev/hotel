@@ -9,12 +9,26 @@ mixin searchnumber(options)
         h3(class="search-number__header search-number__dropdown-header")='прибытие'
         h3(class="search-number__header search-number__dropdown-header")='выезд'
       div(class='search-number__dropdown-filter')
-        +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'filter-date',isExpanded:false,})
+        +dropdown({
+                  placeholder:'ДД.ММ.ГГГГ',
+                  typeDropdown:'filter-date',
+                  isExpanded:false,
+                  })
       h3(class="search-number__header search-number__dropdown-header search-number__dropdown-header_guests")='гости'
-      +dropdown({placeholder:"Сколько гостей",typeDropdown:'guests',isExpanded:false,   labels:[
-      {text:"взрослые",counterNumber:0},
-      {text:"дети",counterNumber:0},
-      {text:"младенцы",counterNumber:0},
-      ],withButtons:true})
+      +dropdown({
+                placeholder:"Сколько гостей",
+                typeDropdown:'guests',
+                isExpanded:false, 
+                labels:[
+                        {text:"взрослые",counterNumber:0},
+                        {text:"дети",counterNumber:0},
+                        {text:"младенцы",counterNumber:0},
+                        ],
+                withButtons:true
+                })
       .search-number__button
-        +button({label:'ПОДОБРАТЬ НОМЕР',type:'arrow',purpose:'submit'})
+        +button({
+                label:'ПОДОБРАТЬ НОМЕР',
+                type:'arrow',
+                purpose:'submit'
+                })
