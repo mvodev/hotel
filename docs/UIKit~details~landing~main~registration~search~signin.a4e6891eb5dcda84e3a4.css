@@ -1816,9 +1816,9 @@ table {
   margin-left: 110px;
   margin-top: 6px; }
 
-.dark-shade-100, .dark-shade-75,
-.dark-shade-50, .dark-shade-25, .dark-shade-5,
-.green, .purple {
+.colors .dark-shade-100, .colors .dark-shade-75,
+.colors .dark-shade-50, .colors .dark-shade-25, .colors .dark-shade-5,
+.colors .green, .colors .purple {
   width: 70px;
   height: 70px;
   border-radius: 6px; }
@@ -1827,31 +1827,31 @@ table {
   font-weight: bold;
   width: 171px; }
 
-.dark-shade-100 {
+.colors .dark-shade-100 {
   background: #1f2041; }
 
-.dark-shade-75 {
+.colors .dark-shade-75 {
   background: rgba(31, 32, 65, 0.75); }
 
-.dark-shade-50 {
+.colors .dark-shade-50 {
   background: rgba(31, 32, 65, 0.5); }
 
-.dark-shade-25 {
+.colors .dark-shade-25 {
   background: rgba(31, 32, 65, 0.25); }
 
-.dark-shade-5 {
+.colors .dark-shade-5 {
   background: rgba(31, 32, 65, 0.05); }
 
-.purple {
+.colors .purple {
   background: #BC9CFF; }
 
-.green {
+.colors .green {
   background: #6FCF97; }
 
-.h1 {
+.colors__right-column-h1 {
   display: flex;
   flex-wrap: nowrap; }
-  .h1 p.colors-header {
+  .colors__right-column-h1 p.colors-header {
     width: 29px;
     height: 30px;
     font-weight: normal;
@@ -1860,7 +1860,7 @@ table {
     text-align: right;
     color: rgba(31, 32, 65, 0.25);
     margin-left: 8px; }
-  .h1 p.description {
+  .colors__right-column-h1 p.description {
     width: 336px;
     height: 60px;
     font-weight: bold;
@@ -1869,11 +1869,11 @@ table {
     color: #1f2041;
     margin-left: 30px; }
 
-.h2 {
+.colors__right-column-h2 {
   display: flex;
   flex-wrap: nowrap;
   margin-top: 50px; }
-  .h2 p.colors-header {
+  .colors__right-column-h2 p.colors-header {
     width: 27px;
     height: 24px;
     font-weight: normal;
@@ -1882,7 +1882,7 @@ table {
     text-align: right;
     color: rgba(31, 32, 65, 0.25);
     margin-left: 10px; }
-  .h2 p.description {
+  .colors__right-column-h2 p.description {
     width: 312px;
     height: 47px;
     font-weight: bold;
@@ -1891,11 +1891,11 @@ table {
     color: #1f2041;
     margin-left: 30px; }
 
-.h3 {
+.colors__right-column-h3 {
   display: flex;
   flex-wrap: nowrap;
   margin-top: 50px; }
-  .h3 p.colors-header {
+  .colors__right-column-h3 p.colors-header {
     width: 17px;
     height: 15px;
     font-weight: normal;
@@ -1905,7 +1905,7 @@ table {
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.25);
     margin-left: 20px; }
-  .h3 p.description {
+  .colors__right-column-h3 p.description {
     width: 186px;
     height: 15px;
     font-weight: bold;
@@ -1915,11 +1915,11 @@ table {
     color: #1f2041;
     margin-left: 30px; }
 
-.body {
+.colors__right-column-body {
   display: flex;
   flex-wrap: nowrap;
   margin-top: 50px; }
-  .body p.colors-header {
+  .colors__right-column-body p.colors-header {
     width: 37px;
     height: 24px;
     margin-bottom: 24px;
@@ -1928,7 +1928,7 @@ table {
     line-height: 24px;
     text-align: right;
     color: rgba(31, 32, 65, 0.25); }
-  .body p.description {
+  .colors__right-column-body p.description {
     width: 301px;
     height: 48px;
     font-weight: normal;
@@ -1953,21 +1953,19 @@ table {
   margin-top: 105px;
   font-style: normal;
   font-weight: normal; }
-
-.colors__left-column {
-  width: 281px;
-  height: 610px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  font-size: 17px;
-  line-height: 26px;
-  color: #1f2041; }
-
-.colors__right-column {
-  width: 436px;
-  height: 321px;
-  margin-right: 8px; }
+  .colors__left-column {
+    width: 281px;
+    height: 610px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 17px;
+    line-height: 26px;
+    color: #1f2041; }
+  .colors__right-column {
+    width: 436px;
+    height: 321px;
+    margin-right: 8px; }
 
 html,
 body,
@@ -4966,4 +4964,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.b4d2af70c32507a40228.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.a4e6891eb5dcda84e3a4.css.map*/
