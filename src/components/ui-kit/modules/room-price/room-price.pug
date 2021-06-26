@@ -21,11 +21,17 @@ mixin roomprice( {roomType = '', roomNumber, priceHeader, units='  в сутки
                 +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'filter-date',isExpanded:false,id:'d3'})
           div(class='room-price__dropdown-guests')
             h3(class='room-price__header')='гости'
-            +dropdown({placeholder:"Сколько гостей",typeDropdown:'guests',isExpanded:false,labels:[
-    {text:"взрослые",counterNumber:0},
-    {text:"дети",counterNumber:0},
-    {text:"младенцы",counterNumber:0},
-    ],withButtons:true})
+            +dropdown({
+                      placeholder:"Сколько гостей",
+                      typeDropdown:'guests',
+                      isExpanded:false,
+                      labels:[
+                              {text:"взрослые",counterNumber:0},
+                              {text:"дети",counterNumber:0},
+                              {text:"младенцы",counterNumber:0},
+                              ],
+                      withButtons:true
+                      })
           div(class='room-price__start-price')
             div=price
             div=total
@@ -42,4 +48,8 @@ mixin roomprice( {roomType = '', roomNumber, priceHeader, units='  в сутки
           div(class='room-price__total-price')
             h3='Итого'
             div=totalPrice
-          +button({label:'забронировать',type:'arrow',purpose:'submit'})
+          +button({
+                  label:'забронировать',
+                  type:'arrow',
+                  purpose:'submit'
+                  })
