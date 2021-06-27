@@ -3309,7 +3309,7 @@ table {
     opacity: 0; }
   .button-radio__input:checked + .button-radio__label:after {
     opacity: 1; }
-  .button-radio__input:checked + .button-radio__-label {
+  .button-radio__input:checked + .button-radio__label {
     color: rgba(31, 32, 65, 0.75); }
   .button-radio__input:checked + .button-radio__label:before {
     background: #ffffff;
@@ -4530,7 +4530,7 @@ table {
     opacity: 0; }
   .button-radio__input:checked + .button-radio__label:after {
     opacity: 1; }
-  .button-radio__input:checked + .button-radio__-label {
+  .button-radio__input:checked + .button-radio__label {
     color: rgba(31, 32, 65, 0.75); }
   .button-radio__input:checked + .button-radio__label:before {
     background: #ffffff;
@@ -4962,4 +4962,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.e6c33e92f0929ab370df.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.82e11c917a32c2294060.css.map*/

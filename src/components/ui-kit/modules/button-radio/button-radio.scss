@@ -43,7 +43,7 @@
 			&__input:checked +.button-radio__label:after{
 					opacity: 1;
 			}
-			&__input:checked + .button-radio__-label {
+			&__input:checked + .button-radio__label {
 					color: $darkShade75;
 			}
 			&__input:checked +.button-radio__label:before{
