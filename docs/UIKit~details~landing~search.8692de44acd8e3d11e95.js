@@ -145,7 +145,7 @@ class DropdownCount {
     this.counters.forEach(elem => {
       this.dropdownCounters.push(new _dropdown_counter_dropdown_counter__WEBPACK_IMPORTED_MODULE_0__["default"](elem));
     });
-}
+  }
   showDropdown() {
     this.rootElem.classList.add("dropdown_active");
     this.body.classList.add("dropdown_active");
@@ -165,8 +165,8 @@ class DropdownCount {
   }
   _handleClickOutsideDropdown(e) {
     const target = e.target;
-    const its_dropdown = target === this.rootElem || this.rootElem.contains(target);
-    if (!its_dropdown) {
+    const itIsDropdown = target === this.rootElem || this.rootElem.contains(target);
+    if (!itIsDropdown) {
       this.hideDropdown();
     }
   }
@@ -194,23 +194,23 @@ class DropdownCount {
   }
   _collectData() {
     if (this.dropdownType === 'guests') {
-    let guests = {};
-    guests.total = 0;
-    guests.infants = 0;
-    for (let i = 0; i < this.dropdownCounters.length; i++) {
-      guests.total += this.dropdownCounters[i].getData();
-      if (i === this.dropdownCounters.length - 1) {
-        guests.infants = this.dropdownCounters[i].getData();
+      let guests = {};
+      guests.total = 0;
+      guests.infants = 0;
+      for (let i = 0; i < this.dropdownCounters.length; i++) {
+        guests.total += this.dropdownCounters[i].getData();
+        if (i === this.dropdownCounters.length - 1) {
+          guests.infants = this.dropdownCounters[i].getData();
+        }
       }
-    }
-    return guests;
+      return guests;
     }
     else {
       let room = {};
       room.bedrooms = this.dropdownCounters[0].getData();
-    room.beds = this.dropdownCounters[1].getData();
-    room.baths = this.dropdownCounters[2].getData();
-    return room;
+      room.beds = this.dropdownCounters[1].getData();
+      room.baths = this.dropdownCounters[2].getData();
+      return room;
     }
   }
   _getPosInSpellCasesArray(result) {
@@ -234,7 +234,7 @@ class DropdownCount {
       let temp = '';
       temp = result.total + " " + this.spellCases.guests[this._getPosInSpellCasesArray(result.total)];
       if (result.infants > 0) {
-      temp += ',  ' + result.infants + " " + this.spellCases.infants[this._getPosInSpellCasesArray(result.infants)];
+        temp += ',  ' + result.infants + " " + this.spellCases.infants[this._getPosInSpellCasesArray(result.infants)];
       }
       this.input.value = temp;
     }
@@ -265,8 +265,8 @@ class DropdownCount {
   _clearData() {
     this.input.value = "";
     this.dropdownCounters.forEach(elem => {
-    elem.resetData();
-    }); 
+      elem.resetData();
+    });
   }
   _showClearButton() {
     this.clearButton.classList.remove('buttons-dropdown_hidden');
@@ -2700,28 +2700,46 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-class SubLinks{
-  constructor(arrow){
+class SubLinks {
+  constructor(arrow) {
     this.subMenuArrow = arrow;
     this._bindEvents();
   }
-  _bindEvents(){
-    this.subMenuArrow.addEventListener('click',this._handleMenuArrow.bind(this));
+  _bindEvents() {
+    this.subMenuArrow.addEventListener('click', this._handleMenuArrow.bind(this));
+    document.addEventListener('click', this._handleClickOutsideSublinks.bind(this));
   }
-  _handleMenuArrow(e){
+  _handleMenuArrow(e) {
     this.subMenuArrow.nextElementSibling.classList.toggle('list-links__sub-links_is-visible');
     this._toggleArrow();
   }
   _toggleArrow() {
     if (this.subMenuArrow.innerText === 'keyboard_arrow_down') {
-    this.subMenuArrow.innerText = 'keyboard_arrow_up';
+      this.subMenuArrow.innerText = 'keyboard_arrow_up';
     }
     else if (this.subMenuArrow.innerText === 'keyboard_arrow_up') {
-    this.subMenuArrow.innerText = 'keyboard_arrow_down';
+      this.subMenuArrow.innerText = 'keyboard_arrow_down';
     }
+  }
+  _handleClickOutsideSublinks(e) {
+    const target = e.target;
+    const itIsSublinks = target === this.subMenuArrow 
+    || this.subMenuArrow.nextElementSibling.contains(target);
+    if (!itIsSublinks) {
+      this._hideSubLinks();
+    }
+  }
+  _hideSubLinks() {
+    this.subMenuArrow.nextElementSibling.classList.remove('list-links__sub-links_is-visible');
+    this.subMenuArrow.innerText = 'keyboard_arrow_down';
   }
 }
 /* harmony default export */ __webpack_exports__["default"] = (SubLinks);
+
+
+
+
+
 
 /***/ }),
 
@@ -2741,4 +2759,4 @@ document.querySelectorAll('.js-list-links__arrow').forEach(elem=>new _sublinks_c
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.c77192f50811cf03b26e.js.map
+//# sourceMappingURL=UIKit~details~landing~search.8692de44acd8e3d11e95.js.map

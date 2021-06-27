@@ -32,7 +32,7 @@ class DropdownCount {
     this.counters.forEach(elem => {
       this.dropdownCounters.push(new DropdownCounter(elem));
     });
-}
+  }
   showDropdown() {
     this.rootElem.classList.add("dropdown_active");
     this.body.classList.add("dropdown_active");
@@ -52,8 +52,8 @@ class DropdownCount {
   }
   _handleClickOutsideDropdown(e) {
     const target = e.target;
-    const its_dropdown = target === this.rootElem || this.rootElem.contains(target);
-    if (!its_dropdown) {
+    const itIsDropdown = target === this.rootElem || this.rootElem.contains(target);
+    if (!itIsDropdown) {
       this.hideDropdown();
     }
   }
@@ -81,23 +81,23 @@ class DropdownCount {
   }
   _collectData() {
     if (this.dropdownType === 'guests') {
-    let guests = {};
-    guests.total = 0;
-    guests.infants = 0;
-    for (let i = 0; i < this.dropdownCounters.length; i++) {
-      guests.total += this.dropdownCounters[i].getData();
-      if (i === this.dropdownCounters.length - 1) {
-        guests.infants = this.dropdownCounters[i].getData();
+      let guests = {};
+      guests.total = 0;
+      guests.infants = 0;
+      for (let i = 0; i < this.dropdownCounters.length; i++) {
+        guests.total += this.dropdownCounters[i].getData();
+        if (i === this.dropdownCounters.length - 1) {
+          guests.infants = this.dropdownCounters[i].getData();
+        }
       }
-    }
-    return guests;
+      return guests;
     }
     else {
       let room = {};
       room.bedrooms = this.dropdownCounters[0].getData();
-    room.beds = this.dropdownCounters[1].getData();
-    room.baths = this.dropdownCounters[2].getData();
-    return room;
+      room.beds = this.dropdownCounters[1].getData();
+      room.baths = this.dropdownCounters[2].getData();
+      return room;
     }
   }
   _getPosInSpellCasesArray(result) {
@@ -121,7 +121,7 @@ class DropdownCount {
       let temp = '';
       temp = result.total + " " + this.spellCases.guests[this._getPosInSpellCasesArray(result.total)];
       if (result.infants > 0) {
-      temp += ',  ' + result.infants + " " + this.spellCases.infants[this._getPosInSpellCasesArray(result.infants)];
+        temp += ',  ' + result.infants + " " + this.spellCases.infants[this._getPosInSpellCasesArray(result.infants)];
       }
       this.input.value = temp;
     }
@@ -152,8 +152,8 @@ class DropdownCount {
   _clearData() {
     this.input.value = "";
     this.dropdownCounters.forEach(elem => {
-    elem.resetData();
-    }); 
+      elem.resetData();
+    });
   }
   _showClearButton() {
     this.clearButton.classList.remove('buttons-dropdown_hidden');
