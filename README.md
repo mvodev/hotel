@@ -1,10 +1,16 @@
   # Верстка в рамках 2 задания учебного курса Znack.
   ## Ссылка на Github Pages
   https://mvodev.github.io/FSDCourse2/
-  ## Запуск проекта
-  npm i&npm run build
+  ## Установка
+  npm i
+  ## Сборка проекта в режиме разработки
+  npm run dev
+  ## Сборка проекта в режиме production
+  npm run build
+  ## Запуск webpack dev server
+  npm run start
   ## Результат сборки проекта
-  Находится в папке docs.Верстка проверена в Pixel Perfect в Chrome и Firefox.
+  Находится в папке docs
 
   В папке scripts находится файл fsd-datepicker.js 
   
