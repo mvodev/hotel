@@ -964,6 +964,8 @@ table {
     padding-bottom: 13px;
     padding-right: 44px;
     outline: none; }
+  .text-field input::placeholder {
+    color: rgba(31, 32, 65, 0.25); }
   .text-field_focused {
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75);
@@ -2384,6 +2386,8 @@ table {
     padding-bottom: 13px;
     padding-right: 44px;
     outline: none; }
+  .text-field input::placeholder {
+    color: rgba(31, 32, 65, 0.25); }
   .text-field_focused {
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75);
@@ -3238,6 +3242,8 @@ table {
     padding-bottom: 13px;
     padding-right: 44px;
     outline: none; }
+  .text-field input::placeholder {
+    color: rgba(31, 32, 65, 0.25); }
   .text-field_focused {
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75);
@@ -4802,6 +4808,8 @@ table {
     padding-bottom: 13px;
     padding-right: 44px;
     outline: none; }
+  .text-field input::placeholder {
+    color: rgba(31, 32, 65, 0.25); }
   .text-field_focused {
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75);
@@ -4954,4 +4962,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.37e11a1b765ccf4bfcd0.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.e6c33e92f0929ab370df.css.map*/
