@@ -122,7 +122,11 @@ module.exports = {
     },
    ]
   }),
-  new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i })
+  new ImageminPlugin({
+   test: /\.(jpe?g|png|gif|svg)$/i, 
+   pngquant: {
+    quality: '95-100'
+   }})
  ],
  module: {
   rules: [
