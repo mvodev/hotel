@@ -2639,7 +2639,9 @@ table {
     justify-content: center; }
     .list-links__link {
       margin-right: 0px;
-      margin-bottom: 10px; } }
+      margin-bottom: 10px; }
+    .list-links__sub-links {
+      top: 25px; } }
 
 .header-bar {
   max-width: 100%;
@@ -4963,4 +4965,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.54a0a72967cfffdb390a.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.c49d5ba2e28bac323b77.css.map*/
