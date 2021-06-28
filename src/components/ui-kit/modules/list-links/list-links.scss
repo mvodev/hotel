@@ -41,13 +41,14 @@
   }
   &__sub-links{
     display: none;
-    width: auto;
+    width: inherit;
     height: auto;
-    background-color: $grey;
+    background-color: $white;
     position: absolute;
-    top: 30px;
+    top: 45px;
     left: 0;
     z-index: 9;
+    border: 1px solid $darkShade25;
   }
   &__sub-links_is-visible{
     display: flex;
