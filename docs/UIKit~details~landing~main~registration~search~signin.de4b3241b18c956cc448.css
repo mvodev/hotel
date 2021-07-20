@@ -1385,7 +1385,8 @@ table {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: relative; }
+    position: relative;
+    height: 100%; }
   .dropdown__input {
     border: none;
     outline: none;
@@ -3066,7 +3067,8 @@ table {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: relative; }
+    position: relative;
+    height: 100%; }
   .dropdown__input {
     border: none;
     outline: none;
@@ -4969,4 +4971,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.636184e571a3fd072918.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.de4b3241b18c956cc448.css.map*/
