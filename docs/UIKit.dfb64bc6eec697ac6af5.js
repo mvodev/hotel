@@ -174,12 +174,13 @@ class LikeRating {
   _bindEvents() {
     this.likeButton.addEventListener('click', this._handlelikeButtonClick.bind(this));
   }
-  _getElems(){
+  _getElems() {
     this.heart = this.likeButton.querySelector('.js-button-like__heart');
     this.numberOfLikes = this.likeButton.querySelector('.js-button-like__number');
   }
   _handlelikeButtonClick(event) {
-    if (event.target.parentElement.classList.contains('button-like_is-liked')) {
+    if (event.target.parentElement.classList.contains('button-like_is-liked')
+      || event.target.classList.contains('button-like_is-liked')) {
       this.numberOfLikes.innerText--;
       this.heart.innerText = 'favorite_border';
       this.likeButton.classList.remove('button-like_is-liked');
@@ -565,4 +566,4 @@ $('.js-cards__datepicker').fsdDatepicker({ applyButton: true, clearButton: true,
 /***/ })
 
 /******/ });
-//# sourceMappingURL=UIKit.9ebb0334b66df875ce9a.js.map
+//# sourceMappingURL=UIKit.dfb64bc6eec697ac6af5.js.map

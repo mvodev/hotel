@@ -3443,7 +3443,7 @@ table {
   border-radius: 10px;
   display: flex;
   flex-direction: row; }
-  .button-like div:first-child {
+  .button-like__heart {
     width: 50%;
     height: 20px;
     text-align: center;
@@ -3455,7 +3455,7 @@ table {
     line-height: 9px;
     color: rgba(31, 32, 65, 0.25);
     padding-top: 5px; }
-  .button-like div:nth-child(2) {
+  .button-like__number {
     width: 50%;
     height: 100%;
     font-weight: normal;
@@ -3465,6 +3465,12 @@ table {
     align-items: center;
     color: rgba(31, 32, 65, 0.25);
     display: flex; }
+  .button-like_is-liked {
+    border: 1px solid #BC9CFF; }
+
+.button-like.button-like_is-liked .button-like__heart,
+.button-like.button-like_is-liked .button-like__number {
+  color: #BC9CFF; }
 
 .button-check {
   width: 222px; }
@@ -3889,7 +3895,7 @@ table {
   margin-right: 20px; }
 
 .form-elements__header_like-buttons {
-  margin-top: 40px; }
+  margin-top: 42px; }
 
 .form-elements .central-column__like-buttons-wrapper {
   display: flex;
@@ -4664,7 +4670,7 @@ table {
   border-radius: 10px;
   display: flex;
   flex-direction: row; }
-  .button-like div:first-child {
+  .button-like__heart {
     width: 50%;
     height: 20px;
     text-align: center;
@@ -4676,7 +4682,7 @@ table {
     line-height: 9px;
     color: rgba(31, 32, 65, 0.25);
     padding-top: 5px; }
-  .button-like div:nth-child(2) {
+  .button-like__number {
     width: 50%;
     height: 100%;
     font-weight: normal;
@@ -4686,6 +4692,12 @@ table {
     align-items: center;
     color: rgba(31, 32, 65, 0.25);
     display: flex; }
+  .button-like_is-liked {
+    border: 1px solid #BC9CFF; }
+
+.button-like.button-like_is-liked .button-like__heart,
+.button-like.button-like_is-liked .button-like__number {
+  color: #BC9CFF; }
 
 .button-check {
   width: 222px; }
@@ -4971,4 +4983,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.de4b3241b18c956cc448.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.50b4754eaba40acfa728.css.map*/

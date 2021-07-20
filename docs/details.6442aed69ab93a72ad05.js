@@ -174,12 +174,13 @@ class LikeRating {
   _bindEvents() {
     this.likeButton.addEventListener('click', this._handlelikeButtonClick.bind(this));
   }
-  _getElems(){
+  _getElems() {
     this.heart = this.likeButton.querySelector('.js-button-like__heart');
     this.numberOfLikes = this.likeButton.querySelector('.js-button-like__number');
   }
   _handlelikeButtonClick(event) {
-    if (event.target.parentElement.classList.contains('button-like_is-liked')) {
+    if (event.target.parentElement.classList.contains('button-like_is-liked')
+      || event.target.classList.contains('button-like_is-liked')) {
       this.numberOfLikes.innerText--;
       this.heart.innerText = 'favorite_border';
       this.likeButton.classList.remove('button-like_is-liked');
@@ -454,4 +455,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 /******/ });
-//# sourceMappingURL=details.092eeec2cfe29a5cc1ea.js.map
+//# sourceMappingURL=details.6442aed69ab93a72ad05.js.map
