@@ -1,4 +1,4 @@
-  # Верстка в рамках 2 задания учебного курса Znack.
+  # Верстка в рамках 2 задания учебного курса MetaLamp.
   ## Ссылка на Github Pages
   https://mvodev.github.io/FSDCourse2/
   ## Клонирование
