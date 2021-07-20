@@ -155,7 +155,7 @@ class DropdownCount {
     this.body.classList.remove("dropdown_active");
   }
   _bindEvents() {
-    this.arrow.addEventListener('click', this._handleDropdown.bind(this));
+    this.rootElem.addEventListener('click', this._handleDropdown.bind(this));
     if (this.dropdownType === 'guests') {
       this.clearButton.addEventListener('click', this._handleClearButton.bind(this));
       this.applyButton.addEventListener('click', this._handleApplyButton.bind(this));
@@ -2759,4 +2759,4 @@ document.querySelectorAll('.js-list-links__arrow').forEach(elem=>new _sublinks_c
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.8692de44acd8e3d11e95.js.map
+//# sourceMappingURL=UIKit~details~landing~search.05dc78a9ed8857e840d2.js.map

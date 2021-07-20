@@ -42,7 +42,7 @@ class DropdownCount {
     this.body.classList.remove("dropdown_active");
   }
   _bindEvents() {
-    this.arrow.addEventListener('click', this._handleDropdown.bind(this));
+    this.rootElem.addEventListener('click', this._handleDropdown.bind(this));
     if (this.dropdownType === 'guests') {
       this.clearButton.addEventListener('click', this._handleClearButton.bind(this));
       this.applyButton.addEventListener('click', this._handleApplyButton.bind(this));

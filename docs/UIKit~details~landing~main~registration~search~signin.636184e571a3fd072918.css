@@ -1372,11 +1372,13 @@ table {
     max-width: 320px;
     width: 100%;
     border: 1px solid rgba(31, 32, 65, 0.5);
-    border-radius: 2px; }
+    border-radius: 2px;
+    cursor: pointer; }
   .dropdown__room {
     width: 266px;
     border: 1px solid rgba(31, 32, 65, 0.25);
-    border-radius: 2px 2px 0px 0px; }
+    border-radius: 2px 2px 0px 0px;
+    cursor: pointer; }
   .dropdown__room.dropdown_active {
     border: 1px solid rgba(31, 32, 65, 0.5); }
   .dropdown__input-wrapper {
@@ -1395,7 +1397,8 @@ table {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 24px; }
+    line-height: 24px;
+    cursor: pointer; }
   .dropdown__guests .dropdown__input {
     width: 180px;
     overflow: hidden; }
@@ -1410,7 +1413,6 @@ table {
   .dropdown__arrow {
     width: 44px;
     height: 44px;
-    cursor: pointer;
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
@@ -3051,11 +3053,13 @@ table {
     max-width: 320px;
     width: 100%;
     border: 1px solid rgba(31, 32, 65, 0.5);
-    border-radius: 2px; }
+    border-radius: 2px;
+    cursor: pointer; }
   .dropdown__room {
     width: 266px;
     border: 1px solid rgba(31, 32, 65, 0.25);
-    border-radius: 2px 2px 0px 0px; }
+    border-radius: 2px 2px 0px 0px;
+    cursor: pointer; }
   .dropdown__room.dropdown_active {
     border: 1px solid rgba(31, 32, 65, 0.5); }
   .dropdown__input-wrapper {
@@ -3074,7 +3078,8 @@ table {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 24px; }
+    line-height: 24px;
+    cursor: pointer; }
   .dropdown__guests .dropdown__input {
     width: 180px;
     overflow: hidden; }
@@ -3089,7 +3094,6 @@ table {
   .dropdown__arrow {
     width: 44px;
     height: 44px;
-    cursor: pointer;
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
@@ -4965,4 +4969,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.1a48609ebeaa565c45c4.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.636184e571a3fd072918.css.map*/
