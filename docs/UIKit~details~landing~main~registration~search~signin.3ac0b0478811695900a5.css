@@ -3541,7 +3541,8 @@ table {
   .button-check__checkbox-input:checked + .button-check__checkbox-text:before {
     background-image: url(ad694aafe15811be341489a1dd946ba2.svg);
     background-repeat: no-repeat;
-    background-position: center; }
+    background-position: center;
+    border: 1px solid #BC9CFF; }
 
 .button-rich {
   width: 266px;
@@ -4768,7 +4769,8 @@ table {
   .button-check__checkbox-input:checked + .button-check__checkbox-text:before {
     background-image: url(ad694aafe15811be341489a1dd946ba2.svg);
     background-repeat: no-repeat;
-    background-position: center; }
+    background-position: center;
+    border: 1px solid #BC9CFF; }
 
 .button-rich {
   width: 266px;
@@ -5017,4 +5019,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.cef44b112873890569b7.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.3ac0b0478811695900a5.css.map*/
