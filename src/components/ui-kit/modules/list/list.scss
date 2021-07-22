@@ -84,7 +84,9 @@
   &__icon{
     width: 48px;
     height: 48px;
-    color: $purple;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
     font-family: $font-for-icons;
     font-style: normal;
     font-weight: normal;

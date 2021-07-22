@@ -6,6 +6,7 @@
 	font-style: normal;
 	text-decoration: none;
 	overflow: hidden;
+	position: relative;
 
 		&-common{
 			width: 99px;
@@ -13,10 +14,10 @@
 			border-radius: 22px;
 		}
 		&_wide{
-				width: 196px;
+			width: 196px;
 		}
 		&-dark,&-dark50{
-			background: $buttonColor;
+			background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 			text-transform: uppercase;
 			color: $white;
 			font-weight: bold;
@@ -27,8 +28,25 @@
 			opacity: 0.5;
 		}
 		&-white,&-link{
-			background: none;
-			border:2px solid $purple;
+			background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+			border-radius: 22px;
+			position: relative;
+		}
+		&-white::before{
+			content: '';
+			position: absolute;
+			left: 2px;
+			top: 2px;
+			padding: 2px;
+			z-index: 1;
+			background: #ffffff;
+			bottom: 2px;
+			right: 2px;
+			border-radius: inherit;
+		}
+		&-white span{
+			position: relative;
+			z-index: 2;
 		}
 		&-link{
 			text-decoration: none;
@@ -36,16 +54,34 @@
 			justify-content: center;
 			align-items: center;
 		}
-
 		&-white50{
-			background: none;
-			border:2px solid rgba($color: $purple, $alpha: 0.5);
+			background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%,
+			rgba(139, 164, 249, 0.5) 100%);
+			border-radius: 22px;
+			position: relative;
 		}
-
-		&-white,
-		&-link,
-		&-white50,
-		&-transparent{
+		&-white50::before{
+			content: '';
+			position: absolute;
+			left: 2px;
+			top: 2px;
+			padding: 2px;
+			z-index: 1;
+			background: #ffffff;
+			bottom: 2px;
+			right: 2px;
+			border-radius: inherit;
+		}
+		&-white50 span{
+			position: relative;
+			z-index: 2;
+			color: $purple;
+			opacity: 1;
+		}
+		&-white span,
+		&-link span,
+		&-white50 span,
+		&-transparent span{
 			font-weight: bold;
 			font-size: 12px;
 			line-height: 15px;
@@ -63,7 +99,7 @@
 			padding: 0px;
 		}
 
-		&-transparent50{
+		&-transparent50 span{
 			font-weight: bold;
 			font-size: 12px;
 			line-height: 15px;
@@ -77,7 +113,7 @@
 	height: 44px;
 	border-radius: 22px;
 	position: relative;
-	background: $buttonColor;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -120,7 +156,9 @@
 		}
 		&__star{
 			font-size: 24px;
-			color: $purple;
+			background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
 			line-height: 20px;
 			width: 24px;
 			height: 24px;

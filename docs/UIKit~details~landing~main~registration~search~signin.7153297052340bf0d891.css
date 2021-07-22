@@ -1548,7 +1548,9 @@ table {
   .bullet-list-icons__icon {
     width: 48px;
     height: 48px;
-    color: #BC9CFF;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
@@ -3366,7 +3368,8 @@ table {
   font-family: Montserrat, "Arial,sans-serif";
   font-style: normal;
   text-decoration: none;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
   .button-common {
     width: 99px;
     height: 44px;
@@ -3383,17 +3386,52 @@ table {
   .button-dark50 {
     opacity: 0.5; }
   .button-white, .button-link {
-    background: none;
-    border: 2px solid #BC9CFF; }
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    position: relative; }
+  .button-white::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    padding: 2px;
+    z-index: 1;
+    background: #ffffff;
+    bottom: 2px;
+    right: 2px;
+    border-radius: inherit; }
+  .button-white span {
+    position: relative;
+    z-index: 2; }
   .button-link {
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center; }
   .button-white50 {
-    background: none;
-    border: 2px solid rgba(188, 156, 255, 0.5); }
-  .button-white, .button-link, .button-white50, .button-transparent {
+    background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
+    border-radius: 22px;
+    position: relative; }
+  .button-white50::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    padding: 2px;
+    z-index: 1;
+    background: #ffffff;
+    bottom: 2px;
+    right: 2px;
+    border-radius: inherit; }
+  .button-white50 span {
+    position: relative;
+    z-index: 2;
+    color: #BC9CFF;
+    opacity: 1; }
+  .button-white span,
+  .button-link span,
+  .button-white50 span,
+  .button-transparent span {
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
@@ -3406,7 +3444,7 @@ table {
     height: 15px;
     width: 61px;
     padding: 0px; }
-  .button-transparent50 {
+  .button-transparent50 span {
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
@@ -3458,7 +3496,9 @@ table {
     display: none; }
   .button-rate__star {
     font-size: 24px;
-    color: #BC9CFF;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     line-height: 20px;
     width: 24px;
     height: 24px;
@@ -3725,7 +3765,9 @@ table {
   .bullet-list-icons__icon {
     width: 48px;
     height: 48px;
-    color: #BC9CFF;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
@@ -3777,7 +3819,8 @@ table {
     display: block;
     border: 2px solid #ffffff;
     filter: drop-shadow(0px 10px 20px rgba(31, 32, 65, 0.1));
-    border-radius: 50%; }
+    border-radius: 50%;
+    background-size: cover; }
   .expanded-comment__header {
     display: flex;
     flex-direction: row; }
@@ -4594,7 +4637,8 @@ table {
   font-family: Montserrat, "Arial,sans-serif";
   font-style: normal;
   text-decoration: none;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
   .button-common {
     width: 99px;
     height: 44px;
@@ -4611,17 +4655,52 @@ table {
   .button-dark50 {
     opacity: 0.5; }
   .button-white, .button-link {
-    background: none;
-    border: 2px solid #BC9CFF; }
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    position: relative; }
+  .button-white::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    padding: 2px;
+    z-index: 1;
+    background: #ffffff;
+    bottom: 2px;
+    right: 2px;
+    border-radius: inherit; }
+  .button-white span {
+    position: relative;
+    z-index: 2; }
   .button-link {
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center; }
   .button-white50 {
-    background: none;
-    border: 2px solid rgba(188, 156, 255, 0.5); }
-  .button-white, .button-link, .button-white50, .button-transparent {
+    background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
+    border-radius: 22px;
+    position: relative; }
+  .button-white50::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    padding: 2px;
+    z-index: 1;
+    background: #ffffff;
+    bottom: 2px;
+    right: 2px;
+    border-radius: inherit; }
+  .button-white50 span {
+    position: relative;
+    z-index: 2;
+    color: #BC9CFF;
+    opacity: 1; }
+  .button-white span,
+  .button-link span,
+  .button-white50 span,
+  .button-transparent span {
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
@@ -4634,7 +4713,7 @@ table {
     height: 15px;
     width: 61px;
     padding: 0px; }
-  .button-transparent50 {
+  .button-transparent50 span {
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
@@ -4686,7 +4765,9 @@ table {
     display: none; }
   .button-rate__star {
     font-size: 24px;
-    color: #BC9CFF;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     line-height: 20px;
     width: 24px;
     height: 24px;
@@ -5019,4 +5100,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.3ac0b0478811695900a5.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.7153297052340bf0d891.css.map*/
