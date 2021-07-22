@@ -1319,21 +1319,38 @@ table {
 .datepicker--cell.-range-from-,
 .datepicker--cell.-range-to-,
 .datepicker--cell.-selected-.-range-to- {
-  background: #BC9CFF; }
+  background: #BC9CFF;
+  opacity: 1; }
 
 .datepicker--cell.-focus- {
   border-radius: 50%; }
 
 .datepicker--cell.-range-from-.-focus- {
-  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%); }
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  opacity: 1; }
 
-.datepicker--cell.-range-to-.-focus-::before {
+.datepicker--cell.-range-from-.-selected-::after {
   content: '';
-  width: 40px;
+  width: 20px;
   height: 40px;
   position: absolute;
   top: 0px;
-  left: -20px;
+  left: 20px;
+  background: #BC9CFF;
+  opacity: 0.25; }
+
+.datepicker--cell.-range-from-.-selected-.-focus-::after {
+  content: '';
+  width: 0px;
+  height: 40px; }
+
+.datepicker--cell.-range-to-.-focus-::before {
+  content: '';
+  width: 20px;
+  height: 40px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
   background: #BC9CFF;
   opacity: 0.25; }
 
@@ -1343,17 +1360,17 @@ table {
   height: 40px;
   position: absolute;
   top: 0px;
-  left: -20px;
+  left: 0px;
   background: #BC9CFF;
   opacity: 0.25; }
 
 .datepicker--cell.-selected-.-range-to-::before {
   content: '';
-  width: 40px;
+  width: 20px;
   height: 40px;
   position: absolute;
   top: 0px;
-  left: -20px;
+  left: 0px;
   background: #BC9CFF;
   opacity: 0.25; }
 
@@ -3001,21 +3018,38 @@ table {
 .datepicker--cell.-range-from-,
 .datepicker--cell.-range-to-,
 .datepicker--cell.-selected-.-range-to- {
-  background: #BC9CFF; }
+  background: #BC9CFF;
+  opacity: 1; }
 
 .datepicker--cell.-focus- {
   border-radius: 50%; }
 
 .datepicker--cell.-range-from-.-focus- {
-  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%); }
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  opacity: 1; }
 
-.datepicker--cell.-range-to-.-focus-::before {
+.datepicker--cell.-range-from-.-selected-::after {
   content: '';
-  width: 40px;
+  width: 20px;
   height: 40px;
   position: absolute;
   top: 0px;
-  left: -20px;
+  left: 20px;
+  background: #BC9CFF;
+  opacity: 0.25; }
+
+.datepicker--cell.-range-from-.-selected-.-focus-::after {
+  content: '';
+  width: 0px;
+  height: 40px; }
+
+.datepicker--cell.-range-to-.-focus-::before {
+  content: '';
+  width: 20px;
+  height: 40px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
   background: #BC9CFF;
   opacity: 0.25; }
 
@@ -3025,17 +3059,17 @@ table {
   height: 40px;
   position: absolute;
   top: 0px;
-  left: -20px;
+  left: 0px;
   background: #BC9CFF;
   opacity: 0.25; }
 
 .datepicker--cell.-selected-.-range-to-::before {
   content: '';
-  width: 40px;
+  width: 20px;
   height: 40px;
   position: absolute;
   top: 0px;
-  left: -20px;
+  left: 0px;
   background: #BC9CFF;
   opacity: 0.25; }
 
@@ -4983,4 +5017,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.50b4754eaba40acfa728.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.cef44b112873890569b7.css.map*/
