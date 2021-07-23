@@ -12,20 +12,16 @@
   }
   &__content{
     flex: 1 0 auto;
-    max-width: $container-width+20px;
-    margin: 0px auto;
-    padding: 0px 10px 0px 10px;
   }
   &-header{
     margin: 0px auto;
   }
   &__room-images{
-    max-width: $container-width;
-    height: 485px;
+    min-height: 485px;
     width: 100%;
     overflow: hidden;
     display: grid;
-    grid-template-columns: auto 461px;
+    grid-template-columns: 68.125% 31.875%;
     grid-template-rows: 1fr;
   }
   &__room-image{
@@ -39,14 +35,15 @@
     overflow: hidden;
   }
   .room-images-right__top{
-    height: 243px;
-    width: 460px;
     overflow: hidden;
   }
   .room-images-right__bottom{
-    height: 242px;
-    width: 460px;
     overflow: hidden;
+  }
+  &__body{
+    max-width: $container-width+20px;
+    margin: 0px auto;
+    padding: 0px 10px 0px 10px;
   }
   &__body h2{
     font-family: $font-family-main;

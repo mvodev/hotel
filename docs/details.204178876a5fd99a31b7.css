@@ -9,21 +9,17 @@
   min-height: 100%; }
 
 .details__content {
-  flex: 1 0 auto;
-  max-width: 1460px;
-  margin: 0px auto;
-  padding: 0px 10px 0px 10px; }
+  flex: 1 0 auto; }
 
 .details-header {
   margin: 0px auto; }
 
 .details__room-images {
-  max-width: 1440px;
-  height: 485px;
+  min-height: 485px;
   width: 100%;
   overflow: hidden;
   display: grid;
-  grid-template-columns: auto 461px;
+  grid-template-columns: 68.125% 31.875%;
   grid-template-rows: 1fr; }
 
 .details__room-image {
@@ -37,14 +33,15 @@
   overflow: hidden; }
 
 .details .room-images-right__top {
-  height: 243px;
-  width: 460px;
   overflow: hidden; }
 
 .details .room-images-right__bottom {
-  height: 242px;
-  width: 460px;
   overflow: hidden; }
+
+.details__body {
+  max-width: 1460px;
+  margin: 0px auto;
+  padding: 0px 10px 0px 10px; }
 
 .details__body h2 {
   font-family: Montserrat;
@@ -190,4 +187,4 @@
     text-align: center; } }
 
 
-/*# sourceMappingURL=details.4f99d75846bb4718668c.css.map*/
+/*# sourceMappingURL=details.204178876a5fd99a31b7.css.map*/
