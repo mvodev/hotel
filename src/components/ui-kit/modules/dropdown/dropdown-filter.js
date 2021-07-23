@@ -7,19 +7,19 @@ class DropdownFilter {
     this._bindEvents();
   }
   _getElems() {
-    this.input = this.rootElem.querySelector(".dropdown__input");
+    this.inputWrapper = this.rootElem.querySelector(".dropdown__input-wrapper");
     this.arrow = this.rootElem.querySelector('.dropdown__arrow');
   }
   _bindEvents() {
-    this.arrow.addEventListener('click', this._handlerArrowDropdown.bind(this));
+    this.inputWrapper.addEventListener('click', this._handlerArrowDropdown.bind(this));
   }
 
   _init() {
     this.$dpInput = $('.dropdown__filter input');
     this.$dpInput.fsdDatepicker({
-      applyButton: true, 
-      clearButton: true, 
-      range: true, 
+      applyButton: true,
+      clearButton: true,
+      range: true,
       dateFormat: 'dd M',
       onSelect: function (fd, d, picker) {
         picker.$el.val(fd);

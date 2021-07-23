@@ -375,11 +375,11 @@ class DropdownFilter {
     this._bindEvents();
   }
   _getElems() {
-    this.input = this.rootElem.querySelector(".dropdown__input");
+    this.inputWrapper = this.rootElem.querySelector(".dropdown__input-wrapper");
     this.arrow = this.rootElem.querySelector('.dropdown__arrow');
   }
   _bindEvents() {
-    this.arrow.addEventListener('click', this._handlerArrowDropdown.bind(this));
+    this.inputWrapper.addEventListener('click', this._handlerArrowDropdown.bind(this));
   }
 
   _init() {
@@ -2772,4 +2772,4 @@ document.querySelectorAll('.js-list-links__arrow').forEach(elem=>new _sublinks_c
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.04ae28c3314e85820ea7.js.map
+//# sourceMappingURL=UIKit~details~landing~search.c82274dc0c81d4e8994b.js.map
