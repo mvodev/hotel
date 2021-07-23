@@ -1551,6 +1551,7 @@ table {
     height: 48px;
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Material Icons;
     font-style: normal;
@@ -3772,6 +3773,7 @@ table {
     height: 48px;
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Material Icons;
     font-style: normal;
@@ -5108,4 +5110,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.1aa88054c9bbb63fb779.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.e81c94b2e160fa61598c.css.map*/
