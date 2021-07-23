@@ -63,7 +63,8 @@ mixin button( { darkStar = 1, lightStar, type = '', isChecked = false, isLiked =
     else if type=='radio'
       +button-radio({ label: label, isChecked: isChecked ,id:id})
     else if type=='link'
-      a(class=buttonClassName,href=href,target="_blank", rel="noopener noreferrer")=label
+      a(class=buttonClassName,href=href,target="_blank", rel="noopener noreferrer")
+        span=label
     else
-      button(class=buttonClassName+' button-common' type=purpose)
+      button(class=buttonClassName+' button-common' type=purpose)=label
         span=label

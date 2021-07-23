@@ -3391,7 +3391,7 @@ table {
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     border-radius: 22px;
     position: relative; }
-  .button-white::before {
+  .button-white::before, .button-link::before {
     content: '';
     position: absolute;
     left: 2px;
@@ -3402,7 +3402,7 @@ table {
     bottom: 2px;
     right: 2px;
     border-radius: inherit; }
-  .button-white span {
+  .button-white span, .button-link span {
     position: relative;
     z-index: 2; }
   .button-link {
@@ -4664,7 +4664,7 @@ table {
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     border-radius: 22px;
     position: relative; }
-  .button-white::before {
+  .button-white::before, .button-link::before {
     content: '';
     position: absolute;
     left: 2px;
@@ -4675,7 +4675,7 @@ table {
     bottom: 2px;
     right: 2px;
     border-radius: inherit; }
-  .button-white span {
+  .button-white span, .button-link span {
     position: relative;
     z-index: 2; }
   .button-link {
@@ -5108,4 +5108,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.77eb28ce62538866f2f3.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.fb8356ed41b46d6a2576.css.map*/
