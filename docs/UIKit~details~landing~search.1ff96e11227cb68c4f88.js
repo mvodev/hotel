@@ -385,9 +385,9 @@ class DropdownFilter {
   _init() {
     this.$dpInput = $('.dropdown__filter input');
     this.$dpInput.fsdDatepicker({
-      applyButton: true, 
-      clearButton: true, 
-      range: true, 
+      applyButton: true,
+      clearButton: true,
+      range: true,
       dateFormat: 'dd M',
       onSelect: function (fd, d, picker) {
         picker.$el.val(fd);
@@ -2772,4 +2772,4 @@ document.querySelectorAll('.js-list-links__arrow').forEach(elem=>new _sublinks_c
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.c82274dc0c81d4e8994b.js.map
+//# sourceMappingURL=UIKit~details~landing~search.1ff96e11227cb68c4f88.js.map

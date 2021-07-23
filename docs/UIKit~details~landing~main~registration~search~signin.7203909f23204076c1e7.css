@@ -3630,7 +3630,8 @@ table {
   .button-rich__checkbox-input:checked + .button-rich__checkbox-header:before {
     background-image: url(ad694aafe15811be341489a1dd946ba2.svg);
     background-repeat: no-repeat;
-    background-position: center; }
+    background-position: center;
+    border: 1px solid #BC9CFF; }
 
 .toggle {
   width: 260px; }
@@ -3657,7 +3658,8 @@ table {
     display: inline-block;
     padding-top: 2px;
     margin-left: 50px;
-    max-width: 210px; }
+    max-width: 210px;
+    cursor: pointer; }
   .switch__slider-round {
     position: absolute;
     cursor: pointer;
@@ -4552,7 +4554,8 @@ table {
     display: inline-block;
     padding-top: 2px;
     margin-left: 50px;
-    max-width: 210px; }
+    max-width: 210px;
+    cursor: pointer; }
   .switch__slider-round {
     position: absolute;
     cursor: pointer;
@@ -4899,7 +4902,8 @@ table {
   .button-rich__checkbox-input:checked + .button-rich__checkbox-header:before {
     background-image: url(ad694aafe15811be341489a1dd946ba2.svg);
     background-repeat: no-repeat;
-    background-position: center; }
+    background-position: center;
+    border: 1px solid #BC9CFF; }
 
 .text-field {
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -5102,4 +5106,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.6ea5fdfb22618a81ab6e.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.7203909f23204076c1e7.css.map*/
