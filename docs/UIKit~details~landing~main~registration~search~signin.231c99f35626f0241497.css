@@ -976,7 +976,7 @@ table {
     height: 44px;
     border: 1px solid rgba(31, 32, 65, 0.25);
     border-radius: 4px; }
-  .text-field__input-wrapper-arrow {
+  .text-field__arrow {
     width: 44px;
     height: 44px;
     display: flex;
@@ -988,10 +988,14 @@ table {
     font-weight: normal;
     font-size: 24px;
     line-height: 24px;
-    color: #BC9CFF;
     cursor: pointer;
     position: absolute;
-    right: 0; }
+    right: 0;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: none; }
 
 .subscribe {
   display: flex;
@@ -2422,7 +2426,7 @@ table {
     height: 44px;
     border: 1px solid rgba(31, 32, 65, 0.25);
     border-radius: 4px; }
-  .text-field__input-wrapper-arrow {
+  .text-field__arrow {
     width: 44px;
     height: 44px;
     display: flex;
@@ -2434,10 +2438,14 @@ table {
     font-weight: normal;
     font-size: 24px;
     line-height: 24px;
-    color: #BC9CFF;
     cursor: pointer;
     position: absolute;
-    right: 0; }
+    right: 0;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: none; }
 
 .subscribe {
   display: flex;
@@ -3302,7 +3310,7 @@ table {
     height: 44px;
     border: 1px solid rgba(31, 32, 65, 0.25);
     border-radius: 4px; }
-  .text-field__input-wrapper-arrow {
+  .text-field__arrow {
     width: 44px;
     height: 44px;
     display: flex;
@@ -3314,10 +3322,14 @@ table {
     font-weight: normal;
     font-size: 24px;
     line-height: 24px;
-    color: #BC9CFF;
     cursor: pointer;
     position: absolute;
-    right: 0; }
+    right: 0;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: none; }
 
 .button-radio {
   height: 24px;
@@ -4968,7 +4980,7 @@ table {
     height: 44px;
     border: 1px solid rgba(31, 32, 65, 0.25);
     border-radius: 4px; }
-  .text-field__input-wrapper-arrow {
+  .text-field__arrow {
     width: 44px;
     height: 44px;
     display: flex;
@@ -4980,10 +4992,14 @@ table {
     font-weight: normal;
     font-size: 24px;
     line-height: 24px;
-    color: #BC9CFF;
     cursor: pointer;
     position: absolute;
-    right: 0; }
+    right: 0;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: none; }
 
 .diagram {
   display: flex;
@@ -5110,4 +5126,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.3fb58931fa1ca39ab944.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.231c99f35626f0241497.css.map*/

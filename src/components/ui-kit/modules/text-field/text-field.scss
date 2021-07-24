@@ -68,7 +68,7 @@
     border: 1px solid $darkShade25;
     border-radius: 4px;
   }
-  &__input-wrapper-arrow{
+  &__arrow{
     width: 44px;
     height: 44px;
     display: flex;
@@ -80,9 +80,13 @@
     font-weight: normal;
     font-size: 24px;
     line-height: 24px;
-    color: $purple;
     cursor: pointer;
     position: absolute;
     right: 0;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+    border: none;
   }
 }

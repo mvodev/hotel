@@ -1,19 +1,23 @@
-mixin textfield(options)
+mixin textfield( {action='#', method='post',isFocused=false,isMasked=false,isSubscription=false,isDefault=false,placeholder='default placeholder'}={})
   -
     var textfieldClassName = "text-field"
-    textfieldClassName+=options.isFocused ? ' text-field_focused' : ''
-    textfieldClassName+=options.isMasked ? ' text-field_masked' : ''
-    textfieldClassName+=options.isSubscription ? ' text-field_subscription' : ''
+    textfieldClassName+=isFocused ? ' text-field_focused' : ''
+    textfieldClassName+=isMasked ? ' text-field_masked' : ''
+    textfieldClassName+=isSubscription ? ' text-field_subscription' : ''
     var inputClassName = ''
-    inputClassName+=options.isMasked ? 'js-text-field__input-date text-field__input-date': ''
+    inputClassName+=isMasked ? 'js-text-field__input-date text-field__input-date': ''
     var inputType=''
-    inputType+=options.isFocused ? 'text' : ''
-    inputType+=options.isDefault ? 'email' : ''
-    inputType+=options.isMasked ? 'text' : ''
-    inputType+=options.isSubscription ? 'email' : ''
-  div(class = textfieldClassName)
-    div(class='text-field__input-wrapper')
-      input(type=options.type placeholder=options.placeholder class=inputClassName size='20')
-      if options.isSubscription
-        div(class='text-field__input-wrapper-arrow')='arrow_forward'
+    inputType+=isFocused ? 'text' : ''
+    inputType+=isDefault ? 'email' : ''
+    inputType+=isMasked ? 'text' : ''
+    inputType+=isSubscription ? 'email' : ''
+  if isSubscription
+    form(class=textfieldClassName action=action method=method)
+      div(class='text-field__input-wrapper')
+        input(type=inputType placeholder=placeholder class=inputClassName size='20')
+        button(class='text-field__arrow' type='submit')='arrow_forward'
+  else 
+    div(class=textfieldClassName)
+      div(class='text-field__input-wrapper')
+        input(type=inputType placeholder=placeholder class=inputClassName size='20')
     
