@@ -23,6 +23,6 @@ mixin list(options)
     else
       div(class=listClassName)
         ul
-        each val in options.labels ? options.labels : ['There are no values']
-          li(class=listClassName+'__elem')= val
+          each val in options.labels ? options.labels : ['There are no values']
+            li(class=listClassName+'__elem')= val
 
