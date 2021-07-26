@@ -120,14 +120,17 @@
     display: flex;
     flex-direction: column;
   }
-  .rules__text-wrapper h2{
+  .rules__text-wrapper h3{
     margin-bottom: 15px;
     margin-left: 20px;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
   }
   .rules__text-wrapper:last-child{
     margin-right: 10px;
   }
-  .rules__text-wrapper:last-child h2{
+  .rules__text-wrapper:last-child h3{
     margin-left: 0px;
   }
   .rules__text-wrapper p{
@@ -201,7 +204,7 @@
     justify-content: center;
     margin-bottom: 15px;
   }
-  .rules__text-wrapper h2{
+  .rules__text-wrapper h3{
     text-align: center;
   }
 }
