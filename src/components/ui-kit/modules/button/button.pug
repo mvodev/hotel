@@ -25,11 +25,11 @@ mixin button( { darkStar = 1, lightStar, type = '', isChecked = false, isLiked =
       div(class=buttonClassName)
         - var n=1
         while darkStar-- > 0
-          input(class=buttonClassName+'__input' id='star-rating-'+n type='radio' name='rating')
-          label(class='material-icons button-rate__star js-button-rate__star' for='star-rating-'+n title=n++ +" out of 5 stars")='star'
+          label(class='material-icons button-rate__star js-button-rate__star' title=n++ +" out of 5 stars")='star'
+            input(class=buttonClassName+'__input' type='radio' name='rating')
         while lightStar-- > 0
-          input(class=buttonClassName+'__input' id='star-rating-'+n type='radio' name='rating')
-          label(class='material-icons button-rate__star js-button-rate__star' for='star-rating-'+n title=n++ +" out of 5 stars")='star_border'
+          label(class='material-icons button-rate__star js-button-rate__star' title=n++ +" out of 5 stars")='star_border'
+            input(class=buttonClassName+'__input' type='radio' name='rating')
     else if type=='like'
       div(class=buttonClassName)
         if isLiked
