@@ -44,11 +44,11 @@ mixin button( { darkStar = 1, lightStar, type = '', isChecked = false, isLiked =
             if val.isChecked
               label.button-check__elem
                 input(class='button-check__checkbox-input' type='checkbox' checked)
-                span(class='button-check__checkbox-text')=val.text
+                p(class='button-check__checkbox-text')=val.text
             else
               label.button-check__elem
                 input(class='button-check__checkbox-input' type='checkbox')
-                span(class='button-check__checkbox-text')=val.text
+                p(class='button-check__checkbox-text')=val.text
     else if type=='rich'
       div(class=buttonClassName)
         label(class='button-rich__checkbox-label')
