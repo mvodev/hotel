@@ -48,7 +48,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 19px;
-  line-height: 24px;
+  line-height: 23px;
   color: #1f2041; }
 
 .details__body {
@@ -74,7 +74,7 @@
 .details .left-column__header {
   margin-bottom: 20px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 23px; }
 
 .details .left-column__impressions {
@@ -190,4 +190,4 @@
     text-align: center; } }
 
 
-/*# sourceMappingURL=details.372a9155ab4aa5d12331.css.map*/
+/*# sourceMappingURL=details.d8b59370f8c9b53a9ecb.css.map*/

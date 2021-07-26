@@ -471,9 +471,9 @@ class TextField {
   }
   _init() {
     new Cleave(this.textFieldInput, {
-    date: true,
-    delimiter: '.',
-    datePattern: ['d', 'm', 'Y']
+      date: true,
+      delimiter: '.',
+      datePattern: ['d', 'm', 'Y']
     });
   }
 }
@@ -566,4 +566,4 @@ $('.js-cards__datepicker').fsdDatepicker({ applyButton: true, clearButton: true,
 /***/ })
 
 /******/ });
-//# sourceMappingURL=UIKit.0251c62eae3cd584772b.js.map
+//# sourceMappingURL=UIKit.da01a3bb7b2af27f5796.js.map

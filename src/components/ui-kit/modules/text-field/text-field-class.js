@@ -6,9 +6,9 @@ class TextField {
   }
   _init() {
     new Cleave(this.textFieldInput, {
-    date: true,
-    delimiter: '.',
-    datePattern: ['d', 'm', 'Y']
+      date: true,
+      delimiter: '.',
+      datePattern: ['d', 'm', 'Y']
     });
   }
 }

@@ -285,9 +285,9 @@ class TextField {
   }
   _init() {
     new Cleave(this.textFieldInput, {
-    date: true,
-    delimiter: '.',
-    datePattern: ['d', 'm', 'Y']
+      date: true,
+      delimiter: '.',
+      datePattern: ['d', 'm', 'Y']
     });
   }
 }
@@ -351,4 +351,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 /******/ });
-//# sourceMappingURL=registration.de74be14d846f7b50b17.js.map
+//# sourceMappingURL=registration.5eb61d3fad0e3c40c748.js.map
