@@ -283,7 +283,7 @@ class RangeSlider {
   }
   _getElems() {
     this.sliderInput = this.slider.querySelector('.js-range-slider__input');
-    this.label = this.slider.querySelector('.range-slider__label');
+    this.label = this.slider.querySelector('.js-range-slider__label');
   }
   _init() {
     $(this.sliderInput).
@@ -301,7 +301,7 @@ class RangeSlider {
       else minValue = data.from;
       if (data.to >= 1000) maxValue = Math.floor(data.to / 1000) + ' 000';
       else maxValue = data.to;
-      $('.js-range-slider__label-wrapper p:nth-child(2)').
+      $('.js-range-slider__label').
       html(minValue + '<span class="rub">i</span> - ' + maxValue + '<span class="rub">i</span>');
     },
     onStart: function (data) {
@@ -311,7 +311,7 @@ class RangeSlider {
       else minValue = data.from;
       if (data.to >= 1000) maxValue = Math.floor(data.to / 1000) + ' 000';
       else maxValue = data.to;
-      $('.js-range-slider__label-wrapper p:nth-child(2)').
+      $('.js-range-slider__label').
       html(minValue + '<span class="rub">i</span> - ' + maxValue + '<span class="rub">i</span>');
     }
     });
@@ -455,4 +455,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 /******/ });
-//# sourceMappingURL=search.aa6acc24c0d92e88be83.js.map
+//# sourceMappingURL=search.871c315164a7997872c3.js.map

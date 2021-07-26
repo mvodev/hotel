@@ -340,7 +340,7 @@ class RangeSlider {
   }
   _getElems() {
     this.sliderInput = this.slider.querySelector('.js-range-slider__input');
-    this.label = this.slider.querySelector('.range-slider__label');
+    this.label = this.slider.querySelector('.js-range-slider__label');
   }
   _init() {
     $(this.sliderInput).
@@ -358,7 +358,7 @@ class RangeSlider {
       else minValue = data.from;
       if (data.to >= 1000) maxValue = Math.floor(data.to / 1000) + ' 000';
       else maxValue = data.to;
-      $('.js-range-slider__label-wrapper p:nth-child(2)').
+      $('.js-range-slider__label').
       html(minValue + '<span class="rub">i</span> - ' + maxValue + '<span class="rub">i</span>');
     },
     onStart: function (data) {
@@ -368,7 +368,7 @@ class RangeSlider {
       else minValue = data.from;
       if (data.to >= 1000) maxValue = Math.floor(data.to / 1000) + ' 000';
       else maxValue = data.to;
-      $('.js-range-slider__label-wrapper p:nth-child(2)').
+      $('.js-range-slider__label').
       html(minValue + '<span class="rub">i</span> - ' + maxValue + '<span class="rub">i</span>');
     }
     });
@@ -566,4 +566,4 @@ $('.js-cards__datepicker').fsdDatepicker({ applyButton: true, clearButton: true,
 /***/ })
 
 /******/ });
-//# sourceMappingURL=UIKit.8884fe21012a27da5c20.js.map
+//# sourceMappingURL=UIKit.1fb89937249dc9152b18.js.map
