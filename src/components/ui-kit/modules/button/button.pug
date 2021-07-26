@@ -44,22 +44,22 @@ mixin button( { darkStar = 1, lightStar, type = '', isChecked = false, isLiked =
             if val.isChecked
               label.button-check__elem
                 input(class='button-check__checkbox-input' type='checkbox' checked)
-                p(class='button-check__checkbox-text')=val.text
+                span(class='button-check__checkbox-text')=val.text
             else
               label.button-check__elem
                 input(class='button-check__checkbox-input' type='checkbox')
-                p(class='button-check__checkbox-text')=val.text
+                span(class='button-check__checkbox-text')=val.text
     else if type=='rich'
       div(class=buttonClassName)
         label(class='button-rich__checkbox-label')
           if isChecked
             input(class='button-rich__checkbox-input' type='checkbox' checked)
-            div(class='button-rich__checkbox-header')=header
-            div(class='button-rich__checkbox-text')=label
+            span(class='button-rich__checkbox-header')=header
+            span(class='button-rich__checkbox-text')=label
           else
             input(class='button-rich__checkbox-input' type='checkbox')
-            div(class='button-rich__checkbox-header')=header
-            div(class='button-rich__checkbox-text')=label
+            span(class='button-rich__checkbox-header')=header
+            span(class='button-rich__checkbox-text')=label
     else if type=='radio'
       +button-radio({ label: label, isChecked: isChecked ,id:id})
     else if type=='link'
