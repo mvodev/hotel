@@ -37,12 +37,10 @@ mixin signup(options)
         +textfield({
                     isDefault:true,
                     placeholder:'Email',
-                    inputType:"email",
                     })
         +textfield({
-                    isDefault:true,
+                    isPassword:true,
                     placeholder:'Пароль',
-                    inputType:'password',
                     })
       .sign-up__toggle
         +toggle({labels:[{name:'Получать спецпредложения',  isPositive:false}]})

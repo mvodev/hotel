@@ -1,4 +1,4 @@
-mixin textfield( {action='#', method='post',isFocused=false,isMasked=false,isSubscription=false,isDefault=false,placeholder='default placeholder'}={})
+mixin textfield( {action='#', method='post',isFocused=false,isMasked=false,isSubscription=false,isDefault=false,placeholder='default placeholder',isPassword = false,}={})
   -
     var textfieldClassName = "text-field"
     textfieldClassName+=isFocused ? ' text-field_focused' : ''
@@ -11,6 +11,7 @@ mixin textfield( {action='#', method='post',isFocused=false,isMasked=false,isSub
     inputType+=isDefault ? 'email' : ''
     inputType+=isMasked ? 'text' : ''
     inputType+=isSubscription ? 'email' : ''
+    inputType+=isPassword ? 'password' : ''
   if isSubscription
     form(class=textfieldClassName action=action method=method)
       div(class='text-field__input-wrapper')
