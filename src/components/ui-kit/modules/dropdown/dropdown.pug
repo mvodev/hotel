@@ -13,7 +13,7 @@ mixin dropdown(options)
     dropDownClassName+=typeDropdown==='room' ? ' dropdown__room ' : ''
     dropDownClassName+=typeDropdown==='filter-date' ? ' dropdown__filter-date ' : ''
     dropDownClassName+=' js-dropdown'
-  section(class= dropDownClassName+expandedCorners)
+  div(class= dropDownClassName+expandedCorners)
     if typeDropdown==='guests'||typeDropdown==='room'
       div(class='dropdown__input-wrapper')
         input(class='dropdown__input' placeholder=options.placeholder type='text' id=options.id readonly)
