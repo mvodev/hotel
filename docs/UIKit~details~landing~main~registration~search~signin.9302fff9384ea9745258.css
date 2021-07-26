@@ -1596,7 +1596,7 @@ table {
   font-style: normal;
   white-space: nowrap; }
 
-.range-slider__label-wrapper p:first-child {
+.range-slider__label-header {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
@@ -1604,7 +1604,7 @@ table {
   color: #1f2041;
   padding-top: 3px; }
 
-.range-slider__label-wrapper p:nth-child(2) {
+.range-slider__label {
   height: 15px;
   width: 102px;
   text-align: justify;
@@ -3197,7 +3197,7 @@ table {
   font-style: normal;
   white-space: nowrap; }
 
-.range-slider__label-wrapper p:first-child {
+.range-slider__label-header {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
@@ -3205,7 +3205,7 @@ table {
   color: #1f2041;
   padding-top: 3px; }
 
-.range-slider__label-wrapper p:nth-child(2) {
+.range-slider__label {
   height: 15px;
   width: 102px;
   text-align: justify;
@@ -5138,4 +5138,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.cbc50e1ff434cea2e6f4.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.9302fff9384ea9745258.css.map*/

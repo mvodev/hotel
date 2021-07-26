@@ -1,7 +1,6 @@
 mixin rangeSlider(options)
   div(class='range-slider js-range-slider range-slider__wrapper')
-    label
-      div(class='js-range-slider__label-wrapper range-slider__label-wrapper')
+    label(class='js-range-slider__label-wrapper range-slider__label-wrapper')
         p.range-slider__label-header=options.label
         p.range-slider__label 
     input(type='text' class='js-range-slider__input range-slider__input' value='')

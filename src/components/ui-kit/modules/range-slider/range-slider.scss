@@ -11,7 +11,7 @@
     font-style: normal;
     white-space: nowrap;
   }
-  &__label-wrapper p:first-child{
+  &__label-header{
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
@@ -19,7 +19,7 @@
     color: $darkShade100;
     padding-top: 3px;
   }
-  &__label-wrapper p:nth-child(2){
+  &__label{
     height: 15px;
     width: 102px;
     text-align: justify;
