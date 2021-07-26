@@ -23,7 +23,7 @@ block content
             img.details__room-image(src="./assets/img/jpg/room-details-small-bottom.jpg", alt="room image small")
       .details__body
         .details__body-left
-          article.left-column
+          aside.left-column
               section.left-column__content
                 h1.left-column__header='Сведения о номере'
                 +list({
@@ -74,14 +74,14 @@ block content
                       })
           article.left-column__rules
             .rules__text-wrapper
-              h2='Правила'
+              h3='Правила'
               +list({labels:[
                           'Нельзя с питомцами',
                           'Без вечеринок и мероприятий',
                           'Время прибытия — после 13:00,а выезд до 12:00'
                           ]})
             .rules__text-wrapper
-              h2='Отмена'
+              h3='Отмена'
               p='Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.'
         .details__body-right
           +roomprice({
