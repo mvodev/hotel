@@ -1,9 +1,9 @@
 include diagram-chart.pug
 mixin diagram(options)
-  section.diagram
+  .diagram
     figure.diagram__chart
       +diagram-chart(options)
-      figcaption.diagram__label.labels-diargam
+      .diagram__label.labels-diargam
         .labels-diargam__number=options.number
         .labels-diargam__label=options.label
       figcaption.diagram__description
