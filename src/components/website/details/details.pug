@@ -11,9 +11,9 @@ block content
   include ../../ui-kit/modules/comment/comment.pug
 
 
-  body.details.details-wrapper
-    main.details__content
-      section.details__room-images
+  main.details.details-wrapper
+    .details__content
+      .details__room-images
         .details__room-image.room-images-left
           img.details__room-image(src="./assets/img/jpg/room-details-big.jpg", alt="room image")
         .room-images-right
@@ -21,8 +21,8 @@ block content
             img.details__room-image(src="./assets/img/jpg/room-details-small-top.jpg", alt="room image small")
           .room-images-right__bottom
             img.details__room-image(src="./assets/img/jpg/room-details-small-bottom.jpg", alt="room image small")
-      section.details__body
-        section.details__body-left
+      .details__body
+        .details__body-left
           article.left-column
               section.left-column__content
                 h1.left-column__header='Сведения о номере'
@@ -83,7 +83,7 @@ block content
             .rules__text-wrapper
               h2='Отмена'
               p='Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.'
-        section.details__body-right
+        .details__body-right
           +roomprice({
                     roomNumber:888,
                     priceHeader:'9 990₽',
