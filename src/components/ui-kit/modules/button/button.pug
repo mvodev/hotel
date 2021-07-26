@@ -19,8 +19,8 @@ mixin button( { darkStar = 1, lightStar, type = '', isChecked = false, isLiked =
   - buttonClassName+=type==='link' ? ' button-link button-common' : ''
     if type=='arrow'
       button(class=buttonClassName type=purpose)
-        div(class='button-with-arrow__label')=label
-        div(class='button-with-arrow__arr material-icons')='arrow_forward'
+        span(class='button-with-arrow__label')=label
+        span(class='button-with-arrow__arr material-icons')='arrow_forward'
     else if type=='rate'
       div(class=buttonClassName)
         - var n=1
