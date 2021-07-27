@@ -155,10 +155,10 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./components/ui-kit/modules/button/like-rating-class.js":
-/*!***************************************************************!*\
-  !*** ./components/ui-kit/modules/button/like-rating-class.js ***!
-  \***************************************************************/
+/***/ "./components/ui-kit/modules/button-like/like-rating-class.js":
+/*!********************************************************************!*\
+  !*** ./components/ui-kit/modules/button-like/like-rating-class.js ***!
+  \********************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -196,19 +196,19 @@ class LikeRating {
 
 /***/ }),
 
-/***/ "./components/ui-kit/modules/button/like-rating.js":
-/*!*********************************************************!*\
-  !*** ./components/ui-kit/modules/button/like-rating.js ***!
-  \*********************************************************/
+/***/ "./components/ui-kit/modules/button-like/like-rating.js":
+/*!**************************************************************!*\
+  !*** ./components/ui-kit/modules/button-like/like-rating.js ***!
+  \**************************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _like_rating_class_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./like-rating-class.js */ "./components/ui-kit/modules/button/like-rating-class.js");
+/* harmony import */ var _button_like_like_rating_class_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../button-like/like-rating-class.js */ "./components/ui-kit/modules/button-like/like-rating-class.js");
 
 const likeButtons = document.querySelectorAll('.js-button-like');
-likeButtons.forEach(elem => new _like_rating_class_js__WEBPACK_IMPORTED_MODULE_0__["default"](elem));
+likeButtons.forEach(elem => new _button_like_like_rating_class_js__WEBPACK_IMPORTED_MODULE_0__["default"](elem));
 
 /***/ }),
 
@@ -419,7 +419,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _details_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./details.scss */ "./components/website/details/details.scss");
 /* harmony import */ var _details_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_details_scss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
-/* harmony import */ var _ui_kit_modules_button_like_rating_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../ui-kit/modules/button/like-rating.js */ "./components/ui-kit/modules/button/like-rating.js");
+/* harmony import */ var _ui_kit_modules_button_like_like_rating_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../ui-kit/modules/button-like/like-rating.js */ "./components/ui-kit/modules/button-like/like-rating.js");
 /* harmony import */ var _ui_kit_modules_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../ui-kit/modules/dropdown/dropdown.js */ "./components/ui-kit/modules/dropdown/dropdown.js");
 /* harmony import */ var _ui_kit_modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../ui-kit/modules/list/expandable-cl.js */ "./components/ui-kit/modules/list/expandable-cl.js");
 /* harmony import */ var _ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../ui-kit/modules/burger/burger.js */ "./components/ui-kit/modules/burger/burger.js");
@@ -455,4 +455,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 /******/ });
-//# sourceMappingURL=details.fb533bb1d3f64880d618.js.map
+//# sourceMappingURL=details.f5c5d0632bdcb18693a1.js.map

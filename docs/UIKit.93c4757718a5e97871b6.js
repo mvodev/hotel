@@ -155,6 +155,63 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./components/ui-kit/modules/button-like/like-rating-class.js":
+/*!********************************************************************!*\
+  !*** ./components/ui-kit/modules/button-like/like-rating-class.js ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+class LikeRating {
+
+  constructor(likeButton) {
+    this.likeButton = likeButton;
+    this._getElems();
+    this._bindEvents();
+  }
+  _bindEvents() {
+    this.likeButton.addEventListener('click', this._handlelikeButtonClick.bind(this));
+  }
+  _getElems() {
+    this.heart = this.likeButton.querySelector('.js-button-like__heart');
+    this.numberOfLikes = this.likeButton.querySelector('.js-button-like__number');
+  }
+  _handlelikeButtonClick(event) {
+    if (event.target.parentElement.classList.contains('button-like_is-liked')
+      || event.target.classList.contains('button-like_is-liked')) {
+      this.numberOfLikes.innerText--;
+      this.heart.innerText = 'favorite_border';
+      this.likeButton.classList.remove('button-like_is-liked');
+    }
+    else {
+      this.numberOfLikes.innerText++;
+      this.likeButton.classList.add('button-like_is-liked');
+      this.heart.innerText = 'favorite';
+    }
+  }
+}
+/* harmony default export */ __webpack_exports__["default"] = (LikeRating);
+
+/***/ }),
+
+/***/ "./components/ui-kit/modules/button-like/like-rating.js":
+/*!**************************************************************!*\
+  !*** ./components/ui-kit/modules/button-like/like-rating.js ***!
+  \**************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _button_like_like_rating_class_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../button-like/like-rating-class.js */ "./components/ui-kit/modules/button-like/like-rating-class.js");
+
+const likeButtons = document.querySelectorAll('.js-button-like');
+likeButtons.forEach(elem => new _button_like_like_rating_class_js__WEBPACK_IMPORTED_MODULE_0__["default"](elem));
+
+/***/ }),
+
 /***/ "./components/ui-kit/modules/button-rate/star-rating-class.js":
 /*!********************************************************************!*\
   !*** ./components/ui-kit/modules/button-rate/star-rating-class.js ***!
@@ -204,63 +261,6 @@ __webpack_require__.r(__webpack_exports__);
 const rateButtons = document.querySelectorAll('.js-button-rate');
 rateButtons.forEach(elem => new _star_rating_class_js__WEBPACK_IMPORTED_MODULE_0__["default"](elem));
 
-
-/***/ }),
-
-/***/ "./components/ui-kit/modules/button/like-rating-class.js":
-/*!***************************************************************!*\
-  !*** ./components/ui-kit/modules/button/like-rating-class.js ***!
-  \***************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-class LikeRating {
-
-  constructor(likeButton) {
-    this.likeButton = likeButton;
-    this._getElems();
-    this._bindEvents();
-  }
-  _bindEvents() {
-    this.likeButton.addEventListener('click', this._handlelikeButtonClick.bind(this));
-  }
-  _getElems() {
-    this.heart = this.likeButton.querySelector('.js-button-like__heart');
-    this.numberOfLikes = this.likeButton.querySelector('.js-button-like__number');
-  }
-  _handlelikeButtonClick(event) {
-    if (event.target.parentElement.classList.contains('button-like_is-liked')
-      || event.target.classList.contains('button-like_is-liked')) {
-      this.numberOfLikes.innerText--;
-      this.heart.innerText = 'favorite_border';
-      this.likeButton.classList.remove('button-like_is-liked');
-    }
-    else {
-      this.numberOfLikes.innerText++;
-      this.likeButton.classList.add('button-like_is-liked');
-      this.heart.innerText = 'favorite';
-    }
-  }
-}
-/* harmony default export */ __webpack_exports__["default"] = (LikeRating);
-
-/***/ }),
-
-/***/ "./components/ui-kit/modules/button/like-rating.js":
-/*!*********************************************************!*\
-  !*** ./components/ui-kit/modules/button/like-rating.js ***!
-  \*********************************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _like_rating_class_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./like-rating-class.js */ "./components/ui-kit/modules/button/like-rating-class.js");
-
-const likeButtons = document.querySelectorAll('.js-button-like');
-likeButtons.forEach(elem => new _like_rating_class_js__WEBPACK_IMPORTED_MODULE_0__["default"](elem));
 
 /***/ }),
 
@@ -534,7 +534,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_text_field_text_field_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../modules/text-field/text-field.js */ "./components/ui-kit/modules/text-field/text-field.js");
 /* harmony import */ var _modules_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../modules/dropdown/dropdown.js */ "./components/ui-kit/modules/dropdown/dropdown.js");
 /* harmony import */ var _modules_button_rate_star_rating_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../modules/button-rate/star-rating.js */ "./components/ui-kit/modules/button-rate/star-rating.js");
-/* harmony import */ var _modules_button_like_rating_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../modules/button/like-rating.js */ "./components/ui-kit/modules/button/like-rating.js");
+/* harmony import */ var _modules_button_like_like_rating_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../modules/button-like/like-rating.js */ "./components/ui-kit/modules/button-like/like-rating.js");
 /* harmony import */ var _modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../modules/list/expandable-cl.js */ "./components/ui-kit/modules/list/expandable-cl.js");
 /* harmony import */ var _modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../modules/burger/burger.js */ "./components/ui-kit/modules/burger/burger.js");
 /* harmony import */ var _modules_room_card_room_card_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../modules/room-card/room-card.js */ "./components/ui-kit/modules/room-card/room-card.js");
@@ -566,4 +566,4 @@ $('.js-cards__datepicker').fsdDatepicker({ applyButton: true, clearButton: true,
 /***/ })
 
 /******/ });
-//# sourceMappingURL=UIKit.76a89481387b52acd3c8.js.map
+//# sourceMappingURL=UIKit.93c4757718a5e97871b6.js.map

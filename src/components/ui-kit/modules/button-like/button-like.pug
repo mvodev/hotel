@@ -1,0 +1,10 @@
+mixin button-like(options)
+  - let buttonClassName = 'button button-like js-button-like'
+  - buttonClassName+=options.isLiked ? ' button-like_is-liked' : ''
+  div(class=buttonClassName)
+    if options.isLiked
+      div(class='button-like__heart js-button-like__heart')='favorite'
+      div(class='button-like__number js-button-like__number')=options.likeNumber
+    else 
+      div(class='button-like__heart js-button-like__heart')='favorite_border'
+      div(class='button-like__number js-button-like__number')=options.likeNumber
