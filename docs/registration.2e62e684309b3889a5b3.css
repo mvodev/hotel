@@ -1,9 +1,14 @@
+body {
+  display: flex;
+  flex-direction: column; }
+
 .reg-wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100%;
   width: 100%;
-  margin: 0px auto; }
+  margin: 0px auto;
+  flex: 1 0 auto; }
 
 .reg .reg__content {
   flex: 1 0 auto; }
@@ -32,4 +37,4 @@
     max-height: none; } }
 
 
-/*# sourceMappingURL=registration.35aa6c4034edff257740.css.map*/
+/*# sourceMappingURL=registration.2e62e684309b3889a5b3.css.map*/

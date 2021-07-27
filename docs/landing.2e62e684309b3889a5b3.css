@@ -1,9 +1,15 @@
+body {
+  display: flex;
+  flex-direction: column; }
+
 .landing-wrapper {
   font-family: Montserrat, "Arial,sans-serif";
   margin: 0px auto;
   display: flex;
   flex-direction: column;
-  min-height: 100%; }
+  min-height: 100%;
+  width: 100%;
+  flex: 1 0 auto; }
 
 .landing .landing__content {
   flex: 1 0 auto; }
@@ -62,4 +68,4 @@
     display: none; } }
 
 
-/*# sourceMappingURL=landing.35aa6c4034edff257740.css.map*/
+/*# sourceMappingURL=landing.2e62e684309b3889a5b3.css.map*/

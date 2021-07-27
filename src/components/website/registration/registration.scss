@@ -1,5 +1,8 @@
 @import '../../../styles/common/constants.scss';
-
+body{
+  display: flex;
+  flex-direction: column;
+}
 .reg{
   &-wrapper{
     display: flex;
@@ -7,6 +10,7 @@
     min-height: 100%;
     width: 100%;
     margin: 0px auto; 
+    flex: 1 0 auto;
   }
   .reg__content{
     flex: 1 0 auto;
