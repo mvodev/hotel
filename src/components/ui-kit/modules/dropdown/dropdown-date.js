@@ -18,6 +18,7 @@ class DropdownDate {
   _bindEvents() {
     this.startDropdownArrow.addEventListener('click', this._handlerStartArrowDropdown.bind(this));
     this.endDropdownArrow.addEventListener('click', this._handlerEndArrowDropdown.bind(this));
+    this.endInput.addEventListener('click', this._handlerEndInputDropdown.bind(this));
   }
 
   _init() {
@@ -42,6 +43,9 @@ class DropdownDate {
     this.$dpInput.fsdDatepicker().data('fsd-datepicker').show();
   }
   _handlerEndArrowDropdown() {
+    this.$dpInput.fsdDatepicker().data('fsd-datepicker').show();
+  }
+  _handlerEndInputDropdown(){
     this.$dpInput.fsdDatepicker().data('fsd-datepicker').show();
   }
 }

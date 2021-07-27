@@ -323,6 +323,7 @@ class DropdownDate {
   _bindEvents() {
     this.startDropdownArrow.addEventListener('click', this._handlerStartArrowDropdown.bind(this));
     this.endDropdownArrow.addEventListener('click', this._handlerEndArrowDropdown.bind(this));
+    this.endInput.addEventListener('click', this._handlerEndInputDropdown.bind(this));
   }
 
   _init() {
@@ -347,6 +348,9 @@ class DropdownDate {
     this.$dpInput.fsdDatepicker().data('fsd-datepicker').show();
   }
   _handlerEndArrowDropdown() {
+    this.$dpInput.fsdDatepicker().data('fsd-datepicker').show();
+  }
+  _handlerEndInputDropdown(){
     this.$dpInput.fsdDatepicker().data('fsd-datepicker').show();
   }
 }
@@ -2772,4 +2776,4 @@ document.querySelectorAll('.js-list-links__arrow').forEach(elem=>new _sublinks_c
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.1ff96e11227cb68c4f88.js.map
+//# sourceMappingURL=UIKit~details~landing~search.e9342df7a4f7fbe8c5e5.js.map
