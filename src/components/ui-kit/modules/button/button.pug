@@ -1,4 +1,5 @@
 include ../button-radio/button-radio.pug
+include ../button-rate/button-rate.pug
 mixin button( { darkStar = 1, lightStar, type = '', isChecked = false, isLiked = false, purpose = 'button', label = '', header = '', likeNumber = 0, text = '', labels = [], id, ref='/mock-address/change-me', wide=false,href='/mock-address/change-me'} = {})
   - let buttonClassName='button'
   - lightStar = 5 - darkStar
@@ -21,14 +22,7 @@ mixin button( { darkStar = 1, lightStar, type = '', isChecked = false, isLiked =
         span(class='button-with-arrow__label')=label
         span(class='button-with-arrow__arr material-icons')='arrow_forward'
     else if type=='rate'
-      div(class=buttonClassName)
-        - var n=1
-        while darkStar-- > 0
-          label(class='material-icons button-rate__star js-button-rate__star' title=n++ +" out of 5 stars")='star'
-            input(class=buttonClassName+'__input' type='radio' name='rating')
-        while lightStar-- > 0
-          label(class='material-icons button-rate__star js-button-rate__star' title=n++ +" out of 5 stars")='star_border'
-            input(class=buttonClassName+'__input' type='radio' name='rating')
+      +button-rate( { darkStar:darkStar, lightStar:lightStar } )
     else if type=='like'
       div(class=buttonClassName)
         if isLiked

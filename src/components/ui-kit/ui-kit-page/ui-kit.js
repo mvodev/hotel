@@ -10,7 +10,7 @@ import 'ion-rangeslider';
 import '../modules/dropdown/fsd-datepicker.js';
 import '../modules/text-field/text-field.js';
 import '../modules/dropdown/dropdown.js';
-import '../modules/button/star-rating.js';
+import '../modules/button-rate/star-rating.js';
 import '../modules/button/like-rating.js';
 import '../modules/list/expandable-cl.js';
 import '../modules/burger/burger.js';

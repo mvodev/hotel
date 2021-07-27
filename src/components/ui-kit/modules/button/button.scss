@@ -1,4 +1,7 @@
 @import '../button-radio/button-radio.scss';
+@import '../button-rich/button-rich.scss';
+@import '../button-check/button-check.scss';
+@import '../button-rate/button-rate.scss';
 .button{
 	border: none;
 	cursor: pointer;
@@ -108,6 +111,7 @@
 			text-decoration: none;
 		}
 }
+@import '../button-like/button-like.scss';
 .button-with-arrow{
 	width: 320px;
 	height: 44px;
@@ -142,180 +146,5 @@
 			max-width: 256px;
 			max-height: 15px;
 			overflow: hidden;
-		}
-}
-.button-rate{
-	height: 24px;
-	width: 120px;
-	background-color: transparent;
-	border-radius: 0px;
-	display: flex;
-	flex-direction: row;
-		& input{
-			display: none;
-		}
-		&__star{
-			font-size: 24px;
-			background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-			background-clip: text;
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			line-height: 20px;
-			width: 24px;
-			height: 24px;
-			display: block;
-			cursor: pointer;
-			align-items: center;
-			text-align: center;
-	}
-}
-
-.button-like{
-	width: 40px;
-	height: 20px;
-	background: $white;
-	border: 1px solid $darkShade25;
-	box-sizing: border-box;
-	white-space: nowrap;
-	border-radius: 10px;
-	display: flex;
-	flex-direction: row;
-
-		&__heart{
-			width: 50%;
-			height: 20px;
-			text-align: center;
-			align-items: center;
-			display: block;
-			font-family: $font-for-icons;
-			font-weight: normal;
-			font-size: 10px;
-			line-height: 9px;
-			color: $darkShade25;
-			padding-top: 5px;
-		}
-		&__number{
-			width: 50%;
-			height: 100%;
-			font-weight: normal;
-			font-size: 10px;
-			line-height: 12px;
-			text-align: center;
-			align-items: center;
-			color: $darkShade25;
-			display: flex;
-		}
-		&_is-liked{
-			border: 1px solid $purple;
-		}
-}
-.button-like.button-like_is-liked{
-	.button-like__heart,
-	.button-like__number{
-			color: $purple;
-		}
-}
-.button-check{
-	width: 222px;
-
-		&__checkbox-input{
-			position: absolute;
-			z-index: -1;
-			opacity: 0;
-			cursor: pointer;
-			visibility: hidden;
-			left: 0;
-			top: 0;
-		}
-		&__checkbox-text{
-			position: relative;
-			padding-left: 30px;
-			font-weight: normal;
-			font-size: 14px;
-			line-height: 18px;
-			color: $darkShade50;
-			width: 192px;
-			cursor: pointer;
-			display: block;
-		}
-		&__elem{
-			margin-bottom: 10px;
-			min-height: 20px;
-			display: block;
-		}
-		&__checkbox-text:before{
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 20px;
-			height: 20px;
-			background: $white;
-			border: 1px solid $darkShade25;
-			box-sizing: border-box;
-			border-radius: 4px;
-		}
-		.button-check__checkbox-input:checked+.button-check__checkbox-text:before {
-			background-image: url('../assets/img/svg/checkbox.svg');
-			background-repeat: no-repeat;
-			background-position: center;
-			border: 1px solid $purple;
-		}
-}
-
-.button-rich{
-  width: 266px;
-	height: 51px;
-
-		&__checkbox-input {
-			position: absolute;
-			z-index: -1;
-			opacity: 0;
-			margin-left: 10px;
-			visibility: hidden;
-		}
-		&__checkbox-header{
-			position: relative;
-			cursor: pointer;
-			padding-left: 30px;
-			font-weight: bold;
-			font-size: 14px;
-			line-height: 18px;
-			color: $darkShade75;
-			height: 18px;
-			max-width: 236px;
-			display: block;
-		}
-		&__checkbox-text{
-			position: relative;
-			cursor: pointer;
-			margin-left: 30px;
-			font-weight: normal;
-			font-size: 12px;
-			line-height: 14px;
-			color: $darkShade50;
-			height: 28px;
-			width: 236px;
-			margin-top: 5px;
-			white-space: break-spaces;
-			display: block;
-		}
-		&__checkbox-header:before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 20px;
-			height: 20px;
-			background: $white;
-			border: 1px solid $darkShade25;
-			box-sizing: border-box;
-			border-radius: 4px;
-		}
-		&__checkbox-input:checked+.button-rich__checkbox-header:before{
-			background-image: url('../assets/img/svg/checkbox.svg');
-			background-repeat: no-repeat;
-			background-position: center;
-			border: 1px solid $purple;
 		}
 }

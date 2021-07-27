@@ -1,0 +1,25 @@
+.button-rate{
+	height: 24px;
+	width: 120px;
+	background-color: transparent;
+	border-radius: 0px;
+	display: flex;
+	flex-direction: row;
+		& input{
+			display: none;
+		}
+		&__star{
+			font-size: 24px;
+			background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			line-height: 20px;
+			width: 24px;
+			height: 24px;
+			display: block;
+			cursor: pointer;
+			align-items: center;
+			text-align: center;
+	}
+}

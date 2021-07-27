@@ -1,0 +1,56 @@
+.button-rich{
+  width: 266px;
+	height: 51px;
+
+		&__checkbox-input {
+			position: absolute;
+			z-index: -1;
+			opacity: 0;
+			margin-left: 10px;
+			visibility: hidden;
+		}
+		&__checkbox-header{
+			position: relative;
+			cursor: pointer;
+			padding-left: 30px;
+			font-weight: bold;
+			font-size: 14px;
+			line-height: 18px;
+			color: $darkShade75;
+			height: 18px;
+			max-width: 236px;
+			display: block;
+		}
+		&__checkbox-text{
+			position: relative;
+			cursor: pointer;
+			margin-left: 30px;
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 14px;
+			color: $darkShade50;
+			height: 28px;
+			width: 236px;
+			margin-top: 5px;
+			white-space: break-spaces;
+			display: block;
+		}
+		&__checkbox-header:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 20px;
+			height: 20px;
+			background: $white;
+			border: 1px solid $darkShade25;
+			box-sizing: border-box;
+			border-radius: 4px;
+		}
+		&__checkbox-input:checked+.button-rich__checkbox-header:before{
+			background-image: url('../assets/img/svg/checkbox.svg');
+			background-repeat: no-repeat;
+			background-position: center;
+			border: 1px solid $purple;
+		}
+}

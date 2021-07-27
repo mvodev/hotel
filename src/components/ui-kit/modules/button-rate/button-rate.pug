@@ -1,0 +1,9 @@
+mixin button-rate({ darkStar = 1, lightStar, } = {})
+  div(class='button button-rate js-button-rate')
+        - var n=1
+        while darkStar-- > 0
+          label(class='material-icons button-rate__star js-button-rate__star' title=n++ +" out of 5 stars")='star'
+            input(class='button button-rate js-button-rate__input' type='radio' name='rating')
+        while lightStar-- > 0
+          label(class='material-icons button-rate__star js-button-rate__star' title=n++ +" out of 5 stars")='star_border'
+            input(class='button button-rate js-button-rate__input' type='radio' name='rating')
