@@ -1,7 +1,7 @@
 include ../button/button.pug
 mixin list(options)
-  - var listClassName='bullet-list'
-  - var isExpandedList=options.isExpand===true ? ' bullet-list_is-visible' : '' 
+  - let listClassName='bullet-list'
+  - let isExpandedList=options.isExpand===true ? ' bullet-list_is-visible' : '' 
     if options.type==='expandable'
       - listClassName='js-bullet-list-expandable bullet-list-expandable'
     if options.type==='icons'

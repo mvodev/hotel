@@ -2,10 +2,10 @@ include ../dropdown-counter/dropdown-counter.pug
 
 mixin dropdown(options)
   -
-    var dropDownClassName = 'dropdown'
-    var expandedCorners=''
-    var isExpanded=options.isExpanded===true ? ' dropdown_active' : ''
-    var typeDropdown = options.typeDropdown
+    let dropDownClassName = 'dropdown'
+    let expandedCorners=''
+    let isExpanded=options.isExpanded===true ? ' dropdown_active' : ''
+    let typeDropdown = options.typeDropdown
     expandedCorners+=options.isExpanded ? ' dropdown_active' : ''
     dropDownClassName+=typeDropdown==='guests' ? ' dropdown__guests' : ''
     dropDownClassName+=typeDropdown==='date' ? ' dropdown__date ' : ''
