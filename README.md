@@ -2,7 +2,7 @@
   ## Ссылка на Github Pages
   https://mvodev.github.io/FSDCourse2/
   ## Клонирование
-  git clone https://github.com/mvodev/FSDCourse2.git
+      git clone https://github.com/mvodev/FSDCourse2.git
   ## Установка
   npm i
   ## Сборка проекта в режиме разработки
