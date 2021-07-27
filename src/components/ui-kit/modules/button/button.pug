@@ -1,6 +1,7 @@
 include ../button-radio/button-radio.pug
 include ../button-rate/button-rate.pug
 include ../button-like/button-like.pug
+include ../button-check/button-check.pug
 mixin button( { darkStar = 1, lightStar, type = '', isChecked = false, isLiked = false, purpose = 'button', label = '', header = '', likeNumber = 0, text = '', labels = [], id, ref='/mock-address/change-me', wide=false,href='/mock-address/change-me'} = {})
   - let buttonClassName='button'
   - lightStar = 5 - darkStar
@@ -11,8 +12,6 @@ mixin button( { darkStar = 1, lightStar, type = '', isChecked = false, isLiked =
   - buttonClassName+=type==='white50' ? ' button-white50' : ''
   - buttonClassName+=type==='transparent' ? ' button-transparent' : ''
   - buttonClassName+=type==='transparent50' ? ' button-transparent50' : ''
-  - buttonClassName+=type==='rate' ? ' button-rate js-button-rate' : ''
-  - buttonClassName+=type==='check' ? ' button-check' : ''
   - buttonClassName+=type==='rich' ? ' button-rich' : ''
   - buttonClassName+=type==='radio' ? ' button-radio' : ''
   - buttonClassName+=type==='link' ? ' button-link button-common' : ''
@@ -25,16 +24,7 @@ mixin button( { darkStar = 1, lightStar, type = '', isChecked = false, isLiked =
     else if type=='like'
       +button-like({ isLiked:isLiked, likeNumber:likeNumber })
     else if type=='check'
-      div(class=buttonClassName)
-          each val in labels ? labels : ['There are no values']
-            if val.isChecked
-              label.button-check__elem
-                input(class='button-check__checkbox-input' type='checkbox' checked)
-                span(class='button-check__checkbox-text')=val.text
-            else
-              label.button-check__elem
-                input(class='button-check__checkbox-input' type='checkbox')
-                span(class='button-check__checkbox-text')=val.text
+      +button-check({ labels:labels  })
     else if type=='rich'
       div(class=buttonClassName)
         label(class='button-rich__checkbox-label')
