@@ -1,6 +1,6 @@
   # Верстка в рамках 2 задания учебного курса MetaLamp.
   ## Ссылка на Github Pages
-  https://mvodev.github.io/FSDCourse2/
+      https://mvodev.github.io/FSDCourse2/
   ## Клонирование
       git clone https://github.com/mvodev/FSDCourse2.git
   ## Установка
