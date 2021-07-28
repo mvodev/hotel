@@ -3,7 +3,7 @@ include ../text-field/text-field.pug
 include ../toggle/toggle.pug
 mixin signin({ method='post', action='#'}={})
   form(class='sign-in' action=action method=method)
-    div(class='sign-in__wrapper')
+    .sign-in__wrapper
       h2(class="sign-in__header")='Войти'
       .sign-in__text-wrapper
         +textfield({isDefault:true,placeholder:'Email'})

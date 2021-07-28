@@ -3,12 +3,12 @@ include ../text-field/text-field.pug
 include ../dropdown/dropdown.pug
 mixin searchnumber(options)
  form(class='search-number')
-  div(class='search-number__wrapper')
+  .search-number__wrapper
       h2(class="search-number__header")='Найдём номера под ваши пожелания'
-      div(class='search-number__dropdown-headers')
+      .search-number__dropdown-headers
         h3(class="search-number__header search-number__dropdown-header")='прибытие'
         h3(class="search-number__header search-number__dropdown-header")='выезд'
-      div(class='search-number__dropdown-filter')
+      .search-number__dropdown-filter
         +dropdown({
                   placeholder:'ДД.ММ.ГГГГ',
                   typeDropdown:'filter-date',
