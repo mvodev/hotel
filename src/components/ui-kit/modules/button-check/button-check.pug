@@ -1,5 +1,5 @@
 mixin button-check( { labels=[], }={})
-  .button.button-check
+  .button-check
     each val in labels ? labels : ['There are no values']
       label.button-check__elem
         input(class='button-check__checkbox-input' type='checkbox' checked=val.isChecked)

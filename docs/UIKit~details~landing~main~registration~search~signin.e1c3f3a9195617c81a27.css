@@ -3590,7 +3590,8 @@ table {
   white-space: nowrap;
   border-radius: 10px;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  cursor: pointer; }
   .button-like__heart {
     width: 50%;
     height: 20px;
@@ -4870,7 +4871,8 @@ table {
   white-space: nowrap;
   border-radius: 10px;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  cursor: pointer; }
   .button-like__heart {
     width: 50%;
     height: 20px;
@@ -5138,4 +5140,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.7efbec734b6d65ce1021.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.e1c3f3a9195617c81a27.css.map*/

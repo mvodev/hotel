@@ -1,5 +1,5 @@
 mixin button-rich( { isChecked=false, header="",label="", }={} )
-  div(class='button button-rich')
+  .button-rich
     label(class='button-rich__checkbox-label')
       input(class='button-rich__checkbox-input' type='checkbox' checked=isChecked)
       span(class='button-rich__checkbox-header')=header
