@@ -1,14 +1,13 @@
-mixin pagination(options)
-  - var selectedPage=options.selectedPage
-    div(class='pagination')
+mixin pagination( { selectedPage=1, firstNumbers=[],isEllipsis=false,lastNumber=2,label="add description" }={}  )
+    .pagination
       .pagination_wrapper
-        each val in options.firstNumbers
+        each val in firstNumbers
           if val===selectedPage
-            div(class='pagination__number pagination__number_selected')=val
+            .pagination__number.pagination__number_selected=val
           else
-            div(class='pagination__number')=val
-        if options.isEllipsis
-          div(class='pagination__ellipsis')='...'
-          div(class='pagination__number')=options.lastNumber
-          div(class='pagination__arrow')='arrow_forward'
-      span(class='pagination__label')=options.label  
+            .pagination__number=val
+        if isEllipsis
+          .pagination__ellipsis='...'
+          .pagination__number=lastNumber
+          .pagination__arrow='arrow_forward'
+      span(class='pagination__label')=label  
