@@ -9,5 +9,5 @@ mixin comment({ imgSource = '', headerName = 'provide user name', text = 'provid
         time(class='expanded-comment__header-time' datetime=dateTime)=headerTime
     div(class='expanded-comment__body')
       div(class='expanded-comment__like-button')
-        +button({type:'like',likeNumber: likeNumber,isLiked: isLiked})
+        +button({type:'like',likeNumber,isLiked})
       p(class='expanded-comment__body-text')=text
