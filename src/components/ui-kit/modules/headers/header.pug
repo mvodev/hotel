@@ -3,10 +3,10 @@ mixin header({ type = 'nav',links= [],} = {})
   if type==='nav'
     +header-bar({ 
                 type:'nav',
-                links:links,
+                links,
                 }) 
   else if type==='login'
     +header-bar({ 
                 type:'login',
-                links:links,
+                links,
                 }) 
