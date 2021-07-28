@@ -1,6 +1,6 @@
-mixin button-check(options)
-  div(class='button button-check')
-          each val in options.labels ? options.labels : ['There are no values']
-              label.button-check__elem
-                input(class='button-check__checkbox-input' type='checkbox' checked=val.isChecked)
-                span(class='button-check__checkbox-text')=val.text
+mixin button-check( { labels=[], }={})
+  .button.button-check
+    each val in labels ? labels : ['There are no values']
+      label.button-check__elem
+        input(class='button-check__checkbox-input' type='checkbox' checked=val.isChecked)
+        span(class='button-check__checkbox-text')=val.text
