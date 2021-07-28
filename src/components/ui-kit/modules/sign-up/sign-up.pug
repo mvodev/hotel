@@ -3,7 +3,7 @@ include ../text-field/text-field.pug
 include ../toggle/toggle.pug
 mixin signup(options)
   form(class='sign-up' action=options.action)
-    div(class='sign-up__wrapper')
+    .sign-up__wrapper
       h2(class="sign-up__header sign-up__header-reg")='Регистрация аккаунта'
       .sign-up__text-wrapper
         +textfield({
@@ -14,7 +14,7 @@ mixin signup(options)
                     isDefault:true,
                     placeholder:'Фамилия'
                     })
-      div(class='sign-up__radio-button-wrapper')
+      .sign-up__radio-button-wrapper
         .sign-up__radio-button-wrapper_first-button
           +button({
                   type:'radio',
