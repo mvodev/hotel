@@ -1,6 +1,6 @@
-mixin rangeSlider(options)
-  div(class='range-slider js-range-slider range-slider__wrapper')
-    div(class='js-range-slider__label-wrapper range-slider__label-wrapper')
-        div.range-slider__label-header=options.label
-        div.js-range-slider__label.range-slider__label 
+mixin rangeSlider( { label='',  }={} )
+  .range-slider.js-range-slider.range-slider__wrapper
+    .js-range-slider__label-wrapper.range-slider__label-wrapper
+        .range-slider__label-header=label
+        .js-range-slider__label.range-slider__label 
     input(type='text' class='js-range-slider__input range-slider__input' value='')
