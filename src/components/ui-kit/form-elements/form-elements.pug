@@ -153,7 +153,7 @@ include ../header-ui-kit/header-ui-kit.pug
               })
       h2(class='form-elements__header form-elements__header-central form-elements__header_radio-buttons')='RADIO BUTTONS'
       .central-column__radio-buttons-wrapper.wrapper-radio-buttons
-        .wrapper-radio-buttons_first
+        .wrapper-radio-buttons__first
           +button({
                   type:'radio',
                   label:'Мужчина',
@@ -172,8 +172,8 @@ include ../header-ui-kit/header-ui-kit.pug
                     ]
               })
       h2(class='form-elements__header form-elements__header-central form-elements__header_like-buttons')='LIKE BUTTON'
-      .central-column__like-buttons-wrapper
-        .central-column__like-buttons_first
+      .central-column__like-buttons-wrapper.wrapper-like-buttons
+        .wrapper-like-buttons__first
           +button({
                   type:'like',
                   likeNumber:2
@@ -185,12 +185,13 @@ include ../header-ui-kit/header-ui-kit.pug
                 })
       h2(class='form-elements__header form-elements__header-central form-elements__header_rate')='RATE BUTTON'
       .central-column__rate-buttons-wrapper.buttons-rate
-        .buttons-rate_first
+        .buttons-rate__first
           +button({
                   type:'rate',
                   darkStar:4
                   })
-        +button({
+        .buttons-rate__second
+          +button({
                 type:'rate',
                 darkStar:1
                 })
@@ -207,12 +208,13 @@ include ../header-ui-kit/header-ui-kit.pug
                 withButtons:true
                 })
       h2(class='form-elements__header form-elements__header-central form-elements__header_rich-buttons')='Rich Checkbox Buttons'
+      .central-column__buttons-rich-wrapper.wrapper-buttons-rich
       +button({
               type:'rich',
               header:'Широкий коридор',
               label:'Ширина коридоров в номере не менее 91 см.'
               })
-      .form-elements__buttons-rich_second
+      .wrapper-buttons-rich__second
         +button({
                 type:'rich',
                 header:'Помощник для инвалидов',
@@ -223,8 +225,8 @@ include ../header-ui-kit/header-ui-kit.pug
                     label:'RANGE SLIDER'
                   })
       h2(class='form-elements__header form-elements__header-right form-elements__header_buttons')='BUTTONS'
-      .form-elements__buttons-wrapper
-        .form-elements__buttons-wrapper_first-row
+      .buttons-wrapper-right
+        .buttons-wrapper-right__first-row
           +button({
                   label:'click me',
                   type:'dark'
@@ -233,7 +235,7 @@ include ../header-ui-kit/header-ui-kit.pug
                   label:'click me',
                   type:'dark50'
                   })
-        .form-elements__buttons-wrapper_second-row
+        .buttons-wrapper-right__second-row
           +button({
                   label:'click me',
                   type:'white'
@@ -242,8 +244,8 @@ include ../header-ui-kit/header-ui-kit.pug
                   label:'click me',
                   type:'white50'
                   })
-        .form-elements__buttons-wrapper_third-row.third-row-buttons
-          .third-row-buttons_first
+        .buttons-wrapper-right__third-row.third-row-buttons
+          .third-row-buttons__first
             +button({
                     label:'click me',
                     type:'transparent'
@@ -252,7 +254,7 @@ include ../header-ui-kit/header-ui-kit.pug
                   label:'click me',
                   type:'transparent50'
                   })
-        .form-elements__buttons-wrapper_fourth-row
+        .buttons-wrapper-right__fourth-row
           +button({
                   label:'перейти к оплате',
                   type:'arrow'

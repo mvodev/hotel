@@ -2,24 +2,24 @@
   &__header_buttons{
     margin-top: 33px;
   }
-  &__buttons-wrapper{
+  .buttons-wrapper-right{
     width: 218px;
   }
-  &__buttons-wrapper_first-row,
-  &__buttons-wrapper_second-row,
-  &__buttons-wrapper_third-row{
+  .buttons-wrapper-right__first-row,
+  .buttons-wrapper-right__second-row,
+  .buttons-wrapper-right__third-row{
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
   }
-  &__buttons-wrapper_first-row,
-  &__buttons-wrapper_second-row{
+  .buttons-wrapper-right__first-row,
+  .buttons-wrapper-right__second-row{
     justify-content: space-between;
   }
-  &__buttons-wrapper_fourth-row{
+  .buttons-wrapper-right__fourth-row{
     margin-bottom: 40px;
   }
-  .third-row-buttons_first{
+  .third-row-buttons__first{
     margin-right: 20px;
   }
   &__header_pagination{

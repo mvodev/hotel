@@ -3986,7 +3986,7 @@ table {
   display: -webkit-flex;
   flex-direction: row; }
 
-.form-elements .central-column__like-buttons_first {
+.form-elements .wrapper-like-buttons__first {
   margin-right: 10px; }
 
 .form-elements__header_toggle {
@@ -3995,7 +3995,7 @@ table {
 .form-elements__header_rate {
   margin-top: 40px; }
 
-.form-elements .buttons-rate_first {
+.form-elements .buttons-rate__first {
   margin-right: 20px; }
 
 .form-elements__header_like-buttons {
@@ -4009,14 +4009,14 @@ table {
   display: flex;
   flex-direction: row; }
 
-.form-elements .wrapper-radio-buttons_first {
+.form-elements .wrapper-radio-buttons__first {
   margin-right: 20px; }
 
 .form-elements__header_dropdown {
   margin-top: 197px;
   margin-bottom: 4px !important; }
 
-.form-elements__buttons-rich_second {
+.form-elements .wrapper-buttons-rich__second {
   margin-top: 10px; }
 
 .form-elements__header_rich-buttons {
@@ -4026,21 +4026,24 @@ table {
 .form-elements__header_buttons {
   margin-top: 33px; }
 
-.form-elements__buttons-wrapper {
+.form-elements .buttons-wrapper-right {
   width: 218px; }
 
-.form-elements__buttons-wrapper_first-row, .form-elements__buttons-wrapper_second-row, .form-elements__buttons-wrapper_third-row {
+.form-elements .buttons-wrapper-right__first-row,
+.form-elements .buttons-wrapper-right__second-row,
+.form-elements .buttons-wrapper-right__third-row {
   display: flex;
   flex-direction: row;
   margin-bottom: 30px; }
 
-.form-elements__buttons-wrapper_first-row, .form-elements__buttons-wrapper_second-row {
+.form-elements .buttons-wrapper-right__first-row,
+.form-elements .buttons-wrapper-right__second-row {
   justify-content: space-between; }
 
-.form-elements__buttons-wrapper_fourth-row {
+.form-elements .buttons-wrapper-right__fourth-row {
   margin-bottom: 40px; }
 
-.form-elements .third-row-buttons_first {
+.form-elements .third-row-buttons__first {
   margin-right: 20px; }
 
 .form-elements__header_pagination {
@@ -5140,4 +5143,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.e1c3f3a9195617c81a27.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.e1751e70483653661328.css.map*/
