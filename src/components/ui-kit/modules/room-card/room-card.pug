@@ -1,6 +1,6 @@
 include ../button/button.pug
 mixin roomcard( { imgSource = '',roomType = '', roomNumber = 0, price = 0, units = '  в сутки', commentNumber = 0, rate = 1, commentLabel=' Отзывов',withArrows = false,ref='./details.html'}={} )
-    div(class='room-card')
+    .room-card
         figure.room-card__slider.js-room-card__slider(class=withArrows?'room-card__slider_with-arrow':'')
           a(class='room-card__link' href=ref)
             img(src=imgSource, class='room-card__img', alt="room image")
@@ -10,19 +10,19 @@ mixin roomcard( { imgSource = '',roomType = '', roomNumber = 0, price = 0, units
             img(src=imgSource, class='room-card__img', alt="room image")
           a(class='room-card__link' href=ref)  
             img(src=imgSource, class='room-card__img', alt="room image")
-        div(class='room-card__room-specifications')
-          div(class='room-card__number')
+        .room-card__room-specifications
+          .room-card__number
             span
               span='№  '
               span=roomNumber
-          div(class='room-card__type')=roomType
-          div(class='room-card__price')
+          .room-card__type=roomType
+          .room-card__price
             span=price
             span=units
-        div(class='room-card__delimeter')
-        div.room-card__bottom-line
-          div(class='room-card__rate')
+        .room-card__delimeter
+        .room-card__bottom-line
+          .room-card__rate
             +button({type:'rate',darkStar:rate})
-          div(class='room-card__comment')
+          .room-card__comment
             span=commentNumber
             span=commentLabel
