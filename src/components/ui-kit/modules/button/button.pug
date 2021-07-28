@@ -19,15 +19,15 @@ mixin button( { darkStar = 1, lightStar, type = '', isChecked = false, isLiked =
         span(class='button-with-arrow__label')=label
         span(class='button-with-arrow__arr material-icons')='arrow_forward'
     else if type=='rate'
-      +button-rate( { darkStar:darkStar, lightStar:lightStar } )
+      +button-rate( { darkStar, lightStar } )
     else if type=='like'
-      +button-like({ isLiked:isLiked, likeNumber:likeNumber })
+      +button-like({ isLiked, likeNumber })
     else if type=='check'
-      +button-check({ labels:labels  })
+      +button-check({ labels  })
     else if type=='rich'
-      +button-rich({ isChecked:isChecked, header:header,label:label})
+      +button-rich({ isChecked, header,label})
     else if type=='radio'
-      +button-radio({ label: label, isChecked: isChecked ,id:id})
+      +button-radio({ label, isChecked ,id})
     else if type=='link'
       a(class=buttonClassName,href=href)
         span=label
