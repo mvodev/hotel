@@ -1,13 +1,13 @@
-mixin pagination( { selectedPage=1, firstNumbers=[],isEllipsis=false,lastNumber=2,label="add description" }={}  )
+mixin pagination( { selectedPage=1, firstNumbers=[],isEllipsis=false,lastNumber={},label="add description" }={}  )
     .pagination
       .pagination_wrapper
         each val in firstNumbers
-          if val===selectedPage
-            .pagination__number.pagination__number_selected=val
+          if val.page===selectedPage
+            a.pagination__number.pagination__number_selected(href=val.ref)=val.page
           else
-            .pagination__number=val
+            a.pagination__number(href=val.ref)=val.page
         if isEllipsis
           .pagination__ellipsis='...'
-          .pagination__number=lastNumber
+          a.pagination__number(href=lastNumber.ref)=lastNumber.page
           .pagination__arrow='arrow_forward'
-      span(class='pagination__label')=label  
+      span.pagination__label=label  
