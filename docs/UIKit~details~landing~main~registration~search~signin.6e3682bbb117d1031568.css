@@ -1065,7 +1065,9 @@ table {
   .footer-widget__logo {
     display: none; }
   .footer-widget__wrapper {
-    justify-content: center; } }
+    justify-content: space-evenly; }
+  .footer-widget__links {
+    margin-right: 30px; } }
 
 @media (max-width: 767px) {
   .footer-widget,
@@ -2486,7 +2488,9 @@ table {
   .footer-widget__logo {
     display: none; }
   .footer-widget__wrapper {
-    justify-content: center; } }
+    justify-content: space-evenly; }
+  .footer-widget__links {
+    margin-right: 30px; } }
 
 @media (max-width: 767px) {
   .footer-widget,
@@ -5129,4 +5133,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.9467b587956e1fd54c69.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.6e3682bbb117d1031568.css.map*/
