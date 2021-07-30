@@ -8,6 +8,8 @@ block content
   include ../../ui-kit/modules/dropdown/dropdown.pug
   include ../../ui-kit/modules/range-slider/range-slider.pug
   include ../../ui-kit/modules/button/button.pug
+  include ../../ui-kit/modules/button-check/button-check.pug
+  include ../../ui-kit/modules/button-rich/button-rich.pug
   include ../../ui-kit/modules/list/list.pug
   include ../../ui-kit/modules/room-card/room-card.pug
   include ../../ui-kit/modules/pagination/pagination.pug
@@ -36,8 +38,7 @@ block content
         h3(class='left-column__header left-column__header_price')='Стоимость за сутки пребывания в номере'
         h2(class='left-column__header left-column__header_rules')='ПРАВИЛА ДОМА'
         .left-column__button-check
-          +button({
-                  type:'check',
+          +button-check({
                   labels:[
                           {text:'Можно курить',isChecked:false},
                           {text:'Можно с питомцами',isChecked:true},
@@ -46,14 +47,12 @@ block content
                   })
         h2(class='left-column__header left-column__header_availability')='доступность'
         div.left-column__button-rich.left-column__button-rich_first
-          +button({
-                  type:'rich',
+          +button-rich({
                   header:'Широкий коридор',
                   label:'Ширина коридоров в номере не менее 91 см.'
                   })
         div.left-column__button-rich.left-column__button-rich_last
-          +button({
-                  type:'rich',
+          +button-rich({
                   header:'Помощник для инвалидов',
                   label:'На 1 этаже вас встретит специалист  и проводит до номера.'
                   })

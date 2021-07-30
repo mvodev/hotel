@@ -1,11 +1,5 @@
-include ../button-radio/button-radio.pug
-include ../button-rate/button-rate.pug
-include ../button-like/button-like.pug
-include ../button-check/button-check.pug
-include ../button-rich/button-rich.pug
 mixin button( { darkStar = 1, lightStar, type = '', isChecked = false, isLiked = false, purpose = 'button', label = '', header = '', likeNumber = 0, text = '', labels = [], id, ref='/mock-address/change-me', wide=false,href='/mock-address/change-me'} = {})
   - let buttonClassName='button'
-  - lightStar = 5 - darkStar
   - buttonClassName+=type==='arrow' ? ' button-with-arrow' : ''
   - buttonClassName+=type==='dark' ? ' button-dark' : ''
   - buttonClassName+=type==='dark50' ? ' button-dark50' : ''
@@ -18,16 +12,6 @@ mixin button( { darkStar = 1, lightStar, type = '', isChecked = false, isLiked =
       button(class=buttonClassName type=purpose)
         span.button-with-arrow__label=label
         span.button-with-arrow__arr.material-icons='arrow_forward'
-    else if type==='rate'
-      +button-rate( { darkStar, lightStar } )
-    else if type==='like'
-      +button-like({ isLiked, likeNumber })
-    else if type==='check'
-      +button-check({ labels  })
-    else if type==='rich'
-      +button-rich({ isChecked, header,label})
-    else if type==='radio'
-      +button-radio({ label, isChecked ,id})
     else if type==='link'
       a(class=buttonClassName,href=href)
         span=label

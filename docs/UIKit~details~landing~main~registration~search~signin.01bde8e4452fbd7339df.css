@@ -3303,7 +3303,8 @@ table {
 
 .button-radio {
   height: 24px;
-  width: 100%; }
+  width: 100%;
+  font-family: Montserrat, "Arial,sans-serif"; }
   .button-radio__input {
     display: none; }
   .button-radio__label {
@@ -3349,7 +3350,8 @@ table {
 
 .button-rich {
   width: 266px;
-  height: 51px; }
+  height: 51px;
+  font-family: Montserrat, "Arial,sans-serif"; }
   .button-rich__checkbox-input {
     position: absolute;
     z-index: -1;
@@ -3408,6 +3410,7 @@ table {
     left: 0;
     top: 0; }
   .button-check__checkbox-text {
+    font-family: Montserrat, "Arial,sans-serif";
     position: relative;
     padding-left: 30px;
     font-weight: normal;
@@ -3948,7 +3951,7 @@ table {
   margin-bottom: 10px; }
 
 .form-elements__header_radio-buttons {
-  margin-top: 35px;
+  margin-top: 43px;
   margin-bottom: 14px; }
 
 .form-elements .central-column__radio-buttons-wrapper {
@@ -3960,7 +3963,7 @@ table {
   margin-right: 10px; }
 
 .form-elements__header_toggle {
-  margin-top: 34px; }
+  margin-top: 37px; }
 
 .form-elements__header_rate {
   margin-top: 40px; }
@@ -4587,7 +4590,8 @@ table {
 
 .button-radio {
   height: 24px;
-  width: 100%; }
+  width: 100%;
+  font-family: Montserrat, "Arial,sans-serif"; }
   .button-radio__input {
     display: none; }
   .button-radio__label {
@@ -4633,7 +4637,8 @@ table {
 
 .button-rich {
   width: 266px;
-  height: 51px; }
+  height: 51px;
+  font-family: Montserrat, "Arial,sans-serif"; }
   .button-rich__checkbox-input {
     position: absolute;
     z-index: -1;
@@ -4692,6 +4697,7 @@ table {
     left: 0;
     top: 0; }
   .button-check__checkbox-text {
+    font-family: Montserrat, "Arial,sans-serif";
     position: relative;
     padding-left: 30px;
     font-weight: normal;
@@ -5113,4 +5119,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.bdf1a9475bfb14df29b9.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.01bde8e4452fbd7339df.css.map*/

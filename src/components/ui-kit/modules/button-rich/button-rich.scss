@@ -1,6 +1,7 @@
 .button-rich{
   width: 266px;
 	height: 51px;
+	font-family: $font-family-main,$fallback-font;
 
 		&__checkbox-input {
 			position: absolute;

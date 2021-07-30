@@ -1,4 +1,5 @@
 include ../button/button.pug
+include ../button-radio/button-radio.pug
 include ../text-field/text-field.pug
 include ../toggle/toggle.pug
 mixin signup(options)
@@ -16,14 +17,12 @@ mixin signup(options)
                     })
       .sign-up__radio-button-wrapper
         .sign-up__radio-button-wrapper_first-button
-          +button({
-                  type:'radio',
+          +button-radio({
                   label:'Мужчина',
                   isChecked:true,
                   id:'sign-male'
                   })
-        +button({
-                type:'radio',
+        +button-radio({
                 label:'Женщина',
                 id:'sign-female'
                 })

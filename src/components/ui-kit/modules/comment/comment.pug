@@ -1,4 +1,4 @@
-include ../button/button.pug
+include ../button-like/button-like.pug
 mixin comment({ imgSource = '', headerName = 'provide user name', text = 'provide description', headerTime = 'provide time', likeNumber = 0, isLiked = false,dateTime = '2021-07'} = {})
   article.expanded-comment
     header.expanded-comment__header
@@ -9,5 +9,5 @@ mixin comment({ imgSource = '', headerName = 'provide user name', text = 'provid
         time(class='expanded-comment__header-time' datetime=dateTime)=headerTime
     .expanded-comment__body
       .expanded-comment__like-button
-        +button({type:'like',likeNumber,isLiked})
+        +button-like({likeNumber,isLiked})
       p.expanded-comment__body-text=text

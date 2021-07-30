@@ -2,6 +2,11 @@ include ../modules/dropdown/dropdown.pug
 include ../modules/text-field/text-field.pug
 include ../modules/range-slider/range-slider.pug
 include ../modules/button/button.pug
+include ../modules/button-check/button-check.pug
+include ../modules/button-radio/button-radio.pug
+include ../modules/button-like/button-like.pug
+include ../modules/button-rate/button-rate.pug
+include ../modules/button-rich/button-rich.pug
 include ../modules/toggle/toggle.pug
 include ../modules/list/list.pug
 include ../modules/comment/comment.pug
@@ -143,8 +148,7 @@ include ../header-ui-kit/header-ui-kit.pug
               })
     section.form-elements__central-column
       h2(class='form-elements__header form-elements__header-central form-elements__header_checkbox-buttons')='CHECKBOX BUTTONS'
-      +button({
-              type:'check',
+      +button-check({
               labels:[
                       {text:'Можно курить',isChecked:false},
                       {text:'Можно с питомцами',isChecked:true},
@@ -154,13 +158,11 @@ include ../header-ui-kit/header-ui-kit.pug
       h2(class='form-elements__header form-elements__header-central form-elements__header_radio-buttons')='RADIO BUTTONS'
       .central-column__radio-buttons-wrapper.wrapper-radio-buttons
         .wrapper-radio-buttons__first
-          +button({
-                  type:'radio',
+          +button-radio({
                   label:'Мужчина',
                   isChecked:true,
                   id:'male'})
-        +button({
-                type:'radio',
+        +button-radio({
                 label:'Женщина',
                 id:'female',
                 })
@@ -174,25 +176,21 @@ include ../header-ui-kit/header-ui-kit.pug
       h2(class='form-elements__header form-elements__header-central form-elements__header_like-buttons')='LIKE BUTTON'
       .central-column__like-buttons-wrapper.wrapper-like-buttons
         .wrapper-like-buttons__first
-          +button({
-                  type:'like',
+          +button-like({
                   likeNumber:2
                   })
-        +button({
-                type:'like',
+        +button-like({
                 likeNumber:12,
                 isLiked:true
                 })
       h2(class='form-elements__header form-elements__header-central form-elements__header_rate')='RATE BUTTON'
       .central-column__rate-buttons-wrapper.buttons-rate
         .buttons-rate__first
-          +button({
-                  type:'rate',
+          +button-rate({
                   darkStar:4
                   })
         .buttons-rate__second
-          +button({
-                type:'rate',
+          +button-rate({
                 darkStar:1
                 })
       h2(class='form-elements__header form-elements__header-central form-elements__header_dropdown')='DROPDOWN'
@@ -209,14 +207,12 @@ include ../header-ui-kit/header-ui-kit.pug
                 })
       h2(class='form-elements__header form-elements__header-central form-elements__header_rich-buttons')='Rich Checkbox Buttons'
       .central-column__buttons-rich-wrapper.wrapper-buttons-rich
-      +button({
-              type:'rich',
+      +button-rich({
               header:'Широкий коридор',
               label:'Ширина коридоров в номере не менее 91 см.'
               })
       .wrapper-buttons-rich__second
-        +button({
-                type:'rich',
+        +button-rich({
                 header:'Помощник для инвалидов',
                 label:'На 1 этаже вас встретит специалист  и проводит до номера.'
                 })

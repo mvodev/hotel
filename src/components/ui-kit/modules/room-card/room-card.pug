@@ -1,4 +1,4 @@
-include ../button/button.pug
+include ../button-rate/button-rate.pug
 mixin roomcard( { imgSource = '',roomType = '', roomNumber = 0, price = 0, units = '  в сутки', commentNumber = 0, rate = 1, commentLabel=' Отзывов',withArrows = false,ref='./details.html'}={} )
     .room-card
         figure.room-card__slider.js-room-card__slider(class=withArrows?'room-card__slider_with-arrow':'')
@@ -22,7 +22,7 @@ mixin roomcard( { imgSource = '',roomType = '', roomNumber = 0, price = 0, units
         .room-card__delimeter
         .room-card__bottom-line
           .room-card__rate
-            +button({type:'rate',darkStar:rate})
+            +button-rate({darkStar:rate})
           .room-card__comment
             span=commentNumber
             span=commentLabel
