@@ -1,4 +1,7 @@
 .form-elements{
+  &__header-right{
+    margin-bottom: 16px;
+  }
   &__header_buttons{
     margin-top: 33px;
   }
@@ -31,6 +34,6 @@
   }
   &__header_dropdown-right{
     margin-top: 232px;
-    margin-bottom: 4px !important;
+    margin-bottom: 4px;
   }
 }

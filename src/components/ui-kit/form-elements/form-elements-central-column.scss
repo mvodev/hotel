@@ -1,4 +1,7 @@
 .form-elements{
+  &__header-central{
+    margin-bottom: 16px;
+  }
   &__header_checkbox-buttons{
     margin-bottom: 16.56px;
   }
@@ -18,7 +21,7 @@
     margin-right: 10px;
   }
   &__header_toggle{
-    margin-top: 37px;
+    margin-top: 39px;
   }
   &__header_rate{
     margin-top: 40px;

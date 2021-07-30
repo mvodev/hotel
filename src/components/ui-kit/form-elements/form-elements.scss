@@ -41,24 +41,18 @@
     padding-left: 125px;
     padding-top: 8px;
   }
-  &__header{
+  &__header-left,
+  &__header-central,
+  &__header-right{
     display: flex;
     flex-direction: row;
-    margin-bottom: 5px;
     justify-content: space-between;
     font-family: $font-family-main,$fallback-font;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 12px;
     line-height: 15px;
-  }
-  &__header_extra{
-    font-weight: normal;
-    color: $darkShade50;
-  }
-  &__header-central,
-  &__header-right{
-    margin-bottom: 16px;
+    color: $darkShade100;
   }
 }
 
