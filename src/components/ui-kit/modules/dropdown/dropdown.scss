@@ -30,6 +30,7 @@
     position: relative;
     height: 100%;
     cursor: pointer;
+    width: inherit;
   }
   &__input{
     border: none;
@@ -83,6 +84,7 @@
     position: absolute;
     top:42px;
     z-index: 3;
+    right: -1px;
     width: inherit;
     background: $white;
     border: 1px solid $darkShade50;

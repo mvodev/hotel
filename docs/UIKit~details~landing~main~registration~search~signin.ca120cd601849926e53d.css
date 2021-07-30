@@ -1408,7 +1408,8 @@ table {
     justify-content: space-between;
     position: relative;
     height: 100%;
-    cursor: pointer; }
+    cursor: pointer;
+    width: inherit; }
   .dropdown__input {
     border: none;
     outline: none;
@@ -1457,6 +1458,7 @@ table {
     position: absolute;
     top: 42px;
     z-index: 3;
+    right: -1px;
     width: inherit;
     background: #ffffff;
     border: 1px solid rgba(31, 32, 65, 0.5);
@@ -3085,7 +3087,8 @@ table {
     justify-content: space-between;
     position: relative;
     height: 100%;
-    cursor: pointer; }
+    cursor: pointer;
+    width: inherit; }
   .dropdown__input {
     border: none;
     outline: none;
@@ -3134,6 +3137,7 @@ table {
     position: absolute;
     top: 42px;
     z-index: 3;
+    right: -1px;
     width: inherit;
     background: #ffffff;
     border: 1px solid rgba(31, 32, 65, 0.5);
@@ -5119,4 +5123,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.01bde8e4452fbd7339df.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.ca120cd601849926e53d.css.map*/
