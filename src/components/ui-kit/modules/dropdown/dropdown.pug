@@ -15,9 +15,9 @@ mixin dropdown(options)
     dropDownClassName+=' js-dropdown'
   div(class= dropDownClassName+expandedCorners)
     if typeDropdown==='guests'||typeDropdown==='room'
-      div(class='dropdown__input-wrapper')
+      .dropdown__input-wrapper
         input(class='dropdown__input' placeholder=options.placeholder type='text' id=options.id readonly)
-        div(class='dropdown__arrow')='keyboard_arrow_down'
+        .dropdown__arrow='keyboard_arrow_down'
       div(class="dropdown__body"+isExpanded)
           each line in options.labels 
             +dropdown-counter({text:line.text,counterNumber:line.counterNumber})
@@ -26,13 +26,13 @@ mixin dropdown(options)
               .buttons-dropdown__clear.buttons-dropdown_hidden Очистить
               .buttons-dropdown__apply Применить
     if typeDropdown==='date'||typeDropdown==='filter'
-      div(class='dropdown__input-wrapper')
+      .dropdown__input-wrapper
         input(class='dropdown__input' placeholder=options.placeholder type='text' id=options.id readonly)
-        div(class='dropdown__arrow')='keyboard_arrow_down'
+        .dropdown__arrow='keyboard_arrow_down'
     if typeDropdown==='filter-date'
-        div(class='dropdown__input-wrapper')
+        .dropdown__input-wrapper
           input(class='dropdown__input' placeholder=options.placeholder type='text' readonly)
-          div(class='dropdown__arrow')='keyboard_arrow_down'
-        div(class='dropdown__input-wrapper')
+          .dropdown__arrow='keyboard_arrow_down'
+        .dropdown__input-wrapper
           input(class='dropdown__input' placeholder=options.placeholder type='text' readonly)
-          div(class='dropdown__arrow')='keyboard_arrow_down'
+          .dropdown__arrow='keyboard_arrow_down'

@@ -14,21 +14,21 @@ mixin button( { darkStar = 1, lightStar, type = '', isChecked = false, isLiked =
   - buttonClassName+=type==='transparent' ? ' button-transparent' : ''
   - buttonClassName+=type==='transparent50' ? ' button-transparent50' : ''
   - buttonClassName+=type==='link' ? ' button-link button-common' : ''
-    if type=='arrow'
+    if type==='arrow'
       button(class=buttonClassName type=purpose)
-        span(class='button-with-arrow__label')=label
-        span(class='button-with-arrow__arr material-icons')='arrow_forward'
-    else if type=='rate'
+        span.button-with-arrow__label=label
+        span.button-with-arrow__arr.material-icons='arrow_forward'
+    else if type==='rate'
       +button-rate( { darkStar, lightStar } )
-    else if type=='like'
+    else if type==='like'
       +button-like({ isLiked, likeNumber })
-    else if type=='check'
+    else if type==='check'
       +button-check({ labels  })
-    else if type=='rich'
+    else if type==='rich'
       +button-rich({ isChecked, header,label})
-    else if type=='radio'
+    else if type==='radio'
       +button-radio({ label, isChecked ,id})
-    else if type=='link'
+    else if type==='link'
       a(class=buttonClassName,href=href)
         span=label
     else

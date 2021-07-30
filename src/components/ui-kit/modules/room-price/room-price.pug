@@ -1,26 +1,26 @@
 include ../button/button.pug
 include ../dropdown/dropdown.pug
 mixin roomprice( {roomType = '', roomNumber, priceHeader, units='  в сутки',price,  total, discount, fee, extraFee, totalPrice, } = {} )
-    form(class='room-price')
-      div(class='room-price__wrapper')
-          div(class='room-price__room-specifications')
-            div(class='room-price__number')
+    form.room-price
+      .room-price__wrapper
+          .room-price__room-specifications
+            .room-price__number
               span
                 span='№  '
                 span=roomNumber
-            div(class='room-price__type')=roomType
-            div(class='room-price__price')
+            .room-price__type=roomType
+            .room-price__price
               span
                 span=priceHeader
                 span=units
-          div(class='room-price__dropdown-date')
-              div(class='room-price__dropdown-date-header')
-                h3(class='room-price__header room-price__dropdown-header')='прибытие'
-                h3(class='room-price__header room-price__dropdown-header')='выезд'
-              div(class='room-price__dropdown')
+          .room-price__dropdown-date
+              .room-price__dropdown-date-header
+                h3.room-price__header.room-price__dropdown-header='прибытие'
+                h3.room-price__header.room-price__dropdown-header='выезд'
+              .room-price__dropdown
                 +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'filter-date',isExpanded:false,id:'d3'})
-          div(class='room-price__dropdown-guests')
-            h3(class='room-price__header')='гости'
+          .room-price__dropdown-guests
+            h3.room-price__header='гости'
             +dropdown({
                       placeholder:"Сколько гостей",
                       typeDropdown:'guests',
@@ -32,20 +32,20 @@ mixin roomprice( {roomType = '', roomNumber, priceHeader, units='  в сутки
                               ],
                       withButtons:true
                       })
-          div(class='room-price__start-price')
+          .room-price__start-price
             div=price
             div=total
-          div(class='room-price__service-fee')
+          .room-price__service-fee
             div
               div=discount
-              div(class='room-price__extra-info')='i'
+              .room-price__extra-info='i'
             div=fee
-          div(class='room-price__service-extra-fee')
+          .room-price__service-extra-fee
             div
               h3='Сбор за дополнительные услуги'
               div(class='room-price__extra-info')='i'
             div=extraFee
-          div(class='room-price__total-price')
+          .room-price__total-price
             h3='Итого'
             div=totalPrice
           +button({

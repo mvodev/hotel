@@ -14,11 +14,11 @@ mixin textfield( {action='#', method='post',isFocused=false,isMasked=false,isSub
     inputType+=isPassword ? 'password' : ''
   if isSubscription
     form(class=textfieldClassName action=action method=method)
-      div(class='text-field__input-wrapper')
+      .text-field__input-wrapper
         input(type=inputType placeholder=placeholder class=inputClassName size='20')
         button(class='text-field__arrow' type='submit')='arrow_forward'
   else 
     div(class=textfieldClassName)
-      div(class='text-field__input-wrapper')
+      .text-field__input-wrapper
         input(type=inputType placeholder=placeholder class=inputClassName size='20')
     
