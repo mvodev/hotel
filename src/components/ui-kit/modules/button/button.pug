@@ -1,20 +1,21 @@
 mixin button( { darkStar = 1, lightStar, type = '', isChecked = false, isLiked = false, purpose = 'button', label = '', header = '', likeNumber = 0, text = '', labels = [], id, ref='/mock-address/change-me', wide=false,href='/mock-address/change-me'} = {})
-  - let buttonClassName='button'
-  - buttonClassName+=type==='arrow' ? ' button-with-arrow' : ''
-  - buttonClassName+=type==='dark' ? ' button-dark' : ''
-  - buttonClassName+=type==='dark50' ? ' button-dark50' : ''
-  - buttonClassName+=type==='white' ? ' button-white' : ''
-  - buttonClassName+=type==='white50' ? ' button-white50' : ''
-  - buttonClassName+=type==='transparent' ? ' button-transparent' : ''
-  - buttonClassName+=type==='transparent50' ? ' button-transparent50' : ''
-  - buttonClassName+=type==='link' ? ' button-link button-common' : ''
-    if type==='arrow'
+  -
+    let buttonClassName='button'
+    buttonClassName+=type==='arrow' ? ' button-with-arrow' : ''
+    buttonClassName+=type==='dark' ? ' button-dark' : ''
+    buttonClassName+=type==='dark50' ? ' button-dark50' : ''
+    buttonClassName+=type==='white' ? ' button-white' : ''
+    buttonClassName+=type==='white50' ? ' button-white50' : ''
+    buttonClassName+=type==='transparent' ? ' button-transparent' : ''
+    buttonClassName+=type==='transparent50' ? ' button-transparent50' : ''
+    buttonClassName+=type==='link' ? ' button-link button-common' : ''
+  if type==='arrow'
       button(class=buttonClassName type=purpose)
         span.button-with-arrow__label=label
         span.button-with-arrow__arr.material-icons='arrow_forward'
-    else if type==='link'
+  else if type==='link'
       a(class=buttonClassName,href=href)
         span=label
-    else
+  else
       button(class=buttonClassName+' button-common' type=purpose)
         span=label

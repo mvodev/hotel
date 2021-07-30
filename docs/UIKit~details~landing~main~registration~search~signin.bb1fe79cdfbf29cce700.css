@@ -1408,8 +1408,7 @@ table {
     justify-content: space-between;
     position: relative;
     height: 100%;
-    cursor: pointer;
-    width: inherit; }
+    cursor: pointer; }
   .dropdown__input {
     border: none;
     outline: none;
@@ -1456,15 +1455,16 @@ table {
     text-transform: uppercase;
     display: none;
     position: absolute;
-    top: 42px;
     z-index: 3;
-    right: -1px;
-    width: inherit;
+    width: 100%;
     background: #ffffff;
     border: 1px solid rgba(31, 32, 65, 0.5);
     box-sizing: border-box;
     border-radius: 0px 0px 2px 2px;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
+  .dropdown__room .dropdown__body {
+    width: 266px;
+    margin-left: -1px; }
   .dropdown_active {
     display: block; }
   .dropdown__body-buttons {
@@ -3087,8 +3087,7 @@ table {
     justify-content: space-between;
     position: relative;
     height: 100%;
-    cursor: pointer;
-    width: inherit; }
+    cursor: pointer; }
   .dropdown__input {
     border: none;
     outline: none;
@@ -3135,15 +3134,16 @@ table {
     text-transform: uppercase;
     display: none;
     position: absolute;
-    top: 42px;
     z-index: 3;
-    right: -1px;
-    width: inherit;
+    width: 100%;
     background: #ffffff;
     border: 1px solid rgba(31, 32, 65, 0.5);
     box-sizing: border-box;
     border-radius: 0px 0px 2px 2px;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
+  .dropdown__room .dropdown__body {
+    width: 266px;
+    margin-left: -1px; }
   .dropdown_active {
     display: block; }
   .dropdown__body-buttons {
@@ -5123,4 +5123,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.ca120cd601849926e53d.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.bb1fe79cdfbf29cce700.css.map*/

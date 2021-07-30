@@ -30,7 +30,6 @@
     position: relative;
     height: 100%;
     cursor: pointer;
-    width: inherit;
   }
   &__input{
     border: none;
@@ -82,15 +81,17 @@
     text-transform: uppercase;
     display: none;
     position: absolute;
-    top:42px;
     z-index: 3;
-    right: -1px;
-    width: inherit;
+    width: 100%;
     background: $white;
     border: 1px solid $darkShade50;
     box-sizing: border-box;
     border-radius: 0px 0px 2px 2px;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  }
+  &__room .dropdown__body{
+    width: 266px;
+    margin-left: -1px;
   }
   &_active {
     display: block;
