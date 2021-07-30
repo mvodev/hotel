@@ -4166,7 +4166,7 @@ table {
 
 .cards__left-column {
   padding-left: 140px; }
-  .cards__left-column_search {
+  .cards__left-column .left-column-cards__search {
     margin-bottom: 40px; }
 
 .sign-in {
@@ -4335,7 +4335,7 @@ table {
 
 .cards__central-column {
   padding-left: 40px; }
-  .cards__central-column_room-price {
+  .cards__central-column .central-column-cards__room-price {
     margin-bottom: 40px; }
 
 .room-card {
@@ -4476,7 +4476,7 @@ table {
   padding-left: 40px; }
   .cards__right-column .cards__datepicker {
     margin-bottom: 40px; }
-  .cards__right-column_first-room {
+  .cards__right-column .right-column-cards__first-room {
     margin-bottom: 40px; }
 
 .cards__wrapper {
@@ -5123,4 +5123,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.a662a77aa65441e6e5c7.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.2e63ff7f53168ce59b69.css.map*/
