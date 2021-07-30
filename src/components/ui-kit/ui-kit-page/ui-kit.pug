@@ -9,14 +9,14 @@ html(lang="ru")
     include ../../favicon/favicon.pug
     title UIKit
   body
-    main.wrapper
-      section(class="colors-and-types content-container")
+    main.ui-kit-wrapper
+      section.colors-and-types.content-container
         +header
         include ../colors/colors.pug
-      section(class="headers-and-footers content-container")
+      section.headers-and-footers.content-container
         +header
         include ../headers-and-footers/headers-and-footers.pug
-      section(class="form-elements content-container")
+      section.form-elements.content-container
         include ../form-elements/form-elements.pug
-      section(class="cards content-container")
+      section.cards.content-container
         include ../cards/cards.pug

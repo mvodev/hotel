@@ -1507,7 +1507,8 @@ table {
   .bullet-list-expandable {
     width: 266px;
     height: 44px;
-    position: relative; }
+    position: relative;
+    cursor: pointer; }
   .bullet-list-expandable__label {
     font-family: Montserrat;
     font-style: normal;
@@ -3716,7 +3717,8 @@ table {
   .bullet-list-expandable {
     width: 266px;
     height: 44px;
-    position: relative; }
+    position: relative;
+    cursor: pointer; }
   .bullet-list-expandable__label {
     font-family: Montserrat;
     font-style: normal;
@@ -3907,12 +3909,19 @@ table {
 .form-elements__header-left {
   margin-bottom: 5px; }
 
+.form-elements .header-left-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
 .form-elements .header-left-form__extra {
   color: rgba(31, 32, 65, 0.5);
   font-weight: normal; }
 
 .form-elements__header_date-dropdown {
-  justify-content: left; }
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row; }
 
 .form-elements__header_text-field-hover, .form-elements__header_dropdown-default, .form-elements__header_dropdown-room-expanded {
   margin-top: 21px; }
@@ -4061,9 +4070,6 @@ table {
     padding-left: 125px;
     padding-top: 8px; }
   .form-elements__header-left, .form-elements__header-central, .form-elements__header-right {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     font-family: Montserrat, "Arial,sans-serif";
     font-weight: bold;
     text-transform: uppercase;
@@ -5123,4 +5129,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.2e63ff7f53168ce59b69.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.9467b587956e1fd54c69.css.map*/

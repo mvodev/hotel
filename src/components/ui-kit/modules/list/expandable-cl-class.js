@@ -5,12 +5,11 @@ class ExpandableCL {
     this._bindEvents();
   }
   _getElems() {
-    this.bulletListExpandableArrow =
-    this.bulletList.querySelector('.js-bullet-list-expandable__arrow');
+    this.bulletListExpandableArrow =this.bulletList.querySelector('.js-bullet-list-expandable__arrow');
     this.bulletListDropdown = this.bulletList.querySelector('.js-bullet-list-expandable__dropdown');
   }
   _bindEvents() {
-    this.bulletListExpandableArrow.addEventListener('click', this._handleExpandableList.bind(this));
+    this.bulletList.addEventListener('click', this._handleExpandableList.bind(this));
   }
   _handleExpandableList(event) {
     this.bulletListDropdown.classList.toggle('bullet-list_is-visible');
@@ -18,10 +17,10 @@ class ExpandableCL {
   }
   _toggleArrow() {
     if (this.bulletListExpandableArrow.innerText === 'keyboard_arrow_down') {
-    this.bulletListExpandableArrow.innerText = 'keyboard_arrow_up';
+      this.bulletListExpandableArrow.innerText = 'keyboard_arrow_up';
     }
     else if (this.bulletListExpandableArrow.innerText === 'keyboard_arrow_up') {
-    this.bulletListExpandableArrow.innerText = 'keyboard_arrow_down';
+      this.bulletListExpandableArrow.innerText = 'keyboard_arrow_down';
     }
   }
 }

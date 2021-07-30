@@ -44,9 +44,6 @@
   &__header-left,
   &__header-central,
   &__header-right{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     font-family: $font-family-main,$fallback-font;
     font-weight: bold;
     text-transform: uppercase;

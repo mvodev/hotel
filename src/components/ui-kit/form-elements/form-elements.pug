@@ -15,26 +15,29 @@ include ../header-ui-kit/header-ui-kit.pug
 +header
 .form-elements__wrapper
     section.form-elements__left-column
-      h2(class='form-elements__header-left header-left-form')
-        span='Text Field'
-        span.header-left-form__extra='Default'
+      h2.form-elements__header-left 
+        .header-left-form
+          span='Text Field'
+          span.header-left-form__extra='Default'
       +textfield(
                 {
                   isDefault:true,
                   placeholder:'Email',
                   inputType:"email"
                 })
-      h2(class='form-elements__header-left form-elements__header_text-field-hover header-left-form')
-        span='Text Field'
-        span.header-left-form__extra='HOVER / FOCUS'
+      h2.form-elements__header-left.form-elements__header_text-field-hover
+        .header-left-form
+          span='Text Field'
+          span.header-left-form__extra='HOVER / FOCUS'
       +textfield(
                 {
                   isFocused:true,
                   placeholder:'This is pretty awesome'
                 })
-      h2(class='form-elements__header-left form-elements__header_dropdown-default header-left-form')
-        span='Dropdown'
-        span.header-left-form__extra='Default'
+      h2.form-elements__header-left.form-elements__header_dropdown-default
+        .header-left-form
+          span='Dropdown'
+          span.header-left-form__extra='Default'
       +dropdown(
                 {
                   placeholder:'Сколько гостей',
@@ -47,15 +50,16 @@ include ../header-ui-kit/header-ui-kit.pug
                       ],
                       withButtons:true
                 })
-      h2(class='form-elements__header-left form-elements__header_masked-text-field header-left-form')
-        span='Masked Text Field'
-        span.header-left-form__extra='Default'
+      h2.form-elements__header-left.form-elements__header_masked-text-field
+        .header-left-form
+          span='Masked Text Field'
+          span.header-left-form__extra='Default'
       +textfield(
                 {
                   isMasked:true,
                   placeholder:'ДД.ММ.ГГГГ'
                 })
-      h2(class='form-elements__header-left form-elements__header_date-dropdown')
+      h2.form-elements__header-left.form-elements__header_date-dropdown
         span='Date Dropdown'
         span='Date Dropdown'
       .left-column__dropdown-wrapper
@@ -67,22 +71,23 @@ include ../header-ui-kit/header-ui-kit.pug
                   idStart:'idStart',
                   idEnd:'idEnd'
                   })
-      h2(class='form-elements__header-left form-elements__header_filter-date-dropdown')='Filter Date Dropdown'
+      h2.form-elements__header-left.form-elements__header_filter-date-dropdown='Filter Date Dropdown'
       +dropdown({
                 placeholder:'19 авг - 23 авг',
                 typeDropdown:'filter',
                 isExpanded:false
                 })
-      h2(class='form-elements__header-left form-elements__header_subscription-text-field')
+      h2.form-elements__header-left.form-elements__header_subscription-text-field
         span='Subscription Text Field'
       +textfield({
                 isSubscription:true,
                 placeholder:'Email',
                 inputType:"email"
                 })
-      h2(class='form-elements__header-left form-elements__header_dropdown-room header-left-form')
-        span='Dropdown'
-        span.header-left-form__extra='DEFAULT'
+      h2.form-elements__header-left.form-elements__header_dropdown-room
+        .header-left-form
+          span='Dropdown'
+          span.header-left-form__extra='DEFAULT'
       +dropdown({
                 typeDropdown:'room',
                 placeholder:'2 спальни, 2 кровати', 
@@ -92,9 +97,10 @@ include ../header-ui-kit/header-ui-kit.pug
                         {text:"ванныe комнаты",counterNumber:0},
                         ]
                 })
-      h2(class='form-elements__header-left form-elements__header_dropdown-room-expanded header-left-form')
-        span='Dropdown'
-        span.header-left-form__extra='EXPANDED'
+      h2.form-elements__header-left.form-elements__header_dropdown-room-expanded
+        .header-left-form
+          span='Dropdown'
+          span.header-left-form__extra='EXPANDED'
       +dropdown({
                 typeDropdown:'room',
                 placeholder:'2 спальни,2 кровати', 
@@ -105,9 +111,10 @@ include ../header-ui-kit/header-ui-kit.pug
                         ],
                 isExpanded:true
                 })
-      div(class='left-column__bullets bullets-left-column')
-        .bullets-left-column__first
-          +list({
+      .left-column__bullets
+        .bullets-left-column
+          .bullets-left-column__first
+            +list({
                 type:'expandable',
                 label:'expandable checkbox list',
                 isExpand:false,
@@ -120,7 +127,7 @@ include ../header-ui-kit/header-ui-kit.pug
                         {text:'Шампунь',isChecked:false}
                         ]
               })
-        +list({
+          +list({
               type:'expandable',
               label:'expandable checkbox list',
               isExpand:true,
@@ -133,7 +140,8 @@ include ../header-ui-kit/header-ui-kit.pug
                       {text:'Шампунь',isChecked:false}
                       ]
             })
-      div(class='left-column__bullet-icons bullet-icons-left')
+      .left-column__bullet-icons 
+        .bullet-icons-left
           .bullet-icons-left__first
             +list({
                 type:'icons',
@@ -148,7 +156,7 @@ include ../header-ui-kit/header-ui-kit.pug
               text:'Окно в каждой из спален',
               })
     section.form-elements__central-column
-      h2(class='form-elements__header-central form-elements__header_checkbox-buttons')='CHECKBOX BUTTONS'
+      h2.form-elements__header-central.form-elements__header_checkbox-buttons='CHECKBOX BUTTONS'
       +button-check({
               labels:[
                       {text:'Можно курить',isChecked:false},
@@ -156,7 +164,7 @@ include ../header-ui-kit/header-ui-kit.pug
                       {text:'Можно пригласить гостей(до 10 человек)',isChecked:true}
                     ]
               })
-      h2(class='form-elements__header-central form-elements__header_radio-buttons')='RADIO BUTTONS'
+      h2.form-elements__header-central.form-elements__header_radio-buttons='RADIO BUTTONS'
       .central-column__radio-buttons-wrapper.wrapper-radio-buttons
         .wrapper-radio-buttons__first
           +button-radio({
@@ -167,14 +175,14 @@ include ../header-ui-kit/header-ui-kit.pug
                 label:'Женщина',
                 id:'female',
                 })
-      h2(class='form-elements__header-central form-elements__header_toggle')='TOGGLE'
+      h2.form-elements__header-central.form-elements__header_toggle='TOGGLE'
       +toggle({
               labels:[
                       {name:'Получать спецпредложения',  isPositive:true},
                       {name:'Получать спецпредложения',  isPositive:false}
                     ]
               })
-      h2(class='form-elements__header-central form-elements__header_like-buttons')='LIKE BUTTON'
+      h2.form-elements__header-central.form-elements__header_like-buttons='LIKE BUTTON'
       .central-column__like-buttons-wrapper.wrapper-like-buttons
         .wrapper-like-buttons__first
           +button-like({
@@ -184,7 +192,7 @@ include ../header-ui-kit/header-ui-kit.pug
                 likeNumber:12,
                 isLiked:true
                 })
-      h2(class='form-elements__header-central form-elements__header_rate')='RATE BUTTON'
+      h2.form-elements__header-central.form-elements__header_rate='RATE BUTTON'
       .central-column__rate-buttons-wrapper.buttons-rate
         .buttons-rate__first
           +button-rate({
@@ -194,7 +202,7 @@ include ../header-ui-kit/header-ui-kit.pug
           +button-rate({
                 darkStar:1
                 })
-      h2(class='form-elements__header-central form-elements__header_dropdown')='DROPDOWN'
+      h2.form-elements__header-central.form-elements__header_dropdown='DROPDOWN'
       +dropdown({
                 placeholder:"Сколько гостей",
                 typeDropdown:'guests',
@@ -206,7 +214,7 @@ include ../header-ui-kit/header-ui-kit.pug
                       ],
                 withButtons:true
                 })
-      h2(class='form-elements__header-central form-elements__header_rich-buttons')='Rich Checkbox Buttons'
+      h2.form-elements__header-central.form-elements__header_rich-buttons='Rich Checkbox Buttons'
       .central-column__buttons-rich-wrapper.wrapper-buttons-rich
         +button-rich({
               header:'Широкий коридор',
@@ -221,7 +229,7 @@ include ../header-ui-kit/header-ui-kit.pug
       +rangeSlider({
                     label:'RANGE SLIDER'
                   })
-      h2(class='form-elements__header-right form-elements__header_buttons')='BUTTONS'
+      h2.form-elements__header-right.form-elements__header_buttons='BUTTONS'
       .buttons-wrapper-right
         .buttons-wrapper-right__first-row
           +button({
@@ -256,7 +264,7 @@ include ../header-ui-kit/header-ui-kit.pug
                   label:'перейти к оплате',
                   type:'arrow'
                   })
-      h2(class="form-elements__header-right form-elements__header_pagination")='pagination'
+      h2.form-elements__header-right.form-elements__header_pagination='pagination'
       .form-elements__pagination
         +pagination({
                     isEllipsis:true,
@@ -269,7 +277,7 @@ include ../header-ui-kit/header-ui-kit.pug
                     selectedPage:1,
                     label:'1 – 12 из 100+ вариантов аренды'
                     })
-      h2(class="form-elements__header-right form-elements__header_dropdown-right")='Dropdown'
+      h2.form-elements__header-right.form-elements__header_dropdown-right='Dropdown'
       +dropdown({
                   placeholder:"Сколько гостей",
                   typeDropdown:'guests',
@@ -280,7 +288,7 @@ include ../header-ui-kit/header-ui-kit.pug
                           {text:"младенцы",counterNumber:0},
                         ],
                         withButtons:true})
-      h2(class="form-elements__header-right form-elements__header_bullet")='Bullet List'
+      h2.form-elements__header-right.form-elements__header_bullet='Bullet List'
       +list({
             labels:[
                     'Нельзя с питомцами',

@@ -2,12 +2,19 @@
   &__header-left{
     margin-bottom: 5px;
   }
+  .header-left-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
   .header-left-form__extra{
     color: $darkShade50;
     font-weight: normal;
   }
   &__header_date-dropdown{
-    justify-content: left;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
   }
 
   &__header_text-field-hover,
