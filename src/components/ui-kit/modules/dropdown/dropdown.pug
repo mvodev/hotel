@@ -2,19 +2,12 @@ include ../dropdown-counter/dropdown-counter.pug
 
 mixin dropdown(options)
   -
-    let dropDownClassName = 'dropdown'
+    let dropDownClassName = `dropdown dropdown_${options.typeDropdown} js-dropdown`
     let expandedCorners=''
     let isExpanded=options.isExpanded===true ? ' dropdown_active' : ''
-    let typeDropdown = options.typeDropdown
     expandedCorners+=options.isExpanded ? ' dropdown_active' : ''
-    dropDownClassName+=typeDropdown==='guests' ? ' dropdown__guests' : ''
-    dropDownClassName+=typeDropdown==='date' ? ' dropdown__date ' : ''
-    dropDownClassName+=typeDropdown==='filter' ? ' dropdown__filter ' : ''
-    dropDownClassName+=typeDropdown==='room' ? ' dropdown__room ' : ''
-    dropDownClassName+=typeDropdown==='filter-date' ? ' dropdown__filter-date ' : ''
-    dropDownClassName+=' js-dropdown'
   div(class= dropDownClassName+expandedCorners)
-    if typeDropdown==='guests'||typeDropdown==='room'
+    if options.typeDropdown==='guests'||options.typeDropdown==='room'
       .dropdown__input-wrapper
         input(class='dropdown__input' placeholder=options.placeholder type='text' id=options.id readonly)
         .dropdown__arrow='keyboard_arrow_down'
@@ -25,11 +18,11 @@ mixin dropdown(options)
             .dropdown__body-buttons.buttons-dropdown
               .buttons-dropdown__clear.buttons-dropdown_hidden Очистить
               .buttons-dropdown__apply Применить
-    if typeDropdown==='date'||typeDropdown==='filter'
+    if options.typeDropdown==='date'||options.typeDropdown==='filter'
       .dropdown__input-wrapper
         input(class='dropdown__input' placeholder=options.placeholder type='text' id=options.id readonly)
         .dropdown__arrow='keyboard_arrow_down'
-    if typeDropdown==='filter-date'
+    if options.typeDropdown==='filter-date'
         .dropdown__input-wrapper
           input(class='dropdown__input' placeholder=options.placeholder type='text' readonly)
           .dropdown__arrow='keyboard_arrow_down'

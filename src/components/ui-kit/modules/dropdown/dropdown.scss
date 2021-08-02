@@ -7,20 +7,20 @@
   height: 44px;
   background: $white;
   box-sizing: border-box;
-  &__guests{
+  &_guests{
     max-width: 320px;
     width: 100%;
     border: 1px solid $darkShade50;
     border-radius: 2px;
     cursor: pointer;
   }
-  &__room{
+  &_room{
     width: 266px;
     border: 1px solid $darkShade25;
     border-radius: 2px 2px 0px 0px;
     cursor: pointer;
   }
-  &__room.dropdown_active{
+  &_room.dropdown_active{
     border: 1px solid $darkShade50;
   }
   &__input-wrapper{
@@ -45,7 +45,7 @@
     line-height: 24px;
     cursor: pointer;
   }
-  &__guests .dropdown__input{
+  &_guests .dropdown__input{
     width: 180px;
     overflow: hidden;
   }
@@ -89,7 +89,7 @@
     border-radius: 0px 0px 2px 2px;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   }
-  &__room .dropdown__body{
+  &_room .dropdown__body{
     width: 266px;
     margin-left: -1px;
   }

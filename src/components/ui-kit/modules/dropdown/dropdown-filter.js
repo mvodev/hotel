@@ -15,7 +15,7 @@ class DropdownFilter {
   }
 
   _init() {
-    this.$dpInput = $('.dropdown__filter input');
+    this.$dpInput = $('.dropdown_filter input');
     this.$dpInput.fsdDatepicker({
       applyButton: true,
       clearButton: true,

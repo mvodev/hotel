@@ -23,9 +23,9 @@ class DropdownCount {
     this.inputWrapper = this.rootElem.querySelector(".dropdown__input-wrapper");
     this.body = this.rootElem.querySelector(".dropdown__body");
     this.counters = this.rootElem.querySelectorAll(".dropdown-counter");
-    if (this.rootElem.classList.contains("dropdown__room")) {
+    if (this.rootElem.classList.contains("dropdown_room")) {
       this.dropdownType = 'room';
-    } else if (this.rootElem.classList.contains("dropdown__guests")) {
+    } else if (this.rootElem.classList.contains("dropdown_guests")) {
       this.dropdownType = 'guests';
       this.applyButton = this.rootElem.querySelector(".buttons-dropdown__apply");
       this.clearButton = this.rootElem.querySelector(".buttons-dropdown__clear");

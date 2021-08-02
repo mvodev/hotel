@@ -136,9 +136,9 @@ class DropdownCount {
     this.inputWrapper = this.rootElem.querySelector(".dropdown__input-wrapper");
     this.body = this.rootElem.querySelector(".dropdown__body");
     this.counters = this.rootElem.querySelectorAll(".dropdown-counter");
-    if (this.rootElem.classList.contains("dropdown__room")) {
+    if (this.rootElem.classList.contains("dropdown_room")) {
       this.dropdownType = 'room';
-    } else if (this.rootElem.classList.contains("dropdown__guests")) {
+    } else if (this.rootElem.classList.contains("dropdown_guests")) {
       this.dropdownType = 'guests';
       this.applyButton = this.rootElem.querySelector(".buttons-dropdown__apply");
       this.clearButton = this.rootElem.querySelector(".buttons-dropdown__clear");
@@ -387,7 +387,7 @@ class DropdownFilter {
   }
 
   _init() {
-    this.$dpInput = $('.dropdown__filter input');
+    this.$dpInput = $('.dropdown_filter input');
     this.$dpInput.fsdDatepicker({
       applyButton: true,
       clearButton: true,
@@ -427,20 +427,23 @@ __webpack_require__.r(__webpack_exports__);
 
 
 class DropdownMain {
-  constructor(rootElem) {
-    this.rootElem = rootElem;
+  constructor(rootElems) {
+    this.rootElems = rootElems;
     this._initDropdowns();
   }
   _initDropdowns() {
-    this.rootElem.forEach(elem => {
-    if (elem.classList.contains("dropdown__filter-date")) {
+    this.rootElems.forEach(elem => {
+    if (elem.classList.contains("dropdown_filter-date")) {
+      console.log('inside DropdownDate');
       new _dropdown_date__WEBPACK_IMPORTED_MODULE_0__["default"](elem);
     }
-    else if (elem.classList.contains("dropdown__filter")) {
+    else if (elem.classList.contains("dropdown_filter")) {
       new _dropdown_filter__WEBPACK_IMPORTED_MODULE_2__["default"](elem);
+      console.log('inside DropdownFilter')
     }
     else {
-      new _dropdown_count__WEBPACK_IMPORTED_MODULE_1__["default"](elem)
+      new _dropdown_count__WEBPACK_IMPORTED_MODULE_1__["default"](elem);
+      console.log('inside DropdownCounter')
     };
     });
   }
@@ -2776,4 +2779,4 @@ document.querySelectorAll('.js-list-links__arrow').forEach(elem=>new _sublinks_c
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.e9342df7a4f7fbe8c5e5.js.map
+//# sourceMappingURL=UIKit~details~landing~search.fb4d3a613c4db90c1b65.js.map
