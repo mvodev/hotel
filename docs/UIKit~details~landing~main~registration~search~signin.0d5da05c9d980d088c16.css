@@ -3470,96 +3470,6 @@ table {
     align-items: center;
     text-align: center; }
 
-.button {
-  border: none;
-  cursor: pointer;
-  font-family: Montserrat, "Arial,sans-serif";
-  font-style: normal;
-  text-decoration: none;
-  overflow: hidden;
-  position: relative; }
-  .button-common {
-    width: 99px;
-    height: 44px;
-    border-radius: 22px; }
-  .button_wide {
-    width: 196px; }
-  .button-dark, .button-dark50 {
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    text-transform: uppercase;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px; }
-  .button-dark50 {
-    opacity: 0.5; }
-  .button-white, .button-link {
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    border-radius: 22px;
-    position: relative; }
-  .button-white::before, .button-link::before {
-    content: '';
-    position: absolute;
-    left: 2px;
-    top: 2px;
-    padding: 2px;
-    z-index: 1;
-    background: #ffffff;
-    bottom: 2px;
-    right: 2px;
-    border-radius: inherit; }
-  .button-white span, .button-link span {
-    position: relative;
-    z-index: 2; }
-  .button-link {
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .button-white50 {
-    background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
-    border-radius: 22px;
-    position: relative; }
-  .button-white50::before {
-    content: '';
-    position: absolute;
-    left: 2px;
-    top: 2px;
-    padding: 2px;
-    z-index: 1;
-    background: #ffffff;
-    bottom: 2px;
-    right: 2px;
-    border-radius: inherit; }
-  .button-white50 span {
-    position: relative;
-    z-index: 2;
-    color: #BC9CFF;
-    opacity: 1; }
-  .button-white span,
-  .button-link span,
-  .button-white50 span,
-  .button-transparent span {
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: #BC9CFF;
-    white-space: nowrap; }
-  .button-transparent, .button-transparent50 {
-    border: none;
-    background: none;
-    height: 15px;
-    width: 61px;
-    padding: 0px; }
-  .button-transparent50 span {
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: rgba(31, 32, 65, 0.5);
-    text-decoration: none; }
-
 .button-like {
   width: 40px;
   height: 20px;
@@ -3600,7 +3510,102 @@ table {
 .button-like.button-like_is-liked .button-like__number {
   color: #BC9CFF; }
 
-.button-with-arrow {
+.button {
+  border: none;
+  cursor: pointer;
+  font-family: Montserrat, "Arial,sans-serif";
+  font-style: normal;
+  text-decoration: none;
+  overflow: hidden;
+  position: relative;
+  width: 99px;
+  height: 44px;
+  border-radius: 22px; }
+  .button_wide {
+    width: 196px; }
+  .button_dark, .button_dark50 {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px; }
+  .button_dark50 {
+    opacity: 0.5; }
+  .button_dark:hover {
+    opacity: 0.5; }
+  .button_white, .button_link {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    position: relative; }
+  .button_white::before, .button_link::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    padding: 2px;
+    z-index: 1;
+    background: #ffffff;
+    bottom: 2px;
+    right: 2px;
+    border-radius: inherit; }
+  .button_white span, .button_link span {
+    position: relative;
+    z-index: 2; }
+  .button_link {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .button_white50 {
+    background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
+    border-radius: 22px;
+    position: relative; }
+  .button_white50::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    padding: 2px;
+    z-index: 1;
+    background: #ffffff;
+    bottom: 2px;
+    right: 2px;
+    border-radius: inherit; }
+  .button_white50 span {
+    position: relative;
+    z-index: 2;
+    color: #BC9CFF;
+    opacity: 1; }
+  .button_white span,
+  .button_link span,
+  .button_white50 span,
+  .button_transparent span {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #BC9CFF;
+    white-space: nowrap; }
+  .button_white:hover, .button_link:hover {
+    background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
+  .button_transparent, .button_transparent50 {
+    border: none;
+    background: none;
+    height: 15px;
+    width: 61px;
+    padding: 0px; }
+  .button_transparent50 span {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5);
+    text-decoration: none; }
+  .button_transparent span:hover {
+    color: rgba(31, 32, 65, 0.5); }
+
+.button_arrow {
   width: 320px;
   height: 44px;
   border-radius: 22px;
@@ -3615,7 +3620,7 @@ table {
   line-height: 15px;
   text-transform: uppercase;
   color: #ffffff; }
-  .button-with-arrow__arr {
+  .button_arrow .button__arrow {
     font-weight: normal;
     line-height: 24px;
     display: flex;
@@ -3628,7 +3633,7 @@ table {
     position: absolute;
     top: 0;
     left: 276px; }
-  .button-with-arrow__label {
+  .button_arrow .button__arrow-label {
     max-width: 256px;
     max-height: 15px;
     overflow: hidden; }
@@ -4765,96 +4770,6 @@ table {
     align-items: center;
     text-align: center; }
 
-.button {
-  border: none;
-  cursor: pointer;
-  font-family: Montserrat, "Arial,sans-serif";
-  font-style: normal;
-  text-decoration: none;
-  overflow: hidden;
-  position: relative; }
-  .button-common {
-    width: 99px;
-    height: 44px;
-    border-radius: 22px; }
-  .button_wide {
-    width: 196px; }
-  .button-dark, .button-dark50 {
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    text-transform: uppercase;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px; }
-  .button-dark50 {
-    opacity: 0.5; }
-  .button-white, .button-link {
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    border-radius: 22px;
-    position: relative; }
-  .button-white::before, .button-link::before {
-    content: '';
-    position: absolute;
-    left: 2px;
-    top: 2px;
-    padding: 2px;
-    z-index: 1;
-    background: #ffffff;
-    bottom: 2px;
-    right: 2px;
-    border-radius: inherit; }
-  .button-white span, .button-link span {
-    position: relative;
-    z-index: 2; }
-  .button-link {
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .button-white50 {
-    background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
-    border-radius: 22px;
-    position: relative; }
-  .button-white50::before {
-    content: '';
-    position: absolute;
-    left: 2px;
-    top: 2px;
-    padding: 2px;
-    z-index: 1;
-    background: #ffffff;
-    bottom: 2px;
-    right: 2px;
-    border-radius: inherit; }
-  .button-white50 span {
-    position: relative;
-    z-index: 2;
-    color: #BC9CFF;
-    opacity: 1; }
-  .button-white span,
-  .button-link span,
-  .button-white50 span,
-  .button-transparent span {
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: #BC9CFF;
-    white-space: nowrap; }
-  .button-transparent, .button-transparent50 {
-    border: none;
-    background: none;
-    height: 15px;
-    width: 61px;
-    padding: 0px; }
-  .button-transparent50 span {
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: rgba(31, 32, 65, 0.5);
-    text-decoration: none; }
-
 .button-like {
   width: 40px;
   height: 20px;
@@ -4895,7 +4810,102 @@ table {
 .button-like.button-like_is-liked .button-like__number {
   color: #BC9CFF; }
 
-.button-with-arrow {
+.button {
+  border: none;
+  cursor: pointer;
+  font-family: Montserrat, "Arial,sans-serif";
+  font-style: normal;
+  text-decoration: none;
+  overflow: hidden;
+  position: relative;
+  width: 99px;
+  height: 44px;
+  border-radius: 22px; }
+  .button_wide {
+    width: 196px; }
+  .button_dark, .button_dark50 {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px; }
+  .button_dark50 {
+    opacity: 0.5; }
+  .button_dark:hover {
+    opacity: 0.5; }
+  .button_white, .button_link {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    position: relative; }
+  .button_white::before, .button_link::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    padding: 2px;
+    z-index: 1;
+    background: #ffffff;
+    bottom: 2px;
+    right: 2px;
+    border-radius: inherit; }
+  .button_white span, .button_link span {
+    position: relative;
+    z-index: 2; }
+  .button_link {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .button_white50 {
+    background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
+    border-radius: 22px;
+    position: relative; }
+  .button_white50::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    padding: 2px;
+    z-index: 1;
+    background: #ffffff;
+    bottom: 2px;
+    right: 2px;
+    border-radius: inherit; }
+  .button_white50 span {
+    position: relative;
+    z-index: 2;
+    color: #BC9CFF;
+    opacity: 1; }
+  .button_white span,
+  .button_link span,
+  .button_white50 span,
+  .button_transparent span {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #BC9CFF;
+    white-space: nowrap; }
+  .button_white:hover, .button_link:hover {
+    background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
+  .button_transparent, .button_transparent50 {
+    border: none;
+    background: none;
+    height: 15px;
+    width: 61px;
+    padding: 0px; }
+  .button_transparent50 span {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5);
+    text-decoration: none; }
+  .button_transparent span:hover {
+    color: rgba(31, 32, 65, 0.5); }
+
+.button_arrow {
   width: 320px;
   height: 44px;
   border-radius: 22px;
@@ -4910,7 +4920,7 @@ table {
   line-height: 15px;
   text-transform: uppercase;
   color: #ffffff; }
-  .button-with-arrow__arr {
+  .button_arrow .button__arrow {
     font-weight: normal;
     line-height: 24px;
     display: flex;
@@ -4923,7 +4933,7 @@ table {
     position: absolute;
     top: 0;
     left: 276px; }
-  .button-with-arrow__label {
+  .button_arrow .button__arrow-label {
     max-width: 256px;
     max-height: 15px;
     overflow: hidden; }
@@ -5133,4 +5143,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.6e3682bbb117d1031568.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.0d5da05c9d980d088c16.css.map*/

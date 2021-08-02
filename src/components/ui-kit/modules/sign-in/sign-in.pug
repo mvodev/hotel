@@ -8,7 +8,7 @@ mixin signin({ method='post', action='#'}={})
       .sign-in__text-wrapper
         +textfield({isDefault:true,placeholder:'Email'})
         +textfield({isPassword:true,placeholder:'Пароль'})
-      +button({label:'Войти',type:'arrow',purpose:'submit'})
+      +button({label:'Войти',variant:'arrow',purpose:'submit'})
       footer(class='sign-in__footer')
         span(class='sign-in__account')='Нет аккаунта на Toxin?'
-        +button({label:'Создать',type:'link',href:'./registration.html',})
+        +button({label:'Создать',variant:'link',href:'./registration.html',})
