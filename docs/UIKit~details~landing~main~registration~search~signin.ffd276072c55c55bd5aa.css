@@ -1118,17 +1118,23 @@ table {
   .search-number__dropdown-headers {
     display: flex;
     flex-direction: row; }
-  .search-number__dropdown-header {
+  .search-number_dropdown-header {
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
     margin-bottom: 5px;
     width: 150px;
     overflow: hidden; }
-  .search-number__dropdown-header:first-child {
+  .search-number_dropdown-header:first-child {
     margin-right: 20px; }
-  .search-number__dropdown-header_guests {
-    margin-top: 20px; }
+  .search-number_dropdown-header-guests {
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    width: 150px;
+    overflow: hidden; }
   .search-number__button {
     margin-top: 31px; }
 
@@ -4165,17 +4171,23 @@ table {
   .search-number__dropdown-headers {
     display: flex;
     flex-direction: row; }
-  .search-number__dropdown-header {
+  .search-number_dropdown-header {
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
     margin-bottom: 5px;
     width: 150px;
     overflow: hidden; }
-  .search-number__dropdown-header:first-child {
+  .search-number_dropdown-header:first-child {
     margin-right: 20px; }
-  .search-number__dropdown-header_guests {
-    margin-top: 20px; }
+  .search-number_dropdown-header-guests {
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    width: 150px;
+    overflow: hidden; }
   .search-number__button {
     margin-top: 31px; }
 
@@ -5143,4 +5155,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.9020698bdc3ce1904784.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.ffd276072c55c55bd5aa.css.map*/
