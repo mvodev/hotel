@@ -3,11 +3,14 @@ mixin pagination( { selectedPage=1, firstNumbers=[],isEllipsis=false,lastNumber=
       .pagination_wrapper
         each val in firstNumbers
           if val.page===selectedPage
-            a.pagination__number.pagination__number_selected(href=val.ref)=val.page
+            a.pagination__number.pagination__number_selected(href=val.ref)
+              span=val.page
           else
-            a.pagination__number(href=val.ref)=val.page
+            a.pagination__number(href=val.ref)
+              span=val.page
         if isEllipsis
           .pagination__ellipsis='...'
-          a.pagination__number(href=lastNumber.ref)=lastNumber.page
+          a.pagination__number(href=lastNumber.ref)
+            span=lastNumber.page
           .pagination__arrow='arrow_forward'
       span.pagination__label=label  

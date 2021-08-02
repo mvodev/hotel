@@ -1813,6 +1813,8 @@ table {
     text-align: center;
     color: rgba(31, 32, 65, 0.5);
     justify-content: center;
+    cursor: text; }
+  .pagination__number span {
     cursor: pointer; }
   .pagination__ellipsis {
     width: 40px;
@@ -1827,7 +1829,8 @@ table {
   .pagination__number_selected {
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     border-radius: 22px;
-    color: #ffffff; }
+    color: #ffffff;
+    cursor: pointer; }
   .pagination__arrow {
     font-family: Material Icons;
     font-size: 24px;
@@ -3883,6 +3886,8 @@ table {
     text-align: center;
     color: rgba(31, 32, 65, 0.5);
     justify-content: center;
+    cursor: text; }
+  .pagination__number span {
     cursor: pointer; }
   .pagination__ellipsis {
     width: 40px;
@@ -3897,7 +3902,8 @@ table {
   .pagination__number_selected {
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     border-radius: 22px;
-    color: #ffffff; }
+    color: #ffffff;
+    cursor: pointer; }
   .pagination__arrow {
     font-family: Material Icons;
     font-size: 24px;
@@ -5155,4 +5161,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.ffd276072c55c55bd5aa.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.f3e0887459b60c26fa66.css.map*/

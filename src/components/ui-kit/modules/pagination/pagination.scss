@@ -19,6 +19,9 @@
     text-align: center;
     color: $darkShade50;
     justify-content: center;
+    cursor: text;
+  }
+  &__number span{
     cursor: pointer;
   }
   &__ellipsis{
@@ -36,6 +39,7 @@
     background: $buttonColor;
     border-radius: 22px;
     color: $white;
+    cursor: pointer;
   }
   &__arrow{
     font-family: $font-for-icons;
