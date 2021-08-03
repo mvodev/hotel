@@ -1,12 +1,14 @@
-@import '../../ui-kit/modules/dropdown/dropdown.scss';
-@import '../../ui-kit/modules/range-slider/range-slider.scss';
-@import '../../ui-kit/modules/text-field/text-field.scss';
-@import '../../ui-kit/modules/button/button.scss';
-@import '../../ui-kit/modules/toggle/toggle.scss';
-@import '../../ui-kit/modules/switch/switch.scss';
-@import '../../ui-kit/modules/list/list.scss';
-@import '../../ui-kit/modules/comment/comment.scss';
-@import '../../ui-kit/modules/pagination/pagination.scss';
+@import '../../components/ui-kit/modules/dropdown/dropdown.scss';
+
+
+@import '../../components/ui-kit/modules/range-slider/range-slider.scss';
+@import '../../components/ui-kit/modules/text-field/text-field.scss';
+@import '../../components/ui-kit/modules/button/button.scss';
+@import '../../components/ui-kit/modules/toggle/toggle.scss';
+@import '../../components/ui-kit/modules/switch/switch.scss';
+@import '../../components/ui-kit/modules/list/list.scss';
+@import '../../components/ui-kit/modules/comment/comment.scss';
+@import '../../components/ui-kit/modules/pagination/pagination.scss';
 @import './form-elements-left-column.scss';
 @import './form-elements-central-column.scss';
 @import './form-elements-right-column.scss';
