@@ -19,10 +19,13 @@
     text-align: center;
     color: $darkShade50;
     justify-content: center;
-    cursor: text;
-  }
-  &__number span{
     cursor: pointer;
+  }
+  &__number:hover{
+    cursor: pointer;
+    border-radius: 22px;
+    background-color: $darkShade25;
+    color: $white;
   }
   &__ellipsis{
     width: 40px;

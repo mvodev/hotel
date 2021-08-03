@@ -1813,9 +1813,12 @@ table {
     text-align: center;
     color: rgba(31, 32, 65, 0.5);
     justify-content: center;
-    cursor: text; }
-  .pagination__number span {
     cursor: pointer; }
+  .pagination__number:hover {
+    cursor: pointer;
+    border-radius: 22px;
+    background-color: rgba(31, 32, 65, 0.25);
+    color: #ffffff; }
   .pagination__ellipsis {
     width: 40px;
     height: 40px;
@@ -3886,9 +3889,12 @@ table {
     text-align: center;
     color: rgba(31, 32, 65, 0.5);
     justify-content: center;
-    cursor: text; }
-  .pagination__number span {
     cursor: pointer; }
+  .pagination__number:hover {
+    cursor: pointer;
+    border-radius: 22px;
+    background-color: rgba(31, 32, 65, 0.25);
+    color: #ffffff; }
   .pagination__ellipsis {
     width: 40px;
     height: 40px;
@@ -5161,4 +5167,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.32b3a4e87c6af34aedaa.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.df4abb970e50a149b42e.css.map*/
