@@ -23,7 +23,7 @@ module.exports = {
   mode: 'development',
   entry: {
     main: './index.js',
-    UIKit: './components/ui-kit/ui-kit-page/ui-kit.js',
+    UIKit: './pages/ui-kit-page/ui-kit.js',
     landing: './pages/landing/landing.js',
     details: './pages/details/details.js',
     signin: './pages/sign-in-page/sign-in-page.js',
@@ -49,7 +49,7 @@ module.exports = {
     ),
     new HTMLWebpackPlugin(
     {
-      template: './components/ui-kit/ui-kit-page/ui-kit.pug',
+      template: './pages/ui-kit-page/ui-kit.pug',
       filename: 'UIKit.html',
       chunks: ['UIKit'],
     }

@@ -148,7 +148,7 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./components/ui-kit/ui-kit-page/ui-kit.js","vendors~UIKit~details~landing~main~registration~search~signin","vendors~UIKit~details~landing~search","vendors~UIKit~details~registration","vendors~UIKit~search","UIKit~details~landing~main~registration~search~signin","UIKit~details~landing~search"]);
+/******/ 	deferredModules.push(["./pages/ui-kit-page/ui-kit.js","vendors~UIKit~details~landing~main~registration~search~signin","vendors~UIKit~details~landing~search","vendors~UIKit~details~registration","vendors~UIKit~search","UIKit~details~landing~main~registration~search~signin","UIKit~details~landing~search"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
@@ -495,10 +495,10 @@ document.querySelectorAll('.js-text-field__input-date').forEach(elem=>new _text_
 
 /***/ }),
 
-/***/ "./components/ui-kit/ui-kit-page/ui-kit-styles.scss":
-/*!**********************************************************!*\
-  !*** ./components/ui-kit/ui-kit-page/ui-kit-styles.scss ***!
-  \**********************************************************/
+/***/ "./pages/ui-kit-page/ui-kit-styles.scss":
+/*!**********************************************!*\
+  !*** ./pages/ui-kit-page/ui-kit-styles.scss ***!
+  \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -506,39 +506,40 @@ document.querySelectorAll('.js-text-field__input-date').forEach(elem=>new _text_
 
 /***/ }),
 
-/***/ "./components/ui-kit/ui-kit-page/ui-kit.js":
-/*!*************************************************!*\
-  !*** ./components/ui-kit/ui-kit-page/ui-kit.js ***!
-  \*************************************************/
+/***/ "./pages/ui-kit-page/ui-kit.js":
+/*!*************************************!*\
+  !*** ./pages/ui-kit-page/ui-kit.js ***!
+  \*************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _ui_kit_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ui-kit-styles.scss */ "./components/ui-kit/ui-kit-page/ui-kit-styles.scss");
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _ui_kit_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ui-kit-styles.scss */ "./pages/ui-kit-page/ui-kit-styles.scss");
 /* harmony import */ var _ui_kit_styles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_ui_kit_styles_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../styles/style.scss */ "./styles/style.scss");
+/* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../styles/style.scss */ "./styles/style.scss");
 /* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_style_scss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
-/* harmony import */ var _node_modules_slick_carousel_slick_slick_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/slick-carousel/slick/slick.js */ "../node_modules/slick-carousel/slick/slick.js");
-/* harmony import */ var _node_modules_slick_carousel_slick_slick_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_slick_carousel_slick_slick_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_slick_carousel_slick_slick_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../node_modules/slick-carousel/slick/slick.scss */ "../node_modules/slick-carousel/slick/slick.scss");
+/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! slick-carousel */ "../node_modules/slick-carousel/slick/slick.js");
+/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_slick_carousel_slick_slick_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../node_modules/slick-carousel/slick/slick.scss */ "../node_modules/slick-carousel/slick/slick.scss");
 /* harmony import */ var _node_modules_slick_carousel_slick_slick_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_slick_carousel_slick_slick_scss__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_slick_carousel_slick_slick_theme_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../node_modules/slick-carousel/slick/slick-theme.scss */ "../node_modules/slick-carousel/slick/slick-theme.scss");
+/* harmony import */ var _node_modules_slick_carousel_slick_slick_theme_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../node_modules/slick-carousel/slick/slick-theme.scss */ "../node_modules/slick-carousel/slick/slick-theme.scss");
 /* harmony import */ var _node_modules_slick_carousel_slick_slick_theme_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_slick_carousel_slick_slick_theme_scss__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ion-rangeslider */ "../node_modules/ion-rangeslider/js/ion.rangeSlider.js");
 /* harmony import */ var ion_rangeslider__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(ion_rangeslider__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _modules_dropdown_fsd_datepicker_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../modules/dropdown/fsd-datepicker.js */ "./components/ui-kit/modules/dropdown/fsd-datepicker.js");
-/* harmony import */ var _modules_dropdown_fsd_datepicker_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_dropdown_fsd_datepicker_js__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _modules_text_field_text_field_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../modules/text-field/text-field.js */ "./components/ui-kit/modules/text-field/text-field.js");
-/* harmony import */ var _modules_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../modules/dropdown/dropdown.js */ "./components/ui-kit/modules/dropdown/dropdown.js");
-/* harmony import */ var _modules_button_rate_star_rating_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../modules/button-rate/star-rating.js */ "./components/ui-kit/modules/button-rate/star-rating.js");
-/* harmony import */ var _modules_button_like_like_rating_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../modules/button-like/like-rating.js */ "./components/ui-kit/modules/button-like/like-rating.js");
-/* harmony import */ var _modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../modules/list/expandable-cl.js */ "./components/ui-kit/modules/list/expandable-cl.js");
-/* harmony import */ var _modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../modules/burger/burger.js */ "./components/ui-kit/modules/burger/burger.js");
-/* harmony import */ var _modules_room_card_room_card_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../modules/room-card/room-card.js */ "./components/ui-kit/modules/room-card/room-card.js");
-/* harmony import */ var _modules_range_slider_range_slider_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../modules/range-slider/range-slider.js */ "./components/ui-kit/modules/range-slider/range-slider.js");
-/* harmony import */ var _modules_list_links_sublinks_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../modules/list-links/sublinks.js */ "./components/ui-kit/modules/list-links/sublinks.js");
+/* harmony import */ var _components_ui_kit_modules_dropdown_fsd_datepicker_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/ui-kit/modules/dropdown/fsd-datepicker.js */ "./components/ui-kit/modules/dropdown/fsd-datepicker.js");
+/* harmony import */ var _components_ui_kit_modules_dropdown_fsd_datepicker_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_components_ui_kit_modules_dropdown_fsd_datepicker_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _components_ui_kit_modules_text_field_text_field_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/ui-kit/modules/text-field/text-field.js */ "./components/ui-kit/modules/text-field/text-field.js");
+/* harmony import */ var _components_ui_kit_modules_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/ui-kit/modules/dropdown/dropdown.js */ "./components/ui-kit/modules/dropdown/dropdown.js");
+/* harmony import */ var _components_ui_kit_modules_button_rate_star_rating_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../components/ui-kit/modules/button-rate/star-rating.js */ "./components/ui-kit/modules/button-rate/star-rating.js");
+/* harmony import */ var _components_ui_kit_modules_button_like_like_rating_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../components/ui-kit/modules/button-like/like-rating.js */ "./components/ui-kit/modules/button-like/like-rating.js");
+/* harmony import */ var _components_ui_kit_modules_list_expandable_cl_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../components/ui-kit/modules/list/expandable-cl.js */ "./components/ui-kit/modules/list/expandable-cl.js");
+/* harmony import */ var _components_ui_kit_modules_burger_burger_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../components/ui-kit/modules/burger/burger.js */ "./components/ui-kit/modules/burger/burger.js");
+/* harmony import */ var _components_ui_kit_modules_room_card_room_card_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../components/ui-kit/modules/room-card/room-card.js */ "./components/ui-kit/modules/room-card/room-card.js");
+/* harmony import */ var _components_ui_kit_modules_range_slider_range_slider_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../components/ui-kit/modules/range-slider/range-slider.js */ "./components/ui-kit/modules/range-slider/range-slider.js");
+/* harmony import */ var _components_ui_kit_modules_list_links_sublinks_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../components/ui-kit/modules/list-links/sublinks.js */ "./components/ui-kit/modules/list-links/sublinks.js");
+
 
 
 
@@ -565,4 +566,4 @@ $('.js-cards__datepicker').fsdDatepicker({ applyButton: true, clearButton: true,
 /***/ })
 
 /******/ });
-//# sourceMappingURL=UIKit.c99fad9d42cdfa21047d.js.map
+//# sourceMappingURL=UIKit.c4054064d23cc8326e25.js.map

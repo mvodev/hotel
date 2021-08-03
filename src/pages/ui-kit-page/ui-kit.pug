@@ -1,22 +1,22 @@
-include ../modules/header-ui-kit/header-ui-kit.pug
-include ../modules/list-links/list-links.pug
+include ../../components/ui-kit/modules/header-ui-kit/header-ui-kit.pug
+include ../../components/ui-kit/modules/list-links/list-links.pug
 doctype html
 html(lang="ru")
   head
     meta(charset="UTF-8")
     meta(name="description" content='Верстка в рамках 2 задания учебного курса MetaLamp')
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    include ../../favicon/favicon.pug
+    include ../../components/favicon/favicon.pug
     title UIKit
   body
     main.ui-kit-wrapper
       section.colors-and-types.content-container
         +header
-        include ../colors/colors.pug
+        include ../../components/ui-kit/colors/colors.pug
       section.headers-and-footers.content-container
         +header
-        include ../headers-and-footers/headers-and-footers.pug
+        include ../../components/ui-kit/headers-and-footers/headers-and-footers.pug
       section.form-elements.content-container
-        include ../form-elements/form-elements.pug
+        include ../../components/ui-kit/form-elements/form-elements.pug
       section.cards.content-container
-        include ../cards/cards.pug
+        include ../../components/ui-kit/cards/cards.pug
