@@ -60,7 +60,12 @@ class DropdownCount {
   }
   _handleCounter() {
     if (this.dropdownType === 'guests') {
-      this._showClearButton();
+      if(this._collectData().total>0){
+        this._showClearButton();
+      }
+      else {
+        this._hideClearButton();
+      }
     }
     if (this.dropdownType === 'room') {
       this._setData(this._collectData());

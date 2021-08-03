@@ -19,11 +19,12 @@ class DropdownCounter {
     if (this.valueNumber > 0) {
     this.valueNumber--;
     this.value.innerHTML = this.valueNumber;
+    this.container.dispatchEvent(new CustomEvent("counterChanged", { bubbles: true }));
     }
     if (this.valueNumber === 0) {
     this.minus.classList.remove('container-dropdown__decrease_dark');
     }
-    this.container.dispatchEvent(new CustomEvent("counterChanged", { bubbles: true }));
+    
   }
   _handlePlus() {
     this.valueNumber++;

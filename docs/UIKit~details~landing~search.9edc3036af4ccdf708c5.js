@@ -75,11 +75,12 @@ class DropdownCounter {
     if (this.valueNumber > 0) {
     this.valueNumber--;
     this.value.innerHTML = this.valueNumber;
+    this.container.dispatchEvent(new CustomEvent("counterChanged", { bubbles: true }));
     }
     if (this.valueNumber === 0) {
     this.minus.classList.remove('container-dropdown__decrease_dark');
     }
-    this.container.dispatchEvent(new CustomEvent("counterChanged", { bubbles: true }));
+    
   }
   _handlePlus() {
     this.valueNumber++;
@@ -173,7 +174,12 @@ class DropdownCount {
   }
   _handleCounter() {
     if (this.dropdownType === 'guests') {
-      this._showClearButton();
+      if(this._collectData().total>0){
+        this._showClearButton();
+      }
+      else {
+        this._hideClearButton();
+      }
     }
     if (this.dropdownType === 'room') {
       this._setData(this._collectData());
@@ -2779,4 +2785,4 @@ document.querySelectorAll('.js-list-links__arrow').forEach(elem=>new _sublinks_c
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.fb4d3a613c4db90c1b65.js.map
+//# sourceMappingURL=UIKit~details~landing~search.9edc3036af4ccdf708c5.js.map
