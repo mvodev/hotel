@@ -1,0 +1,13 @@
+extends ../../components/ui-kit/modules/template.pug
+
+block variables
+  - var pageTitle = 'Sign-in page'
+
+block content
+
+  include ../../components/ui-kit/modules/sign-in/sign-in.pug
+
+  main.sign.sign__wrapper
+    .sign__content
+      .sign__img-wrapper
+        +signin({action:'#'})

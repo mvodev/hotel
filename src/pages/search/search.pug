@@ -1,0 +1,195 @@
+extends ../../components/ui-kit/modules/template.pug
+
+block variables
+  - var pageTitle = 'Search page'
+
+block content
+
+  include ../../components/ui-kit/modules/dropdown/dropdown.pug
+  include ../../components/ui-kit/modules/range-slider/range-slider.pug
+  include ../../components/ui-kit/modules/button/button.pug
+  include ../../components/ui-kit/modules/button-check/button-check.pug
+  include ../../components/ui-kit/modules/button-rich/button-rich.pug
+  include ../../components/ui-kit/modules/list/list.pug
+  include ../../components/ui-kit/modules/room-card/room-card.pug
+  include ../../components/ui-kit/modules/pagination/pagination.pug
+
+  main.search
+    .search__content
+      aside.search__left-column.left-column
+        h1(class='left-column__header left-column__header_dates')='ДАТЫ ПРЕБЫВАНИЯ В ОТЕЛЕ'
+        .left-column__dropdown-filter
+          +dropdown({
+                    placeholder:'19 авг - 23 авг',
+                    typeDropdown:'filter'
+                    })
+        h2(class='left-column__header left-column__header_guests')='ГОСТИ'
+        .left-column__dropdown-guests
+          +dropdown({
+                    placeholder:"3 гостя, 1 младенец",
+                    typeDropdown:'guests',
+                    labels:[
+                          {text:"взрослые",counterNumber:3},
+                          {text:"дети",counterNumber:0},
+                          {text:"младенцы",counterNumber:1},
+                          ],
+                    withButtons:true})
+        +rangeSlider({label:'ДИАПАЗОН ЦЕНЫ'})
+        h3(class='left-column__header left-column__header_price')='Стоимость за сутки пребывания в номере'
+        h2(class='left-column__header left-column__header_rules')='ПРАВИЛА ДОМА'
+        .left-column__button-check
+          +button-check({
+                  labels:[
+                          {text:'Можно курить',isChecked:false},
+                          {text:'Можно с питомцами',isChecked:true},
+                          {text:'Можно пригласить гостей(до 10 человек)',isChecked:false}
+                          ]
+                  })
+        h2(class='left-column__header left-column__header_availability')='доступность'
+        div.left-column__button-rich.left-column__button-rich_first
+          +button-rich({
+                  header:'Широкий коридор',
+                  label:'Ширина коридоров в номере не менее 91 см.'
+                  })
+        div.left-column__button-rich.left-column__button-rich_last
+          +button-rich({
+                  header:'Помощник для инвалидов',
+                  label:'На 1 этаже вас встретит специалист  и проводит до номера.'
+                  })
+        h2(class='left-column__header left-column__header_comfort')='удобства номера'
+        .left-column__dropdown-room
+          +dropdown({
+                    typeDropdown:'room',
+                    placeholder:'2 спальни, 2 кровати', 
+                    labels:[
+                          {text:"спальни",counterNumber:2},
+                          {text:"кровати",counterNumber:2},
+                          {text:"ванныe комнаты",counterNumber:0},
+                          ]
+                    })
+        +list({
+                type:'expandable',
+                label:'дополнительные удобства',
+                isExpand:false,
+                labels:[
+                        {text:'Завтрак',isChecked:false},
+                        {text:'Письменный стол',isChecked:true},
+                        {text:'Стул для кормления',isChecked:true},
+                        {text:'Кроватка',isChecked:true},
+                        {text:'Телевизор',isChecked:false},
+                        {text:'Шампунь',isChecked:false}
+                        ]
+                })
+      section.search__right-column.right-column
+        h2(class='right-column__header right-column__header_main')='Номера, которые мы для вас подобрали'
+        .right-column__rooms
+          +roomcard({
+                    imgSource:'./assets/img/png/room1.png',
+                    roomNumber:888,
+                    price:'9 990₽',
+                    rate:5,
+                    roomType:'люкс',
+                    commentNumber:145,
+                    withArrows:true,
+                    })
+          +roomcard({
+                    imgSource:'./assets/img/png/room2.png',
+                    roomNumber:840,
+                    price:'9 990₽',
+                    rate:4,
+                    commentNumber:65,
+                    withArrows:true,
+                    })
+          +roomcard({
+                    imgSource:'./assets/img/png/room3.png',
+                    roomNumber:980,
+                    price:'8 500₽',
+                    rate:3,
+                    roomType:'люкс',
+                    commentNumber:35,
+                    withArrows:true,
+                    })
+          +roomcard({
+                    imgSource:'./assets/img/png/room4.png',
+                    roomNumber:856,
+                    price:'7 300₽',
+                    rate:5,
+                    commentNumber:19,
+                    withArrows:true,
+                    })
+          +roomcard({
+                    imgSource:'./assets/img/png/room5.png',
+                    roomNumber:740,
+                    price:'6 000₽',
+                    rate:4,
+                    commentNumber:44,
+                    withArrows:true,
+                    })
+          +roomcard({
+                    imgSource:'./assets/img/png/room6.png',
+                    roomNumber:982,
+                    price:'5 800₽',
+                    rate:3,
+                    commentNumber:56,
+                    withArrows:true,
+                    })
+          +roomcard({
+                    imgSource:'./assets/img/png/room7.png',
+                    roomNumber:678,
+                    price:'5 500₽',
+                    rate:4,
+                    commentNumber:44,
+                    withArrows:true,
+                    })
+          +roomcard({
+                    imgSource:'./assets/img/png/room8.png',
+                    roomNumber:450,
+                    price:'5 300₽',
+                    rate:4,
+                    commentNumber:39,
+                    withArrows:true,
+                    })
+          +roomcard({
+                    imgSource:'./assets/img/png/room9.png',
+                    roomNumber:350,
+                    price:'5 000₽',
+                    rate:3,
+                    commentNumber:77,
+                    withArrows:true,
+                    })
+          +roomcard({
+                    imgSource:'./assets/img/png/room10.png',
+                    roomNumber:666,
+                    price:'5 000₽',
+                    rate:3,
+                    commentNumber:15,
+                    withArrows:true,
+                    })
+          +roomcard({
+                    imgSource:'./assets/img/png/room11.png',
+                    roomNumber:444,
+                    price:'5 000₽',
+                    rate:3,
+                    commentNumber:15,
+                    withArrows:true,
+                    })
+          +roomcard({
+                    imgSource:'./assets/img/png/room12.png',
+                    roomNumber:352,
+                    price:'5 000₽',
+                    rate:3,
+                    commentNumber:55,
+                    withArrows:true,
+                    })
+        .right-column__pagination
+          +pagination({
+                    isEllipsis:true,
+                    firstNumbers:[
+                                  {page:1,ref:"/mock-address/change-me"},
+                                  {page:2,ref:"/mock-address/change-me"},
+                                  {page:3,ref:"/mock-address/change-me"},
+                                  ],
+                    lastNumber:{page:15,ref:"/mock-address/change-me"},
+                    selectedPage:1,
+                    label:'1 – 12 из 100+ вариантов аренды'
+                    })

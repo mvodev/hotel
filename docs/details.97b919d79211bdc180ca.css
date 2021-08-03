@@ -1,0 +1,193 @@
+.details-wrapper {
+  margin: 0px auto;
+  font-family: Montserrat, "Arial,sans-serif";
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; }
+
+.details__content {
+  flex: 1 0 auto; }
+
+.details-header {
+  margin: 0px auto; }
+
+.details__room-images {
+  min-height: 485px;
+  width: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 68.125% 31.875%;
+  grid-template-rows: 1fr; }
+
+.details__room-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
+
+.details .room-images-right {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  overflow: hidden; }
+
+.details .room-images-right__top {
+  overflow: hidden; }
+
+.details .room-images-right__bottom {
+  overflow: hidden; }
+
+.details__body {
+  max-width: 1460px;
+  margin: 0px auto;
+  padding: 0px 10px 0px 10px; }
+
+.details__body h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+  color: #1f2041; }
+
+.details__body {
+  margin: 70px auto 63px auto;
+  max-width: 1160px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.details__body-right {
+  max-width: 380px;
+  width: 100%; }
+
+.details .left-column {
+  display: flex;
+  flex-direction: row; }
+
+.details .left-column__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.details .left-column__header {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px; }
+
+.details .left-column__impressions {
+  margin-right: 40px; }
+
+.details .left-column__impressions h2 {
+  margin-bottom: 20px; }
+
+.details .left-column__content {
+  margin-right: 82px; }
+
+.details .left-column__content .bullet-list-icons {
+  margin-bottom: 20px; }
+
+.details .left-column__content .bullet-list-icons:last-child {
+  margin-bottom: 12px;
+  border: none; }
+
+.details .left-column__comments-header {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.details .left-column__comments-header_number {
+  font-weight: 400;
+  font-size: 14px; }
+
+.details .details-comment_first {
+  margin-bottom: 20px; }
+
+.details .details-comment_second {
+  margin-bottom: 5px; }
+
+.details .left-column__rules {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.details .rules__text-wrapper {
+  display: flex;
+  flex-direction: column; }
+
+.details .rules__text-wrapper h3 {
+  margin-bottom: 15px;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px; }
+
+.details .rules__text-wrapper:last-child {
+  margin-right: 10px; }
+
+.details .rules__text-wrapper:last-child h3 {
+  margin-left: 0px; }
+
+.details .rules__text-wrapper p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  max-width: 341px; }
+
+@media (max-width: 1200px) {
+  .details-wrapper {
+    max-width: none;
+    max-height: none; }
+  .details__content {
+    height: auto;
+    padding: 0px; }
+  .details__room-images {
+    grid-template-columns: 1fr; }
+  .details__room-images .room-images-right {
+    display: none; }
+  .details__body {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto; }
+  .details__body-left {
+    flex-direction: column;
+    padding: 0px 10px 0px 10px; }
+  .details__body-left .left-column {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px auto;
+    align-items: center; }
+  .details__body-right {
+    margin-bottom: 10px; }
+  .details .left-column__rules {
+    flex-direction: column; }
+  .details .left-column__content {
+    margin-right: 0px;
+    align-items: baseline;
+    flex-direction: column; }
+  .left-column__header {
+    margin-top: 10px; }
+  .left-column__comments {
+    margin-top: 15px; }
+  .details .left-column__comments-header {
+    flex-direction: column;
+    align-items: center; }
+  .details .left-column__impressions {
+    margin-right: 0px; }
+  .left-column__rules {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px; }
+  .rules__text-wrapper h3 {
+    text-align: center; } }
+
+
+/*# sourceMappingURL=details.97b919d79211bdc180ca.css.map*/

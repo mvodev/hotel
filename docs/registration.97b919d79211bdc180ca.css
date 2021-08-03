@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  flex-direction: column; }
+
+.reg-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 100%;
+  margin: 0px auto;
+  flex: 1 0 auto; }
+
+.reg .reg__content {
+  flex: 1 0 auto; }
+
+.reg .reg footer {
+  flex: 0 0 auto; }
+
+.reg__img-wrapper {
+  min-height: 685px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(79b5cde0053638ad01f1d11a34b1cb11.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center; }
+
+.reg__img-wrapper .sign-up {
+  margin: 19px auto; }
+
+@media (max-width: 767px) {
+  .reg-wrapper {
+    max-width: none;
+    max-height: none; } }
+
+
+/*# sourceMappingURL=registration.97b919d79211bdc180ca.css.map*/
