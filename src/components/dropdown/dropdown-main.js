@@ -15,11 +15,9 @@ class DropdownMain {
     }
     else if (elem.classList.contains("dropdown_filter")) {
       new DropdownFilter(elem);
-      console.log('inside DropdownFilter')
     }
     else {
       new DropdownCount(elem);
-      console.log('inside DropdownCounter')
     };
     });
   }

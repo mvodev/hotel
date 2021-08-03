@@ -74,7 +74,15 @@ class DropdownCount {
   _handleDropdown() {
     if (this.rootElem.classList.contains("dropdown_active")) {
       this.hideDropdown();
-    } else this.showDropdown();
+    } else {
+      this.showDropdown();
+    }
+    if (this._collectData().total > 0) {
+      this._showClearButton();
+    }
+    else {
+      this._hideClearButton();
+    }
   }
   _handleApplyButton() {
     let result = this._collectData();
