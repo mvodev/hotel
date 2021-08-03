@@ -1,11 +1,11 @@
 @import '../../styles/common/reset.scss';
 @import '../../styles/common/fonts.scss';
 @import '../../styles/common/constants.scss';
-@import '../../components/ui-kit/modules/footer-copyright-bar/footer-copyright-bar.scss';
-@import '../../components/ui-kit/modules/footer-creative/footer-creative.scss';
-@import '../../components/ui-kit/modules/footer-widget/footer-widget.scss';
-@import '../../components/ui-kit/modules/header-bar/header-bar.scss';
-@import '../../components/ui-kit/modules/burger/burger.scss';
+@import '../../components/footer-copyright-bar/footer-copyright-bar.scss';
+@import '../../components/footer-creative/footer-creative.scss';
+@import '../../components/footer-widget/footer-widget.scss';
+@import '../../components/header-bar/header-bar.scss';
+@import '../../components/burger/burger.scss';
 .headers-and-footers{
   width: 100%;
   height: 1350px;
