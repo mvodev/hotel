@@ -2,45 +2,47 @@
   width: 222px;
 
   &__checkbox-input {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
+    
+    
     cursor: pointer;
-    visibility: hidden;
     left: 0;
+    opacity: 0;
+    position: absolute;
     top: 0;
+    visibility: hidden;
+    z-index: -1;
   }
 
   &__checkbox-text {
+    color: $darkShade50;
+    cursor: pointer;
+    display: block;
     font-family: $font-family-main, $fallback-font;
-    position: relative;
-    padding-left: 30px;
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
-    color: $darkShade50;
+    position: relative;
+    padding-left: 30px;
     width: 192px;
-    cursor: pointer;
-    display: block;
   }
 
   &__elem {
+    display: block;
     margin-bottom: 10px;
     min-height: 20px;
-    display: block;
   }
 
   &__checkbox-text:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
     background: $white;
     border: 1px solid $darkShade25;
     box-sizing: border-box;
     border-radius: 4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 0;
+    height: 20px;
+    width: 20px;
   }
 
   .button-check__checkbox-input:checked + .button-check__checkbox-text:before {
@@ -49,5 +51,5 @@
     background-position: center;
     border: 1px solid $purple;
   }
-  
+
 }
