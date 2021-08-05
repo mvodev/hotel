@@ -3331,42 +3331,42 @@ table {
     border: none; }
 
 .button-radio {
+  font-family: Montserrat, "Arial,sans-serif";
   height: 24px;
-  width: 100%;
-  font-family: Montserrat, "Arial,sans-serif"; }
+  width: 100%; }
   .button-radio__input {
     display: none; }
   .button-radio__label {
-    position: relative;
-    display: inline-block;
+    color: rgba(31, 32, 65, 0.5);
     cursor: pointer;
-    padding-left: 30px;
+    display: inline-block;
     font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
-    color: rgba(31, 32, 65, 0.5);
-    height: 18px; }
+    height: 18px;
+    position: relative;
+    padding-left: 30px;
+    line-height: 24px; }
   .button-radio__label:before {
+    background: #ffffff;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 10px;
     content: "";
     position: absolute;
     top: 2px;
     left: 0;
-    width: 20px;
     height: 20px;
-    background: #ffffff;
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    box-sizing: border-box;
-    border-radius: 10px; }
+    width: 20px; }
   .button-radio__label:after {
     content: "";
+    border-radius: 50%;
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     position: absolute;
     top: 6px;
     left: 4px;
-    width: 12px;
     height: 12px;
-    border-radius: 50%;
-    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-    opacity: 0; }
+    opacity: 0;
+    width: 12px; }
   .button-radio__input:checked + .button-radio__label:after {
     opacity: 1; }
   .button-radio__input:checked + .button-radio__label {
@@ -3431,39 +3431,39 @@ table {
 .button-check {
   width: 222px; }
   .button-check__checkbox-input {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
     cursor: pointer;
-    visibility: hidden;
     left: 0;
-    top: 0; }
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    z-index: -1; }
   .button-check__checkbox-text {
+    color: rgba(31, 32, 65, 0.5);
+    cursor: pointer;
+    display: block;
     font-family: Montserrat, "Arial,sans-serif";
-    position: relative;
-    padding-left: 30px;
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
-    color: rgba(31, 32, 65, 0.5);
-    width: 192px;
-    cursor: pointer;
-    display: block; }
+    position: relative;
+    padding-left: 30px;
+    width: 192px; }
   .button-check__elem {
+    display: block;
     margin-bottom: 10px;
-    min-height: 20px;
-    display: block; }
+    min-height: 20px; }
   .button-check__checkbox-text:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
     background: #ffffff;
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
-    border-radius: 4px; }
+    border-radius: 4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 0;
+    height: 20px;
+    width: 20px; }
   .button-check .button-check__checkbox-input:checked + .button-check__checkbox-text:before {
     background-image: url(ad694aafe15811be341489a1dd946ba2.svg);
     background-repeat: no-repeat;
@@ -3494,38 +3494,38 @@ table {
     text-align: center; }
 
 .button-like {
-  width: 40px;
-  height: 20px;
   background: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
-  white-space: nowrap;
+  cursor: pointer;
   border-radius: 10px;
   display: flex;
   flex-direction: row;
-  cursor: pointer; }
+  height: 20px;
+  white-space: nowrap;
+  width: 40px; }
   .button-like__heart {
-    width: 50%;
-    height: 20px;
-    text-align: center;
     align-items: center;
+    color: rgba(31, 32, 65, 0.25);
     display: block;
     font-family: Material Icons;
     font-weight: normal;
     font-size: 10px;
-    line-height: 9px;
-    color: rgba(31, 32, 65, 0.25);
-    padding-top: 5px; }
-  .button-like__number {
-    width: 50%;
-    height: 100%;
-    font-weight: normal;
-    font-size: 10px;
-    line-height: 12px;
+    height: 20px;
     text-align: center;
+    line-height: 9px;
+    padding-top: 5px;
+    width: 50%; }
+  .button-like__number {
     align-items: center;
     color: rgba(31, 32, 65, 0.25);
-    display: flex; }
+    display: flex;
+    font-weight: normal;
+    font-size: 10px;
+    height: 100%;
+    line-height: 12px;
+    text-align: center;
+    width: 50%; }
   .button-like_is-liked {
     border: 1px solid #bc9cff; }
 
@@ -3535,24 +3535,24 @@ table {
 
 .button {
   border: none;
+  border-radius: 22px;
   cursor: pointer;
   font-family: Montserrat, "Arial,sans-serif";
   font-style: normal;
-  text-decoration: none;
+  height: 44px;
   overflow: hidden;
   position: relative;
-  width: 99px;
-  height: 44px;
-  border-radius: 22px; }
+  text-decoration: none;
+  width: 99px; }
   .button_wide {
     width: 196px; }
   .button_dark, .button_dark50 {
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-    text-transform: uppercase;
     color: #ffffff;
     font-weight: bold;
     font-size: 12px;
-    line-height: 15px; }
+    line-height: 15px;
+    text-transform: uppercase; }
   .button_dark50 {
     opacity: 0.5; }
   .button_dark:hover {
@@ -3562,54 +3562,54 @@ table {
     border-radius: 22px;
     position: relative; }
   .button_white::before, .button_link::before {
-    content: "";
-    position: absolute;
-    left: 2px;
-    top: 2px;
-    padding: 2px;
-    z-index: 1;
     background: #ffffff;
     bottom: 2px;
+    border-radius: inherit;
+    content: "";
+    left: 2px;
+    padding: 2px;
+    position: absolute;
     right: 2px;
-    border-radius: inherit; }
+    top: 2px;
+    z-index: 1; }
   .button_white span,
   .button_link span {
     position: relative;
     z-index: 2; }
   .button_link {
-    text-decoration: none;
+    align-items: center;
     display: flex;
-    justify-content: center;
-    align-items: center; }
+    text-decoration: none;
+    justify-content: center; }
   .button_white50 {
     background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
     border-radius: 22px;
     position: relative; }
   .button_white50::before {
+    border-radius: inherit;
+    background: #ffffff;
+    bottom: 2px;
     content: "";
     position: absolute;
     left: 2px;
+    right: 2px;
     top: 2px;
     padding: 2px;
-    z-index: 1;
-    background: #ffffff;
-    bottom: 2px;
-    right: 2px;
-    border-radius: inherit; }
+    z-index: 1; }
   .button_white50 span {
-    position: relative;
-    z-index: 2;
     color: #bc9cff;
-    opacity: 1; }
+    opacity: 1;
+    position: relative;
+    z-index: 2; }
   .button_white span,
   .button_link span,
   .button_white50 span,
   .button_transparent span {
+    color: #bc9cff;
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: #bc9cff;
     white-space: nowrap; }
   .button_white:hover, .button_link:hover {
     background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
@@ -3617,46 +3617,46 @@ table {
     border: none;
     background: none;
     height: 15px;
-    width: 61px;
-    padding: 0px; }
+    padding: 0px;
+    width: 61px; }
   .button_transparent50 span {
+    color: rgba(31, 32, 65, 0.5);
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: rgba(31, 32, 65, 0.5);
     text-decoration: none; }
   .button_transparent span:hover {
     color: rgba(31, 32, 65, 0.5); }
 
 .button_arrow {
-  width: 320px;
-  height: 44px;
+  align-items: center;
   border-radius: 22px;
-  position: relative;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  color: #ffffff;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
   font-weight: bold;
   font-size: 12px;
+  height: 44px;
+  position: relative;
+  justify-content: center;
   line-height: 15px;
   text-transform: uppercase;
-  color: #ffffff; }
+  width: 320px; }
   .button_arrow .button__arrow {
+    align-items: center;
+    color: #ffffff;
+    display: flex;
     font-weight: normal;
     line-height: 24px;
-    display: flex;
-    align-items: center;
+    position: absolute;
     text-align: center;
     justify-content: center;
-    color: #ffffff;
     height: 44px;
-    width: 44px;
-    position: absolute;
+    left: 276px;
     top: 0;
-    left: 276px; }
+    width: 44px; }
   .button_arrow .button__arrow-label {
     max-width: 256px;
     max-height: 15px;
@@ -4648,42 +4648,42 @@ table {
     border-radius: 50%; }
 
 .button-radio {
+  font-family: Montserrat, "Arial,sans-serif";
   height: 24px;
-  width: 100%;
-  font-family: Montserrat, "Arial,sans-serif"; }
+  width: 100%; }
   .button-radio__input {
     display: none; }
   .button-radio__label {
-    position: relative;
-    display: inline-block;
+    color: rgba(31, 32, 65, 0.5);
     cursor: pointer;
-    padding-left: 30px;
+    display: inline-block;
     font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
-    color: rgba(31, 32, 65, 0.5);
-    height: 18px; }
+    height: 18px;
+    position: relative;
+    padding-left: 30px;
+    line-height: 24px; }
   .button-radio__label:before {
+    background: #ffffff;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 10px;
     content: "";
     position: absolute;
     top: 2px;
     left: 0;
-    width: 20px;
     height: 20px;
-    background: #ffffff;
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    box-sizing: border-box;
-    border-radius: 10px; }
+    width: 20px; }
   .button-radio__label:after {
     content: "";
+    border-radius: 50%;
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     position: absolute;
     top: 6px;
     left: 4px;
-    width: 12px;
     height: 12px;
-    border-radius: 50%;
-    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-    opacity: 0; }
+    opacity: 0;
+    width: 12px; }
   .button-radio__input:checked + .button-radio__label:after {
     opacity: 1; }
   .button-radio__input:checked + .button-radio__label {
@@ -4748,39 +4748,39 @@ table {
 .button-check {
   width: 222px; }
   .button-check__checkbox-input {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
     cursor: pointer;
-    visibility: hidden;
     left: 0;
-    top: 0; }
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    z-index: -1; }
   .button-check__checkbox-text {
+    color: rgba(31, 32, 65, 0.5);
+    cursor: pointer;
+    display: block;
     font-family: Montserrat, "Arial,sans-serif";
-    position: relative;
-    padding-left: 30px;
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
-    color: rgba(31, 32, 65, 0.5);
-    width: 192px;
-    cursor: pointer;
-    display: block; }
+    position: relative;
+    padding-left: 30px;
+    width: 192px; }
   .button-check__elem {
+    display: block;
     margin-bottom: 10px;
-    min-height: 20px;
-    display: block; }
+    min-height: 20px; }
   .button-check__checkbox-text:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
     background: #ffffff;
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
-    border-radius: 4px; }
+    border-radius: 4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 0;
+    height: 20px;
+    width: 20px; }
   .button-check .button-check__checkbox-input:checked + .button-check__checkbox-text:before {
     background-image: url(ad694aafe15811be341489a1dd946ba2.svg);
     background-repeat: no-repeat;
@@ -4811,38 +4811,38 @@ table {
     text-align: center; }
 
 .button-like {
-  width: 40px;
-  height: 20px;
   background: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
-  white-space: nowrap;
+  cursor: pointer;
   border-radius: 10px;
   display: flex;
   flex-direction: row;
-  cursor: pointer; }
+  height: 20px;
+  white-space: nowrap;
+  width: 40px; }
   .button-like__heart {
-    width: 50%;
-    height: 20px;
-    text-align: center;
     align-items: center;
+    color: rgba(31, 32, 65, 0.25);
     display: block;
     font-family: Material Icons;
     font-weight: normal;
     font-size: 10px;
-    line-height: 9px;
-    color: rgba(31, 32, 65, 0.25);
-    padding-top: 5px; }
-  .button-like__number {
-    width: 50%;
-    height: 100%;
-    font-weight: normal;
-    font-size: 10px;
-    line-height: 12px;
+    height: 20px;
     text-align: center;
+    line-height: 9px;
+    padding-top: 5px;
+    width: 50%; }
+  .button-like__number {
     align-items: center;
     color: rgba(31, 32, 65, 0.25);
-    display: flex; }
+    display: flex;
+    font-weight: normal;
+    font-size: 10px;
+    height: 100%;
+    line-height: 12px;
+    text-align: center;
+    width: 50%; }
   .button-like_is-liked {
     border: 1px solid #bc9cff; }
 
@@ -4852,24 +4852,24 @@ table {
 
 .button {
   border: none;
+  border-radius: 22px;
   cursor: pointer;
   font-family: Montserrat, "Arial,sans-serif";
   font-style: normal;
-  text-decoration: none;
+  height: 44px;
   overflow: hidden;
   position: relative;
-  width: 99px;
-  height: 44px;
-  border-radius: 22px; }
+  text-decoration: none;
+  width: 99px; }
   .button_wide {
     width: 196px; }
   .button_dark, .button_dark50 {
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-    text-transform: uppercase;
     color: #ffffff;
     font-weight: bold;
     font-size: 12px;
-    line-height: 15px; }
+    line-height: 15px;
+    text-transform: uppercase; }
   .button_dark50 {
     opacity: 0.5; }
   .button_dark:hover {
@@ -4879,54 +4879,54 @@ table {
     border-radius: 22px;
     position: relative; }
   .button_white::before, .button_link::before {
-    content: "";
-    position: absolute;
-    left: 2px;
-    top: 2px;
-    padding: 2px;
-    z-index: 1;
     background: #ffffff;
     bottom: 2px;
+    border-radius: inherit;
+    content: "";
+    left: 2px;
+    padding: 2px;
+    position: absolute;
     right: 2px;
-    border-radius: inherit; }
+    top: 2px;
+    z-index: 1; }
   .button_white span,
   .button_link span {
     position: relative;
     z-index: 2; }
   .button_link {
-    text-decoration: none;
+    align-items: center;
     display: flex;
-    justify-content: center;
-    align-items: center; }
+    text-decoration: none;
+    justify-content: center; }
   .button_white50 {
     background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
     border-radius: 22px;
     position: relative; }
   .button_white50::before {
+    border-radius: inherit;
+    background: #ffffff;
+    bottom: 2px;
     content: "";
     position: absolute;
     left: 2px;
+    right: 2px;
     top: 2px;
     padding: 2px;
-    z-index: 1;
-    background: #ffffff;
-    bottom: 2px;
-    right: 2px;
-    border-radius: inherit; }
+    z-index: 1; }
   .button_white50 span {
-    position: relative;
-    z-index: 2;
     color: #bc9cff;
-    opacity: 1; }
+    opacity: 1;
+    position: relative;
+    z-index: 2; }
   .button_white span,
   .button_link span,
   .button_white50 span,
   .button_transparent span {
+    color: #bc9cff;
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: #bc9cff;
     white-space: nowrap; }
   .button_white:hover, .button_link:hover {
     background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
@@ -4934,46 +4934,46 @@ table {
     border: none;
     background: none;
     height: 15px;
-    width: 61px;
-    padding: 0px; }
+    padding: 0px;
+    width: 61px; }
   .button_transparent50 span {
+    color: rgba(31, 32, 65, 0.5);
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    color: rgba(31, 32, 65, 0.5);
     text-decoration: none; }
   .button_transparent span:hover {
     color: rgba(31, 32, 65, 0.5); }
 
 .button_arrow {
-  width: 320px;
-  height: 44px;
+  align-items: center;
   border-radius: 22px;
-  position: relative;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  color: #ffffff;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
   font-weight: bold;
   font-size: 12px;
+  height: 44px;
+  position: relative;
+  justify-content: center;
   line-height: 15px;
   text-transform: uppercase;
-  color: #ffffff; }
+  width: 320px; }
   .button_arrow .button__arrow {
+    align-items: center;
+    color: #ffffff;
+    display: flex;
     font-weight: normal;
     line-height: 24px;
-    display: flex;
-    align-items: center;
+    position: absolute;
     text-align: center;
     justify-content: center;
-    color: #ffffff;
     height: 44px;
-    width: 44px;
-    position: absolute;
+    left: 276px;
     top: 0;
-    left: 276px; }
+    width: 44px; }
   .button_arrow .button__arrow-label {
     max-width: 256px;
     max-height: 15px;
@@ -5185,4 +5185,4 @@ table {
   border-radius: 0.5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.d658576fbc744350b082.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.ede17bd1231d168aeef8.css.map*/
