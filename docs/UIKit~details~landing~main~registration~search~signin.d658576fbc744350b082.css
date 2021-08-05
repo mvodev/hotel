@@ -2542,14 +2542,14 @@ table {
 .header-burger {
   display: none; }
   .header-burger::before, .header-burger::after {
-    cursor: pointer;
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    content: "";
     background-color: #1f2041;
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    height: 3px;
     left: 0px;
-    transition: all 0.3s ease 0s; }
+    transition: all 0.3s ease 0s;
+    width: 100%; }
   .header-burger::before {
     top: 0px; }
   .header-burger::after {
@@ -2557,29 +2557,29 @@ table {
 
 @media (max-width: 767px) {
   .header-burger {
+    cursor: pointer;
     display: block;
     position: relative;
-    width: 30px;
     height: 30px;
-    cursor: pointer; }
+    width: 30px; }
     .header-burger span {
-      position: absolute;
-      width: 100%;
-      height: 3px;
-      content: "";
       background-color: #1f2041;
+      content: "";
+      position: absolute;
+      height: 3px;
       left: 0px;
       transition: all 0.3s ease 0s;
-      top: 13px; }
+      top: 13px;
+      width: 100%; }
     .header-burger::before, .header-burger::after {
-      cursor: pointer;
-      position: absolute;
-      width: 100%;
-      height: 3px;
-      content: "";
       background-color: #1f2041;
+      cursor: pointer;
+      content: "";
+      height: 3px;
       left: 0px;
-      transition: all 0.3s ease 0s; }
+      position: absolute;
+      transition: all 0.3s ease 0s;
+      width: 100%; }
     .header-burger::before {
       top: 0px; }
     .header-burger::after {
@@ -2765,14 +2765,14 @@ table {
 .header-burger {
   display: none; }
   .header-burger::before, .header-burger::after {
-    cursor: pointer;
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    content: "";
     background-color: #1f2041;
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    height: 3px;
     left: 0px;
-    transition: all 0.3s ease 0s; }
+    transition: all 0.3s ease 0s;
+    width: 100%; }
   .header-burger::before {
     top: 0px; }
   .header-burger::after {
@@ -2780,29 +2780,29 @@ table {
 
 @media (max-width: 767px) {
   .header-burger {
+    cursor: pointer;
     display: block;
     position: relative;
-    width: 30px;
     height: 30px;
-    cursor: pointer; }
+    width: 30px; }
     .header-burger span {
-      position: absolute;
-      width: 100%;
-      height: 3px;
-      content: "";
       background-color: #1f2041;
+      content: "";
+      position: absolute;
+      height: 3px;
       left: 0px;
       transition: all 0.3s ease 0s;
-      top: 13px; }
+      top: 13px;
+      width: 100%; }
     .header-burger::before, .header-burger::after {
-      cursor: pointer;
-      position: absolute;
-      width: 100%;
-      height: 3px;
-      content: "";
       background-color: #1f2041;
+      cursor: pointer;
+      content: "";
+      height: 3px;
       left: 0px;
-      transition: all 0.3s ease 0s; }
+      position: absolute;
+      transition: all 0.3s ease 0s;
+      width: 100%; }
     .header-burger::before {
       top: 0px; }
     .header-burger::after {
@@ -5185,4 +5185,4 @@ table {
   border-radius: 0.5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.13d5e9e6ffd9c73af7ab.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.d658576fbc744350b082.css.map*/
