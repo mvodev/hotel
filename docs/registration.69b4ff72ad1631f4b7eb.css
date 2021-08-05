@@ -2,18 +2,24 @@ body {
   display: flex;
   flex-direction: column; }
 
-.sign__wrapper {
-  margin: 0px auto;
-  width: 100%;
+.reg-wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  width: 100%;
+  margin: 0px auto;
   flex: 1 0 auto; }
 
-.sign__img-wrapper {
-  min-height: 702px;
-  width: 100%;
+.reg .reg__content {
+  flex: 1 0 auto; }
+
+.reg .reg footer {
+  flex: 0 0 auto; }
+
+.reg__img-wrapper {
+  min-height: 685px;
   height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,21 +28,13 @@ body {
   background-repeat: no-repeat;
   background-position-y: center; }
 
-.sign__img-wrapper .sign-in {
-  margin: 172px auto; }
-
-.sign .sign__content {
-  flex: 1 0 auto; }
-
-.sign .sign footer {
-  flex: 0 0 auto; }
+.reg__img-wrapper .sign-up {
+  margin: 19px auto; }
 
 @media (max-width: 767px) {
-  .sign__wrapper {
+  .reg-wrapper {
     max-width: none;
-    max-height: none; }
-  .sign__img-wrapper .sign-in {
-    margin: 20px auto; } }
+    max-height: none; } }
 
 
-/*# sourceMappingURL=signin.1224a8c839beb6adbb47.css.map*/
+/*# sourceMappingURL=registration.69b4ff72ad1631f4b7eb.css.map*/

@@ -4,8 +4,8 @@ mixin dropdown(options)
   -
     let dropDownClassName = `dropdown dropdown_${options.typeDropdown} js-dropdown`
     let expandedCorners=''
-    let isExpanded=options.isExpanded===true ? ' dropdown_active' : ''
-    expandedCorners+=options.isExpanded ? ' dropdown_active' : ''
+    let isExpanded=options.isExpanded===true ? ' dropdown_is-opened' : ''
+    expandedCorners+=options.isExpanded ? ' dropdown_is-opened' : ''
   div(class= dropDownClassName+expandedCorners)
     if options.typeDropdown==='guests'||options.typeDropdown==='room'
       .dropdown__input-wrapper

@@ -12,7 +12,7 @@ class ExpandableCL {
     this.bulletList.addEventListener('click', this._handleExpandableList.bind(this));
   }
   _handleExpandableList(event) {
-    this.bulletListDropdown.classList.toggle('bullet-list_is-visible');
+    this.bulletListDropdown.classList.toggle('bullet-list_is-opened');
     this._toggleArrow();
   }
   _toggleArrow() {

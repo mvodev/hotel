@@ -35,12 +35,12 @@ class DropdownCount {
     });
   }
   showDropdown() {
-    this.rootElem.classList.add("dropdown_active");
-    this.body.classList.add("dropdown_active");
+    this.rootElem.classList.add("dropdown_is-opened");
+    this.body.classList.add("dropdown_is-opened");
   }
   hideDropdown() {
-    this.rootElem.classList.remove("dropdown_active");
-    this.body.classList.remove("dropdown_active");
+    this.rootElem.classList.remove("dropdown_is-opened");
+    this.body.classList.remove("dropdown_is-opened");
   }
   _bindEvents() {
     this.inputWrapper.addEventListener('click', this._handleDropdown.bind(this));
@@ -72,7 +72,7 @@ class DropdownCount {
     }
   }
   _handleDropdown() {
-    if (this.rootElem.classList.contains("dropdown_active")) {
+    if (this.rootElem.classList.contains("dropdown_is-opened")) {
       this.hideDropdown();
     } else {
       this.showDropdown();

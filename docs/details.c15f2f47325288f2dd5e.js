@@ -372,7 +372,7 @@ class ExpandableCL {
     this.bulletList.addEventListener('click', this._handleExpandableList.bind(this));
   }
   _handleExpandableList(event) {
-    this.bulletListDropdown.classList.toggle('bullet-list_is-visible');
+    this.bulletListDropdown.classList.toggle('bullet-list_is-opened');
     this._toggleArrow();
   }
   _toggleArrow() {
@@ -454,4 +454,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 /******/ });
-//# sourceMappingURL=details.918a5fe88b683980372c.js.map
+//# sourceMappingURL=details.c15f2f47325288f2dd5e.js.map

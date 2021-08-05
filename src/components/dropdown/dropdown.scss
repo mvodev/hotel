@@ -20,7 +20,7 @@
     border-radius: 2px 2px 0px 0px;
     cursor: pointer;
   }
-  &_room.dropdown_active{
+  &_room.dropdown_is-opened{
     border: 1px solid $darkShade50;
   }
   &__input-wrapper{
@@ -93,7 +93,7 @@
     width: 266px;
     margin-left: -1px;
   }
-  &_active {
+  &_is-opened {
     display: block;
   }
   &__body-buttons{

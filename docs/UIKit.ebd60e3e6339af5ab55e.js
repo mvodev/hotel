@@ -287,7 +287,7 @@ class ExpandableCL {
     this.bulletList.addEventListener('click', this._handleExpandableList.bind(this));
   }
   _handleExpandableList(event) {
-    this.bulletListDropdown.classList.toggle('bullet-list_is-visible');
+    this.bulletListDropdown.classList.toggle('bullet-list_is-opened');
     this._toggleArrow();
   }
   _toggleArrow() {
@@ -566,4 +566,4 @@ $('.js-cards__datepicker').fsdDatepicker({ applyButton: true, clearButton: true,
 /***/ })
 
 /******/ });
-//# sourceMappingURL=UIKit.15a1504644fe6ebf6ddc.js.map
+//# sourceMappingURL=UIKit.ebd60e3e6339af5ab55e.js.map

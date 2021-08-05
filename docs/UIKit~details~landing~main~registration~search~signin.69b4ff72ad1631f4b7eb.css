@@ -1408,7 +1408,7 @@ table {
     border: 1px solid rgba(31, 32, 65, 0.25);
     border-radius: 2px 2px 0px 0px;
     cursor: pointer; }
-  .dropdown_room.dropdown_active {
+  .dropdown_room.dropdown_is-opened {
     border: 1px solid rgba(31, 32, 65, 0.5); }
   .dropdown__input-wrapper {
     display: flex;
@@ -1473,7 +1473,7 @@ table {
   .dropdown_room .dropdown__body {
     width: 266px;
     margin-left: -1px; }
-  .dropdown_active {
+  .dropdown_is-opened {
     display: block; }
   .dropdown__body-buttons {
     display: flex;
@@ -1552,7 +1552,7 @@ table {
     z-index: 1;
     background-color: #ffffff;
     margin-bottom: 2px; }
-  .bullet-list_is-visible {
+  .bullet-list_is-opened {
     display: block; }
 
 .bullet-list-icons {
@@ -3098,7 +3098,7 @@ table {
     border: 1px solid rgba(31, 32, 65, 0.25);
     border-radius: 2px 2px 0px 0px;
     cursor: pointer; }
-  .dropdown_room.dropdown_active {
+  .dropdown_room.dropdown_is-opened {
     border: 1px solid rgba(31, 32, 65, 0.5); }
   .dropdown__input-wrapper {
     display: flex;
@@ -3163,7 +3163,7 @@ table {
   .dropdown_room .dropdown__body {
     width: 266px;
     margin-left: -1px; }
-  .dropdown_active {
+  .dropdown_is-opened {
     display: block; }
   .dropdown__body-buttons {
     display: flex;
@@ -3779,7 +3779,7 @@ table {
     z-index: 1;
     background-color: #ffffff;
     margin-bottom: 2px; }
-  .bullet-list_is-visible {
+  .bullet-list_is-opened {
     display: block; }
 
 .bullet-list-icons {
@@ -5175,4 +5175,4 @@ table {
   border-radius: .5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.1224a8c839beb6adbb47.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.69b4ff72ad1631f4b7eb.css.map*/
