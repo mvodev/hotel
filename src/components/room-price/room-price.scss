@@ -1,11 +1,12 @@
-.room-price{
+.room-price {
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-shadow: 0px 0px 25px $boxShadow;
   border-radius: 4px;
   width: 380px;
   display: block;
   box-sizing: border-box;
-  &__wrapper{
+
+  &__wrapper {
     width: 320px;
     display: block;
     height: 511px;
@@ -14,8 +15,9 @@
     background: $white;
     padding-top: 40px;
   }
+
   &__room-specifications,
-  &__room-specifications{
+  &__room-specifications {
     margin-bottom: 20px;
     align-items: center;
     display: flex;
@@ -23,8 +25,9 @@
     justify-content: center;
     margin-bottom: 13px;
   }
-  &__number{
-    font-family: $font-family-additionalRussianReplacer,$fallback-font;
+
+  &__number {
+    font-family: $font-family-additionalRussianReplacer, $fallback-font;
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -35,38 +38,44 @@
     white-space: pre;
     margin-top: 3px;
   }
-  &__number span:first-child{
+
+  &__number span:first-child {
     font-size: 14px;
     line-height: 17px;
   }
-  &__number span:nth-child(2){
+
+  &__number span:nth-child(2) {
     font-size: 23px;
     line-height: 23px;
   }
-  &__type{
-    font-family: $font-family-main,$fallback-font;
+
+  &__type {
+    font-family: $font-family-main, $fallback-font;
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
     color: $purple;
   }
-  &__price{
+
+  &__price {
     margin-left: auto;
     width: 100px;
-    font-family: $font-family-main,$fallback-font;
+    font-family: $font-family-main, $fallback-font;
     font-weight: bold;
     font-size: 14px;
     line-height: 18px;
     color: $darkShade50;
     white-space: pre;
   }
-  &__price span:nth-child(2){
+
+  &__price span:nth-child(2) {
     font-weight: normal;
     font-size: 12px;
   }
-  &__header{
-    font-family: $font-family-main,$fallback-font;
+
+  &__header {
+    font-family: $font-family-main, $fallback-font;
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
@@ -74,59 +83,70 @@
     color: $darkShade100;
     margin-bottom: 6px;
   }
-  &__dropdown-date-header{
+
+  &__dropdown-date-header {
     display: flex;
     flex-direction: row;
   }
-  &__dropdown-header{
+
+  &__dropdown-header {
     width: 150px;
   }
-  &__dropdown-header:first-child{
+
+  &__dropdown-header:first-child {
     margin-right: 20px;
   }
-  &__dropdown-guests{
+
+  &__dropdown-guests {
     margin-bottom: 19px;
     margin-top: 20px;
   }
+
   &__start-price,
   &__service-fee,
   &__service-extra-fee,
-  &__total-price{
+  &__total-price {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-weight: normal;
     font-style: normal;
-    font-family: $font-family-main,$fallback-font;
+    font-family: $font-family-main, $fallback-font;
     font-size: 14px;
     line-height: 24px;
     color: $darkShade75;
   }
+
   &__start-price div:first-child,
   &__service-fee div:first-child,
-  &__service-extra-fee div:first-child{
+  &__service-extra-fee div:first-child {
     width: 239px;
   }
-  &__service-extra-fee div:first-child{
+
+  &__service-extra-fee div:first-child {
     line-height: 18px;
     height: 36px;
   }
+
   &__start-price,
-  &__service-fee{
+  &__service-fee {
     margin-bottom: 10px;
   }
-  &__service-extra-fee{
+
+  &__service-extra-fee {
     margin-bottom: 30px;
   }
-  &__total-price{
+
+  &__total-price {
     margin-bottom: 20px;
     font-weight: bold;
     font-size: 19px;
     line-height: 24px;
     color: $darkShade100;
-    font-family: $font-family-additionalRussianReplacer,$fallback-font;
+    font-family: $font-family-main, $fallback-font;
   }
-  &__extra-info{
+
+  &__extra-info {
     width: 20px;
     height: 20px;
     border: 1px solid $darkShade25;
@@ -137,15 +157,19 @@
     align-items: center;
     margin-left: 5px;
   }
+
   &__service-fee div:first-child,
-  &__service-extra-fee div:first-child{
+  &__service-extra-fee div:first-child {
     display: flex;
     flex-direction: row;
   }
+
 }
-@media (max-width:380px){
-    .room-price{
-      max-width: 380px;
-      width: 100%;
-    }
+@media (max-width: 380px) {
+
+  .room-price {
+    max-width: 380px;
+    width: 100%;
+  }
+  
 }

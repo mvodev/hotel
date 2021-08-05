@@ -1,17 +1,21 @@
-.form-elements{
-  &__header-left{
+.form-elements {
+
+  &__header-left {
     margin-bottom: 5px;
   }
-  .header-left-form{
+
+  .header-left-form {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-  .header-left-form__extra{
+
+  .header-left-form__extra {
     color: $darkShade50;
     font-weight: normal;
   }
-  &__header_date-dropdown{
+
+  &__header_date-dropdown {
     justify-content: space-between;
     display: flex;
     flex-direction: row;
@@ -19,40 +23,50 @@
 
   &__header_text-field-hover,
   &__header_dropdown-default,
-  &__header_dropdown-room-expanded{
+  &__header_dropdown-room-expanded {
     margin-top: 21px;
   }
-  &__header_masked-text-field{
+
+  &__header_masked-text-field {
     margin-top: 22px;
   }
+
   &__header_date-dropdown,
-  &__header_filter-date-dropdown{
+  &__header_filter-date-dropdown {
     margin-top: 41px;
   }
+
   &__header_filter-date-dropdown,
-  &__header_subscription-text-field{
+  &__header_subscription-text-field {
     margin-top: 42px;
   }
-  &__header_date-dropdown span:last-child{
+
+  &__header_date-dropdown span:last-child {
     margin-right: 30px;
   }
-  &__header_dropdown-room{
+
+  &__header_dropdown-room {
     margin-top: 100px;
   }
+
   &__header_dropdown-room,
-  &__header_dropdown-room-expanded{
+  &__header_dropdown-room-expanded {
     width: 266px;
   }
-  .left-column__dropdown-wrapper{
+
+  .left-column__dropdown-wrapper {
     display: flex;
     flex-direction: row;
   }
-  .bullets-left-column__first{
+
+  .bullets-left-column__first {
     margin-top: 158px;
     margin-bottom: 20px;
   }
-  .bullet-icons-left__first{
+
+  .bullet-icons-left__first {
     margin-top: 273px;
     margin-bottom: 18px;
   }
+  
 }

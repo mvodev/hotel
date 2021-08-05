@@ -1,30 +1,34 @@
-.text-field{
+.text-field {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
   height: 44px;
   width: 320px;
-  font-family: $font-family-main,$fallback-font;
+  font-family: $font-family-main, $fallback-font;
 
-  &:hover{
+  &:hover {
     border: 1px solid rgba(31, 32, 65, 0.5);
   }
-  &:focus{
+
+  &:focus {
     border: 1px solid rgba(55, 57, 102, 0.5);
   }
-  &__input-wrapper{
+
+  &__input-wrapper {
     display: flex;
     flex-direction: row;
     position: relative;
   }
+
   &__input-date,
-  &__input-date::placeholder{
-    font-family: $font-family-main,$fallback-font;
+  &__input-date::placeholder {
+    font-family: $font-family-main, $fallback-font;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
     color: rgba(31, 32, 65, 0.25);
   }
+
   & label {
     white-space: nowrap;
     height: 15px;
@@ -36,6 +40,7 @@
     color: $darkShade100;
     margin-bottom: 5px;
   }
+
   & input {
     font-style: normal;
     font-weight: normal;
@@ -53,22 +58,26 @@
     padding-right: 44px;
     outline: none;
   }
+
   & input::placeholder {
     color: $darkShade25;
   }
-  &_focused{
+
+  &_focused {
     line-height: 24px;
     color: $darkShade75;
     background: transparent;
     border-color: rgba(31, 32, 65, 0.5);
   }
-  &_subscription{
+
+  &_subscription {
     width: 267px;
     height: 44px;
     border: 1px solid $darkShade25;
     border-radius: 4px;
   }
-  &__arrow{
+
+  &__arrow {
     width: 44px;
     height: 44px;
     display: flex;
@@ -83,10 +92,11 @@
     cursor: pointer;
     position: absolute;
     right: 0;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-		background-clip: text;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     border: none;
   }
+  
 }

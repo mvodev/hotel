@@ -1,10 +1,12 @@
-@import '../../components/room-card/room-card.scss';
-.cards__right-column{
+@import "../../components/room-card/room-card.scss";
+.cards__right-column {
   padding-left: 40px;
-  .cards__datepicker{
+
+  .cards__datepicker {
     margin-bottom: 40px;
   }
-  .right-column-cards__first-room{
+  
+  .right-column-cards__first-room {
     margin-bottom: 40px;
   }
 }

@@ -1,45 +1,57 @@
-@import '../../styles/common/constants.scss';
-body{
+@import "../../styles/common/constants.scss";
+
+body {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
 }
-.sign{
-  &__wrapper{
-    margin: 0px auto; 
+
+.sign {
+
+  &__wrapper {
+    margin: 0px auto;
     width: 100%;
     display: flex;
     flex-direction: column;
     min-height: 100%;
     flex: 1 0 auto;
   }
-  &__img-wrapper{
+
+  &__img-wrapper {
     min-height: 702px;
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('../../assets/img/jpg/registration.jpg');
+    background-image: url("../../assets/img/jpg/registration.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: center;
   }
-  &__img-wrapper .sign-in{
+
+  &__img-wrapper .sign-in {
     margin: 172px auto;
   }
-  .sign__content{
+
+  .sign__content {
     flex: 1 0 auto;
   }
-  .sign footer{
+
+  .sign footer {
     flex: 0 0 auto;
   }
+
 }
-@media (max-width:$container-mobile-width){
-  .sign__wrapper{
+
+@media (max-width: $container-mobile-width) {
+
+  .sign__wrapper {
     max-width: none;
     max-height: none;
   }
-  .sign__img-wrapper .sign-in{
+
+  .sign__img-wrapper .sign-in {
     margin: 20px auto;
   }
+  
 }

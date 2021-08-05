@@ -1,25 +1,31 @@
-@import '../../styles/common/reset.scss';
-@import '../../styles/common/fonts.scss';
-@import '../../styles/common/constants.scss';
-@import '../../components/footer-copyright-bar/footer-copyright-bar.scss';
-@import '../../components/footer-creative/footer-creative.scss';
-@import '../../components/footer-widget/footer-widget.scss';
-@import '../../components/header-bar/header-bar.scss';
-@import '../../components/burger/burger.scss';
-.headers-and-footers{
+@import "../../styles/common/reset.scss";
+@import "../../styles/common/fonts.scss";
+@import "../../styles/common/constants.scss";
+
+@import "../../components/footer-copyright-bar/footer-copyright-bar.scss";
+@import "../../components/footer-creative/footer-creative.scss";
+@import "../../components/footer-widget/footer-widget.scss";
+@import "../../components/header-bar/header-bar.scss";
+@import "../../components/burger/burger.scss";
+
+.headers-and-footers {
   width: 100%;
   height: 1350px;
-  background-color: $grey
+  background-color: $grey;
 }
-.headers-and-footers__login{
+
+.headers-and-footers__login {
   margin-top: 100px;
 }
+
 .headers-and-footers__header-nav {
   margin-top: 40px;
 }
+
 .headers-and-footers__footer-logo {
   margin-top: 40px;
 }
+
 .headers-and-footers__footer-nav {
   margin-top: 40px;
 }

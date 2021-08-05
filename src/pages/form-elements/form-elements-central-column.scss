@@ -1,57 +1,74 @@
-.form-elements{
-  &__header-central{
+.form-elements {
+
+  &__header-central {
     margin-bottom: 16px;
   }
-  &__header_checkbox-buttons{
+
+  &__header_checkbox-buttons {
     margin-bottom: 16.56px;
   }
-  .form-elements .button-check__checkbox-text{
+
+  .form-elements .button-check__checkbox-text {
     margin-bottom: 10px;
   }
-  &__header_radio-buttons{
+
+  &__header_radio-buttons {
     margin-top: 43px;
     margin-bottom: 14px;
   }
-  .central-column__radio-buttons-wrapper{
+
+  .central-column__radio-buttons-wrapper {
     display: flex;
     display: -webkit-flex;
     flex-direction: row;
   }
-  .wrapper-like-buttons__first{
+
+  .wrapper-like-buttons__first {
     margin-right: 10px;
   }
-  &__header_toggle{
+
+  &__header_toggle {
     margin-top: 39px;
   }
-  &__header_rate{
+
+  &__header_rate {
     margin-top: 40px;
   }
-  .buttons-rate__first{
+
+  .buttons-rate__first {
     margin-right: 20px;
   }
-  &__header_like-buttons{
+
+  &__header_like-buttons {
     margin-top: 42px;
   }
-  .central-column__like-buttons-wrapper{
+
+  .central-column__like-buttons-wrapper {
     display: flex;
     flex-direction: row;
   }
-  .central-column__rate-buttons-wrapper{
+
+  .central-column__rate-buttons-wrapper {
     display: flex;
     flex-direction: row;
   }
-  .wrapper-radio-buttons__first{
+
+  .wrapper-radio-buttons__first {
     margin-right: 20px;
   }
-  &__header_dropdown{
+
+  &__header_dropdown {
     margin-top: 197px;
     margin-bottom: 4px !important;
   }
-  .wrapper-buttons-rich__second{
+
+  .wrapper-buttons-rich__second {
     margin-top: 10px;
   }
-  &__header_rich-buttons{
+
+  &__header_rich-buttons {
     margin-top: 256px;
     margin-bottom: 16px;
   }
+  
 }

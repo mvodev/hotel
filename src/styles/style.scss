@@ -1,35 +1,36 @@
-@import './common/fonts.scss';
-@import './common/reset.scss';
-@import './common/constants.scss';
+@import "../../node_modules/ion-rangeslider/css/ion.rangeSlider.css";
 
-@import '../components/footer-copyright-bar/footer-copyright-bar.scss';
-@import '../components/footer-widget/footer-widget.scss';
+@import "./common/fonts.scss";
+@import "./common/reset.scss";
+@import "./common/constants.scss";
 
-@import '../components/search-number/search-number.scss';
-@import '../components/dropdown/dropdown.scss';
-@import '../components/list/list.scss';
-@import '../components/range-slider/range-slider.scss';
-@import '../components/room-card/room-card.scss';
-@import '../components/pagination/pagination.scss';
-@import '../pages/colors/ui-kit-colors.scss';
-@import '../pages/headers-and-footers/headers-and-footers.scss';
-@import '../pages/form-elements/form-elements.scss';
-@import '../pages/cards/cards.scss';
-@import '../components/dropdown/fsd-datepicker.css';
-@import '../../node_modules/ion-rangeslider/css/ion.rangeSlider.css';
-@import '../components/sign-in/sign-in.scss';
-@import '../components/switch/switch.scss';
-@import '../components/button/button.scss';
-@import '../components/text-field/text-field.scss';
-@import '../components/diagram/diagram.scss';
+@import "../components/footer-copyright-bar/footer-copyright-bar.scss";
+@import "../components/footer-widget/footer-widget.scss";
+@import "../components/search-number/search-number.scss";
+@import "../components/dropdown/dropdown.scss";
+@import "../components/list/list.scss";
+@import "../components/range-slider/range-slider.scss";
+@import "../components/room-card/room-card.scss";
+@import "../components/pagination/pagination.scss";
+@import "../pages/colors/ui-kit-colors.scss";
+@import "../pages/headers-and-footers/headers-and-footers.scss";
+@import "../pages/form-elements/form-elements.scss";
+@import "../pages/cards/cards.scss";
+@import "../components/dropdown/fsd-datepicker.css";
+@import "../components/sign-in/sign-in.scss";
+@import "../components/switch/switch.scss";
+@import "../components/button/button.scss";
+@import "../components/text-field/text-field.scss";
+@import "../components/diagram/diagram.scss";
 
-.wrapper{
+.wrapper {
   background-color: $grey;
-  font-family: $font-family-main,$fallback-font;
+  font-family: $font-family-main, $fallback-font;
   font-weight: bold;
   font-size: 16px;
 }
-.wrapper h1{
+
+.wrapper h1 {
   margin: 0 auto;
   text-align: center;
   margin-bottom: 50px;
@@ -38,11 +39,13 @@
   font-size: 2rem;
 }
 
-.wrapper a{
+.wrapper a {
   text-decoration: none;
 }
-.ui-kit a,.hotel a{
-  color:$purple;
+
+.ui-kit a,
+.hotel a {
+  color: $purple;
   border: 2px solid $darkShade50;
   width: 250px;
   height: 80px;
@@ -53,5 +56,6 @@
   display: flex;
   font-size: 1.5rem;
   background-color: $white;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
+

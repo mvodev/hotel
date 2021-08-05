@@ -12,7 +12,7 @@
     max-width: 1470px;
     padding: 0px 15px 0px 15px;
     display: grid;
-    grid-template-areas: 'left right';
+    grid-template-areas: "left right";
     grid-template-columns: 320px 834px;
     grid-template-rows: 1fr 75px;
     column-gap: 6px;
@@ -104,4 +104,4 @@
     margin: 10px auto 0px auto; } }
 
 
-/*# sourceMappingURL=search.69b4ff72ad1631f4b7eb.css.map*/
+/*# sourceMappingURL=search.7f20989d76f862fb1cc1.css.map*/

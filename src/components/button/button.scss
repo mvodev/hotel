@@ -1,157 +1,186 @@
-@import '../button-radio/button-radio.scss';
-@import '../button-rich/button-rich.scss';
-@import '../button-check/button-check.scss';
-@import '../button-rate/button-rate.scss';
-@import '../button-like/button-like.scss';
-.button{
-	border: none;
-	cursor: pointer;
-	font-family: $font-family-main,$fallback-font;
-	font-style: normal;
-	text-decoration: none;
-	overflow: hidden;
-	position: relative;
-	width: 99px;
-	height: 44px;
-	border-radius: 22px;
+@import "../button-radio/button-radio.scss";
+@import "../button-rich/button-rich.scss";
+@import "../button-check/button-check.scss";
+@import "../button-rate/button-rate.scss";
+@import "../button-like/button-like.scss";
+.button {
+  border: none;
+  cursor: pointer;
+  font-family: $font-family-main, $fallback-font;
+  font-style: normal;
+  text-decoration: none;
+  overflow: hidden;
+  position: relative;
+  width: 99px;
+  height: 44px;
+  border-radius: 22px;
 
-		&_wide{
-			width: 196px;
-		}
-		&_dark,&_dark50{
-			background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-			text-transform: uppercase;
-			color: $white;
-			font-weight: bold;
-			font-size: 12px;
-			line-height: 15px;
-		}
-		&_dark50{
-			opacity: 0.5;
-		}
-		&_dark:hover{
-			opacity: 0.5;
-		}
-		&_white,&_link{
-			background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-			border-radius: 22px;
-			position: relative;
-		}
-		&_white::before,&_link::before{
-			content: '';
-			position: absolute;
-			left: 2px;
-			top: 2px;
-			padding: 2px;
-			z-index: 1;
-			background: #ffffff;
-			bottom: 2px;
-			right: 2px;
-			border-radius: inherit;
-		}
-		&_white span,&_link span{
-			position: relative;
-			z-index: 2;
-		}
-		&_link{
-			text-decoration: none;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-		&_white50{
-			background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%,
-			rgba(139, 164, 249, 0.5) 100%);
-			border-radius: 22px;
-			position: relative;
-		}
-		&_white50::before{
-			content: '';
-			position: absolute;
-			left: 2px;
-			top: 2px;
-			padding: 2px;
-			z-index: 1;
-			background: #ffffff;
-			bottom: 2px;
-			right: 2px;
-			border-radius: inherit;
-		}
-		&_white50 span{
-			position: relative;
-			z-index: 2;
-			color: $purple;
-			opacity: 1;
-		}
-		&_white span,
-		&_link span,
-		&_white50 span,
-		&_transparent span{
-			font-weight: bold;
-			font-size: 12px;
-			line-height: 15px;
-			text-transform: uppercase;
-			color:$purple;
-			white-space: nowrap;
-		}
-		&_white:hover,&_link:hover{
-			background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%,
-			rgba(139, 164, 249, 0.5) 100%);
-		}
-		&_transparent,
-		&_transparent50{
-			border: none;
-			background: none;
-			height: 15px;
-			width: 61px;
-			padding: 0px;
-		}
+  &_wide {
+    width: 196px;
+  }
 
-		&_transparent50 span{
-			font-weight: bold;
-			font-size: 12px;
-			line-height: 15px;
-			text-transform: uppercase;
-			color: $darkShade50;
-			text-decoration: none;
-		}
-		&_transparent span:hover{
-			color: $darkShade50;
-		}
+  &_dark,
+  &_dark50 {
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    text-transform: uppercase;
+    color: $white;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  &_dark50 {
+    opacity: 0.5;
+  }
+
+  &_dark:hover {
+    opacity: 0.5;
+  }
+
+  &_white,
+  &_link {
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    border-radius: 22px;
+    position: relative;
+  }
+
+  &_white::before,
+  &_link::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    padding: 2px;
+    z-index: 1;
+    background: #ffffff;
+    bottom: 2px;
+    right: 2px;
+    border-radius: inherit;
+  }
+
+  &_white span,
+  &_link span {
+    position: relative;
+    z-index: 2;
+  }
+
+  &_link {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_white50 {
+    background: linear-gradient(
+      180deg,
+      rgba(188, 156, 255, 0.5) 0%,
+      rgba(139, 164, 249, 0.5) 100%
+    );
+    border-radius: 22px;
+    position: relative;
+  }
+
+  &_white50::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    padding: 2px;
+    z-index: 1;
+    background: #ffffff;
+    bottom: 2px;
+    right: 2px;
+    border-radius: inherit;
+  }
+
+  &_white50 span {
+    position: relative;
+    z-index: 2;
+    color: $purple;
+    opacity: 1;
+  }
+
+  &_white span,
+  &_link span,
+  &_white50 span,
+  &_transparent span {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $purple;
+    white-space: nowrap;
+  }
+
+  &_white:hover,
+  &_link:hover {
+    background: linear-gradient(
+      180deg,
+      rgba(188, 156, 255, 0.5) 0%,
+      rgba(139, 164, 249, 0.5) 100%
+    );
+  }
+
+  &_transparent,
+  &_transparent50 {
+    border: none;
+    background: none;
+    height: 15px;
+    width: 61px;
+    padding: 0px;
+  }
+
+  &_transparent50 span {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $darkShade50;
+    text-decoration: none;
+  }
+
+  &_transparent span:hover {
+    color: $darkShade50;
+  }
+  
 }
-.button_arrow{
-	width: 320px;
-	height: 44px;
-	border-radius: 22px;
-	position: relative;
-	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	font-weight: bold;
-	font-size: 12px;
-	line-height: 15px;
-	text-transform: uppercase;
-	color: $white;
 
-		.button__arrow{
-			font-weight: normal;
-			line-height: 24px;
-			display: flex;
-			align-items: center;
-			text-align: center;
-			justify-content: center;
-			color: $white;
-			height: 44px;
-			width: 44px;
-			position: absolute;
-			top: 0;
-			left: 276px;
-		}
-		.button__arrow-label{
-			max-width: 256px;
-			max-height: 15px;
-			overflow: hidden;
-		}
+.button_arrow {
+  width: 320px;
+  height: 44px;
+  border-radius: 22px;
+  position: relative;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $white;
+
+  .button__arrow {
+    font-weight: normal;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: $white;
+    height: 44px;
+    width: 44px;
+    position: absolute;
+    top: 0;
+    left: 276px;
+  }
+
+  .button__arrow-label {
+    max-width: 256px;
+    max-height: 15px;
+    overflow: hidden;
+  }
+
 }

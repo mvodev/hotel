@@ -1,20 +1,23 @@
-.diagram{
+.diagram {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   height: 120px;
   width: 311px;
-  &__chart{
+
+  &__chart {
     width: 120px;
     height: 120px;
     margin-right: 45px;
     position: relative;
   }
-  &-donut{
+
+  &-donut {
     width: 120px;
     height: 120px;
   }
-  .labels-diargam{
+
+  .labels-diargam {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -23,84 +26,98 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: $font-family-main,$fallback-font;
+    font-family: $font-family-main, $fallback-font;
     font-style: normal;
     font-weight: 700;
     color: $purple;
   }
-  .labels-diargam__number{
+
+  .labels-diargam__number {
     font-size: 24px;
   }
-  .labels-diargam__label{
+
+  .labels-diargam__label {
     font-size: 14px;
     line-height: 15px;
   }
-  &__description{
+
+  &__description {
     position: absolute;
     width: 146px;
     height: 96px;
     top: 24px;
     left: 165px;
   }
-  &__description-item{
+
+  &__description-item {
     list-style-type: none;
     position: relative;
-    font-family: $font-family-main,$fallback-font;
+    font-family: $font-family-main, $fallback-font;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
     color: $darkShade75;
   }
-  &__description-item::before{
+
+  &__description-item::before {
     position: absolute;
     width: 10px;
     height: 10px;
-    content: '';
+    content: "";
     top: 7px;
     left: -15px;
     border-radius: 50%;
   }
-  &__description-item_orange::before{
-    background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+
+  &__description-item_orange::before {
+    background: linear-gradient(180deg, #ffe39c 0%, #ffba9c 100%);
   }
-  &__description-item_green::before{
-    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+
+  &__description-item_green::before {
+    background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
   }
-  &__description-item_blue::before{
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+
+  &__description-item_blue::before {
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   }
-  &__description-item_black::before{
-    background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
+
+  &__description-item_black::before {
+    background: linear-gradient(180deg, #919191 0%, #3d4975 100%);
   }
+
 }
+
 .diagramchart__chart-text {
-    font-family: $font-family-additionalRussianReplacer,$fallback-font;
-    fill: $purple;
-    transform: translateY(5px) translateX(-30px);
+  font-family: $font-family-additionalRussianReplacer, $fallback-font;
+  fill: $purple;
+  transform: translateY(5px) translateX(-30px);
 }
+
 .diagramchart__chart-number {
-    font-family: $font-family-additional,$fallback-font;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 30px;
-    color: $purple;
-    transform: translateY(-5px) translateX(12px);
+  font-family: $font-family-additional, $fallback-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: $purple;
+  transform: translateY(-5px) translateX(12px);
 }
+
 .diagramchart__chart-label {
-    font-family: $font-family-main,$fallback-font;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-align: center;
-    text-transform: uppercase;
-    color: $purple;
-    transform: translateY(14px);
+  font-family: $font-family-main, $fallback-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $purple;
+  transform: translateY(14px);
 }
-@media (max-width:$container-mobile-width){
-  .diagram__description{
+
+@media (max-width: $container-mobile-width) {
+  .diagram__description {
     left: 145px;
   }
 }

@@ -1,15 +1,18 @@
-.social-networks{
-  &__list{
+.social-networks {
+
+  &__list {
     display: flex;
     text-align: center;
     flex-direction: row;
     width: 112px;
     justify-content: space-between;
   }
+
   &__link {
     text-decoration: none;
     width: 24px;
     height: 24px;
     color: $purple;
   }
+  
 }

@@ -1,18 +1,20 @@
-.search-number{
-    max-width: 380px;
-    width: 100%;
-    background-color: $white;
-    box-shadow: 0px 0px 25px $boxShadow;
-    border-radius: 4px;
-    border: 1px solid rgba(0, 0, 0, 0.12);
-  &__wrapper{    
+.search-number {
+  max-width: 380px;
+  width: 100%;
+  background-color: $white;
+  box-shadow: 0px 0px 25px $boxShadow;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+
+  &__wrapper {
     padding-top: 40px;
     margin: 0px auto;
     width: 320px;
     height: 374px;
   }
-  &__header{
-    font-family: $font-family-main,$fallback-font;
+
+  &__header {
+    font-family: $font-family-main, $fallback-font;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -20,11 +22,13 @@
     color: $darkShade100;
     margin-bottom: 22px;
   }
-  &__dropdown-headers{
+
+  &__dropdown-headers {
     display: flex;
     flex-direction: row;
   }
-  &_dropdown-header{
+
+  &_dropdown-header {
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
@@ -32,10 +36,12 @@
     width: 150px;
     overflow: hidden;
   }
-  &_dropdown-header:first-child{
+
+  &_dropdown-header:first-child {
     margin-right: 20px;
   }
-  &_dropdown-header-guests{
+
+  &_dropdown-header-guests {
     margin-top: 20px;
     font-size: 12px;
     line-height: 15px;
@@ -44,7 +50,9 @@
     width: 150px;
     overflow: hidden;
   }
-  &__button{
+
+  &__button {
     margin-top: 31px;
   }
+  
 }

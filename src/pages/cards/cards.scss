@@ -1,7 +1,8 @@
-@import './cards-left-column.scss';
-@import './cards-central-column.scss';
-@import './cards-right-column.scss';
-.cards__wrapper{
+@import "./cards-left-column.scss";
+@import "./cards-central-column.scss";
+@import "./cards-right-column.scss";
+
+.cards__wrapper {
   width: 1440px;
   padding-bottom: 140px;
   background-color: white;
@@ -11,16 +12,21 @@
     "left central right";
   grid-template-columns: 520px 420px 360px;
   grid-template-rows: 158px 1fr;
-  .header{
+
+  .header {
     grid-area: header;
   }
-  .cards__left-column{
+
+  .cards__left-column {
     grid-area: left;
   }
-  .cards__central-column{
+
+  .cards__central-column {
     grid-area: central;
   }
-  .cards__right-column{
+
+  .cards__right-column {
     grid-area: right;
   }
+
 }

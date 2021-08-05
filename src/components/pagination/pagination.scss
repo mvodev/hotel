@@ -1,15 +1,17 @@
-.pagination{
+.pagination {
   width: 241px;
   height: 74.56px;
-  .pagination_wrapper{
+
+  .pagination_wrapper {
     display: flex;
     flex-direction: row;
     margin-bottom: 10.56px;
-    font-family: $font-family-main,$fallback-font;
+    font-family: $font-family-main, $fallback-font;
     font-style: normal;
     font-weight: normal;
   }
-  &__number{
+
+  &__number {
     width: 40px;
     height: 40px;
     font-size: 12px;
@@ -21,13 +23,15 @@
     justify-content: center;
     cursor: pointer;
   }
-  &__number:hover{
+
+  &__number:hover {
     cursor: pointer;
     border-radius: 22px;
     background-color: $darkShade25;
     color: $white;
   }
-  &__ellipsis{
+
+  &__ellipsis {
     width: 40px;
     height: 40px;
     font-size: 12px;
@@ -38,16 +42,19 @@
     color: $darkShade50;
     justify-content: center;
   }
-  &__number_selected{
+
+  &__number_selected {
     background: $buttonColor;
     border-radius: 22px;
     color: $white;
     cursor: pointer;
   }
-  &__number_selected:hover{
+
+  &__number_selected:hover {
     background: $darkShade25;
   }
-  &__arrow{
+
+  &__arrow {
     font-family: $font-for-icons;
     font-size: 24px;
     line-height: 20px;
@@ -62,10 +69,12 @@
     justify-content: center;
     cursor: pointer;
   }
-  &__arrow:hover{
+
+  &__arrow:hover {
     background: $darkShade25;
   }
-  &__label{
+
+  &__label {
     font-size: 14px;
     line-height: 19px;
     font-style: normal;
@@ -74,4 +83,5 @@
     margin-left: 5px;
     margin-right: 5px;
   }
+  
 }

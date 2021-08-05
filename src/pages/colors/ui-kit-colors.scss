@@ -1,12 +1,14 @@
-@import 'left-column-ui-kit-colors.scss';
-@import 'right-column-ui-kit-colors.scss';
-.colors-and-types{
+@import "left-column-ui-kit-colors.scss";
+@import "right-column-ui-kit-colors.scss";
+
+.colors-and-types {
   width: 100%;
-  font-family: $font-family-main,$fallback-font;
+  font-family: $font-family-main, $fallback-font;
   background-color: $white;
   height: 900px;
 }
-.colors{
+
+.colors {
   max-width: $container-width - 300;
   margin: 0px auto;
   width: 100%;
@@ -17,7 +19,7 @@
   font-style: normal;
   font-weight: normal;
 
-  &__left-column{
+  &__left-column {
     width: 281px;
     height: 610px;
     display: flex;
@@ -27,9 +29,11 @@
     line-height: 26px;
     color: $darkShade100;
   }
-  &__right-column{
+
+  &__right-column {
     width: 436px;
     height: 321px;
     margin-right: 8px;
   }
+
 }

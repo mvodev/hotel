@@ -1,8 +1,10 @@
-@import '../../components/sign-up/sign-up.scss';
-@import '../../components/search-number/search-number.scss';
-.cards__left-column{
+@import "../../components/sign-up/sign-up.scss";
+@import "../../components/search-number/search-number.scss";
+.cards__left-column {
   padding-left: 140px;
-  .left-column-cards__search{
+
+  .left-column-cards__search {
     margin-bottom: 40px;
   }
+  
 }

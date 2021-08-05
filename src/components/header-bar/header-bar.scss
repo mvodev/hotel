@@ -1,21 +1,22 @@
-@import '../burger/burger.scss';
-@import '../list-links/list-links.scss';
+@import "../burger/burger.scss";
+@import "../list-links/list-links.scss";
 .header-bar {
-    max-width: 100%;
-    min-height: 70px;
-    background: $white;
-    box-shadow: 0px 10px 20px $darkShade5;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-family: $font-family-main,$fallback-font;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    width: 100%;
-  &__wrapper{
+  max-width: 100%;
+  min-height: 70px;
+  background: $white;
+  box-shadow: 0px 10px 20px $darkShade5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-family-main, $fallback-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  width: 100%;
+
+  &__wrapper {
     max-width: $container-width - 250px;
     width: 100%;
     display: flex;
@@ -24,10 +25,12 @@
     align-items: center;
     padding: 0px 15px 0px 15px;
   }
+
   &__logo {
     height: 40px;
     width: 105.69px;
   }
+
   &__nav {
     list-style-type: none;
     display: flex;
@@ -35,13 +38,15 @@
     align-items: center;
     width: 100%;
   }
-  &__delimeter{
+
+  &__delimeter {
     margin-right: 20px;
     height: 30px;
     width: 1px;
     background: rgba(31, 32, 65, 0.1);
   }
-  &__nav_sign-in{
+
+  &__nav_sign-in {
     margin-right: 20px;
     width: 87px;
     height: 34px;
@@ -53,10 +58,11 @@
     justify-content: center;
     align-items: center;
   }
-  &__nav_register{
+
+  &__nav_register {
     width: 196px;
     height: 34px;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     border-radius: 22px;
     color: $white;
     text-decoration: none;
@@ -65,9 +71,9 @@
     align-items: center;
   }
 
-  &__user{
+  &__user {
     color: $darkShade50;
-    font-family: $font-family-main,$fallback-font;
+    font-family: $font-family-main, $fallback-font;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -75,34 +81,43 @@
     letter-spacing: 0em;
     text-decoration: none;
   }
+
 }
 
-@media (max-width:910px){
+@media (max-width: 910px) {
+
   .header-bar__logo,
-  .header-bar__delimeter{
+  .header-bar__delimeter {
     display: none;
   }
+
 }
-@media (max-width:$container-mobile-width){
-  .header-bar__wrapper{
+@media (max-width: $container-mobile-width) {
+
+  .header-bar__wrapper {
     align-items: flex-start;
     padding: 20px;
   }
-  .header-bar{
+
+  .header-bar {
     height: auto;
     min-height: auto;
   }
-  .header-bar__nav{
+
+  .header-bar__nav {
     display: none;
     flex-direction: column;
     width: 200px;
     justify-content: center;
   }
-  .header-bar__nav.burger-active{
+
+  .header-bar__nav.burger-active {
     display: flex;
   }
-  .header-bar__nav_sign-in{
+
+  .header-bar__nav_sign-in {
     margin-right: 0px;
     margin-bottom: 10px;
   }
+  
 }

@@ -1,15 +1,17 @@
-.range-slider{
-    width: 266px;
-  &__label-wrapper{
+.range-slider {
+  width: 266px;
+
+  &__label-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: -3px;
-    font-family: $font-family-main,$fallback-font;
+    font-family: $font-family-main, $fallback-font;
     font-style: normal;
     white-space: nowrap;
   }
-  &__label-header{
+
+  &__label-header {
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
@@ -17,7 +19,8 @@
     color: $darkShade100;
     padding-top: 3px;
   }
-  &__label{
+
+  &__label {
     height: 15px;
     width: 102px;
     text-align: justify;
@@ -27,19 +30,22 @@
     text-align: right;
     color: $darkShade50;
   }
+
 }
 
-.irs-handle{
+.irs-handle {
   cursor: pointer;
 }
-.irs--flat .irs-line{
+
+.irs--flat .irs-line {
   background-color: $white;
   border: 1px solid $darkShade25;
   border-radius: 3px;
   height: 6px;
   cursor: pointer;
 }
-.irs--flat .irs-handle>i:first-child {
+
+.irs--flat .irs-handle > i:first-child {
   background: $selectedDate;
   border: 2px solid $white;
   border-radius: 10px;
@@ -47,19 +53,25 @@
   height: 16px;
   margin-top: -2px;
 }
+
 .irs--flat .irs-bar {
   background: $selectedDate;
   border-radius: 3px;
   height: 6px;
   cursor: pointer;
 }
-.irs-min,.irs-max{
+
+.irs-min,
+.irs-max {
   display: none;
 }
-.irs-from,.irs-to{
+
+.irs-from,
+.irs-to {
   display: none;
 }
-.rub{ 
+
+.rub {
   font-family: "rouble";
   font-style: normal;
   font-weight: normal;

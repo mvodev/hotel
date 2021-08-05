@@ -1,39 +1,50 @@
-.form-elements{
-  &__header-right{
+.form-elements {
+
+  &__header-right {
     margin-bottom: 16px;
   }
-  &__header_buttons{
+
+  &__header_buttons {
     margin-top: 33px;
   }
-  .buttons-wrapper-right{
+
+  .buttons-wrapper-right {
     width: 218px;
   }
+
   .buttons-wrapper-right__first-row,
   .buttons-wrapper-right__second-row,
-  .buttons-wrapper-right__third-row{
+  .buttons-wrapper-right__third-row {
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
   }
+
   .buttons-wrapper-right__first-row,
-  .buttons-wrapper-right__second-row{
+  .buttons-wrapper-right__second-row {
     justify-content: space-between;
   }
-  .buttons-wrapper-right__fourth-row{
+
+  .buttons-wrapper-right__fourth-row {
     margin-bottom: 40px;
   }
-  .third-row-buttons__first{
+
+  .third-row-buttons__first {
     margin-right: 20px;
   }
-  &__header_pagination{
+
+  &__header_pagination {
     margin-bottom: 16px;
   }
-  &__header_bullet{
+
+  &__header_bullet {
     margin-top: 256px;
     margin-bottom: 12px;
   }
-  &__header_dropdown-right{
+
+  &__header_dropdown-right {
     margin-top: 235px;
     margin-bottom: 4px;
   }
+  
 }

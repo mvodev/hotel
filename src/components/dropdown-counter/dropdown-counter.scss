@@ -1,5 +1,5 @@
-.dropdown-counter{
-  font-family: $font-family-main,$fallback-font;
+.dropdown-counter {
+  font-family: $font-family-main, $fallback-font;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -7,12 +7,14 @@
   height: 30px;
   margin: 6px 7px 7px 15px;
 }
-.dropdown-counter__header{
+
+.dropdown-counter__header {
   overflow: hidden;
   margin-bottom: 3px;
   max-width: 152px;
 }
-.dropdown-counter__container{
+
+.dropdown-counter__container {
   max-width: 92px;
   width: 100%;
   display: flex;
@@ -20,8 +22,9 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .container-dropdown__decrease,
-.container-dropdown__increase{
+.container-dropdown__increase {
   border-radius: 22px;
   width: 30px;
   height: 30px;
@@ -31,15 +34,18 @@
   flex-direction: row;
   cursor: pointer;
 }
-.container-dropdown__decrease{
+
+.container-dropdown__decrease {
   border: 1px solid $darkShade25;
   color: $darkShade25;
 }
-.container-dropdown__increase{
+
+.container-dropdown__increase {
   border: 1px solid $darkShade50;
   color: $darkShade50;
 }
-.container-dropdown__decrease_dark{
+
+.container-dropdown__decrease_dark {
   border: 1px solid $darkShade50;
   color: $darkShade50;
 }

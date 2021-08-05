@@ -1,4 +1,4 @@
-@import '../social-networks/social-networks.scss';
+@import "../social-networks/social-networks.scss";
 .footer-creative {
   max-width: 768px;
   width: 100%;
@@ -10,6 +10,7 @@
   align-items: center;
   justify-content: center;
   margin: 0px auto;
+
   &__logo {
     max-width: 560px;
     display: flex;
@@ -18,8 +19,9 @@
     align-items: center;
     margin-bottom: 20px;
   }
+
   &__logo p {
-    font-family: $font-family-main,$fallback-font;
+    font-family: $font-family-main, $fallback-font;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -29,5 +31,5 @@
     margin-top: 16px;
     padding: 0px 15px 0px 15px;
   }
+  
 }
-

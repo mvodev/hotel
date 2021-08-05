@@ -1,8 +1,10 @@
-@import '../../components/sign-in/sign-in.scss';
-@import '../../components/room-price/room-price.scss';
-.cards__central-column{
+@import "../../components/sign-in/sign-in.scss";
+@import "../../components/room-price/room-price.scss";
+.cards__central-column {
   padding-left: 40px;
-  .central-column-cards__room-price{
+
+  .central-column-cards__room-price {
     margin-bottom: 40px;
   }
+  
 }

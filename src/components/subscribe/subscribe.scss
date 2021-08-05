@@ -1,29 +1,33 @@
-@import '../text-field/text-field.scss';
+@import "../text-field/text-field.scss";
 .subscribe {
   display: flex;
   flex-direction: column;
   width: 260px;
-  font-family: $font-family-main,$fallback-font;
-  
-    &__text-container{
-      height: 84px;
-      margin-bottom: 20px;
-    }
-    &__header{
-      font-weight: bold;
-      font-size: 12px;
-      line-height: 15px;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-      color: $darkShade100;
-    }
-    &__proposal {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 24px;
-      color: $darkShade75;
-    }
-    &__form{
+  font-family: $font-family-main, $fallback-font;
+
+  &__text-container {
+    height: 84px;
+    margin-bottom: 20px;
+  }
+
+  &__header {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: $darkShade100;
+  }
+
+  &__proposal {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $darkShade75;
+  }
+
+  &__form {
     width: 260px;
-    }
+  }
+  
 }
