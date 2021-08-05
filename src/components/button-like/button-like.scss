@@ -1,39 +1,39 @@
 .button-like {
-  width: 40px;
-  height: 20px;
   background: $white;
   border: 1px solid $darkShade25;
   box-sizing: border-box;
-  white-space: nowrap;
+  cursor: pointer;
   border-radius: 10px;
   display: flex;
   flex-direction: row;
-  cursor: pointer;
+  height: 20px;
+  white-space: nowrap;
+  width: 40px;
 
   &__heart {
-    width: 50%;
-    height: 20px;
-    text-align: center;
     align-items: center;
+    color: $darkShade25;
     display: block;
     font-family: $font-for-icons;
     font-weight: normal;
     font-size: 10px;
+    height: 20px;
+    text-align: center;
     line-height: 9px;
-    color: $darkShade25;
     padding-top: 5px;
+    width: 50%;
   }
 
   &__number {
-    width: 50%;
-    height: 100%;
-    font-weight: normal;
-    font-size: 10px;
-    line-height: 12px;
-    text-align: center;
     align-items: center;
     color: $darkShade25;
     display: flex;
+    font-weight: normal;
+    font-size: 10px;
+    height: 100%;
+    line-height: 12px;
+    text-align: center;
+    width: 50%;
   }
 
   &_is-liked {
@@ -48,5 +48,5 @@
   .button-like__number {
     color: $purple;
   }
-  
+
 }
