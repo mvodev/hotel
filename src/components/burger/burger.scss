@@ -62,16 +62,16 @@
       bottom: 0px;
     }
 
-    &.burger-active span {
+    &.burger_is-opened span {
       transform: scale(0);
     }
 
-    &.burger-active::before {
+    &.burger_is-opened::before {
       transform: rotate(45deg);
       top: 9px;
     }
 
-    &.burger-active:after {
+    &.burger_is-opened:after {
       transform: rotate(-45deg);
       top: 9px;
     }

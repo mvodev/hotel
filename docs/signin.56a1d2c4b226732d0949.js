@@ -57,7 +57,7 @@
 /******/ 	// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 	// Promise = chunk loading, 0 = chunk loaded
 /******/ 	var installedChunks = {
-/******/ 		"registration": 0
+/******/ 		"signin": 0
 /******/ 	};
 /******/
 /******/ 	var deferredModules = [];
@@ -148,7 +148,7 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./pages/registration/registration.js","vendors~UIKit~details~landing~main~registration~search~signin","vendors~UIKit~details~registration","UIKit~details~landing~main~registration~search~signin"]);
+/******/ 	deferredModules.push(["./pages/sign-in-page/sign-in-page.js","vendors~UIKit~details~landing~main~registration~search~signin","UIKit~details~landing~main~registration~search~signin"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
@@ -177,8 +177,8 @@ class Burger {
     this.burger.addEventListener('click', this._handleBurgerClick.bind(this));
   }
   _handleBurgerClick(e) {
-    this.burger.classList.toggle('burger-active');
-    this.nav.classList.toggle('burger-active');
+    this.burger.classList.toggle('burger_is-opened');
+    this.nav.classList.toggle('burger_is-opened');
   }
 }
 /* harmony default export */ __webpack_exports__["default"] = (Burger);
@@ -267,52 +267,9 @@ document.querySelectorAll('.js-list-links__arrow').forEach(elem=>new _sublinks_c
 
 /***/ }),
 
-/***/ "./components/text-field/text-field-class.js":
-/*!***************************************************!*\
-  !*** ./components/text-field/text-field-class.js ***!
-  \***************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
-
-class TextField {
-  constructor(textFieldInput) {
-    this.textFieldInput = textFieldInput;
-    this._init();
-  }
-  _init() {
-    new Cleave(this.textFieldInput, {
-      date: true,
-      delimiter: '.',
-      datePattern: ['d', 'm', 'Y']
-    });
-  }
-}
-/* harmony default export */ __webpack_exports__["default"] = (TextField);
-
-/***/ }),
-
-/***/ "./components/text-field/text-field.js":
-/*!*********************************************!*\
-  !*** ./components/text-field/text-field.js ***!
-  \*********************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _text_field_class_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./text-field-class.js */ "./components/text-field/text-field-class.js");
-
-document.querySelectorAll('.js-text-field__input-date').forEach(elem=>new _text_field_class_js__WEBPACK_IMPORTED_MODULE_0__["default"](elem));
-
-/***/ }),
-
-/***/ "./pages/registration/registration.js":
+/***/ "./pages/sign-in-page/sign-in-page.js":
 /*!********************************************!*\
-  !*** ./pages/registration/registration.js ***!
+  !*** ./pages/sign-in-page/sign-in-page.js ***!
   \********************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -321,16 +278,10 @@ document.querySelectorAll('.js-text-field__input-date').forEach(elem=>new _text_
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../styles/style.scss */ "./styles/style.scss");
 /* harmony import */ var _styles_style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_style_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _registration_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./registration.scss */ "./pages/registration/registration.scss");
-/* harmony import */ var _registration_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_registration_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var cleave_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! cleave.js */ "../node_modules/cleave.js/dist/cleave-esm.js");
-/* harmony import */ var _components_burger_burger_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/burger/burger.js */ "./components/burger/burger.js");
-/* harmony import */ var _components_text_field_text_field_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/text-field/text-field.js */ "./components/text-field/text-field.js");
-/* harmony import */ var _components_list_links_sublinks_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/list-links/sublinks.js */ "./components/list-links/sublinks.js");
-
-
-
-
+/* harmony import */ var _sign_in_page_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sign-in-page.scss */ "./pages/sign-in-page/sign-in-page.scss");
+/* harmony import */ var _sign_in_page_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sign_in_page_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_burger_burger_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/burger/burger.js */ "./components/burger/burger.js");
+/* harmony import */ var _components_list_links_sublinks_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/list-links/sublinks.js */ "./components/list-links/sublinks.js");
 
 
 
@@ -339,9 +290,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./pages/registration/registration.scss":
+/***/ "./pages/sign-in-page/sign-in-page.scss":
 /*!**********************************************!*\
-  !*** ./pages/registration/registration.scss ***!
+  !*** ./pages/sign-in-page/sign-in-page.scss ***!
   \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -351,4 +302,4 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 /******/ });
-//# sourceMappingURL=registration.5f0a58c520bf10cd2f03.js.map
+//# sourceMappingURL=signin.56a1d2c4b226732d0949.js.map

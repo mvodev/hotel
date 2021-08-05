@@ -11,8 +11,8 @@ class Burger {
     this.burger.addEventListener('click', this._handleBurgerClick.bind(this));
   }
   _handleBurgerClick(e) {
-    this.burger.classList.toggle('burger-active');
-    this.nav.classList.toggle('burger-active');
+    this.burger.classList.toggle('burger_is-opened');
+    this.nav.classList.toggle('burger_is-opened');
   }
 }
 export default Burger;

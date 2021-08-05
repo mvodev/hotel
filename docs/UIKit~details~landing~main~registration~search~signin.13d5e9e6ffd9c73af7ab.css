@@ -2584,12 +2584,12 @@ table {
       top: 0px; }
     .header-burger::after {
       bottom: 0px; }
-    .header-burger.burger-active span {
+    .header-burger.burger_is-opened span {
       transform: scale(0); }
-    .header-burger.burger-active::before {
+    .header-burger.burger_is-opened::before {
       transform: rotate(45deg);
       top: 9px; }
-    .header-burger.burger-active:after {
+    .header-burger.burger_is-opened:after {
       transform: rotate(-45deg);
       top: 9px; } }
 
@@ -2756,7 +2756,7 @@ table {
     flex-direction: column;
     width: 200px;
     justify-content: center; }
-  .header-bar__nav.burger-active {
+  .header-bar__nav.burger_is-opened {
     display: flex; }
   .header-bar__nav_sign-in {
     margin-right: 0px;
@@ -2807,12 +2807,12 @@ table {
       top: 0px; }
     .header-burger::after {
       bottom: 0px; }
-    .header-burger.burger-active span {
+    .header-burger.burger_is-opened span {
       transform: scale(0); }
-    .header-burger.burger-active::before {
+    .header-burger.burger_is-opened::before {
       transform: rotate(45deg);
       top: 9px; }
-    .header-burger.burger-active:after {
+    .header-burger.burger_is-opened:after {
       transform: rotate(-45deg);
       top: 9px; } }
 
@@ -5185,4 +5185,4 @@ table {
   border-radius: 0.5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.7f20989d76f862fb1cc1.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.13d5e9e6ffd9c73af7ab.css.map*/

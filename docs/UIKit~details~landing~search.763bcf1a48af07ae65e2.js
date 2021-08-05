@@ -22,8 +22,8 @@ class Burger {
     this.burger.addEventListener('click', this._handleBurgerClick.bind(this));
   }
   _handleBurgerClick(e) {
-    this.burger.classList.toggle('burger-active');
-    this.nav.classList.toggle('burger-active');
+    this.burger.classList.toggle('burger_is-opened');
+    this.nav.classList.toggle('burger_is-opened');
   }
 }
 /* harmony default export */ __webpack_exports__["default"] = (Burger);
@@ -2791,4 +2791,4 @@ document.querySelectorAll('.js-list-links__arrow').forEach(elem=>new _sublinks_c
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.2b062c56b89ebaa96215.js.map
+//# sourceMappingURL=UIKit~details~landing~search.763bcf1a48af07ae65e2.js.map
