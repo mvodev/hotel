@@ -3378,50 +3378,50 @@ table {
     border-radius: 10px; }
 
 .button-rich {
-  width: 266px;
   height: 51px;
-  font-family: Montserrat, "Arial,sans-serif"; }
+  font-family: Montserrat, "Arial,sans-serif";
+  width: 266px; }
   .button-rich__checkbox-input {
     position: absolute;
-    z-index: -1;
     opacity: 0;
     margin-left: 10px;
-    visibility: hidden; }
+    visibility: hidden;
+    z-index: -1; }
   .button-rich__checkbox-header {
-    position: relative;
     cursor: pointer;
+    color: rgba(31, 32, 65, 0.75);
+    display: block;
     padding-left: 30px;
+    position: relative;
     font-weight: bold;
     font-size: 14px;
-    line-height: 18px;
-    color: rgba(31, 32, 65, 0.75);
     height: 18px;
-    max-width: 236px;
-    display: block; }
+    line-height: 18px;
+    max-width: 236px; }
   .button-rich__checkbox-text {
-    position: relative;
     cursor: pointer;
-    margin-left: 30px;
+    color: rgba(31, 32, 65, 0.5);
+    display: block;
     font-weight: normal;
     font-size: 12px;
     line-height: 14px;
-    color: rgba(31, 32, 65, 0.5);
+    position: relative;
     height: 28px;
-    width: 236px;
     margin-top: 5px;
+    margin-left: 30px;
     white-space: break-spaces;
-    display: block; }
+    width: 236px; }
   .button-rich__checkbox-header:before {
+    background: #ffffff;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: 20px;
     height: 20px;
-    background: #ffffff;
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    box-sizing: border-box;
-    border-radius: 4px; }
+    width: 20px; }
   .button-rich__checkbox-input:checked + .button-rich__checkbox-header:before {
     background-image: url(ad694aafe15811be341489a1dd946ba2.svg);
     background-repeat: no-repeat;
@@ -3471,27 +3471,27 @@ table {
     border: 1px solid #bc9cff; }
 
 .button-rate {
-  height: 24px;
-  width: 120px;
   background-color: transparent;
   border-radius: 0px;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  height: 24px;
+  width: 120px; }
   .button-rate input {
     display: none; }
   .button-rate__star {
-    font-size: 24px;
+    align-items: center;
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    line-height: 20px;
-    width: 24px;
-    height: 24px;
-    display: block;
     cursor: pointer;
-    align-items: center;
-    text-align: center; }
+    display: block;
+    font-size: 24px;
+    line-height: 20px;
+    height: 24px;
+    text-align: center;
+    width: 24px; }
 
 .button-like {
   background: #ffffff;
@@ -3830,40 +3830,40 @@ table {
     margin-bottom: 17px; }
 
 .expanded-comment {
+  color: rgba(31, 32, 65, 0.75);
+  display: flex;
   max-width: 711px;
   min-height: 133px;
   font-family: Montserrat, "Arial,sans-serif";
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  display: flex;
   flex-direction: column;
-  flex: auto; }
+  flex: auto;
+  font-size: 14px;
+  line-height: 24px; }
   .expanded-comment__header {
     margin-bottom: 10px; }
   .expanded-comment__header-img {
     height: 48px;
-    width: 48px;
-    margin-right: 10px; }
+    margin-right: 10px;
+    width: 48px; }
   .expanded-comment__header-img img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border: 2px solid #ffffff;
-    filter: drop-shadow(0px 10px 20px rgba(31, 32, 65, 0.1));
     border-radius: 50%;
-    background-size: cover; }
+    border: 2px solid #ffffff;
+    background-size: cover;
+    display: block;
+    filter: drop-shadow(0px 10px 20px rgba(31, 32, 65, 0.1));
+    height: auto;
+    max-width: 100%; }
   .expanded-comment__header {
     display: flex;
     flex-direction: row; }
   .expanded-comment__header-name {
+    color: rgba(31, 32, 65, 0.75);
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
-    line-height: 24px;
-    color: rgba(31, 32, 65, 0.75); }
+    line-height: 24px; }
   .expanded-comment__header-name-wrapper {
     display: flex;
     flex-direction: column; }
@@ -4695,50 +4695,50 @@ table {
     border-radius: 10px; }
 
 .button-rich {
-  width: 266px;
   height: 51px;
-  font-family: Montserrat, "Arial,sans-serif"; }
+  font-family: Montserrat, "Arial,sans-serif";
+  width: 266px; }
   .button-rich__checkbox-input {
     position: absolute;
-    z-index: -1;
     opacity: 0;
     margin-left: 10px;
-    visibility: hidden; }
+    visibility: hidden;
+    z-index: -1; }
   .button-rich__checkbox-header {
-    position: relative;
     cursor: pointer;
+    color: rgba(31, 32, 65, 0.75);
+    display: block;
     padding-left: 30px;
+    position: relative;
     font-weight: bold;
     font-size: 14px;
-    line-height: 18px;
-    color: rgba(31, 32, 65, 0.75);
     height: 18px;
-    max-width: 236px;
-    display: block; }
+    line-height: 18px;
+    max-width: 236px; }
   .button-rich__checkbox-text {
-    position: relative;
     cursor: pointer;
-    margin-left: 30px;
+    color: rgba(31, 32, 65, 0.5);
+    display: block;
     font-weight: normal;
     font-size: 12px;
     line-height: 14px;
-    color: rgba(31, 32, 65, 0.5);
+    position: relative;
     height: 28px;
-    width: 236px;
     margin-top: 5px;
+    margin-left: 30px;
     white-space: break-spaces;
-    display: block; }
+    width: 236px; }
   .button-rich__checkbox-header:before {
+    background: #ffffff;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: 20px;
     height: 20px;
-    background: #ffffff;
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    box-sizing: border-box;
-    border-radius: 4px; }
+    width: 20px; }
   .button-rich__checkbox-input:checked + .button-rich__checkbox-header:before {
     background-image: url(ad694aafe15811be341489a1dd946ba2.svg);
     background-repeat: no-repeat;
@@ -4788,27 +4788,27 @@ table {
     border: 1px solid #bc9cff; }
 
 .button-rate {
-  height: 24px;
-  width: 120px;
   background-color: transparent;
   border-radius: 0px;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  height: 24px;
+  width: 120px; }
   .button-rate input {
     display: none; }
   .button-rate__star {
-    font-size: 24px;
+    align-items: center;
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    line-height: 20px;
-    width: 24px;
-    height: 24px;
-    display: block;
     cursor: pointer;
-    align-items: center;
-    text-align: center; }
+    display: block;
+    font-size: 24px;
+    line-height: 20px;
+    height: 24px;
+    text-align: center;
+    width: 24px; }
 
 .button-like {
   background: #ffffff;
@@ -5060,32 +5060,32 @@ table {
     border: none; }
 
 .diagram {
+  align-items: flex-end;
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
   height: 120px;
   width: 311px; }
   .diagram__chart {
-    width: 120px;
     height: 120px;
     margin-right: 45px;
-    position: relative; }
+    position: relative;
+    width: 120px; }
   .diagram-donut {
-    width: 120px;
-    height: 120px; }
+    height: 120px;
+    width: 120px; }
   .diagram .labels-diargam {
+    align-items: center;
+    color: #bc9cff;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     font-family: Montserrat, "Arial,sans-serif";
     font-style: normal;
     font-weight: 700;
-    color: #bc9cff; }
+    justify-content: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
   .diagram .labels-diargam__number {
     font-size: 24px; }
   .diagram .labels-diargam__label {
@@ -5093,27 +5093,27 @@ table {
     line-height: 15px; }
   .diagram__description {
     position: absolute;
-    width: 146px;
     height: 96px;
+    left: 165px;
     top: 24px;
-    left: 165px; }
+    width: 146px; }
   .diagram__description-item {
-    list-style-type: none;
-    position: relative;
+    color: rgba(31, 32, 65, 0.75);
     font-family: Montserrat, "Arial,sans-serif";
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
-    color: rgba(31, 32, 65, 0.75); }
+    list-style-type: none;
+    position: relative; }
   .diagram__description-item::before {
-    position: absolute;
-    width: 10px;
-    height: 10px;
+    border-radius: 50%;
     content: "";
-    top: 7px;
+    height: 10px;
     left: -15px;
-    border-radius: 50%; }
+    position: absolute;
+    top: 7px;
+    width: 10px; }
   .diagram__description-item_orange::before {
     background: linear-gradient(180deg, #ffe39c 0%, #ffba9c 100%); }
   .diagram__description-item_green::before {
@@ -5124,20 +5124,21 @@ table {
     background: linear-gradient(180deg, #919191 0%, #3d4975 100%); }
 
 .diagramchart__chart-text {
-  font-family: "Open Sans", "Arial,sans-serif";
+  font-family: Montserrat, "Arial,sans-serif";
   fill: #bc9cff;
   transform: translateY(5px) translateX(-30px); }
 
 .diagramchart__chart-number {
-  font-family: Quicksand, "Arial,sans-serif";
+  color: #bc9cff;
+  font-family: Montserrat, "Arial,sans-serif";
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
-  color: #bc9cff;
   transform: translateY(-5px) translateX(12px); }
 
 .diagramchart__chart-label {
+  color: #bc9cff;
   font-family: Montserrat, "Arial,sans-serif";
   font-style: normal;
   font-weight: bold;
@@ -5145,7 +5146,6 @@ table {
   line-height: 15px;
   text-align: center;
   text-transform: uppercase;
-  color: #bc9cff;
   transform: translateY(14px); }
 
 @media (max-width: 767px) {
@@ -5185,4 +5185,4 @@ table {
   border-radius: 0.5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.ede17bd1231d168aeef8.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.aa764eea5e06704114a1.css.map*/
