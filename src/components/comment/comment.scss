@@ -1,15 +1,15 @@
 .expanded-comment {
+  color: $darkShade75;
+  display: flex;
   max-width: 711px;
   min-height: 133px;
   font-family: $font-family-main, $fallback-font;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: $darkShade75;
-  display: flex;
   flex-direction: column;
   flex: auto;
+  font-size: 14px;
+  line-height: 24px;
 
   &__header {
     margin-bottom: 10px;
@@ -17,18 +17,18 @@
 
   &__header-img {
     height: 48px;
-    width: 48px;
     margin-right: 10px;
+    width: 48px;
   }
 
   &__header-img img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border: 2px solid $white;
-    filter: drop-shadow(0px 10px 20px rgba(31, 32, 65, 0.1));
     border-radius: 50%;
+    border: 2px solid $white;
     background-size: cover;
+    display: block;
+    filter: drop-shadow(0px 10px 20px rgba(31, 32, 65, 0.1));
+    height: auto;
+    max-width: 100%;
   }
 
   &__header {
@@ -37,11 +37,11 @@
   }
 
   &__header-name {
+    color: $darkShade75;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 24px;
-    color: $darkShade75;
   }
 
   &__header-name-wrapper {
@@ -67,5 +67,5 @@
     margin-top: 2px;
     margin-right: 14px;
   }
-  
+
 }
