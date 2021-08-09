@@ -2708,27 +2708,11 @@ table {
     height: 30px;
     width: 1px;
     background: rgba(31, 32, 65, 0.1); }
-  .header-bar__nav_sign-in {
-    margin-right: 20px;
-    width: 87px;
-    height: 34px;
-    border-radius: 22px;
-    border: 2px solid #bc9cff;
-    color: #bc9cff;
-    text-decoration: none;
+  .header-bar .header-bar__buttons {
     display: flex;
-    justify-content: center;
-    align-items: center; }
-  .header-bar__nav_register {
-    width: 196px;
-    height: 34px;
-    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-    border-radius: 22px;
-    color: #ffffff;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    flex-direction: row; }
+  .header-bar .buttons-header-bar__first-button {
+    margin-right: 20px; }
   .header-bar__user {
     color: rgba(31, 32, 65, 0.5);
     font-family: Montserrat, "Arial,sans-serif";
@@ -2758,9 +2742,12 @@ table {
     justify-content: center; }
   .header-bar__nav.burger_is-opened {
     display: flex; }
-  .header-bar__nav_sign-in {
-    margin-right: 0px;
-    margin-bottom: 10px; } }
+  .header-bar .header-bar__buttons {
+    flex-direction: column;
+    align-items: center; }
+  .buttons-header-bar__first-button {
+    margin-right: 0;
+    margin-bottom: 20px; } }
 
 .header-burger {
   display: none; }
@@ -3544,8 +3531,6 @@ table {
   position: relative;
   text-decoration: none;
   width: 99px; }
-  .button_wide {
-    width: 196px; }
   .button_dark, .button_dark50 {
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     color: #ffffff;
@@ -3572,15 +3557,49 @@ table {
     right: 2px;
     top: 2px;
     z-index: 1; }
-  .button_white span,
-  .button_link span {
-    position: relative;
-    z-index: 2; }
   .button_link {
     align-items: center;
     display: flex;
     text-decoration: none;
     justify-content: center; }
+    .button_link_wide {
+      width: 196px;
+      height: 34px;
+      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      align-items: center;
+      display: flex;
+      text-decoration: none;
+      justify-content: center; }
+    .button_link_wide span {
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+      white-space: nowrap; }
+    .button_link_wide:hover {
+      opacity: .5; }
+    .button_link_slim {
+      width: 87px;
+      height: 34px;
+      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      border-radius: 22px;
+      position: relative;
+      align-items: center;
+      display: flex;
+      text-decoration: none;
+      justify-content: center; }
+    .button_link_slim::before {
+      background: #ffffff;
+      bottom: 2px;
+      border-radius: inherit;
+      content: "";
+      left: 2px;
+      padding: 2px;
+      position: absolute;
+      right: 2px;
+      top: 2px;
+      z-index: 1; }
   .button_white50 {
     background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
     border-radius: 22px;
@@ -3603,6 +3622,7 @@ table {
     z-index: 2; }
   .button_white span,
   .button_link span,
+  .button_link_slim span,
   .button_white50 span,
   .button_transparent span {
     color: #bc9cff;
@@ -3610,8 +3630,10 @@ table {
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    white-space: nowrap; }
-  .button_white:hover, .button_link:hover {
+    white-space: nowrap;
+    position: relative;
+    z-index: 2; }
+  .button_white:hover, .button_link:hover, .button_link_slim:hover {
     background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
   .button_transparent, .button_transparent50 {
     border: none;
@@ -4863,8 +4885,6 @@ table {
   position: relative;
   text-decoration: none;
   width: 99px; }
-  .button_wide {
-    width: 196px; }
   .button_dark, .button_dark50 {
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     color: #ffffff;
@@ -4891,15 +4911,49 @@ table {
     right: 2px;
     top: 2px;
     z-index: 1; }
-  .button_white span,
-  .button_link span {
-    position: relative;
-    z-index: 2; }
   .button_link {
     align-items: center;
     display: flex;
     text-decoration: none;
     justify-content: center; }
+    .button_link_wide {
+      width: 196px;
+      height: 34px;
+      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      align-items: center;
+      display: flex;
+      text-decoration: none;
+      justify-content: center; }
+    .button_link_wide span {
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+      white-space: nowrap; }
+    .button_link_wide:hover {
+      opacity: .5; }
+    .button_link_slim {
+      width: 87px;
+      height: 34px;
+      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+      border-radius: 22px;
+      position: relative;
+      align-items: center;
+      display: flex;
+      text-decoration: none;
+      justify-content: center; }
+    .button_link_slim::before {
+      background: #ffffff;
+      bottom: 2px;
+      border-radius: inherit;
+      content: "";
+      left: 2px;
+      padding: 2px;
+      position: absolute;
+      right: 2px;
+      top: 2px;
+      z-index: 1; }
   .button_white50 {
     background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
     border-radius: 22px;
@@ -4922,6 +4976,7 @@ table {
     z-index: 2; }
   .button_white span,
   .button_link span,
+  .button_link_slim span,
   .button_white50 span,
   .button_transparent span {
     color: #bc9cff;
@@ -4929,8 +4984,10 @@ table {
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
-    white-space: nowrap; }
-  .button_white:hover, .button_link:hover {
+    white-space: nowrap;
+    position: relative;
+    z-index: 2; }
+  .button_white:hover, .button_link:hover, .button_link_slim:hover {
     background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
   .button_transparent, .button_transparent50 {
     border: none;
@@ -5189,4 +5246,4 @@ table {
   border-radius: 0.5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.a8643ca068ac98fb8640.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.a231f2fd081e4a125983.css.map*/
