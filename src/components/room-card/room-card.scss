@@ -115,24 +115,22 @@
     margin-top: 7px;
   }
 
-  &__number {
-    width: 55px;
+  &__room-number {
+    width: 59px;
     height: 24px;
     font-family: $font-family-main,$fallback-font;
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;
     color: $darkShade100;
-    margin-left: 20px;
-    margin-top: 24px;
+    margin: 24px 1px 0 20px;
     display: flex;
     flex-direction: row;
     white-space: pre;
   }
 
-  &__number span:nth-child(2) {
-    font-size: 19px;
-    line-height: 19px;
+  &__room-number span:nth-child(2) {
+    font-size: 16px;
   }
 
   &__price {

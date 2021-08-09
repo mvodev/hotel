@@ -17,11 +17,13 @@ mixin header-bar( {type="nav",links=[],signInLinkText="Войти",registerLinkT
                     label:signInLinkText,
                     variant:'link',
                     slim:true,
+                    href:signInRef,
                     })
             +button({
                     label:registerLinkText,
                     variant:'link',
                     wide:true,
+                    href:registerRef,
                     }) 
         else if type==='login'
           .header-bar__delimeter
