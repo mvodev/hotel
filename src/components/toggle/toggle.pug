@@ -2,10 +2,10 @@ include ../switch/switch.pug
 mixin toggle( { labels=[]  }={} )
   .toggle
     .toggle__container
-        each val in labels
-          +switch({
-                  isPositive:val.isPositive,
-                  name:val.name
-                  })
+      each val in labels
+        +switch({
+                isPositive:val.isPositive,
+                name:val.name
+                })
         
     

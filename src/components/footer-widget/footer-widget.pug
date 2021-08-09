@@ -7,7 +7,7 @@ mixin footer-widget( { logoText='',links = [], }={})
       .footer-widget__logo
         +logo()
         p=logoText
-      nav(class='footer-widget__links')
+      nav.footer-widget__links
         each link in links
           +list-links(link)
       .footer-widget__subscribe
