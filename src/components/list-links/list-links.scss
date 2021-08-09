@@ -98,6 +98,13 @@
   }
 
 }
+
+@media (max-width: $container-tablet-width) {
+  .list-links__link{
+    margin-right: 10px;
+  }
+}
+
 @media (max-width: $container-mobile-width) {
 
   .list-links {

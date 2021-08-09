@@ -7,14 +7,12 @@ body {
 
 .sign {
 
-  &__wrapper {
-    margin: 0px auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    flex: 1 0 auto;
-  }
+  margin: 0px auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  flex: 1 0 auto;
 
   &__img-wrapper {
     min-height: 702px;

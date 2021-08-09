@@ -2650,6 +2650,10 @@ table {
     display: flex;
     align-items: center; }
 
+@media (max-width: 1024px) {
+  .list-links__link {
+    margin-right: 10px; } }
+
 @media (max-width: 767px) {
   .list-links {
     flex-direction: column;
@@ -5222,4 +5226,4 @@ table {
   border-radius: 0.5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.c54ed3de2b7a37a4f93c.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.9825f5fbd10f7e5bafe9.css.map*/
