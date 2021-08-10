@@ -5,7 +5,6 @@ body {
 .reg {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
   width: 100%;
   margin: 0px auto;
   flex: 1 0 auto; }
@@ -32,4 +31,4 @@ body {
       max-height: none; } }
 
 
-/*# sourceMappingURL=registration.cc4c58c828b5c45717c1.css.map*/
+/*# sourceMappingURL=registration.55ee37b7dff82745e5e5.css.map*/
