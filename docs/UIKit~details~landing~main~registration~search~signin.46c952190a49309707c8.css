@@ -2701,7 +2701,7 @@ table {
     height: 30px;
     width: 1px;
     background: rgba(31, 32, 65, 0.1); }
-  .header-bar .header-bar__buttons {
+  .header-bar .buttons-header-bar {
     display: flex;
     flex-direction: row; }
   .header-bar .buttons-header-bar__first-button {
@@ -2735,7 +2735,7 @@ table {
     justify-content: center; }
   .header-bar__nav.burger_is-opened {
     display: flex; }
-  .header-bar .header-bar__buttons {
+  .header-bar .buttons-header-bar {
     flex-direction: column;
     align-items: center; }
   .buttons-header-bar__first-button {
@@ -5224,4 +5224,4 @@ table {
   border-radius: 0.5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.420976caa8760411a756.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.46c952190a49309707c8.css.map*/
