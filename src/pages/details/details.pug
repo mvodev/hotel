@@ -10,8 +10,7 @@ block content
   include ../../components/diagram/diagram.pug
   include ../../components/comment/comment.pug
 
-
-  main.details.details-wrapper
+  main.details
     .details__content
       .details__room-images
         .room-images-left
@@ -22,8 +21,9 @@ block content
           .room-images-right__bottom
             img.details__room-image(src="./assets/img/jpg/room-details-small-bottom.jpg", alt="room image small")
       .details__body
-        .details__body-left
-          aside.left-column
+        aside.details__body-left
+          .left-column
+            article.left-column__room-impressions
               section.left-column__content
                 h2.left-column__header='Сведения о номере'
                 +list({
@@ -50,39 +50,39 @@ block content
                         number:260,
                         label:'голосов'
                         })
-          article.left-column__comments
-            h2.left-column__comments-header
-              span.left-column__comments-header_main='Отзывы посетителей номера'
-              span.left-column__comments-header_number='2 отзыва'
-            .details-comment.details-comment_first
-              +comment({
-                      headerName:'Мурад Сарафанов',
-                      headerTime:'5 дней назад',
-                      imgSource:'./assets/img/png/muradik.png',
-                      likeNumber:12,
-                      isLiked:true,
-                      text:'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'
-                      })
-            .details-comment.details-comment_second
-              +comment({
-                      headerName:'Патрисия Стёклышкова',
-                      headerTime:'Неделю назад',
-                      imgSource:'./assets/img/png/patrisha.png',
-                      likeNumber:2,
-                      isLiked:false,
-                      text:'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'
-                      })
-          article.left-column__rules
-            .rules__text-wrapper
-              h3='Правила'
-              +list({labels:[
-                          'Нельзя с питомцами',
-                          'Без вечеринок и мероприятий',
-                          'Время прибытия — после 13:00,а выезд до 12:00'
-                          ]})
-            .rules__text-wrapper
-              h3='Отмена'
-              p='Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.'
+            article.left-column__comments
+              h2.left-column__comments-header
+                span.left-column__comments-header_main='Отзывы посетителей номера'
+                span.left-column__comments-header_number='2 отзыва'
+              .details-comment.details-comment_first
+                +comment({
+                        headerName:'Мурад Сарафанов',
+                        headerTime:'5 дней назад',
+                        imgSource:'./assets/img/png/muradik.png',
+                        likeNumber:12,
+                        isLiked:true,
+                        text:'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не  жаловался из соседей.'
+                        })
+              .details-comment.details-comment_second
+                +comment({
+                        headerName:'Патрисия Стёклышкова',
+                        headerTime:'Неделю назад',
+                        imgSource:'./assets/img/png/patrisha.png',
+                        likeNumber:2,
+                        isLiked:false,
+                        text:'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'
+                        })
+            article.left-column__rules
+              .rules__text-wrapper
+                h3='Правила'
+                +list({labels:[
+                            'Нельзя с питомцами',
+                            'Без вечеринок и мероприятий',
+                            'Время прибытия — после 13:00,а выезд до 12:00'
+                            ]})
+              .rules__text-wrapper
+                h3='Отмена'
+                p='Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия   вы получите полный возврат за вычетом сбора за услуги.'
         .details__body-right
           +roomprice({
                     roomNumber:888,

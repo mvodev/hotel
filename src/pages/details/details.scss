@@ -1,8 +1,6 @@
 @import "../../styles/common/constants.scss";
 
 .details {
-  &-wrapper {
-    margin: 0px auto;
     font-family: $font-family-main, $fallback-font;
     font-style: normal;
     font-weight: normal;
@@ -10,14 +8,13 @@
     display: flex;
     flex-direction: column;
     min-height: 100%;
-  }
 
   &__content {
     flex: 1 0 auto;
   }
 
   &-header {
-    margin: 0px auto;
+    margin: 0 auto;
   }
 
   &__room-images {
@@ -52,11 +49,11 @@
   &__body {
     max-width: $container-width + 20px;
     margin: 0px auto;
-    padding: 0px 10px 0px 10px;
+    padding: 0 10px;
   }
 
   &__body h2 {
-    font-family: $font-family-main;
+    font-family: $font-family-main,$fallback-font;
     font-style: normal;
     font-weight: bold;
     font-size: 19px;
@@ -79,9 +76,12 @@
 
   .left-column {
     display: flex;
+    flex-direction: column;
+  }
+  .left-column__room-impressions{
+    display: flex;
     flex-direction: row;
   }
-
   .left-column__content {
     display: flex;
     flex-direction: column;
@@ -90,9 +90,6 @@
 
   .left-column__header {
     margin-bottom: 20px;
-    font-weight: bold;
-    font-size: 19px;
-    line-height: 23px;
   }
 
   .left-column__impressions {
@@ -198,21 +195,23 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0px auto;
+    margin: 0 auto;
+    padding: 0;
   }
 
   .details__body-left {
-    flex-direction: column;
-    padding: 0px 10px 0px 10px;
+    padding: 0 10px ;
   }
 
   .details__body-left .left-column {
     flex-direction: column;
     justify-content: center;
-    margin: 0px auto;
+    margin: 0 auto;
     align-items: center;
   }
-
+  .details .left-column__room-impressions{
+    flex-direction: column;
+  }
   .details__body-right {
     margin-bottom: 10px;
   }
@@ -222,7 +221,7 @@
   }
 
   .details .left-column__content {
-    margin-right: 0px;
+    margin-right: 0;
     align-items: baseline;
     flex-direction: column;
   }
@@ -240,7 +239,7 @@
   }
 
   .details .left-column__impressions {
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   .left-column__rules {
