@@ -1957,7 +1957,9 @@ table {
   width: 100%;
   font-family: Montserrat, "Arial,sans-serif";
   background-color: #ffffff;
-  height: 900px; }
+  height: 900px;
+  max-width: 1440px;
+  margin: 0 auto; }
 
 .colors {
   max-width: 1140px;
@@ -2799,7 +2801,9 @@ table {
 .headers-and-footers {
   width: 100%;
   height: 1350px;
-  background-color: #e5e5e5; }
+  background-color: #e5e5e5;
+  max-width: 1440px;
+  margin: 0 auto; }
 
 .headers-and-footers__login {
   margin-top: 100px; }
@@ -4101,7 +4105,10 @@ table {
   margin-bottom: 4px; }
 
 .form-elements {
-  background-color: white; }
+  background-color: white;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%; }
   .form-elements__wrapper {
     padding: 25px 141px 0px 141px;
     font-family: Montserrat, "Arial,sans-serif";
@@ -4539,22 +4546,26 @@ table {
   .cards__right-column .right-column-cards__first-room {
     margin-bottom: 40px; }
 
-.cards__wrapper {
-  width: 1440px;
-  padding-bottom: 140px;
-  background-color: white;
-  display: grid;
-  grid-template-areas: "header header header" "left central right";
-  grid-template-columns: 520px 420px 360px;
-  grid-template-rows: 158px 1fr; }
-  .cards__wrapper .header {
-    grid-area: header; }
-  .cards__wrapper .cards__left-column {
+.cards {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%; }
+  .cards__left-column {
     grid-area: left; }
-  .cards__wrapper .cards__central-column {
+  .cards__central-column {
     grid-area: central; }
-  .cards__wrapper .cards__right-column {
+  .cards__right-column {
     grid-area: right; }
+  .cards__wrapper {
+    width: 1440px;
+    padding-bottom: 140px;
+    background-color: white;
+    display: grid;
+    grid-template-areas: "header header header" "left central right";
+    grid-template-columns: 520px 420px 360px;
+    grid-template-rows: 158px 1fr; }
+    .cards__wrapper .header {
+      grid-area: header; }
 
 .sign-in {
   max-width: 380px;
@@ -5225,4 +5236,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.90abb6c014681f3ac41f.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.ad43c56b59ca13eed8d6.css.map*/

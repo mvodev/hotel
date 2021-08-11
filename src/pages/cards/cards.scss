@@ -1,32 +1,39 @@
 @import "./cards-left-column.scss";
 @import "./cards-central-column.scss";
 @import "./cards-right-column.scss";
+.cards{
+  max-width: $container-width;
+  margin: 0 auto;
+  width: 100%;
 
-.cards__wrapper {
-  width: 1440px;
-  padding-bottom: 140px;
-  background-color: white;
-  display: grid;
-  grid-template-areas:
-    "header header header"
-    "left central right";
-  grid-template-columns: 520px 420px 360px;
-  grid-template-rows: 158px 1fr;
-
-  .header {
-    grid-area: header;
-  }
-
-  .cards__left-column {
+  &__left-column {
     grid-area: left;
   }
 
-  .cards__central-column {
+  &__central-column {
     grid-area: central;
   }
 
-  .cards__right-column {
+  &__right-column {
     grid-area: right;
   }
 
+  &__wrapper {
+    width: 1440px;
+    padding-bottom: 140px;
+    background-color: white;
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "left central right";
+    grid-template-columns: 520px 420px 360px;
+    grid-template-rows: 158px 1fr;
+
+    .header {
+      grid-area: header;
+    }
+
+  }
+
 }
+

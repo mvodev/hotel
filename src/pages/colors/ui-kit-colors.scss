@@ -6,6 +6,8 @@
   font-family: $font-family-main, $fallback-font;
   background-color: $white;
   height: 900px;
+  max-width: $container-width;
+  margin: 0 auto;
 }
 
 .colors {
