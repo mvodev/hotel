@@ -4278,12 +4278,9 @@ table {
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  width: 380px;
-  display: block;
-  box-sizing: border-box; }
+  width: 380px; }
   .room-price__wrapper {
     width: 320px;
-    display: block;
     height: 511px;
     margin: 0px auto;
     font-style: normal;
@@ -5227,4 +5224,4 @@ table {
   border-radius: 0.5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.93d244a700c9ff132d81.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.253affd06ddad5b1aaec.css.map*/
