@@ -1,19 +1,19 @@
 @import "../../styles/common/constants.scss";
 
 .search {
-  margin: 0px auto;
   font-family: $font-family-main, $fallback-font;
   font-style: normal;
   font-weight: normal;
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  margin: 0 auto;
 
   &__content {
     flex: 1 0 auto;
-    margin: 30px auto 0px auto;
+    margin: 30px auto 0 auto;
     max-width: $container-width + 30px;
-    padding: 0px 15px 0px 15px;
+    padding: 0 15px;
     display: grid;
     grid-template-areas: "left right";
     grid-template-columns: 320px 834px;
@@ -153,7 +153,7 @@
   }
 
   .search .right-column__pagination {
-    margin: 10px auto 0px auto;
+    margin: 10px auto 0 auto;
   }
   
 }

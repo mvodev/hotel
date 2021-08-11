@@ -1,16 +1,16 @@
 .search {
-  margin: 0px auto;
   font-family: Montserrat, "Arial,sans-serif";
   font-style: normal;
   font-weight: normal;
   display: flex;
   flex-direction: column;
-  min-height: 100%; }
+  min-height: 100%;
+  margin: 0 auto; }
   .search__content {
     flex: 1 0 auto;
-    margin: 30px auto 0px auto;
+    margin: 30px auto 0 auto;
     max-width: 1470px;
-    padding: 0px 15px 0px 15px;
+    padding: 0 15px;
     display: grid;
     grid-template-areas: "left right";
     grid-template-columns: 320px 834px;
@@ -101,7 +101,7 @@
     justify-content: center;
     align-items: center; }
   .search .right-column__pagination {
-    margin: 10px auto 0px auto; } }
+    margin: 10px auto 0 auto; } }
 
 
-/*# sourceMappingURL=search.a5e0b9c28b159c64c1f5.css.map*/
+/*# sourceMappingURL=search.93d244a700c9ff132d81.css.map*/
