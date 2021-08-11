@@ -1101,7 +1101,7 @@ table {
   border: 1px solid rgba(0, 0, 0, 0.12); }
   .search-number__wrapper {
     padding-top: 40px;
-    margin: 0px auto;
+    margin: 0 auto;
     width: 320px;
     height: 374px; }
   .search-number__header {
@@ -4140,7 +4140,7 @@ table {
   .sign-up__wrapper {
     width: 320px;
     height: 646px;
-    margin: 0px auto; }
+    margin: 0 auto; }
   .sign-up__text-wrapper {
     height: 98px;
     display: flex;
@@ -4195,7 +4195,7 @@ table {
   border: 1px solid rgba(0, 0, 0, 0.12); }
   .search-number__wrapper {
     padding-top: 40px;
-    margin: 0px auto;
+    margin: 0 auto;
     width: 320px;
     height: 374px; }
   .search-number__header {
@@ -4245,7 +4245,7 @@ table {
     width: 320px;
     height: 358px;
     font-style: normal;
-    margin: 0px auto;
+    margin: 0 auto;
     padding-top: 40px; }
   .sign-in__header {
     font-family: Montserrat, "Arial,sans-serif";
@@ -4567,7 +4567,7 @@ table {
     width: 320px;
     height: 358px;
     font-style: normal;
-    margin: 0px auto;
+    margin: 0 auto;
     padding-top: 40px; }
   .sign-in__header {
     font-family: Montserrat, "Arial,sans-serif";
@@ -5224,4 +5224,4 @@ table {
   border-radius: 0.5rem; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.253affd06ddad5b1aaec.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.0e3fe0ea266f860a6cb9.css.map*/
