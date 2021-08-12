@@ -2,6 +2,14 @@
   display: flex;
   flex-direction: column; }
 
+.main {
+  font-family: Montserrat, "Arial,sans-serif";
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-grow: 1; }
+
 .sign {
   margin: 0 auto;
   width: 100%;
@@ -35,4 +43,4 @@
     margin: 20px auto; } }
 
 
-/*# sourceMappingURL=signin.aec20e7627882f908e3b.css.map*/
+/*# sourceMappingURL=signin.bf67ebc4c3616f43b313.css.map*/

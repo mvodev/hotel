@@ -160,11 +160,11 @@
     flex-direction: row;
   }
 
-}
-
-@media (max-width:380px){
-  .room-price__wrapper{
-    padding: 20px 10px 0 10px;
-  }
+  @media (max-width:380px){
+    .room-price__wrapper{
+      padding: 20px 10px 0 10px;
+    }
   
+  }
+
 }

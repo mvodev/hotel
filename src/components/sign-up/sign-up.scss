@@ -74,17 +74,18 @@
     line-height: 18px;
     color: #000000;
   }
+
+  @media (max-width:380px){
+    .sign-up__wrapper{
+      padding: 20px 15px 0 15px;
+    }
+
+    .sign-up__header-reg{
+      font-size: 20px;
+      line-height: 24px;
+    }
+  
+}
   
 }
 
-@media (max-width:380px){
-  .sign-up__wrapper{
-    padding: 20px 15px 0 15px;
-  }
-
-  .sign-up__header-reg{
-    font-size: 20px;
-    line-height: 24px;
-  }
-  
-}

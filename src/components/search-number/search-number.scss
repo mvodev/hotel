@@ -52,17 +52,18 @@
   &__button {
     margin-top: 31px;
   }
+
+  @media (max-width:380px){
+    .search-number__wrapper{
+      padding: 20px 10px 0 10px;
+    }
+
+    .search-number__header{
+      font-size: 17px;
+      line-height: 21px;
+    }
+  
+}
   
 }
 
-@media (max-width:380px){
-  .search-number__wrapper{
-    padding: 20px 10px 0 10px;
-  }
-
-  .search-number__header{
-    font-size: 17px;
-    line-height: 21px;
-  }
-  
-}

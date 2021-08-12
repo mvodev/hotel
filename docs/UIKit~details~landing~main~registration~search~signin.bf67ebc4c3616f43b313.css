@@ -1133,13 +1133,12 @@ table {
     overflow: hidden; }
   .search-number__button {
     margin-top: 31px; }
-
-@media (max-width: 380px) {
-  .search-number__wrapper {
-    padding: 20px 10px 0 10px; }
-  .search-number__header {
-    font-size: 17px;
-    line-height: 21px; } }
+  @media (max-width: 380px) {
+    .search-number .search-number__wrapper {
+      padding: 20px 10px 0 10px; }
+    .search-number .search-number__header {
+      font-size: 17px;
+      line-height: 21px; } }
 
 .dropdown-counter {
   font-family: Montserrat, "Arial,sans-serif";
@@ -4201,13 +4200,12 @@ table {
     font-size: 14px;
     line-height: 18px;
     color: #000000; }
-
-@media (max-width: 380px) {
-  .sign-up__wrapper {
-    padding: 20px 15px 0 15px; }
-  .sign-up__header-reg {
-    font-size: 20px;
-    line-height: 24px; } }
+  @media (max-width: 380px) {
+    .sign-up .sign-up__wrapper {
+      padding: 20px 15px 0 15px; }
+    .sign-up .sign-up__header-reg {
+      font-size: 20px;
+      line-height: 24px; } }
 
 .search-number {
   max-width: 380px;
@@ -4249,13 +4247,12 @@ table {
     overflow: hidden; }
   .search-number__button {
     margin-top: 31px; }
-
-@media (max-width: 380px) {
-  .search-number__wrapper {
-    padding: 20px 10px 0 10px; }
-  .search-number__header {
-    font-size: 17px;
-    line-height: 21px; } }
+  @media (max-width: 380px) {
+    .search-number .search-number__wrapper {
+      padding: 20px 10px 0 10px; }
+    .search-number .search-number__header {
+      font-size: 17px;
+      line-height: 21px; } }
 
 .cards__left-column {
   padding-left: 140px; }
@@ -4299,10 +4296,9 @@ table {
     font-size: 14px;
     line-height: 18px;
     color: #000000; }
-
-@media (max-width: 380px) {
-  .sign-in__wrapper {
-    padding: 40px 15px 0 15px; } }
+  @media (max-width: 380px) {
+    .sign-in .sign-in__wrapper {
+      padding: 20px 10px 0 10px; } }
 
 .room-price {
   border: 1px solid rgba(0, 0, 0, 0.12);
@@ -4418,10 +4414,9 @@ table {
   .room-price__service-extra-fee div:first-child {
     display: flex;
     flex-direction: row; }
-
-@media (max-width: 380px) {
-  .room-price__wrapper {
-    padding: 20px 10px 0 10px; } }
+  @media (max-width: 380px) {
+    .room-price .room-price__wrapper {
+      padding: 20px 10px 0 10px; } }
 
 .cards__central-column {
   padding-left: 40px; }
@@ -4625,10 +4620,9 @@ table {
     font-size: 14px;
     line-height: 18px;
     color: #000000; }
-
-@media (max-width: 380px) {
-  .sign-in__wrapper {
-    padding: 40px 15px 0 15px; } }
+  @media (max-width: 380px) {
+    .sign-in .sign-in__wrapper {
+      padding: 20px 10px 0 10px; } }
 
 .switch {
   position: relative;
@@ -5260,4 +5254,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.aec20e7627882f908e3b.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.bf67ebc4c3616f43b313.css.map*/
