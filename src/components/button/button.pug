@@ -2,7 +2,8 @@ mixin button( { variant = '', purpose = 'button', label = '', wide=false,slim=fa
   - let buttonClassName=`button button_${variant}`
   if variant==='arrow'
     a(class=buttonClassName type=purpose)
-      span.button__arrow-label=label
+      span.button__arrow-label
+        span=label
       span.button__arrow
         span.material-icons='arrow_forward'
   else if variant==='link'

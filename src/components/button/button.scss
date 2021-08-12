@@ -203,7 +203,8 @@
   justify-content: center;
   line-height: 15px;
   text-transform: uppercase;
-  width: 320px;
+  max-width: 320px;
+  width: 100%;
 
   &:hover{
     opacity: .5;
@@ -215,19 +216,18 @@
     display: flex;
     font-weight: normal;
     line-height: 24px;
-    position: absolute;
     text-align: center;
     justify-content: center;
     height: 44px;
-    left: 276px;
-    top: 0;
     width: 44px;
+    margin-left: auto;
   }
 
   .button__arrow-label {
-    max-width: 256px;
+    max-width: 246px;
     max-height: 15px;
     overflow: hidden;
+    position: absolute;
   }
 
 }
