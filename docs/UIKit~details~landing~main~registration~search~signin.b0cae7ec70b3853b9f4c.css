@@ -921,7 +921,8 @@ table {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
   height: 44px;
-  width: 320px;
+  max-width: 320px;
+  width: 100%;
   font-family: Montserrat, "Arial,sans-serif"; }
   .text-field:hover {
     border: 1px solid rgba(31, 32, 65, 0.5); }
@@ -2359,7 +2360,8 @@ table {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
   height: 44px;
-  width: 320px;
+  max-width: 320px;
+  width: 100%;
   font-family: Montserrat, "Arial,sans-serif"; }
   .text-field:hover {
     border: 1px solid rgba(31, 32, 65, 0.5); }
@@ -3235,7 +3237,8 @@ table {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
   height: 44px;
-  width: 320px;
+  max-width: 320px;
+  width: 100%;
   font-family: Montserrat, "Arial,sans-serif"; }
   .text-field:hover {
     border: 1px solid rgba(31, 32, 65, 0.5); }
@@ -5036,7 +5039,8 @@ table {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
   height: 44px;
-  width: 320px;
+  max-width: 320px;
+  width: 100%;
   font-family: Montserrat, "Arial,sans-serif"; }
   .text-field:hover {
     border: 1px solid rgba(31, 32, 65, 0.5); }
@@ -5236,4 +5240,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.d19a1359c953e32a5256.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.b0cae7ec70b3853b9f4c.css.map*/
