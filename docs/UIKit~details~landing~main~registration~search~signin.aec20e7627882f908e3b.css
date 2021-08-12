@@ -4308,14 +4308,13 @@ table {
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  width: 380px; }
+  max-width: 380px;
+  width: 100%;
+  height: 511px;
+  background: #ffffff;
+  font-style: normal; }
   .room-price__wrapper {
-    width: 320px;
-    height: 511px;
-    margin: 0px auto;
-    font-style: normal;
-    background: #ffffff;
-    padding-top: 40px; }
+    padding: 40px 30px 0 30px; }
   .room-price__room-specifications, .room-price__room-specifications {
     margin-bottom: 20px;
     align-items: center;
@@ -4421,9 +4420,8 @@ table {
     flex-direction: row; }
 
 @media (max-width: 380px) {
-  .room-price {
-    max-width: 380px;
-    width: 100%; } }
+  .room-price__wrapper {
+    padding: 20px 10px 0 10px; } }
 
 .cards__central-column {
   padding-left: 40px; }
@@ -5262,4 +5260,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.aca00f6b691e8410ef06.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.aec20e7627882f908e3b.css.map*/
