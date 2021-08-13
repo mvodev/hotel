@@ -187,9 +187,28 @@
     color: $darkShade50;
   }
 
+  &__arrow {
+    align-items: center;
+    color: $white;
+    display: flex;
+    font-weight: normal;
+    line-height: 24px;
+    text-align: center;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
+    margin-left: auto;
+  }
+
+  &__arrow-label {
+    max-width: 246px;
+    max-height: 15px;
+    overflow: hidden;
+    position: absolute;
+  }
 }
 
-.button_arrow {
+.button_with-arrow {
   align-items: center;
   border-radius: 22px;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
@@ -208,26 +227,6 @@
 
   &:hover{
     opacity: .5;
-  }
-
-  .button__arrow {
-    align-items: center;
-    color: $white;
-    display: flex;
-    font-weight: normal;
-    line-height: 24px;
-    text-align: center;
-    justify-content: center;
-    height: 44px;
-    width: 44px;
-    margin-left: auto;
-  }
-
-  .button__arrow-label {
-    max-width: 246px;
-    max-height: 15px;
-    overflow: hidden;
-    position: absolute;
   }
 
 }

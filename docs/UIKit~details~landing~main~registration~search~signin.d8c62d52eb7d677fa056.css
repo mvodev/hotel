@@ -3653,8 +3653,24 @@ table {
     text-decoration: none; }
   .button_transparent span:hover {
     color: rgba(31, 32, 65, 0.5); }
+  .button__arrow {
+    align-items: center;
+    color: #ffffff;
+    display: flex;
+    font-weight: normal;
+    line-height: 24px;
+    text-align: center;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
+    margin-left: auto; }
+  .button__arrow-label {
+    max-width: 246px;
+    max-height: 15px;
+    overflow: hidden;
+    position: absolute; }
 
-.button_arrow {
+.button_with-arrow {
   align-items: center;
   border-radius: 22px;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
@@ -3670,24 +3686,8 @@ table {
   text-transform: uppercase;
   max-width: 320px;
   width: 100%; }
-  .button_arrow:hover {
+  .button_with-arrow:hover {
     opacity: .5; }
-  .button_arrow .button__arrow {
-    align-items: center;
-    color: #ffffff;
-    display: flex;
-    font-weight: normal;
-    line-height: 24px;
-    text-align: center;
-    justify-content: center;
-    height: 44px;
-    width: 44px;
-    margin-left: auto; }
-  .button_arrow .button__arrow-label {
-    max-width: 246px;
-    max-height: 15px;
-    overflow: hidden;
-    position: absolute; }
 
 .toggle {
   width: 260px; }
@@ -5028,8 +5028,24 @@ table {
     text-decoration: none; }
   .button_transparent span:hover {
     color: rgba(31, 32, 65, 0.5); }
+  .button__arrow {
+    align-items: center;
+    color: #ffffff;
+    display: flex;
+    font-weight: normal;
+    line-height: 24px;
+    text-align: center;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
+    margin-left: auto; }
+  .button__arrow-label {
+    max-width: 246px;
+    max-height: 15px;
+    overflow: hidden;
+    position: absolute; }
 
-.button_arrow {
+.button_with-arrow {
   align-items: center;
   border-radius: 22px;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
@@ -5045,24 +5061,8 @@ table {
   text-transform: uppercase;
   max-width: 320px;
   width: 100%; }
-  .button_arrow:hover {
+  .button_with-arrow:hover {
     opacity: .5; }
-  .button_arrow .button__arrow {
-    align-items: center;
-    color: #ffffff;
-    display: flex;
-    font-weight: normal;
-    line-height: 24px;
-    text-align: center;
-    justify-content: center;
-    height: 44px;
-    width: 44px;
-    margin-left: auto; }
-  .button_arrow .button__arrow-label {
-    max-width: 246px;
-    max-height: 15px;
-    overflow: hidden;
-    position: absolute; }
 
 .text-field {
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -5269,4 +5269,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.da9f4224cc79db394acf.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.d8c62d52eb7d677fa056.css.map*/
