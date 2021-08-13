@@ -1,7 +1,7 @@
 @import "../../styles/common/constants.scss";
 @import "../../styles/common/pages.scss";
 
-.sign {
+.main {
 
   margin: 0 auto;
   width: 100%;
@@ -27,11 +27,11 @@
     margin: 172px auto;
   }
 
-  .sign__content {
+  &__content {
     flex: 1 0 auto;
   }
 
-  .sign footer {
+  & footer {
     flex: 0 0 auto;
   }
 
@@ -39,12 +39,12 @@
 
 @media (max-width: $container-mobile-width) {
 
-  .sign__wrapper {
+  .main__wrapper {
     max-width: none;
     max-height: none;
   }
 
-  .sign__img-wrapper .sign-in {
+  .main__img-wrapper .sign-in {
     margin: 20px auto;
   }
   

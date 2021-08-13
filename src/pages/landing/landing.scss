@@ -1,8 +1,7 @@
 @import "../../styles/common/constants.scss";
 @import "../../styles/common/pages.scss";
 
-.landing {
-
+.main {
 
   &__content {
     flex-grow: 1;
@@ -44,7 +43,7 @@
     justify-content: flex-end;
   }
 
-  .landing footer {
+  & footer {
     flex: 0 0 auto;
   }
 
@@ -57,18 +56,14 @@
 
   @media (max-width: $container-mobile-width) {
 
-    &-wrapper {
-      max-width: none;
-    }
-
-    .landing__search-wrapper {
+    .main__search-wrapper {
       margin: 10px auto;
       max-width: 380px;
       width: 100%;
       padding: 0px;
     }
 
-    .landing__img-wrapper h1 {
+    .main__img-wrapper h1 {
       display: none;
     }
 

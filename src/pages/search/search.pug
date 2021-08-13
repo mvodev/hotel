@@ -14,9 +14,9 @@ block content
   include ../../components/room-card/room-card.pug
   include ../../components/pagination/pagination.pug
 
-  main.search
-    .search__content
-      aside.search__left-column
+  main.main
+    .main__content
+      aside.main__left-column
         article.left-column
           h1(class='left-column__header left-column__header_dates')='ДАТЫ ПРЕБЫВАНИЯ В ОТЕЛЕ'
           .left-column__dropdown-filter
@@ -81,7 +81,7 @@ block content
                           {text:'Шампунь',isChecked:false}
                           ]
                   })
-      section.search__right-column
+      section.main__right-column
         article.right-column
           h2(class='right-column__header right-column__header_main')='Номера, которые мы для вас подобрали'
           .right-column__rooms

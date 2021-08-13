@@ -1,0 +1,128 @@
+.flexible-body {
+  display: flex;
+  flex-direction: column; }
+
+.main {
+  display: flex;
+  font-family: Montserrat, "Arial,sans-serif";
+  flex-grow: 1;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0px auto;
+  flex-direction: column;
+  width: 100%; }
+
+.main__content {
+  flex: 1 0 auto;
+  margin: 30px auto 0 auto;
+  max-width: 1470px;
+  padding: 0 15px;
+  display: grid;
+  grid-template-areas: "left right";
+  grid-template-columns: 320px 834px;
+  grid-template-rows: 1fr 75px;
+  column-gap: 6px;
+  max-width: 1440px -250px; }
+
+.main footer {
+  flex: 0 0 auto; }
+
+.main__left-column {
+  grid-area: left;
+  display: flex;
+  flex-direction: column; }
+
+.main__right-column {
+  grid-area: right; }
+
+.main .left-column__dropdown-filter {
+  width: 266px; }
+
+.main .left-column__header {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
+  margin-bottom: 5px; }
+
+.main .left-column__header_guests {
+  margin-top: 20px; }
+
+.main .left-column__header_price {
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(31, 32, 65, 0.5);
+  margin-bottom: 31px;
+  font-weight: normal;
+  text-transform: none; }
+
+.main .left-column__header_rules, .main .left-column__header_availability {
+  margin-bottom: 16px; }
+
+.main .left-column__button-check {
+  margin-bottom: 18px; }
+
+.main .left-column__button-rich_first {
+  margin-bottom: 10px; }
+
+.main .left-column__button-rich_last {
+  margin-bottom: 31px; }
+
+.main .left-column__dropdown-room, .main .left-column__dropdown-guests {
+  width: 266px; }
+
+.main .left-column__dropdown-guests {
+  margin-bottom: 27px; }
+
+.main .left-column__dropdown-room {
+  margin-bottom: 15px; }
+
+.main .range-slider__wrapper {
+  margin-bottom: 5px; }
+
+.main .right-column__rooms {
+  display: grid;
+  grid-template-columns: repeat(3, 270px);
+  grid-template-rows: repeat(4, 257px);
+  row-gap: 20px;
+  column-gap: 12px; }
+
+.main .right-column__pagination {
+  margin-top: 44px;
+  display: flex;
+  justify-content: center; }
+
+.main .right-column__header {
+  font-family: Montserrat, "Arial,sans-serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1f2041;
+  margin-bottom: 21px; }
+
+@media (max-width: 1230px) {
+  .main .right-column__rooms {
+    grid-template-columns: repeat(2, 270px);
+    grid-template-rows: repeat(6, 257px); } }
+
+@media (max-width: 1024px) {
+  .main__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto; }
+  .main .right-column__rooms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .main .right-column__pagination {
+    margin: 10px auto 0 auto; }
+  .main .right-column__header {
+    text-align: center; } }
+
+
+/*# sourceMappingURL=search.1c377cbdb18e677677fa.css.map*/

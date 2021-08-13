@@ -10,18 +10,18 @@ block content
   include ../../components/diagram/diagram.pug
   include ../../components/comment/comment.pug
 
-  main.details
-    .details__content
-      .details__room-images
+  main.main
+    .main__content
+      .main__room-images
         .room-images-left
-          img.details__room-image(src="./assets/img/jpg/room-details-big.jpg", alt="room image")
+          img.main__room-image(src="./assets/img/jpg/room-details-big.jpg", alt="room image")
         .room-images-right
           .room-images-right__top
-            img.details__room-image(src="./assets/img/jpg/room-details-small-top.jpg", alt="room image small")
+            img.main__room-image(src="./assets/img/jpg/room-details-small-top.jpg", alt="room image small")
           .room-images-right__bottom
-            img.details__room-image(src="./assets/img/jpg/room-details-small-bottom.jpg", alt="room image small")
-      .details__body
-        aside.details__body-left
+            img.main__room-image(src="./assets/img/jpg/room-details-small-bottom.jpg", alt="room image small")
+      .main__body
+        aside.main__body-left
           .left-column
             article.left-column__room-impressions
               section.left-column__content
@@ -54,7 +54,7 @@ block content
               h2.left-column__comments-header
                 span.left-column__comments-header_main='Отзывы посетителей номера'
                 span.left-column__comments-header_number='2 отзыва'
-              .details-comment.details-comment_first
+              .main-comment.main-comment_first
                 +comment({
                         headerName:'Мурад Сарафанов',
                         headerTime:'5 дней назад',
@@ -63,7 +63,7 @@ block content
                         isLiked:true,
                         text:'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не  жаловался из соседей.'
                         })
-              .details-comment.details-comment_second
+              .main-comment.main-comment_second
                 +comment({
                         headerName:'Патрисия Стёклышкова',
                         headerTime:'Неделю назад',
@@ -83,7 +83,7 @@ block content
               .rules__text-wrapper
                 h3='Отмена'
                 p='Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия   вы получите полный возврат за вычетом сбора за услуги.'
-        .details__body-right
+        .main__body-right
           +roomprice({
                     roomNumber:888,
                     priceHeader:'9 990₽',

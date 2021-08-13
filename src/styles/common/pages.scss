@@ -3,10 +3,12 @@
   flex-direction: column;
 }
 .main{
-  font-family: $font-family-main, $fallback-font;
-  margin: 0px auto;
   display: flex;
+  font-family: $font-family-main, $fallback-font;
+  flex-grow: 1;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0px auto;
   flex-direction: column;
   width: 100%;
-  flex-grow: 1;
 }

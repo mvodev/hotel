@@ -3,20 +3,22 @@
   flex-direction: column; }
 
 .main {
-  font-family: Montserrat, "Arial,sans-serif";
-  margin: 0px auto;
   display: flex;
+  font-family: Montserrat, "Arial,sans-serif";
+  flex-grow: 1;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0px auto;
   flex-direction: column;
-  width: 100%;
+  width: 100%; }
+
+.main__content {
   flex-grow: 1; }
 
-.reg__content {
-  flex: 1 0 auto; }
-
-.reg footer {
+.main footer {
   flex: 0 0 auto; }
 
-.reg__img-wrapper {
+.main__img-wrapper {
   min-height: 685px;
   height: 100%;
   width: 100%;
@@ -27,13 +29,13 @@
   background-repeat: no-repeat;
   background-position-y: center; }
 
-.reg__img-wrapper .sign-up {
+.main__img-wrapper .sign-up {
   margin: 19px auto; }
 
 @media (max-width: 767px) {
-  .reg-wrapper {
+  .main-wrapper {
     max-width: none;
     max-height: none; } }
 
 
-/*# sourceMappingURL=registration.eba5ba9a517ac9cfc55f.css.map*/
+/*# sourceMappingURL=registration.1c377cbdb18e677677fa.css.map*/
