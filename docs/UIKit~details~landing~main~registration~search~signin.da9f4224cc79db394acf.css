@@ -1100,9 +1100,12 @@ table {
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   height: 374px;
-  border: 1px solid rgba(0, 0, 0, 0.12); }
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 40px 30px 0 30px; }
   .search-number__wrapper {
-    padding: 40px 30px 0 30px; }
+    margin: 0 auto;
+    max-width: 320px;
+    width: 100%; }
   .search-number__header {
     font-family: Montserrat, "Arial,sans-serif";
     font-style: normal;
@@ -1133,12 +1136,10 @@ table {
     overflow: hidden; }
   .search-number__button {
     margin-top: 31px; }
-  @media (max-width: 380px) {
-    .search-number .search-number__wrapper {
-      padding: 20px 10px 0 10px; }
-    .search-number .search-number__header {
-      font-size: 17px;
-      line-height: 21px; } }
+
+@media (max-width: 380px) {
+  .search-number {
+    padding: 40px 10px 0 10px; } }
 
 .dropdown-counter {
   font-family: Montserrat, "Arial,sans-serif";
@@ -4215,9 +4216,12 @@ table {
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   height: 374px;
-  border: 1px solid rgba(0, 0, 0, 0.12); }
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 40px 30px 0 30px; }
   .search-number__wrapper {
-    padding: 40px 30px 0 30px; }
+    margin: 0 auto;
+    max-width: 320px;
+    width: 100%; }
   .search-number__header {
     font-family: Montserrat, "Arial,sans-serif";
     font-style: normal;
@@ -4248,12 +4252,10 @@ table {
     overflow: hidden; }
   .search-number__button {
     margin-top: 31px; }
-  @media (max-width: 380px) {
-    .search-number .search-number__wrapper {
-      padding: 20px 10px 0 10px; }
-    .search-number .search-number__header {
-      font-size: 17px;
-      line-height: 21px; } }
+
+@media (max-width: 380px) {
+  .search-number {
+    padding: 40px 10px 0 10px; } }
 
 .cards__left-column {
   padding-left: 140px; }
@@ -4313,9 +4315,12 @@ table {
   width: 100%;
   height: 511px;
   background: #ffffff;
-  font-style: normal; }
+  font-style: normal;
+  padding: 40px 30px 0 30px; }
   .room-price__wrapper {
-    padding: 40px 30px 0 30px; }
+    margin: 0 auto;
+    max-width: 320px;
+    width: 100%; }
   .room-price__room-specifications, .room-price__room-specifications {
     margin-bottom: 20px;
     align-items: center;
@@ -4419,9 +4424,10 @@ table {
   .room-price__service-extra-fee div:first-child {
     display: flex;
     flex-direction: row; }
-  @media (max-width: 380px) {
-    .room-price .room-price__wrapper {
-      padding: 20px 10px 0 10px; } }
+
+@media (max-width: 380px) {
+  .room-price {
+    padding: 40px 10px 0 10px; } }
 
 .cards__central-column {
   padding-left: 40px; }
@@ -5263,4 +5269,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.8dcc9482f077454ebea8.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.da9f4224cc79db394acf.css.map*/

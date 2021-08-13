@@ -6,9 +6,12 @@
   border-radius: 4px;
   height: 374px;
   border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 40px 30px 0 30px;
 
   &__wrapper {
-    padding: 40px 30px 0 30px;
+    margin: 0 auto;
+    max-width: 320px;
+    width: 100%;
   }
 
   &__header {
@@ -52,18 +55,18 @@
   &__button {
     margin-top: 31px;
   }
-
-  @media (max-width:380px){
-    .search-number__wrapper{
-      padding: 20px 10px 0 10px;
-    }
-
-    .search-number__header{
-      font-size: 17px;
-      line-height: 21px;
-    }
   
 }
+
+  @media (max-width:380px){
+    .search-number{
+      padding: 40px 10px 0 10px;
+    }
+
+    // .search-number__header{
+    //   font-size: 17px;
+    //   line-height: 21px;
+    // }
   
 }
 

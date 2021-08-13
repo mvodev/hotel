@@ -7,9 +7,12 @@
   height: 511px;
   background: $white;
   font-style: normal;
+  padding: 40px 30px 0 30px;
 
   &__wrapper {
-    padding: 40px 30px 0 30px;
+    margin: 0 auto;
+    max-width: 320px;
+    width: 100%;
   }
 
   &__room-specifications,
@@ -160,11 +163,11 @@
     flex-direction: row;
   }
 
-  @media (max-width:380px){
-    .room-price__wrapper{
-      padding: 20px 10px 0 10px;
+}
+
+@media (max-width:380px){
+    .room-price{
+      padding: 40px 10px 0 10px;
     }
   
-  }
-
 }

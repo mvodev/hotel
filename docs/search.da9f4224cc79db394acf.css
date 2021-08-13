@@ -101,7 +101,9 @@
     justify-content: center;
     align-items: center; }
   .search .right-column__pagination {
-    margin: 10px auto 0 auto; } }
+    margin: 10px auto 0 auto; }
+  .search .right-column__header {
+    text-align: center; } }
 
 
-/*# sourceMappingURL=search.8dcc9482f077454ebea8.css.map*/
+/*# sourceMappingURL=search.da9f4224cc79db394acf.css.map*/
