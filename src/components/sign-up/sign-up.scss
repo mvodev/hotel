@@ -6,9 +6,12 @@
   box-shadow: 0px 0px 25px $boxShadow;
   border-radius: 4px;
   height: 646px;
+  padding: 40px 30px 0 30px;
 
   &__wrapper {
-    padding: 40px 30px 0 30px;
+    margin: 0 auto;
+    max-width: 320px;
+    width: 100%;
   }
 
   &__text-wrapper {
@@ -74,18 +77,13 @@
     line-height: 18px;
     color: #000000;
   }
-
-  @media (max-width:380px){
-    .sign-up__wrapper{
-      padding: 20px 15px 0 15px;
-    }
-
-    .sign-up__header-reg{
-      font-size: 20px;
-      line-height: 24px;
-    }
   
 }
+
+  @media (max-width:380px){
+    .sign-up{
+      padding: 40px 10px 0 10px;
+    }
   
 }
 
