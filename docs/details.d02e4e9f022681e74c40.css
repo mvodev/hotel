@@ -99,12 +99,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
-
-.main .main-comment_first {
-  margin-bottom: 20px; }
-
-.main .main-comment_second {
-  margin-bottom: 5px; }
+  .main .left-column-comment_first {
+    margin-bottom: 20px; }
+  .main .left-column-comment_second {
+    margin-bottom: 5px; }
 
 .main .rules__text-wrapper {
   display: flex;
@@ -181,4 +179,4 @@
     text-align: center; } }
 
 
-/*# sourceMappingURL=details.d2d799f5468491785c5e.css.map*/
+/*# sourceMappingURL=details.d02e4e9f022681e74c40.css.map*/
