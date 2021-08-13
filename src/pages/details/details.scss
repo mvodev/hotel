@@ -169,68 +169,74 @@
 
 @media (max-width: 1200px) {
 
-  .main__content {
-    height: auto;
-    padding: 0px;
-  }
+  .main{
+    &__content {
+      height: auto;
+      padding: 0px;
+    }
 
-  .main__room-images {
-    grid-template-columns: 1fr;
-  }
+    &__room-images {
+      grid-template-columns: 1fr;
+    }
 
-  .main__room-images .room-images-right {
-    display: none;
-  }
+    &__room-images .room-images-right {
+      display: none;
+    }
 
-  .main__body {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 0;
-  }
+    &__body {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 0;
+    }
 
-  .main__body-left {
-    padding: 0 10px ;
-  }
+    &__body-left {
+      padding: 0 10px ;
+    }
 
-  .main__body-left .left-column {
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    align-items: center;
-  }
-  .main .left-column__room-impressions{
-    flex-direction: column;
-  }
-  .main__body-right {
-    margin-bottom: 10px;
-  }
+    &__body-left .left-column {
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto;
+      align-items: center;
+    }
 
-  .main .left-column__rules {
-    flex-direction: column;
-  }
+    & .left-column__room-impressions{
+      flex-direction: column;
+    }
 
-  .main .left-column__content {
-    margin-right: 0;
-    align-items: baseline;
-    flex-direction: column;
+    &__body-right {
+      margin-bottom: 10px;
+    }
+
+    & .left-column__rules {
+      flex-direction: column;
+    }
+
+    & .left-column__content {
+      margin-right: 0;
+      align-items: baseline;
+      flex-direction: column;
+    }
+
+    & .left-column__comments-header {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    & .left-column__impressions {
+      margin-right: 0;
+    }
+
   }
 
   .left-column__header {
     margin-top: 10px;
   }
+
   .left-column__comments {
     margin-top: 15px;
-  }
-
-  .main .left-column__comments-header {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .main .left-column__impressions {
-    margin-right: 0;
   }
 
   .left-column__rules {
