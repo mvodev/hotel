@@ -3653,7 +3653,7 @@ table {
     text-decoration: none; }
   .button_transparent span:hover {
     color: rgba(31, 32, 65, 0.5); }
-  .button__arrow {
+  .button__icon {
     align-items: center;
     color: #ffffff;
     display: flex;
@@ -3663,14 +3663,14 @@ table {
     justify-content: center;
     height: 44px;
     width: 44px; }
-  .button__arrow-label {
+  .button__icon-label {
     max-height: 15px;
     overflow: hidden;
     flex-grow: 1; }
   .button__empty-elem {
     width: 44px;
     height: 44px; }
-  .button_with-arrow {
+  .button_with-icon {
     align-items: center;
     border-radius: 22px;
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
@@ -3685,7 +3685,7 @@ table {
     text-transform: uppercase;
     max-width: 320px;
     width: 100%; }
-    .button_with-arrow:hover {
+    .button_with-icon:hover {
       opacity: .5; }
 
 .toggle {
@@ -5028,7 +5028,7 @@ table {
     text-decoration: none; }
   .button_transparent span:hover {
     color: rgba(31, 32, 65, 0.5); }
-  .button__arrow {
+  .button__icon {
     align-items: center;
     color: #ffffff;
     display: flex;
@@ -5038,14 +5038,14 @@ table {
     justify-content: center;
     height: 44px;
     width: 44px; }
-  .button__arrow-label {
+  .button__icon-label {
     max-height: 15px;
     overflow: hidden;
     flex-grow: 1; }
   .button__empty-elem {
     width: 44px;
     height: 44px; }
-  .button_with-arrow {
+  .button_with-icon {
     align-items: center;
     border-radius: 22px;
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
@@ -5060,7 +5060,7 @@ table {
     text-transform: uppercase;
     max-width: 320px;
     width: 100%; }
-    .button_with-arrow:hover {
+    .button_with-icon:hover {
       opacity: .5; }
 
 .text-field {
@@ -5268,4 +5268,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.d02e4e9f022681e74c40.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.1a48ffd677ef84133ef5.css.map*/

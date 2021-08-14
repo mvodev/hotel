@@ -187,7 +187,7 @@
     color: $darkShade50;
   }
 
-  &__arrow {
+  &__icon {
     align-items: center;
     color: $white;
     display: flex;
@@ -199,7 +199,7 @@
     width: 44px;
   }
 
-  &__arrow-label {
+  &__icon-label {
     max-height: 15px;
     overflow: hidden;
     flex-grow: 1;
@@ -210,7 +210,7 @@
     height: 44px;
   }
 
-  &_with-arrow {
+  &_with-icon {
     align-items: center;
     border-radius: 22px;
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);

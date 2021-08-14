@@ -1,12 +1,12 @@
-mixin button( { variant = '', purpose = 'button', label = '', wide=false,slim=false,href='/mock-address/change-me'} = {})
+mixin button( { variant = '', purpose = 'button', label = '', wide=false,slim=false,href='/mock-address/change-me', icon='arrow_forward',} = {})
   - let buttonClassName=`button button_${variant}`
   if variant==='arrow'
-    button.button.button_with-arrow(type=purpose)
+    button.button.button_with-icon(type=purpose)
       span.button__empty-elem
-      span.button__arrow-label
+      span.button__icon-label
         span=label
-      span.button__arrow
-        span.material-icons='arrow_forward'
+      span.button__icon
+        span.material-icons=icon
   else if variant==='link'
     -
       buttonClassName+=wide?'_wide':''
