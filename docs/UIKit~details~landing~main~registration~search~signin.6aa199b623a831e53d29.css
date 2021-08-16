@@ -3535,16 +3535,14 @@ table {
   overflow: hidden;
   position: relative;
   text-decoration: none;
-  width: 99px; }
+  width: 99px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase; }
   .button_dark {
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase; }
-  .button_dark:hover {
-    opacity: 0.5; }
+    color: #ffffff; }
   .button_white {
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     border-radius: 22px;
@@ -3574,14 +3572,10 @@ table {
   .button_white .button__label,
   .button_transparent .button__label {
     color: #bc9cff;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
     white-space: nowrap;
     position: relative;
     z-index: 2; }
-  .button_white:hover, .button_link:hover {
+  .button_white:hover, .button_link:hover, .button_dark:hover {
     background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
   .button_transparent {
     border: none;
@@ -3615,16 +3609,12 @@ table {
     color: #ffffff;
     display: flex;
     flex-direction: row;
-    font-weight: bold;
-    font-size: 12px;
     height: 44px;
     position: relative;
-    line-height: 15px;
-    text-transform: uppercase;
     max-width: 320px;
     width: 100%; }
     .button_with-icon:hover {
-      opacity: .5; }
+      background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
 
 .toggle {
   width: 260px; }
@@ -4846,16 +4836,14 @@ table {
   overflow: hidden;
   position: relative;
   text-decoration: none;
-  width: 99px; }
+  width: 99px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase; }
   .button_dark {
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase; }
-  .button_dark:hover {
-    opacity: 0.5; }
+    color: #ffffff; }
   .button_white {
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     border-radius: 22px;
@@ -4885,14 +4873,10 @@ table {
   .button_white .button__label,
   .button_transparent .button__label {
     color: #bc9cff;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
     white-space: nowrap;
     position: relative;
     z-index: 2; }
-  .button_white:hover, .button_link:hover {
+  .button_white:hover, .button_link:hover, .button_dark:hover {
     background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
   .button_transparent {
     border: none;
@@ -4926,16 +4910,12 @@ table {
     color: #ffffff;
     display: flex;
     flex-direction: row;
-    font-weight: bold;
-    font-size: 12px;
     height: 44px;
     position: relative;
-    line-height: 15px;
-    text-transform: uppercase;
     max-width: 320px;
     width: 100%; }
     .button_with-icon:hover {
-      opacity: .5; }
+      background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
 
 .text-field {
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -5142,4 +5122,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.a96b48474aa1eaf1ca8f.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.6aa199b623a831e53d29.css.map*/

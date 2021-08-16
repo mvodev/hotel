@@ -14,18 +14,14 @@
   position: relative;
   text-decoration: none;
   width: 99px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
 
   &_dark {
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     color: $white;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-  }
-
-  &_dark:hover {
-    opacity: 0.5;
   }
 
   &_white{
@@ -68,17 +64,14 @@
   &_white .button__label,
   &_transparent .button__label { 
     color: $purple;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
     white-space: nowrap;
     position: relative;
     z-index: 2;
   }
 
   &_white:hover,
-  &_link:hover {
+  &_link:hover,
+  &_dark:hover {
     background: linear-gradient(
       180deg,
       rgba(188, 156, 255, 0.5) 0%,
@@ -124,21 +117,23 @@
   &_with-icon {
     align-items: center;
     border-radius: 22px;
-    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    background: linear-gradient(
+      180deg, 
+      #bc9cff 0%, 
+      #8ba4f9 100%);
     color: $white;
     display: flex;
     flex-direction: row;
-    font-weight: bold;
-    font-size: 12px;
     height: 44px;
     position: relative;
-    line-height: 15px;
-    text-transform: uppercase;
     max-width: 320px;
     width: 100%;
 
     &:hover{
-      opacity: .5;
+      background: linear-gradient(
+      180deg,
+      rgba(188, 156, 255, 0.5) 0%,
+      rgba(139, 164, 249, 0.5) 100%);
     }
 
   }
