@@ -17,7 +17,6 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  min-height: 100%;
   flex: 1 0 auto; }
   .main__img-wrapper {
     min-height: 702px;
@@ -45,4 +44,4 @@
     margin: 20px auto; } }
 
 
-/*# sourceMappingURL=signin.4a904e935893cfda9847.css.map*/
+/*# sourceMappingURL=signin.f03a68e0213410a1255a.css.map*/
