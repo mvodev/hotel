@@ -1483,9 +1483,6 @@ table {
     justify-content: space-between;
     color: #bc9cff;
     margin: 20px 7px 12px 14px; }
-  .dropdown .buttons-dropdown__clear,
-  .dropdown .buttons-dropdown__apply {
-    cursor: pointer; }
   .dropdown .buttons-dropdown_hidden {
     visibility: hidden;
     cursor: none; }
@@ -3170,9 +3167,6 @@ table {
     justify-content: space-between;
     color: #bc9cff;
     margin: 20px 7px 12px 14px; }
-  .dropdown .buttons-dropdown__clear,
-  .dropdown .buttons-dropdown__apply {
-    cursor: pointer; }
   .dropdown .buttons-dropdown_hidden {
     visibility: hidden;
     cursor: none; }
@@ -3582,7 +3576,7 @@ table {
     background: none;
     height: 15px;
     padding: 0px;
-    width: 61px; }
+    overflow: hidden; }
   .button_transparent .button__label:hover {
     color: rgba(31, 32, 65, 0.5); }
   .button__icon {
@@ -4883,7 +4877,7 @@ table {
     background: none;
     height: 15px;
     padding: 0px;
-    width: 61px; }
+    overflow: hidden; }
   .button_transparent .button__label:hover {
     color: rgba(31, 32, 65, 0.5); }
   .button__icon {
@@ -5122,4 +5116,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.f03a68e0213410a1255a.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.bb26da6881a0d6976ebe.css.map*/

@@ -141,12 +141,14 @@ class DropdownCount {
       this.dropdownType = 'room';
     } else if (this.rootElem.classList.contains("dropdown_guests")) {
       this.dropdownType = 'guests';
-      this.applyButton = this.rootElem.querySelector(".buttons-dropdown__apply");
-      this.clearButton = this.rootElem.querySelector(".buttons-dropdown__clear");
+      this.applyButton = this.rootElem.querySelector(".js-dropdown__body-buttons").lastChild;
+      this.clearButton = this.rootElem.querySelector(".js-dropdown__body-buttons").firstChild;
+      this._checkIfClearButtonMustBeShown();
     }
     this.counters.forEach(elem => {
       this.dropdownCounters.push(new _dropdown_counter_dropdown_counter__WEBPACK_IMPORTED_MODULE_0__["default"](elem));
     });
+    
   }
   showDropdown() {
     this.rootElem.classList.add("dropdown_is-opened");
@@ -174,12 +176,7 @@ class DropdownCount {
   }
   _handleCounter() {
     if (this.dropdownType === 'guests') {
-      if(this._collectData().total>0){
-        this._showClearButton();
-      }
-      else {
-        this._hideClearButton();
-      }
+      this._checkIfClearButtonMustBeShown();
     }
     if (this.dropdownType === 'room') {
       this._setData(this._collectData());
@@ -190,24 +187,14 @@ class DropdownCount {
       this.hideDropdown();
     } else {
       this.showDropdown();
-    }
-    if (this._collectData().total > 0) {
-      this._showClearButton();
-    }
-    else {
-      this._hideClearButton();
+      this._checkIfClearButtonMustBeShown();
     }
   }
   _handleApplyButton() {
     let result = this._collectData();
     this._setData(result);
     this.hideDropdown();
-    if (result.total === 0) {
-      this._hideClearButton();
-    }
-    else {
-      this._showClearButton();
-    }
+    this._checkIfClearButtonMustBeShown();
   }
   _handleClearButton() {
     this._clearData();
@@ -280,7 +267,7 @@ class DropdownCount {
         else temp += result.baths + " " + this.spellCases.baths[this._getPosInSpellCasesArray(result.baths)];
       }
       temp += '...';
-      if(result.total===0){
+      if (result.total === 0) {
         temp = '';
       }
       this.input.value = temp;
@@ -300,6 +287,14 @@ class DropdownCount {
   }
   _hideClearButton() {
     this.clearButton.classList.add('buttons-dropdown_hidden');
+  }
+  _checkIfClearButtonMustBeShown(){
+    if (this._collectData().total > 0) {
+      this._showClearButton();
+    }
+    else {
+      this._hideClearButton();
+    }
   }
 }
 /* harmony default export */ __webpack_exports__["default"] = (DropdownCount);
@@ -2791,4 +2786,4 @@ document.querySelectorAll('.js-list-links__arrow').forEach(elem=>new _sublinks_c
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.763bcf1a48af07ae65e2.js.map
+//# sourceMappingURL=UIKit~details~landing~search.81313140d8b11a98acce.js.map

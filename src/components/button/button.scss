@@ -83,7 +83,7 @@
     background: none;
     height: 15px;
     padding: 0px;
-    width: 61px;
+    overflow: hidden;
   }
 
   &_transparent .button__label:hover {
