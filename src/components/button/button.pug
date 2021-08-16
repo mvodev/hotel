@@ -11,6 +11,7 @@ mixin button( { variant = '', purpose = 'button', label = '', wide=false,slim=fa
     -
       buttonClassName+=wide?' button_wide button_dark':''
       buttonClassName+=slim?' button_slim button_white':''
+      buttonClassName+=!slim&&!wide?' button_white':''
     a(class=buttonClassName href=href)
       span.button__label=label
   else
