@@ -4,10 +4,10 @@
   border-radius: 4px;
   max-width: 380px;
   width: 100%;
-  height: 511px;
+  min-height: 511px;
   background: $white;
   font-style: normal;
-  padding: 40px 30px 0 30px;
+  padding: 40px 30px 30px 30px;
 
   &__wrapper {
     margin: 0 auto;
@@ -167,7 +167,7 @@
 
 @media (max-width:380px){
     .room-price{
-      padding: 40px 10px 0 10px;
+      padding: 40px 10px 30px 10px;
     }
   
 }

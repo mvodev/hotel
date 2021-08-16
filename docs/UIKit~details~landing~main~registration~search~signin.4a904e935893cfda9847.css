@@ -1099,9 +1099,9 @@ table {
   background-color: #ffffff;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  height: 374px;
+  min-height: 374px;
   border: 1px solid rgba(0, 0, 0, 0.12);
-  padding: 40px 30px 0 30px; }
+  padding: 40px 30px 30px 30px; }
   .search-number__wrapper {
     margin: 0 auto;
     max-width: 320px;
@@ -1139,7 +1139,7 @@ table {
 
 @media (max-width: 380px) {
   .search-number {
-    padding: 40px 10px 0 10px; } }
+    padding: 40px 10px 30px 10px; } }
 
 .dropdown-counter {
   font-family: Montserrat, "Arial,sans-serif";
@@ -4083,8 +4083,8 @@ table {
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  height: 646px;
-  padding: 40px 30px 0 30px; }
+  min-height: 646px;
+  padding: 40px 30px 30px 30px; }
   .sign-up__wrapper {
     margin: 0 auto;
     max-width: 320px;
@@ -4135,7 +4135,7 @@ table {
 
 @media (max-width: 380px) {
   .sign-up {
-    padding: 40px 10px 0 10px; } }
+    padding: 40px 10px 30px 10px; } }
 
 .search-number {
   max-width: 380px;
@@ -4143,9 +4143,9 @@ table {
   background-color: #ffffff;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  height: 374px;
+  min-height: 374px;
   border: 1px solid rgba(0, 0, 0, 0.12);
-  padding: 40px 30px 0 30px; }
+  padding: 40px 30px 30px 30px; }
   .search-number__wrapper {
     margin: 0 auto;
     max-width: 320px;
@@ -4183,7 +4183,7 @@ table {
 
 @media (max-width: 380px) {
   .search-number {
-    padding: 40px 10px 0 10px; } }
+    padding: 40px 10px 30px 10px; } }
 
 .cards__left-column {
   padding-left: 140px; }
@@ -4193,12 +4193,12 @@ table {
 .sign-in {
   max-width: 380px;
   width: 100%;
-  height: 358px;
+  min-height: 358px;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background: #ffffff;
-  padding: 40px 30px 0 30px; }
+  padding: 40px 30px 32px 30px; }
   .sign-in__wrapper {
     margin: 0 auto;
     max-width: 320px;
@@ -4233,7 +4233,7 @@ table {
 
 @media (max-width: 380px) {
   .sign-in {
-    padding: 40px 10px 0 10px; } }
+    padding: 40px 10px 32px 10px; } }
 
 .room-price {
   border: 1px solid rgba(0, 0, 0, 0.12);
@@ -4241,10 +4241,10 @@ table {
   border-radius: 4px;
   max-width: 380px;
   width: 100%;
-  height: 511px;
+  min-height: 511px;
   background: #ffffff;
   font-style: normal;
-  padding: 40px 30px 0 30px; }
+  padding: 40px 30px 30px 30px; }
   .room-price__wrapper {
     margin: 0 auto;
     max-width: 320px;
@@ -4355,7 +4355,7 @@ table {
 
 @media (max-width: 380px) {
   .room-price {
-    padding: 40px 10px 0 10px; } }
+    padding: 40px 10px 30px 10px; } }
 
 .cards__central-column {
   padding-left: 40px; }
@@ -4525,12 +4525,12 @@ table {
 .sign-in {
   max-width: 380px;
   width: 100%;
-  height: 358px;
+  min-height: 358px;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   background: #ffffff;
-  padding: 40px 30px 0 30px; }
+  padding: 40px 30px 32px 30px; }
   .sign-in__wrapper {
     margin: 0 auto;
     max-width: 320px;
@@ -4565,7 +4565,7 @@ table {
 
 @media (max-width: 380px) {
   .sign-in {
-    padding: 40px 10px 0 10px; } }
+    padding: 40px 10px 32px 10px; } }
 
 .switch {
   position: relative;
@@ -5122,4 +5122,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.afe2e07988e418187ac1.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.4a904e935893cfda9847.css.map*/

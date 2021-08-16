@@ -5,8 +5,8 @@
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-shadow: 0px 0px 25px $boxShadow;
   border-radius: 4px;
-  height: 646px;
-  padding: 40px 30px 0 30px;
+  min-height: 646px;
+  padding: 40px 30px 30px 30px;
 
   &__wrapper {
     margin: 0 auto;
@@ -82,7 +82,7 @@
 
   @media (max-width:380px){
     .sign-up{
-      padding: 40px 10px 0 10px;
+      padding: 40px 10px 30px 10px;
     }
   
 }
