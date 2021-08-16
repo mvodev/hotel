@@ -4,15 +4,15 @@ mixin button( { variant = '', purpose = 'button', label = '', wide=false,slim=fa
     button.button.button_with-icon(type=purpose)
       span.button__empty-elem
       span.button__icon-label
-        span=label
+        span.button__label=label
       span.button__icon
         span.material-icons=icon
   else if variant==='link'
     -
-      buttonClassName+=wide?'_wide':''
-      buttonClassName+=slim?'_slim':''
+      buttonClassName+=wide?' button_wide button_dark':''
+      buttonClassName+=slim?' button_slim button_white':''
     a(class=buttonClassName href=href)
-      span=label
+      span.button__label=label
   else
     button(class=buttonClassName type=purpose)
-      span=label
+      span.button__label=label

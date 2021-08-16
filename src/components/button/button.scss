@@ -15,8 +15,7 @@
   text-decoration: none;
   width: 99px;
 
-  &_dark,
-  &_dark50 {
+  &_dark {
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     color: $white;
     font-weight: bold;
@@ -25,23 +24,17 @@
     text-transform: uppercase;
   }
 
-  &_dark50 {
-    opacity: 0.5;
-  }
-
   &_dark:hover {
     opacity: 0.5;
   }
 
-  &_white,
-  &_link {
+  &_white{
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     border-radius: 22px;
     position: relative;
   }
 
-  &_white::before,
-  &_link::before {
+  &_white::before{
     background: #ffffff;
     bottom: 2px;
     border-radius: inherit;
@@ -60,91 +53,20 @@
     text-decoration: none;
     justify-content: center;
 
-    &_wide {
-      width: 196px;
-      height: 34px;
-      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-      align-items: center;
-      display: flex;
-      text-decoration: none;
-      justify-content: center;
-    }
-
-    &_wide span {
-      color: $white;
-      font-weight: bold;
-      font-size: 12px;
-      line-height: 15px;
-      text-transform: uppercase;
-      white-space: nowrap;
-    }
-
-    &_wide:hover{
-      opacity: .5;
-    } 
-
-    &_slim{
-      width: 87px;
-      height: 34px;
-      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-      border-radius: 22px;
-      position: relative;
-      align-items: center;
-      display: flex;
-      text-decoration: none;
-      justify-content: center;
-    }
-
-    &_slim::before {
-      background: #ffffff;
-      bottom: 2px;
-      border-radius: inherit;
-      content: "";
-      left: 2px;
-      padding: 2px;
-      position: absolute;
-      right: 2px;
-      top: 2px;
-      z-index: 1;
-    }
-
   }
 
-  &_white50 {
-    background: linear-gradient(
-      180deg,
-      rgba(188, 156, 255, 0.5) 0%,
-      rgba(139, 164, 249, 0.5) 100%
-    );
-    border-radius: 22px;
-    position: relative;
+  &_wide {
+    width: 196px;
+    height: 34px;
+    }
+
+  &_slim{
+    width: 87px;
+    height: 34px;
   }
 
-  &_white50::before {
-    border-radius: inherit;
-    background: #ffffff;
-    bottom: 2px;
-    content: "";
-    position: absolute;
-    left: 2px;
-    right: 2px;
-    top: 2px;
-    padding: 2px;
-    z-index: 1;
-  }
-
-  &_white50 span {
-    color: $purple;
-    opacity: 1;
-    position: relative;
-    z-index: 2;
-  }
-
-  &_white span,
-  &_link span,
-  &_link_slim span,
-  &_white50 span,
-  &_transparent span { 
+  &_white .button__label,
+  &_transparent .button__label { 
     color: $purple;
     font-weight: bold;
     font-size: 12px;
@@ -156,8 +78,7 @@
   }
 
   &_white:hover,
-  &_link:hover,
-  &_link_slim:hover {
+  &_link:hover {
     background: linear-gradient(
       180deg,
       rgba(188, 156, 255, 0.5) 0%,
@@ -165,8 +86,7 @@
     );
   }
 
-  &_transparent,
-  &_transparent50 {
+  &_transparent {
     border: none;
     background: none;
     height: 15px;
@@ -174,16 +94,7 @@
     width: 61px;
   }
 
-  &_transparent50 span {
-    color: $darkShade50;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
-
-  &_transparent span:hover {
+  &_transparent .button__label:hover {
     color: $darkShade50;
   }
 

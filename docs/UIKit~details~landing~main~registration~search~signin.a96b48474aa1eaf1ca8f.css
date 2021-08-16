@@ -3536,22 +3536,20 @@ table {
   position: relative;
   text-decoration: none;
   width: 99px; }
-  .button_dark, .button_dark50 {
+  .button_dark {
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     color: #ffffff;
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase; }
-  .button_dark50 {
-    opacity: 0.5; }
   .button_dark:hover {
     opacity: 0.5; }
-  .button_white, .button_link {
+  .button_white {
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     border-radius: 22px;
     position: relative; }
-  .button_white::before, .button_link::before {
+  .button_white::before {
     background: #ffffff;
     bottom: 2px;
     border-radius: inherit;
@@ -3567,69 +3565,14 @@ table {
     display: flex;
     text-decoration: none;
     justify-content: center; }
-    .button_link_wide {
-      width: 196px;
-      height: 34px;
-      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-      align-items: center;
-      display: flex;
-      text-decoration: none;
-      justify-content: center; }
-    .button_link_wide span {
-      color: #ffffff;
-      font-weight: bold;
-      font-size: 12px;
-      line-height: 15px;
-      text-transform: uppercase;
-      white-space: nowrap; }
-    .button_link_wide:hover {
-      opacity: .5; }
-    .button_link_slim {
-      width: 87px;
-      height: 34px;
-      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-      border-radius: 22px;
-      position: relative;
-      align-items: center;
-      display: flex;
-      text-decoration: none;
-      justify-content: center; }
-    .button_link_slim::before {
-      background: #ffffff;
-      bottom: 2px;
-      border-radius: inherit;
-      content: "";
-      left: 2px;
-      padding: 2px;
-      position: absolute;
-      right: 2px;
-      top: 2px;
-      z-index: 1; }
-  .button_white50 {
-    background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
-    border-radius: 22px;
-    position: relative; }
-  .button_white50::before {
-    border-radius: inherit;
-    background: #ffffff;
-    bottom: 2px;
-    content: "";
-    position: absolute;
-    left: 2px;
-    right: 2px;
-    top: 2px;
-    padding: 2px;
-    z-index: 1; }
-  .button_white50 span {
-    color: #bc9cff;
-    opacity: 1;
-    position: relative;
-    z-index: 2; }
-  .button_white span,
-  .button_link span,
-  .button_link_slim span,
-  .button_white50 span,
-  .button_transparent span {
+  .button_wide {
+    width: 196px;
+    height: 34px; }
+  .button_slim {
+    width: 87px;
+    height: 34px; }
+  .button_white .button__label,
+  .button_transparent .button__label {
     color: #bc9cff;
     font-weight: bold;
     font-size: 12px;
@@ -3638,22 +3581,15 @@ table {
     white-space: nowrap;
     position: relative;
     z-index: 2; }
-  .button_white:hover, .button_link:hover, .button_link_slim:hover {
+  .button_white:hover, .button_link:hover {
     background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
-  .button_transparent, .button_transparent50 {
+  .button_transparent {
     border: none;
     background: none;
     height: 15px;
     padding: 0px;
     width: 61px; }
-  .button_transparent50 span {
-    color: rgba(31, 32, 65, 0.5);
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    text-decoration: none; }
-  .button_transparent span:hover {
+  .button_transparent .button__label:hover {
     color: rgba(31, 32, 65, 0.5); }
   .button__icon {
     align-items: center;
@@ -4911,22 +4847,20 @@ table {
   position: relative;
   text-decoration: none;
   width: 99px; }
-  .button_dark, .button_dark50 {
+  .button_dark {
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     color: #ffffff;
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase; }
-  .button_dark50 {
-    opacity: 0.5; }
   .button_dark:hover {
     opacity: 0.5; }
-  .button_white, .button_link {
+  .button_white {
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     border-radius: 22px;
     position: relative; }
-  .button_white::before, .button_link::before {
+  .button_white::before {
     background: #ffffff;
     bottom: 2px;
     border-radius: inherit;
@@ -4942,69 +4876,14 @@ table {
     display: flex;
     text-decoration: none;
     justify-content: center; }
-    .button_link_wide {
-      width: 196px;
-      height: 34px;
-      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-      align-items: center;
-      display: flex;
-      text-decoration: none;
-      justify-content: center; }
-    .button_link_wide span {
-      color: #ffffff;
-      font-weight: bold;
-      font-size: 12px;
-      line-height: 15px;
-      text-transform: uppercase;
-      white-space: nowrap; }
-    .button_link_wide:hover {
-      opacity: .5; }
-    .button_link_slim {
-      width: 87px;
-      height: 34px;
-      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-      border-radius: 22px;
-      position: relative;
-      align-items: center;
-      display: flex;
-      text-decoration: none;
-      justify-content: center; }
-    .button_link_slim::before {
-      background: #ffffff;
-      bottom: 2px;
-      border-radius: inherit;
-      content: "";
-      left: 2px;
-      padding: 2px;
-      position: absolute;
-      right: 2px;
-      top: 2px;
-      z-index: 1; }
-  .button_white50 {
-    background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
-    border-radius: 22px;
-    position: relative; }
-  .button_white50::before {
-    border-radius: inherit;
-    background: #ffffff;
-    bottom: 2px;
-    content: "";
-    position: absolute;
-    left: 2px;
-    right: 2px;
-    top: 2px;
-    padding: 2px;
-    z-index: 1; }
-  .button_white50 span {
-    color: #bc9cff;
-    opacity: 1;
-    position: relative;
-    z-index: 2; }
-  .button_white span,
-  .button_link span,
-  .button_link_slim span,
-  .button_white50 span,
-  .button_transparent span {
+  .button_wide {
+    width: 196px;
+    height: 34px; }
+  .button_slim {
+    width: 87px;
+    height: 34px; }
+  .button_white .button__label,
+  .button_transparent .button__label {
     color: #bc9cff;
     font-weight: bold;
     font-size: 12px;
@@ -5013,22 +4892,15 @@ table {
     white-space: nowrap;
     position: relative;
     z-index: 2; }
-  .button_white:hover, .button_link:hover, .button_link_slim:hover {
+  .button_white:hover, .button_link:hover {
     background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
-  .button_transparent, .button_transparent50 {
+  .button_transparent {
     border: none;
     background: none;
     height: 15px;
     padding: 0px;
     width: 61px; }
-  .button_transparent50 span {
-    color: rgba(31, 32, 65, 0.5);
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    text-decoration: none; }
-  .button_transparent span:hover {
+  .button_transparent .button__label:hover {
     color: rgba(31, 32, 65, 0.5); }
   .button__icon {
     align-items: center;
@@ -5270,4 +5142,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.b3a467c942a06399708a.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.a96b48474aa1eaf1ca8f.css.map*/
