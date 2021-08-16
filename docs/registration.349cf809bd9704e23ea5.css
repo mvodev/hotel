@@ -13,18 +13,19 @@
   width: 100%; }
 
 .main__content {
-  flex-grow: 1; }
+  flex-grow: 1;
+  display: flex; }
 
 .main footer {
   flex: 0 0 auto; }
 
 .main__img-wrapper {
   min-height: 684px;
-  height: 100%;
   width: 100%;
   display: flex;
+  flex-grow: 1;
   align-items: center;
-  background-image: url(79b5cde0053638ad01f1d11a34b1cb11.jpg);
+  background-image: url(c15f7c247010398c83fd8d9f6c79caf5.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center; }
@@ -38,4 +39,4 @@
     max-height: none; } }
 
 
-/*# sourceMappingURL=registration.bb26da6881a0d6976ebe.css.map*/
+/*# sourceMappingURL=registration.349cf809bd9704e23ea5.css.map*/
