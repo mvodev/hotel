@@ -12,20 +12,18 @@ mixin header-bar( {type="nav",links=[],signInLinkText="Войти",registerLinkT
         +list-links({links,isVertical})
         if type==='nav'
           .header-bar__buttons
-            .buttons-header-bar
-              .buttons-header-bar__first-button
-                +button({
-                      label:signInLinkText,
-                      variant:'link',
-                      slim:true,
-                      href:signInRef,
-                      })
-              +button({
-                      label:registerLinkText,
-                      variant:'link',
-                      wide:true,
-                      href:registerRef,
-                      }) 
+            +button({
+                    label:signInLinkText,
+                    variant:'link',
+                    slim:true,
+                    href:signInRef,
+                    })
+            +button({
+                    label:registerLinkText,
+                    variant:'link',
+                    wide:true,
+                    href:registerRef,
+                    }) 
         else if type==='login'
           .header-bar__delimeter
           a(href=userRef class='header-bar__user')=userName

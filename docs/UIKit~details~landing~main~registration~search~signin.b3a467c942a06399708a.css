@@ -2712,11 +2712,10 @@ table {
     height: 30px;
     width: 1px;
     background: rgba(31, 32, 65, 0.1); }
-  .header-bar .buttons-header-bar {
+  .header-bar__buttons {
     display: flex;
-    flex-direction: row; }
-  .header-bar .buttons-header-bar__first-button {
-    margin-right: 20px; }
+    flex-direction: row;
+    gap: 20px; }
   .header-bar__user {
     color: rgba(31, 32, 65, 0.5);
     font-family: Montserrat, "Arial,sans-serif";
@@ -2739,6 +2738,9 @@ table {
   .header-bar {
     height: auto;
     min-height: auto; }
+  .header-bar__buttons {
+    flex-direction: column;
+    align-items: center; }
   .header-bar__nav {
     display: none;
     flex-direction: column;
@@ -5268,4 +5270,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.1a48ffd677ef84133ef5.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.b3a467c942a06399708a.css.map*/
