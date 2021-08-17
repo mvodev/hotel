@@ -71,8 +71,7 @@
     background: none;
     height: 15px;
     padding: 0px;
-    overflow: hidden;
-    text-align: left;
+    width: auto;
 
     .button__label:hover {
       color: $darkShade50;

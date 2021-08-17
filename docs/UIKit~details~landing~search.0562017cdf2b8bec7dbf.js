@@ -2290,7 +2290,7 @@ const dropdown = new _dropdown_main_js__WEBPACK_IMPORTED_MODULE_0__["default"](d
             '<div class="datepicker--nav-title">#{title}</div>' +
             '<div class="datepicker--nav-action" data-action="next">#{nextHtml}</div>',
             buttonsContainerTemplate = '<div class="datepicker--buttons"></div>',
-            button = '<span class="datepicker--button" data-action="#{action}">#{label}</span>',
+            button = '<button class="datepicker--button" data-action="#{action}">#{label}</button>',
             fsdDatepicker = $.fn.fsdDatepicker,
             dp = fsdDatepicker.Constructor;
 
@@ -2786,4 +2786,4 @@ document.querySelectorAll('.js-list-links__arrow').forEach(elem=>new _sublinks_c
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.81313140d8b11a98acce.js.map
+//# sourceMappingURL=UIKit~details~landing~search.0562017cdf2b8bec7dbf.js.map

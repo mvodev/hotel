@@ -1806,7 +1806,7 @@
             '<div class="datepicker--nav-title">#{title}</div>' +
             '<div class="datepicker--nav-action" data-action="next">#{nextHtml}</div>',
             buttonsContainerTemplate = '<div class="datepicker--buttons"></div>',
-            button = '<span class="datepicker--button" data-action="#{action}">#{label}</span>',
+            button = '<button class="datepicker--button" data-action="#{action}">#{label}</button>',
             fsdDatepicker = $.fn.fsdDatepicker,
             dp = fsdDatepicker.Constructor;
 
