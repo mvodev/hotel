@@ -9,29 +9,9 @@
   }
 
   .buttons-wrapper-right {
-    width: 218px;
-  }
-
-  .buttons-wrapper-right__first-row,
-  .buttons-wrapper-right__second-row,
-  .buttons-wrapper-right__third-row {
     display: flex;
-    flex-direction: row;
-    margin-bottom: 30px;
-  }
-
-  .buttons-wrapper-right__first-row,
-  .buttons-wrapper-right__second-row {
-    justify-content: space-between;
-  }
-
-  .buttons-wrapper-right__fourth-row {
-    margin-bottom: 40px;
-    width: 320px;
-  }
-
-  .third-row-buttons__first {
-    margin-right: 20px;
+    flex-direction: column;
+    gap: 30px;
   }
 
   &__header_pagination {

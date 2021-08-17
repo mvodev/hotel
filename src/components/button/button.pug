@@ -1,14 +1,12 @@
 include ../button-icon/button-icon.pug
-mixin button( { variant = '', purpose = 'button', label = '', wide=false,slim=false,href='/mock-address/change-me', icon='arrow_forward',} = {})
+mixin button( { variant = '', purpose = 'button', label = '', wide=false,slim=false,href='/mock-address/change-me', icon='arrow_forward',tag='button',color=''} = {})
   -
-    let buttonClassName=`button button_${variant}`
-    buttonClassName+=wide?'_wide':''
-    buttonClassName+=slim?'_slim':''
-  if variant==='arrow'
+    let buttonClassName='button'
+    buttonClassName+=wide?' button_size_wide':''
+    buttonClassName+=slim?' button_size_slim':''
+    color!==''? buttonClassName+=` button_color_${color}` : ''
+  if variant==='icon'
     +button-icon(icon, label)
-  else if variant==='link'
-    a(class=buttonClassName href=href)
-      span.button__label=label
   else
-    button(class=buttonClassName type=purpose)
+    #{tag}(class=buttonClassName href=href type=purpose)
       span.button__label=label

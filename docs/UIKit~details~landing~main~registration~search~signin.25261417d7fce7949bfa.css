@@ -3583,9 +3583,9 @@ table {
   align-items: center; }
   .button:hover {
     background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
-  .button_white {
+  .button_color_white {
     position: relative; }
-    .button_white::before {
+    .button_color_white::before {
       background: #ffffff;
       bottom: 2px;
       border-radius: inherit;
@@ -3596,52 +3596,34 @@ table {
       right: 2px;
       top: 2px;
       z-index: 1; }
-    .button_white:hover {
+    .button_color_white:hover {
       background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
-    .button_white .button__label {
+    .button_color_white .button__label {
       color: #bc9cff;
       white-space: nowrap;
       position: relative;
       z-index: 2; }
-  .button_transparent {
+  .button_color_transparent {
     border: none;
     background: none;
     height: 15px;
     padding: 0px;
-    width: auto; }
-    .button_transparent:hover {
+    width: max-content; }
+    .button_color_transparent:hover {
       background: none; }
-    .button_transparent .button__label:hover {
+    .button_color_transparent .button__label:hover {
       color: rgba(31, 32, 65, 0.5); }
-    .button_transparent .button__label {
+    .button_color_transparent .button__label {
       color: #bc9cff;
       white-space: nowrap;
       position: relative;
       z-index: 2; }
-  .button_link_wide {
-    width: 196px;
-    height: 34px; }
-  .button_link_slim {
+  .button_size_slim {
     width: 87px;
     height: 34px; }
-    .button_link_slim::before {
-      background: #ffffff;
-      bottom: 2px;
-      border-radius: inherit;
-      content: "";
-      left: 2px;
-      padding: 2px;
-      position: absolute;
-      right: 2px;
-      top: 2px;
-      z-index: 1; }
-    .button_link_slim:hover {
-      background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
-    .button_link_slim .button__label {
-      color: #bc9cff;
-      white-space: nowrap;
-      position: relative;
-      z-index: 2; }
+  .button_size_wide {
+    width: 196px;
+    height: 34px; }
 
 .toggle {
   width: 260px; }
@@ -4040,25 +4022,9 @@ table {
   margin-top: 33px; }
 
 .form-elements .buttons-wrapper-right {
-  width: 218px; }
-
-.form-elements .buttons-wrapper-right__first-row,
-.form-elements .buttons-wrapper-right__second-row,
-.form-elements .buttons-wrapper-right__third-row {
   display: flex;
-  flex-direction: row;
-  margin-bottom: 30px; }
-
-.form-elements .buttons-wrapper-right__first-row,
-.form-elements .buttons-wrapper-right__second-row {
-  justify-content: space-between; }
-
-.form-elements .buttons-wrapper-right__fourth-row {
-  margin-bottom: 40px;
-  width: 320px; }
-
-.form-elements .third-row-buttons__first {
-  margin-right: 20px; }
+  flex-direction: column;
+  gap: 30px; }
 
 .form-elements__header_pagination {
   margin-bottom: 16px; }
@@ -4918,9 +4884,9 @@ table {
   align-items: center; }
   .button:hover {
     background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
-  .button_white {
+  .button_color_white {
     position: relative; }
-    .button_white::before {
+    .button_color_white::before {
       background: #ffffff;
       bottom: 2px;
       border-radius: inherit;
@@ -4931,52 +4897,34 @@ table {
       right: 2px;
       top: 2px;
       z-index: 1; }
-    .button_white:hover {
+    .button_color_white:hover {
       background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
-    .button_white .button__label {
+    .button_color_white .button__label {
       color: #bc9cff;
       white-space: nowrap;
       position: relative;
       z-index: 2; }
-  .button_transparent {
+  .button_color_transparent {
     border: none;
     background: none;
     height: 15px;
     padding: 0px;
-    width: auto; }
-    .button_transparent:hover {
+    width: max-content; }
+    .button_color_transparent:hover {
       background: none; }
-    .button_transparent .button__label:hover {
+    .button_color_transparent .button__label:hover {
       color: rgba(31, 32, 65, 0.5); }
-    .button_transparent .button__label {
+    .button_color_transparent .button__label {
       color: #bc9cff;
       white-space: nowrap;
       position: relative;
       z-index: 2; }
-  .button_link_wide {
-    width: 196px;
-    height: 34px; }
-  .button_link_slim {
+  .button_size_slim {
     width: 87px;
     height: 34px; }
-    .button_link_slim::before {
-      background: #ffffff;
-      bottom: 2px;
-      border-radius: inherit;
-      content: "";
-      left: 2px;
-      padding: 2px;
-      position: absolute;
-      right: 2px;
-      top: 2px;
-      z-index: 1; }
-    .button_link_slim:hover {
-      background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
-    .button_link_slim .button__label {
-      color: #bc9cff;
-      white-space: nowrap;
-      position: relative;
-      z-index: 2; }
+  .button_size_wide {
+    width: 196px;
+    height: 34px; }
 
 .text-field {
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -5183,4 +5131,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.cc1e4428cf440c8dd31e.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.25261417d7fce7949bfa.css.map*/

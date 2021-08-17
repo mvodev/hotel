@@ -43,7 +43,7 @@ mixin signup(options)
                     })
       .sign-up__toggle
         +toggle({labels:[{name:'Получать спецпредложения',  isPositive:false}]})
-      +button({label:'ПЕРЕЙТИ К ОПЛАТЕ',variant:'arrow',purpose:'submit'})
+      +button({label:'ПЕРЕЙТИ К ОПЛАТЕ',variant:'icon',purpose:'submit'})
       footer(class='sign-up__footer')
         span(class='sign-up__account')='Уже есть аккаунт на Toxin'
-        +button({label:'Войти',variant:'link',href:'./sign-in-page.html'})
+        +button({label:'Войти',tag:'a',href:'./sign-in-page.html',color:'white'})

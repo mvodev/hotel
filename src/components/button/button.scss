@@ -35,102 +35,77 @@
       );
   }
 
-  &_white{
-    position: relative;
+  &_color{
 
-    &::before{
-      background: #ffffff;
-      bottom: 2px;
-      border-radius: inherit;
-      content: "";
-      left: 2px;
-      padding: 2px;
-      position: absolute;
-      right: 2px;
-      top: 2px;
-      z-index: 1;
-    }
-
-    &:hover{
-      background: linear-gradient(
-      180deg,
-      rgba(188, 156, 255, 0.5) 0%,
-      rgba(139, 164, 249, 0.5) 100%
-    );
-    }
-
-    .button__label{
-      color: $purple;
-      white-space: nowrap;
+    &_white{
       position: relative;
-      z-index: 2;
+
+      &::before{
+        background: #ffffff;
+        bottom: 2px;
+        border-radius: inherit;
+        content: "";
+        left: 2px;
+        padding: 2px;
+        position: absolute;
+        right: 2px;
+        top: 2px;
+        z-index: 1;
+      }
+
+      &:hover{
+        background: linear-gradient(
+        180deg,
+        rgba(188, 156, 255, 0.5) 0%,
+        rgba(139, 164, 249, 0.5) 100%
+        );
+      }
+
+      .button__label{
+        color: $purple;
+        white-space: nowrap;
+        position: relative;
+        z-index: 2;
+      }
     }
-  }
 
-  &_transparent {
-    border: none;
-    background: none;
-    height: 15px;
-    padding: 0px;
-    width: auto;
-
-    &:hover{
+    &_transparent {
+      border: none;
       background: none;
-    }
+      height: 15px;
+      padding: 0px;
+      width: max-content;
 
-    .button__label:hover {
-      color: $darkShade50;
-    }
+      &:hover{
+        background: none;
+      }
 
-    .button__label { 
-      color: $purple;
-      white-space: nowrap;
-      position: relative;
-      z-index: 2;
+      .button__label:hover {
+        color: $darkShade50;
+      }
+
+      .button__label { 
+        color: $purple;
+        white-space: nowrap;
+        position: relative;
+        z-index: 2;
+      }
     }
   }
 
-  &_link {
 
-    &_wide {
-      width: 196px;
-      height: 34px;
-    }
+  &_size{
 
     &_slim{
       width: 87px;
+      height: 34px; 
+    }
+
+    &_wide{
+      width: 196px;
       height: 34px;
-
-      &::before{
-      background: #ffffff;
-      bottom: 2px;
-      border-radius: inherit;
-      content: "";
-      left: 2px;
-      padding: 2px;
-      position: absolute;
-      right: 2px;
-      top: 2px;
-      z-index: 1;
     }
-
-    &:hover{
-      background: linear-gradient(
-      180deg,
-      rgba(188, 156, 255, 0.5) 0%,
-      rgba(139, 164, 249, 0.5) 100%
-      );
-    }
-
-    .button__label{
-      color: $purple;
-      white-space: nowrap;
-      position: relative;
-      z-index: 2;
-    }
-
-    }
-
+    
   }
 
 }

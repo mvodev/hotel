@@ -14,13 +14,14 @@ mixin header-bar( {type="nav",links=[],signInLinkText="Войти",registerLinkT
           .header-bar__buttons
             +button({
                     label:signInLinkText,
-                    variant:'link',
+                    tag:'a',
                     slim:true,
                     href:signInRef,
+                    color:'white',
                     })
             +button({
                     label:registerLinkText,
-                    variant:'link',
+                    tag:'a',
                     wide:true,
                     href:registerRef,
                     }) 
