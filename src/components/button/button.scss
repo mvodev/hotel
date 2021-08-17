@@ -22,60 +22,48 @@
   &_dark {
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     color: $white;
+
+    &:hover {
+    background: linear-gradient(
+      180deg,
+      rgba(188, 156, 255, 0.5) 0%,
+      rgba(139, 164, 249, 0.5) 100%
+      );
+    }
   }
 
   &_white{
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     border-radius: 22px;
     position: relative;
-  }
 
-  &_white::before{
-    background: #ffffff;
-    bottom: 2px;
-    border-radius: inherit;
-    content: "";
-    left: 2px;
-    padding: 2px;
-    position: absolute;
-    right: 2px;
-    top: 2px;
-    z-index: 1;
-  }
+    &::before{
+      background: #ffffff;
+      bottom: 2px;
+      border-radius: inherit;
+      content: "";
+      left: 2px;
+      padding: 2px;
+      position: absolute;
+      right: 2px;
+      top: 2px;
+      z-index: 1;
+    }
 
-  &_link {
-    align-items: center;
-    display: flex;
-    text-decoration: none;
-    justify-content: center;
-  }
-
-  &_wide {
-    width: 196px;
-    height: 34px;
-  }
-
-  &_slim{
-    width: 87px;
-    height: 34px;
-  }
-
-  &_white .button__label,
-  &_transparent .button__label { 
-    color: $purple;
-    white-space: nowrap;
-    position: relative;
-    z-index: 2;
-  }
-
-  &_white:hover,
-  &_link:hover,
-  &_dark:hover {
-    background: linear-gradient(
+    &:hover{
+      background: linear-gradient(
       180deg,
       rgba(188, 156, 255, 0.5) 0%,
       rgba(139, 164, 249, 0.5) 100%
     );
+    }
+
+    .button__label{
+      color: $purple;
+      white-space: nowrap;
+      position: relative;
+      z-index: 2;
+    }
   }
 
   &_transparent {
@@ -84,10 +72,45 @@
     height: 15px;
     padding: 0px;
     overflow: hidden;
+    text-align: left;
+
+    .button__label:hover {
+      color: $darkShade50;
+    }
   }
 
-  &_transparent .button__label:hover {
-    color: $darkShade50;
+  &_link {
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+
+    &_wide {
+      width: 196px;
+      height: 34px;
+    }
+
+    &_slim{
+      width: 87px;
+      height: 34px;
+    }
+
+  }
+
+
+  &_transparent .button__label { 
+    color: $purple;
+    white-space: nowrap;
+    position: relative;
+    z-index: 2;
+  }
+
+  &_link:hover{
+    background: linear-gradient(
+      180deg,
+      rgba(188, 156, 255, 0.5) 0%,
+      rgba(139, 164, 249, 0.5) 100%
+    );
   }
 
   &__icon {

@@ -3537,48 +3537,57 @@ table {
   .button_dark {
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     color: #ffffff; }
+    .button_dark:hover {
+      background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
   .button_white {
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     border-radius: 22px;
     position: relative; }
-  .button_white::before {
-    background: #ffffff;
-    bottom: 2px;
-    border-radius: inherit;
-    content: "";
-    left: 2px;
-    padding: 2px;
-    position: absolute;
-    right: 2px;
-    top: 2px;
-    z-index: 1; }
-  .button_link {
-    align-items: center;
-    display: flex;
-    text-decoration: none;
-    justify-content: center; }
-  .button_wide {
-    width: 196px;
-    height: 34px; }
-  .button_slim {
-    width: 87px;
-    height: 34px; }
-  .button_white .button__label,
-  .button_transparent .button__label {
-    color: #bc9cff;
-    white-space: nowrap;
-    position: relative;
-    z-index: 2; }
-  .button_white:hover, .button_link:hover, .button_dark:hover {
-    background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
+    .button_white::before {
+      background: #ffffff;
+      bottom: 2px;
+      border-radius: inherit;
+      content: "";
+      left: 2px;
+      padding: 2px;
+      position: absolute;
+      right: 2px;
+      top: 2px;
+      z-index: 1; }
+    .button_white:hover {
+      background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
+    .button_white .button__label {
+      color: #bc9cff;
+      white-space: nowrap;
+      position: relative;
+      z-index: 2; }
   .button_transparent {
     border: none;
     background: none;
     height: 15px;
     padding: 0px;
-    overflow: hidden; }
-  .button_transparent .button__label:hover {
-    color: rgba(31, 32, 65, 0.5); }
+    overflow: hidden;
+    text-align: left; }
+    .button_transparent .button__label:hover {
+      color: rgba(31, 32, 65, 0.5); }
+  .button_link {
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    justify-content: center; }
+    .button_link_wide {
+      width: 196px;
+      height: 34px; }
+    .button_link_slim {
+      width: 87px;
+      height: 34px; }
+  .button_transparent .button__label {
+    color: #bc9cff;
+    white-space: nowrap;
+    position: relative;
+    z-index: 2; }
+  .button_link:hover {
+    background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
   .button__icon {
     align-items: center;
     color: #ffffff;
@@ -4182,7 +4191,7 @@ table {
 
 .cards__left-column {
   padding-left: 140px; }
-  .cards__left-column .left-column-cards__search {
+  .cards__left-column .search-number {
     margin-bottom: 40px; }
 
 .sign-in {
@@ -4354,7 +4363,7 @@ table {
 
 .cards__central-column {
   padding-left: 40px; }
-  .cards__central-column .central-column-cards__room-price {
+  .cards__central-column .room-price {
     margin-bottom: 40px; }
 
 .room-card {
@@ -4493,7 +4502,7 @@ table {
   padding-left: 40px; }
   .cards__right-column .cards__datepicker {
     margin-bottom: 40px; }
-  .cards__right-column .right-column-cards__first-room {
+  .cards__right-column .room-card {
     margin-bottom: 40px; }
 
 .cards {
@@ -4839,48 +4848,57 @@ table {
   .button_dark {
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     color: #ffffff; }
+    .button_dark:hover {
+      background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
   .button_white {
     background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     border-radius: 22px;
     position: relative; }
-  .button_white::before {
-    background: #ffffff;
-    bottom: 2px;
-    border-radius: inherit;
-    content: "";
-    left: 2px;
-    padding: 2px;
-    position: absolute;
-    right: 2px;
-    top: 2px;
-    z-index: 1; }
-  .button_link {
-    align-items: center;
-    display: flex;
-    text-decoration: none;
-    justify-content: center; }
-  .button_wide {
-    width: 196px;
-    height: 34px; }
-  .button_slim {
-    width: 87px;
-    height: 34px; }
-  .button_white .button__label,
-  .button_transparent .button__label {
-    color: #bc9cff;
-    white-space: nowrap;
-    position: relative;
-    z-index: 2; }
-  .button_white:hover, .button_link:hover, .button_dark:hover {
-    background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
+    .button_white::before {
+      background: #ffffff;
+      bottom: 2px;
+      border-radius: inherit;
+      content: "";
+      left: 2px;
+      padding: 2px;
+      position: absolute;
+      right: 2px;
+      top: 2px;
+      z-index: 1; }
+    .button_white:hover {
+      background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
+    .button_white .button__label {
+      color: #bc9cff;
+      white-space: nowrap;
+      position: relative;
+      z-index: 2; }
   .button_transparent {
     border: none;
     background: none;
     height: 15px;
     padding: 0px;
-    overflow: hidden; }
-  .button_transparent .button__label:hover {
-    color: rgba(31, 32, 65, 0.5); }
+    overflow: hidden;
+    text-align: left; }
+    .button_transparent .button__label:hover {
+      color: rgba(31, 32, 65, 0.5); }
+  .button_link {
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    justify-content: center; }
+    .button_link_wide {
+      width: 196px;
+      height: 34px; }
+    .button_link_slim {
+      width: 87px;
+      height: 34px; }
+  .button_transparent .button__label {
+    color: #bc9cff;
+    white-space: nowrap;
+    position: relative;
+    z-index: 2; }
+  .button_link:hover {
+    background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
   .button__icon {
     align-items: center;
     color: #ffffff;
@@ -5118,4 +5136,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.8da28e1fe94a21240915.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.3728a2bcb560630f7af9.css.map*/
