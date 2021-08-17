@@ -1,17 +1,11 @@
+include ../button-icon/button-icon.pug
 mixin button( { variant = '', purpose = 'button', label = '', wide=false,slim=false,href='/mock-address/change-me', icon='arrow_forward',} = {})
   -
-    let buttonClassName='button'
-    buttonClassName+=variant==='arrow'?' button_with-icon':''
-    buttonClassName+=variant!==icon?` button_${variant}`:''
+    let buttonClassName=`button button_${variant}`
     buttonClassName+=wide?'_wide':''
     buttonClassName+=slim?'_slim':''
   if variant==='arrow'
-    button(class=buttonClassName type=purpose)
-      span.button__empty-elem
-      span.button__icon-label
-        span.button__label=label
-      span.button__icon
-        span.material-icons=icon
+    +button-icon(icon, label)
   else if variant==='link'
     a(class=buttonClassName href=href)
       span.button__label=label

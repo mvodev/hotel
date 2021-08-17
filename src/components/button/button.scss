@@ -3,6 +3,8 @@
 @import "../button-check/button-check.scss";
 @import "../button-rate/button-rate.scss";
 @import "../button-like/button-like.scss";
+@import "../button-icon/button-icon.scss";
+
 .button {
   border: none;
   border-radius: 22px;
@@ -18,23 +20,22 @@
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  color: $white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 
-  &_dark {
-    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-    color: $white;
-
-    &:hover {
+  &:hover {
     background: linear-gradient(
       180deg,
       rgba(188, 156, 255, 0.5) 0%,
       rgba(139, 164, 249, 0.5) 100%
       );
-    }
   }
 
   &_white{
-    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-    border-radius: 22px;
     position: relative;
 
     &::before{
@@ -73,16 +74,23 @@
     padding: 0px;
     width: auto;
 
+    &:hover{
+      background: none;
+    }
+
     .button__label:hover {
       color: $darkShade50;
+    }
+
+    .button__label { 
+      color: $purple;
+      white-space: nowrap;
+      position: relative;
+      z-index: 2;
     }
   }
 
   &_link {
-    align-items: center;
-    display: flex;
-    text-decoration: none;
-    justify-content: center;
 
     &_wide {
       width: 196px;
@@ -92,73 +100,39 @@
     &_slim{
       width: 87px;
       height: 34px;
+
+      &::before{
+      background: #ffffff;
+      bottom: 2px;
+      border-radius: inherit;
+      content: "";
+      left: 2px;
+      padding: 2px;
+      position: absolute;
+      right: 2px;
+      top: 2px;
+      z-index: 1;
     }
-
-  }
-
-
-  &_transparent .button__label { 
-    color: $purple;
-    white-space: nowrap;
-    position: relative;
-    z-index: 2;
-  }
-
-  &_link:hover{
-    background: linear-gradient(
-      180deg,
-      rgba(188, 156, 255, 0.5) 0%,
-      rgba(139, 164, 249, 0.5) 100%
-    );
-  }
-
-  &__icon {
-    align-items: center;
-    color: $white;
-    display: flex;
-    font-weight: normal;
-    line-height: 24px;
-    text-align: center;
-    justify-content: center;
-    height: 44px;
-    width: 44px;
-  }
-
-  &__icon-label {
-    max-height: 15px;
-    overflow: hidden;
-    flex-grow: 1;
-  }
-  
-  &__empty-elem{
-    width: 44px;
-    height: 44px;
-  }
-
-  &_with-icon {
-    align-items: center;
-    border-radius: 22px;
-    background: linear-gradient(
-      180deg, 
-      #bc9cff 0%, 
-      #8ba4f9 100%);
-    color: $white;
-    display: flex;
-    flex-direction: row;
-    height: 44px;
-    position: relative;
-    max-width: 320px;
-    width: 100%;
-    padding: 0;
 
     &:hover{
       background: linear-gradient(
       180deg,
       rgba(188, 156, 255, 0.5) 0%,
-      rgba(139, 164, 249, 0.5) 100%);
+      rgba(139, 164, 249, 0.5) 100%
+      );
+    }
+
+    .button__label{
+      color: $purple;
+      white-space: nowrap;
+      position: relative;
+      z-index: 2;
+    }
+
     }
 
   }
+
 }
 
 

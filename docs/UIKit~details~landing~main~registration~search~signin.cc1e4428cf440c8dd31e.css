@@ -3518,6 +3518,48 @@ table {
 .button-like.button-like_is-liked .button-like__number {
   color: #bc9cff; }
 
+.button-icon {
+  font-family: Montserrat, "Arial,sans-serif";
+  font-style: normal;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  align-items: center;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  height: 44px;
+  position: relative;
+  max-width: 320px;
+  width: 100%;
+  padding: 0;
+  border: none; }
+  .button-icon:hover {
+    background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
+  .button-icon__icon {
+    align-items: center;
+    color: #ffffff;
+    display: flex;
+    font-weight: normal;
+    line-height: 24px;
+    text-align: center;
+    justify-content: center;
+    height: 44px;
+    width: 44px; }
+  .button-icon__icon-label {
+    max-height: 15px;
+    overflow: hidden;
+    flex-grow: 1; }
+  .button-icon__empty-elem {
+    width: 44px;
+    height: 44px; }
+
 .button {
   border: none;
   border-radius: 22px;
@@ -3532,15 +3574,16 @@ table {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  text-transform: uppercase; }
-  .button_dark {
-    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-    color: #ffffff; }
-    .button_dark:hover {
-      background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .button:hover {
+    background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
   .button_white {
-    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-    border-radius: 22px;
     position: relative; }
     .button_white::before {
       background: #ffffff;
@@ -3566,57 +3609,39 @@ table {
     height: 15px;
     padding: 0px;
     width: auto; }
+    .button_transparent:hover {
+      background: none; }
     .button_transparent .button__label:hover {
       color: rgba(31, 32, 65, 0.5); }
-  .button_link {
-    align-items: center;
-    display: flex;
-    text-decoration: none;
-    justify-content: center; }
-    .button_link_wide {
-      width: 196px;
-      height: 34px; }
-    .button_link_slim {
-      width: 87px;
-      height: 34px; }
-  .button_transparent .button__label {
-    color: #bc9cff;
-    white-space: nowrap;
-    position: relative;
-    z-index: 2; }
-  .button_link:hover {
-    background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
-  .button__icon {
-    align-items: center;
-    color: #ffffff;
-    display: flex;
-    font-weight: normal;
-    line-height: 24px;
-    text-align: center;
-    justify-content: center;
-    height: 44px;
-    width: 44px; }
-  .button__icon-label {
-    max-height: 15px;
-    overflow: hidden;
-    flex-grow: 1; }
-  .button__empty-elem {
-    width: 44px;
-    height: 44px; }
-  .button_with-icon {
-    align-items: center;
-    border-radius: 22px;
-    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-    color: #ffffff;
-    display: flex;
-    flex-direction: row;
-    height: 44px;
-    position: relative;
-    max-width: 320px;
-    width: 100%;
-    padding: 0; }
-    .button_with-icon:hover {
+    .button_transparent .button__label {
+      color: #bc9cff;
+      white-space: nowrap;
+      position: relative;
+      z-index: 2; }
+  .button_link_wide {
+    width: 196px;
+    height: 34px; }
+  .button_link_slim {
+    width: 87px;
+    height: 34px; }
+    .button_link_slim::before {
+      background: #ffffff;
+      bottom: 2px;
+      border-radius: inherit;
+      content: "";
+      left: 2px;
+      padding: 2px;
+      position: absolute;
+      right: 2px;
+      top: 2px;
+      z-index: 1; }
+    .button_link_slim:hover {
       background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
+    .button_link_slim .button__label {
+      color: #bc9cff;
+      white-space: nowrap;
+      position: relative;
+      z-index: 2; }
 
 .toggle {
   width: 260px; }
@@ -4828,6 +4853,48 @@ table {
 .button-like.button-like_is-liked .button-like__number {
   color: #bc9cff; }
 
+.button-icon {
+  font-family: Montserrat, "Arial,sans-serif";
+  font-style: normal;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  align-items: center;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  height: 44px;
+  position: relative;
+  max-width: 320px;
+  width: 100%;
+  padding: 0;
+  border: none; }
+  .button-icon:hover {
+    background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
+  .button-icon__icon {
+    align-items: center;
+    color: #ffffff;
+    display: flex;
+    font-weight: normal;
+    line-height: 24px;
+    text-align: center;
+    justify-content: center;
+    height: 44px;
+    width: 44px; }
+  .button-icon__icon-label {
+    max-height: 15px;
+    overflow: hidden;
+    flex-grow: 1; }
+  .button-icon__empty-elem {
+    width: 44px;
+    height: 44px; }
+
 .button {
   border: none;
   border-radius: 22px;
@@ -4842,15 +4909,16 @@ table {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  text-transform: uppercase; }
-  .button_dark {
-    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-    color: #ffffff; }
-    .button_dark:hover {
-      background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .button:hover {
+    background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
   .button_white {
-    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-    border-radius: 22px;
     position: relative; }
     .button_white::before {
       background: #ffffff;
@@ -4876,57 +4944,39 @@ table {
     height: 15px;
     padding: 0px;
     width: auto; }
+    .button_transparent:hover {
+      background: none; }
     .button_transparent .button__label:hover {
       color: rgba(31, 32, 65, 0.5); }
-  .button_link {
-    align-items: center;
-    display: flex;
-    text-decoration: none;
-    justify-content: center; }
-    .button_link_wide {
-      width: 196px;
-      height: 34px; }
-    .button_link_slim {
-      width: 87px;
-      height: 34px; }
-  .button_transparent .button__label {
-    color: #bc9cff;
-    white-space: nowrap;
-    position: relative;
-    z-index: 2; }
-  .button_link:hover {
-    background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
-  .button__icon {
-    align-items: center;
-    color: #ffffff;
-    display: flex;
-    font-weight: normal;
-    line-height: 24px;
-    text-align: center;
-    justify-content: center;
-    height: 44px;
-    width: 44px; }
-  .button__icon-label {
-    max-height: 15px;
-    overflow: hidden;
-    flex-grow: 1; }
-  .button__empty-elem {
-    width: 44px;
-    height: 44px; }
-  .button_with-icon {
-    align-items: center;
-    border-radius: 22px;
-    background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
-    color: #ffffff;
-    display: flex;
-    flex-direction: row;
-    height: 44px;
-    position: relative;
-    max-width: 320px;
-    width: 100%;
-    padding: 0; }
-    .button_with-icon:hover {
+    .button_transparent .button__label {
+      color: #bc9cff;
+      white-space: nowrap;
+      position: relative;
+      z-index: 2; }
+  .button_link_wide {
+    width: 196px;
+    height: 34px; }
+  .button_link_slim {
+    width: 87px;
+    height: 34px; }
+    .button_link_slim::before {
+      background: #ffffff;
+      bottom: 2px;
+      border-radius: inherit;
+      content: "";
+      left: 2px;
+      padding: 2px;
+      position: absolute;
+      right: 2px;
+      top: 2px;
+      z-index: 1; }
+    .button_link_slim:hover {
       background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
+    .button_link_slim .button__label {
+      color: #bc9cff;
+      white-space: nowrap;
+      position: relative;
+      z-index: 2; }
 
 .text-field {
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -5133,4 +5183,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.8cba1434fd61db4c9ae8.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.cc1e4428cf440c8dd31e.css.map*/

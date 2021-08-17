@@ -1,0 +1,7 @@
+mixin button-icon( { label = 'перейти к оплате', icon='arrow_forward',purpose = 'button',} = {})
+  button.button-icon(type=purpose)
+    span.button-icon__empty-elem
+    span.button-icon__icon-label
+      span.button-icon__label=label
+    span.button-icon__icon
+      span.material-icons=icon
