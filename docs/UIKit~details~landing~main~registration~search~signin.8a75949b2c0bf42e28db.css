@@ -3318,7 +3318,7 @@ table {
 .button-radio {
   font-family: Montserrat, "Arial,sans-serif";
   height: 24px;
-  width: 100%; }
+  width: max-content; }
   .button-radio__input {
     display: none; }
   .button-radio__label {
@@ -3952,13 +3952,17 @@ table {
   display: flex;
   flex-direction: row; }
 
-.form-elements .bullets-left-column__first {
+.form-elements .bullets-left-column {
   margin-top: 158px;
-  margin-bottom: 20px; }
+  display: flex;
+  gap: 20px;
+  flex-direction: column; }
 
-.form-elements .bullet-icons-left__first {
+.form-elements .left-column__bullet-icons {
   margin-top: 273px;
-  margin-bottom: 18px; }
+  display: flex;
+  flex-direction: column;
+  gap: 18px; }
 
 .form-elements__header-central {
   margin-bottom: 16px; }
@@ -3973,9 +3977,10 @@ table {
   margin-top: 43px;
   margin-bottom: 14px; }
 
-.form-elements .central-column__radio-buttons-wrapper {
+.form-elements .central-column__radio-buttons-wrapper,
+.form-elements .central-column__like-buttons-wrapper,
+.form-elements .central-column__rate-buttons-wrapper {
   display: flex;
-  display: -webkit-flex;
   flex-direction: row; }
 
 .form-elements .wrapper-like-buttons__first {
@@ -3994,22 +3999,22 @@ table {
   margin-top: 42px; }
 
 .form-elements .central-column__like-buttons-wrapper {
-  display: flex;
-  flex-direction: row; }
+  gap: 10px; }
 
 .form-elements .central-column__rate-buttons-wrapper {
-  display: flex;
-  flex-direction: row; }
+  gap: 20px; }
 
-.form-elements .wrapper-radio-buttons__first {
-  margin-right: 20px; }
+.form-elements .central-column__radio-buttons-wrapper {
+  gap: 20px; }
 
 .form-elements__header_dropdown {
   margin-top: 197px;
   margin-bottom: 4px !important; }
 
-.form-elements .wrapper-buttons-rich__second {
-  margin-top: 10px; }
+.form-elements .central-column__buttons-rich-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; }
 
 .form-elements__header_rich-buttons {
   margin-top: 256px;
@@ -4027,7 +4032,8 @@ table {
   gap: 30px; }
 
 .form-elements__header_pagination {
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  margin-top: 40px; }
 
 .form-elements__header_bullet {
   margin-top: 256px;
@@ -4619,7 +4625,7 @@ table {
 .button-radio {
   font-family: Montserrat, "Arial,sans-serif";
   height: 24px;
-  width: 100%; }
+  width: max-content; }
   .button-radio__input {
     display: none; }
   .button-radio__label {
@@ -5131,4 +5137,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.25261417d7fce7949bfa.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.8a75949b2c0bf42e28db.css.map*/

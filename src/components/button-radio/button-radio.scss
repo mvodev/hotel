@@ -1,7 +1,7 @@
 .button-radio {
   font-family: $font-family-main, $fallback-font;
   height: 24px;
-  width: 100%;
+  width: max-content;
   
   &__input {
     display: none;

@@ -17,9 +17,10 @@
     margin-bottom: 14px;
   }
 
-  .central-column__radio-buttons-wrapper {
+  .central-column__radio-buttons-wrapper,
+  .central-column__like-buttons-wrapper,
+  .central-column__rate-buttons-wrapper{
     display: flex;
-    display: -webkit-flex;
     flex-direction: row;
   }
 
@@ -44,17 +45,15 @@
   }
 
   .central-column__like-buttons-wrapper {
-    display: flex;
-    flex-direction: row;
+    gap: 10px;
   }
 
   .central-column__rate-buttons-wrapper {
-    display: flex;
-    flex-direction: row;
+    gap: 20px;
   }
 
-  .wrapper-radio-buttons__first {
-    margin-right: 20px;
+  .central-column__radio-buttons-wrapper{
+    gap: 20px;
   }
 
   &__header_dropdown {
@@ -62,8 +61,10 @@
     margin-bottom: 4px !important;
   }
 
-  .wrapper-buttons-rich__second {
-    margin-top: 10px;
+  .central-column__buttons-rich-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 
   &__header_rich-buttons {

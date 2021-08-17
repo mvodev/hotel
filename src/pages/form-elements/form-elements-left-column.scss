@@ -59,14 +59,18 @@
     flex-direction: row;
   }
 
-  .bullets-left-column__first {
+  .bullets-left-column {
     margin-top: 158px;
-    margin-bottom: 20px;
-  }
-
-  .bullet-icons-left__first {
-    margin-top: 273px;
-    margin-bottom: 18px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
   }
   
+  .left-column__bullet-icons{
+    margin-top: 273px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  } 
+
 }

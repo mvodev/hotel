@@ -113,20 +113,19 @@ include ../../components/header-ui-kit/header-ui-kit.pug
               })
     .left-column__bullets
       .bullets-left-column
-        .bullets-left-column__first
-          +list({
-              type:'expandable',
-              label:'expandable checkbox list',
-              isExpand:false,
-              labels:[
-                      {text:'Завтрак',isChecked:false},
-                      {text:'Письменный стол',isChecked:true},
-                      {text:'Стул для кормления',isChecked:true},
-                      {text:'Кроватка',isChecked:true},
-                      {text:'Телевизор',isChecked:false},
-                      {text:'Шампунь',isChecked:false}
-                      ]
-            })
+        +list({
+            type:'expandable',
+            label:'expandable checkbox list',
+            isExpand:false,
+            labels:[
+                    {text:'Завтрак',isChecked:false},
+                    {text:'Письменный стол',isChecked:true},
+                    {text:'Стул для кормления',isChecked:true},
+                    {text:'Кроватка',isChecked:true},
+                    {text:'Телевизор',isChecked:false},
+                    {text:'Шампунь',isChecked:false}
+                    ]
+          })
         +list({
             type:'expandable',
             label:'expandable checkbox list',
@@ -141,20 +140,18 @@ include ../../components/header-ui-kit/header-ui-kit.pug
                     ]
           })
     .left-column__bullet-icons 
-      .bullet-icons-left
-        .bullet-icons-left__first
-          +list({
-              type:'icons',
-              icon:'insert_emoticon',
-              header:'Комфорт',
-              text:'Шумопоглощающие стены',
-              })
-        +list({
+      +list({
             type:'icons',
-            icon:'location_city',
-            header:'Удобство',
-            text:'Окно в каждой из спален',
+            icon:'insert_emoticon',
+            header:'Комфорт',
+            text:'Шумопоглощающие стены',
             })
+      +list({
+          type:'icons',
+          icon:'location_city',
+          header:'Удобство',
+          text:'Окно в каждой из спален',
+          })
   section.form-elements__central-column
     h2.form-elements__header-central.form-elements__header_checkbox-buttons='CHECKBOX BUTTONS'
     +button-check({
@@ -165,9 +162,8 @@ include ../../components/header-ui-kit/header-ui-kit.pug
                   ]
             })
     h2.form-elements__header-central.form-elements__header_radio-buttons='RADIO BUTTONS'
-    .central-column__radio-buttons-wrapper.wrapper-radio-buttons
-      .wrapper-radio-buttons__first
-        +button-radio({
+    .central-column__radio-buttons-wrapper
+      +button-radio({
                 label:'Мужчина',
                 isChecked:true,
                 id:'male'})
@@ -183,9 +179,8 @@ include ../../components/header-ui-kit/header-ui-kit.pug
                   ]
             })
     h2.form-elements__header-central.form-elements__header_like-buttons='LIKE BUTTON'
-    .central-column__like-buttons-wrapper.wrapper-like-buttons
-      .wrapper-like-buttons__first
-        +button-like({
+    .central-column__like-buttons-wrapper
+      +button-like({
                 likeNumber:2
                 })
       +button-like({
@@ -193,15 +188,13 @@ include ../../components/header-ui-kit/header-ui-kit.pug
               isLiked:true
               })
     h2.form-elements__header-central.form-elements__header_rate='RATE BUTTON'
-    .central-column__rate-buttons-wrapper.buttons-rate
-      .buttons-rate__first
-        +button-rate({
-                darkStar:4
-                })
-      .buttons-rate__second
-        +button-rate({
-              darkStar:1
-              })
+    .central-column__rate-buttons-wrapper
+      +button-rate({
+                    darkStar:4
+                  })
+      +button-rate({
+                    darkStar:1
+                  })
     h2.form-elements__header-central.form-elements__header_dropdown='DROPDOWN'
     +dropdown({
               placeholder:"Сколько гостей",
@@ -215,13 +208,12 @@ include ../../components/header-ui-kit/header-ui-kit.pug
               withButtons:true
               })
     h2.form-elements__header-central.form-elements__header_rich-buttons='Rich Checkbox Buttons'
-    .central-column__buttons-rich-wrapper.wrapper-buttons-rich
+    .central-column__buttons-rich-wrapper
       +button-rich({
             header:'Широкий коридор',
             label:'Ширина коридоров в номере не менее 91 см.'
             })
-      .wrapper-buttons-rich__second
-        +button-rich({
+      +button-rich({
               header:'Помощник для инвалидов',
               label:'На 1 этаже вас встретит специалист  и проводит до номера.'
               })
