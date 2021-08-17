@@ -17,8 +17,8 @@ mixin dropdown(options)
             +dropdown-counter({text:line.text,counterNumber:line.counterNumber})
           if options.withButtons 
             .dropdown__body-buttons.js-dropdown__body-buttons
-              +button({label:'Очистить',variant:'transparent'})
-              +button({label:'Применить',variant:'transparent'})
+              +button({label:'Очистить',color:'transparent'})
+              +button({label:'Применить',color:'transparent'})
     if options.typeDropdown==='date'||options.typeDropdown==='filter'
       .dropdown__input-wrapper
         input(class='dropdown__input' placeholder=options.placeholder type='text' id=options.id readonly)
