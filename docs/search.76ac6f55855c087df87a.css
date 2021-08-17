@@ -63,10 +63,10 @@
 .main .left-column__button-check {
   margin-bottom: 18px; }
 
-.main .left-column__button-rich_first {
-  margin-bottom: 10px; }
-
-.main .left-column__button-rich_last {
+.main .left-column .left-column__button-rich {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   margin-bottom: 31px; }
 
 .main .left-column__dropdown-room, .main .left-column__dropdown-guests {
@@ -125,4 +125,4 @@
     text-align: center; } }
 
 
-/*# sourceMappingURL=search.d66e68f0bc06fc065db8.css.map*/
+/*# sourceMappingURL=search.76ac6f55855c087df87a.css.map*/

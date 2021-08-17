@@ -67,11 +67,10 @@
       margin-bottom: 18px;
     }
 
-    &__button-rich_first {
-      margin-bottom: 10px;
-    }
-
-    &__button-rich_last {
+    .left-column__button-rich{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
       margin-bottom: 31px;
     }
 
