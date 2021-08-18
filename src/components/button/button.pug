@@ -11,9 +11,9 @@ mixin button(options)
             tag='button',
             color='' }= options
     let buttonClassName='button'
-    buttonClassName+=wide?' button_size_wide':''
-    buttonClassName+=slim?' button_size_slim':''
-    color!==''? buttonClassName+=` button_color_${color}` : ''
+    buttonClassName+=wide? ' button_size_wide' : ''
+    buttonClassName+=slim? ' button_size_slim' : ''
+    color!=='' ? buttonClassName+= ` button_color_${color}` : ''
   if variant==='icon'
     +button-icon({icon,label,tag})
   else if tag==='a'
