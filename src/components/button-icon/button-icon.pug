@@ -1,5 +1,5 @@
-mixin button-icon( { label = 'перейти к оплате', icon='arrow_forward',purpose = 'button',} = {})
-  button.button-icon(type=purpose)
+mixin button-icon( { label = 'перейти к оплате', icon='arrow_forward',purpose = 'button',tag} = {})
+  #{tag}.button-icon(type=purpose)
     span.button-icon__empty-elem
     span.button-icon__icon-label
       span.button-icon__label=label

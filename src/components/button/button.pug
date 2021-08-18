@@ -5,8 +5,9 @@ mixin button( { variant = '', purpose = 'button', label = '', wide=false,slim=fa
     buttonClassName+=wide?' button_size_wide':''
     buttonClassName+=slim?' button_size_slim':''
     color!==''? buttonClassName+=` button_color_${color}` : ''
+    tagHTML=tag==='a'?'a':'button'
   if variant==='icon'
-    +button-icon(icon, label)
+    +button-icon(icon,label,tag)
   else
-    #{tag}(class=buttonClassName href=href type=purpose)
+    #{tagHTML}(class=buttonClassName href=href type=purpose)
       span.button__label=label

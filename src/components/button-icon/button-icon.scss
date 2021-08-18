@@ -18,6 +18,7 @@
   color: $white;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   height: 44px;
   position: relative;
   max-width: 320px;
@@ -45,9 +46,12 @@
   }
 
   &__icon-label {
-    max-height: 15px;
     overflow: hidden;
     flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   
   &__empty-elem{
