@@ -1,6 +1,15 @@
 include ../button-icon/button-icon.pug
-mixin button( { variant = '', purpose = 'button', label = '', wide=false,slim=false,href='/mock-address/change-me', icon='arrow_forward',tag='button',color=''} = {})
+mixin button(options)
   -
+    const { variant = '',
+            purpose = 'button', 
+            label = '', 
+            wide=false,
+            slim=false,
+            href='/mock-address/change-me', 
+            icon='arrow_forward',
+            tag='button',
+            color='' }= options
     let buttonClassName='button'
     buttonClassName+=wide?' button_size_wide':''
     buttonClassName+=slim?' button_size_slim':''
