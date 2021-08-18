@@ -18,13 +18,13 @@ block content
     .main__content
       aside.main__left-column
         article.left-column
-          h1(class='left-column__header left-column__header_dates')='ДАТЫ ПРЕБЫВАНИЯ В ОТЕЛЕ'
+          h1.left-column__header.left-column__header_dates='ДАТЫ ПРЕБЫВАНИЯ В ОТЕЛЕ'
           .left-column__dropdown-filter
             +dropdown({
                       placeholder:'19 авг - 23 авг',
                       typeDropdown:'filter'
                       })
-          h2(class='left-column__header left-column__header_guests')='ГОСТИ'
+          h2.left-column__header.left-column__header_guests='ГОСТИ'
           .left-column__dropdown-guests
             +dropdown({
                       placeholder:"3 гостя, 1 младенец",
@@ -36,8 +36,8 @@ block content
                             ],
                       withButtons:true})
           +rangeSlider({label:'ДИАПАЗОН ЦЕНЫ'})
-          h3(class='left-column__header left-column__header_price')='Стоимость за сутки пребывания в номере'
-          h2(class='left-column__header left-column__header_rules')='ПРАВИЛА ДОМА'
+          h3.left-column__header.left-column__header_price='Стоимость за сутки пребывания в номере'
+          h2.left-column__header.left-column__header_rules='ПРАВИЛА ДОМА'
           .left-column__button-check
             +button-check({
                     labels:[
@@ -46,7 +46,7 @@ block content
                             {text:'Можно пригласить гостей(до 10 человек)',isChecked:false}
                             ]
                     })
-          h2(class='left-column__header left-column__header_availability')='доступность'
+          h2.left-column__header.left-column__header_availability='доступность'
           .left-column__button-rich
             +button-rich({
                     header:'Широкий коридор',
@@ -56,7 +56,7 @@ block content
                     header:'Помощник для инвалидов',
                     label:'На 1 этаже вас встретит специалист  и проводит до номера.'
                     })
-          h2(class='left-column__header left-column__header_comfort')='удобства номера'
+          h2.left-column__header.left-column__header_comfort='удобства номера'
           .left-column__dropdown-room
             +dropdown({
                       typeDropdown:'room',
@@ -82,7 +82,7 @@ block content
                   })
       section.main__right-column
         article.right-column
-          h2(class='right-column__header right-column__header_main')='Номера, которые мы для вас подобрали'
+          h2.right-column__header.right-column__header_main='Номера, которые мы для вас подобрали'
           .right-column__rooms
             +roomcard({
                     imgSource:'./assets/img/png/room1.png',
