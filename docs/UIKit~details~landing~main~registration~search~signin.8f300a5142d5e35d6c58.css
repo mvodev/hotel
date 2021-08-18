@@ -4103,23 +4103,22 @@ table {
     font-style: normal;
     font-weight: 700;
     font-family: Montserrat, "Arial,sans-serif"; }
-  .sign-up__header-reg {
+  .sign-up__header_reg {
     font-size: 24px;
     line-height: 30px;
     padding-bottom: 20px; }
-  .sign-up__header-birthday, .sign-up__header-data {
+  .sign-up__header_birthday, .sign-up__header_data {
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
     margin-bottom: 5px; }
-  .sign-up__header-data {
+  .sign-up__header_data {
     margin-top: 20px; }
   .sign-up__radio-button-wrapper {
     display: flex;
     flex-direction: row;
-    margin-bottom: 19px; }
-  .sign-up__radio-button-wrapper_first-button {
-    margin-right: 20px; }
+    margin-bottom: 19px;
+    gap: 20px; }
   .sign-up__toggle {
     margin-bottom: 20px; }
   .sign-up__footer {
@@ -5145,4 +5144,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.720bd7e10678a8e9a41f.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.8f300a5142d5e35d6c58.css.map*/

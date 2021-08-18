@@ -5,7 +5,7 @@ include ../toggle/toggle.pug
 mixin signup(options)
   form(class='sign-up' action=options.action)
     .sign-up__wrapper
-      h2(class="sign-up__header sign-up__header-reg")='Регистрация аккаунта'
+      h2.sign-up__header.sign-up__header_reg='Регистрация аккаунта'
       .sign-up__text-wrapper
         +textfield({
                   isDefault:true,
@@ -16,8 +16,7 @@ mixin signup(options)
                     placeholder:'Фамилия'
                     })
       .sign-up__radio-button-wrapper
-        .sign-up__radio-button-wrapper_first-button
-          +button-radio({
+        +button-radio({
                   label:'Мужчина',
                   isChecked:true,
                   id:'sign-male'
@@ -26,12 +25,12 @@ mixin signup(options)
                 label:'Женщина',
                 id:'sign-female'
                 })
-      h3(class="sign-up__header sign-up__header-birthday")='Дата рождения'
+      h3.sign-up__header.sign-up__header_birthday='Дата рождения'
       +textfield({
                   isMasked:true,
                   placeholder:'ДД.ММ.ГГГГ'
                   })
-      h3(class="sign-up__header sign-up__header-data")='Данные для входа в сервис'
+      h3.sign-up__header.sign-up__header_data='Данные для входа в сервис'
       .sign-up__text-wrapper
         +textfield({
                     isDefault:true,
@@ -44,6 +43,6 @@ mixin signup(options)
       .sign-up__toggle
         +toggle({labels:[{name:'Получать спецпредложения',  isPositive:false}]})
       +button({label:'ПЕРЕЙТИ К ОПЛАТЕ',variant:'icon',purpose:'submit'})
-      footer(class='sign-up__footer')
-        span(class='sign-up__account')='Уже есть аккаунт на Toxin'
+      footer.sign-up__footer
+        span.sign-up__account='Уже есть аккаунт на Toxin'
         +button({label:'Войти',tag:'a',href:'./sign-in-page.html',color:'white'})

@@ -29,21 +29,21 @@
     font-family: $font-family-main, $fallback-font;
   }
 
-  &__header-reg {
+  &__header_reg {
     font-size: 24px;
     line-height: 30px;
     padding-bottom: 20px;
   }
 
-  &__header-birthday,
-  &__header-data {
+  &__header_birthday,
+  &__header_data {
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
     margin-bottom: 5px;
   }
 
-  &__header-data {
+  &__header_data {
     margin-top: 20px;
   }
 
@@ -51,10 +51,7 @@
     display: flex;
     flex-direction: row;
     margin-bottom: 19px;
-  }
-
-  &__radio-button-wrapper_first-button {
-    margin-right: 20px;
+    gap: 20px;
   }
 
   &__toggle {
