@@ -3540,7 +3540,9 @@ table {
   max-width: 320px;
   width: 100%;
   padding: 0;
-  border: none; }
+  border: none;
+  cursor: pointer;
+  padding-left: 44px; }
   .button-icon:hover {
     background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
   .button-icon__icon {
@@ -3560,9 +3562,6 @@ table {
     flex-direction: row;
     justify-content: center;
     align-items: center; }
-  .button-icon__empty-elem {
-    width: 44px;
-    height: 44px; }
 
 .button {
   border: none;
@@ -4850,7 +4849,9 @@ table {
   max-width: 320px;
   width: 100%;
   padding: 0;
-  border: none; }
+  border: none;
+  cursor: pointer;
+  padding-left: 44px; }
   .button-icon:hover {
     background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
   .button-icon__icon {
@@ -4870,9 +4871,6 @@ table {
     flex-direction: row;
     justify-content: center;
     align-items: center; }
-  .button-icon__empty-elem {
-    width: 44px;
-    height: 44px; }
 
 .button {
   border: none;
@@ -5144,4 +5142,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.46c3b744776347dfe325.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.6ccb39d2ec1a6e03012a.css.map*/

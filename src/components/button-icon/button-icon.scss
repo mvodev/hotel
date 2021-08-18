@@ -25,6 +25,8 @@
   width: 100%;
   padding: 0;
   border: none;
+  cursor: pointer;
+  padding-left: 44px;
 
   &:hover{
     background: linear-gradient(
@@ -52,11 +54,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-  }
-  
-  &__empty-elem{
-    width: 44px;
-    height: 44px;
   }
 
 }
