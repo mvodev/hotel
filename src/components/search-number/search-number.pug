@@ -4,10 +4,10 @@ include ../dropdown/dropdown.pug
 mixin searchnumber(options)
   form.search-number
     .search-number__wrapper
-      h2(class="search-number__header")='Найдём номера под ваши пожелания'
+      h2.search-number__header='Найдём номера под ваши пожелания'
       .search-number__dropdown-headers
-        h3(class="search-number__header search-number_dropdown-header")='прибытие'
-        h3(class="search-number__header search-number_dropdown-header")='выезд'
+        h3.search-number__header.search-number_dropdown-header='прибытие'
+        h3.search-number__header.search-number_dropdown-header='выезд'
       .search-number__dropdown-filter
         +dropdown({
                   placeholder:'ДД.ММ.ГГГГ',

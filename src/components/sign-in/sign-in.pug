@@ -9,6 +9,6 @@ mixin signin({ method='post', action='#'}={})
         +textfield({isDefault:true,placeholder:'Email'})
         +textfield({isPassword:true,placeholder:'Пароль'})
       +button({label:'Войти',variant:'icon',purpose:'submit'})
-      footer(class='sign-in__footer')
-        span(class='sign-in__account')='Нет аккаунта на Toxin?'
+      footer.sign-in__footer
+        span.sign-in__account='Нет аккаунта на Toxin?'
         +button({label:'Создать',tag:'a',href:'./registration.html',color:'white'})
