@@ -19,7 +19,7 @@
   margin: 0 auto; }
 
 .main__room-images {
-  min-height: 485px;
+  height: 485px;
   width: 100%;
   overflow: hidden;
   display: grid;
@@ -40,21 +40,17 @@
   .main .room-images-right__bottom {
     overflow: hidden; }
 
-.main__body {
-  max-width: 1460px;
-  margin: 0px auto;
-  padding: 0 10px; }
-
 .main__body h2 {
   font-family: Montserrat, "Arial,sans-serif";
   font-style: normal;
   font-weight: bold;
   font-size: 19px;
   line-height: 23px;
-  color: #1f2041; }
+  color: #1f2041;
+  letter-spacing: -0.5px; }
 
 .main__body {
-  margin: 70px auto 63px auto;
+  margin: 70px auto;
   max-width: 1160px;
   display: flex;
   flex-direction: row;
@@ -81,7 +77,7 @@
   .main .left-column__impressions h2 {
     margin-bottom: 20px; }
   .main .left-column__content {
-    margin-right: 82px; }
+    margin-right: 80px; }
   .main .left-column__content .bullet-list-icons {
     margin-bottom: 20px; }
   .main .left-column__content .bullet-list-icons:last-child {
@@ -99,9 +95,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
-  .main .left-column-comment_first {
+  .main .left-column .main-comment_first {
     margin-bottom: 20px; }
-  .main .left-column-comment_second {
+  .main .left-column .main-comment_second {
     margin-bottom: 5px; }
 
 .main .rules__text-wrapper {
@@ -109,7 +105,7 @@
   flex-direction: column; }
 
 .main .rules__text-wrapper h3 {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   margin-left: 20px;
   font-weight: bold;
   font-size: 19px;
@@ -179,4 +175,4 @@
     text-align: center; } }
 
 
-/*# sourceMappingURL=details.f345959e1736ed8e1e6e.css.map*/
+/*# sourceMappingURL=details.d381d716136127f55c01.css.map*/

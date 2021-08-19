@@ -1479,7 +1479,7 @@ table {
     cursor: none; }
 
 .bullet-list {
-  max-width: 243px;
+  max-width: 292px;
   list-style-type: none;
   display: block; }
   .bullet-list__elem {
@@ -1491,8 +1491,11 @@ table {
     color: rgba(31, 32, 65, 0.75);
     padding-left: 20.86px;
     position: relative;
-    width: 253px;
-    margin-bottom: 10px; }
+    max-width: 271px;
+    margin-bottom: 10px;
+    word-wrap: break-word; }
+  .bullet-list__elem:last-child {
+    margin-bottom: 0; }
   .bullet-list__elem:before {
     content: "";
     position: absolute;
@@ -3690,7 +3693,7 @@ table {
     border-radius: 50%; }
 
 .bullet-list {
-  max-width: 243px;
+  max-width: 292px;
   list-style-type: none;
   display: block; }
   .bullet-list__elem {
@@ -3702,8 +3705,11 @@ table {
     color: rgba(31, 32, 65, 0.75);
     padding-left: 20.86px;
     position: relative;
-    width: 253px;
-    margin-bottom: 10px; }
+    max-width: 271px;
+    margin-bottom: 10px;
+    word-wrap: break-word; }
+  .bullet-list__elem:last-child {
+    margin-bottom: 0; }
   .bullet-list__elem:before {
     content: "";
     position: absolute;
@@ -5142,4 +5148,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.f345959e1736ed8e1e6e.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.d381d716136127f55c01.css.map*/

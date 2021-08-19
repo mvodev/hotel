@@ -1,5 +1,5 @@
 .bullet-list {
-  max-width: 243px;
+  max-width: 292px;
   list-style-type: none;
   display: block;
 
@@ -12,8 +12,13 @@
     color: $darkShade75;
     padding-left: 20.86px;
     position: relative;
-    width: 253px;
+    max-width: 271px;
     margin-bottom: 10px;
+    word-wrap: break-word;
+  }
+
+  &__elem:last-child{
+    margin-bottom: 0;
   }
 
   &__elem:before {
