@@ -3385,7 +3385,8 @@ table {
     font-size: 14px;
     height: 18px;
     line-height: 18px;
-    max-width: 236px; }
+    max-width: 236px;
+    padding-top: 2px; }
   .button-rich__checkbox-text {
     cursor: pointer;
     color: rgba(31, 32, 65, 0.5);
@@ -3395,7 +3396,7 @@ table {
     line-height: 14px;
     position: relative;
     height: 28px;
-    margin-top: 5px;
+    margin-top: 8px;
     margin-left: 30px;
     white-space: break-spaces;
     width: 236px; }
@@ -4697,7 +4698,8 @@ table {
     font-size: 14px;
     height: 18px;
     line-height: 18px;
-    max-width: 236px; }
+    max-width: 236px;
+    padding-top: 2px; }
   .button-rich__checkbox-text {
     cursor: pointer;
     color: rgba(31, 32, 65, 0.5);
@@ -4707,7 +4709,7 @@ table {
     line-height: 14px;
     position: relative;
     height: 28px;
-    margin-top: 5px;
+    margin-top: 8px;
     margin-left: 30px;
     white-space: break-spaces;
     width: 236px; }
@@ -5148,4 +5150,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.d381d716136127f55c01.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.ece8f285f8a8545ebb81.css.map*/

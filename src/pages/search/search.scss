@@ -5,15 +5,14 @@
 
   &__content {
     flex: 1 0 auto;
-    margin: 30px auto 0 auto;
+    margin: 0 auto;
     max-width: $container-width + 30px;
-    padding: 0 15px;
+    padding: 30px 15px 0 15px;
     display: grid;
     grid-template-areas: "left right";
     grid-template-columns: 320px 834px;
-    grid-template-rows: 1fr 75px;
+    grid-template-rows: 1fr 70px;
     column-gap: 6px;
-    max-width: $container-width -250px;
   }
 
   & footer {
@@ -36,6 +35,10 @@
       width: 266px;
     }
 
+    &__dropdown-guests {
+      margin-bottom: 27px;
+    }
+
     &__header {
       font-weight: bold;
       font-size: 12px;
@@ -53,25 +56,29 @@
       font-size: 12px;
       line-height: 14px;
       color: $darkShade50;
-      margin-bottom: 31px;
       font-weight: normal;
       text-transform: none;
+      margin-top: 8px;
     }
 
-    &__header_rules,
-    &__header_availability {
-      margin-bottom: 16px;
+    &__header_rules{
+      margin-top: 30px;
+      margin-bottom: 15px;
     }
 
-    &__button-check {
-      margin-bottom: 18px;
+    &__header_availability{
+      margin-top: 35px;
+      margin-bottom: 15px;
     }
 
-    .left-column__button-rich{
+    &__button-rich{
       display: flex;
       flex-direction: column;
       gap: 10px;
-      margin-bottom: 31px;
+    }
+
+    &__header_comfort{
+      margin-top: 35px;
     }
 
     &__dropdown-room,
@@ -79,18 +86,10 @@
       width: 266px;
     }
 
-    &__dropdown-guests {
-      margin-bottom: 27px;
+    & .bullet-list-expandable{
+      margin-top: 15px;
     }
 
-    &__dropdown-room {
-      margin-bottom: 15px;
-    }
-
-  }
-  
-  .range-slider__wrapper {
-    margin-bottom: 5px;
   }
 
 
@@ -106,7 +105,7 @@
     &__pagination {
       margin-top: 44px;
       display: flex;
-      justify-content: center;
+      margin-left: 290px;
     }
 
     &__header {
@@ -117,6 +116,7 @@
       line-height: 30px;
       color: $darkShade100;
       margin-bottom: 21px;
+      letter-spacing: -0.5px;
     }
   }
   
@@ -127,6 +127,12 @@
   .main .right-column__rooms {
     grid-template-columns: repeat(2, 270px);
     grid-template-rows: repeat(6, 257px);
+  }
+
+  .main .right-column__pagination{
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 10px;
   }
 
 }
@@ -147,9 +153,6 @@
     align-items: center;
   }
 
-  .main .right-column__pagination {
-    margin: 10px auto 0 auto;
-  }
   .main .right-column__header{
     text-align: center;
   }

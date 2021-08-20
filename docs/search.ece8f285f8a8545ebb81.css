@@ -14,15 +14,14 @@
 
 .main__content {
   flex: 1 0 auto;
-  margin: 30px auto 0 auto;
+  margin: 0 auto;
   max-width: 1470px;
-  padding: 0 15px;
+  padding: 30px 15px 0 15px;
   display: grid;
   grid-template-areas: "left right";
   grid-template-columns: 320px 834px;
-  grid-template-rows: 1fr 75px;
-  column-gap: 6px;
-  max-width: 1440px -250px; }
+  grid-template-rows: 1fr 70px;
+  column-gap: 6px; }
 
 .main footer {
   flex: 0 0 auto; }
@@ -37,6 +36,9 @@
 
 .main .left-column__dropdown-filter {
   width: 266px; }
+
+.main .left-column__dropdown-guests {
+  margin-bottom: 27px; }
 
 .main .left-column__header {
   font-weight: bold;
@@ -53,33 +55,31 @@
   font-size: 12px;
   line-height: 14px;
   color: rgba(31, 32, 65, 0.5);
-  margin-bottom: 31px;
   font-weight: normal;
-  text-transform: none; }
+  text-transform: none;
+  margin-top: 8px; }
 
-.main .left-column__header_rules, .main .left-column__header_availability {
-  margin-bottom: 16px; }
+.main .left-column__header_rules {
+  margin-top: 30px;
+  margin-bottom: 15px; }
 
-.main .left-column__button-check {
-  margin-bottom: 18px; }
+.main .left-column__header_availability {
+  margin-top: 35px;
+  margin-bottom: 15px; }
 
-.main .left-column .left-column__button-rich {
+.main .left-column__button-rich {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-bottom: 31px; }
+  gap: 10px; }
+
+.main .left-column__header_comfort {
+  margin-top: 35px; }
 
 .main .left-column__dropdown-room, .main .left-column__dropdown-guests {
   width: 266px; }
 
-.main .left-column__dropdown-guests {
-  margin-bottom: 27px; }
-
-.main .left-column__dropdown-room {
-  margin-bottom: 15px; }
-
-.main .range-slider__wrapper {
-  margin-bottom: 5px; }
+.main .left-column .bullet-list-expandable {
+  margin-top: 15px; }
 
 .main .right-column__rooms {
   display: grid;
@@ -91,7 +91,7 @@
 .main .right-column__pagination {
   margin-top: 44px;
   display: flex;
-  justify-content: center; }
+  margin-left: 290px; }
 
 .main .right-column__header {
   font-family: Montserrat, "Arial,sans-serif";
@@ -100,12 +100,17 @@
   font-size: 24px;
   line-height: 30px;
   color: #1f2041;
-  margin-bottom: 21px; }
+  margin-bottom: 21px;
+  letter-spacing: -0.5px; }
 
 @media (max-width: 1230px) {
   .main .right-column__rooms {
     grid-template-columns: repeat(2, 270px);
-    grid-template-rows: repeat(6, 257px); } }
+    grid-template-rows: repeat(6, 257px); }
+  .main .right-column__pagination {
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 10px; } }
 
 @media (max-width: 1024px) {
   .main__content {
@@ -119,10 +124,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-  .main .right-column__pagination {
-    margin: 10px auto 0 auto; }
   .main .right-column__header {
     text-align: center; } }
 
 
-/*# sourceMappingURL=search.d381d716136127f55c01.css.map*/
+/*# sourceMappingURL=search.ece8f285f8a8545ebb81.css.map*/
