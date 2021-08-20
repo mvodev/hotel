@@ -12,7 +12,7 @@
   }
 
   &__room-images {
-    height: 485px;
+    min-height: 485px;
     width: 100%;
     overflow: hidden;
     display: grid;

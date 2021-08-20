@@ -19,7 +19,7 @@
   margin: 0 auto; }
 
 .main__room-images {
-  height: 485px;
+  min-height: 485px;
   width: 100%;
   overflow: hidden;
   display: grid;
@@ -175,4 +175,4 @@
     text-align: center; } }
 
 
-/*# sourceMappingURL=details.ece8f285f8a8545ebb81.css.map*/
+/*# sourceMappingURL=details.0c232d6ee415447bfb33.css.map*/
