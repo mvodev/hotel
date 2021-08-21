@@ -55,7 +55,7 @@
   letter-spacing: -0.5px; }
 
 .main__body {
-  margin: 70px auto;
+  margin: 72px auto 70px auto;
   max-width: 1160px;
   display: flex;
   flex-direction: row;
@@ -180,4 +180,4 @@
     text-align: center; } }
 
 
-/*# sourceMappingURL=details.0e8f1b12b872a2c86c54.css.map*/
+/*# sourceMappingURL=details.ded2c545e2aec86cd358.css.map*/
