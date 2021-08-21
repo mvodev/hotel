@@ -23,6 +23,7 @@
   width: 100%;
   overflow: hidden;
   display: grid;
+  grid-template-areas: "left right";
   grid-template-columns: 68.125% 31.875%;
   grid-template-rows: 1fr; }
 
@@ -31,8 +32,12 @@
   width: 100%;
   height: 100%; }
 
+.main .room-images-left {
+  grid-area: left; }
+
 .main .room-images-right {
   display: grid;
+  grid-area: right;
   grid-template-rows: 1fr 1fr;
   overflow: hidden; }
   .main .room-images-right__top {
@@ -175,4 +180,4 @@
     text-align: center; } }
 
 
-/*# sourceMappingURL=details.0c232d6ee415447bfb33.css.map*/
+/*# sourceMappingURL=details.0e8f1b12b872a2c86c54.css.map*/

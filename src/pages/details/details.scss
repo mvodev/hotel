@@ -16,6 +16,7 @@
     width: 100%;
     overflow: hidden;
     display: grid;
+    grid-template-areas:"left right";
     grid-template-columns: 68.125% 31.875%;
     grid-template-rows: 1fr;
   }
@@ -26,8 +27,13 @@
     height: 100%;
   }
 
+  .room-images-left{
+    grid-area: left;
+  }
+
   .room-images-right{
     display: grid;
+    grid-area: right;
     grid-template-rows: 1fr 1fr;
     overflow: hidden;
 
