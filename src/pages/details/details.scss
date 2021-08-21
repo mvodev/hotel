@@ -19,25 +19,27 @@
                         "left bottom";
     grid-template-columns: 68.125% 31.875%;
     grid-template-rows: 1fr 1fr;
+
+    &__img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+    &__left{
+      grid-area: left;
+    }
+
+    &__top{
+      grid-area: top;
+    }
+
+    &__bottom{
+      grid-area: bottom;
+    }
+
   }
 
-  &__room-image {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-
-  .room-images__left{
-    grid-area: left;
-  }
-
-  .room-images__top{
-    grid-area: top;
-  }
-
-  .room-images__bottom{
-    grid-area: bottom;
-  }
 
   &__body h2 {
     font-family: $font-family-main,$fallback-font;

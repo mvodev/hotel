@@ -25,20 +25,16 @@
   grid-template-areas: "left top" "left bottom";
   grid-template-columns: 68.125% 31.875%;
   grid-template-rows: 1fr 1fr; }
-
-.main__room-image {
-  object-fit: cover;
-  width: 100%;
-  height: 100%; }
-
-.main .room-images__left {
-  grid-area: left; }
-
-.main .room-images__top {
-  grid-area: top; }
-
-.main .room-images__bottom {
-  grid-area: bottom; }
+  .main .room-images__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%; }
+  .main .room-images__left {
+    grid-area: left; }
+  .main .room-images__top {
+    grid-area: top; }
+  .main .room-images__bottom {
+    grid-area: bottom; }
 
 .main__body h2 {
   font-family: Montserrat, "Arial,sans-serif";
@@ -176,4 +172,4 @@
     text-align: center; } }
 
 
-/*# sourceMappingURL=details.5d1ce32c4cd76ee2d392.css.map*/
+/*# sourceMappingURL=details.47e6dc209bef493d34b7.css.map*/
