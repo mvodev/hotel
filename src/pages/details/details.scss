@@ -11,14 +11,14 @@
     margin: 0 auto;
   }
 
-  &__room-images {
+  & .room-images {
     min-height: 485px;
     width: 100%;
-    overflow: hidden;
     display: grid;
-    grid-template-areas:"left right";
+    grid-template-areas:"left top"
+                        "left bottom";
     grid-template-columns: 68.125% 31.875%;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 
   &__room-image {
@@ -27,25 +27,17 @@
     height: 100%;
   }
 
-  .room-images-left{
+  .room-images__left{
     grid-area: left;
   }
 
-  .room-images-right{
-    display: grid;
-    grid-area: right;
-    grid-template-rows: 1fr 1fr;
-    overflow: hidden;
-
-    &__top {
-    overflow: hidden;
-    }
-
-    &__bottom {
-      overflow: hidden;
-    }
+  .room-images__top{
+    grid-area: top;
   }
 
+  .room-images__bottom{
+    grid-area: bottom;
+  }
 
   &__body h2 {
     font-family: $font-family-main,$fallback-font;
@@ -181,11 +173,12 @@
       padding: 0px;
     }
 
-    &__room-images {
+    & .room-images {
       grid-template-columns: 1fr;
     }
 
-    &__room-images .room-images-right {
+    &__room-images .room-images__top,
+    &__room-images .room-images__bottom {
       display: none;
     }
 

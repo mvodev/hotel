@@ -18,32 +18,27 @@
 .main-header {
   margin: 0 auto; }
 
-.main__room-images {
+.main .room-images {
   min-height: 485px;
   width: 100%;
-  overflow: hidden;
   display: grid;
-  grid-template-areas: "left right";
+  grid-template-areas: "left top" "left bottom";
   grid-template-columns: 68.125% 31.875%;
-  grid-template-rows: 1fr; }
+  grid-template-rows: 1fr 1fr; }
 
 .main__room-image {
   object-fit: cover;
   width: 100%;
   height: 100%; }
 
-.main .room-images-left {
+.main .room-images__left {
   grid-area: left; }
 
-.main .room-images-right {
-  display: grid;
-  grid-area: right;
-  grid-template-rows: 1fr 1fr;
-  overflow: hidden; }
-  .main .room-images-right__top {
-    overflow: hidden; }
-  .main .room-images-right__bottom {
-    overflow: hidden; }
+.main .room-images__top {
+  grid-area: top; }
+
+.main .room-images__bottom {
+  grid-area: bottom; }
 
 .main__body h2 {
   font-family: Montserrat, "Arial,sans-serif";
@@ -135,9 +130,10 @@
   .main__content {
     height: auto;
     padding: 0px; }
-  .main__room-images {
+  .main .room-images {
     grid-template-columns: 1fr; }
-  .main__room-images .room-images-right {
+  .main__room-images .room-images__top,
+  .main__room-images .room-images__bottom {
     display: none; }
   .main__body {
     flex-direction: column;
@@ -180,4 +176,4 @@
     text-align: center; } }
 
 
-/*# sourceMappingURL=details.ded2c545e2aec86cd358.css.map*/
+/*# sourceMappingURL=details.5d1ce32c4cd76ee2d392.css.map*/
