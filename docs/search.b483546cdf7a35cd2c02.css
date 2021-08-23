@@ -41,23 +41,21 @@
   margin-bottom: 27px; }
 
 .main .left-column__header {
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #1f2041;
   margin-bottom: 5px; }
 
 .main .left-column__header_guests {
   margin-top: 20px; }
 
-.main .left-column__header_price {
+.main .left-column__slider-label {
+  margin-top: 8px;
+  font-family: Montserrat, Arial, sans-serif;
   font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 14px;
-  color: rgba(31, 32, 65, 0.5);
-  font-weight: normal;
-  text-transform: none;
-  margin-top: 8px; }
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(31, 32, 65, 0.5); }
 
 .main .left-column__header_rules {
   margin-top: 30px;
@@ -94,14 +92,7 @@
   margin-left: 290px; }
 
 .main .right-column__header {
-  font-family: Montserrat, Arial, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
-  color: #1f2041;
-  margin-bottom: 21px;
-  letter-spacing: -0.5px; }
+  margin-bottom: 21px; }
 
 @media (max-width: 1230px) {
   .main .right-column__rooms {
@@ -128,4 +119,4 @@
     text-align: center; } }
 
 
-/*# sourceMappingURL=search.502e87425f3c0d658109.css.map*/
+/*# sourceMappingURL=search.b483546cdf7a35cd2c02.css.map*/
