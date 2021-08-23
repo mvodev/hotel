@@ -40,17 +40,6 @@
 
   }
 
-
-  &__body h2 {
-    font-family: $font-family-main,$fallback-font;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 19px;
-    line-height: 23px;
-    color: $darkShade100;
-    letter-spacing: -0.5px;
-  }
-
   &__body {
     margin: 72px auto 70px auto;
     max-width: $container-width - 280px;
@@ -111,9 +100,15 @@
       justify-content: space-between;
     }
 
-    &__comments-header_number {
-      font-weight: 400;
+    &__comments-header span {
+      font-family: Montserrat;
       font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 14px;
+      letter-spacing: 0em;
+      text-align: right;
+      color: $darkShade50;
     }
 
     &__rules {
@@ -139,21 +134,10 @@
       flex-direction: column;
     }
 
-    &__text-wrapper h3 {
-      margin-bottom: 20px;
-      margin-left: 20px;
-      font-weight: bold;
-      font-size: 19px;
-      line-height: 23px;
-    }
-
     &__text-wrapper:last-child {
       margin-right: 10px;
     }
 
-    &__text-wrapper:last-child h3 {
-      margin-left: 0px;
-    }
 
     &__text-wrapper p {
       font-family: $font-family-main;

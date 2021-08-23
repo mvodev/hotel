@@ -9,6 +9,7 @@ block content
   include ../../components/list/list.pug
   include ../../components/diagram/diagram.pug
   include ../../components/comment/comment.pug
+  include ../../components/heading/heading.pug
 
   main.main
     .main__content
@@ -25,7 +26,8 @@ block content
           .left-column
             article.left-column__room-impressions
               section.left-column__content
-                h2.left-column__header='Сведения о номере'
+                .left-column__header
+                  +heading({nestingLevel:'h2',text:'Сведения о номере'})
                 +list({
                     type:'icons',
                     icon:'insert_emoticon',
@@ -44,16 +46,17 @@ block content
                     header:'Уют',
                     text:'Номер оснащен камином'
                     })
-              section.left-column__impressions  
-                h2='Впечатления от номера'
+              section.left-column__impressions 
+                .left-column__header
+                  +heading({nestingLevel:'h2',text:'Впечатления от номера'})
                 +diagram({
                         number:260,
                         label:'голосов'
                         })
             article.left-column__comments
-              h2.left-column__comments-header
-                span.left-column__comments-header_main='Отзывы посетителей номера'
-                span.left-column__comments-header_number='2 отзыва'
+              .left-column__comments-header
+                +heading({nestingLevel:'h2',text:'Отзывы посетителей номера'})
+                span='2 отзыва'
               .main-comment.main-comment_first
                 +comment({
                         headerName:'Мурад Сарафанов',
@@ -74,14 +77,16 @@ block content
                         })
             article.left-column__rules
               .rules__text-wrapper
-                h3='Правила'
+                .left-column__header
+                  +heading({nestingLevel:'h2',text:'Правила'})
                 +list({labels:[
                             'Нельзя с питомцами',
                             'Без вечеринок и мероприятий',
                             'Время прибытия — после 13:00,а выезд до 12:00'
                             ]})
               .rules__text-wrapper
-                h3='Отмена'
+                .left-column__header
+                  +heading({nestingLevel:'h2',text:'Отмена'})
                 p='Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия   вы получите полный возврат за вычетом сбора за услуги.'
         .main__body-right
           +roomprice({
