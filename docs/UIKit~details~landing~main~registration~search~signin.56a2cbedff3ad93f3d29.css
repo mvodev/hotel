@@ -4180,12 +4180,6 @@ table {
     max-width: 320px;
     width: 100%; }
   .sign-in__header {
-    font-style: normal;
-    font-family: Montserrat, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 30px;
-    color: #1f2041;
     margin-bottom: 20px; }
   .sign-in__text-wrapper {
     margin-bottom: 20px;
@@ -4506,12 +4500,6 @@ table {
     max-width: 320px;
     width: 100%; }
   .sign-in__header {
-    font-style: normal;
-    font-family: Montserrat, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 30px;
-    color: #1f2041;
     margin-bottom: 20px; }
   .sign-in__text-wrapper {
     margin-bottom: 20px;
@@ -5132,4 +5120,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.26dba472c6f678113813.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.56a2cbedff3ad93f3d29.css.map*/
