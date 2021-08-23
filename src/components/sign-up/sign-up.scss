@@ -29,21 +29,16 @@
     font-family: $font-family-main, $fallback-font;
   }
 
-  &__header_reg {
-    font-size: 24px;
-    line-height: 30px;
+  &__header-reg {
     padding-bottom: 20px;
   }
 
-  &__header_birthday,
-  &__header_data {
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
+  &__header-birthday,
+  &__header-data {
     margin-bottom: 5px;
   }
 
-  &__header_data {
+  &__header-data {
     margin-top: 20px;
   }
 

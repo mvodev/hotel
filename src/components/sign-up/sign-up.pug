@@ -2,10 +2,12 @@ include ../button/button.pug
 include ../button-radio/button-radio.pug
 include ../text-field/text-field.pug
 include ../toggle/toggle.pug
+include ../heading/heading.pug
 mixin signup(options)
   form(class='sign-up' action=options.action)
     .sign-up__wrapper
-      h2.sign-up__header.sign-up__header_reg='Регистрация аккаунта'
+      .sign-up__header-reg
+        +heading({nestingLevel:'h1',text:'Регистрация аккаунта'})
       .sign-up__text-wrapper
         +textfield({
                   isDefault:true,
@@ -25,12 +27,14 @@ mixin signup(options)
                 label:'Женщина',
                 id:'sign-female'
                 })
-      h3.sign-up__header.sign-up__header_birthday='Дата рождения'
+      .sign-up__header-birthday
+        +heading({nestingLevel:'h3',text:'Дата рождения'})
       +textfield({
                   isMasked:true,
                   placeholder:'ДД.ММ.ГГГГ'
                   })
-      h3.sign-up__header.sign-up__header_data='Данные для входа в сервис'
+      .sign-up__header-data
+        +heading({nestingLevel:'h3',text:'Данные для входа в сервис'})
       .sign-up__text-wrapper
         +textfield({
                     isDefault:true,

@@ -4089,16 +4089,11 @@ table {
     font-style: normal;
     font-weight: 700;
     font-family: Montserrat, Arial, sans-serif; }
-  .sign-up__header_reg {
-    font-size: 24px;
-    line-height: 30px;
+  .sign-up__header-reg {
     padding-bottom: 20px; }
-  .sign-up__header_birthday, .sign-up__header_data {
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
+  .sign-up__header-birthday, .sign-up__header-data {
     margin-bottom: 5px; }
-  .sign-up__header_data {
+  .sign-up__header-data {
     margin-top: 20px; }
   .sign-up__radio-button-wrapper {
     display: flex;
@@ -5120,4 +5115,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.56a2cbedff3ad93f3d29.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.502e87425f3c0d658109.css.map*/
