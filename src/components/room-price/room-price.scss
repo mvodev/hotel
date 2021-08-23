@@ -134,6 +134,17 @@
     margin-bottom: 20px;
   }
 
+  &__total-price div{
+    font-family: Montserrat;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $darkShade100;
+  }
+
   &__extra-info {
     width: 20px;
     height: 20px;

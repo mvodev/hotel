@@ -4292,6 +4292,15 @@ table {
     margin-bottom: 30px; }
   .room-price__total-price {
     margin-bottom: 20px; }
+  .room-price__total-price div {
+    font-family: Montserrat;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1f2041; }
   .room-price__extra-info {
     width: 20px;
     height: 20px;
@@ -5108,4 +5117,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.ad2022dcfc592816d008.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.dd47d134121518b1713a.css.map*/
