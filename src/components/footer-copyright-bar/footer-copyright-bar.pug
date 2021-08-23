@@ -1,7 +1,7 @@
 include ../social-networks/social-networks.pug
 mixin footer-copyright({copyrightText='Copyright © 2018 Toxin отель. Все права зачищены.'}={})
-  footer.footer-copyright
-    .footer-copyright__wrapper
-      .footer-copyright__rights=copyrightText 
-      .footer__social-networks-links
+  footer.footer-copyright-bar
+    .footer-copyright-bar__wrapper
+      .footer-copyright-bar__rights=copyrightText 
+      .footer-copyright-bar__social-networks-links
         +social-networks()

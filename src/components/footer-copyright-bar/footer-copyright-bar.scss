@@ -1,5 +1,5 @@
 @import "../social-networks/social-networks.scss";
-.footer-copyright {
+.footer-copyright-bar {
   max-width: 100%;
   min-height: 70px;
   background: $white;
@@ -23,7 +23,7 @@
     padding: 0 15px;
   }
 
-  .footer-copyright__rights {
+  &__rights {
     max-width: 367px;
     font-size: 14px;
     line-height: 17px;
@@ -33,25 +33,22 @@
 }
 
 @media (max-width: $container-mobile-width) {
-  .footer-copyright__wrapper {
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+  .footer-copyright-bar{
+
+    &__wrapper {
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__rights {
+      display: none;
+    }
+
+    &__social-networks-links {
+      margin: 0;
+    }
   }
 
-  .footer-copyright__rights {
-    display: none;
-  }
-
-  .footer__copyright {
-    margin: 5px 0px 10px 0px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .footer__social-networks-links {
-    margin: 0px 0px 25px 0px;
-  }
-  
 }
