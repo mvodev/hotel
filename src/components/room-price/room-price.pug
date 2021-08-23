@@ -1,5 +1,6 @@
 include ../button/button.pug
 include ../dropdown/dropdown.pug
+include ../heading/heading.pug
 mixin roomprice( {roomType = '', roomNumber, priceHeader, units='  в сутки',price,  total, discount, fee, extraFee, totalPrice, } = {} )
   form.room-price
     .room-price__wrapper
@@ -15,12 +16,15 @@ mixin roomprice( {roomType = '', roomNumber, priceHeader, units='  в сутки
             span=units
       .room-price__dropdown-date
           .room-price__dropdown-date-header
-            h3.room-price__header.room-price__dropdown-header='прибытие'
-            h3.room-price__header.room-price__dropdown-header='выезд'
+            .room-price__header.room-price__dropdown-header
+              +heading({nestingLevel:'h3',text:'прибытие'})
+            .room-price__header.room-price__dropdown-header
+              +heading({nestingLevel:'h3',text:'выезд'})
           .room-price__dropdown
             +dropdown({placeholder:'ДД.ММ.ГГГГ',typeDropdown:'filter-date',isExpanded:false,id:'d3'})
       .room-price__dropdown-guests
-        h3.room-price__header='гости'
+        .room-price__header
+          +heading({nestingLevel:'h3',text:'гости'})
         +dropdown({
                   placeholder:"Сколько гостей",
                   typeDropdown:'guests',
@@ -43,10 +47,10 @@ mixin roomprice( {roomType = '', roomNumber, priceHeader, units='  в сутки
       .room-price__service-extra-fee
         div
           h3='Сбор за дополнительные услуги'
-          div(class='room-price__extra-info')='i'
+          .room-price__extra-info='i'
         div=extraFee
       .room-price__total-price
-        h3='Итого'
+        +heading({nestingLevel:'h3',text:'Итого'})
         div=totalPrice
       +button({
               label:'забронировать',

@@ -4293,12 +4293,6 @@ table {
     font-weight: normal;
     font-size: 12px; }
   .room-price__header {
-    font-family: Montserrat, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: #1f2041;
     margin-bottom: 6px; }
   .room-price__dropdown-date-header {
     display: flex;
@@ -4937,6 +4931,26 @@ table {
     width: 196px;
     height: 34px; }
 
+.heading {
+  font-family: Montserrat, Arial, sans-serif;
+  color: #1f2041;
+  font-style: normal;
+  font-weight: 700;
+  text-align: left;
+  letter-spacing: 0em; }
+  .heading_type_h1 {
+    font-size: 24px;
+    font-style: normal;
+    line-height: 29px;
+    text-align: left; }
+  .heading_type_h2 {
+    font-size: 19px;
+    line-height: 23px; }
+  .heading_type_h3 {
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase; }
+
 .text-field {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
@@ -5142,4 +5156,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.f0b8a4981d29929c56f2.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.030ceee58fbebbe18c2a.css.map*/
