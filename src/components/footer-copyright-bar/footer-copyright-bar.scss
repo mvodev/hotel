@@ -3,16 +3,16 @@
   max-width: 100%;
   min-height: 70px;
   background: $white;
-  box-shadow: 0px 10px 20px $darkShade5;
+  box-shadow: 0 10px 20px $darkShade5;
   border-top: 1px solid $darkShade25;
   font-style: normal;
   font-weight: normal;
-  font-family: $font-family-main, $fallback-font;
+  font-family: inherit;
   display: flex;
   align-items: center;
 
   &__wrapper {
-    margin: 0px auto;
+    margin: 0 auto;
     max-width: $container-width - 250px;
     display: flex;
     text-align: center;
@@ -25,8 +25,8 @@
 
   &__rights {
     max-width: 367px;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 1.16rem;
+    line-height: 1.42rem;
     color: $darkShade75;
   }
 

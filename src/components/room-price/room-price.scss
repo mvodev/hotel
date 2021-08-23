@@ -39,20 +39,20 @@
   }
 
   &__number span:first-child {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 1.16rem;
+    line-height: 1.42rem;
   }
 
   &__number span:nth-child(2) {
-    font-size: 23px;
-    line-height: 23px;
+    font-size: 1.92rem;
+    line-height: 1.92rem;
   }
 
   &__type {
     font-family: $font-family-main, $fallback-font;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     text-transform: uppercase;
     color: $purple;
   }
@@ -62,15 +62,15 @@
     width: 100px;
     font-family: $font-family-main, $fallback-font;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.16rem;
+    line-height: 1.5rem;
     color: $darkShade50;
     white-space: pre;
   }
 
   &__price span:nth-child(2) {
     font-weight: normal;
-    font-size: 12px;
+    font-size: 1rem;
   }
 
   &__header {
@@ -104,9 +104,9 @@
     justify-content: space-between;
     font-weight: normal;
     font-style: normal;
-    font-family: $font-family-main, $fallback-font;
-    font-size: 14px;
-    line-height: 24px;
+    font-family: inherit;
+    font-size: 1.16rem;
+    line-height: 2rem;
     color: $darkShade75;
   }
 
@@ -135,11 +135,11 @@
   }
 
   &__total-price div{
-    font-family: Montserrat;
-    font-size: 19px;
+    font-family: inherit;
+    font-size: 1.58rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 23px;
+    line-height: 1.92rem;
     letter-spacing: 0em;
     text-align: left;
     color: $darkShade100;

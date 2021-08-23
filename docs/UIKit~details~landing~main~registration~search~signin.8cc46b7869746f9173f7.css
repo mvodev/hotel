@@ -172,7 +172,7 @@
   box-sizing: content-box;
   font-family: Montserrat, sans-serif;
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 1.16rem;
   color: #4a4a4a;
   width: 250px;
   position: absolute;
@@ -402,7 +402,7 @@
 
 .datepicker--time-label {
   display: none;
-  font-size: 12px; }
+  font-size: 1rem; }
 
 .datepicker--time-current {
   display: -webkit-flex;
@@ -414,7 +414,7 @@
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  font-size: 14px;
+  font-size: 1.16rem;
   text-align: center;
   margin: 0 0 0 10px; }
 
@@ -425,7 +425,7 @@
 .datepicker--time-current-hours,
 .datepicker--time-current-minutes {
   line-height: 1;
-  font-size: 19px;
+  font-size: 1.58rem;
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   position: relative;
   z-index: 1; }
@@ -452,7 +452,7 @@
           align-self: flex-end;
   color: #9c9c9c;
   margin-left: 6px;
-  font-size: 11px;
+  font-size: 0.92rem;
   margin-bottom: 1px; }
 
 .datepicker--time-row {
@@ -462,7 +462,7 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 11px;
+  font-size: 0.92rem;
   height: 17px;
   background: linear-gradient(to right, #dedede, #dedede) left 50%/100% 1px no-repeat; }
   .datepicker--time-row:first-child {
@@ -530,7 +530,7 @@
   color: #9c9c9c;
   border: 1px solid;
   border-radius: 50%;
-  font-size: 16px;
+  font-size: 1.33rem;
   position: relative;
   margin: 0 5px -1px 0;
   width: 1em;
@@ -862,15 +862,15 @@ table {
   max-width: 100%;
   min-height: 70px;
   background: #ffffff;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
   border-top: 1px solid rgba(31, 32, 65, 0.25);
   font-style: normal;
   font-weight: normal;
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: inherit;
   display: flex;
   align-items: center; }
   .footer-copyright-bar__wrapper {
-    margin: 0px auto;
+    margin: 0 auto;
     max-width: 1190px;
     display: flex;
     text-align: center;
@@ -881,8 +881,8 @@ table {
     padding: 0 15px; }
   .footer-copyright-bar__rights {
     max-width: 367px;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 1.16rem;
+    line-height: 1.42rem;
     color: rgba(31, 32, 65, 0.75); }
 
 @media (max-width: 767px) {
@@ -902,7 +902,7 @@ table {
   height: 44px;
   max-width: 320px;
   width: 100%;
-  font-family: Montserrat, Arial, sans-serif; }
+  font-family: inherit; }
   .text-field:hover {
     border: 1px solid rgba(31, 32, 65, 0.5); }
   .text-field:focus {
@@ -912,27 +912,27 @@ table {
     flex-direction: row;
     position: relative; }
   .text-field__input-date, .text-field__input-date::placeholder {
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: inherit;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.16rem;
+    line-height: 2rem;
     color: rgba(31, 32, 65, 0.25); }
   .text-field label {
     white-space: nowrap;
     height: 15px;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     text-transform: uppercase;
     color: #1f2041;
     margin-bottom: 5px; }
   .text-field input {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.16rem;
+    line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.75);
     width: 100%;
     height: 44px;
@@ -978,31 +978,31 @@ table {
   display: flex;
   flex-direction: column;
   width: 260px;
-  font-family: Montserrat, Arial, sans-serif; }
+  font-family: inherit; }
   .subscribe__text-container {
     height: 84px;
     margin-bottom: 20px; }
   .subscribe__header {
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     margin-bottom: 20px;
     text-transform: uppercase;
     color: #1f2041; }
   .subscribe__proposal {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.16rem;
+    line-height: 2rem;
     color: rgba(31, 32, 65, 0.75); }
   .subscribe__form {
     width: 260px; }
 
 .footer-widget {
   max-width: 100%;
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: inherit;
   border-top: 1px solid rgba(31, 32, 65, 0.25);
   background: #ffffff;
-  box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+  box-shadow: 0 1px 0 rgba(31, 32, 65, 0.1);
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1025,8 +1025,8 @@ table {
     width: 260px;
     margin-top: 15px;
     display: block;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.16rem;
+    line-height: 2rem;
     color: rgba(31, 32, 65, 0.75); }
   .footer-widget__links {
     max-width: 549px;
@@ -1109,7 +1109,7 @@ table {
     padding: 40px 10px 30px 10px; } }
 
 .dropdown-counter {
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: inherit;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1189,11 +1189,11 @@ table {
   width: 266px; }
 
 .datepicker--day-name {
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   display: flex;
   align-items: center;
   text-align: center;
@@ -1204,8 +1204,8 @@ table {
 .datepicker--cell-day {
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   display: flex;
   align-items: center;
   text-align: center;
@@ -1217,8 +1217,8 @@ table {
   font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   display: flex;
   align-items: center;
   text-align: center;
@@ -1238,22 +1238,22 @@ table {
 
 .datepicker {
   background: #ffffff;
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: inherit;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
   width: 320px; }
   .datepicker--content {
-    padding: 0px;
+    padding: 0;
     width: 280px;
     margin: 0 19.94px 20.44px 20.94px; }
   .datepicker--nav-action {
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 20px;
+    font-size: 2rem;
+    line-height: 1.66rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -1265,11 +1265,11 @@ table {
     border-bottom: none;
     margin-top: 15px; }
   .datepicker--nav-title {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: inherit;
     font-style: normal;
     font-weight: bold;
-    font-size: 19px;
-    line-height: 24px;
+    font-size: 1.58rem;
+    line-height: 2rem;
     text-align: center;
     color: #1f2041; }
   .datepicker--nav-title i {
@@ -1287,10 +1287,10 @@ table {
     text-transform: uppercase;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    font-family: Montserrat, Arial, sans-serif;
-    padding: 0px;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-family: inherit;
+    padding: 0;
     height: 15px; }
   .datepicker--buttons button:first-child {
     padding-left: 20px; }
@@ -1369,7 +1369,7 @@ table {
 
 .dropdown {
   position: relative;
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: inherit;
   line-height: 14.63px;
   height: 44px;
   background: #ffffff;
@@ -1383,7 +1383,7 @@ table {
   .dropdown_room {
     width: 266px;
     border: 1px solid rgba(31, 32, 65, 0.25);
-    border-radius: 2px 2px 0px 0px;
+    border-radius: 2px 2px 0 0;
     cursor: pointer; }
   .dropdown_room.dropdown_is-opened {
     border: 1px solid rgba(31, 32, 65, 0.5); }
@@ -1401,21 +1401,21 @@ table {
     height: 24px;
     padding-left: 15px;
     margin-top: 8px;
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: inherit;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.16rem;
+    line-height: 2rem;
     cursor: pointer; }
   .dropdown_guests .dropdown__input {
     width: 180px;
     overflow: hidden; }
   .dropdown__input::placeholder {
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: inherit;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.16rem;
+    line-height: 2rem;
     height: 18px;
     color: rgba(31, 32, 65, 0.75); }
   .dropdown__arrow {
@@ -1435,7 +1435,7 @@ table {
     right: 0;
     top: 0; }
   .dropdown__body {
-    font-size: 12px;
+    font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
     display: none;
@@ -1445,8 +1445,8 @@ table {
     background: #ffffff;
     border: 1px solid rgba(31, 32, 65, 0.5);
     box-sizing: border-box;
-    border-radius: 0px 0px 2px 2px;
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
+    border-radius: 0 0 2px 2px;
+    box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05); }
   .dropdown_room .dropdown__body {
     width: 266px;
     margin-left: -1px; }
@@ -1467,11 +1467,11 @@ table {
   list-style-type: none;
   display: block; }
   .bullet-list__elem {
-    font-family: Montserrat;
+    font-family: inherit;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.16rem;
+    line-height: 2rem;
     color: rgba(31, 32, 65, 0.75);
     padding-left: 20.86px;
     position: relative;
@@ -1495,11 +1495,11 @@ table {
     position: relative;
     cursor: pointer; }
   .bullet-list-expandable__label {
-    font-family: Montserrat;
+    font-family: inherit;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     text-transform: uppercase;
     color: #1f2041;
     display: flex;
@@ -1514,8 +1514,8 @@ table {
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 2rem;
+    line-height: 2rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -1548,25 +1548,25 @@ table {
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 48px;
-    line-height: 41px;
+    font-size: 4rem;
+    line-height: 3.42rem;
     display: flex;
     align-items: center;
     text-align: center;
     margin-right: 10px; }
   .bullet-list-icons__header {
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: inherit;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.16rem;
+    line-height: 2rem;
     color: rgba(31, 32, 65, 0.75); }
   .bullet-list-icons__text {
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: inherit;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.16rem;
+    line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.5);
     padding-top: 5px;
     margin-bottom: 17px; }
@@ -1578,13 +1578,13 @@ table {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: -3px;
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: inherit;
     font-style: normal;
     white-space: nowrap; }
   .range-slider__label-header {
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     text-transform: uppercase;
     color: #1f2041;
     padding-top: 3px; }
@@ -1593,8 +1593,8 @@ table {
     width: 102px;
     text-align: justify;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     text-align: right;
     color: rgba(31, 32, 65, 0.5); }
 
@@ -1634,8 +1634,8 @@ table {
   font-family: "rouble";
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   color: rgba(31, 32, 65, 0.5); }
 
 .room-card {
@@ -1644,7 +1644,7 @@ table {
   background: #ffffff;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: inherit;
   font-style: normal;
   position: relative; }
   .room-card__slider {
@@ -1677,10 +1677,10 @@ table {
     position: absolute;
     cursor: pointer;
     font-family: Material Icons;
-    font-size: 24px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 2rem;
     letter-spacing: 0em;
     display: flex;
     align-items: center;
@@ -1724,8 +1724,8 @@ table {
     height: 24px;
     font-family: Montserrat, Arial, sans-serif;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 1.16rem;
+    line-height: 1.42rem;
     color: #1f2041;
     margin: 24px 1px 0 20px;
     display: flex;
@@ -1736,8 +1736,8 @@ table {
   .room-card__price {
     width: 100px;
     height: 20px;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.16rem;
+    line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.5);
     white-space: nowrap;
     margin-right: 16px;
@@ -1745,15 +1745,15 @@ table {
     text-align: center; }
   .room-card__price span:first-child {
     font-weight: bold;
-    font-size: 14px; }
+    font-size: 1.16rem; }
   .room-card__price span:nth-child(2) {
-    font-size: 12px; }
+    font-size: 1rem; }
   .room-card__type {
     width: 41px;
     height: 15px;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     text-transform: uppercase;
     color: #bc9cff;
     margin-right: 32px;
@@ -1761,8 +1761,8 @@ table {
   .room-card__rate {
     margin-left: 20px; }
   .room-card__comment {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.16rem;
+    line-height: 1.5rem;
     text-align: right;
     color: rgba(31, 32, 65, 0.5);
     margin-right: 20px;
@@ -1777,14 +1777,14 @@ table {
     display: flex;
     flex-direction: row;
     margin-bottom: 10.56px;
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: inherit;
     font-style: normal;
     font-weight: normal; }
   .pagination__number {
     width: 40px;
     height: 40px;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -1799,8 +1799,8 @@ table {
   .pagination__ellipsis {
     width: 40px;
     height: 40px;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -1815,8 +1815,8 @@ table {
     background: rgba(31, 32, 65, 0.25); }
   .pagination__arrow {
     font-family: Material Icons;
-    font-size: 24px;
-    line-height: 20px;
+    font-size: 2rem;
+    line-height: 1.67rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -1830,8 +1830,8 @@ table {
   .pagination__arrow:hover {
     background: rgba(31, 32, 65, 0.25); }
   .pagination__label {
-    font-size: 14px;
-    line-height: 19px;
+    font-size: 1.16rem;
+    line-height: 1.59rem;
     font-style: normal;
     font-weight: normal;
     color: rgba(31, 32, 65, 0.75);
@@ -1938,7 +1938,7 @@ table {
 
 .colors-and-types {
   width: 100%;
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: inherit;
   background-color: #ffffff;
   height: 900px;
   max-width: 1440px;
@@ -1960,8 +1960,8 @@ table {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-size: 17px;
-    line-height: 26px;
+    font-size: 1.42rem;
+    line-height: 2.17rem;
     color: #1f2041; }
   .colors__right-column {
     width: 436px;
@@ -2258,15 +2258,15 @@ table {
   max-width: 100%;
   min-height: 70px;
   background: #ffffff;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
   border-top: 1px solid rgba(31, 32, 65, 0.25);
   font-style: normal;
   font-weight: normal;
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: inherit;
   display: flex;
   align-items: center; }
   .footer-copyright-bar__wrapper {
-    margin: 0px auto;
+    margin: 0 auto;
     max-width: 1190px;
     display: flex;
     text-align: center;
@@ -2277,8 +2277,8 @@ table {
     padding: 0 15px; }
   .footer-copyright-bar__rights {
     max-width: 367px;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 1.16rem;
+    line-height: 1.42rem;
     color: rgba(31, 32, 65, 0.75); }
 
 @media (max-width: 767px) {
@@ -2324,11 +2324,11 @@ table {
     align-items: center;
     margin-bottom: 20px; }
   .footer-creative__logo p {
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: inherit;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.16rem;
+    line-height: 2rem;
     text-align: center;
     color: rgba(31, 32, 65, 0.75);
     margin-top: 16px;
@@ -2340,7 +2340,7 @@ table {
   height: 44px;
   max-width: 320px;
   width: 100%;
-  font-family: Montserrat, Arial, sans-serif; }
+  font-family: inherit; }
   .text-field:hover {
     border: 1px solid rgba(31, 32, 65, 0.5); }
   .text-field:focus {
@@ -2350,27 +2350,27 @@ table {
     flex-direction: row;
     position: relative; }
   .text-field__input-date, .text-field__input-date::placeholder {
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: inherit;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.16rem;
+    line-height: 2rem;
     color: rgba(31, 32, 65, 0.25); }
   .text-field label {
     white-space: nowrap;
     height: 15px;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     text-transform: uppercase;
     color: #1f2041;
     margin-bottom: 5px; }
   .text-field input {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.16rem;
+    line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.75);
     width: 100%;
     height: 44px;
@@ -2416,31 +2416,31 @@ table {
   display: flex;
   flex-direction: column;
   width: 260px;
-  font-family: Montserrat, Arial, sans-serif; }
+  font-family: inherit; }
   .subscribe__text-container {
     height: 84px;
     margin-bottom: 20px; }
   .subscribe__header {
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     margin-bottom: 20px;
     text-transform: uppercase;
     color: #1f2041; }
   .subscribe__proposal {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.16rem;
+    line-height: 2rem;
     color: rgba(31, 32, 65, 0.75); }
   .subscribe__form {
     width: 260px; }
 
 .footer-widget {
   max-width: 100%;
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: inherit;
   border-top: 1px solid rgba(31, 32, 65, 0.25);
   background: #ffffff;
-  box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+  box-shadow: 0 1px 0 rgba(31, 32, 65, 0.1);
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -2463,8 +2463,8 @@ table {
     width: 260px;
     margin-top: 15px;
     display: block;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.16rem;
+    line-height: 2rem;
     color: rgba(31, 32, 65, 0.75); }
   .footer-widget__links {
     max-width: 549px;
@@ -2518,13 +2518,13 @@ table {
     content: "";
     position: absolute;
     height: 3px;
-    left: 0px;
+    left: 0;
     transition: all 0.3s ease 0s;
     width: 100%; }
   .header-burger::before {
-    top: 0px; }
+    top: 0; }
   .header-burger::after {
-    bottom: 0px; }
+    bottom: 0; }
 
 @media (max-width: 767px) {
   .header-burger {
@@ -2552,9 +2552,9 @@ table {
       transition: all 0.3s ease 0s;
       width: 100%; }
     .header-burger::before {
-      top: 0px; }
+      top: 0; }
     .header-burger::after {
-      bottom: 0px; }
+      bottom: 0; }
     .header-burger.burger_is-opened span {
       transform: scale(0); }
     .header-burger.burger_is-opened::before {
@@ -2571,8 +2571,8 @@ table {
     width: 24px;
     height: 21px;
     font-family: Material Icons;
-    font-size: 24px;
-    line-height: 20px;
+    font-size: 2rem;
+    line-height: 1.67rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -2586,13 +2586,13 @@ table {
     position: relative; }
   .list-links__ref, .list-links__sub-ref {
     color: rgba(31, 32, 65, 0.5);
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 1.16rem;
+    line-height: 1.42rem;
     font-weight: 400;
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: inherit;
     white-space: nowrap; }
   .list-links__sub-ref {
-    margin: 10px 10px 0px 10px; }
+    margin: 10px 10px 0 10px; }
   .list-links__sub-ref:last-child {
     margin-bottom: 10px; }
   .list-links__sub-ref:hover {
@@ -2621,11 +2621,11 @@ table {
       text-transform: uppercase;
       margin-bottom: 21px;
       color: #1f2041;
-      font-size: 12px; }
+      font-size: 1rem; }
     .list-links_vertical .list-links__link {
-      margin-right: 0px;
+      margin-right: 0;
       margin-bottom: 20px;
-      font-size: 12px; }
+      font-size: 1rem; }
     .list-links_vertical .list-links__link:last-child {
       margin-bottom: 0px; }
   .list-links__link_is-expandable {
@@ -2655,11 +2655,11 @@ table {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 1.16rem;
+  line-height: 1.42rem;
   width: 100%; }
   .header-bar__wrapper {
     max-width: 1190px;
@@ -2689,11 +2689,11 @@ table {
     gap: 20px; }
   .header-bar__user {
     color: rgba(31, 32, 65, 0.5);
-    font-family: Montserrat, Arial, sans-serif;
-    font-size: 14px;
+    font-family: inherit;
+    font-size: 1.16rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 17px;
+    line-height: 1.42rem;
     letter-spacing: 0em;
     text-decoration: none; }
 
@@ -2734,13 +2734,13 @@ table {
     content: "";
     position: absolute;
     height: 3px;
-    left: 0px;
+    left: 0;
     transition: all 0.3s ease 0s;
     width: 100%; }
   .header-burger::before {
-    top: 0px; }
+    top: 0; }
   .header-burger::after {
-    bottom: 0px; }
+    bottom: 0; }
 
 @media (max-width: 767px) {
   .header-burger {
@@ -2768,9 +2768,9 @@ table {
       transition: all 0.3s ease 0s;
       width: 100%; }
     .header-burger::before {
-      top: 0px; }
+      top: 0; }
     .header-burger::after {
-      bottom: 0px; }
+      bottom: 0; }
     .header-burger.burger_is-opened span {
       transform: scale(0); }
     .header-burger.burger_is-opened::before {
@@ -2800,7 +2800,7 @@ table {
   margin-top: 40px; }
 
 .dropdown-counter {
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: inherit;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -2880,11 +2880,11 @@ table {
   width: 266px; }
 
 .datepicker--day-name {
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   display: flex;
   align-items: center;
   text-align: center;
@@ -2895,8 +2895,8 @@ table {
 .datepicker--cell-day {
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   display: flex;
   align-items: center;
   text-align: center;
@@ -2908,8 +2908,8 @@ table {
   font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   display: flex;
   align-items: center;
   text-align: center;
@@ -2929,22 +2929,22 @@ table {
 
 .datepicker {
   background: #ffffff;
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: inherit;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
   width: 320px; }
   .datepicker--content {
-    padding: 0px;
+    padding: 0;
     width: 280px;
     margin: 0 19.94px 20.44px 20.94px; }
   .datepicker--nav-action {
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 20px;
+    font-size: 2rem;
+    line-height: 1.66rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -2956,11 +2956,11 @@ table {
     border-bottom: none;
     margin-top: 15px; }
   .datepicker--nav-title {
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: inherit;
     font-style: normal;
     font-weight: bold;
-    font-size: 19px;
-    line-height: 24px;
+    font-size: 1.58rem;
+    line-height: 2rem;
     text-align: center;
     color: #1f2041; }
   .datepicker--nav-title i {
@@ -2978,10 +2978,10 @@ table {
     text-transform: uppercase;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    font-family: Montserrat, Arial, sans-serif;
-    padding: 0px;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-family: inherit;
+    padding: 0;
     height: 15px; }
   .datepicker--buttons button:first-child {
     padding-left: 20px; }
@@ -3060,7 +3060,7 @@ table {
 
 .dropdown {
   position: relative;
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: inherit;
   line-height: 14.63px;
   height: 44px;
   background: #ffffff;
@@ -3074,7 +3074,7 @@ table {
   .dropdown_room {
     width: 266px;
     border: 1px solid rgba(31, 32, 65, 0.25);
-    border-radius: 2px 2px 0px 0px;
+    border-radius: 2px 2px 0 0;
     cursor: pointer; }
   .dropdown_room.dropdown_is-opened {
     border: 1px solid rgba(31, 32, 65, 0.5); }
@@ -3092,21 +3092,21 @@ table {
     height: 24px;
     padding-left: 15px;
     margin-top: 8px;
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: inherit;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.16rem;
+    line-height: 2rem;
     cursor: pointer; }
   .dropdown_guests .dropdown__input {
     width: 180px;
     overflow: hidden; }
   .dropdown__input::placeholder {
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: inherit;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.16rem;
+    line-height: 2rem;
     height: 18px;
     color: rgba(31, 32, 65, 0.75); }
   .dropdown__arrow {
@@ -3126,7 +3126,7 @@ table {
     right: 0;
     top: 0; }
   .dropdown__body {
-    font-size: 12px;
+    font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
     display: none;
@@ -3136,8 +3136,8 @@ table {
     background: #ffffff;
     border: 1px solid rgba(31, 32, 65, 0.5);
     box-sizing: border-box;
-    border-radius: 0px 0px 2px 2px;
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05); }
+    border-radius: 0 0 2px 2px;
+    box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05); }
   .dropdown_room .dropdown__body {
     width: 266px;
     margin-left: -1px; }
@@ -3160,13 +3160,13 @@ table {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: -3px;
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: inherit;
     font-style: normal;
     white-space: nowrap; }
   .range-slider__label-header {
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     text-transform: uppercase;
     color: #1f2041;
     padding-top: 3px; }
@@ -3175,8 +3175,8 @@ table {
     width: 102px;
     text-align: justify;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     text-align: right;
     color: rgba(31, 32, 65, 0.5); }
 
@@ -3216,8 +3216,8 @@ table {
   font-family: "rouble";
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   color: rgba(31, 32, 65, 0.5); }
 
 .text-field {
@@ -3226,7 +3226,7 @@ table {
   height: 44px;
   max-width: 320px;
   width: 100%;
-  font-family: Montserrat, Arial, sans-serif; }
+  font-family: inherit; }
   .text-field:hover {
     border: 1px solid rgba(31, 32, 65, 0.5); }
   .text-field:focus {
@@ -3236,27 +3236,27 @@ table {
     flex-direction: row;
     position: relative; }
   .text-field__input-date, .text-field__input-date::placeholder {
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: inherit;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.16rem;
+    line-height: 2rem;
     color: rgba(31, 32, 65, 0.25); }
   .text-field label {
     white-space: nowrap;
     height: 15px;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     text-transform: uppercase;
     color: #1f2041;
     margin-bottom: 5px; }
   .text-field input {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.16rem;
+    line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.75);
     width: 100%;
     height: 44px;
@@ -3299,7 +3299,7 @@ table {
     border: none; }
 
 .button-radio {
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: inherit;
   height: 24px;
   width: max-content; }
   .button-radio__input {
@@ -3347,7 +3347,7 @@ table {
 
 .button-rich {
   height: 51px;
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: inherit;
   width: 266px; }
   .button-rich__checkbox-input {
     position: absolute;
@@ -3362,9 +3362,9 @@ table {
     padding-left: 30px;
     position: relative;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 1.16rem;
     height: 18px;
-    line-height: 18px;
+    line-height: 1.5rem;
     max-width: 236px;
     padding-top: 2px; }
   .button-rich__checkbox-text {
@@ -3372,8 +3372,8 @@ table {
     color: rgba(31, 32, 65, 0.5);
     display: block;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 1rem;
+    line-height: 1.16rem;
     position: relative;
     height: 28px;
     margin-top: 8px;
@@ -3411,10 +3411,10 @@ table {
     color: rgba(31, 32, 65, 0.5);
     cursor: pointer;
     display: block;
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: inherit;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.166rem;
+    line-height: 1.5rem;
     position: relative;
     padding-left: 30px;
     width: 192px; }
@@ -3456,8 +3456,8 @@ table {
     -webkit-text-fill-color: transparent;
     cursor: pointer;
     display: block;
-    font-size: 24px;
-    line-height: 20px;
+    font-size: 2rem;
+    line-height: 1.66rem;
     height: 24px;
     text-align: center;
     width: 24px; }
@@ -3479,10 +3479,10 @@ table {
     display: block;
     font-family: Material Icons;
     font-weight: normal;
-    font-size: 10px;
+    font-size: 0.83rem;
     height: 20px;
     text-align: center;
-    line-height: 9px;
+    line-height: 0.7rem;
     padding-top: 5px;
     width: 50%; }
   .button-like__number {
@@ -3490,9 +3490,9 @@ table {
     color: rgba(31, 32, 65, 0.25);
     display: flex;
     font-weight: normal;
-    font-size: 10px;
+    font-size: 0.83rem;
     height: 100%;
-    line-height: 12px;
+    line-height: 1rem;
     text-align: center;
     width: 50%; }
   .button-like_is-liked {
@@ -3503,14 +3503,14 @@ table {
   color: #bc9cff; }
 
 .button-icon {
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: inherit;
   font-style: normal;
   overflow: hidden;
   position: relative;
   text-decoration: none;
   font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   text-transform: uppercase;
   align-items: center;
   border-radius: 22px;
@@ -3551,7 +3551,7 @@ table {
   border: none;
   border-radius: 22px;
   cursor: pointer;
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: inherit;
   font-style: normal;
   height: 44px;
   overflow: hidden;
@@ -3559,8 +3559,8 @@ table {
   text-decoration: none;
   width: 99px;
   font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   text-transform: uppercase;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   color: #ffffff;
@@ -3594,7 +3594,7 @@ table {
     border: none;
     background: none;
     height: 15px;
-    padding: 0px;
+    padding: 0;
     width: max-content; }
     .button_color_transparent:hover {
       background: none; }
@@ -3628,10 +3628,10 @@ table {
     width: 0;
     height: 0; }
   .switch__label {
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: inherit;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 1.16rem;
     color: rgba(31, 32, 65, 0.75);
     height: 24px;
     display: inline-block;
@@ -3678,11 +3678,11 @@ table {
   list-style-type: none;
   display: block; }
   .bullet-list__elem {
-    font-family: Montserrat;
+    font-family: inherit;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.16rem;
+    line-height: 2rem;
     color: rgba(31, 32, 65, 0.75);
     padding-left: 20.86px;
     position: relative;
@@ -3706,11 +3706,11 @@ table {
     position: relative;
     cursor: pointer; }
   .bullet-list-expandable__label {
-    font-family: Montserrat;
+    font-family: inherit;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     text-transform: uppercase;
     color: #1f2041;
     display: flex;
@@ -3725,8 +3725,8 @@ table {
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 2rem;
+    line-height: 2rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -3759,25 +3759,25 @@ table {
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 48px;
-    line-height: 41px;
+    font-size: 4rem;
+    line-height: 3.42rem;
     display: flex;
     align-items: center;
     text-align: center;
     margin-right: 10px; }
   .bullet-list-icons__header {
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: inherit;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.16rem;
+    line-height: 2rem;
     color: rgba(31, 32, 65, 0.75); }
   .bullet-list-icons__text {
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: inherit;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.16rem;
+    line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.5);
     padding-top: 5px;
     margin-bottom: 17px; }
@@ -3788,12 +3788,12 @@ table {
   max-width: 711px;
   width: 100%;
   min-height: 133px;
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-weight: normal;
   flex-direction: column;
-  font-size: 14px;
-  line-height: 24px; }
+  font-size: 1.16rem;
+  line-height: 2rem; }
   .expanded-comment__header {
     margin-bottom: 10px; }
   .expanded-comment__header-img {
@@ -3815,8 +3815,8 @@ table {
     color: rgba(31, 32, 65, 0.75);
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 24px; }
+    font-size: 1.16rem;
+    line-height: 2rem; }
   .expanded-comment__header-name-wrapper {
     display: flex;
     flex-direction: column; }
@@ -3839,14 +3839,14 @@ table {
     display: flex;
     flex-direction: row;
     margin-bottom: 10.56px;
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: inherit;
     font-style: normal;
     font-weight: normal; }
   .pagination__number {
     width: 40px;
     height: 40px;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -3861,8 +3861,8 @@ table {
   .pagination__ellipsis {
     width: 40px;
     height: 40px;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -3877,8 +3877,8 @@ table {
     background: rgba(31, 32, 65, 0.25); }
   .pagination__arrow {
     font-family: Material Icons;
-    font-size: 24px;
-    line-height: 20px;
+    font-size: 2rem;
+    line-height: 1.67rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -3892,8 +3892,8 @@ table {
   .pagination__arrow:hover {
     background: rgba(31, 32, 65, 0.25); }
   .pagination__label {
-    font-size: 14px;
-    line-height: 19px;
+    font-size: 1.16rem;
+    line-height: 1.59rem;
     font-style: normal;
     font-weight: normal;
     color: rgba(31, 32, 65, 0.75);
@@ -4039,8 +4039,8 @@ table {
   margin: 0 auto;
   width: 100%; }
   .form-elements__wrapper {
-    padding: 25px 141px 0px 141px;
-    font-family: Montserrat, Arial, sans-serif;
+    padding: 25px 141px 0 141px;
+    font-family: inherit;
     display: grid;
     grid-template-areas: "header header header" "left central right" "left central right" "left comment comment";
     grid-template-columns: 320px 446px 392px;
@@ -4058,11 +4058,11 @@ table {
     padding-left: 125px;
     padding-top: 8px; }
   .form-elements__header-left, .form-elements__header-central, .form-elements__header-right {
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: inherit;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     color: #1f2041; }
 
 .sign-up {
@@ -4088,7 +4088,7 @@ table {
     color: #1f2041;
     font-style: normal;
     font-weight: 700;
-    font-family: Montserrat, Arial, sans-serif; }
+    font-family: inherit; }
   .sign-up__header-reg {
     padding-bottom: 20px; }
   .sign-up__header-birthday, .sign-up__header-data {
@@ -4109,11 +4109,11 @@ table {
     justify-content: space-between;
     align-items: center; }
   .sign-up__account {
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: inherit;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.16rem;
+    line-height: 1.5rem;
     color: #000000; }
 
 @media (max-width: 380px) {
@@ -4189,11 +4189,11 @@ table {
     align-items: center;
     margin-top: 30px; }
   .sign-in__account {
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: inherit;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.16rem;
+    line-height: 1.5rem;
     color: #000000; }
 
 @media (max-width: 380px) {
@@ -4233,16 +4233,16 @@ table {
     white-space: pre;
     margin-top: 3px; }
   .room-price__number span:first-child {
-    font-size: 14px;
-    line-height: 17px; }
+    font-size: 1.16rem;
+    line-height: 1.42rem; }
   .room-price__number span:nth-child(2) {
-    font-size: 23px;
-    line-height: 23px; }
+    font-size: 1.92rem;
+    line-height: 1.92rem; }
   .room-price__type {
     font-family: Montserrat, Arial, sans-serif;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     text-transform: uppercase;
     color: #bc9cff; }
   .room-price__price {
@@ -4250,13 +4250,13 @@ table {
     width: 100px;
     font-family: Montserrat, Arial, sans-serif;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.16rem;
+    line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.5);
     white-space: pre; }
   .room-price__price span:nth-child(2) {
     font-weight: normal;
-    font-size: 12px; }
+    font-size: 1rem; }
   .room-price__header {
     margin-bottom: 6px; }
   .room-price__dropdown-date-header {
@@ -4275,9 +4275,9 @@ table {
     justify-content: space-between;
     font-weight: normal;
     font-style: normal;
-    font-family: Montserrat, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 24px;
+    font-family: inherit;
+    font-size: 1.16rem;
+    line-height: 2rem;
     color: rgba(31, 32, 65, 0.75); }
   .room-price__start-price div:first-child,
   .room-price__service-fee div:first-child,
@@ -4293,11 +4293,11 @@ table {
   .room-price__total-price {
     margin-bottom: 20px; }
   .room-price__total-price div {
-    font-family: Montserrat;
-    font-size: 19px;
+    font-family: inherit;
+    font-size: 1.58rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 23px;
+    line-height: 1.92rem;
     letter-spacing: 0em;
     text-align: left;
     color: #1f2041; }
@@ -4331,7 +4331,7 @@ table {
   background: #ffffff;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: inherit;
   font-style: normal;
   position: relative; }
   .room-card__slider {
@@ -4364,10 +4364,10 @@ table {
     position: absolute;
     cursor: pointer;
     font-family: Material Icons;
-    font-size: 24px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 2rem;
     letter-spacing: 0em;
     display: flex;
     align-items: center;
@@ -4411,8 +4411,8 @@ table {
     height: 24px;
     font-family: Montserrat, Arial, sans-serif;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 1.16rem;
+    line-height: 1.42rem;
     color: #1f2041;
     margin: 24px 1px 0 20px;
     display: flex;
@@ -4423,8 +4423,8 @@ table {
   .room-card__price {
     width: 100px;
     height: 20px;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.16rem;
+    line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.5);
     white-space: nowrap;
     margin-right: 16px;
@@ -4432,15 +4432,15 @@ table {
     text-align: center; }
   .room-card__price span:first-child {
     font-weight: bold;
-    font-size: 14px; }
+    font-size: 1.16rem; }
   .room-card__price span:nth-child(2) {
-    font-size: 12px; }
+    font-size: 1rem; }
   .room-card__type {
     width: 41px;
     height: 15px;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     text-transform: uppercase;
     color: #bc9cff;
     margin-right: 32px;
@@ -4448,8 +4448,8 @@ table {
   .room-card__rate {
     margin-left: 20px; }
   .room-card__comment {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.16rem;
+    line-height: 1.5rem;
     text-align: right;
     color: rgba(31, 32, 65, 0.5);
     margin-right: 20px;
@@ -4513,11 +4513,11 @@ table {
     align-items: center;
     margin-top: 30px; }
   .sign-in__account {
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: inherit;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.16rem;
+    line-height: 1.5rem;
     color: #000000; }
 
 @media (max-width: 380px) {
@@ -4535,10 +4535,10 @@ table {
     width: 0;
     height: 0; }
   .switch__label {
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: inherit;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 1.16rem;
     color: rgba(31, 32, 65, 0.75);
     height: 24px;
     display: inline-block;
@@ -4581,7 +4581,7 @@ table {
     border-radius: 50%; }
 
 .button-radio {
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: inherit;
   height: 24px;
   width: max-content; }
   .button-radio__input {
@@ -4629,7 +4629,7 @@ table {
 
 .button-rich {
   height: 51px;
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: inherit;
   width: 266px; }
   .button-rich__checkbox-input {
     position: absolute;
@@ -4644,9 +4644,9 @@ table {
     padding-left: 30px;
     position: relative;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 1.16rem;
     height: 18px;
-    line-height: 18px;
+    line-height: 1.5rem;
     max-width: 236px;
     padding-top: 2px; }
   .button-rich__checkbox-text {
@@ -4654,8 +4654,8 @@ table {
     color: rgba(31, 32, 65, 0.5);
     display: block;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 1rem;
+    line-height: 1.16rem;
     position: relative;
     height: 28px;
     margin-top: 8px;
@@ -4693,10 +4693,10 @@ table {
     color: rgba(31, 32, 65, 0.5);
     cursor: pointer;
     display: block;
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: inherit;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.166rem;
+    line-height: 1.5rem;
     position: relative;
     padding-left: 30px;
     width: 192px; }
@@ -4738,8 +4738,8 @@ table {
     -webkit-text-fill-color: transparent;
     cursor: pointer;
     display: block;
-    font-size: 24px;
-    line-height: 20px;
+    font-size: 2rem;
+    line-height: 1.66rem;
     height: 24px;
     text-align: center;
     width: 24px; }
@@ -4761,10 +4761,10 @@ table {
     display: block;
     font-family: Material Icons;
     font-weight: normal;
-    font-size: 10px;
+    font-size: 0.83rem;
     height: 20px;
     text-align: center;
-    line-height: 9px;
+    line-height: 0.7rem;
     padding-top: 5px;
     width: 50%; }
   .button-like__number {
@@ -4772,9 +4772,9 @@ table {
     color: rgba(31, 32, 65, 0.25);
     display: flex;
     font-weight: normal;
-    font-size: 10px;
+    font-size: 0.83rem;
     height: 100%;
-    line-height: 12px;
+    line-height: 1rem;
     text-align: center;
     width: 50%; }
   .button-like_is-liked {
@@ -4785,14 +4785,14 @@ table {
   color: #bc9cff; }
 
 .button-icon {
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: inherit;
   font-style: normal;
   overflow: hidden;
   position: relative;
   text-decoration: none;
   font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   text-transform: uppercase;
   align-items: center;
   border-radius: 22px;
@@ -4833,7 +4833,7 @@ table {
   border: none;
   border-radius: 22px;
   cursor: pointer;
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: inherit;
   font-style: normal;
   height: 44px;
   overflow: hidden;
@@ -4841,8 +4841,8 @@ table {
   text-decoration: none;
   width: 99px;
   font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   text-transform: uppercase;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   color: #ffffff;
@@ -4876,7 +4876,7 @@ table {
     border: none;
     background: none;
     height: 15px;
-    padding: 0px;
+    padding: 0;
     width: max-content; }
     .button_color_transparent:hover {
       background: none; }
@@ -4902,14 +4902,14 @@ table {
   text-align: left;
   letter-spacing: 0em; }
   .heading_level_h1 {
-    font-size: 24px;
-    line-height: 29px; }
+    font-size: 2rem;
+    line-height: 2.42rem; }
   .heading_level_h2 {
-    font-size: 19px;
-    line-height: 23px; }
+    font-size: 1.58rem;
+    line-height: 1.92rem; }
   .heading_level_h3 {
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     text-transform: uppercase; }
 
 .text-field {
@@ -4918,7 +4918,7 @@ table {
   height: 44px;
   max-width: 320px;
   width: 100%;
-  font-family: Montserrat, Arial, sans-serif; }
+  font-family: inherit; }
   .text-field:hover {
     border: 1px solid rgba(31, 32, 65, 0.5); }
   .text-field:focus {
@@ -4928,27 +4928,27 @@ table {
     flex-direction: row;
     position: relative; }
   .text-field__input-date, .text-field__input-date::placeholder {
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: inherit;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.16rem;
+    line-height: 2rem;
     color: rgba(31, 32, 65, 0.25); }
   .text-field label {
     white-space: nowrap;
     height: 15px;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     text-transform: uppercase;
     color: #1f2041;
     margin-bottom: 5px; }
   .text-field input {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.16rem;
+    line-height: 1.5rem;
     color: rgba(31, 32, 65, 0.75);
     width: 100%;
     height: 44px;
@@ -5010,7 +5010,7 @@ table {
     position: absolute;
     display: flex;
     flex-direction: column;
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: inherit;
     font-style: normal;
     font-weight: 700;
     justify-content: center;
@@ -5018,10 +5018,10 @@ table {
     top: 50%;
     transform: translate(-50%, -50%); }
   .diagram .labels-diargam__number {
-    font-size: 24px; }
+    font-size: 2rem; }
   .diagram .labels-diargam__label {
-    font-size: 14px;
-    line-height: 15px; }
+    font-size: 1.16rem;
+    line-height: 1.25rem; }
   .diagram__description {
     position: absolute;
     height: 96px;
@@ -5030,11 +5030,11 @@ table {
     width: 146px; }
   .diagram__description-item {
     color: rgba(31, 32, 65, 0.75);
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: inherit;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.16rem;
+    line-height: 2rem;
     list-style-type: none;
     position: relative; }
   .diagram__description-item::before {
@@ -5055,17 +5055,17 @@ table {
     background: linear-gradient(180deg, #919191 0%, #3d4975 100%); }
 
 .diagramchart__chart-text {
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: inherit;
   fill: #bc9cff;
   transform: translateY(5px) translateX(-30px); }
 
 .diagramchart__chart-number {
   color: #bc9cff;
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 2rem;
+  line-height: 2.5rem;
   transform: translateY(-5px) translateX(12px); }
 
 .diagramchart__chart-label {
@@ -5073,8 +5073,8 @@ table {
   font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   text-align: center;
   text-transform: uppercase;
   transform: translateY(14px); }
@@ -5117,4 +5117,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.dd47d134121518b1713a.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.8cc46b7869746f9173f7.css.map*/

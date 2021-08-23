@@ -172,7 +172,7 @@
   box-sizing: content-box;
   font-family: Montserrat, sans-serif;
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 1.16rem;
   color: #4a4a4a;
   width: 250px;
   position: absolute;
@@ -402,7 +402,7 @@
 
 .datepicker--time-label {
   display: none;
-  font-size: 12px; }
+  font-size: 1rem; }
 
 .datepicker--time-current {
   display: -webkit-flex;
@@ -414,7 +414,7 @@
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  font-size: 14px;
+  font-size: 1.16rem;
   text-align: center;
   margin: 0 0 0 10px; }
 
@@ -425,7 +425,7 @@
 .datepicker--time-current-hours,
 .datepicker--time-current-minutes {
   line-height: 1;
-  font-size: 19px;
+  font-size: 1.58rem;
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   position: relative;
   z-index: 1; }
@@ -452,7 +452,7 @@
           align-self: flex-end;
   color: #9c9c9c;
   margin-left: 6px;
-  font-size: 11px;
+  font-size: 0.92rem;
   margin-bottom: 1px; }
 
 .datepicker--time-row {
@@ -462,7 +462,7 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 11px;
+  font-size: 0.92rem;
   height: 17px;
   background: linear-gradient(to right, #dedede, #dedede) left 50%/100% 1px no-repeat; }
   .datepicker--time-row:first-child {
@@ -530,7 +530,7 @@
   color: #9c9c9c;
   border: 1px solid;
   border-radius: 50%;
-  font-size: 16px;
+  font-size: 1.33rem;
   position: relative;
   margin: 0 5px -1px 0;
   width: 1em;

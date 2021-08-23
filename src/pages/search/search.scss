@@ -49,11 +49,11 @@
 
     &__slider-label {
       margin-top: 8px;
-      font-family: $font-family-main,$fallback-font;
-      font-size: 12px;
+      font-family: inherit;
+      font-size: 1rem;
       font-style: normal;
       font-weight: 400;
-      line-height: 14px;
+      line-height: 1.16rem;
       letter-spacing: 0em;
       text-align: left;
       color: $darkShade50;

@@ -1,10 +1,13 @@
+html{
+  font-family: $font-family-main,$fallback-font;
+  font-size: $font-size;
+}
 .flexible-body{
   display: flex;
   flex-direction: column;
 }
 .main{
   display: flex;
-  font-family: $font-family-main, $fallback-font;
   flex-grow: 1;
   font-style: normal;
   font-weight: normal;

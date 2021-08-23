@@ -4,12 +4,12 @@
   max-width: 711px;
   width: 100%;
   min-height: 133px;
-  font-family: $font-family-main, $fallback-font;
+  font-family: inherit;
   font-style: normal;
   font-weight: normal;
   flex-direction: column;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 1.16rem;
+  line-height: 2rem;
 
   &__header {
     margin-bottom: 10px;
@@ -40,8 +40,8 @@
     color: $darkShade75;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.16rem;
+    line-height: 2rem;
   }
 
   &__header-name-wrapper {

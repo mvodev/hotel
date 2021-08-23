@@ -14,10 +14,10 @@
   }
 
   &__label {
-    font-family: $font-family-main, $fallback-font;
+    font-family: inherit;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 1.16rem;
     color: $darkShade75;
     height: 24px;
     display: inline-block;

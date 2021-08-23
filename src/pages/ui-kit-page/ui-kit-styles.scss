@@ -2,6 +2,11 @@
 
 @import "../../components/header-ui-kit/header-ui-kit.scss";
 
+html{
+  font-size: $font-size;
+  font-family: $font-family-main,$fallback-font;
+}
+
 .ui-kit-wrapper {
   width: 100%;
   min-height: 100%;

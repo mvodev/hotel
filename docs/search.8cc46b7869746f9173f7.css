@@ -1,10 +1,13 @@
+html {
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 12px; }
+
 .flexible-body {
   display: flex;
   flex-direction: column; }
 
 .main {
   display: flex;
-  font-family: Montserrat, Arial, sans-serif;
   flex-grow: 1;
   font-style: normal;
   font-weight: normal;
@@ -48,11 +51,11 @@
 
 .main .left-column__slider-label {
   margin-top: 8px;
-  font-family: Montserrat, Arial, sans-serif;
-  font-size: 12px;
+  font-family: inherit;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 1.16rem;
   letter-spacing: 0em;
   text-align: left;
   color: rgba(31, 32, 65, 0.5); }
@@ -119,4 +122,4 @@
     text-align: center; } }
 
 
-/*# sourceMappingURL=search.dd47d134121518b1713a.css.map*/
+/*# sourceMappingURL=search.8cc46b7869746f9173f7.css.map*/

@@ -1,10 +1,13 @@
+html {
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 12px; }
+
 .flexible-body {
   display: flex;
   flex-direction: column; }
 
 .main {
   display: flex;
-  font-family: Montserrat, Arial, sans-serif;
   flex-grow: 1;
   font-style: normal;
   font-weight: normal;
@@ -39,4 +42,4 @@
     max-height: none; } }
 
 
-/*# sourceMappingURL=registration.dd47d134121518b1713a.css.map*/
+/*# sourceMappingURL=registration.8cc46b7869746f9173f7.css.map*/

@@ -4,6 +4,10 @@
   left: 30px;
   top: 39px; }
 
+html {
+  font-size: 12px;
+  font-family: Montserrat, Arial, sans-serif; }
+
 .ui-kit-wrapper {
   width: 100%;
   min-height: 100%;
@@ -17,4 +21,4 @@
   margin-top: 3px; }
 
 
-/*# sourceMappingURL=UIKit.dd47d134121518b1713a.css.map*/
+/*# sourceMappingURL=UIKit.8cc46b7869746f9173f7.css.map*/

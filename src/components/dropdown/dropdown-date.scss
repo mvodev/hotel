@@ -42,11 +42,11 @@
 }
 
 .datepicker--day-name {
-  font-family: $font-family-main, $fallback-font;
+  font-family: inherit;
   font-style: normal;
   font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   display: flex;
   align-items: center;
   text-align: center;
@@ -58,8 +58,8 @@
 .datepicker--cell-day {
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   display: flex;
   align-items: center;
   text-align: center;
@@ -72,8 +72,8 @@
   font-family: $font-family-main, $fallback-font;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   display: flex;
   align-items: center;
   text-align: center;
@@ -97,15 +97,15 @@
 
 .datepicker {
   background: $white;
-  font-family: $font-family-main, $fallback-font;
+  font-family: inherit;
   border: 1px solid $darkShade25;
   box-sizing: border-box;
-  box-shadow: 0px 10px 20px $darkShade5;
+  box-shadow: 0 10px 20px $darkShade5;
   border-radius: 4px;
   width: 320px;
 
   &--content {
-    padding: 0px;
+    padding: 0;
     width: 280px;
     margin: 0 19.94px 20.44px 20.94px;
   }
@@ -114,8 +114,8 @@
     font-family: Material Icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 20px;
+    font-size: 2rem;
+    line-height: 1.66rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -131,11 +131,11 @@
   }
 
   &--nav-title {
-    font-family: $font-family-additionalRussianReplacer, $fallback-font;
+    font-family: inherit;
     font-style: normal;
     font-weight: bold;
-    font-size: 19px;
-    line-height: 24px;
+    font-size: 1.58rem;
+    line-height: 2rem;
     text-align: center;
     color: $darkShade100;
   }
@@ -158,10 +158,10 @@
     text-transform: uppercase;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    font-family: $font-family-main, $fallback-font;
-    padding: 0px;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-family: inherit;
+    padding: 0;
     height: 15px;
   }
 

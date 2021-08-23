@@ -101,11 +101,11 @@
     }
 
     &__comments-header span {
-      font-family: Montserrat;
-      font-size: 14px;
+      font-family: inherit;
+      font-size: 1.16rem;
       font-style: normal;
       font-weight: 400;
-      line-height: 14px;
+      line-height: 1.16rem;
       letter-spacing: 0em;
       text-align: right;
       color: $darkShade50;
@@ -140,11 +140,11 @@
 
 
     &__text-wrapper p {
-      font-family: $font-family-main;
+      font-family: inherit;
       font-style: normal;
       font-weight: normal;
-      font-size: 14px;
-      line-height: 24px;
+      font-size: 1.16rem;
+      line-height: 2rem;
       color: $darkShade75;
       max-width: 341px;
     }

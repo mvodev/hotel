@@ -23,7 +23,7 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    font-family: $font-family-main, $fallback-font;
+    font-family: inherit;
     font-style: normal;
     font-weight: 700;
     justify-content: center;
@@ -33,12 +33,12 @@
   }
 
   .labels-diargam__number {
-    font-size: 24px;
+    font-size: 2rem;
   }
 
   .labels-diargam__label {
-    font-size: 14px;
-    line-height: 15px;
+    font-size: 1.16rem;
+    line-height: 1.25rem;
   }
 
   &__description {
@@ -51,11 +51,11 @@
 
   &__description-item {
     color: $darkShade75;
-    font-family: $font-family-main, $fallback-font;
+    font-family: inherit;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.16rem;
+    line-height: 2rem;
     list-style-type: none;
     position: relative;
   }
@@ -89,18 +89,18 @@
 }
 
 .diagramchart__chart-text {
-  font-family: $font-family-main, $fallback-font;
+  font-family: inherit;
   fill: $purple;
   transform: translateY(5px) translateX(-30px);
 }
 
 .diagramchart__chart-number {
   color: $purple;
-  font-family: $font-family-main, $fallback-font;
+  font-family: inherit;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 2rem;
+  line-height: 2.5rem;
   transform: translateY(-5px) translateX(12px);
 }
 
@@ -109,8 +109,8 @@
   font-family: $font-family-main, $fallback-font;
   font-style: normal;
   font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   text-align: center;
   text-transform: uppercase;
   transform: translateY(14px);

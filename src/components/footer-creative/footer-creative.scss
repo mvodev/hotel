@@ -21,11 +21,11 @@
   }
 
   &__logo p {
-    font-family: $font-family-main, $fallback-font;
+    font-family: inherit;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.16rem;
+    line-height: 2rem;
     text-align: center;
     color: $darkShade75;
     margin-top: 16px;

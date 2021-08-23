@@ -1,6 +1,6 @@
 .button-rich {
   height: 51px;
-  font-family: $font-family-main, $fallback-font;
+  font-family: inherit;
   width: 266px;
 
   &__checkbox-input {
@@ -18,9 +18,9 @@
     padding-left: 30px;
     position: relative;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 1.16rem;
     height: 18px;
-    line-height: 18px;
+    line-height: 1.5rem;
     max-width: 236px;
     padding-top: 2px;
   }
@@ -30,8 +30,8 @@
     color: $darkShade50;
     display: block;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 1rem;
+    line-height: 1.16rem;
     position: relative;
     height: 28px;
     margin-top: 8px;

@@ -4,11 +4,11 @@
   display: block;
 
   &__elem {
-    font-family: $font-family-main;
+    font-family: inherit;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.16rem;
+    line-height: 2rem;
     color: $darkShade75;
     padding-left: 20.86px;
     position: relative;
@@ -39,11 +39,11 @@
     cursor: pointer;
   }
   &-expandable__label {
-    font-family: $font-family-main;
+    font-family: inherit;
     font-style: normal;
     font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     text-transform: uppercase;
     color: $darkShade100;
     display: flex;
@@ -59,8 +59,8 @@
     font-family: $font-for-icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 2rem;
+    line-height: 2rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -100,8 +100,8 @@
     font-family: $font-for-icons;
     font-style: normal;
     font-weight: normal;
-    font-size: 48px;
-    line-height: 41px;
+    font-size: 4rem;
+    line-height: 3.42rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -109,20 +109,20 @@
   }
 
   &__header {
-    font-family: $font-family-main, $fallback-font;
+    font-family: inherit;
     font-style: normal;
     font-weight: bold;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 1.16rem;
+    line-height: 2rem;
     color: $darkShade75;
   }
 
   &__text {
-    font-family: $font-family-main, $fallback-font;
+    font-family: inherit;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.16rem;
+    line-height: 1.5rem;
     color: $darkShade50;
     padding-top: 5px;
     margin-bottom: 17px;

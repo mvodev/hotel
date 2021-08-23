@@ -7,8 +7,8 @@
     width: 24px;
     height: 21px;
     font-family: $font-for-icons;
-    font-size: 24px;
-    line-height: 20px;
+    font-size: 2rem;
+    line-height: 1.67rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -27,15 +27,15 @@
   &__ref,
   &__sub-ref {
     color: $darkShade50;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 1.16rem;
+    line-height: 1.42rem;
     font-weight: 400;
-    font-family: $font-family-main, $fallback-font;
+    font-family: inherit;
     white-space: nowrap;
   }
 
   &__sub-ref {
-    margin: 10px 10px 0px 10px;
+    margin: 10px 10px 0 10px;
   }
 
   &__sub-ref:last-child {
@@ -77,13 +77,13 @@
       text-transform: uppercase;
       margin-bottom: 21px;
       color: $darkShade100;
-      font-size: 12px;
+      font-size: 1rem;
     }
 
     .list-links__link {
-      margin-right: 0px;
+      margin-right: 0;
       margin-bottom: 20px;
-      font-size: 12px;
+      font-size: 1rem;
     }
 
     .list-links__link:last-child {
