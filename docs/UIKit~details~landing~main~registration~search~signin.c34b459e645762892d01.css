@@ -866,7 +866,7 @@ table {
   border-top: 1px solid rgba(31, 32, 65, 0.25);
   font-style: normal;
   font-weight: normal;
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   display: flex;
   align-items: center; }
   .footer-copyright__wrapper {
@@ -906,7 +906,7 @@ table {
   height: 44px;
   max-width: 320px;
   width: 100%;
-  font-family: Montserrat, "Arial,sans-serif"; }
+  font-family: Montserrat, Arial, sans-serif; }
   .text-field:hover {
     border: 1px solid rgba(31, 32, 65, 0.5); }
   .text-field:focus {
@@ -916,7 +916,7 @@ table {
     flex-direction: row;
     position: relative; }
   .text-field__input-date, .text-field__input-date::placeholder {
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -982,7 +982,7 @@ table {
   display: flex;
   flex-direction: column;
   width: 260px;
-  font-family: Montserrat, "Arial,sans-serif"; }
+  font-family: Montserrat, Arial, sans-serif; }
   .subscribe__text-container {
     height: 84px;
     margin-bottom: 20px; }
@@ -1003,7 +1003,7 @@ table {
 
 .footer-widget {
   max-width: 100%;
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   border-top: 1px solid rgba(31, 32, 65, 0.25);
   background: #ffffff;
   box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
@@ -1090,7 +1090,7 @@ table {
     max-width: 320px;
     width: 100%; }
   .search-number__header {
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -1125,7 +1125,7 @@ table {
     padding: 40px 10px 30px 10px; } }
 
 .dropdown-counter {
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1205,7 +1205,7 @@ table {
   width: 266px; }
 
 .datepicker--day-name {
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -1230,7 +1230,7 @@ table {
   height: 40px; }
 
 .-other-month- {
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1254,7 +1254,7 @@ table {
 
 .datepicker {
   background: #ffffff;
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
@@ -1281,7 +1281,7 @@ table {
     border-bottom: none;
     margin-top: 15px; }
   .datepicker--nav-title {
-    font-family: "Open Sans", "Arial,sans-serif";
+    font-family: "Open Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 19px;
@@ -1305,7 +1305,7 @@ table {
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     padding: 0px;
     height: 15px; }
   .datepicker--buttons button:first-child {
@@ -1385,7 +1385,7 @@ table {
 
 .dropdown {
   position: relative;
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   line-height: 14.63px;
   height: 44px;
   background: #ffffff;
@@ -1417,7 +1417,7 @@ table {
     height: 24px;
     padding-left: 15px;
     margin-top: 8px;
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1427,7 +1427,7 @@ table {
     width: 180px;
     overflow: hidden; }
   .dropdown__input::placeholder {
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1571,14 +1571,14 @@ table {
     text-align: center;
     margin-right: 10px; }
   .bullet-list-icons__header {
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75); }
   .bullet-list-icons__text {
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1594,7 +1594,7 @@ table {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: -3px;
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     white-space: nowrap; }
   .range-slider__label-header {
@@ -1660,7 +1660,7 @@ table {
   background: #ffffff;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
   position: relative; }
   .room-card__slider {
@@ -1738,7 +1738,7 @@ table {
   .room-card__room-number {
     width: 59px;
     height: 24px;
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;
@@ -1793,7 +1793,7 @@ table {
     display: flex;
     flex-direction: row;
     margin-bottom: 10.56px;
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     font-weight: normal; }
   .pagination__number {
@@ -1954,7 +1954,7 @@ table {
 
 .colors-and-types {
   width: 100%;
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   background-color: #ffffff;
   height: 900px;
   max-width: 1440px;
@@ -2278,7 +2278,7 @@ table {
   border-top: 1px solid rgba(31, 32, 65, 0.25);
   font-style: normal;
   font-weight: normal;
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   display: flex;
   align-items: center; }
   .footer-copyright__wrapper {
@@ -2344,7 +2344,7 @@ table {
     align-items: center;
     margin-bottom: 20px; }
   .footer-creative__logo p {
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -2360,7 +2360,7 @@ table {
   height: 44px;
   max-width: 320px;
   width: 100%;
-  font-family: Montserrat, "Arial,sans-serif"; }
+  font-family: Montserrat, Arial, sans-serif; }
   .text-field:hover {
     border: 1px solid rgba(31, 32, 65, 0.5); }
   .text-field:focus {
@@ -2370,7 +2370,7 @@ table {
     flex-direction: row;
     position: relative; }
   .text-field__input-date, .text-field__input-date::placeholder {
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -2436,7 +2436,7 @@ table {
   display: flex;
   flex-direction: column;
   width: 260px;
-  font-family: Montserrat, "Arial,sans-serif"; }
+  font-family: Montserrat, Arial, sans-serif; }
   .subscribe__text-container {
     height: 84px;
     margin-bottom: 20px; }
@@ -2457,7 +2457,7 @@ table {
 
 .footer-widget {
   max-width: 100%;
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   border-top: 1px solid rgba(31, 32, 65, 0.25);
   background: #ffffff;
   box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
@@ -2609,7 +2609,7 @@ table {
     font-size: 14px;
     line-height: 17px;
     font-weight: 400;
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     white-space: nowrap; }
   .list-links__sub-ref {
     margin: 10px 10px 0px 10px; }
@@ -2675,7 +2675,7 @@ table {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -2709,7 +2709,7 @@ table {
     gap: 20px; }
   .header-bar__user {
     color: rgba(31, 32, 65, 0.5);
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -2820,7 +2820,7 @@ table {
   margin-top: 40px; }
 
 .dropdown-counter {
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -2900,7 +2900,7 @@ table {
   width: 266px; }
 
 .datepicker--day-name {
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -2925,7 +2925,7 @@ table {
   height: 40px; }
 
 .-other-month- {
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -2949,7 +2949,7 @@ table {
 
 .datepicker {
   background: #ffffff;
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
@@ -2976,7 +2976,7 @@ table {
     border-bottom: none;
     margin-top: 15px; }
   .datepicker--nav-title {
-    font-family: "Open Sans", "Arial,sans-serif";
+    font-family: "Open Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 19px;
@@ -3000,7 +3000,7 @@ table {
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     padding: 0px;
     height: 15px; }
   .datepicker--buttons button:first-child {
@@ -3080,7 +3080,7 @@ table {
 
 .dropdown {
   position: relative;
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   line-height: 14.63px;
   height: 44px;
   background: #ffffff;
@@ -3112,7 +3112,7 @@ table {
     height: 24px;
     padding-left: 15px;
     margin-top: 8px;
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -3122,7 +3122,7 @@ table {
     width: 180px;
     overflow: hidden; }
   .dropdown__input::placeholder {
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -3180,7 +3180,7 @@ table {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: -3px;
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     white-space: nowrap; }
   .range-slider__label-header {
@@ -3246,7 +3246,7 @@ table {
   height: 44px;
   max-width: 320px;
   width: 100%;
-  font-family: Montserrat, "Arial,sans-serif"; }
+  font-family: Montserrat, Arial, sans-serif; }
   .text-field:hover {
     border: 1px solid rgba(31, 32, 65, 0.5); }
   .text-field:focus {
@@ -3256,7 +3256,7 @@ table {
     flex-direction: row;
     position: relative; }
   .text-field__input-date, .text-field__input-date::placeholder {
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -3319,7 +3319,7 @@ table {
     border: none; }
 
 .button-radio {
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   height: 24px;
   width: max-content; }
   .button-radio__input {
@@ -3367,7 +3367,7 @@ table {
 
 .button-rich {
   height: 51px;
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   width: 266px; }
   .button-rich__checkbox-input {
     position: absolute;
@@ -3431,7 +3431,7 @@ table {
     color: rgba(31, 32, 65, 0.5);
     cursor: pointer;
     display: block;
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
@@ -3523,7 +3523,7 @@ table {
   color: #bc9cff; }
 
 .button-icon {
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
   overflow: hidden;
   position: relative;
@@ -3571,7 +3571,7 @@ table {
   border: none;
   border-radius: 22px;
   cursor: pointer;
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
   height: 44px;
   overflow: hidden;
@@ -3648,7 +3648,7 @@ table {
     width: 0;
     height: 0; }
   .switch__label {
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -3786,14 +3786,14 @@ table {
     text-align: center;
     margin-right: 10px; }
   .bullet-list-icons__header {
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75); }
   .bullet-list-icons__text {
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -3808,7 +3808,7 @@ table {
   max-width: 711px;
   width: 100%;
   min-height: 133px;
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   flex-direction: column;
@@ -3859,7 +3859,7 @@ table {
     display: flex;
     flex-direction: row;
     margin-bottom: 10.56px;
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     font-weight: normal; }
   .pagination__number {
@@ -4060,7 +4060,7 @@ table {
   width: 100%; }
   .form-elements__wrapper {
     padding: 25px 141px 0px 141px;
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     display: grid;
     grid-template-areas: "header header header" "left central right" "left central right" "left comment comment";
     grid-template-columns: 320px 446px 392px;
@@ -4078,7 +4078,7 @@ table {
     padding-left: 125px;
     padding-top: 8px; }
   .form-elements__header-left, .form-elements__header-central, .form-elements__header-right {
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 12px;
@@ -4108,7 +4108,7 @@ table {
     color: #1f2041;
     font-style: normal;
     font-weight: 700;
-    font-family: Montserrat, "Arial,sans-serif"; }
+    font-family: Montserrat, Arial, sans-serif; }
   .sign-up__header_reg {
     font-size: 24px;
     line-height: 30px;
@@ -4134,7 +4134,7 @@ table {
     justify-content: space-between;
     align-items: center; }
   .sign-up__account {
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -4159,7 +4159,7 @@ table {
     max-width: 320px;
     width: 100%; }
   .search-number__header {
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -4213,7 +4213,7 @@ table {
     width: 100%; }
   .sign-in__header {
     font-style: normal;
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
@@ -4232,7 +4232,7 @@ table {
     align-items: center;
     margin-top: 30px; }
   .sign-in__account {
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -4265,7 +4265,7 @@ table {
     justify-content: center;
     margin-bottom: 13px; }
   .room-price__number {
-    font-family: "Open Sans", "Arial,sans-serif";
+    font-family: "Open Sans", Arial, sans-serif;
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -4282,7 +4282,7 @@ table {
     font-size: 23px;
     line-height: 23px; }
   .room-price__type {
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
@@ -4291,7 +4291,7 @@ table {
   .room-price__price {
     margin-left: auto;
     width: 100px;
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-weight: bold;
     font-size: 14px;
     line-height: 18px;
@@ -4301,7 +4301,7 @@ table {
     font-weight: normal;
     font-size: 12px; }
   .room-price__header {
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
@@ -4324,7 +4324,7 @@ table {
     justify-content: space-between;
     font-weight: normal;
     font-style: normal;
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75); }
@@ -4345,7 +4345,7 @@ table {
     font-size: 19px;
     line-height: 24px;
     color: #1f2041;
-    font-family: Montserrat, "Arial,sans-serif"; }
+    font-family: Montserrat, Arial, sans-serif; }
   .room-price__extra-info {
     width: 20px;
     height: 20px;
@@ -4376,7 +4376,7 @@ table {
   background: #ffffff;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
   border-radius: 4px;
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
   position: relative; }
   .room-card__slider {
@@ -4454,7 +4454,7 @@ table {
   .room-card__room-number {
     width: 59px;
     height: 24px;
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;
@@ -4545,7 +4545,7 @@ table {
     width: 100%; }
   .sign-in__header {
     font-style: normal;
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
@@ -4564,7 +4564,7 @@ table {
     align-items: center;
     margin-top: 30px; }
   .sign-in__account {
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -4586,7 +4586,7 @@ table {
     width: 0;
     height: 0; }
   .switch__label {
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -4632,7 +4632,7 @@ table {
     border-radius: 50%; }
 
 .button-radio {
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   height: 24px;
   width: max-content; }
   .button-radio__input {
@@ -4680,7 +4680,7 @@ table {
 
 .button-rich {
   height: 51px;
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   width: 266px; }
   .button-rich__checkbox-input {
     position: absolute;
@@ -4744,7 +4744,7 @@ table {
     color: rgba(31, 32, 65, 0.5);
     cursor: pointer;
     display: block;
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
@@ -4836,7 +4836,7 @@ table {
   color: #bc9cff; }
 
 .button-icon {
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
   overflow: hidden;
   position: relative;
@@ -4884,7 +4884,7 @@ table {
   border: none;
   border-radius: 22px;
   cursor: pointer;
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
   height: 44px;
   overflow: hidden;
@@ -4951,7 +4951,7 @@ table {
   height: 44px;
   max-width: 320px;
   width: 100%;
-  font-family: Montserrat, "Arial,sans-serif"; }
+  font-family: Montserrat, Arial, sans-serif; }
   .text-field:hover {
     border: 1px solid rgba(31, 32, 65, 0.5); }
   .text-field:focus {
@@ -4961,7 +4961,7 @@ table {
     flex-direction: row;
     position: relative; }
   .text-field__input-date, .text-field__input-date::placeholder {
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -5043,7 +5043,7 @@ table {
     position: absolute;
     display: flex;
     flex-direction: column;
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     font-weight: 700;
     justify-content: center;
@@ -5063,7 +5063,7 @@ table {
     width: 146px; }
   .diagram__description-item {
     color: rgba(31, 32, 65, 0.75);
-    font-family: Montserrat, "Arial,sans-serif";
+    font-family: Montserrat, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -5088,13 +5088,13 @@ table {
     background: linear-gradient(180deg, #919191 0%, #3d4975 100%); }
 
 .diagramchart__chart-text {
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   fill: #bc9cff;
   transform: translateY(5px) translateX(-30px); }
 
 .diagramchart__chart-number {
   color: #bc9cff;
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -5103,7 +5103,7 @@ table {
 
 .diagramchart__chart-label {
   color: #bc9cff;
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -5118,7 +5118,7 @@ table {
 
 .wrapper {
   background-color: #e5e5e5;
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   font-weight: bold;
   font-size: 16px; }
 
@@ -5150,4 +5150,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.47e6dc209bef493d34b7.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.c34b459e645762892d01.css.map*/

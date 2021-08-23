@@ -4,7 +4,7 @@
 
 .main {
   display: flex;
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   flex-grow: 1;
   font-style: normal;
   font-weight: normal;
@@ -37,7 +37,7 @@
     grid-area: bottom; }
 
 .main__body h2 {
-  font-family: Montserrat, "Arial,sans-serif";
+  font-family: Montserrat, Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 19px;
@@ -172,4 +172,4 @@
     text-align: center; } }
 
 
-/*# sourceMappingURL=details.47e6dc209bef493d34b7.css.map*/
+/*# sourceMappingURL=details.c34b459e645762892d01.css.map*/
