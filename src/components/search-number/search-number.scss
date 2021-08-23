@@ -15,12 +15,6 @@
   }
 
   &__header {
-    font-family: $font-family-main, $fallback-font;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    color: $darkShade100;
     margin-bottom: 22px;
   }
 
@@ -30,9 +24,6 @@
   }
 
   &_dropdown-header {
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
     margin-bottom: 5px;
     width: 150px;
     overflow: hidden;
@@ -44,9 +35,6 @@
 
   &_dropdown-header-guests {
     margin-top: 20px;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
     margin-bottom: 5px;
     width: 150px;
     overflow: hidden;

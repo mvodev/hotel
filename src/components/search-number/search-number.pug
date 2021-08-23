@@ -1,20 +1,25 @@
 include ../button/button.pug
 include ../text-field/text-field.pug
 include ../dropdown/dropdown.pug
+include ../heading/heading.pug
 mixin searchnumber(options)
   form.search-number
     .search-number__wrapper
-      h2.search-number__header='Найдём номера под ваши пожелания'
+      .search-number__header
+        +heading({nestingLevel:'h1',text:'Найдём номера под ваши пожелания'})
       .search-number__dropdown-headers
-        h3.search-number__header.search-number_dropdown-header='прибытие'
-        h3.search-number__header.search-number_dropdown-header='выезд'
+        .search-number__header.search-number_dropdown-header
+          +heading({nestingLevel:'h3',text:'прибытие'})
+        .search-number__header.search-number_dropdown-header
+          +heading({nestingLevel:'h3',text:'выезд'})
       .search-number__dropdown-filter
         +dropdown({
                   placeholder:'ДД.ММ.ГГГГ',
                   typeDropdown:'filter-date',
                   isExpanded:false,
                   })
-      h3(class="search-number__header search-number_dropdown-header-guests")='гости'
+      .search-number__header.search-number_dropdown-header-guests
+        +heading({nestingLevel:'h3',text:'гости'})
       +dropdown({
                 placeholder:"Сколько гостей",
                 typeDropdown:'guests',
