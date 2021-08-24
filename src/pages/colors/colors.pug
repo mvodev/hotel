@@ -1,4 +1,5 @@
 include ../../components/heading/heading.pug
+include ../../components/paragraph/paragraph.pug
 .colors
   .colors__left-column.left-column-colors
     .left-column-colors__dark-shade-100 
@@ -25,13 +26,17 @@ include ../../components/heading/heading.pug
   .colors__right-column.right-column-colors
     .right-column-colors__h1 
       p.right-column-colors__header.right-column-colors__header_h1 H1
-      p.right-column-colors__description.right-column-colors__description_h1 This one is the sub-section or widget title
+      p.right-column-colors__description.right-column-colors__description_h1
+        +heading({nestingLevel:'h1',text:'This one is the sub-section or widget title'})
     .right-column-colors__h2
       p.right-column-colors__header.right-column-colors__header_h2 H2 
-      p.right-column-colors__description.right-column-colors__description_h2 Next one is the item title inside widgets
+      p.right-column-colors__description.right-column-colors__description_h2
+        +heading({nestingLevel:'h2',text:'Next one is the item title inside widgets'})
     .right-column-colors__h3 
       p.right-column-colors__header.right-column-colors__header_h3 H3
-      p.right-column-colors__description.right-column-colors__description_h3 This is a label or CTA text
+      p.right-column-colors__description.right-column-colors__description_h3
+        +heading({nestingLevel:'h3',text:'This is a label or CTA text'})
     .right-column-colors__body
       p.right-column-colors__header.right-column-colors__header_body Body
-      p.right-column-colors__description.right-column-colors__description_body This is the body text which is used for most of the design, like paragraphs, lists, etc.
+      p.right-column-colors__description.right-column-colors__description_body
+        +paragraph({text:'This is the body text which is used for most of the design, like paragraphs, lists, etc.'})
