@@ -5,9 +5,6 @@
   border-top: 1px solid $darkShade25;
   background: $white;
   box-shadow: 0 1px 0 rgba(31, 32, 65, 0.1);
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   font-style: normal;
   font-weight: normal;
   min-height: 372px;
@@ -17,7 +14,7 @@
     flex-direction: row;
     justify-content: space-between;
     max-width: $container-width - 250px;
-    margin: 0px auto;
+    margin: 0 auto;
     padding: 104px 15px 0 15px;
   }
 

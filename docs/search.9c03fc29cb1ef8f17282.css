@@ -11,7 +11,7 @@ html {
   flex-grow: 1;
   font-style: normal;
   font-weight: normal;
-  margin: 0px auto;
+  margin: 0 auto;
   flex-direction: column;
   width: 100%; }
 
@@ -122,4 +122,4 @@ html {
     text-align: center; } }
 
 
-/*# sourceMappingURL=search.8cc46b7869746f9173f7.css.map*/
+/*# sourceMappingURL=search.9c03fc29cb1ef8f17282.css.map*/

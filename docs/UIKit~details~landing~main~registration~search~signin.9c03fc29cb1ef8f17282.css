@@ -1003,9 +1003,6 @@ table {
   border-top: 1px solid rgba(31, 32, 65, 0.25);
   background: #ffffff;
   box-shadow: 0 1px 0 rgba(31, 32, 65, 0.1);
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   font-style: normal;
   font-weight: normal;
   min-height: 372px; }
@@ -1014,7 +1011,7 @@ table {
     flex-direction: row;
     justify-content: space-between;
     max-width: 1190px;
-    margin: 0px auto;
+    margin: 0 auto;
     padding: 104px 15px 0 15px; }
   .footer-widget__logo {
     width: 260px;
@@ -2441,9 +2438,6 @@ table {
   border-top: 1px solid rgba(31, 32, 65, 0.25);
   background: #ffffff;
   box-shadow: 0 1px 0 rgba(31, 32, 65, 0.1);
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   font-style: normal;
   font-weight: normal;
   min-height: 372px; }
@@ -2452,7 +2446,7 @@ table {
     flex-direction: row;
     justify-content: space-between;
     max-width: 1190px;
-    margin: 0px auto;
+    margin: 0 auto;
     padding: 104px 15px 0 15px; }
   .footer-widget__logo {
     width: 260px;
@@ -5117,4 +5111,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.8cc46b7869746f9173f7.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.9c03fc29cb1ef8f17282.css.map*/
