@@ -26,17 +26,17 @@ include ../../components/paragraph/paragraph.pug
   .colors__right-column.right-column-colors
     .right-column-colors__h1 
       p.right-column-colors__header.right-column-colors__header_h1 H1
-      p.right-column-colors__description.right-column-colors__description_h1
+      p
         +heading({nestingLevel:'h1',text:'This one is the sub-section or widget title'})
     .right-column-colors__h2
       p.right-column-colors__header.right-column-colors__header_h2 H2 
-      p.right-column-colors__description.right-column-colors__description_h2
+      p
         +heading({nestingLevel:'h2',text:'Next one is the item title inside widgets'})
     .right-column-colors__h3 
       p.right-column-colors__header.right-column-colors__header_h3 H3
-      p.right-column-colors__description.right-column-colors__description_h3
+      p
         +heading({nestingLevel:'h3',text:'This is a label or CTA text'})
     .right-column-colors__body
       p.right-column-colors__header.right-column-colors__header_body Body
-      p.right-column-colors__description.right-column-colors__description_body
+      p
         +paragraph({text:'This is the body text which is used for most of the design, like paragraphs, lists, etc.'})
