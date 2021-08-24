@@ -12,8 +12,6 @@ html {
   width: 100%;
   min-height: 100%;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   flex-direction: column; }
 
@@ -21,4 +19,4 @@ html {
   margin-top: 3px; }
 
 
-/*# sourceMappingURL=UIKit.2c80f8821b07f5f3b6fc.css.map*/
+/*# sourceMappingURL=UIKit.b5a2c589299885e3c925.css.map*/
