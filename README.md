@@ -14,7 +14,7 @@
   ## Результат сборки проекта
   Находится в папке docs
 
-  В папке scripts находится файл fsd-datepicker.js 
+  В папке ./src/components/dropdown находится файл fsd-datepicker.js 
   
   - fork проекта t1m0n/air-datepicker(https://github.com/t1m0n/air-datepicker)
 
