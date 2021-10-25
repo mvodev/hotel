@@ -1112,23 +1112,21 @@ table {
   justify-content: space-between;
   align-items: center;
   height: 30px;
-  margin: 6px 7px 7px 15px; }
+  margin: 6px 7px 7px 15px;
+  user-select: none; }
+  .dropdown-counter__header {
+    overflow: hidden;
+    margin-bottom: 3px;
+    max-width: 152px; }
+  .dropdown-counter__container {
+    max-width: 92px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
 
-.dropdown-counter__header {
-  overflow: hidden;
-  margin-bottom: 3px;
-  max-width: 152px; }
-
-.dropdown-counter__container {
-  max-width: 92px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-
-.container-dropdown__decrease,
-.container-dropdown__increase {
+.container-dropdown__decrease, .container-dropdown__increase {
   border-radius: 22px;
   width: 30px;
   height: 30px;
@@ -3385,23 +3383,21 @@ table {
   justify-content: space-between;
   align-items: center;
   height: 30px;
-  margin: 6px 7px 7px 15px; }
+  margin: 6px 7px 7px 15px;
+  user-select: none; }
+  .dropdown-counter__header {
+    overflow: hidden;
+    margin-bottom: 3px;
+    max-width: 152px; }
+  .dropdown-counter__container {
+    max-width: 92px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
 
-.dropdown-counter__header {
-  overflow: hidden;
-  margin-bottom: 3px;
-  max-width: 152px; }
-
-.dropdown-counter__container {
-  max-width: 92px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-
-.container-dropdown__decrease,
-.container-dropdown__increase {
+.container-dropdown__decrease, .container-dropdown__increase {
   border-radius: 22px;
   width: 30px;
   height: 30px;
@@ -5099,4 +5095,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.cb7e12f5ec197b6a950f.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.7f81ef2760c7adfa9f7e.css.map*/
