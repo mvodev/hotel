@@ -462,7 +462,6 @@ class DropdownMain {
   _initDropdowns() {
     this.rootElems.forEach(elem => {
     if (elem.classList.contains("dropdown_filter-date")) {
-      console.log('inside DropdownDate');
       new _dropdown_date__WEBPACK_IMPORTED_MODULE_0__["default"](elem);
     }
     else if (elem.classList.contains("dropdown_filter")) {
@@ -2805,4 +2804,4 @@ document.querySelectorAll('.js-list-links__arrow').forEach(elem=>new _sublinks_c
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.b2ada9c33879f78e266f.js.map
+//# sourceMappingURL=UIKit~details~landing~search.dbd62325238bffb61a9a.js.map
