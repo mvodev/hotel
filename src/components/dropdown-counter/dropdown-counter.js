@@ -17,20 +17,20 @@ class DropdownCounter {
   }
   _handleMinus() {
     if (this.valueNumber > 0) {
-    this.valueNumber--;
-    this.value.innerHTML = this.valueNumber;
-    this.container.dispatchEvent(new CustomEvent("counterChanged", { bubbles: true }));
+      this.valueNumber--;
+      this.value.innerHTML = this.valueNumber;
+      this.container.dispatchEvent(new CustomEvent("counterChanged", { bubbles: true }));
     }
     if (this.valueNumber === 0) {
-    this.minus.classList.remove('container-dropdown__decrease_dark');
+      this.minus.classList.remove('container-dropdown__decrease_dark');
     }
-    
+
   }
   _handlePlus() {
     this.valueNumber++;
     this.value.innerHTML = this.valueNumber;
     this.minus.classList.add('container-dropdown__decrease_dark');
-    this.container.dispatchEvent(new CustomEvent("counterChanged",{bubbles:true}));
+    this.container.dispatchEvent(new CustomEvent("counterChanged", { bubbles: true }));
   }
   getData() {
     return this.valueNumber;

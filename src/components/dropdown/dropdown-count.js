@@ -1,6 +1,7 @@
 import DropdownCounter from "../dropdown-counter/dropdown-counter";
 
 class DropdownCount {
+
   constructor(rootElem) {
     this.data = 0;
     this.dropdownType = '';
@@ -10,6 +11,7 @@ class DropdownCount {
     this._getElems();
     this._bindEvents();
   }
+
   _getElems() {
     this.spellCases = {
       guests: ["гость", "гостя", "гостей"],
@@ -34,16 +36,19 @@ class DropdownCount {
     this.counters.forEach(elem => {
       this.dropdownCounters.push(new DropdownCounter(elem));
     });
-    
+
   }
+
   showDropdown() {
     this.rootElem.classList.add("dropdown_is-opened");
     this.body.classList.add("dropdown_is-opened");
   }
+
   hideDropdown() {
     this.rootElem.classList.remove("dropdown_is-opened");
     this.body.classList.remove("dropdown_is-opened");
   }
+
   _bindEvents() {
     this.inputWrapper.addEventListener('click', this._handleDropdown.bind(this));
     if (this.dropdownType === 'guests') {
@@ -53,6 +58,7 @@ class DropdownCount {
     this.rootElem.addEventListener('counterChanged', this._handleCounter.bind(this));
     document.addEventListener('click', this._handleClickOutsideDropdown.bind(this));
   }
+
   _handleClickOutsideDropdown(e) {
     const target = e.target;
     const itIsDropdown = target === this.rootElem || this.rootElem.contains(target);
@@ -60,6 +66,7 @@ class DropdownCount {
       this.hideDropdown();
     }
   }
+
   _handleCounter() {
     if (this.dropdownType === 'guests') {
       this._checkIfClearButtonMustBeShown();
@@ -68,6 +75,7 @@ class DropdownCount {
       this._setData(this._collectData());
     }
   }
+
   _handleDropdown() {
     if (this.rootElem.classList.contains("dropdown_is-opened")) {
       this.hideDropdown();
@@ -76,16 +84,19 @@ class DropdownCount {
       this._checkIfClearButtonMustBeShown();
     }
   }
+
   _handleApplyButton() {
     let result = this._collectData();
     this._setData(result);
     this.hideDropdown();
     this._checkIfClearButtonMustBeShown();
   }
+
   _handleClearButton() {
     this._clearData();
     this._hideClearButton();
   }
+
   _collectData() {
     if (this.dropdownType === 'guests') {
       let guests = {};
@@ -108,6 +119,7 @@ class DropdownCount {
       return room;
     }
   }
+
   _getPosInSpellCasesArray(result) {
     if (result === 1) {
       return 0;
@@ -116,13 +128,14 @@ class DropdownCount {
       return 2;
     }
     else if
-      (Number(this.getLastNumber(result)) >= 2 && Number(this.getLastNumber(result)) <= 4) {
+      (Number(this._getLastNumber(result)) >= 2 && Number(this._getLastNumber(result)) <= 4) {
       return 1;
     }
     else {
       return 2;
     }
   }
+
   _setData(result) {
     if (this.dropdownType === 'guests') {
       let temp = '';
@@ -159,22 +172,27 @@ class DropdownCount {
       this.input.value = temp;
     }
   }
-  getLastNumber(value) {
+
+  _getLastNumber(value) {
     return value.toString().split("").pop();
   }
+
   _clearData() {
     this.input.value = "";
     this.dropdownCounters.forEach(elem => {
       elem.resetData();
     });
   }
+
   _showClearButton() {
     this.clearButton.classList.remove('buttons-dropdown_hidden');
   }
+
   _hideClearButton() {
     this.clearButton.classList.add('buttons-dropdown_hidden');
   }
-  _checkIfClearButtonMustBeShown(){
+
+  _checkIfClearButtonMustBeShown() {
     if (this._collectData().total > 0) {
       this._showClearButton();
     }
@@ -182,5 +200,6 @@ class DropdownCount {
       this._hideClearButton();
     }
   }
+
 }
 export default DropdownCount;
