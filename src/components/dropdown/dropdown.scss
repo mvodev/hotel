@@ -1,5 +1,5 @@
-@import "../dropdown-counter/dropdown-counter.scss";
-@import "./dropdown-date.scss";
+@import '../dropdown-counter/dropdown-counter.scss';
+@import './dropdown-date.scss';
 .dropdown {
   position: relative;
   font-family: inherit;
@@ -9,11 +9,10 @@
   box-sizing: border-box;
 
   &_guests {
-    max-width: 320px;
-    width: 100%;
-    border: 1px solid $darkShade50;
-    border-radius: 2px;
-    cursor: pointer;
+    width: 320px;
+    border: 1px solid $darkShade25;
+    border-radius: 4px;
+    left: -1px;
   }
 
   &_room {
@@ -25,6 +24,12 @@
 
   &_room.dropdown_is-opened {
     border: 1px solid $darkShade50;
+  }
+
+  &_guests.dropdown_is-opened {
+    border: 1px solid $darkShade50;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   &__input-wrapper {
@@ -49,6 +54,7 @@
     font-size: 1.16rem;
     line-height: 2rem;
     cursor: pointer;
+    background: transparent;
   }
 
   &_guests .dropdown__input {
@@ -120,5 +126,4 @@
     visibility: hidden;
     cursor: none;
   }
-  
 }

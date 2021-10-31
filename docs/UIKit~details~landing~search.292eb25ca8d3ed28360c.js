@@ -455,10 +455,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 class DropdownMain {
+
   constructor(rootElems) {
     this.rootElems = rootElems;
     this._initDropdowns();
   }
+
   _initDropdowns() {
     this.rootElems.forEach(elem => {
     if (elem.classList.contains("dropdown_filter-date")) {
@@ -472,6 +474,7 @@ class DropdownMain {
     };
     });
   }
+  
 }
 /* harmony default export */ __webpack_exports__["default"] = (DropdownMain);
 
@@ -2804,4 +2807,4 @@ document.querySelectorAll('.js-list-links__arrow').forEach(elem=>new _sublinks_c
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.dbd62325238bffb61a9a.js.map
+//# sourceMappingURL=UIKit~details~landing~search.292eb25ca8d3ed28360c.js.map

@@ -1370,11 +1370,10 @@ table {
   background: #ffffff;
   box-sizing: border-box; }
   .dropdown_guests {
-    max-width: 320px;
-    width: 100%;
-    border: 1px solid rgba(31, 32, 65, 0.5);
-    border-radius: 2px;
-    cursor: pointer; }
+    width: 320px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    left: -1px; }
   .dropdown_room {
     width: 266px;
     border: 1px solid rgba(31, 32, 65, 0.25);
@@ -1382,6 +1381,10 @@ table {
     cursor: pointer; }
   .dropdown_room.dropdown_is-opened {
     border: 1px solid rgba(31, 32, 65, 0.5); }
+  .dropdown_guests.dropdown_is-opened {
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; }
   .dropdown__input-wrapper {
     display: flex;
     flex-direction: row;
@@ -1401,7 +1404,8 @@ table {
     font-weight: normal;
     font-size: 1.16rem;
     line-height: 2rem;
-    cursor: pointer; }
+    cursor: pointer;
+    background: transparent; }
   .dropdown_guests .dropdown__input {
     width: 180px;
     overflow: hidden; }
@@ -3641,11 +3645,10 @@ table {
   background: #ffffff;
   box-sizing: border-box; }
   .dropdown_guests {
-    max-width: 320px;
-    width: 100%;
-    border: 1px solid rgba(31, 32, 65, 0.5);
-    border-radius: 2px;
-    cursor: pointer; }
+    width: 320px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    left: -1px; }
   .dropdown_room {
     width: 266px;
     border: 1px solid rgba(31, 32, 65, 0.25);
@@ -3653,6 +3656,10 @@ table {
     cursor: pointer; }
   .dropdown_room.dropdown_is-opened {
     border: 1px solid rgba(31, 32, 65, 0.5); }
+  .dropdown_guests.dropdown_is-opened {
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; }
   .dropdown__input-wrapper {
     display: flex;
     flex-direction: row;
@@ -3672,7 +3679,8 @@ table {
     font-weight: normal;
     font-size: 1.16rem;
     line-height: 2rem;
-    cursor: pointer; }
+    cursor: pointer;
+    background: transparent; }
   .dropdown_guests .dropdown__input {
     width: 180px;
     overflow: hidden; }
@@ -5095,4 +5103,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.d0476a8fe6f8278308c9.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.eb20f6c514fc0b3b057e.css.map*/
