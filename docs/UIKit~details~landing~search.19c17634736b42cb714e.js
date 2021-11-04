@@ -235,19 +235,8 @@ class DropdownCount {
   }
 
   _getPosInSpellCasesArray(result) {
-    if (result === 1) {
-      return 0;
-    }
-    else if (result >= 5 && result < 21) {
-      return 2;
-    }
-    else if
-      (Number(this._getLastNumber(result)) >= 2 && Number(this._getLastNumber(result)) <= 4) {
-      return 1;
-    }
-    else {
-      return 2;
-    }
+    const cases = [2, 0, 1, 1, 1, 2];
+    return ((result % 100) > 4 && (result % 100) < 20) ? 2 : cases[(result % 10 < 5) ? result % 10 : 5];
   }
 
   _setData(result) {
@@ -285,10 +274,6 @@ class DropdownCount {
       }
       this.input.value = temp;
     }
-  }
-
-  _getLastNumber(value) {
-    return value.toString().split("").pop();
   }
 
   _clearData() {
@@ -2807,4 +2792,4 @@ document.querySelectorAll('.js-list-links__arrow').forEach(elem=>new _sublinks_c
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.292eb25ca8d3ed28360c.js.map
+//# sourceMappingURL=UIKit~details~landing~search.19c17634736b42cb714e.js.map
