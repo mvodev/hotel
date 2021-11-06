@@ -1377,9 +1377,10 @@ table {
     border-radius: 4px;
     left: -1px; }
   .dropdown_room {
-    width: 266px;
+    max-width: 266px;
+    width: 100%;
     border: 1px solid rgba(31, 32, 65, 0.25);
-    border-radius: 2px 2px 0 0; }
+    border-radius: 4px 4px 0 0; }
   .dropdown_room.dropdown_is-opened {
     border: 1px solid rgba(31, 32, 65, 0.5); }
   .dropdown_guests.dropdown_is-opened {
@@ -1449,9 +1450,6 @@ table {
     box-sizing: border-box;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05); }
-  .dropdown_room .dropdown__body {
-    width: 266px;
-    margin-left: -1px; }
   .dropdown_is-opened {
     display: block; }
   .dropdown__body-buttons {
@@ -3655,9 +3653,10 @@ table {
     border-radius: 4px;
     left: -1px; }
   .dropdown_room {
-    width: 266px;
+    max-width: 266px;
+    width: 100%;
     border: 1px solid rgba(31, 32, 65, 0.25);
-    border-radius: 2px 2px 0 0; }
+    border-radius: 4px 4px 0 0; }
   .dropdown_room.dropdown_is-opened {
     border: 1px solid rgba(31, 32, 65, 0.5); }
   .dropdown_guests.dropdown_is-opened {
@@ -3727,9 +3726,6 @@ table {
     box-sizing: border-box;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05); }
-  .dropdown_room .dropdown__body {
-    width: 266px;
-    margin-left: -1px; }
   .dropdown_is-opened {
     display: block; }
   .dropdown__body-buttons {
@@ -5109,4 +5105,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.f6658182c74773c07732.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.29cec54566ace3d2e1c3.css.map*/

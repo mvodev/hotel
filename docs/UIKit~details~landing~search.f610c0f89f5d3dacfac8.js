@@ -128,23 +128,23 @@ class DropdownCount {
 
   _getElems() {
     this.spellCases = {
-      guests: ["гость", "гостя", "гостей"],
+      guests: ['гость', 'гостя', 'гостей'],
       infants: ['младенец', 'младенца', 'младенцев'],
       bedrooms: ['спальня', 'спальни', 'спален'],
       beds: ['кровать', 'кровати', 'кроватей'],
       baths: ['ванная комната', 'ванные комнаты', 'ванных комнат'],
     };
-    this.arrow = this.rootElem.querySelector(".dropdown__arrow");
-    this.input = this.rootElem.querySelector(".dropdown__input");
-    this.inputWrapper = this.rootElem.querySelector(".dropdown__input-wrapper");
-    this.body = this.rootElem.querySelector(".dropdown__body");
-    this.counters = this.rootElem.querySelectorAll(".dropdown-counter");
-    if (this.rootElem.classList.contains("dropdown_room")) {
+    this.arrow = this.rootElem.querySelector('.dropdown__arrow');
+    this.input = this.rootElem.querySelector('.dropdown__input');
+    this.inputWrapper = this.rootElem.querySelector('.dropdown__input-wrapper');
+    this.body = this.rootElem.querySelector('.dropdown__body');
+    this.counters = this.rootElem.querySelectorAll('.dropdown-counter');
+    if (this.rootElem.classList.contains('dropdown_room')) {
       this.dropdownType = 'room';
-    } else if (this.rootElem.classList.contains("dropdown_guests")) {
+    } else if (this.rootElem.classList.contains('dropdown_guests')) {
       this.dropdownType = 'guests';
-      this.applyButton = this.rootElem.querySelector(".js-dropdown__body-buttons").lastChild;
-      this.clearButton = this.rootElem.querySelector(".js-dropdown__body-buttons").firstChild;
+      this.applyButton = this.rootElem.querySelector('.js-dropdown__body-buttons').lastChild;
+      this.clearButton = this.rootElem.querySelector('.js-dropdown__body-buttons').firstChild;
       this._checkIfClearButtonMustBeShown();
     }
     this.counters.forEach(elem => {
@@ -154,13 +154,13 @@ class DropdownCount {
   }
 
   showDropdown() {
-    this.rootElem.classList.add("dropdown_is-opened");
-    this.body.classList.add("dropdown_is-opened");
+    this.rootElem.classList.add('dropdown_is-opened');
+    this.body.classList.add('dropdown_is-opened');
   }
 
   hideDropdown() {
-    this.rootElem.classList.remove("dropdown_is-opened");
-    this.body.classList.remove("dropdown_is-opened");
+    this.rootElem.classList.remove('dropdown_is-opened');
+    this.body.classList.remove('dropdown_is-opened');
   }
 
   _bindEvents() {
@@ -2794,4 +2794,4 @@ document.querySelectorAll('.js-list-links__arrow').forEach(elem=>new _sublinks_c
 /***/ })
 
 }]);
-//# sourceMappingURL=UIKit~details~landing~search.d4cf1db2b10960018c0a.js.map
+//# sourceMappingURL=UIKit~details~landing~search.f610c0f89f5d3dacfac8.js.map
