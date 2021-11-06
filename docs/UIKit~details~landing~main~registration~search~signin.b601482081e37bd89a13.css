@@ -1133,8 +1133,7 @@ table {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
-  cursor: pointer; }
+  flex-direction: row; }
 
 .container-dropdown__decrease {
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -1142,11 +1141,13 @@ table {
 
 .container-dropdown__increase {
   border: 1px solid rgba(31, 32, 65, 0.5);
-  color: rgba(31, 32, 65, 0.5); }
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer; }
 
 .container-dropdown__decrease_dark {
   border: 1px solid rgba(31, 32, 65, 0.5);
-  color: rgba(31, 32, 65, 0.5); }
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer; }
 
 .dropdown_filter {
   width: 266px;
@@ -1442,8 +1443,8 @@ table {
     display: none;
     position: absolute;
     z-index: 3;
-    left: 0;
-    right: 0;
+    left: -1px;
+    right: -1px;
     background: #ffffff;
     border: 1px solid rgba(31, 32, 65, 0.5);
     box-sizing: border-box;
@@ -3411,8 +3412,7 @@ table {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
-  cursor: pointer; }
+  flex-direction: row; }
 
 .container-dropdown__decrease {
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -3420,11 +3420,13 @@ table {
 
 .container-dropdown__increase {
   border: 1px solid rgba(31, 32, 65, 0.5);
-  color: rgba(31, 32, 65, 0.5); }
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer; }
 
 .container-dropdown__decrease_dark {
   border: 1px solid rgba(31, 32, 65, 0.5);
-  color: rgba(31, 32, 65, 0.5); }
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer; }
 
 .dropdown_filter {
   width: 266px;
@@ -3720,8 +3722,8 @@ table {
     display: none;
     position: absolute;
     z-index: 3;
-    left: 0;
-    right: 0;
+    left: -1px;
+    right: -1px;
     background: #ffffff;
     border: 1px solid rgba(31, 32, 65, 0.5);
     box-sizing: border-box;
@@ -5109,4 +5111,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.47ceaab52ef5ca2d4707.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.b601482081e37bd89a13.css.map*/

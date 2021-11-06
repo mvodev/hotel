@@ -35,7 +35,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    cursor: pointer;
   }
 
   &__decrease {
@@ -46,10 +45,12 @@
   &__increase {
     border: 1px solid $darkShade50;
     color: $darkShade50;
+    cursor: pointer;
   }
 
   &__decrease_dark {
     border: 1px solid $darkShade50;
     color: $darkShade50;
+    cursor: pointer;
   }
 }
