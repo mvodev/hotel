@@ -77,7 +77,7 @@ class DropdownCount {
   }
 
   _handleDropdown() {
-    if (this.rootElem.classList.contains("dropdown_is-opened")) {
+    if (this.rootElem.classList.contains('dropdown_is-opened')) {
       this.hideDropdown();
     } else {
       this.showDropdown();
@@ -178,11 +178,13 @@ class DropdownCount {
   }
 
   _checkIfClearButtonMustBeShown() {
-    if (this._collectData().total > 0) {
-      this._showClearButton();
-    }
-    else {
-      this._hideClearButton();
+    if(this.dropdownType==='guests'){
+      if (this._collectData().total > 0) {
+        this._showClearButton();
+      }
+      else {
+        this._hideClearButton();
+      }
     }
   }
 

@@ -1379,8 +1379,7 @@ table {
   .dropdown_room {
     width: 266px;
     border: 1px solid rgba(31, 32, 65, 0.25);
-    border-radius: 2px 2px 0 0;
-    cursor: pointer; }
+    border-radius: 2px 2px 0 0; }
   .dropdown_room.dropdown_is-opened {
     border: 1px solid rgba(31, 32, 65, 0.5); }
   .dropdown_guests.dropdown_is-opened {
@@ -3658,8 +3657,7 @@ table {
   .dropdown_room {
     width: 266px;
     border: 1px solid rgba(31, 32, 65, 0.25);
-    border-radius: 2px 2px 0 0;
-    cursor: pointer; }
+    border-radius: 2px 2px 0 0; }
   .dropdown_room.dropdown_is-opened {
     border: 1px solid rgba(31, 32, 65, 0.5); }
   .dropdown_guests.dropdown_is-opened {
@@ -5111,4 +5109,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.b601482081e37bd89a13.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.f6658182c74773c07732.css.map*/
