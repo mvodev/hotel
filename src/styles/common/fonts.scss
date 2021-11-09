@@ -211,7 +211,7 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  src: url("../assets/fonts/montserrat/Montserrat-Bold.ttf");
+  src: url("../assets/fonts/montserrat/montserrat-bold.ttf");
 }
 
 @font-face {
@@ -223,7 +223,7 @@
   font-style: normal;
   font-weight: 400;
   src: local("Material Icons"), local("MaterialIcons-Regular"),
-    url("../assets/fonts/MaterialIcons-Regular.woff2") format("woff2");
+    url("../assets/fonts/materialIcons-regular.woff2") format("woff2");
 }
 .material-icons {
   font-family: "Material Icons";
