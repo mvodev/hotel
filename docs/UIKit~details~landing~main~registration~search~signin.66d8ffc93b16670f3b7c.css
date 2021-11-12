@@ -2358,7 +2358,7 @@ table {
   .diagram-donut {
     height: 120px;
     width: 120px; }
-  .diagram .labels-diargam {
+  .diagram .labels-diagram {
     align-items: center;
     color: #bc9cff;
     position: absolute;
@@ -2371,9 +2371,9 @@ table {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%); }
-  .diagram .labels-diargam__number {
+  .diagram .labels-diagram__number {
     font-size: 2rem; }
-  .diagram .labels-diargam__label {
+  .diagram .labels-diagram__label {
     font-size: 1.16rem;
     line-height: 1.25rem; }
   .diagram__description {
@@ -5105,4 +5105,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.18542541b864264cdc1e.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.66d8ffc93b16670f3b7c.css.map*/
