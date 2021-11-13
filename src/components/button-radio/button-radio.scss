@@ -24,7 +24,7 @@
     border: 1px solid $darkShade25;
     box-sizing: border-box;
     border-radius: 10px;
-    content: "";
+    content: '';
     position: absolute;
     top: 2px;
     left: 0;
@@ -33,7 +33,7 @@
   }
 
   &__label:after {
-    content: "";
+    content: '';
     border-radius: 50%;
     background: $buttonColor;
     position: absolute;

@@ -1,11 +1,13 @@
 import './fsd-datepicker.js';
 class DropdownDate {
+
   constructor(rootElem) {
     this.rootElem = rootElem;
     this._getElems();
     this._init();
     this._bindEvents();
   }
+
   _getElems() {
     this.startInput = this.rootElem.querySelectorAll(".dropdown__input")[0];
     this.endInput = this.rootElem.querySelectorAll(".dropdown__input")[1];
@@ -15,6 +17,7 @@ class DropdownDate {
     this.startDropdownArrow = this.arrows[0];
     this.endDropdownArrow = this.arrows[1];
   }
+
   _bindEvents() {
     this.startDropdownArrow.addEventListener('click', this._handlerStartArrowDropdown.bind(this));
     this.endDropdownArrow.addEventListener('click', this._handlerEndArrowDropdown.bind(this));
@@ -39,14 +42,18 @@ class DropdownDate {
       }
     });
   }
+
   _handlerStartArrowDropdown() {
     this.$dpInput.fsdDatepicker().data('fsd-datepicker').show();
   }
+
   _handlerEndArrowDropdown() {
     this.$dpInput.fsdDatepicker().data('fsd-datepicker').show();
   }
+
   _handlerEndInputDropdown(){
     this.$dpInput.fsdDatepicker().data('fsd-datepicker').show();
   }
+  
 }
 export default DropdownDate;

@@ -1,9 +1,9 @@
-@import "../button-radio/button-radio.scss";
-@import "../button-rich/button-rich.scss";
-@import "../button-check/button-check.scss";
-@import "../button-rate/button-rate.scss";
-@import "../button-like/button-like.scss";
-@import "../button-icon/button-icon.scss";
+@import '../button-radio/button-radio.scss';
+@import '../button-rich/button-rich.scss';
+@import '../button-check/button-check.scss';
+@import '../button-rate/button-rate.scss';
+@import '../button-like/button-like.scss';
+@import '../button-icon/button-icon.scss';
 
 .button {
   border: none;
@@ -44,7 +44,7 @@
         background: #ffffff;
         bottom: 2px;
         border-radius: inherit;
-        content: "";
+        content: '';
         left: 2px;
         padding: 2px;
         position: absolute;
@@ -92,7 +92,6 @@
       }
     }
   }
-
 
   &_size{
 

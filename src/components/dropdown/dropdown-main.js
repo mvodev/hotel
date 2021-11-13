@@ -11,15 +11,15 @@ class DropdownMain {
 
   _initDropdowns() {
     this.rootElems.forEach(elem => {
-    if (elem.classList.contains("dropdown_filter-date")) {
-      new DropdownDate(elem);
-    }
-    else if (elem.classList.contains("dropdown_filter")) {
-      new DropdownFilter(elem);
-    }
-    else {
-      new DropdownCount(elem);
-    };
+      if (elem.classList.contains('dropdown_filter-date')) {
+        new DropdownDate(elem);
+      }
+      else if (elem.classList.contains('dropdown_filter')) {
+        new DropdownFilter(elem);
+      }
+      else {
+        new DropdownCount(elem);
+      };
     });
   }
   

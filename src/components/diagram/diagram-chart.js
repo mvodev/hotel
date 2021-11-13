@@ -1,10 +1,12 @@
 class DiagramChart {
+
   constructor(rootElem, options) {
     this.rootElem = rootElem;
     this.options = this._getOptions(options);
     this._initCanvas();
     this._drawChart();
   }
+
   _initCanvas() {
     const canvas = document.createElement('canvas');
     this.rootElem.append(canvas);
@@ -13,6 +15,7 @@ class DiagramChart {
     const ctx = canvas.getContext("2d");
     this.ctx = ctx;
   }
+
   _drawArc(centerX, centerY, radius, startAngle, endAngle, color) {
     this.ctx.strokeStyle = color;
     this.ctx.beginPath();
@@ -20,11 +23,13 @@ class DiagramChart {
     this.ctx.arc(centerX, centerY, radius, startAngle, endAngle, false);
     this.ctx.stroke();
   }
+
   _drawText(ctx, text, position, style) {
     ctx.fillStyle = this.options.fontColor;
     ctx.font = this.options.fontWeight + ' ' + style.fontSize + ' ' + this.options.font;
     ctx.fillText(text, position.x, position.y);
   }
+
   _drawChart() {
     let centerX = this.options.width / 2;
     let centerY = this.options.width / 2;
@@ -71,6 +76,7 @@ class DiagramChart {
         this.options.initialAngle + poorAngle + satisfactoryAngle + goodAngle + perfectAngle, this.options.backgroundColor.perfect);
     }
   }
+
   _getOptions(options) {
     let width = options.width || 120;
     let height = options.height || 120;
@@ -96,5 +102,6 @@ class DiagramChart {
     let fontColor = options.fontColor || defaultFontColor;
     return { width, height, number, label, segments, lineWidth, initialAngle, backgroundColor, delimeterAngle, font, fontColor, fontWeight }
   }
+  
 }
 export default DiagramChart;

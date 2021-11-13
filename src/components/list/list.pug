@@ -1,5 +1,5 @@
 include ../button-check/button-check.pug
-mixin list( {isExpand=false, label="", type="",labels=[],icon="",header="",text="", }={})
+mixin list( {isExpand=false, label='', type='',labels=[],icon='',header='',text='', }={})
   - let listClassName='bullet-list'
   - let isExpandedList=isExpand===true ? ' bullet-list_is-opened' : '' 
     if type==='expandable'
@@ -25,4 +25,3 @@ mixin list( {isExpand=false, label="", type="",labels=[],icon="",header="",text=
         ul
           each val in labels ? labels : ['There are no values']
             li(class=listClassName+'__elem')=val
-

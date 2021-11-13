@@ -1,5 +1,5 @@
-@import "../../styles/common/constants.scss";
-@import "../../styles/common/pages.scss";
+@import '../../styles/common/constants.scss';
+@import '../../styles/common/pages.scss';
 
 .main {
 
@@ -15,8 +15,8 @@
     min-height: 485px;
     width: 100%;
     display: grid;
-    grid-template-areas:"left top"
-                        "left bottom";
+    grid-template-areas:'left top'
+                        'left bottom';
     grid-template-columns: 68.125% 31.875%;
     grid-template-rows: 1fr 1fr;
 

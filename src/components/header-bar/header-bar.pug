@@ -2,7 +2,8 @@ include ../burger/burger.pug
 include ../button/button.pug
 include ../list-links/list-links.pug
 include ../logo/logo-toxin.pug
-mixin header-bar( {type="nav",links=[],signInLinkText="Войти",registerLinkText= "Зарегистрироваться",signInRef="sign-in-page.html",registerRef = "registration.html",userName="Юлий Цезарь",userRef = "/mock-address/change-me",isVertical=false} = {})
+
+mixin header-bar( {type='nav',links=[],signInLinkText='Войти',registerLinkText='Зарегистрироваться',signInRef='sign-in-page.html',registerRef = 'registration.html',userName='Юлий Цезарь',userRef='/mock-address/change-me',isVertical=false} = {})
   header.header-bar
     .header-bar__wrapper
       .header-bar__logo

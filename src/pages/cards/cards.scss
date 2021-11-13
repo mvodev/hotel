@@ -1,6 +1,7 @@
-@import "./cards-left-column.scss";
-@import "./cards-central-column.scss";
-@import "./cards-right-column.scss";
+@import './cards-left-column.scss';
+@import './cards-central-column.scss';
+@import './cards-right-column.scss';
+
 .cards{
   max-width: $container-width;
   margin: 0 auto;

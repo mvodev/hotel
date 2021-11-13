@@ -45,7 +45,7 @@
     border: 1px solid $darkShade25;
     box-sizing: border-box;
     border-radius: 4px;
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -54,7 +54,7 @@
   }
 
   &__checkbox-input:checked + .button-rich__checkbox-header:before {
-    background-image: url("../assets/img/svg/checkbox.svg");
+    background-image: url('../assets/img/svg/checkbox.svg');
     background-repeat: no-repeat;
     background-position: center;
     border: 1px solid $purple;

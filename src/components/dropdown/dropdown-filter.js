@@ -1,15 +1,18 @@
 import './fsd-datepicker.js';
 class DropdownFilter {
+
   constructor(rootElem) {
     this.rootElem = rootElem;
     this._getElems();
     this._init();
     this._bindEvents();
   }
+
   _getElems() {
     this.inputWrapper = this.rootElem.querySelector(".dropdown__input-wrapper");
     this.arrow = this.rootElem.querySelector('.dropdown__arrow');
   }
+
   _bindEvents() {
     this.inputWrapper.addEventListener('click', this._handlerArrowDropdown.bind(this));
   }
@@ -29,8 +32,10 @@ class DropdownFilter {
       }
     });
   }
+
   _handlerArrowDropdown() {
     this.$dpInput.fsdDatepicker().data('fsd-datepicker').show();
   }
+  
 }
 export default DropdownFilter;
