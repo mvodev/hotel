@@ -1,11 +1,7 @@
 @import '../../styles/common/constants.scss';
-
+@import '../../styles/common/pages.scss';
 @import '../../components/header-ui-kit/header-ui-kit.scss';
 
-html{
-  font-size: $font-size;
-  font-family: $font-family-main,$fallback-font;
-}
 
 .ui-kit-wrapper {
   width: 100%;

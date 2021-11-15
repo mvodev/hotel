@@ -1,6 +1,6 @@
 html{
-  font-family: $font-family-main,$fallback-font;
-  font-size: $font-size;
+  font-family: $font-family-main,$fallback-font !important;
+  font-size: $font-size !important;
 }
 .flexible-body{
   display: flex;
