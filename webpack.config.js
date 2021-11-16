@@ -100,20 +100,8 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: path.resolve(__dirname, 'src/assets/img/svg'),
-          to: path.resolve(__dirname, 'docs/assets/img/svg')
-        },
-        {
-          from: path.resolve(__dirname, 'src/assets/img/details'),
-          to: path.resolve(__dirname, 'docs/assets/img/details')
-        },
-        {
-          from: path.resolve(__dirname, 'src/assets/img/png'),
-          to: path.resolve(__dirname, 'docs/assets/img/png')
-        },
-        {
-          from: path.resolve(__dirname, 'src/assets/favicons'),
-          to: path.resolve(__dirname, 'docs/favicons')
+          from: path.resolve(__dirname, 'src/assets'),
+          to: path.resolve(__dirname, 'docs/assets')
         },
       ]
     }),
