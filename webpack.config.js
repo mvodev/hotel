@@ -31,7 +31,7 @@ module.exports = {
     registration: './pages/registration/registration.js',
   },
   output: {
-    filename: '[name].[contenthash].js',
+    filename: './js/[name].[contenthash].js',
     path: path.resolve(__dirname, 'docs')
   },
   optimization: {
