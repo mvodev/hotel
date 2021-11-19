@@ -6,6 +6,16 @@ class DropdownCounter {
     this._bindEvents();
   }
 
+  getData() {
+    return this.valueNumber;
+  }
+
+  resetData() {
+    this.value.innerHTML = '0';
+    this.valueNumber = 0;
+    this.minus.classList.remove('container-dropdown__decrease_dark');
+  }
+
   _getElements() {
     this.minus = this.container.querySelector('.js-container-dropdown__decrease');
     this.plus = this.container.querySelector('.js-container-dropdown__increase');
@@ -34,16 +44,6 @@ class DropdownCounter {
     this.value.innerHTML = this.valueNumber;
     this.minus.classList.add('container-dropdown__decrease_dark');
     this.container.dispatchEvent(new CustomEvent("counterChanged", { bubbles: true }));
-  }
-
-  getData() {
-    return this.valueNumber;
-  }
-
-  resetData() {
-    this.value.innerHTML = '0';
-    this.valueNumber = 0;
-    this.minus.classList.remove('container-dropdown__decrease_dark');
   }
   
 }

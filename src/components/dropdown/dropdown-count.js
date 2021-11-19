@@ -12,6 +12,16 @@ class DropdownCount {
     this._bindEvents();
   }
 
+  showDropdown() {
+    this.rootElem.classList.add('dropdown_is-opened');
+    this.body.classList.add('dropdown_is-opened');
+  }
+
+  hideDropdown() {
+    this.rootElem.classList.remove('dropdown_is-opened');
+    this.body.classList.remove('dropdown_is-opened');
+  }
+
   _getElems() {
     this.spellCases = {
       guests: ['гость', 'гостя', 'гостей'],
@@ -37,16 +47,6 @@ class DropdownCount {
       this.dropdownCounters.push(new DropdownCounter(elem));
     });
 
-  }
-
-  showDropdown() {
-    this.rootElem.classList.add('dropdown_is-opened');
-    this.body.classList.add('dropdown_is-opened');
-  }
-
-  hideDropdown() {
-    this.rootElem.classList.remove('dropdown_is-opened');
-    this.body.classList.remove('dropdown_is-opened');
   }
 
   _bindEvents() {

@@ -1,4 +1,5 @@
 import DiagramChart from './diagram-chart.js';
+
 const diagramChartRootElem = document.querySelector('.js-diagram-donut');
 const diagramChart = new DiagramChart(diagramChartRootElem, 
                                       { number: 260,

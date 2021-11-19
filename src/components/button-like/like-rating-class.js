@@ -5,13 +5,16 @@ class LikeRating {
     this._getElems();
     this._bindEvents();
   }
+
   _bindEvents() {
     this.likeButton.addEventListener('click', this._handlelikeButtonClick.bind(this));
   }
+
   _getElems() {
     this.heart = this.likeButton.querySelector('.js-button-like__heart');
     this.numberOfLikes = this.likeButton.querySelector('.js-button-like__number');
   }
+
   _handlelikeButtonClick(event) {
     if (event.target.parentElement.classList.contains('button-like_is-liked')
       || event.target.classList.contains('button-like_is-liked')) {
@@ -25,5 +28,6 @@ class LikeRating {
       this.heart.innerText = 'favorite';
     }
   }
+  
 }
 export default LikeRating;
