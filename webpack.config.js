@@ -132,8 +132,13 @@ module.exports = {
         use: ["pug-loader"],
       },
       {
-        test: /\.(png|jpg|svg|gif)$/,
-        use: ['file-loader']
+        test: /\.(png|jpeg|jpg|gif|webp|svg)$/,
+        loader: 'file-loader',
+        options: {
+          emitFile: true,
+          esModule: false,
+          name: 'images/[name].[contenthash].[ext]',
+        },
       },
       {
         test: /\.(ttf|woff|woff2|eot|otf)$/,

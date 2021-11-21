@@ -1,4 +1,4 @@
-mixin logo({ link = 'landing.html',imgSrc='./assets/img/logo-toxin/logo-toxin.svg'} = {})
+mixin logo({ link = 'landing.html',imgSrc=require('../../components/logo/logo-toxin.svg')} = {})
   .logo-toxin
     a.logo-toxin__link(href=link) 
       img.logo-toxin__img(src=imgSrc, alt='Logo Toxin image')

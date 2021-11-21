@@ -1954,7 +1954,7 @@ table {
     height: 20px;
     width: 20px; }
   .button-rich__checkbox-input:checked + .button-rich__checkbox-header:before {
-    background-image: url(7f4d42a3ce6abcae3ff92c4183b5f975.svg);
+    background-image: url(images/checkbox.7f4d42a3ce6abcae3ff92c4183b5f975.svg);
     background-repeat: no-repeat;
     background-position: center;
     border: 1px solid #bc9cff; }
@@ -1996,7 +1996,7 @@ table {
     height: 20px;
     width: 20px; }
   .button-check .button-check__checkbox-input:checked + .button-check__checkbox-text:before {
-    background-image: url(7f4d42a3ce6abcae3ff92c4183b5f975.svg);
+    background-image: url(images/checkbox.7f4d42a3ce6abcae3ff92c4183b5f975.svg);
     background-repeat: no-repeat;
     background-position: center;
     border: 1px solid #bc9cff; }
@@ -3864,7 +3864,7 @@ table {
     height: 20px;
     width: 20px; }
   .button-rich__checkbox-input:checked + .button-rich__checkbox-header:before {
-    background-image: url(7f4d42a3ce6abcae3ff92c4183b5f975.svg);
+    background-image: url(images/checkbox.7f4d42a3ce6abcae3ff92c4183b5f975.svg);
     background-repeat: no-repeat;
     background-position: center;
     border: 1px solid #bc9cff; }
@@ -3906,7 +3906,7 @@ table {
     height: 20px;
     width: 20px; }
   .button-check .button-check__checkbox-input:checked + .button-check__checkbox-text:before {
-    background-image: url(7f4d42a3ce6abcae3ff92c4183b5f975.svg);
+    background-image: url(images/checkbox.7f4d42a3ce6abcae3ff92c4183b5f975.svg);
     background-repeat: no-repeat;
     background-position: center;
     border: 1px solid #bc9cff; }
@@ -4992,4 +4992,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.06f60f8fb4a1f402d029.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.179ca9e0586617761384.css.map*/
