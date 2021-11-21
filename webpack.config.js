@@ -105,8 +105,8 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: path.resolve(__dirname, 'src/assets'),
-          to: path.resolve(__dirname, 'docs/assets')
+          from: path.resolve(__dirname, 'src/assets/favicons'),
+          to: path.resolve(__dirname, 'docs/favicons')
         },
       ]
     }),
