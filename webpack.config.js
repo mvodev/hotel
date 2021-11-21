@@ -34,6 +34,11 @@ module.exports = {
     filename: './js/[name].[contenthash].js',
     path: path.resolve(__dirname, 'docs')
   },
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+    },
+  },
   optimization: {
     splitChunks: {
       chunks: 'all'
