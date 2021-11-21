@@ -81,8 +81,8 @@
 /* Icons */
 @font-face {
   font-family: "slick";
-  src: url(a4e97f5a2a64f0ab132323fbeb33ae29.eot);
-  src: url(a4e97f5a2a64f0ab132323fbeb33ae29.eot?#iefix) format("embedded-opentype"), url(295183786cd8a138986521d9f388a286.woff) format("woff"), url(c94f7671dcc99dce43e22a89f486f7c2.ttf) format("truetype"), url(2630a3e3eab21c607e21576571b95b9d.svg#slick) format("svg");
+  src: url(fonts/slick.a4e97f5a2a64f0ab132323fbeb33ae29.eot);
+  src: url(fonts/slick.a4e97f5a2a64f0ab132323fbeb33ae29.eot?#iefix) format("embedded-opentype"), url(fonts/slick.295183786cd8a138986521d9f388a286.woff) format("woff"), url(fonts/slick.c94f7671dcc99dce43e22a89f486f7c2.ttf) format("truetype"), url(2630a3e3eab21c607e21576571b95b9d.svg#slick) format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -205,4 +205,4 @@
       opacity: 0.75; }
 
 
-/*# sourceMappingURL=vendors~UIKit~search.e55fc2cff131fbce6c21.css.map*/
+/*# sourceMappingURL=vendors~UIKit~search.06f60f8fb4a1f402d029.css.map*/

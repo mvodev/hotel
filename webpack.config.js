@@ -137,7 +137,12 @@ module.exports = {
       },
       {
         test: /\.(ttf|woff|woff2|eot|otf)$/,
-        use: ['file-loader']
+        loader: 'file-loader',
+        options: {
+          emitFile: true,
+          esModule: false,
+          name: 'fonts/[name].[contenthash].[ext]',
+        },
       },
       {
         test: /\.s[ac]ss$/,

@@ -577,43 +577,43 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  src: url(c1ba4359982fe0cc48ec8d1ad403fdeb.woff) format("woff"); }
+  src: url(fonts/montserrat-v15-latin_cyrillic-regular.c1ba4359982fe0cc48ec8d1ad403fdeb.woff) format("woff"); }
 
 /* montserrat-italic - latin_cyrillic */
 @font-face {
   font-family: "Montserrat";
   font-style: italic;
   font-weight: 400;
-  src: url(d9efdead1749a21fae169b359de60941.woff) format("woff"); }
+  src: url(fonts/montserrat-v15-latin_cyrillic-italic.d9efdead1749a21fae169b359de60941.woff) format("woff"); }
 
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  src: url(76f41669c841bc25d1b71f4e34e831fe.woff) format("woff"); }
+  src: url(fonts/montserrat-v15-latin_cyrillic-600.76f41669c841bc25d1b71f4e34e831fe.woff) format("woff"); }
 
 /* montserrat-600italic - latin_cyrillic */
 @font-face {
   font-family: "Montserrat";
   font-style: italic;
   font-weight: 600;
-  src: url(9cb63491641aceaff6c466be81edc1a8.woff) format("woff"); }
+  src: url(fonts/montserrat-v15-latin_cyrillic-600italic.9cb63491641aceaff6c466be81edc1a8.woff) format("woff"); }
 
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  src: url(079ca05d3ded9bc107ab8a8da013be22.ttf); }
+  src: url(fonts/montserrat-bold.079ca05d3ded9bc107ab8a8da013be22.ttf); }
 
 @font-face {
   font-family: "rouble";
-  src: url(b5a0c905109bbc63d2ed762255024eab.otf) format("opentype"); }
+  src: url(fonts/rouble.b5a0c905109bbc63d2ed762255024eab.otf) format("opentype"); }
 
 @font-face {
   font-family: "Material Icons";
   font-style: normal;
   font-weight: 400;
-  src: local("Material Icons"), local("MaterialIcons-Regular"), url(a36c7514ef1c23af53f19f858bc0a342.woff2) format("woff2"); }
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(fonts/materialIcons-regular.a36c7514ef1c23af53f19f858bc0a342.woff2) format("woff2"); }
 
 .material-icons {
   font-family: "Material Icons";
@@ -2655,43 +2655,43 @@ table {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  src: url(c1ba4359982fe0cc48ec8d1ad403fdeb.woff) format("woff"); }
+  src: url(fonts/montserrat-v15-latin_cyrillic-regular.c1ba4359982fe0cc48ec8d1ad403fdeb.woff) format("woff"); }
 
 /* montserrat-italic - latin_cyrillic */
 @font-face {
   font-family: "Montserrat";
   font-style: italic;
   font-weight: 400;
-  src: url(d9efdead1749a21fae169b359de60941.woff) format("woff"); }
+  src: url(fonts/montserrat-v15-latin_cyrillic-italic.d9efdead1749a21fae169b359de60941.woff) format("woff"); }
 
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  src: url(76f41669c841bc25d1b71f4e34e831fe.woff) format("woff"); }
+  src: url(fonts/montserrat-v15-latin_cyrillic-600.76f41669c841bc25d1b71f4e34e831fe.woff) format("woff"); }
 
 /* montserrat-600italic - latin_cyrillic */
 @font-face {
   font-family: "Montserrat";
   font-style: italic;
   font-weight: 600;
-  src: url(9cb63491641aceaff6c466be81edc1a8.woff) format("woff"); }
+  src: url(fonts/montserrat-v15-latin_cyrillic-600italic.9cb63491641aceaff6c466be81edc1a8.woff) format("woff"); }
 
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  src: url(079ca05d3ded9bc107ab8a8da013be22.ttf); }
+  src: url(fonts/montserrat-bold.079ca05d3ded9bc107ab8a8da013be22.ttf); }
 
 @font-face {
   font-family: "rouble";
-  src: url(b5a0c905109bbc63d2ed762255024eab.otf) format("opentype"); }
+  src: url(fonts/rouble.b5a0c905109bbc63d2ed762255024eab.otf) format("opentype"); }
 
 @font-face {
   font-family: "Material Icons";
   font-style: normal;
   font-weight: 400;
-  src: local("Material Icons"), local("MaterialIcons-Regular"), url(a36c7514ef1c23af53f19f858bc0a342.woff2) format("woff2"); }
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(fonts/materialIcons-regular.a36c7514ef1c23af53f19f858bc0a342.woff2) format("woff2"); }
 
 .material-icons {
   font-family: "Material Icons";
@@ -4992,4 +4992,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.e55fc2cff131fbce6c21.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.06f60f8fb4a1f402d029.css.map*/
