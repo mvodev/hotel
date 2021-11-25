@@ -1,7 +1,7 @@
 {
-  "name": "MetaLamp course 2 project",
+  "name": "fsd-course2-project",
   "version": "1.0.0",
-  "description": "Layouts of hotel and UI-kit for MetaLamp course 2 project",
+  "description": "MetaLamp course 2 project",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
