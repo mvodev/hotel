@@ -1,4 +1,8 @@
-@import '../components/text-field/text-field.scss';
+@import '@/components/text-field/text-field.scss';
+@import '@/components/toggle/toggle.scss';
+@import '@/components/button-radio/button-radio.scss';
+@import '@/components/button/button.scss';
+@import '@/components/heading/heading.scss';
 
 .sign-up {
   max-width: 380px;
