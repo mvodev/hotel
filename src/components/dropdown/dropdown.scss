@@ -1,5 +1,6 @@
-@import '../dropdown-counter/dropdown-counter.scss';
-@import './dropdown-date.scss';
+@import '@/components/dropdown-counter/dropdown-counter.scss';
+@import '@/components/dropdown/dropdown-date.scss';
+@import '@/components/dropdown/fsd-datepicker.css';
 
 .dropdown {
   position: relative;

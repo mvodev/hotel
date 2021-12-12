@@ -1,8 +1,9 @@
-@import '../../styles/common/constants.scss';
-@import '../../styles/common/pages.scss';
-@import '../../components/header-ui-kit/header-ui-kit.scss';
-@import '../../components/paragraph/paragraph.scss';
-@import '../../components/text-field/text-field.scss';
+@import '@/styles/common/constants.scss';
+@import '@/styles/common/pages.scss';
+
+@import '@/pages/cards/cards.scss';
+@import '@/pages/form-elements/form-elements.scss';
+@import '@/pages/colors/ui-kit-colors.scss';
 
 .ui-kit-wrapper {
   width: 100%;

@@ -1,8 +1,8 @@
-@import '../../components/room-card/room-card.scss';
+@import '@/components/room-card/room-card.scss';
 
-@import './cards-left-column.scss';
-@import './cards-central-column.scss';
-@import './cards-right-column.scss';
+@import '@/pages/cards/cards-left-column.scss';
+@import '@/pages/cards/cards-central-column.scss';
+@import '@/pages/cards/cards-right-column.scss';
 
 .cards{
   max-width: $container-width;
