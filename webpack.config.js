@@ -38,6 +38,7 @@ module.exports = {
     alias: {
       '@': path.resolve(__dirname, 'src'),
     },
+    extensions: ['.js'],
   },
   optimization: {
     splitChunks: {
@@ -154,8 +155,5 @@ module.exports = {
         use: cssLoaders('sass-loader')
       },
     ]
-  },
-  resolve: {
-    extensions: ['.js'],
   },
 };
