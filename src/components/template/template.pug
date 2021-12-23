@@ -8,9 +8,9 @@ html(lang='ru')
     meta(name='description' content='Верстка в рамках 2 задания учебного курса MetaLamp')
     title=pageTitle
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    include ./favicon/favicon.pug
+    include ../favicon/favicon.pug
   body.flexible-body
-    include ./headers/header.pug
+    include ../headers/header.pug
     +header({type:'nav',
     links:
     [
@@ -35,6 +35,6 @@ html(lang='ru')
     
     block content
     
-    include ./footers/footer.pug
+    include ../footers/footer.pug
     +footer({type:'widget'})
     +footer({type:'copyright'})
