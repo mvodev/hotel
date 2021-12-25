@@ -1,4 +1,6 @@
+import autobind from 'autobind-decorator';
 import './fsd-datepicker.js';
+
 class DropdownFilter {
 
   constructor(rootElem) {
@@ -14,7 +16,7 @@ class DropdownFilter {
   }
 
   _bindEvents() {
-    this.inputWrapper.addEventListener('click', this._handlerArrowDropdown.bind(this));
+    this.inputWrapper.addEventListener('click', this._handlerArrowDropdown);
   }
 
   _init() {
@@ -33,6 +35,7 @@ class DropdownFilter {
     });
   }
 
+  @autobind
   _handlerArrowDropdown() {
     this.$dpInput.fsdDatepicker().data('fsd-datepicker').show();
   }

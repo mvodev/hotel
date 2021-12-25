@@ -1,3 +1,5 @@
+import autobind from "autobind-decorator";
+
 class StarRating {
 
   constructor(starRating) {
@@ -11,9 +13,10 @@ class StarRating {
   }
 
   _bindEvents() {
-    this.starRatingLabels.forEach(elem => elem.addEventListener('click', this._handleRateButtonClick.bind(this)));
+    this.starRatingLabels.forEach(elem => elem.addEventListener('click', this._handleRateButtonClick));
   }
 
+  @autobind
   _handleRateButtonClick(event) {
     let rateNumberUserChoice = event.target.title.charAt(0);
     for (let i = 0; i < rateNumberUserChoice; i++) {
@@ -23,6 +26,6 @@ class StarRating {
       this.starRatingLabels[j].innerHTML = 'star_border';
     }
   }
-  
+
 }
 export default StarRating;

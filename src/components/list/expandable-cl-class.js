@@ -1,3 +1,5 @@
+import autobind from "autobind-decorator";
+
 class ExpandableCL {
 
   constructor(bulletList) {
@@ -12,9 +14,10 @@ class ExpandableCL {
   }
 
   _bindEvents() {
-    this.bulletList.addEventListener('click', this._handleExpandableList.bind(this));
+    this.bulletList.addEventListener('click', this._handleExpandableList);
   }
 
+  @autobind
   _handleExpandableList(event) {
     this.bulletListDropdown.classList.toggle('bullet-list_is-opened');
     this._toggleArrow();

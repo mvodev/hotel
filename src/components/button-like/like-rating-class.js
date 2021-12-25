@@ -1,3 +1,4 @@
+import autobind from 'autobind-decorator';
 class LikeRating {
 
   constructor(likeButton) {
@@ -7,7 +8,7 @@ class LikeRating {
   }
 
   _bindEvents() {
-    this.likeButton.addEventListener('click', this._handlelikeButtonClick.bind(this));
+    this.likeButton.addEventListener('click', this._handlelikeButtonClick);
   }
 
   _getElems() {
@@ -15,6 +16,7 @@ class LikeRating {
     this.numberOfLikes = this.likeButton.querySelector('.js-button-like__number');
   }
 
+  @autobind
   _handlelikeButtonClick(event) {
     if (event.target.parentElement.classList.contains('button-like_is-liked')
       || event.target.classList.contains('button-like_is-liked')) {
@@ -28,6 +30,6 @@ class LikeRating {
       this.heart.innerText = 'favorite';
     }
   }
-  
+
 }
 export default LikeRating;

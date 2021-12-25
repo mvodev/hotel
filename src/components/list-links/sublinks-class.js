@@ -1,3 +1,5 @@
+import autobind from "autobind-decorator";
+
 class SubLinks {
 
   constructor(arrow) {
@@ -6,10 +8,11 @@ class SubLinks {
   }
 
   _bindEvents() {
-    this.subMenuArrow.addEventListener('click', this._handleMenuArrow.bind(this));
-    document.addEventListener('click', this._handleClickOutsideSublinks.bind(this));
+    this.subMenuArrow.addEventListener('click', this._handleMenuArrow);
+    document.addEventListener('click', this._handleClickOutsideSublinks);
   }
 
+  @autobind
   _handleMenuArrow(e) {
     this.subMenuArrow.nextElementSibling.classList.toggle('list-links__sub-links_is-visible');
     this._toggleArrow();
@@ -24,6 +27,7 @@ class SubLinks {
     }
   }
 
+  @autobind
   _handleClickOutsideSublinks(e) {
     const target = e.target;
     const itIsSublinks = target === this.subMenuArrow 

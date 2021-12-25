@@ -1,3 +1,5 @@
+import autobind from "autobind-decorator";
+
 class DropdownCounter {
 
   constructor(container) {
@@ -24,10 +26,11 @@ class DropdownCounter {
   }
 
   _bindEvents() {
-    this.minus.addEventListener('click', this._handleMinus.bind(this));
-    this.plus.addEventListener('click', this._handlePlus.bind(this));
+    this.minus.addEventListener('click', this._handleMinus);
+    this.plus.addEventListener('click', this._handlePlus);
   }
 
+  @autobind
   _handleMinus() {
     if (this.valueNumber > 0) {
       this.valueNumber--;
@@ -39,6 +42,7 @@ class DropdownCounter {
     }
   }
 
+  @autobind
   _handlePlus() {
     this.valueNumber++;
     this.value.innerHTML = this.valueNumber;

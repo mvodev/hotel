@@ -1,3 +1,4 @@
+import autobind from 'autobind-decorator';
 import DropdownCounter from '@/components/dropdown-counter/dropdown-counter';
 
 class DropdownCount {
@@ -50,15 +51,16 @@ class DropdownCount {
   }
 
   _bindEvents() {
-    this.inputWrapper.addEventListener('click', this._handleDropdown.bind(this));
+    this.inputWrapper.addEventListener('click', this._handleDropdown);
     if (this.dropdownType === 'guests') {
-      this.clearButton.addEventListener('click', this._handleClearButton.bind(this));
-      this.applyButton.addEventListener('click', this._handleApplyButton.bind(this));
+      this.clearButton.addEventListener('click', this._handleClearButton);
+      this.applyButton.addEventListener('click', this._handleApplyButton);
     }
-    this.rootElem.addEventListener('counterChanged', this._handleCounter.bind(this));
-    document.addEventListener('click', this._handleClickOutsideDropdown.bind(this));
+    this.rootElem.addEventListener('counterChanged', this._handleCounter);
+    document.addEventListener('click', this._handleClickOutsideDropdown);
   }
 
+  @autobind
   _handleClickOutsideDropdown(e) {
     const target = e.target;
     const itIsDropdown = target === this.rootElem || this.rootElem.contains(target);
@@ -67,6 +69,7 @@ class DropdownCount {
     }
   }
 
+  @autobind
   _handleCounter() {
     if (this.dropdownType === 'guests') {
       this._checkIfClearButtonMustBeShown();
@@ -76,6 +79,7 @@ class DropdownCount {
     }
   }
 
+  @autobind
   _handleDropdown() {
     if (this.rootElem.classList.contains('dropdown_is-opened')) {
       this.hideDropdown();
@@ -85,6 +89,7 @@ class DropdownCount {
     }
   }
 
+  @autobind
   _handleApplyButton() {
     let result = this._collectData();
     this._setData(result);
@@ -92,6 +97,7 @@ class DropdownCount {
     this._checkIfClearButtonMustBeShown();
   }
 
+  @autobind
   _handleClearButton() {
     this._clearData();
     this._hideClearButton();

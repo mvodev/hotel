@@ -1,4 +1,6 @@
+import autobind from 'autobind-decorator';
 import '@/components/dropdown/fsd-datepicker.js';
+
 class DropdownDate {
 
   constructor(rootElem) {
@@ -19,9 +21,9 @@ class DropdownDate {
   }
 
   _bindEvents() {
-    this.startDropdownArrow.addEventListener('click', this._handlerStartArrowDropdown.bind(this));
-    this.endDropdownArrow.addEventListener('click', this._handlerEndArrowDropdown.bind(this));
-    this.endInput.addEventListener('click', this._handlerEndInputDropdown.bind(this));
+    this.startDropdownArrow.addEventListener('click', this._handlerStartArrowDropdown);
+    this.endDropdownArrow.addEventListener('click', this._handlerEndArrowDropdown);
+    this.endInput.addEventListener('click', this._handlerEndInputDropdown);
   }
 
   _init() {
@@ -43,14 +45,17 @@ class DropdownDate {
     });
   }
 
+  @autobind
   _handlerStartArrowDropdown() {
     this.$dpInput.fsdDatepicker().data('fsd-datepicker').show();
   }
 
+  @autobind
   _handlerEndArrowDropdown() {
     this.$dpInput.fsdDatepicker().data('fsd-datepicker').show();
   }
 
+  @autobind
   _handlerEndInputDropdown(){
     this.$dpInput.fsdDatepicker().data('fsd-datepicker').show();
   }
