@@ -1,4 +1,4 @@
-import DropdownCounter from "../dropdown-counter/dropdown-counter";
+import DropdownCounter from '@/components/dropdown-counter/dropdown-counter';
 
 class DropdownCount {
 

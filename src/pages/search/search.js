@@ -1,11 +1,6 @@
 import '@/styles/style.scss';
 import '@/pages/search/search.scss';
 
-import 'ion-rangeslider';
-
-import 'slick-carousel';
-import '../../../node_modules/slick-carousel/slick/slick.scss';
-import '../../../node_modules/slick-carousel/slick/slick-theme.scss';
 import '@/components/dropdown/dropdown.js';
 import '@/components/button-rate/star-rating.js';
 import '@/components/list/expandable-cl.js';

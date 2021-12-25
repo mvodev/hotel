@@ -1,4 +1,4 @@
-import './fsd-datepicker.js';
+import '@/components/dropdown/fsd-datepicker.js';
 class DropdownDate {
 
   constructor(rootElem) {
