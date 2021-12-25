@@ -1,46 +1,10 @@
 include ../../components/headers/header.pug
 include ../../components/footers/footer.pug
 .headers-and-footers__login
-  +header({ type:'nav',
-          links:[
-                { text: 'О нас' ,isActive: true,href:'/mock-address/change-me'},
-                { text: 'Услуги', isExpandable: true,href:'/mock-address/change-me',
-                        sublinks:[
-                                    {text: 'sublink1',href:'/mock-address/change-me'},
-                                    {text: 'sublink2',href:'/mock-address/change-me'},
-                                    {text: 'sublink3',href:'/mock-address/change-me'},
-                                    ]
-                  },
-                  { text: 'Вакансии',href:'/mock-address/change-me'},
-                  { text: 'Новости',href:'/mock-address/change-me' },
-                  { text: 'Соглашения', isExpandable: true,href:'/mock-address/change-me',
-                        sublinks:[
-                                    {text: 'sublink1',href:'/mock-address/change-me'},
-                                    {text: 'sublink2',href:'/mock-address/change-me'},
-                                    ] 
-                  },
-                ]
-        })
+  - const defaults = require('@/pages/headers-and-footers/defaultSettings.json')
+  +header({ type:'nav', links:defaults })
 .headers-and-footers__header-nav
-  +header({ type:'login',
-              links:[
-                    { text: 'О нас' ,isActive: true,href:'/mock-address/change-me'},
-                    { text: 'Услуги', isExpandable: true,href:'/mock-address/change-me',
-                              sublinks:[
-                                    {text: 'sublink1',href:'/mock-address/change-me'},
-                                    {text: 'sublink2',href:'/mock-address/change-me'},
-                                    ]
-                    },
-                    { text: 'Вакансии',href:'/mock-address/change-me' },
-                    { text: 'Новости',href:'/mock-address/change-me' },
-                    { text: 'Соглашения', isExpandable: true,href:'/mock-address/change-me',
-                          sublinks:[
-                                    {text: 'sublink1',href:'/mock-address/change-me'},
-                                    {text: 'sublink2',href:'/mock-address/change-me'},
-                                    ]
-                        },
-                  ]
-            })
+  +header({ type:'login', links:defaults })
 .headers-and-footers__footer-nav
   +footer({type:'widget'})
 .headers-and-footers__footer-copy
