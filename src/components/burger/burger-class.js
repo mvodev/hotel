@@ -1,3 +1,4 @@
+import autobind  from 'autobind-decorator';
 class Burger {
 
   constructor(burger) {
@@ -11,9 +12,10 @@ class Burger {
   }
 
   _bindEvents() {
-    this.burger.addEventListener('click', this._handleBurgerClick.bind(this));
+    this.burger.addEventListener('click', this._handleBurgerClick);
   }
-
+  
+  @autobind
   _handleBurgerClick(e) {
     this.burger.classList.toggle('burger_is-opened');
     this.nav.classList.toggle('burger_is-opened');
