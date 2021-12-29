@@ -5,10 +5,9 @@ class Pagination {
   constructor(rootElem) {
     this.paginationRoot = rootElem;
     this.paginationBody = this.paginationRoot.querySelector('.js-pagination__body');
-    this.paginationLabel = this.paginationRoot.querySelector('.pagination__label');
+    this.paginationLabel = this.paginationRoot.querySelector('.js-pagination__label');
     this._calculateSettings();
     this._render();
-    this._bindEvents();
   }
 
   _bindEvents() {
@@ -23,7 +22,11 @@ class Pagination {
       this.paginationBody.getAttribute('data-total') !== null ? this.paginationBody.getAttribute('data-total') : 0;
     this.rootRef = this.paginationBody.getAttribute('data-ref') !== null ? this.paginationBody.getAttribute('data-ref') : '';
     this.pagesToShow = Math.ceil(this.totalElems / this.elemsOnPage);
-    this.settingsIsCorrect = (this.elemsOnPage > 0) && (this.totalElems > 0) && (this.rootRef.length > 0);
+    this.settingsIsCorrect = 
+      (this.elemsOnPage > 0) 
+      && (this.totalElems > 0) 
+      && (this.rootRef.length > 0) 
+      && (this.elemsOnPage <= this.totalElems);
     if (this.settingsIsCorrect) {
       this.currentPage = 1;
     }
@@ -83,8 +86,10 @@ class Pagination {
       this.forwardButton.innerText = 'arrow_forward';
       this.forwardButton.href = `${this.rootRef}-${this.currentPage}`
       this.paginationBody.append(this.forwardButton);
-    }
-    this._setLabel();
+      this._setLabel();
+      this._bindEvents();
+    } else console.error('Settings for pagination is incorrect');
+    
   }
 
   _setLabel() {
