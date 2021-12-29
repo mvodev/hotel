@@ -240,17 +240,7 @@ include ../../components/header-ui-kit/header-ui-kit.pug
               })
     h2.form-elements__header-right.form-elements__header_pagination='pagination'
     .form-elements__pagination
-      +pagination({
-                  isEllipsis:true,
-                  firstNumbers:[
-                                {page:1,ref:"/mock-address/change-me"},
-                                {page:2,ref:"/mock-address/change-me"},
-                                {page:3,ref:"/mock-address/change-me"},
-                                ],
-                  lastNumber:{page:15,ref:"/mock-address/change-me"},
-                  selectedPage:1,
-                  label:'1 – 12 из 100+ вариантов аренды'
-                  })
+      +pagination({ elems:12,total:170, rootRef:'/mock-address/change-me' })
     h2.form-elements__header-right.form-elements__header_dropdown-right='Dropdown'
     +dropdown({
                 placeholder:"Сколько гостей",

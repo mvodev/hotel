@@ -1,4 +1,5 @@
 import autobind from 'autobind-decorator';
+
 class LikeRating {
 
   constructor(likeButton) {

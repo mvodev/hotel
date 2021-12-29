@@ -7,3 +7,4 @@ import '@/components/list/expandable-cl.js';
 import '@/components/template/template.js';
 import '@/components/room-card/room-card.js';
 import '@/components/range-slider/range-slider.js';
+import '@/components/pagination/pagination.js';

@@ -92,112 +92,93 @@ block content
             +heading({nestingLevel:'h1',text:'Номера, которые мы для вас подобрали'})
           .right-column__rooms
             +roomcard({
-                    imgSource:require('../../assets/img/search/room1.png'),
-                    roomNumber:888,
-                    price:'9 990₽',
-                    rate:5,
-                    roomType:'люкс',
-                    commentNumber:145,
-                    withArrows:true,
-                    })
+              imgSource:require('../../assets/img/search/room1.png'),
+              roomNumber:888,
+              price:'9 990₽',
+              rate:5,
+              roomType:'люкс',
+              commentNumber:145,
+              withArrows:true })
             +roomcard({
-                    imgSource:require('../../assets/img/search/room2.png'),
-                    roomNumber:840,
-                    price:'9 990₽',
-                    rate:4,
-                    commentNumber:65,
-                    withArrows:true,
-                    })
+              imgSource:require('../../assets/img/search/room2.png'),
+              roomNumber:840,
+              price:'9 990₽',
+              rate:4,
+              commentNumber:65,
+              withArrows:true })
             +roomcard({
-                    imgSource:require('../../assets/img/search/room3.png'),
-                    roomNumber:980,
-                    price:'8 500₽',
-                    rate:3,
-                    roomType:'люкс',
-                    commentNumber:35,
-                    withArrows:true,
-                    })
+              imgSource:require('../../assets/img/search/room3.png'),
+              roomNumber:980,
+              price:'8 500₽',
+              rate:3,
+              roomType:'люкс',
+              commentNumber:35,
+              withArrows:true })
             +roomcard({
-                    imgSource:require('../../assets/img/search/room4.png'),
-                    roomNumber:856,
-                    price:'7 300₽',
-                    rate:5,
-                    commentNumber:19,
-                    withArrows:true,
-                    })
+              imgSource:require('../../assets/img/search/room4.png'),
+              roomNumber:856,
+              price:'7 300₽',
+              rate:5,
+              commentNumber:19,
+              withArrows:true })
             +roomcard({
-                    imgSource:require('../../assets/img/search/room5.png'),
-                    roomNumber:740,
-                    price:'6 000₽',
-                    rate:4,
-                    commentNumber:44,
-                    withArrows:true,
-                    })
+              imgSource:require('../../assets/img/search/room5.png'),
+              roomNumber:740,
+              price:'6 000₽',
+              rate:4,
+              commentNumber:44,
+              withArrows:true })
             +roomcard({
-                    imgSource:require('../../assets/img/search/room6.png'),
-                    roomNumber:982,
-                    price:'5 800₽',
-                    rate:3,
-                    commentNumber:56,
-                    withArrows:true,
-                    })
+              imgSource:require('../../assets/img/search/room6.png'),
+              roomNumber:982,
+              price:'5 800₽',
+              rate:3,
+              commentNumber:56,
+              withArrows:true })
             +roomcard({
-                    imgSource:require('../../assets/img/search/room7.png'),
-                    roomNumber:678,
-                    price:'5 500₽',
-                    rate:4,
-                    commentNumber:44,
-                    withArrows:true,
-                    })
+              imgSource:require('../../assets/img/search/room7.png'),
+              roomNumber:678,
+              price:'5 500₽',
+              rate:4,
+              commentNumber:44,
+              withArrows:true })
             +roomcard({
-                    imgSource:require('../../assets/img/search/room8.png'),
-                    roomNumber:450,
-                    price:'5 300₽',
-                    rate:4,
-                    commentNumber:39,
-                    withArrows:true,
-                    })
+              imgSource:require('../../assets/img/search/room8.png'),
+              roomNumber:450,
+              price:'5 300₽',
+              rate:4,
+              commentNumber:39,
+              withArrows:true })
             +roomcard({
-                    imgSource:require('../../assets/img/search/room9.png'),
-                    roomNumber:350,
-                    price:'5 000₽',
-                    rate:3,
-                    commentNumber:77,
-                    withArrows:true,
-                    })
+              imgSource:require('../../assets/img/search/room9.png'),
+              roomNumber:350,
+              price:'5 000₽',
+              rate:3,
+              commentNumber:77,
+              withArrows:true })
             +roomcard({
-                    imgSource:require('../../assets/img/search/room10.png'),
-                    roomNumber:666,
-                    price:'5 000₽',
-                    rate:3,
-                    commentNumber:15,
-                    withArrows:true,
-                    })
+              imgSource:require('../../assets/img/search/room10.png'),
+              roomNumber:666,
+              price:'5 000₽',
+              rate:3,
+              commentNumber:15,
+              withArrows:true })
             +roomcard({
-                    imgSource:require('../../assets/img/search/room11.png'),
-                    roomNumber:444,
-                    price:'5 000₽',
-                    rate:3,
-                    commentNumber:15,
-                    withArrows:true,
-                    })
+              imgSource:require('../../assets/img/search/room11.png'),
+              roomNumber:444,
+              price:'5 000₽',
+              rate:3,
+              commentNumber:15,
+              withArrows:true })
             +roomcard({
-                    imgSource:require('../../assets/img/search/room12.png'),
-                    roomNumber:352,
-                    price:'5 000₽',
-                    rate:3,
-                    commentNumber:55,
-                    withArrows:true,
-                    })
+              imgSource:require('../../assets/img/search/room12.png'),
+              roomNumber:352,
+              price:'5 000₽',
+              rate:3,
+              commentNumber:55,
+              withArrows:true })
           .right-column__pagination
-            +pagination({
-                    isEllipsis:true,
-                    firstNumbers:[
-                                  {page:1,ref:"/mock-address/change-me"},
-                                  {page:2,ref:"/mock-address/change-me"},
-                                  {page:3,ref:"/mock-address/change-me"},
-                                  ],
-                    lastNumber:{page:15,ref:"/mock-address/change-me"},
-                    selectedPage:1,
-                    label:'1 – 12 из 100+ вариантов аренды'
-                    })
+            +pagination({ 
+              elems:12, 
+              total:170, 
+              rootRef:'/mock-address/change-me' })

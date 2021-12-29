@@ -1,8 +1,9 @@
 .pagination {
-  width: 241px;
+  min-width: 241px;
   height: 74.56px;
+  user-select: none;
 
-  .pagination_wrapper {
+  &__body {
     display: flex;
     flex-direction: row;
     margin-bottom: 10.56px;
@@ -12,6 +13,7 @@
   }
 
   &__number {
+
     width: 40px;
     height: 40px;
     font-size: 1rem;
@@ -24,11 +26,17 @@
     cursor: pointer;
   }
 
-  &__number:hover {
-    cursor: pointer;
-    border-radius: 22px;
-    background-color: $darkShade25;
-    color: $white;
+  &__number_invisible{
+    display: none;
+  }
+
+  @media (hover: hover) {
+    &__number:hover {
+      cursor: pointer;
+      border-radius: 22px;
+      background-color: $darkShade25;
+      color: $white;
+    }
   }
 
   &__ellipsis {
@@ -43,6 +51,10 @@
     justify-content: center;
   }
 
+  &__ellipsis_invisible {
+    display: none;
+  }
+
   &__number_selected {
     background: $buttonColor;
     border-radius: 22px;
@@ -54,7 +66,8 @@
     background: $darkShade25;
   }
 
-  &__arrow {
+  &__forward-arrow,
+  &__back-arrow {
     font-family: $font-for-icons;
     font-size: 2rem;
     line-height: 1.67rem;
@@ -68,10 +81,22 @@
     width: 40px;
     justify-content: center;
     cursor: pointer;
+    border: none;
   }
 
-  &__arrow:hover {
-    background: $darkShade25;
+  &__back-arrow_invisible{
+    display: none;
+  }
+
+  @media (hover: hover) {
+    &__forward-arrow:hover,
+    &__back-arrow:hover {
+      background: $darkShade25;
+    }
+  }
+
+  &__back-arrow_is-visible {
+    display: block;
   }
 
   &__label {

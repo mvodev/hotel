@@ -1,16 +1,4 @@
-mixin pagination( { selectedPage=1, firstNumbers=[],isEllipsis=false,lastNumber={},label='add description' }={}  )
-    .pagination
-      .pagination_wrapper
-        each val in firstNumbers
-          if val.page===selectedPage
-            a.pagination__number.pagination__number_selected(href=val.ref)
-              span=val.page
-          else
-            a.pagination__number(href=val.ref)
-              span=val.page
-        if isEllipsis
-          .pagination__ellipsis='...'
-          a.pagination__number(href=lastNumber.ref)
-            span=lastNumber.page
-          .pagination__arrow='arrow_forward'
-      span.pagination__label=label  
+mixin pagination( { elems=15, total=100, rootRef='/mock-address/change-me' }={}  )
+  .pagination.js-pagination
+    .pagination__body.js-pagination__body(data-elems=elems data-total=total data-ref=rootRef)
+    span.pagination__label
