@@ -1,11 +1,10 @@
 mixin textfield( {action='#', method='post',isFocused=false,isMasked=false,isSubscription=false,isDefault=false,placeholder='default placeholder',isPassword = false,}={})
   -
-    let textfieldClassName = "text-field"
-    textfieldClassName+=isFocused ? ' text-field_focused' : ''
-    textfieldClassName+=isMasked ? ' text-field_masked' : ''
-    textfieldClassName+=isSubscription ? ' text-field_subscription' : ''
-    let inputClassName = ''
-    inputClassName+=isMasked ? 'js-text-field__input-date text-field__input-date': ''
+    const textfieldClassName = `text-field
+    ${isFocused ? ' text-field_focused' : ''} 
+    ${isMasked ? ' text-field_masked' : ''}
+    ${isSubscription ? ' text-field_subscription' : ''}`
+    const inputClassName = `${isMasked ? 'js-text-field__input-date text-field__input-date': ''}`
     let inputType=''
     inputType+=isFocused ? 'text' : ''
     inputType+=isDefault ? 'email' : ''
