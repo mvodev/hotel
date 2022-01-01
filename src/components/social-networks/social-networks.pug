@@ -1,12 +1,7 @@
-mixin social-networks({ twitter = '/mock-address/change-me',facebook = '/mock-address/change-me', instagram = '/mock-address/change-me', } = {})
+mixin social-networks({ socialNetworks=[] } = {})
   address.social-networks
     ul.social-networks__list
-      li
-        a(class = 'social-networks__link',href = twitter , target='_blank', rel='noopener noreferrer') 
-          img(src=require('../../components/social-networks/twitter.svg'), alt='twitter logo')
-      li
-        a(href=facebook ,class = 'social-networks__link',target='_blank', rel="noopener noreferrer")  
-          img(src=require('../../components/social-networks/facebook.svg'), alt='facebook logo')
-      li
-        a(href=instagram ,class = 'social-networks__link',target='_blank', rel='noopener noreferrer') 
-          img(src=require('../../components/social-networks/instagram.svg'), alt='instagram logo')
+      each val in socialNetworks
+        li
+          a(class = 'social-networks__link',href = val.ref , target='_blank', rel='noopener noreferrer') 
+            img(src=val.imagePath, alt=`${val.name} logo`)

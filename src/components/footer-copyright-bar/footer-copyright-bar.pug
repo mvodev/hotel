@@ -4,4 +4,8 @@ mixin footer-copyright({copyrightText='Copyright © 2018 Toxin отель. Вс�
     .footer-copyright-bar__wrapper
       .footer-copyright-bar__rights=copyrightText 
       .footer-copyright-bar__social-networks-links
-        +social-networks()
+        +social-networks({socialNetworks:[
+        {name:'twitter',ref:'/mock-address/change-me',imagePath:require('@/components/social-networks/twitter.svg'),},
+        {name:'facebook', ref:'/mock-address/change-me',imagePath:require('@/components/social-networks/facebook.svg'),}, 
+        {name:'instagram', ref:'/mock-address/change-me',imagePath:require('@/components/social-networks/instagram.svg'),},
+      ]})
