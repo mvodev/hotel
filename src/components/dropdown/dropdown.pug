@@ -3,16 +3,15 @@ include ../button/button.pug
 
 mixin dropdown(options)
   -
-    let dropDownClassName = `dropdown dropdown_${options.typeDropdown} js-dropdown`
-    let expandedCorners=''
-    let isExpanded=options.isExpanded===true ? ' dropdown_is-opened' : ''
-    expandedCorners+=options.isExpanded ? ' dropdown_is-opened' : ''
-  div(class= dropDownClassName+expandedCorners)
+    const dropDownClassName = `dropdown dropdown_${options.typeDropdown} js-dropdown`
+    const expandedCornersClassName=`${options.isExpanded ? ' dropdown_is-opened' : ''}`
+    const isExpandedClassName=options.isExpanded===true ? ' dropdown_is-opened' : ''
+  div(class=`${dropDownClassName} ${expandedCornersClassName}`)
     if options.typeDropdown==='guests'||options.typeDropdown==='room'
       .dropdown__input-wrapper
         input(class='dropdown__input' placeholder=options.placeholder type='text' id=options.id readonly)
         .dropdown__arrow='keyboard_arrow_down'
-      div(class="dropdown__body"+isExpanded)
+      div(class=`dropdown__body ${isExpandedClassName}`)
           each line in options.labels 
             +dropdown-counter({text:line.text,counterNumber:line.counterNumber})
           if options.withButtons 
