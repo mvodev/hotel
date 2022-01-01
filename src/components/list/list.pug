@@ -1,7 +1,7 @@
 include ../button-check/button-check.pug
 mixin list( {isExpand=false, label='', type='',labels=[],icon='',header='',text='', }={})
   - let listClassName='bullet-list'
-  - let isExpandedList=isExpand===true ? ' bullet-list_is-opened' : '' 
+  - const expandedListClassName=isExpand===true ? ' bullet-list_is-opened' : '' 
     if type==='expandable'
       - listClassName='js-bullet-list-expandable bullet-list-expandable'
     if type==='icons'
@@ -9,8 +9,9 @@ mixin list( {isExpand=false, label='', type='',labels=[],icon='',header='',text=
     if type==='expandable'
       div(class=listClassName)
         .bullet-list-expandable__label=label
-          span.material-icons.js-bullet-list-expandable__arrow=isExpandedList ? 'keyboard_arrow_up' : 'keyboard_arrow_down'
-        div(class='bullet-list-expandable__dropdown js-bullet-list-expandable__dropdown'+isExpandedList)
+          span.material-icons.js-bullet-list-expandable__arrow=isExpand ? 'keyboard_arrow_up' : 'keyboard_arrow_down'
+        div(class=`bullet-list-expandable__dropdown js-bullet-list-expandable__dropdown 
+        ${expandedListClassName}`)
           each val in labels ? labels : ['There are no values']
             .bullet-list-expandable__dropdown-elem
               +button-check({labels:[{text:val.text,isChecked:val.isChecked}]})

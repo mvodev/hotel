@@ -4,6 +4,7 @@
   max-width: 292px;
   list-style-type: none;
   display: block;
+  user-select: none;
 
   &__elem {
     font-family: inherit;
