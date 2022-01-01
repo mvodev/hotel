@@ -10,10 +10,9 @@ mixin button(options)
             icon='arrow_forward',
             tag='button',
             color='' }= options
-    let buttonClassName='button'
-    buttonClassName+=wide? ' button_size_wide' : ''
-    buttonClassName+=slim? ' button_size_slim' : ''
-    color!=='' ? buttonClassName+= ` button_color_${color}` : ''
+    const buttonClassName=`button ${wide ? ' button_size_wide' : ''}
+    ${slim? ' button_size_slim' : ''}
+    ${color!=='' ? ` button_color_${color}` : ''}`
   if variant==='icon'
     +button-icon({icon,label,tag})
   else if tag==='a'
