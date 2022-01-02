@@ -135,10 +135,6 @@ module.exports = {
           }
         }
       },
-      // {
-      //   test: /\.json$/,
-      //   use: ['json-loader'],
-      // },
       {
         test: /\.pug$/,
         use: ["pug-loader"],
