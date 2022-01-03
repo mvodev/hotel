@@ -7,8 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server",
-    "deploy": "gh-pages -d docs"
+    "start": "webpack-dev-server"
   },
   "author": "Vadim Manushin <vadimmanushin@yandex.ru>",
   "license": "ISC",
@@ -30,7 +29,6 @@
     "eslint-plugin-promise": "^4.3.1",
     "eslint-plugin-standard": "^4.1.0",
     "file-loader": "^6.2.0",
-    "gh-pages": "^3.2.3",
     "html-webpack-plugin": "^4.5.2",
     "imagemin-webpack-plugin": "^2.4.2",
     "json-loader": "^0.5.7",
