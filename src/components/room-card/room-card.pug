@@ -1,7 +1,7 @@
 include ../button-rate/button-rate.pug
 mixin roomcard( { imgSource = '',roomType = '', roomNumber = 0, price = 0, units = '  в сутки', commentNumber = 0, rate = 1, commentLabel=' Отзывов',withArrows = false,ref='./details.html'}={} )
     .room-card
-      figure.room-card__slider.js-room-card__slider(class=withArrows?'room-card__slider_with-arrow':'')
+      figure.room-card__slider.js-room-card__slider(class=withArrows && 'room-card__slider_with-arrow')
         a(class='room-card__link' href=ref)
           img(src=imgSource, class='room-card__img', alt="room image")
         a(class='room-card__link' href=ref)
