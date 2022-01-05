@@ -24,7 +24,7 @@ module.exports = async (env, argv) => {
   const port = await getAvailabelPort();
   return {
     context: path.resolve(__dirname, 'src'),
-    mode: 'development',
+    mode: isProd ? 'production' : 'development',
     entry: {
       main: './index.js',
       UIKit: './pages/ui-kit-page/ui-kit.js',
