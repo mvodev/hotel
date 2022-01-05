@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
+const { getAvailabelPort } = require('./config/utils.js');
 
 const cssLoaders = extra => {
   const loaders = [{
@@ -18,8 +19,9 @@ const cssLoaders = extra => {
   return loaders;
 }
 
-module.exports = (env, argv) => {
+module.exports = async (env, argv) => {
   const isProd = argv.mode === 'production';
+  const port = await getAvailabelPort();
   return {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
@@ -49,6 +51,9 @@ module.exports = (env, argv) => {
       }
     },
     devtool: isProd ? false : 'source-map',
+    devServer: {
+      port: port,
+    },
     plugins: [
       new HTMLWebpackPlugin(
         {
