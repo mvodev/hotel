@@ -51,10 +51,5 @@
     "jquery": "^3.6.0",
     "slick-carousel": "^1.8.1"
   },
-  "browser": {
-    "fs": false,
-    "path": false,
-    "os": false,
-    "child_process": false
-  }
+  "browserslist": "> 0.25%, not dead"
 }
