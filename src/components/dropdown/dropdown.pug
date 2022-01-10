@@ -5,13 +5,12 @@ mixin dropdown(options)
   -
     const dropDownClassName = `dropdown dropdown_${options.typeDropdown} js-dropdown`
     const expandedCornersClassName=`${options.isExpanded ? ' dropdown_is-opened' : ''}`
-    const isExpandedClassName=options.isExpanded===true ? ' dropdown_is-opened' : ''
   div(class=`${dropDownClassName} ${expandedCornersClassName}`)
     if options.typeDropdown==='guests'||options.typeDropdown==='room'
       .dropdown__input-wrapper
         input(class='dropdown__input' placeholder=options.placeholder type='text' id=options.id readonly)
         .dropdown__arrow='keyboard_arrow_down'
-      div(class=`dropdown__body ${isExpandedClassName}`)
+      .dropdown__body(class=options.isExpanded && ' dropdown_is-opened')
           each line in options.labels 
             +dropdown-counter({text:line.text,counterNumber:line.counterNumber})
           if options.withButtons 

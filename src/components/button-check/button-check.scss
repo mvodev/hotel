@@ -1,8 +1,9 @@
 .button-check {
-  width: 222px;
+  max-width: 222px;
+  user-select: none;
 
   &__checkbox-input {
-    
+
     cursor: pointer;
     left: 0;
     opacity: 0;
@@ -22,13 +23,14 @@
     line-height: 1.5rem;
     position: relative;
     padding-left: 30px;
-    width: 192px;
+    max-width: 192px;
   }
 
   &__elem {
     display: block;
     margin-bottom: 10px;
     min-height: 20px;
+    width: max-content;
   }
 
   &__checkbox-text:before {

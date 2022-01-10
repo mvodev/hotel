@@ -11,7 +11,7 @@ class DropdownFilter {
   }
 
   _getElems() {
-    this.inputWrapper = this.rootElem.querySelector(".dropdown__input-wrapper");
+    this.inputWrapper = this.rootElem.querySelector('.dropdown__input-wrapper');
     this.arrow = this.rootElem.querySelector('.dropdown__arrow');
   }
 

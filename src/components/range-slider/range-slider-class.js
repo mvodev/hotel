@@ -25,25 +25,25 @@ class RangeSlider {
         onChange: function (data) {
           let minValue = ''
           let maxValue = ''
-          if (data.from >= 1000) minValue = Math.floor(data.from / 1000) + ' 000';
+          if (data.from >= 1000) minValue = `${Math.floor(data.from / 1000)}000`;
           else minValue = data.from;
-          if (data.to >= 1000) maxValue = Math.floor(data.to / 1000) + ' 000';
+          if (data.to >= 1000) maxValue = `${Math.floor(data.to / 1000)}000`;
           else maxValue = data.to;
           $('.js-range-slider__label').
-            html(minValue + '<span class="rub">i</span> - ' + maxValue + '<span class="rub">i</span>');
+            html(`${minValue}<span class="rub">i</span> - ${maxValue}<span class="rub">i</span>`);
         },
         onStart: function (data) {
           let minValue = ''
           let maxValue = ''
-          if (data.from >= 1000) minValue = Math.floor(data.from / 1000) + ' 000';
+          if (data.from >= 1000) minValue = `${Math.floor(data.from / 1000)}000`;
           else minValue = data.from;
-          if (data.to >= 1000) maxValue = Math.floor(data.to / 1000) + ' 000';
+          if (data.to >= 1000) maxValue = `${Math.floor(data.to / 1000)}000`;
           else maxValue = data.to;
           $('.js-range-slider__label').
-            html(minValue + '<span class="rub">i</span> - ' + maxValue + '<span class="rub">i</span>');
+            html(`${minValue}<span class="rub">i</span> - ${maxValue}<span class="rub">i</span>`);
         }
       });
   }
-  
+
 }
 export default RangeSlider;

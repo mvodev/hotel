@@ -26,7 +26,7 @@ class LikeRating {
       this.likeButton.classList.remove('button-like_is-liked');
     }
     else {
-      this.numberOfLikes.innerText++;
+      this.numberOfLikes.innerText +=1 ;
       this.likeButton.classList.add('button-like_is-liked');
       this.heart.innerText = 'favorite';
     }

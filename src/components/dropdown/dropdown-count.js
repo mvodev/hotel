@@ -108,7 +108,7 @@ class DropdownCount {
       let guests = {};
       guests.total = 0;
       guests.infants = 0;
-      for (let i = 0; i < this.dropdownCounters.length; i++) {
+      for (let i = 0; i < this.dropdownCounters.length; i += 1) {
         guests.total += this.dropdownCounters[i].getData();
         if (i === this.dropdownCounters.length - 1) {
           guests.infants = this.dropdownCounters[i].getData();
@@ -134,9 +134,12 @@ class DropdownCount {
   _setData(result) {
     if (this.dropdownType === 'guests') {
       let temp = '';
-      temp = result.total + " " + this.spellCases.guests[this._getPosInSpellCasesArray(result.total)];
       if (result.infants > 0) {
-        temp += ',  ' + result.infants + " " + this.spellCases.infants[this._getPosInSpellCasesArray(result.infants)];
+        let infants = `,  ${result.infants} ${this.spellCases.infants[this._getPosInSpellCasesArray(result.infants)]}`;
+        temp = `${result.total} ${this.spellCases.guests[this._getPosInSpellCasesArray(result.total)]}${infants}`;
+      }
+      else {
+        temp = `${result.total} ${this.spellCases.guests[this._getPosInSpellCasesArray(result.total)]}`;
       }
       if (result.total === 0) {
         temp = '';
@@ -144,27 +147,28 @@ class DropdownCount {
       this.input.value = temp;
     }
     else {
-      let temp = '';
+      let res = '';
+      let bedrooms = '';
+      let beds = '';
+      let baths = ''
       if (result.bedrooms > 0) {
-        temp += result.bedrooms + " " + this.spellCases.bedrooms[this._getPosInSpellCasesArray(result.bedrooms)];
+        bedrooms = `${result.bedrooms} ${this.spellCases.bedrooms[this._getPosInSpellCasesArray(result.bedrooms)]}`;
       }
       if (result.beds > 0) {
-        if (temp.length > 0) {
-          temp += ",  " + result.beds + " " + this.spellCases.beds[this._getPosInSpellCasesArray(result.beds)];
-        }
-        else temp += result.beds + " " + this.spellCases.beds[this._getPosInSpellCasesArray(result.beds)];
+        beds = `${result.beds} ${this.spellCases.beds[this._getPosInSpellCasesArray(result.beds)]}`
       }
       if (result.baths > 0) {
-        if (temp.length > 0) {
-          temp += ",  " + result.baths + " " + this.spellCases.baths[this._getPosInSpellCasesArray(result.baths)];
-        }
-        else temp += result.baths + " " + this.spellCases.baths[this._getPosInSpellCasesArray(result.baths)];
+        baths = `${result.baths} ${this.spellCases.baths[this._getPosInSpellCasesArray(result.baths)]}`;
       }
-      temp += '...';
+      let bedroomsDelimeter =
+        ((result.bedrooms > 0) && ((result.beds > 0) || (result.baths > 0))) ? ', ' : '';
+      let bedsDelimeter = (result.beds > 0) && (result.baths > 0) ? ', ' : '';
       if (result.total === 0) {
-        temp = '';
+        res = '';
+      } else {
+        res = `${bedrooms}${bedroomsDelimeter}${beds}${bedsDelimeter}${baths}...`;
       }
-      this.input.value = temp;
+      this.input.value = res;
     }
   }
 
@@ -184,7 +188,7 @@ class DropdownCount {
   }
 
   _checkIfClearButtonMustBeShown() {
-    if(this.dropdownType==='guests'){
+    if (this.dropdownType === 'guests') {
       if (this._collectData().total > 0) {
         this._showClearButton();
       }

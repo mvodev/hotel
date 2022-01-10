@@ -36,7 +36,7 @@
 
   &__img-header {
     margin: 0px auto 19px auto;
-    max-width: $container-width - 250px;
+    max-width: $container-width-site - 250px;
     width: 100%;
     padding: 0 10px;
     display: flex;
@@ -51,7 +51,7 @@
   &__search-wrapper {
     margin: 70px auto;
     width: 100%;
-    max-width: $container-width - 250px;
+    max-width: $container-width-site - 250px;
     padding: 0px 15px 0px 15px;
   }
 

@@ -17,12 +17,12 @@ mixin list( {isExpand=false, label='', type='',labels=[],icon='',header='',text=
               +button-check({labels:[{text:val.text,isChecked:val.isChecked}]})
     else if type==='icons'
       div(class=listClassName)
-        div(class='material-icons '+listClassName+'__icon')=icon
-        div(class=listClassName+'__text-wrapper')
-          h3(class=listClassName+'__header')=header
-          p(class=listClassName+'__text')=text
+        div(class=`material-icons ${listClassName}__icon`)=icon
+        div(class=`${listClassName}__text-wrapper`)
+          h3(class=`${listClassName}__header`)=header
+          p(class=`${listClassName}__text`)=text
     else
       div(class=listClassName)
         ul
           each val in labels ? labels : ['There are no values']
-            li(class=listClassName+'__elem')=val
+            li(class=`${listClassName}__elem`)=val
