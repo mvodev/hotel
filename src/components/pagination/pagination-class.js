@@ -35,7 +35,7 @@ class Pagination {
   @autobind
   _handleArrowForwardClick(e) {
     if (this.pagesToShow > this.currentPage) {
-      this.currentPage++;
+      this.currentPage +=1;
     }
     this._reDrawPagination();
   }
@@ -43,7 +43,7 @@ class Pagination {
   @autobind
   _handleArrowBackClick(e) {
     if (this.currentPage > 1) {
-      this.currentPage--;
+      this.currentPage -=1;
     }
     this._reDrawPagination();
   }
@@ -61,7 +61,7 @@ class Pagination {
       this.backButton.classList.add('pagination__back-arrow_invisible');
       this.backButton.href = `${this.rootRef}-${this.currentPage}`;
       this.paginationBody.append(this.backButton);
-      for (let i = 1; i <= this.pagesToShow; i++) {
+      for (let i = 1; i <= this.pagesToShow; i+=1) {
         const page = document.createElement('a');
         page.classList.add('pagination__number');
         page.href = `${this.rootRef}-${i}`;

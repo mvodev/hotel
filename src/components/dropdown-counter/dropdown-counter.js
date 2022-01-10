@@ -44,7 +44,7 @@ class DropdownCounter {
 
   @autobind
   _handlePlus() {
-    this.valueNumber++;
+    this.valueNumber +=1;
     this.value.innerHTML = this.valueNumber;
     this.minus.classList.add('container-dropdown__decrease_dark');
     this.container.dispatchEvent(new CustomEvent("counterChanged", { bubbles: true }));
