@@ -160,9 +160,9 @@ class DropdownCount {
       if (result.baths > 0) {
         baths = `${result.baths} ${this.spellCases.baths[this._getPosInSpellCasesArray(result.baths)]}`;
       }
-      let bedroomsDelimeter = 
-      ((result.bedrooms>0) && ((result.beds > 0) || (result.baths > 0))) ? ', ' : '';
-      let bedsDelimeter = (result.beds > 0) && (result.baths>0) ? ', ' : '';
+      let bedroomsDelimeter =
+        ((result.bedrooms > 0) && ((result.beds > 0) || (result.baths > 0))) ? ', ' : '';
+      let bedsDelimeter = (result.beds > 0) && (result.baths > 0) ? ', ' : '';
       if (result.total === 0) {
         res = '';
       } else {
