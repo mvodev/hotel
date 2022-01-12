@@ -1,6 +1,16 @@
-mixin rangeSlider( { label='',  }={} )
+mixin rangeSlider({ label='',type='double',skin='round',min=0,max=20000,from=5000,to=10000,step=1000}={} )
   .range-slider.js-range-slider
     .js-range-slider__label-wrapper.range-slider__label-wrapper
       .range-slider__label-header=label
       .js-range-slider__label.range-slider__label 
-    input(type='text' class='js-range-slider__input range-slider__input' value='')
+    input(
+        type='text' 
+        class='js-range-slider__input range-slider__input' 
+        value='' 
+        data-type=type
+        data-skin=skin
+        data-min=min
+        data-max=max
+        data-from=from
+        data-to=to
+        data-step=step)
