@@ -95,7 +95,7 @@
   }
 
   &__dropdown-guests {
-    margin-bottom: 19px;
+    margin-bottom: 17px;
     margin-top: 20px;
   }
 
@@ -125,9 +125,12 @@
     height: 36px;
   }
 
-  &__start-price,
-  &__service-fee {
+  &__start-price {
     margin-bottom: 10px;
+  }
+
+  &__service-fee{
+    margin-bottom: 11px;
   }
 
   &__service-extra-fee {
@@ -136,17 +139,28 @@
 
   &__total-price {
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
   }
 
-  &__total-price div{
+  &__total-price-delimeter{
+    border-bottom: 1px dashed $darkShade25;
+    flex: 1 1 auto;
+    align-self: flex-end;
+    height: 1px;
+    margin-bottom: 5px;
+  }
+
+  &__total-price-number{
     font-family: inherit;
     font-size: 1.58rem;
     font-style: normal;
     font-weight: 700;
     line-height: 1.92rem;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: right;
     color: $darkShade100;
+    min-width: 77px;
   }
 
   &__extra-info {

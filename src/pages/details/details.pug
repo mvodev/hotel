@@ -56,7 +56,7 @@ block content
             article.left-column__comments
               .left-column__comments-header
                 +heading({nestingLevel:'h2',text:'Отзывы посетителей номера'})
-                span='2 отзыва'
+                span.left-column__comments-number='2 отзыва'
               .main-comment.main-comment_first
                 +comment({
                         headerName:'Мурад Сарафанов',
@@ -77,7 +77,7 @@ block content
                         })
             article.left-column__rules
               .rules__text-wrapper
-                .left-column__header
+                .left-column__header.left-column__header_first
                   +heading({nestingLevel:'h2',text:'Правила'})
                 +list({labels:[
                             'Нельзя с питомцами',
