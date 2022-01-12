@@ -39,7 +39,7 @@
   cursor: pointer;
 }
 
-.irs--flat .irs-line {
+.irs--round .irs-line {
   background-color: $white;
   border: 1px solid $darkShade25;
   border-radius: 3px;
@@ -47,16 +47,16 @@
   cursor: pointer;
 }
 
-.irs--flat .irs-handle > i:first-child {
+.irs--round .irs-handle {
   background: $selectedDate;
   border: 2px solid $white;
   border-radius: 10px;
-  width: 16px;
-  height: 16px;
-  margin-top: -2px;
+  width: 12px;
+  height: 12px;
+  top: 32px;
 }
 
-.irs--flat .irs-bar {
+.irs--round .irs-bar {
   background: $selectedDate;
   border-radius: 3px;
   height: 6px;

@@ -1,4 +1,7 @@
 import './range-slider-class.js';
 import RangeSlider from './range-slider-class.js';
 
-document.querySelectorAll('.js-range-slider').forEach(elem=>new RangeSlider(elem));
+window.addEventListener('load', () => (
+  document.querySelectorAll('.js-range-slider').forEach(elem => new RangeSlider(elem))
+));
+
