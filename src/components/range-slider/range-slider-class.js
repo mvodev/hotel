@@ -17,6 +17,7 @@ class RangeSlider {
     $(this.sliderInput).
       ionRangeSlider({
         type: "double",
+        skin: "round",
         min: 0,
         max: 20000,
         from: 5000,
