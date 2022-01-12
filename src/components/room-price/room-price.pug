@@ -51,7 +51,8 @@ mixin roomprice( {roomType = '', roomNumber, priceHeader, units='  в сутки
         div=extraFee
       .room-price__total-price
         +heading({nestingLevel:'h2',text:'Итого'})
-        div=totalPrice
+        div.room-price__total-price-delimeter
+        div.room-price__total-price-number=totalPrice
       +button({
               label:'забронировать',
               variant:'icon',
