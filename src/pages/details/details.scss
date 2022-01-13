@@ -43,7 +43,8 @@
 
   &__body {
     margin: 72px auto 70px auto;
-    max-width: $container-width-site - 280px;
+    max-width: $container-width-site - 300px;
+    padding: 0 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
