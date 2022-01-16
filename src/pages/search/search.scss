@@ -10,7 +10,7 @@
   &__content {
     flex: 1 0 auto;
     margin: 0 auto;
-    max-width: $container-width-site + 30px;
+    max-width: $container-width + 30px;
     padding: 30px 15px 0 15px;
     display: grid;
     grid-template-areas: "left right";
@@ -94,8 +94,8 @@
 
   }
 
-
   .right-column{
+
     &__rooms {
       display: grid;
       grid-template-columns: repeat(3, 270px);
