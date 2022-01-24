@@ -19,7 +19,7 @@ const cssLoaders = extra => {
   return loaders;
 }
 
-module.exports = async (env, argv) => {
+module.exports = async (_env, argv) => {
   const isProd = argv.mode === 'production';
   const port = await getAvailabelPort();
   return {
