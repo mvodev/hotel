@@ -1,8 +1,8 @@
-include diagram-chart.pug
+include diagram-donut.pug
 mixin diagram(options)
   .diagram
     figure.diagram__chart
-      +diagram-chart(options)
+      +diagram-donut(options)
       .labels-diagram
         .labels-diagram__number=options.number
         .labels-diagram__label=options.label
