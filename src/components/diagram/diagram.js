@@ -1,7 +1,7 @@
-import DiagramChart from './diagram-chart.js';
+import DiagramDonut from './diagram-donut.js';
 
 const diagramChartRootElem = document.querySelector('.js-diagram-donut');
-const diagramChart = new DiagramChart(diagramChartRootElem, 
+const diagramChart = new DiagramDonut(diagramChartRootElem, 
                                       { number: 260,
                                       label: 'голосов', 
                                       segments: 

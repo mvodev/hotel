@@ -1,4 +1,4 @@
-class DiagramChart {
+class DiagramDonut {
 
   constructor(rootElem, options) {
     this.rootElem = rootElem;
@@ -104,4 +104,5 @@ class DiagramChart {
   }
   
 }
-export default DiagramChart;
+
+export default DiagramDonut;
