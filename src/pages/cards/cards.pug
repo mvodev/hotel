@@ -8,7 +8,7 @@ include ../../components/hotel-logo/hotel-logo.pug
   +hotel-logo
   .cards__left-column
     +search-number({action:'/mock-address/change-me',})
-    +signup({action:'/mock-address/change-me'})
+    +sign-up({action:'/mock-address/change-me'})
   .cards__central-column
     +roomprice({
                 roomNumber:888,
@@ -22,7 +22,7 @@ include ../../components/hotel-logo/hotel-logo.pug
                 extraFee:'300₽',
                 totalPrice:'38 081₽',
                 action:'#'})
-    +signin({action:'/mock-address/change-me'})
+    +sign-in({action:'/mock-address/change-me'})
   .cards__right-column
     .js-cards__datepicker.cards__datepicker
     +roomcard({
