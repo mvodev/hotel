@@ -21,12 +21,12 @@ class LikeRating {
   _handlelikeButtonClick(event) {
     if (event.target.parentElement.classList.contains('button-like_is-liked')
       || event.target.classList.contains('button-like_is-liked')) {
-      this.numberOfLikes.innerText--;
+      this.numberOfLikes.innerText --;
       this.heart.innerText = 'favorite_border';
       this.likeButton.classList.remove('button-like_is-liked');
     }
     else {
-      this.numberOfLikes.innerText +=1 ;
+      this.numberOfLikes.innerText ++;
       this.likeButton.classList.add('button-like_is-liked');
       this.heart.innerText = 'favorite';
     }

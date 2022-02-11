@@ -1,13 +1,13 @@
 include ../button-like/button-like.pug
 mixin comment({ imgSource = '', headerName = 'provide user name', text = 'provide description', headerTime = 'provide time', likeNumber = 0, isLiked = false,dateTime = '2021-07'} = {})
-  article.expanded-comment
-    header.expanded-comment__header
-      .expanded-comment__header-img
+  article.comment
+    header.comment__header
+      .comment__header-img
         img(src=imgSource, alt="user photo")
-      .expanded-comment__header-name-wrapper
-        h3.expanded-comment__header-name=headerName
-        time(class='expanded-comment__header-time' datetime=dateTime)=headerTime
-    .expanded-comment__body
-      .expanded-comment__like-button
+      .comment__header-name-wrapper
+        h3.comment__header-name=headerName
+        time(class='comment__header-time' datetime=dateTime)=headerTime
+    .comment__body
+      .comment__like-button
         +button-like({likeNumber,isLiked})
-      p.expanded-comment__body-text=text
+      p.comment__body-text=text
