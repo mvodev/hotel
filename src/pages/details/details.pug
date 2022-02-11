@@ -6,7 +6,7 @@ block variables
 block content
 
   include ../../components/room-price/room-price.pug
-  include ../../components/list/list.pug
+  include ../../components/bullet-list/bullet-list.pug
   include ../../components/diagram/diagram.pug
   include ../../components/comment/comment.pug
   include ../../components/heading/heading.pug
@@ -28,19 +28,19 @@ block content
               section.left-column__content
                 .left-column__header
                   +heading({nestingLevel:'h2',text:'Сведения о номере'})
-                +list({
+                +bullet-list({
                     type:'icons',
                     icon:'insert_emoticon',
                     header:'Комфорт',
                     text:'Шумопоглощающие стены'
                     })
-                +list({
+                +bullet-list({
                     type:'icons',
                     icon:'location_city',
                     header:'Удобство',
                     text:'Окно в каждой из спален'
                     })
-                +list({
+                +bullet-list({
                     type:'icons',
                     icon:'local_fire_department',
                     header:'Уют',
@@ -79,7 +79,7 @@ block content
               .rules__text-wrapper
                 .left-column__header.left-column__header_first
                   +heading({nestingLevel:'h2',text:'Правила'})
-                +list({labels:[
+                +bullet-list({labels:[
                             'Нельзя с питомцами',
                             'Без вечеринок и мероприятий',
                             'Время прибытия — после 13:00,а выезд до 12:00'

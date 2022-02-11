@@ -8,7 +8,7 @@ include ../../components/button-like/button-like.pug
 include ../../components/button-rate/button-rate.pug
 include ../../components/button-rich/button-rich.pug
 include ../../components/toggle/toggle.pug
-include ../../components/list/list.pug
+include ../../components/bullet-list/bullet-list.pug
 include ../../components/comment/comment.pug
 include ../../components/pagination/pagination.pug
 include ../../components/hotel-logo/hotel-logo.pug
@@ -113,7 +113,7 @@ include ../../components/hotel-logo/hotel-logo.pug
               })
     .left-column__bullets
       .bullets-left-column
-        +list({
+        +bullet-list({
             type:'expandable',
             label:'expandable checkbox list',
             isExpand:false,
@@ -126,7 +126,7 @@ include ../../components/hotel-logo/hotel-logo.pug
                     {text:'Шампунь',isChecked:false}
                     ]
           })
-        +list({
+        +bullet-list({
             type:'expandable',
             label:'expandable checkbox list',
             isExpand:true,
@@ -140,13 +140,13 @@ include ../../components/hotel-logo/hotel-logo.pug
                     ]
           })
     .left-column__bullet-icons 
-      +list({
+      +bullet-list({
             type:'icons',
             icon:'insert_emoticon',
             header:'Комфорт',
             text:'Шумопоглощающие стены',
             })
-      +list({
+      +bullet-list({
           type:'icons',
           icon:'location_city',
           header:'Удобство',
@@ -253,7 +253,7 @@ include ../../components/hotel-logo/hotel-logo.pug
                       ],
                       withButtons:true})
     h2.form-elements__header-right.form-elements__header_bullet='Bullet List'
-    +list({
+    +bullet-list({
           labels:[
                   'Нельзя с питомцами',
                   'Без вечеринок и мероприятий',
