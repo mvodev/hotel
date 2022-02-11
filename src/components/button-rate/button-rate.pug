@@ -1,5 +1,5 @@
-mixin button-rate({ darkStar = 1, lightStar, } = {})
-  .button-rate.js-button-rate
+mixin button-rate({ darkStar = 1, lightStar, allowToRate = true } = {})
+  .button-rate(class = allowToRate && 'js-button-rate')
     - let n=1
     - lightStar = 5 - darkStar
     while darkStar-- > 0
