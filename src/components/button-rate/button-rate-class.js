@@ -19,10 +19,10 @@ class StarRating {
   @autobind
   _handleRateButtonClick(event) {
     let rateNumberUserChoice = event.target.title.charAt(0);
-    for (let i = 0; i < rateNumberUserChoice; i+=1) {
+    for (let i = 0; i < rateNumberUserChoice; i++) {
       this.starRatingLabels[i].innerHTML = 'star';
     }
-    for (let j = rateNumberUserChoice; j < 5; j+=1) {
+    for (let j = rateNumberUserChoice; j < 5; j++) {
       this.starRatingLabels[j].innerHTML = 'star_border';
     }
   }
