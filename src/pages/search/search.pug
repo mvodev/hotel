@@ -10,7 +10,7 @@ block content
   include ../../components/button/button.pug
   include ../../components/button-check/button-check.pug
   include ../../components/button-rich/button-rich.pug
-  include ../../components/list/list.pug
+  include ../../components/bullet-list/bullet-list.pug
   include ../../components/room-card/room-card.pug
   include ../../components/pagination/pagination.pug
   include ../../components/heading/heading.pug
@@ -73,7 +73,7 @@ block content
                             {text:"ванныe комнаты",counterNumber:0},
                             ]
                       })
-          +list({
+          +bullet-list({
                   type:'expandable',
                   label:'дополнительные удобства',
                   isExpand:false,

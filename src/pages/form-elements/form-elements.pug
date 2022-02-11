@@ -8,11 +8,11 @@ include ../../components/button-like/button-like.pug
 include ../../components/button-rate/button-rate.pug
 include ../../components/button-rich/button-rich.pug
 include ../../components/toggle/toggle.pug
-include ../../components/list/list.pug
+include ../../components/bullet-list/bullet-list.pug
 include ../../components/comment/comment.pug
 include ../../components/pagination/pagination.pug
-include ../../components/header-ui-kit/header-ui-kit.pug
-+header
+include ../../components/hotel-logo/hotel-logo.pug
++hotel-logo
 .form-elements__wrapper
   section.form-elements__left-column
     h2.form-elements__header-left 
@@ -113,7 +113,7 @@ include ../../components/header-ui-kit/header-ui-kit.pug
               })
     .left-column__bullets
       .bullets-left-column
-        +list({
+        +bullet-list({
             type:'expandable',
             label:'expandable checkbox list',
             isExpand:false,
@@ -126,7 +126,7 @@ include ../../components/header-ui-kit/header-ui-kit.pug
                     {text:'Шампунь',isChecked:false}
                     ]
           })
-        +list({
+        +bullet-list({
             type:'expandable',
             label:'expandable checkbox list',
             isExpand:true,
@@ -140,13 +140,13 @@ include ../../components/header-ui-kit/header-ui-kit.pug
                     ]
           })
     .left-column__bullet-icons 
-      +list({
+      +bullet-list({
             type:'icons',
             icon:'insert_emoticon',
             header:'Комфорт',
             text:'Шумопоглощающие стены',
             })
-      +list({
+      +bullet-list({
           type:'icons',
           icon:'location_city',
           header:'Удобство',
@@ -190,7 +190,8 @@ include ../../components/header-ui-kit/header-ui-kit.pug
     h2.form-elements__header-central.form-elements__header_rate='RATE BUTTON'
     .central-column__rate-buttons-wrapper
       +button-rate({
-                    darkStar:4
+                    darkStar:4,
+                    allowToRate:false,
                   })
       +button-rate({
                     darkStar:1
@@ -253,7 +254,7 @@ include ../../components/header-ui-kit/header-ui-kit.pug
                       ],
                       withButtons:true})
     h2.form-elements__header-right.form-elements__header_bullet='Bullet List'
-    +list({
+    +bullet-list({
           labels:[
                   'Нельзя с питомцами',
                   'Без вечеринок и мероприятий',

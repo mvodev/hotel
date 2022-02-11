@@ -1,5 +1,5 @@
 include ../button-check/button-check.pug
-mixin list( {isExpand=false, label='', type='',labels=[],icon='',header='',text='', }={})
+mixin bullet-list( {isExpand=false, label='', type='',labels=[],icon='',header='',text='', }={})
   - let listClassName='bullet-list'
   - const expandedListClassName=isExpand===true ? ' bullet-list_is-opened' : '' 
     if type==='expandable'

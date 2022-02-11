@@ -3,9 +3,9 @@ import '../../styles/style.scss';
 
 import '@/components/text-field/text-field.js';
 import '@/components/dropdown/dropdown.js';
-import '@/components/button-rate/star-rating.js';
+import '@/components/button-rate/button-rate.js';
 import '@/components/comment/comment.js';
-import '@/components/list/expandable-cl.js';
+import '@/components/bullet-list/bullet-list.js';
 import '@/pages/headers-and-footers/headers-and-footers.js';
 import '@/components/room-card/room-card.js';
 import '@/components/range-slider/range-slider.js';

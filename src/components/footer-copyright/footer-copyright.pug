@@ -1,9 +1,9 @@
 include ../social-networks/social-networks.pug
 mixin footer-copyright({copyrightText='Copyright © 2018 Toxin отель. Все права зачищены.'}={})
-  footer.footer-copyright-bar
-    .footer-copyright-bar__wrapper
-      .footer-copyright-bar__rights=copyrightText 
-      .footer-copyright-bar__social-networks-links
+  footer.footer-copyright
+    .footer-copyright__wrapper
+      .footer-copyright__rights=copyrightText 
+      .footer-copyright__social-networks-links
         +social-networks({socialNetworks:[
         {name:'twitter',ref:'/mock-address/change-me',imagePath:require('@/components/social-networks/twitter.svg'),},
         {name:'facebook', ref:'/mock-address/change-me',imagePath:require('@/components/social-networks/facebook.svg'),}, 

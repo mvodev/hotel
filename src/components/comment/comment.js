@@ -1,1 +1,1 @@
-import '@/components/button-like/like-rating.js';
+import '@/components/button-like/button-like.js';

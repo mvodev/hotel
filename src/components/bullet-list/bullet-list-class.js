@@ -1,6 +1,6 @@
 import autobind from "autobind-decorator";
 
-class ExpandableCL {
+class BulletList {
 
   constructor(bulletList) {
     this.bulletList = bulletList;
@@ -33,4 +33,4 @@ class ExpandableCL {
   }
   
 }
-export default ExpandableCL;
+export default BulletList;
