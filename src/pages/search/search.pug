@@ -31,7 +31,7 @@ block content
           .left-column__dropdown-guests
             +dropdown({
                       placeholder:'Сколько гостей',
-                      typeDropdown:'wide',
+                      typeDropdown:'buttons',
                       labels:[
                               {text:'взрослые', counterNumber:0, spellCases: ['гость', 'гостя', 'гостей']},
                               {text:'дети',counterNumber:0},
@@ -65,7 +65,7 @@ block content
             +heading({nestingLevel:'h3',text:'удобства номера'})
           .left-column__dropdown-room
             +dropdown({
-              typeDropdown:'slim',
+              typeDropdown:'common',
               placeholder:'2 спальни, 2 кровати', 
               labels:[
                 {text:"спальни",counterNumber:2,spellCases:['спальня', 'спальни', 'спален']},

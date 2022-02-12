@@ -10,7 +10,7 @@
   background: $white;
   box-sizing: border-box;
 
-  &_wide {
+  &_buttons {
     max-width: 320px;
     width: 100%;
     border: 1px solid $darkShade25;
@@ -18,18 +18,18 @@
     left: -1px;
   }
 
-  &_slim {
+  &_common {
     max-width: 266px;
     width: 100%;
     border: 1px solid $darkShade25;
     border-radius: 4px 4px 0 0;
   }
 
-  &_slim.dropdown_is-opened {
+  &_common.dropdown_is-opened {
     border: 1px solid $darkShade50;
   }
 
-  &wide.dropdown_is-opened {
+  &_buttons.dropdown_is-opened {
     border: 1px solid $darkShade50;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
@@ -60,7 +60,7 @@
     background: transparent;
   }
 
-  &_wide .dropdown__input {
+  &_buttons .dropdown__input {
     width: 180px;
     overflow: hidden;
   }

@@ -6,14 +6,14 @@ mixin dropdown(options)
     const dropDownClassName = `dropdown dropdown_${options.typeDropdown} js-dropdown`
     const expandedCornersClassName=`${options.isExpanded ? ' dropdown_is-opened' : ''}`
   div(class=`${dropDownClassName} ${expandedCornersClassName}` data-labels=options.labels)
-    if options.typeDropdown === 'wide' || options.typeDropdown === 'slim'
+    if options.typeDropdown === 'buttons' || options.typeDropdown === 'common'
       .dropdown__input-wrapper
         input(class='dropdown__input' placeholder=options.placeholder type='text' id=options.id readonly)
         .dropdown__arrow='keyboard_arrow_down'
       .dropdown__body(class=options.isExpanded && ' dropdown_is-opened')
           each line in options.labels 
             +dropdown-counter({text:line.text,counterNumber:line.counterNumber})
-          if options.typeDropdown === 'wide' 
+          if options.typeDropdown === 'buttons' 
             .dropdown__body-buttons.js-dropdown__body-buttons
               +button({label:'Очистить',color:'transparent'})
               +button({label:'Применить',color:'transparent'})

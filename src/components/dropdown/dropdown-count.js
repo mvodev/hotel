@@ -22,15 +22,15 @@ class DropdownCount {
   }
 
   _getElems() {
-    if (this.rootElem.classList.contains('dropdown_slim')) {
-      this.dropdownType = 'slim';
-    } else if (this.rootElem.classList.contains('dropdown_wide')) {
-      this.dropdownType = 'wide';
+    if (this.rootElem.classList.contains('dropdown_common')) {
+      this.dropdownType = 'common';
+    } else if (this.rootElem.classList.contains('dropdown_buttons')) {
+      this.dropdownType = 'buttons';
       this.applyButton = this.rootElem.querySelector('.js-dropdown__body-buttons').lastChild;
       this.clearButton = this.rootElem.querySelector('.js-dropdown__body-buttons').firstChild;
       this._checkIfClearButtonMustBeShown();
     }
-    if (this.dropdownType === 'slim' || this.dropdownType === 'wide') {
+    if (this.dropdownType === 'buttons' || this.dropdownType === 'common') {
       this.labels = this.rootElem.getAttribute('data-labels') !== null ? this.rootElem.getAttribute('data-labels') : [];
       if (this.labels.length === 0) {
         throw new Error('Data attributes for dropdown is unset!');
@@ -51,9 +51,9 @@ class DropdownCount {
   }
 
   _bindEvents() {
-    if (this.dropdownType === 'slim' || this.dropdownType === 'wide') {
+    if (this.dropdownType === 'buttons' || this.dropdownType === 'common') {
       this.inputWrapper.addEventListener('click', this._handleDropdown);
-      if (this.dropdownType === 'wide') {
+      if (this.dropdownType === 'buttons') {
         this.clearButton.addEventListener('click', this._handleClearButton);
         this.applyButton.addEventListener('click', this._handleApplyButton);
       }
@@ -73,10 +73,10 @@ class DropdownCount {
 
   @autobind
   _handleCounter() {
-    if (this.dropdownType === 'wide') {
+    if (this.dropdownType === 'buttons') {
       this._checkIfClearButtonMustBeShown();
     }
-    if (this.dropdownType === 'slim') {
+    if (this.dropdownType === 'common') {
       this._setData(this._collectData());
     }
   }
@@ -106,7 +106,7 @@ class DropdownCount {
   }
 
   _collectData() {
-    if (this.dropdownType === 'wide') {
+    if (this.dropdownType === 'buttons') {
       let result = 0;
       for (let i = 0; i < this.dropdownCounters.length; i += 1) {
         result += this.dropdownCounters[i].getData();
@@ -128,7 +128,7 @@ class DropdownCount {
   }
 
   _setData(result) {
-    if (this.dropdownType === 'wide') {
+    if (this.dropdownType === 'buttons') {
       this.input.value = `${result} ${this.labels[0].spellCases[this._getPosInSpellCasesArray(result)]}`;
     }
     else {
@@ -160,7 +160,7 @@ class DropdownCount {
   }
 
   _checkIfClearButtonMustBeShown() {
-    if (this.dropdownType === 'wide') {
+    if (this.dropdownType === 'buttons') {
       if (this._collectData() > 0) {
         this._showClearButton();
       }

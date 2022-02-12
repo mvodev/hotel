@@ -41,7 +41,7 @@ include ../../components/hotel-logo/hotel-logo.pug
     +dropdown(
               {
                 placeholder:'Сколько гостей',
-                typeDropdown:'wide',
+                typeDropdown:'buttons',
                 isExpanded:false,
               labels:[
                       {text:"взрослые",counterNumber:0,spellCases: ['гость', 'гостя', 'гостей']},
@@ -88,7 +88,7 @@ include ../../components/hotel-logo/hotel-logo.pug
         span='Dropdown'
         span.header-left-form__extra='DEFAULT'
     +dropdown({
-              typeDropdown:'slim',
+              typeDropdown:'common',
               placeholder:'2 спальни, 2 кровати', 
               labels:[
                 {text:"спальни",counterNumber:2,spellCases:['спальня', 'спальни', 'спален']},
@@ -101,7 +101,7 @@ include ../../components/hotel-logo/hotel-logo.pug
         span='Dropdown'
         span.header-left-form__extra='EXPANDED'
     +dropdown({
-              typeDropdown:'slim',
+              typeDropdown:'common',
               placeholder:'2 спальни, 2 кровати', 
               labels:[
                 {text:"спальни",counterNumber:2,spellCases:['спальня', 'спальни', 'спален']},
@@ -198,7 +198,7 @@ include ../../components/hotel-logo/hotel-logo.pug
     h2.form-elements__header-central.form-elements__header_dropdown='DROPDOWN'
     +dropdown({
                 placeholder:'Сколько гостей',
-                typeDropdown:'wide',
+                typeDropdown:'buttons',
                 isExpanded:true,
               labels:[
                       {text:"взрослые",counterNumber:0,spellCases: ['гость', 'гостя', 'гостей']},
@@ -243,7 +243,7 @@ include ../../components/hotel-logo/hotel-logo.pug
     h2.form-elements__header-right.form-elements__header_dropdown-right='Dropdown'
     +dropdown({
                 placeholder:'Сколько гостей',
-                typeDropdown:'wide',
+                typeDropdown:'buttons',
                 isExpanded:true,
               labels:[
                       {text:"взрослые",counterNumber:0,spellCases: ['гость', 'гостя', 'гостей']},
