@@ -6458,14 +6458,14 @@ table {
     color: rgba(31, 32, 65, 0.75); }
 
 @media (max-width: 767px) {
-  .footer-copyright-bar__wrapper {
+  .footer-copyright__wrapper {
     flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center; }
-  .footer-copyright-bar__rights {
+  .footer-copyright__rights {
     display: none; }
-  .footer-copyright-bar__social-networks-links {
+  .footer-copyright__social-networks-links {
     margin: 0; } }
 
 .social-networks__list {
@@ -10867,4 +10867,4 @@ table {
   padding: 10px; }
 
 
-/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.c7877d5afd0d7086e79d.css.map*/
+/*# sourceMappingURL=UIKit~details~landing~main~registration~search~signin.d66f43ab350eb01c0d16.css.map*/
