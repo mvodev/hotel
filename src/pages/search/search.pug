@@ -30,15 +30,15 @@ block content
             +heading({nestingLevel:'h3',text:'ГОСТИ'})
           .left-column__dropdown-guests
             +dropdown({
-                      placeholder:"3 гостя, 1 младенец",
-                      typeDropdown:'guests',
+                      placeholder:'Сколько гостей',
+                      typeDropdown:'wide',
                       labels:[
-                            {text:"взрослые",counterNumber:3},
-                            {text:"дети",counterNumber:0},
-                            {text:"младенцы",counterNumber:1},
+                              {text:'взрослые', counterNumber:0, spellCases: ['гость', 'гостя', 'гостей']},
+                              {text:'дети',counterNumber:0},
+                              {text:'младенцы',counterNumber:0},
                             ],
-                      withButtons:true})
-          +rangeSlider({label:'ДИАПАЗОН ЦЕНЫ'})
+                      })
+          +range-slider({label:'ДИАПАЗОН ЦЕНЫ'})
           p.left-column__slider-label='Стоимость за сутки пребывания в номере'
           .left-column__header.left-column__header_rules
             +heading({nestingLevel:'h3',text:'ПРАВИЛА ДОМА'})
@@ -65,14 +65,14 @@ block content
             +heading({nestingLevel:'h3',text:'удобства номера'})
           .left-column__dropdown-room
             +dropdown({
-                      typeDropdown:'room',
-                      placeholder:'2 спальни, 2 кровати', 
-                      labels:[
-                            {text:"спальни",counterNumber:2},
-                            {text:"кровати",counterNumber:2},
-                            {text:"ванныe комнаты",counterNumber:0},
-                            ]
-                      })
+              typeDropdown:'slim',
+              placeholder:'2 спальни, 2 кровати', 
+              labels:[
+                {text:"спальни",counterNumber:2,spellCases:['спальня', 'спальни', 'спален']},
+                {text:"кровати",counterNumber:2,spellCases:['кровать', 'кровати', 'кроватей']},
+                {text:"ванныe комнаты",counterNumber:0,spellCases:['ванная комната', 'ванные комнаты', 'ванных комнат']},
+              ],
+              })
           +bullet-list({
                   type:'expandable',
                   label:'дополнительные удобства',

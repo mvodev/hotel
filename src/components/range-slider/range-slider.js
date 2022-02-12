@@ -1,4 +1,3 @@
-import './range-slider-class.js';
 import RangeSlider from './range-slider-class.js';
 
 window.addEventListener('load', () => (

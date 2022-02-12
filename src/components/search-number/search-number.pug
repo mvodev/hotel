@@ -21,16 +21,14 @@ mixin search-number(options)
       .search-number__header.search-number_dropdown-header-guests
         +heading({nestingLevel:'h3',text:'гости'})
       +dropdown({
-                placeholder:'Сколько гостей',
-                typeDropdown:'guests',
-                isExpanded:false, 
-                labels:[
-                        {text:'взрослые',counterNumber:0},
-                        {text:'дети',counterNumber:0},
-                        {text:'младенцы',counterNumber:0},
-                        ],
-                withButtons:true
-                })
+                  placeholder:'Сколько гостей',
+                  typeDropdown:'wide',
+                  labels:[
+                      {text:"взрослые",counterNumber:0,spellCases: ['гость', 'гостя', 'гостей']},
+                      {text:"дети",counterNumber:0},
+                      {text:"младенцы",counterNumber:0},
+                    ],
+                  })
       .search-number__button
         +button({
                 label:'ПОДОБРАТЬ НОМЕР',

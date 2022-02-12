@@ -10,7 +10,7 @@
   background: $white;
   box-sizing: border-box;
 
-  &_guests {
+  &_wide {
     max-width: 320px;
     width: 100%;
     border: 1px solid $darkShade25;
@@ -18,18 +18,18 @@
     left: -1px;
   }
 
-  &_room {
+  &_slim {
     max-width: 266px;
     width: 100%;
     border: 1px solid $darkShade25;
     border-radius: 4px 4px 0 0;
   }
 
-  &_room.dropdown_is-opened {
+  &_slim.dropdown_is-opened {
     border: 1px solid $darkShade50;
   }
 
-  &_guests.dropdown_is-opened {
+  &wide.dropdown_is-opened {
     border: 1px solid $darkShade50;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
@@ -60,7 +60,7 @@
     background: transparent;
   }
 
-  &_guests .dropdown__input {
+  &_wide .dropdown__input {
     width: 180px;
     overflow: hidden;
   }

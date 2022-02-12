@@ -41,14 +41,13 @@ include ../../components/hotel-logo/hotel-logo.pug
     +dropdown(
               {
                 placeholder:'Сколько гостей',
-                typeDropdown:'guests',
+                typeDropdown:'wide',
                 isExpanded:false,
               labels:[
-                      {text:"взрослые",counterNumber:0},
+                      {text:"взрослые",counterNumber:0,spellCases: ['гость', 'гостя', 'гостей']},
                       {text:"дети",counterNumber:0},
                       {text:"младенцы",counterNumber:0},
                     ],
-                    withButtons:true
               })
     h2.form-elements__header-left.form-elements__header_masked-text-field
       .header-left-form
@@ -89,27 +88,27 @@ include ../../components/hotel-logo/hotel-logo.pug
         span='Dropdown'
         span.header-left-form__extra='DEFAULT'
     +dropdown({
-              typeDropdown:'room',
+              typeDropdown:'slim',
               placeholder:'2 спальни, 2 кровати', 
               labels:[
-                      {text:"спальни",counterNumber:2},
-                      {text:"кровати",counterNumber:2},
-                      {text:"ванныe комнаты",counterNumber:0},
-                      ]
+                {text:"спальни",counterNumber:2,spellCases:['спальня', 'спальни', 'спален']},
+                {text:"кровати",counterNumber:2,spellCases:['кровать', 'кровати', 'кроватей']},
+                {text:"ванныe комнаты",counterNumber:0,spellCases:['ванная комната', 'ванные комнаты', 'ванных комнат']},
+              ],
               })
     h2.form-elements__header-left.form-elements__header_dropdown-room-expanded
       .header-left-form
         span='Dropdown'
         span.header-left-form__extra='EXPANDED'
     +dropdown({
-              typeDropdown:'room',
+              typeDropdown:'slim',
               placeholder:'2 спальни, 2 кровати', 
               labels:[
-                      {text:"спальни",counterNumber:2},
-                      {text:"кровати",counterNumber:2},
-                      {text:"ванныe комнаты",counterNumber:0},
-                      ],
-              isExpanded:true
+                {text:"спальни",counterNumber:2,spellCases:['спальня', 'спальни', 'спален']},
+                {text:"кровати",counterNumber:2,spellCases:['кровать', 'кровати', 'кроватей']},
+                {text:"ванныe комнаты",counterNumber:0,spellCases:['ванная комната', 'ванные комнаты', 'ванных комнат']},
+              ],
+              isExpanded:true,
               })
     .left-column__bullets
       .bullets-left-column
@@ -198,15 +197,14 @@ include ../../components/hotel-logo/hotel-logo.pug
                   })
     h2.form-elements__header-central.form-elements__header_dropdown='DROPDOWN'
     +dropdown({
-              placeholder:"Сколько гостей",
-              typeDropdown:'guests',
-              isExpanded:true,
+                placeholder:'Сколько гостей',
+                typeDropdown:'wide',
+                isExpanded:true,
               labels:[
-                      {text:"взрослые",counterNumber:0},
+                      {text:"взрослые",counterNumber:0,spellCases: ['гость', 'гостя', 'гостей']},
                       {text:"дети",counterNumber:0},
                       {text:"младенцы",counterNumber:0},
                     ],
-              withButtons:true
               })
     h2.form-elements__header-central.form-elements__header_rich-buttons='Rich Checkbox Buttons'
     .central-column__buttons-rich-wrapper
@@ -219,7 +217,7 @@ include ../../components/hotel-logo/hotel-logo.pug
               label:'На 1 этаже вас встретит специалист  и проводит до номера.'
               })
   section.form-elements__right-column
-    +rangeSlider({
+    +range-slider({
                   label:'RANGE SLIDER'
                 })
     h2.form-elements__header-right.form-elements__header_buttons='BUTTONS'
@@ -244,15 +242,15 @@ include ../../components/hotel-logo/hotel-logo.pug
       +pagination({ elems:12,total:170, rootRef:'/mock-address/change-me' })
     h2.form-elements__header-right.form-elements__header_dropdown-right='Dropdown'
     +dropdown({
-                placeholder:"Сколько гостей",
-                typeDropdown:'guests',
+                placeholder:'Сколько гостей',
+                typeDropdown:'wide',
                 isExpanded:true,
-                labels:[
-                        {text:"взрослые",counterNumber:0},
-                        {text:"дети",counterNumber:0},
-                        {text:"младенцы",counterNumber:0},
-                      ],
-                      withButtons:true})
+              labels:[
+                      {text:"взрослые",counterNumber:0,spellCases: ['гость', 'гостя', 'гостей']},
+                      {text:"дети",counterNumber:0},
+                      {text:"младенцы",counterNumber:0},
+                    ],
+              })
     h2.form-elements__header-right.form-elements__header_bullet='Bullet List'
     +bullet-list({
           labels:[
